@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>permutations-and-combinations</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>permutations-and-combinations</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>60 words can be made using all the letters of the word \(\mathrm{BHBJO}\), with or without meaning. If these words are written as in a dictionary, then the \(50^{\text {th }}\) word is:</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">OBBJH</li>
+<li class="c8">HBBJO</li>
+<li class="c8">OBBHJ</li>
+<li class="c8">JBBOH</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>If all the words with or without meaning made using all the letters of the word "NAGPUR" are arranged as in a dictionary, then the word at \(315^{\text {th }}\) position in this arrangement is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">NRAPUG
+</li>
+<li class="c8">NRAGUP
+</li>
+<li class="c8">NRAPGU
+</li>
+<li class="c8">NRAGPU</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>C</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>To find the \(50^{\text{th}}\) word formed by the letters of "BHBJO" as if listed in a dictionary, let's analyze the arrangement methodically. Given the letters are B, H, B, J, O, there are some repetitions with the letter B appearing twice.</p>
+<p>First, calculate the total number of permutations of these letters:</p>
+<p>\( \frac{5!}{2!} = 60 \)</p>
+<p>Let's arrange the letters in alphabetical order first: B, B, H, J, O.</p>
+<p>We need to systematically count the words while following dictionary order:</p>
+<p>1. Words starting with B:</p>
+<ul>
+<li>Next position letters: B, H, J, O</li>
+<li>Number of permutations: \(\frac{4!}{1!} = 24\) words</li>
+</ul>
+<p>Since 24 words starting with 'B' exist and are less than 50, Move to next starting letter alphabetically.</p>
+<p>2. Words starting with H:</p>
+<ul>
+<li>Next position letters: B, B, J, O</li>
+<li>Number of permutations: \(\frac{4!}{2!} = 12\) words</li>
+</ul>
+<p>After 'B', tally becomes 24 (B-words) + 12 (H-words) = 36, needs more.</p>
+<p>3. Words starting with J:</p>
+<ul>
+<li>Next position letters: B, B, H, O</li>
+<li>Number of permutations: \(\frac{4!}{2!} = 12\) words</li>
+</ul>
+<p>Now tally is 36 + 12 = 48 words.</p>
+<p>Still 2 more to reach 50.</p>
+<p>4. Words starting with O:</p>
+<ul>
+<li>Next position letters: B, B, H, J</li>
+<li>Number of permutations: \(\frac{4!}{2!} = 12\) words</li>
+<li>Our answer must be here since 48 + 2 more = 50 total.</li>
+</ul>
+<p>First permutation: \(OBB H J\)</p>
+<p>Second permutation (50th word): \(OBB J H\)</p>
+<p>So, the \(50^{\text{th}}\) word is: <b>OBBJH</b></p>
+<p>Thus, the correct answer is <strong>Option A: OBBJH</strong>.</p></li><li><strong>Q2:</strong> <p>NAGPUR</p>
+<p>Word at \(315^{\text {th }}\) position</p>
+<p>\(\begin{aligned}
+&amp; \text { A...... }=5!=120 \\
+&amp; \text { G....... }=5!=120 \\
+&amp; \text { NA..... }=4!=24 \\
+&amp; \text { NG..... }=4!=24 \\
+&amp; \text { NP..... }=4!=24
+\end{aligned}\)</p>
+<p>..... Till 312 words</p>
+<p>\(313^{\text {th }} \text { word }=\text { NRAGPU }\)</p>
+<p>\(314^{\text {th }}\) word \(=\) \(\mathrm{NRAGUP}\)</p>
+<p>\(315^{\text {th }} \text { word }=\text { NRAPGU }\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>The total number of words (with or without meaning) that can be formed out of the letters of the word '<b>DISTRIBUTION</b>' taken four at a time, is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The number of 3-digit numbers, formed using the digits 2, 3, 4, 5 and 7, when the repetition of digits is not allowed, and which are not divisible by 3 , is equal to ________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>The number of 3-digit numbers, that are divisible by either 2 or 3 but not divisible by 7, is ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>The number of integers, greater than 7000 that can be formed, using the digits 3, 5, 6, 7, 8 without repetition is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">48</li>
+<li class="c8">120</li>
+<li class="c8">168</li>
+<li class="c8">220</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>The sum of all the four-digit numbers that can be formed using all the digits 2, 1, 2, 3 is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>8</strong></li><li>Q2: <strong>3</strong></li><li>Q3: <strong>1</strong></li><li>Q4: <strong>C</strong></li><li>Q5: <strong>2</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>We have III, TT, D, S, R, B, U, O, N</p>
+<p>Number of words with selection (a, a, a, b)</p>
+<p>\(={ }^8 \mathrm{C}_1 \times \frac{4 !}{3 !}=32\)</p>
+<p>Number of words with selection (a, a, b, b)</p>
+<p>\(=\frac{4 !}{2 ! 2 !}=6\)</p>
+<p>Number of words with selection (a, a, b, c)</p>
+<p>\(={ }^2 \mathrm{C}_1 \times{ }^8 \mathrm{C}_2 \times \frac{4 !}{2 !}=672\)</p>
+<p>Number of words with selection (a, b, c, d)</p>
+<p>\(\begin{aligned}
+&amp; ={ }^9 \mathrm{C}_4 \times 4 !=3024 \\\\
+&amp; \therefore \text {Total }=3024+672+6+32 \\\\
+&amp; =3734
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>To solve this problem, we need to find the number of 3-digit numbers formed using the digits 2, 3, 4, 5, and 7, with no repetition of digits allowed, and these numbers should not be divisible by 3. Let's break down the solution step-by-step:</p>
+<p>1. <strong>Calculating the total number of 3-digit numbers without repetition:</strong></p>
+<p>The number of ways to form a 3-digit number from 5 unique digits (2, 3, 4, 5, 7) without repetition can be calculated using permutations:</p>
+<p>The total number of permutations for choosing 3 digits out of 5 and arranging them is given by:</p>
+<p>\(5P3 = \frac{5!}{(5-3)!} = \frac{5 \times 4 \times 3 \times 2 \times 1}{2 \times 1} = 5 \times 4 \times 3 = 60\)</p>
+<p>So, there are 60 possible 3-digit numbers that can be formed from the digits 2, 3, 4, 5, and 7 without repetition.</p>
+<p>2. <strong>Finding the 3-digit numbers divisible by 3:</strong></p>
+<p>A number is divisible by 3 if the sum of its digits is divisible by 3. Let's consider the sums of every combination of these three digits to find out which sums are divisible by 3:</p>
+<p>Possible sums of combinations:</p>
+<ul>
+<li>2 + 3 + 4 = 9 (divisible by 3)</li>
+<li>2 + 4 + 7 = 13</li>
+<li>2 + 5 + 7 = 14</li>
+<li>2 + 3 + 5 = 10</li>
+<li>2 + 3 + 7 = 12 (divisible by 3)</li>
+<li>3 + 4 + 5 = 12 (divisible by 3)</li>
+<li>3 + 4 + 7 = 14</li>
+<li>3 + 5 + 7 = 15 (divisible by 3)</li>
+<li>4 + 5 + 7 = 16</li>
+</ul>
+<p>The combinations whose sums are divisible by 3 are:</p>
+<ul>
+<li>2, 3, 4</li>
+<li>2, 3, 7</li>
+<li>3, 4, 5</li>
+<li>3, 5, 7</li>
+</ul>
+<p>Since the sum of the digits is divisible by 3 for these combinations, any permutation of these sets will yield a number divisible by 3:</p>
+<p>The number of 3-digit numbers that can be formed from each set of 3 digits is:</p>
+<p>\(3! = 6\)</p>
+<p>So, the total number of 3-digit numbers divisible by 3 is:</p>
+<p>\(4 \text{ sets} \times 6 \text{ permutations per set} = 24\)</p>
+<p>3. <strong>Calculating the 3-digit numbers not divisible by 3:</strong></p>
+<p>To find the 3-digit numbers not divisible by 3, we subtract the number of those divisible by 3 from the total number of 3-digit numbers:</p>
+<p>\(60 - 24 = 36\)</p>
+<p>Therefore, the number of 3-digit numbers that can be formed using the digits 2, 3, 4, 5, and 7 without repetition, and which are not divisible by 3, is equal to 36.</p></li><li><strong>Q3:</strong> <img alt="JEE Main 2023 (Online) 1st February Morning Shift Mathematics - Permutations and Combinations Question 83 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1le9xbqbh/6a03e2bb-e7c5-4885-abb8-b77d1c53361f/0699bad0-af86-11ed-8a80-c79017866e24/file-1le9xbqbi.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1le9xbqbh/6a03e2bb-e7c5-4885-abb8-b77d1c53361f/0699bad0-af86-11ed-8a80-c79017866e24/file-1le9xbqbi.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/>
+<br/><br/>\(A=\) Numbers divisible by 2
+
+<br/><br/>\(B=\) Numbers divisible by 3
+
+<br/><br/>\(C=\) Numbers divisible by 7
+
+<br/><br/>\(n(A \cup B)=n(A)+n(B)-n(A \cap B)\)
+
+<br/><br/>\(=n(2)+n(3)-n(6)\)
+
+<br/><br/>\(n(A)=n(2)=100,102 \ldots ., 998=450\)
+
+<br/><br/>\(n(B)=n(3)=102,105, \ldots ., 999=30\)
+
+<br/><br/>\(n(A \cap B)=n(6)=102,108, \ldots ., 996=150\)
+
+<br/><br/>\(n(2\) or 3\()=450+300-150=600\)
+
+<br/><br/>Now,
+
+<br/><br/>\(n(\mathrm{~A} \cap C)=n(14)=112,126, \ldots ., 994=64\)
+
+<br/><br/>\(n(A \cap B \cap C)=n(42)=126,168, \ldots ., 966=21\)
+
+<br/><br/>\(n(B \cap C)=n(21)=105,126, \ldots \ldots, 987,=43\)
+
+<br/><br/>\(n(2\) or 3 not by 7\()=600-[64+43-21]\)
+
+<br/><br/>\(=514\)</li><li><strong>Q4:</strong> Four digit numbers greater than 7000 \(=2 \times 4 \times 3 \times 2=48\)<br><br>
+Five digit number \(=5 !=120\)<br><br>
+Total number greater than 7000 \(=120+48=168\)</br></br></br></br></li><li><strong>Q5:</strong> We have, four digits are \(2,1,2,3\).
+<br><br>Total numbers when 1 is at unit digit \(=\frac{3 !}{2 !}=3\)
+<br><br>Total number when 2 is at unit digit \(=3 !=6\)
+<br><br>Total numbers when 3 is at unit digit \(=\frac{3 !}{2 !}=3\)
+<br><br>Sum of digits at unit place \(=3 \times 1+6 \times 2+3 \times 3=24\)
+<br><br>\(\therefore\) Required sum \(=24 \times 1000+24 \times 100+24 \times 10+24 \times 1\)
+<br><br>\(=24 \times 1111=26664\)</br></br></br></br></br></br></br></br></br></br></br></br></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>All five letter words are made using all the letters A, B, C, D, E and arranged as in an English dictionary with serial numbers. Let the word at serial number \(n\) be denoted by \(\mathrm{W}_{\mathrm{n}}\). Let the probability \(\mathrm{P}\left(\mathrm{W}_{\mathrm{n}}\right)\) of choosing the word \(\mathrm{W}_{\mathrm{n}}\) satisfy \(\mathrm{P}\left(\mathrm{W}_{\mathrm{n}}\right)=2 \mathrm{P}\left(\mathrm{W}_{\mathrm{n}-1}\right), \mathrm{n}&gt;1\).</p>
+<p>If \(\mathrm{P}(\mathrm{CDBEA})=\frac{2^\alpha}{2^\beta-1}, \alpha, \beta \in \mathbb{N}\), then \(\alpha+\beta\) is equal to :____________</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>All the letters of the word "GTWENTY" are written in all possible ways with or without meaning and these words are written as in a dictionary. The serial number of the word "GTWENTY" is _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>The letters of the word OUGHT are written in all possible ways and these words are arranged as in a dictionary, in a series. Then the serial number of the word TOUGH is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">79</li>
+<li class="c8">84</li>
+<li class="c8">89</li>
+<li class="c8">86</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>All words, with or without meaning, are made using all the letters of the word MONDAY. These words are written as in a dictionary with serial numbers. The serial number of the word MONDAY is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">324</li>
+<li class="c8">328</li>
+<li class="c8">326</li>
+<li class="c8">327</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>If the letters of the word MATHS are permuted and all possible words so formed are arranged as in a dictionary with serial numbers, then the serial number of the word THAMS is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">103</li>
+<li class="c8">104</li>
+<li class="c8">102</li>
+<li class="c8">101</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p> All the letters of the word PUBLIC are written in all possible orders and these words are written as in a dictionary with serial numbers. Then the serial number of the word PUBLIC is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">578</li>
+<li class="c8">576</li>
+<li class="c8">580</li>
+<li class="c8">582</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>The letters of the word 'MANKIND' are written in all possible orders and arranged in serial order as in an English dictionary. Then the serial number of the word 'MANKIND' is _____________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>1</strong></li><li>Q2: <strong>360</strong></li><li>Q3: <strong>C</strong></li><li>Q4: <strong>D</strong></li><li>Q5: <strong>A</strong></li><li>Q6: <strong>D</strong></li><li>Q7: <strong>1</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>Firstly, by this rule, we note:</p>
+<p><p>\( P(W_1) = p \)</p></p>
+<p><p>\( P(W_2) = 2p \)</p></p>
+<p><p>\( P(W_3) = 4p \)</p></p>
+<p><p>…</p></p>
+<p><p>\( P(W_n) = 2^{n-1}p \)</p></p>
+<p>To find the initial probability \( p \), consider the total probability must sum to 1 across all 120 possible words (since \( 5! = 120 \)):</p>
+<p>\( \sum_{n=1}^{120} P(W_n) = 1 \)</p>
+<p>This is a geometric series sum where:</p>
+<p>\( p(1 + 2 + 2^2 + \ldots + 2^{119}) = 1 \)</p>
+<p>Since the series sum \( 1 + 2 + 2^2 + \ldots + 2^{119} \) is equal to \( 2^{120} - 1 \), we have:</p>
+<p>\( p(2^{120} - 1) = 1 \Rightarrow p = \frac{1}{2^{120} - 1} \)</p>
+<p>Thus, the probability for the \( n \)-th word is:</p>
+<p>\( P(W_n) = \frac{2^{n-1}}{2^{120} - 1} \quad \text{(i)} \)</p>
+<p>Next, determine the position of "CDBEA". Starting from the first letter:</p>
+<p><p><strong>Words beginning with 'A':</strong> \( 4! = 24 \)</p></p>
+<p><p><strong>Words beginning with 'B':</strong> \( 4! = 24 \)</p></p>
+<p><p><strong>Words beginning with 'C':</strong></p></p>
+<p><p><strong>CA</strong>*: \( 3! = 6 \)</p></p>
+<p><p><strong>CB</strong>*: \( 3! = 6 \)</p></p>
+<p><p><strong>CDA</strong>\( **: 2! = 2 \)</p></p>
+<p><p><strong>CDBA</strong>*: \( 1! = 1 \)</p></p>
+<p>Summing these, the position of "CDBEA" is the 64th word.</p>
+<p>Substitute into equation (i):</p>
+<p>\( P(\text{CDBEA}) = P(W_{64}) = \frac{2^{63}}{2^{120} - 1} \)</p>
+<p>Given \( P(\text{CDBEA}) = \frac{2^\alpha}{2^\beta - 1} \), we find:</p>
+<p><p>\( \alpha = 63 \)</p></p>
+<p><p>\( \beta = 120 \)</p></p>
+<p>Thus, the sum \( \alpha + \beta = 63 + 120 = 183 \).</p></li><li><strong>Q2:</strong> <p>Words starting with \(\mathrm{E}=360\)</p>
+<p>Words starting with \(\mathrm{GE=60}\)</p>
+<p>Words starting with \(\mathrm{GN=60}\)</p>
+<p>Words starting with \(\mathrm{GTE=24}\)</p>
+<p>Words starting with \(\mathrm{GTN=24}\)</p>
+<p>Words starting with \(\mathrm{GTT=24}\)</p>
+<p>GTWENTY \(=1\)</p>
+<p>Total \(=553\)</p></li><li><strong>Q3:</strong> <p>Lets arrange the letters of OUGHT in alphabetical
+order.
+ <br><br>G, H, O, T, U</br></br></p>
+<br>Words starting with
+<br><br>\(
+\begin{aligned}
+&amp; \mathrm{G}----\rightarrow 4 ! \\\\
+&amp; \mathrm{H}----\rightarrow 4 ! \\\\
+&amp; \mathrm{O}----\rightarrow 4 !
+\end{aligned}
+\)
+<br><br>\(\mathrm{T} \,\mathrm{G}---\rightarrow 3\) !
+<br><br>T H \(---\rightarrow 3\) !
+<br><br>T O \(\mathrm{G}--\rightarrow 2\) !
+<br><br>T O H \(--\rightarrow 2\) !
+<br><br/>T O U G H \(\rightarrow 1\) !
+<br/>____________________________
+<br/>Total = 89</br></br></br></br></br></br></br></br></br></br></br></br></li><li><strong>Q4:</strong>
+<p>The letters of "MONDAY" arranged in alphabetical order are: A, D, M, N, O, Y.</p>
+<ol>
+<li>Fix A as the first letter, we can arrange the remaining 5 letters in 5! ways = 120 ways.</li>
+<li>Fix D as the first letter, we can arrange the remaining 5 letters in 5! ways = 120 ways.</li>
+</ol>
+<p>So far, we have 120 (for A) + 120 (for D) = 240 words.</p>
+<p>Now, let's proceed with words starting with M:</p>
+<ol>
+<li>Fix MA as the first two letters, we can arrange the remaining 4 letters in 4! ways = 24 ways.</li>
+<li>Fix MD as the first two letters, we can arrange the remaining 4 letters in 4! ways = 24 ways.</li>
+<li>Fix MN as the first two letters, we can arrange the remaining 4 letters in 4! ways = 24 ways.</li>
+</ol>
+<p>Now, we have 240 (for A and D) + 24 (for MA) + 24 (for MD) + 24 (for MN) = 312 words.</p>
+<p>After MN, we consider words that start with MO:</p>
+<ol>
+<li>Fix MOA as the first three letters, we can arrange the remaining 3 letters in 3! ways = 6 ways.</li>
+<li>Fix MOD as the first three letters, we can arrange the remaining 3 letters in 3! ways = 6 ways.</li>
+</ol>
+<p>Adding these to the total, we have 312 (previous total) + 6 (for MOA) + 6 (for MOD) = 324 words.</p>
+<p>Next, we consider words that start with 'MON'. The word 'MONDAY' comes after 'MONAD' in dictionary order, so:</p>
+<ol>
+<li>Fix 'MONA' as the first four letters. The remaining 2 letters ('D' and 'Y') can be arranged in 2! ways, which gives us 2 more words: 'MONADY' and 'MONAYD'.</li>
+</ol>
+<p>So, we have 324 (previous total) + 2 (for 'MONADY' and 'MONAYD') = 326 words.</p>
+<p>Finally, we have the word 'MONDAY' itself, which is the 327th word. </p></li><li><strong>Q5:</strong> To solve this problem, we start by finding the number of permutations before we reach a word that begins with T.
+
+<br/><br/>We have 5 letters in the word MATHS. If we fix the first letter, there are 4! (=4\( \times \)3\( \times \)2\( \times \)1=24) ways to arrange the remaining letters. 
+
+<br/><br/>The letters before T in alphabetical order are A, H, M, and S. For each of these 4 letters, there are 4! ways to arrange the rest of the word, giving 4\( \times \)4! = 96 words that come before any words starting with T.
+
+<br/><br/>Then, in the section of words that start with 'T', we start with 'TA'. There are 3 remaining letters after 'TA', hence the permutations for words that start with 'TA' are (5-2)!=3!=6.
+
+<br/><br/>So, the total permutations for all words that come before 'TH' is 96 + 6 = 102.
+
+
+<br/><br/>Now, we need to count the words that come before 'THAMS'. After 'TH', the letters left are 'AMS'. Arranged in dictionary order, they would be 'AMS', 'ASM', 'MAS', 'MSA', 'SAM', 'SMA'. So, 'THAMS' is the first word in the 'TH' category, so it is the 103<sup>rd</sup> word overall when counting from the beginning.
+
+<br/><br/>So, the correct answer is 103, which corresponds to Option A.</li><li><strong>Q6:</strong> Given word is PUBLIC.
+
+<br/><br/>Alphabetical order of letters is BCILPU. So, number of words start with letter.
+
+<br/><br/>B - - - - is \(5 !=120\)
+<br/><br/>C ---- is \(5 !=120\)
+<br/><br/>I ----- is \(5 !=120\)
+<br/><br/>\(\mathrm{L}-----\) is \(5 !=120\)
+<br/><br/>\(\mathrm{PB}----\) is \(4 !=24\)
+<br/><br/>\(\mathrm{PC}----\) is \(4 !=24\)
+<br/><br/>PI ---- is \(4 !=24\)
+<br/><br/>\(\mathrm{PL}----\) is \(4 !=24\)
+<br/><br/>PUBC -- is \(2 !=2\)
+<br/><br/>PUBI - is \(2 !=2\)
+<br/><br/>PUBLC - is \(1 !=1\)
+<br/><br/>PUBLIC is \(0 !=1\)
+<br/><br/>\(\therefore\) Serial number of the word PUBLIC
+<br/><br/>\(=4 \times 120+4 \times 24+2 \times 2+2 \times 1=582\)</li><li><strong>Q7:</strong> <p>Step 1 :</p>
+<p>Write all the alphabets in alphabetical order.</p>
+<p><img alt="JEE Main 2022 (Online) 25th July Morning Shift Mathematics - Permutations and Combinations Question 96 English Explanation 1" data-orsrc="https://app-content.cdn.examgoal.net/image/1l79egidm/a6690954-7aeb-421e-841b-1c4509718aab/ba67f6a0-24a6-11ed-8d2e-5f0df5271c2d/file-1l79egidn.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l79egidm/a6690954-7aeb-421e-841b-1c4509718aab/ba67f6a0-24a6-11ed-8d2e-5f0df5271c2d/file-1l79egidn.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Step 2 :</p>
+<p>Give a number to each alphabet starting from 0 in alphabetical order.</p>
+<p><img alt="JEE Main 2022 (Online) 25th July Morning Shift Mathematics - Permutations and Combinations Question 96 English Explanation 2" data-orsrc="https://app-content.cdn.examgoal.net/image/1l79eif4t/9c168fac-5b9a-40c7-962f-9e1a2098a816/ef849cd0-24a6-11ed-8d2e-5f0df5271c2d/file-1l79eif4u.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l79eif4t/9c168fac-5b9a-40c7-962f-9e1a2098a816/ef849cd0-24a6-11ed-8d2e-5f0df5271c2d/file-1l79eif4u.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Step 3 :</p>
+<p>In word "MANKIND" first alphabet is "M" which is present in the 4<sup>th</sup> position in the Alphabet Box. And after "M", in the word "MANKIND" there are 6 alphabets "ANKIND" which can be arrange in \({{6!} \over {2!}}\) ways. Here \(2!\) present  because two N presents.</p>
+<p>So for alphabet "M" we write \(4.{{6!} \over {2!}}\)</p>
+<p>Step 4 :</p>
+<p>As in word "MANKIND" we calculated "M", so delete "M" from alphabet box and check remaining alphabets got right numbers or not in alphabet box.</p>
+<p>As you can see after deleting "M", 4<sup>th</sup> position in the alphabet box is missing so we create a new alphabet box.</p>
+<p><img alt="JEE Main 2022 (Online) 25th July Morning Shift Mathematics - Permutations and Combinations Question 96 English Explanation 3" data-orsrc="https://app-content.cdn.examgoal.net/image/1l79em0gg/97d3fb7a-f64e-4c46-bfbe-808b4622d7eb/536acd00-24a7-11ed-8d2e-5f0df5271c2d/file-1l79em0gh.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l79em0gg/97d3fb7a-f64e-4c46-bfbe-808b4622d7eb/536acd00-24a7-11ed-8d2e-5f0df5271c2d/file-1l79em0gh.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Step 5 :</p>
+<p>Now next alphabet after "M" in word "MANKIND" is "A" which is present in the 0<sup>th</sup> position in the new alphabet box. And after "A" in the word "MANKIND" there are 5 alphabets "NKIND" which can be arrange in \({{5!} \over {2!}}\) ways.</p>
+<p>So, for alphabet "A" we write \(0.{{5!} \over {2!}}\)</p>
+<p>Step 6 :</p>
+<p>Now in word "MANKIND" we calculated "A", so delete "A" from previous new alphabet box and check remaining alphabets got right numbers or not in alphabet box.</p>
+<p>As you can see after deleting "A", 0<sup>th</sup> positioin in the alphabet box is missing, so we have to create a new alphabet box.</p>
+<p><img alt="JEE Main 2022 (Online) 25th July Morning Shift Mathematics - Permutations and Combinations Question 96 English Explanation 4" data-orsrc="https://app-content.cdn.examgoal.net/image/1l79ep4sk/1aa80241-a0dc-436c-8af5-3fbdc96cf0a2/aa31c440-24a7-11ed-8d2e-5f0df5271c2d/file-1l79ep4sl.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l79ep4sk/1aa80241-a0dc-436c-8af5-3fbdc96cf0a2/aa31c440-24a7-11ed-8d2e-5f0df5271c2d/file-1l79ep4sl.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Step 7 :</p>
+<p>Now next alphabet after "A" in word "MANKIND" is "N" which is present in the 3<sup>rd</sup> and 4<sup>th</sup> position in the alphabet box. We have to choose minimum position for "N" in the alphabet box. So, we choose 3<sup>rd</sup> position "N". And after "N" in the word "MANKIND" there are 4 alphabets "KIND" which can be arrange \({{4!} \over {2!}}\) ways. Here \(2!\) used because of 2 N's (one "N" is that "N" which we are considering and other "N" which is present in the word "KIND")</p>
+<p>So for alphabet "N" we write \(3\, \times \,{{4!} \over {2!}}\)</p>
+<p>Step 8 :</p>
+<p>Now in word "MANKIND" we calculated "N", so delete 3<sup>rd</sup> "N" from alphabet box and check remaining alphabets got right number or not in alphabet box. As you can see after deleting 3<sup>rd</sup> "N", 3<sup>rd</sup> position is missing in the alphabet box so we have to create a new alphabet box.</p>
+<p><img alt="JEE Main 2022 (Online) 25th July Morning Shift Mathematics - Permutations and Combinations Question 96 English Explanation 5" data-orsrc="https://app-content.cdn.examgoal.net/image/1l79ewvv3/7e732731-8eaf-4f1e-91a2-d2f8288f1660/81c4fdf0-24a8-11ed-8d2e-5f0df5271c2d/file-1l79ewvv4.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l79ewvv3/7e732731-8eaf-4f1e-91a2-d2f8288f1660/81c4fdf0-24a8-11ed-8d2e-5f0df5271c2d/file-1l79ewvv4.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Step 9 :</p>
+<p>Now next alphabet after "N" in word "MANKIND" is "K" which is present at the 2<sup>nd</sup> position in the new alphabet box. And after "K" in the word "MANKIND" there are 3 alphabets "IND" which we can arrange \(3!\) ways.</p>
+<p>So for alphabet "K" we write \(2\times3!\)</p>
+<p>Step 10 :</p>
+<p>Now, in word "MANKIND" we calculated "K", so delete "K" from alphabet box and check remaining alphabets got right number or not in alphabet box. As you can see after deleting "K", 2<sup>nd</sup> position in the alphabet box is missing so we have to create a new alphabet box.</p>
+<p><img alt="JEE Main 2022 (Online) 25th July Morning Shift Mathematics - Permutations and Combinations Question 96 English Explanation 6" data-orsrc="https://app-content.cdn.examgoal.net/image/1l79f1t81/275df426-ebcd-42da-bccc-f9c7f09fddb4/0ac6b120-24a9-11ed-8d2e-5f0df5271c2d/file-1l79f1t82.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l79f1t81/275df426-ebcd-42da-bccc-f9c7f09fddb4/0ac6b120-24a9-11ed-8d2e-5f0df5271c2d/file-1l79f1t82.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Step 11 :</p>
+<p>Now next alphabet after "K" in word "MANKIND" is "I" which is present at 1<sup>st</sup> position in the new alphabet box. And after "I" in the word "MANKIND" there are 2 alphabets "ND" which we can arrange in \(2!\) ways.</p>
+<p>So for alphabet "I" we write \(1\times2!\)</p>
+<p>Step 12 :</p>
+<p>Now in word "MANKIND" we calculated "I", so delete "I" from alphabet box and check remaining alphabets got right numbers or not in alphabet box. As you can see after deleting "I", 1<sup>st</sup> position in the alphabet box is missing so we have to create a new alphabet box.</p>
+<p><img alt="JEE Main 2022 (Online) 25th July Morning Shift Mathematics - Permutations and Combinations Question 96 English Explanation 7" data-orsrc="https://app-content.cdn.examgoal.net/image/1l79f4997/9a6ce487-3cbd-4e4f-822e-42b6ff66ac73/4ec74ab0-24a9-11ed-8d2e-5f0df5271c2d/file-1l79f4998.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l79f4997/9a6ce487-3cbd-4e4f-822e-42b6ff66ac73/4ec74ab0-24a9-11ed-8d2e-5f0df5271c2d/file-1l79f4998.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Step 13 :</p>
+<p>Now next alphabet after "I" in word "MANKIND" is "N" which is present at 1<sup>st</sup> position in the new alphabet box. And after "N" in the word "MANKIND" there is 1 alphabet "D" which we can arrange in \(1!\) ways.</p>
+<p>So for alphabet "N" we write \(1\times1!\).</p>
+<p>Step 14 :</p>
+<p>Now in word "MANKIND" we calculated "N", so delete "N" from alphabet box and check remaining alphabets got right numbering or not in alphabet box. As you can see after deleting "N", remaining alphabet "D" got correct numbering so new alphabet box will be same.</p>
+<p><img alt="JEE Main 2022 (Online) 25th July Morning Shift Mathematics - Permutations and Combinations Question 96 English Explanation 8" data-orsrc="https://app-content.cdn.examgoal.net/image/1l79f79sr/bdabc9fc-26b6-4f3a-9eaa-4b6346d15d96/a2a022b0-24a9-11ed-8d2e-5f0df5271c2d/file-1l79f79ss.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l79f79sr/bdabc9fc-26b6-4f3a-9eaa-4b6346d15d96/a2a022b0-24a9-11ed-8d2e-5f0df5271c2d/file-1l79f79ss.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Step 15 :</p>
+<p>Now next alphabet after "N" in word "MANKIND" is "D" which is present at the 0<sup>th</sup> position in the new alphabet box. And after "D" in the word "MANKIND" there is no alphabet so it is the last alphabet.</p>
+<p>So for last alphabet we always write \(0!\)</p>
+<p>\(\therefore\) Position of the word "MANKIND" in the dictionary</p>
+<p>\( = 4\,.\,{{6!} \over {2!}} + 0\,.\,{{5!} \over {2!}} + 3\,.\,{{4!} \over {2!}} + 2\,.\,3!\, + 1\,.\,2!\, + \,1\,.\,1!\, + \,0!\)</p>
+<p>\( = 1440 + 0 + 36 + 12 + 2 + 1 + 1\)</p>
+<p>\( = 1492\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>If all the words with or without meaning made using all the letters of the word "KANPUR" are arranged as in a dictionary, then the word at 440<sup>th</sup> position in this arrangement is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>PRNAKU</p></li>
+<li class="c8"><p>PRKAUN</p></li>
+<li class="c8"><p>PRKANU</p></li>
+<li class="c8"><p>PRNAUK</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5">The number of ways, in which the letters A, B, C, D, E can be placed in the 8 boxes of the figure below so that no row remains empty and at most one letter can be placed in a box, is :
+<img alt="JEE Main 2025 (Online) 2nd April Evening Shift Mathematics - Permutations and Combinations Question 6 English" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m9fqcldi/0da0b840-26cf-40a4-ae72-98b877b46fcc/27544d60-1872-11f0-a7dd-51762233016a/file-jaoe38c1m9fqcldj.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9fqcldi/0da0b840-26cf-40a4-ae72-98b877b46fcc/27544d60-1872-11f0-a7dd-51762233016a/file-jaoe38c1m9fqcldj.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">5880
+</li>
+<li class="c8"> 840
+</li>
+<li class="c8">960
+</li>
+<li class="c8">5760</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let \([t]\) be the greatest integer less than or equal to \(t\). Let \(A\) be the set of all prime factors of 2310 and \(f: A \rightarrow \mathbb{Z}\) be the function \(f(x)=\left[\log _2\left(x^2+\left[\frac{x^3}{5}\right]\right)\right]\). The number of one-to-one functions from \(A\) to the range of \(f\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">20</li>
+<li class="c8">120</li>
+<li class="c8">25</li>
+<li class="c8">24</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5">If \({ }^{2 n+1} \mathrm{P}_{n-1}:{ }^{2 n-1} \mathrm{P}_{n}=11: 21\),
+<br/><br/>then \(n^{2}+n+15\) is equal to :</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>The value of \(\frac{1}{1 ! 50 !}+\frac{1}{3 ! 48 !}+\frac{1}{5 ! 46 !}+\ldots .+\frac{1}{49 ! 2 !}+\frac{1}{51 ! 1 !}\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{2^{51}}{50 !}\]</li>
+<li class="c8">\[\frac{2^{51}}{51 !}\]</li>
+<li class="c8">\[\frac{2^{50}}{50 !}\]</li>
+<li class="c8">\[\frac{2^{50}}{51 !}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>Let 5 digit numbers be constructed using the digits \(0,2,3,4,7,9\) with repetition allowed, and are arranged in ascending order with serial numbers. Then the serial number of the number 42923 is __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>Five digit numbers are formed using the digits 1, 2, 3, 5, 7 with repetitions and are written in descending order with serial numbers. For example, the number 77777 has serial number 1. Then the serial number of 35337 is ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>Let \(S\) be the set of all passwords which are six to eight characters long, where each character is either an alphabet from \(\{A, B, C, D, E\}\) or a number from \(\{1,2,3,4,5\}\) with the repetition of characters allowed. If the number of passwords in \(S\) whose at least one character is a number from \(\{1,2,3,4,5\}\) is \(\alpha \times 5^{6}\), then \(\alpha\) is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>B</strong></li><li>Q2: <strong>D</strong></li><li>Q3: <strong>B</strong></li><li>Q4: <strong>2</strong></li><li>Q5: <strong>D</strong></li><li>Q6: <strong>1</strong></li><li>Q7: <strong>1</strong></li><li>Q8: <strong>6</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p><img alt="JEE Main 2025 (Online) 29th January Evening Shift Mathematics - Permutations and Combinations Question 20 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m71e4okj/d8333e76-2889-42f0-8bc5-5ef43e46faf8/f5eccb30-e8f6-11ef-b48b-c3f51ea93f48/file-jaoe38c1m71e4okk.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m71e4okj/d8333e76-2889-42f0-8bc5-5ef43e46faf8/f5eccb30-e8f6-11ef-b48b-c3f51ea93f48/file-jaoe38c1m71e4okk.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p></li><li><strong>Q2:</strong> <p><img alt="JEE Main 2025 (Online) 2nd April Evening Shift Mathematics - Permutations and Combinations Question 6 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1mafcurcw/4dbe4cec-ca4f-4032-8eae-cf659f997b4d/98162000-2c09-11f0-bf88-ff84dceebac9/file-jaoe38c1mafcurcx.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mafcurcw/4dbe4cec-ca4f-4032-8eae-cf659f997b4d/98162000-2c09-11f0-bf88-ff84dceebac9/file-jaoe38c1mafcurcx.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>Let \(x, y, z\) be the number of box which are filled</p>
+<p>\(\Rightarrow 1 \leq x \leq 3,1 \leq y \leq 3,1 \leq z \leq 2\)</p>
+<p>
+<table class="c11" style="undefined;table-layout: fixed; width: 480px"><colgroup>
+<col style="width: 80px"/>
+<col style="width: 79px"/>
+<col style="width: 77px"/>
+<col style="width: 244px"/>
+</colgroup>
+<thead>
+<tr>
+<th class="c12">\(x\)</th>
+<th class="c12">\(y\)</th>
+<th class="c12">\(z\)</th>
+<th class="c12">Number of ways</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="c12">3</td>
+<td class="c12">1</td>
+<td class="c12">1</td>
+<td class="c13">\({ }^3 \mathrm{C}_3 \cdot{ }^3 \mathrm{C}_1 \cdot{ }^2 \mathrm{C}_1=6\)</td>
+</tr>
+<tr>
+<td class="c12">2</td>
+<td class="c12">2</td>
+<td class="c12">1</td>
+<td class="c13">\({ }^3 \mathrm{C}_2 \cdot{ }^3 \mathrm{C}_2 \cdot{ }^2 \mathrm{C}_1=18\)</td>
+</tr>
+<tr>
+<td class="c12">1</td>
+<td class="c12">3</td>
+<td class="c12">1</td>
+<td class="c13">\({ }^3 \mathrm{C}_1 \cdot{ }^3 \mathrm{C}_3 \cdot{ }^2 \mathrm{C}_1=6\)</td>
+</tr>
+<tr>
+<td class="c12">2</td>
+<td class="c12">1</td>
+<td class="c12">2</td>
+<td class="c13">\({ }^3 C_2 \cdot{ }^3 C_1 \cdot{ }^2 C_2=9\)</td>
+</tr>
+<tr>
+<td class="c12">1</td>
+<td class="c12">2</td>
+<td class="c12">2</td>
+<td class="c13">\({ }^3 \mathrm{C}_1 \cdot{ }^3 \mathrm{C}_2 \cdot{ }^2 \mathrm{C}_2=9\)</td>
+</tr>
+</tbody></table></p>
+<p>Total ways \(=(48)\) to fill boxes</p>
+<p>Now to arrange \(a, b, c, d\) and \(e\)</p>
+<p>Number of ways will be 48.5! = 5760</p></li><li><strong>Q3:</strong> <p>\(\begin{aligned}
+&amp; A=\{2,3,5,7,11\} \\
+&amp; f(x)=\left[\log _2\left(x^2+\left[\frac{x^3}{5}\right]\right)\right] \\
+&amp; \text { Ranges } f(x)=\{2,3,5,6,8\}
+\end{aligned}\)</p>
+<p>\(\text { Number of one-one } A \rightarrow R_f\)</p>
+<p><img alt="JEE Main 2024 (Online) 8th April Morning Shift Mathematics - Permutations and Combinations Question 29 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lw8oycbm/cc620a6d-aa22-48e0-ad06-9f4595901b72/65685c20-1334-11ef-9f8d-838c388c326d/file-1lw8oycbn.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lw8oycbm/cc620a6d-aa22-48e0-ad06-9f4595901b72/65685c20-1334-11ef-9f8d-838c388c326d/file-1lw8oycbn.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(5 \times 4 \times 3 \times 2 \times 1=120\)</p></li><li><strong>Q4:</strong> \(\frac{\frac{(2 n+1) !}{(n+2) !}}{\frac{(2 n-1) !}{(n-1) !}}=\frac{11}{21}\)
+
+<br/><br/>\(\frac{(2 n+1) 2 n}{(n+2)(n+1) n}=\frac{11}{21}\)
+
+<br/><br/>\(84 n+42=11\left(n^{2}+3 n+2\right)\)
+
+<br/><br/>\(11 n^{2}-51 n-20=0\)
+
+<br/><br/>\((n-5)(11 n+4)=0\)
+
+<br/><br/>\(n=5, \frac{-4}{11}\) (Rejected \()\)
+
+<br/><br/>\(n^{2}+n+15=45\) </li><li><strong>Q5:</strong> \(
+\begin{aligned}
+&amp; \mathrm{S}=\frac{1}{1 ! 50 !}+\frac{1}{3 ! 48 !}+\frac{1}{5 ! 46 !}+\ldots \ldots+\frac{1}{49 ! 2 !}+\frac{1}{51 ! 1 !} \\\\
+&amp; =\frac{1}{51 !}\left(\frac{51 !}{1 ! 50 !}+\frac{51 !}{3 ! 48 !}+\frac{51 !}{5 ! 46 !}+\ldots . .+\frac{51 !}{49 ! 2 !}+\frac{51 !}{51 ! 0 !}\right) \\\\
+&amp; =\frac{1}{51 !}\left({ }^{51} C_{50}+{ }^{51} C_{48}+{ }^{51} C_{46}+\ldots \ldots .+{ }^{51} C_2+{ }^{51} C_0\right) \\\\
+&amp; \because{ }^n C_0+{ }^n C_2+{ }^n C_4+\ldots \ldots=2^{n-1} \\\\
+&amp; \therefore S=\frac{2^{50}}{51 !}
+\end{aligned}
+\)</li><li><strong>Q6:</strong> <img alt="JEE Main 2023 (Online) 31st January Morning Shift Mathematics - Permutations and Combinations Question 82 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lelo42n9/53ce0458-9680-4b44-8466-08f8e9ec8d51/6747a240-b5fb-11ed-9b52-9b6c0357d10e/file-1lelo42na.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lelo42n9/53ce0458-9680-4b44-8466-08f8e9ec8d51/6747a240-b5fb-11ed-9b52-9b6c0357d10e/file-1lelo42na.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></li><li><strong>Q7:</strong> <p>Descending order means from highest to lowest.</p>
+<p>\(\therefore\) Descending order of digits 1, 2, 3, 5, 7 is = 7, 5, 3, 2, 1.</p>
+<p>(1) Number starts with 7 :</p>
+<p><img alt="JEE Main 2023 (Online) 29th January Morning Shift Mathematics - Permutations and Combinations Question 73 English Explanation 1" data-orsrc="https://app-content.cdn.examgoal.net/image/1le2g13sg/30377b8c-aded-4085-8900-acce8af1dc3b/e75d6700-ab68-11ed-b566-111c81fc645a/file-1le2g13sh.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1le2g13sg/30377b8c-aded-4085-8900-acce8af1dc3b/e75d6700-ab68-11ed-b566-111c81fc645a/file-1le2g13sh.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(\therefore\) Total possible numbers start's with 7 are = <sup>5</sup>C<sub>1</sub> \(\times\) <sup>5</sup>C<sub>1</sub> \(\times\) <sup>5</sup>C<sub>1</sub> \(\times\) <sup>5</sup>C<sub>1</sub> = 5<sup>4</sup></p>
+<p>(2) Number of starts with 5 :</p>
+<p><img alt="JEE Main 2023 (Online) 29th January Morning Shift Mathematics - Permutations and Combinations Question 73 English Explanation 2" data-orsrc="https://app-content.cdn.examgoal.net/image/1le2g1tke/43c45f16-3db2-4d80-a59f-b27d342fc2b4/fb46c0e0-ab68-11ed-b88f-0b6f40cc9ae6/file-1le2g1tkf.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1le2g1tke/43c45f16-3db2-4d80-a59f-b27d342fc2b4/fb46c0e0-ab68-11ed-b88f-0b6f40cc9ae6/file-1le2g1tkf.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(\therefore\) Total possible numbers start's with 5 are = <sup>5</sup>C<sub>1</sub> \(\times\) <sup>5</sup>C<sub>1</sub> \(\times\) <sup>5</sup>C<sub>1</sub> \(\times\) <sup>5</sup>C<sub>1</sub> = 5<sup>4</sup></p>
+<p>(3) Number starts with 37 :</p>
+<p><img alt="JEE Main 2023 (Online) 29th January Morning Shift Mathematics - Permutations and Combinations Question 73 English Explanation 3" data-orsrc="https://app-content.cdn.examgoal.net/image/1le2g2ax4/3d119479-b1ac-4838-9b4e-8989ddd3f6de/08ae7480-ab69-11ed-b88f-0b6f40cc9ae6/file-1le2g2ax5.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1le2g2ax4/3d119479-b1ac-4838-9b4e-8989ddd3f6de/08ae7480-ab69-11ed-b88f-0b6f40cc9ae6/file-1le2g2ax5.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(\therefore\) Total possible numbers starts with 3 and 7 are = <sup>5</sup>C<sub>1</sub> \(\times\) <sup>5</sup>C<sub>1</sub> \(\times\) <sup>5</sup>C<sub>1</sub> = 5<sup>3</sup></p>
+<p>(4) Number starts with 357 :</p>
+<p><img alt="JEE Main 2023 (Online) 29th January Morning Shift Mathematics - Permutations and Combinations Question 73 English Explanation 4" data-orsrc="https://app-content.cdn.examgoal.net/image/1le2g2w2h/254b12e3-a7f2-4f3b-a4c0-bba7e60d20fc/1904bc90-ab69-11ed-b88f-0b6f40cc9ae6/file-1le2g2w2i.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1le2g2w2h/254b12e3-a7f2-4f3b-a4c0-bba7e60d20fc/1904bc90-ab69-11ed-b88f-0b6f40cc9ae6/file-1le2g2w2i.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(\therefore\) Total possible numbers starts with 357 are = <sup>5</sup>C<sub>1</sub> \(\times\) <sup>5</sup>C<sub>1</sub> = 5<sup>2</sup></p>
+<p>(5) Number starts with 355 :</p>
+<p><img alt="JEE Main 2023 (Online) 29th January Morning Shift Mathematics - Permutations and Combinations Question 73 English Explanation 5" data-orsrc="https://app-content.cdn.examgoal.net/image/1le2g3fcm/c842699b-7c36-45e1-856a-a43d02492a13/27e9c160-ab69-11ed-b88f-0b6f40cc9ae6/file-1le2g3fcn.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1le2g3fcm/c842699b-7c36-45e1-856a-a43d02492a13/27e9c160-ab69-11ed-b88f-0b6f40cc9ae6/file-1le2g3fcn.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(\therefore\) Total possible numbers starts with 355 are = <sup>5</sup>C<sub>1</sub> \(\times\) <sup>5</sup>C<sub>1</sub> = 5<sup>2</sup></p>
+<p>(6) Number starts with 3537 :</p>
+<p><img alt="JEE Main 2023 (Online) 29th January Morning Shift Mathematics - Permutations and Combinations Question 73 English Explanation 6" data-orsrc="https://app-content.cdn.examgoal.net/image/1le2g48bm/5e3286ff-1f06-4186-a954-c8121f8cf64f/3e4b4730-ab69-11ed-b88f-0b6f40cc9ae6/file-1le2g48bn.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1le2g48bm/5e3286ff-1f06-4186-a954-c8121f8cf64f/3e4b4730-ab69-11ed-b88f-0b6f40cc9ae6/file-1le2g48bn.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(\therefore\) Total possible numbers starts with 3537 are = <sup>5</sup>C<sub>1</sub> = 5</p>
+<p>(7) Number starts with 3535 :</p>
+<p><img alt="JEE Main 2023 (Online) 29th January Morning Shift Mathematics - Permutations and Combinations Question 73 English Explanation 7" data-orsrc="https://app-content.cdn.examgoal.net/image/1le2g4qkb/9fafb3cc-ba1e-4c03-a575-be2b1b45a714/4c6274b0-ab69-11ed-b88f-0b6f40cc9ae6/file-1le2g4qkc.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1le2g4qkb/9fafb3cc-ba1e-4c03-a575-be2b1b45a714/4c6274b0-ab69-11ed-b88f-0b6f40cc9ae6/file-1le2g4qkc.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(\therefore\) Total possible numbers starts with 3535 are = <sup>5</sup>C<sub>1</sub> = 5</p>
+<p>(8) Next number is 35337 which is the required number.</p>
+<p>\(\therefore\) Position of the number 35337 is = 5<sup>4</sup> + 5<sup>4</sup> + 5<sup>3</sup> + 5<sup>2</sup> + 5<sup>2</sup> + 5 + 5 + 1 = 1436</p></li><li><strong>Q8:</strong> <p>If password is 6 character long, then</p>
+<p>Total number of ways having atleast one number \( = {10^6} - {5^6}\)</p>
+<p>Similarly, if 7 character long \( = {10^7} - {5^7}\)</p>
+<p>and if 8-character long \( = {10^8} - {5^8}\)</p>
+<p>Number of password \( = ({10^6} + {10^7} + {10^8}) - ({5^6} + {5^7} + {5^8})\)</p>
+<p>\( = {5^6}({2^6} + {5.2^7} + {25.2^8} - 1 - 5 - 25)\)</p>
+<p>\( = {5^6}(64 + 640 + 6400 - 31)\)</p>
+<p>\( = 7073 \times {5^6}\)</p>
+<p>\(\therefore\) \(\alpha  = 7073\).</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

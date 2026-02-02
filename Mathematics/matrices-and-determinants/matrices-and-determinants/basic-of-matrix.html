@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>matrices-and-determinants</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>matrices-and-determinants</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \(A=\left[\begin{array}{lll}
+1 &amp; a &amp; a \\
+0 &amp; 1 &amp; b \\
+0 &amp; 0 &amp; 1
+\end{array}\right], a, b \in \mathbb{R}\). If for some <br/><br/>\(n \in \mathbb{N}, A^{n}=\left[\begin{array}{ccc}
+1 &amp; 48 &amp; 2160 \\
+0 &amp; 1 &amp; 96 \\
+0 &amp; 0 &amp; 1
+\end{array}\right]
+\) then \(n+a+b\) is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c7" style="list-style-type: none;">
+<li>Q1: <strong>1</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c8">
+<li><strong>Q1:</strong> <p>\(A = \left[ {\matrix{
+   1 &amp; 0 &amp; 0  \cr 
+   0 &amp; 1 &amp; 0  \cr 
+   0 &amp; 0 &amp; 1  \cr 
+
+ } } \right] + \left[ {\matrix{
+   0 &amp; a &amp; a  \cr 
+   0 &amp; 0 &amp; b  \cr 
+   0 &amp; 0 &amp; 0  \cr 
+
+ } } \right] = I + B\)</p>
+<p>\({B^2} = \left[ {\matrix{
+   0 &amp; a &amp; a  \cr 
+   0 &amp; 0 &amp; b  \cr 
+   0 &amp; 0 &amp; 0  \cr 
+
+ } } \right] + \left[ {\matrix{
+   0 &amp; a &amp; a  \cr 
+   0 &amp; 0 &amp; b  \cr 
+   0 &amp; 0 &amp; 0  \cr 
+
+ } } \right] = \left[ {\matrix{
+   0 &amp; 0 &amp; {ab}  \cr 
+   0 &amp; 0 &amp; 0  \cr 
+   0 &amp; 0 &amp; 0  \cr 
+
+ } } \right]\)</p>
+<p>\({B^3} = 0\)</p>
+<p>\(\therefore\) \({A^n} = {(1 + B)^n} = {}^n{C_0}I + {}^n{C_1}B + {}^n{C_2}{B^2} + {}^n{C_3}{B^3} + \,\,....\)</p>
+<p>\( = \left[ {\matrix{
+   1 &amp; 0 &amp; 0  \cr 
+   0 &amp; 1 &amp; 0  \cr 
+   0 &amp; 0 &amp; 1  \cr 
+
+ } } \right] + \left[ {\matrix{
+   0 &amp; {na} &amp; {na}  \cr 
+   0 &amp; 0 &amp; {nb}  \cr 
+   0 &amp; 0 &amp; 0  \cr 
+
+ } } \right] + \left[ {\matrix{
+   0 &amp; 0 &amp; {{{n(n - 1)ab} \over 2}}  \cr 
+   0 &amp; 0 &amp; 0  \cr 
+   0 &amp; 0 &amp; 0  \cr 
+
+ } } \right]\)</p>
+<p>\( = \left[ {\matrix{
+   1 &amp; {na} &amp; {na + {{n(n - 1)} \over 2}ab}  \cr 
+   0 &amp; 1 &amp; {nb}  \cr 
+   0 &amp; 0 &amp; 1  \cr 
+
+ } } \right] = \left[ {\matrix{
+   1 &amp; {48} &amp; {2160}  \cr 
+   0 &amp; 1 &amp; {48}  \cr 
+   0 &amp; 0 &amp; 1  \cr 
+
+ } } \right]\)</p>
+<p>On comparing we get \(na = 48\), \(nb = 96\) and</p>
+<p>\(na + {{n(n - 1)} \over 2}ab = 2160\)</p>
+<p>\( \Rightarrow a = 4,n = 12\) and \(b = 8\)</p>
+<p>\(n + a + b = 24\)</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

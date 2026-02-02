@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>matrices-and-determinants</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>matrices-and-determinants</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5">If \(\mathrm{A}=\left[\begin{array}{cc}\sqrt{2} &amp; 1 \\ -1 &amp; \sqrt{2}\end{array}\right], \mathrm{B}=\left[\begin{array}{ll}1 &amp; 0 \\ 1 &amp; 1\end{array}\right], \mathrm{C}=\mathrm{ABA}^{\mathrm{T}}\) and \(\mathrm{X}=\mathrm{A}^{\mathrm{T}} \mathrm{C}^2 \mathrm{~A}\), then \(\operatorname{det} \mathrm{X}\) is equal to :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">243</li>
+<li class="c8">729</li>
+<li class="c8">27</li>
+<li class="c8">891</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{A}\) be a square matrix such that \(\mathrm{AA}^{\mathrm{T}}=\mathrm{I}\). Then \(\frac{1}{2} A\left[\left(A+A^T\right)^2+\left(A-A^T\right)^2\right]\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\mathrm{A}^2+\mathrm{A}^{\mathrm{T}}\]
+</li>
+<li class="c8">\[\mathrm{A}^3+\mathrm{I}\]
+</li>
+<li class="c8">\[\mathrm{A}^3+\mathrm{A}^{\mathrm{T}}\]
+</li>
+<li class="c8">\[\mathrm{A}^2+\mathrm{I}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let \(P=\left[\begin{array}{cc}\frac{\sqrt{3}}{2} &amp; \frac{1}{2} \\ -\frac{1}{2} &amp; \frac{\sqrt{3}}{2}\end{array}\right], A=\left[\begin{array}{ll}1 &amp; 1 \\ 0 &amp; 1\end{array}\right]\) and \(Q=P A P^{T}\). If \(P^{T} Q^{2007} P=\left[\begin{array}{ll}a &amp; b \\ c &amp; d\end{array}\right]\), then \(2 a+b-3 c-4 d\) equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2004</li>
+<li class="c8">2006</li>
+<li class="c8">2007</li>
+<li class="c8">2005</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Let \(S\) be the set containing all \(3 \times 3\) matrices with entries from \(\{-1,0,1\}\). The total number of matrices \(A \in S\) such that the sum of all the diagonal elements of \(A^{\mathrm{T}} A\) is 6 is ____________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>B</strong></li><li>Q2: <strong>C</strong></li><li>Q3: <strong>D</strong></li><li>Q4: <strong>1</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>The solution involves understanding matrix operations and properties such as multiplication, transpose, and determinant. Given \(\mathrm{A}\), \(\mathrm{B}\), and that \(\mathrm{C} = \mathrm{ABA}^{\mathrm{T}}\), and \(\mathrm{X} = \mathrm{A}^{\mathrm{T}} \mathrm{C}^2 \mathrm{A}\), we find \(\operatorname{det} \mathrm{X}\) as follows:</p>
+<p>First, we express \(|\mathrm{C}|\), the determinant of \(\mathrm{C}\), in terms of the determinants of \(\mathrm{A}\) and \(\mathrm{B}\), using the property that \(|\mathrm{ABC}| = |\mathrm{A}| \cdot |\mathrm{B}| \cdot |\mathrm{C}|\):</p>
+<p>\(\begin{aligned} |\mathrm{C}| &amp;= |\mathrm{ABA}^{\mathrm{T}}| = |\mathrm{A}| \cdot |\mathrm{B}| \cdot |\mathrm{A}^{\mathrm{T}}| \\\\ &amp;= |\mathrm{A}|^2 \cdot |\mathrm{B}| \quad \text{since } |\mathrm{A}^{\mathrm{T}}| = |\mathrm{A}|. \end{aligned}\)</p>
+<p>Next, we find \(|\mathrm{X}|\), using the property \(|\mathrm{ABC}| = |\mathrm{A}| \cdot |\mathrm{B}| \cdot |\mathrm{C}|\) and substituting \(|\mathrm{C}|\):</p>
+<p>\(\begin{aligned} |\mathrm{X}| &amp;= |\mathrm{A}^{\mathrm{T}} \mathrm{C}^2 \mathrm{A}| = |\mathrm{A}^{\mathrm{T}}| \cdot |\mathrm{C}|^2 \cdot |\mathrm{A}| \\\\ &amp;= |\mathrm{A}|^2 \cdot |\mathrm{C}|^2. \end{aligned}\)</p>
+<p>Substituting the expression for \(|\mathrm{C}|\) obtained earlier:</p>
+<p>\(\begin{aligned} |\mathrm{X}| &amp;= |\mathrm{A}|^2 \cdot (|\mathrm{A}|^2 \cdot |\mathrm{B}|)^2 \\\\ &amp;= (|\mathrm{A}|^3 \cdot |\mathrm{B}|)^2. \end{aligned}\)</p>
+<p>The determinants of \(\mathrm{A}\) and \(\mathrm{B}\) are calculated as:</p>
+\(
+|A|=\left|\begin{array}{cc}
+\sqrt{2} &amp; 1 \\
+-1 &amp; \sqrt{2}
+\end{array}\right|=2+1=3
+\)
+<br/><br/>\(
+|B|=\left|\begin{array}{ll}
+1 &amp; 0 \\
+1 &amp; 1
+\end{array}\right|=1
+\)
+<p>Finally, substituting these values into our expression for \(|\mathrm{X}|\):</p>
+<p>\(\begin{aligned} |\mathrm{X}| &amp;= (3^3 \cdot 1)^2 \\\\ &amp;= 729. \end{aligned}\)</p>
+<p>Therefore, \(\operatorname{det} \mathrm{X} = 729\).</p></li><li><strong>Q2:</strong> <p>\(\mathrm{AA}^{\mathrm{T}}=\mathrm{I}=\mathrm{A}^{\mathrm{T}} \mathrm{A}\)</p>
+<p>On solving given expression, we get</p>
+<p>\(\begin{aligned}
+&amp; \frac{1}{2} \mathrm{~A}\left[\mathrm{~A}^2+\left(\mathrm{A}^{\mathrm{T}}\right)^2+2 \mathrm{~A} \mathrm{~A}^{\mathrm{T}}+\mathrm{A}^2+\left(\mathrm{A}^{\mathrm{T}}\right)^2-2 \mathrm{~A} \mathrm{~A}^{\mathrm{T}}\right] \\
+&amp; =\mathrm{A}\left[\mathrm{A}^2+\left(\mathrm{A}^{\mathrm{T}}\right)^2\right]=\mathrm{A}^3+\mathrm{A}^{\mathrm{T}}
+\end{aligned}\)</p></li><li><strong>Q3:</strong> \(
+\text { Here, } P=\left[\begin{array}{cc}
+\frac{\sqrt{3}}{2} &amp; \frac{1}{2} \\
+\frac{-1}{2} &amp; \frac{\sqrt{3}}{2}
+\end{array}\right], A=\left[\begin{array}{ll}
+1 &amp; 1 \\
+0 &amp; 1
+\end{array}\right]
+\)
+<br/><br/>\(
+\text { Here, } \mathrm{PP}^{\mathrm{T}}=\left[\begin{array}{cc}
+\frac{\sqrt{3}}{2} &amp; \frac{1}{2} \\
+\frac{-1}{2} &amp; \frac{\sqrt{3}}{2}
+\end{array}\right]\left[\begin{array}{cc}
+\frac{\sqrt{3}}{2} &amp; \frac{-1}{2} \\
+\frac{1}{2} &amp; \frac{\sqrt{3}}{2}
+\end{array}\right]
+\)
+<br/><br/>\(
+=\left[\begin{array}{cc}
+\frac{3}{4}+\frac{1}{4} &amp; -\frac{\sqrt{3}}{4}+\frac{\sqrt{3}}{4} \\
+\frac{-\sqrt{3}}{4}+\frac{\sqrt{3}}{4} &amp; \frac{1}{4}+\frac{3}{4}
+\end{array}\right]=\left[\begin{array}{ll}
+1 &amp; 0 \\
+0 &amp; 1
+\end{array}\right]=\mathrm{I}
+\)
+<br/><br/>Similarly \(P^T P=1\)
+<br/><br/>\( \because \) \(Q=P A P^{T}\)
+<br/><br/>Now, \(Q^{2007}=\left(P A P^T\right)\left(P A P^T\right) \ldots 2007\) times \(=P A^{2007} P^T\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \text { As, } A=\left[\begin{array}{ll}
+1 &amp; 1 \\
+0 &amp; 1
+\end{array}\right] \\\\
+&amp; \Rightarrow A^2=\left[\begin{array}{ll}
+1 &amp; 1 \\
+0 &amp; 1
+\end{array}\right]\left[\begin{array}{ll}
+1 &amp; 1 \\
+0 &amp; 1
+\end{array}\right]=\left[\begin{array}{ll}
+1+0 &amp; 1+1 \\
+0+0 &amp; 0+1
+\end{array}\right]=\left[\begin{array}{ll}
+1 &amp; 2 \\
+0 &amp; 1
+\end{array}\right]
+\end{aligned}
+\)
+<br/><br/>\(
+A^3=\left[\begin{array}{ll}
+1 &amp; 3 \\
+0 &amp; 1
+\end{array}\right]
+\)
+<br/>.
+<br/>.
+<br/>.
+<br/>.
+<br/>\(
+A^{2007}=\left[\begin{array}{cc}
+1 &amp; 2007 \\
+0 &amp; 1
+\end{array}\right]
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \text { Hence, } \mathrm{P}^{\mathrm{T}} \mathrm{Q}^{2007} \mathrm{P}=\mathrm{A}^{2007}=\left[\begin{array}{cc}
+1 &amp; 2007 \\
+0 &amp; 1
+\end{array}\right] \\\\
+&amp; \Rightarrow\left[\begin{array}{ll}
+a &amp; b \\
+c &amp; d
+\end{array}\right]=\left[\begin{array}{cc}
+1 &amp; 2007 \\
+0 &amp; 1
+\end{array}\right]
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \Rightarrow a=1, b=2007, c=0, d=1 \\\\
+&amp; \therefore 2 a+b-3 c-4 d=2(1)+2007-3(0)-4(1) \\\\
+&amp; =2+2007-4=2005
+\end{aligned}
+\)</li><li><strong>Q4:</strong> <p>Sum of all diagonal elements is equal to sum of square of each element of the matrix.</p>
+<p>i.e., \(A = \left[ {\matrix{
+   {{a_1}} &amp; {{a_2}} &amp; {{a_3}}  \cr 
+   {{b_1}} &amp; {{b_2}} &amp; {{b_3}}  \cr 
+   {{c_1}} &amp; {{c_2}} &amp; {{c_3}}  \cr 
+
+ } } \right]\)</p>
+<p>then \({t_r}\,(A\,.\,{A^T})\)</p>
+<p>\( = a_1^2 + a_2^2 + a_3^2 + b_1^2 + b_2^2 + b_3^2 + c_1^2 + c_2^2 + c_3^2\)</p>
+<p>\(\because\) \({a_i},{b_i},{c_i} \in \{  - 1,0,1\} \) for \(i = 1,2,3\)</p>
+<p>\(\therefore\) Exactly three of them are zero and rest are 1 or \(-\)1.</p>
+<p>Total number of possible matrices \({}^9{C_3} \times {2^6}\)</p>
+<p>\( = {{9 \times 8 \times 7} \over 6} \times 64\)</p>
+<p>\( = 5376\)</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

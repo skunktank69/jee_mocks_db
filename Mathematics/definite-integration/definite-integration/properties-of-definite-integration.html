@@ -1,0 +1,3440 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>definite-integration</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>definite-integration</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \(f(x)+2 f\left(\frac{1}{x}\right)=x^2+5\) and \(2 g(x)-3 g\left(\frac{1}{2}\right)=x, x&gt;0\). If \(\alpha=\int_1^2 f(x) \mathrm{d} x\), and \(\beta=\int_1^2 g(x) \mathrm{d} x\), then the value of \(9 \alpha+\beta\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">0</li>
+<li class="c8">10</li>
+<li class="c8">1</li>
+<li class="c8">11</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5">If \(\int\limits_{0}^{1} \frac{1}{\left(5+2 x-2 x^{2}\right)\left(1+e^{(2-4 x)}\right)} d x=\frac{1}{\alpha} \log _{e}\left(\frac{\alpha+1}{\beta}\right), \alpha, \beta&gt;0\), then \(\alpha^{4}-\beta^{4}\)
+
+is equal to :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">-21</li>
+<li class="c8">21</li>
+<li class="c8">19</li>
+<li class="c8">0</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let \(5 f(x)+4 f\left(\frac{1}{x}\right)=\frac{1}{x}+3, x &gt; 0\). Then \(18 \int_\limits{1}^{2} f(x) d x\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[10 \log _{\mathrm{e}} 2+6\]</li>
+<li class="c8">\[5 \log _{e} 2-3\]</li>
+<li class="c8">\[10 \log _{\mathrm{e}} 2-6\]</li>
+<li class="c8">\[5 \log _{\mathrm{e}} 2+3\]</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>D</strong></li><li>Q2: <strong>B</strong></li><li>Q3: <strong>C</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp; f(x)+2 f\left(\frac{1}{x}\right)=x^2+5 \\
+&amp; 2 f\left(\frac{1}{x}\right)+4 f(x)=2\left(\frac{1}{x^2}+5\right) \\
+&amp; 3 f(x)=\frac{2}{x^2}-x^2+5 \\
+&amp; f(x)=\frac{1}{3}\left(\frac{2}{x^2}-x^2+5\right) \\
+&amp; 2 g(x)-3 g\left(\frac{1}{x}\right)=x \\
+&amp; 2 g\left(\frac{1}{x}\right)-3 g(x)=\frac{1}{x} \\
+&amp; \text { Or } 4 g(x)-6 g\left(\frac{1}{x}\right)=2 x \\
+&amp; 6 g\left(\frac{1}{x}\right)-9 g(x)=\frac{3}{x} \\
+&amp; -5 g(x)=2 x+\frac{3}{x}
+\end{aligned}\)</p>
+<p>\(
+\begin{aligned}
+&amp; \text { Or } g(x)=-\frac{1}{5}\left(2 x+\frac{3}{x}\right) \\
+&amp; \int_1^2 f(x) d x=\int_1^2 \frac{1}{3}\left(\frac{2}{x^2}-x^2+5\right) d x
+\end{aligned}\)</p>
+<p>\(
+\begin{aligned}
+&amp;\begin{aligned}
+&amp; =\frac{1}{3}\left[-\frac{2}{x}-\frac{x^3}{3}+5 x\right]_1^2 \\
+&amp; =\frac{1}{3}\left[\left(-\frac{2}{2}-\frac{8}{3}+10\right)-\left(-2-\frac{1}{3}+5\right)\right] \\
+&amp; =\frac{1}{3}\left[-1-\frac{8}{3}+10+2+\frac{1}{3}-5\right] \\
+&amp; \alpha=\frac{11}{9}
+\end{aligned}\\
+&amp;\text { Now, } 2 g(x)=x+3 g\left(\frac{1}{2}\right)\\
+&amp;\begin{aligned}
+&amp; 2 g\left(\frac{1}{2}\right)=\frac{1}{2}+3 g\left(\frac{1}{2}\right) \\
+&amp; g\left(\frac{1}{2}\right)=-\frac{1}{2}
+\end{aligned}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \therefore \beta=\int_1^2 g(x) d x \\
+&amp; =\frac{1}{2} \int_1^2\left(x+3 g\left(\frac{1}{2}\right)\right) d x \\
+&amp; =\frac{1}{2}\left[\frac{x^2}{2}+3 g\left(\frac{1}{2}\right) x\right]_1^2 \\
+&amp; =0 \\
+&amp; \therefore 9 \alpha+\beta=11
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <ol>
+<li>The given integral is:</li>
+</ol>
+<p>\(
+I=\int_0^1 \frac{dx}{\left(5+2x-2x^2\right)\left(1+e^{2-4x}\right)}
+\) .............(i)</p>
+<ol>
+<li>Perform a substitution, \(x \rightarrow 1-x\). This gives:</li>
+</ol>
+<p>\(
+I=\int_0^1 \frac{dx}{\left(5+2(1-x)-2(1-x)^2\right)\left(1+e^{2-4(1-x)}\right)}
+\)</p>
+<ol>
+<li>Simplify the expression inside the integral:</li>
+</ol>
+<p>\(
+I=\int_0^1 \frac{dx}{\left(5+2-2x-2(1-2x+x^2)\right)\left(1+e^{4x -2}\right)}
+\) ............(ii)</p>
+<ol>
+<li>Add the original integral (i) and the integral after substitution (ii):</li>
+</ol>
+<p>\(
+2I=\int_0^1 \frac{dx}{5+2x-2x^2}
+\)</p>
+<ol>
+<li>Factor the quadratic expression in the denominator:</li>
+</ol>
+<p>\(
+2I=\int_0^1 \frac{dx}{2\left(\frac{11}{4}-\left(x-\frac{1}{2}\right)^2\right)}
+\)</p>
+<ol>
+<li>To solve this integral, we can perform a change of variables using the substitution <br/><br/>\(x-\frac{1}{2}= \frac{\sqrt{11}}{2}\tan{u}\), then \(dx=\frac{\sqrt{11}}{2}\sec^2{u} du\):</li>
+</ol>
+<p>\(
+I=\frac{1}{\sqrt{11}}\int \frac{\sec^2{u}}{1+\tan^2{u}}du
+\)</p>
+<ol>
+<li>Using the identity \(\sec^2{u}=1+\tan^2{u}\):</li>
+</ol>
+<p>\(
+I=\frac{1}{\sqrt{11}}\int du = \frac{1}{\sqrt{11}}(u+C)
+\)</p>
+<ol>
+<li>Now we need to find the limits of the integral after the substitution. If \(x=0\), then \(u=\tan^{-1}\left(-\frac{1}{\sqrt{11}}\right)\). If \(x=1\), then \(u=\tan^{-1}\left(\frac{1}{\sqrt{11}}\right)\). So, the integral becomes:</li>
+</ol>
+<p>\(
+I=\frac{1}{\sqrt{11}}\left[\tan^{-1}\left(\frac{1}{\sqrt{11}}\right)-\tan^{-1}\left(-\frac{1}{\sqrt{11}}\right)\right]
+\)</p>
+<ol>
+<li>Using the properties of the arctangent function, we can rewrite the integral as:</li>
+</ol>
+<p>\(
+I=\frac{1}{\sqrt{11}} \ln\left(\frac{\sqrt{11}+1}{\sqrt{10}}\right)
+\)</p>
+<ol>
+<li>From this result, we have \(\alpha=\sqrt{11}\) and \(\beta=\sqrt{10}\). Now, we can find \(\alpha^4 - \beta^4\):</li>
+</ol>
+<p>\(
+\alpha^4 - \beta^4 = (11)^2 - (10)^2 = 121 - 100 = 21
+\)</p>
+<p>Thus, \(\alpha^4 - \beta^4 = 21\).</p>
+</li><li><strong>Q3:</strong> We have,
+<br/><br/>\(
+5 f(x)+4 f\left(\frac{1}{x}\right)=\frac{1}{x}+3, x&gt;0
+\) ..........(i)
+<br/><br/>On replacing \(x\) by \(\frac{1}{x}\) in (i), we get
+<br/><br/>\(
+5 f\left(\frac{1}{x}\right)+4 f(x)=x+3
+\) ..........(ii)
+<br/><br/>Now, using Eq. (i) \(\times 5-\) (ii) \(\times 4\), we get
+<br/><br/>\(
+\begin{aligned}
+&amp; 25 f(x)-16 f(x)  =\left(\frac{5}{x}+15\right)-(4 x+12) \\\\
+&amp;\Rightarrow 9 f(x)  =\frac{5}{x}-4 x+3 \\\\
+&amp;\Rightarrow f(x)  =\frac{1}{9}\left(\frac{5}{x}-4 x+3\right) ...........(iii)
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+\therefore \quad &amp; 18 \int_1^2 f(x) d x=18 \int_1^2 \frac{1}{9}\left(\frac{5}{x}-4 x+3\right) d x  \text { [Using Eq. (iii)] }\\\\
+= &amp; 2 \int_1^2\left(\frac{5}{x}-4 x+3\right) d x
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; =2\left[5 \log _e x-4\left(\frac{x^2}{2}\right)+3 x\right]_1^2 \\\\
+&amp; =2\left[\left(5 \log _e 2-2(2)^2+3(2)\right)-\left(5 \log 1-2(1)^2+3(1)\right)\right] \\\\
+&amp; =2\left[5 \log _e 2-8+6+2-3\right] [\because \log 1=0]\\\\
+&amp; =10 \log _e 2-6
+\end{aligned}
+\)</li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>If [t] denotes the greatest integer \(\le \mathrm{t}\), then the value of \({{3(e - 1)} \over e}\int\limits_1^2 {{x^2}{e^{[x] + [{x^3}]}}dx} \) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\mathrm{e^8-e}\]</li>
+<li class="c8">\[\mathrm{e^7-1}\]</li>
+<li class="c8">\[\mathrm{e^9-e}\]</li>
+<li class="c8">\[\mathrm{e^8-1}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(f(x) = x + {a \over {{\pi ^2} - 4}}\sin x + {b \over {{\pi ^2} - 4}}\cos x,x \in R\) be a function which<br/><br/> satisfies \(f(x) = x + \int\limits_0^{\pi /2} {\sin (x + y)f(y)dy} \). then \((a+b)\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[ - 2\pi (\pi  + 2)\]</li>
+<li class="c8">\[ - \pi (\pi  - 2)\]</li>
+<li class="c8">\[ - \pi (\pi  + 2)\]</li>
+<li class="c8">\[ - 2\pi (\pi  - 2)\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>If \(f: \mathbb{R} \rightarrow \mathbb{R}\) be a continuous function satisfying \(\int_\limits{0}^{\frac{\pi}{2}} f(\sin 2 x) \sin x d x+\alpha \int_\limits{0}^{\frac{\pi}{4}} f(\cos 2 x) \cos x d x=0\), then the value of \(\alpha\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[-\sqrt{3}\]</li>
+<li class="c8">\[\sqrt{2}\]</li>
+<li class="c8">\[-\sqrt{2}\]</li>
+<li class="c8">\[\sqrt{3}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Let the function \(f:[0,2] \rightarrow \mathbb{R}\) be defined as</p>
+<p>\(f(x)= \begin{cases}e^{\min \left\{x^{2}, x-[x]\right\},} &amp; x \in[0,1) \\ e^{\left[x-\log _{e} x\right]}, &amp; x \in[1,2]\end{cases}\)</p>
+<p>where \([t]\) denotes the greatest integer less than or equal to \(t\). Then the value of the integral \(\int_\limits{0}^{2} x f(x) d x\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[2 e-1\]</li>
+<li class="c8">\[2 e-\frac{1}{2}\]</li>
+<li class="c8">\[1+\frac{3 e}{2}\]</li>
+<li class="c8">\[(e-1)\left(e^{2}+\frac{1}{2}\right)\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>Let \([t]\) denote the greatest integer function. If \(\int_\limits{0}^{2.4}\left[x^{2}\right] d x=\alpha+\beta \sqrt{2}+\gamma \sqrt{3}+\delta \sqrt{5}\), then \(\alpha+\beta+\gamma+\delta\) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>Let \([t]\) denote the greatest integer \(\leq t\). Then \(\frac{2}{\pi} \int_\limits{\pi / 6}^{5 \pi / 6}(8[\operatorname{cosec} x]-5[\cot x]) d x\) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>Let \(f(x)\) be a function satisfying \(f(x)+f(\pi-x)=\pi^{2}, \forall x \in \mathbb{R}\). Then \(\int_\limits{0}^{\pi} f(x) \sin x d x\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\pi^{2}\]</li>
+<li class="c8">\[\frac{\pi^{2}}{2}\]</li>
+<li class="c8">\[2 \pi^{2}\]</li>
+<li class="c8">\[\frac{\pi^{2}}{4}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>\(\int_0^5 {\cos \left( {\pi \left( {x - \left[ {{x \over 2}} \right]} \right)} \right)dx} \),</p>
+<p>where [t] denotes greatest integer less than or equal to t, is equal to:</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[-\]3</li>
+<li class="c8">\[-\]2</li>
+<li class="c8">2</li>
+<li class="c8">0</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>Let [t] denote the greatest integer less than or equal to t. Then, the value of the integral \(\int\limits_0^1 {[ - 8{x^2} + 6x - 1]dx} \) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[-\]1</li>
+<li class="c8">\[{{ - 5} \over 4}\]</li>
+<li class="c8">\[{{\sqrt {17}  - 13} \over 8}\]</li>
+<li class="c8">\[{{\sqrt {17}  - 16} \over 8}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q10.</span>
+</div>
+<div class="c5"><p>Let \(f: \mathbb{R} \rightarrow \mathbb{R}\) be a function defined as</p>
+<p>\(f(x)=a \sin \left(\frac{\pi[x]}{2}\right)+[2-x], a \in \mathbb{R}\) where \([t]\) is the greatest integer less than or equal to \(t\). If \(\mathop {\lim }\limits_{x \to -1 } f(x)\) exists, then the value of \(\int\limits_{0}^{4} f(x) d x\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[-\]1</li>
+<li class="c8">\[-\]2</li>
+<li class="c8">1</li>
+<li class="c8">2</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q11.</span>
+</div>
+<div class="c5"><p>\(\int\limits_{0}^{2}\left(\left|2 x^{2}-3 x\right|+\left[x-\frac{1}{2}\right]\right) \mathrm{d} x\), where [t] is the greatest integer function, is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{7}{6}\]</li>
+<li class="c8">\[\frac{19}{12}\]</li>
+<li class="c8">\[\frac{31}{12}\]</li>
+<li class="c8">\[\frac{3}{2}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q12.</span>
+</div>
+<div class="c5"><p>Let \(f(x)=\min \{[x-1],[x-2], \ldots,[x-10]\}\) where [t] denotes the greatest integer \(\leq \mathrm{t}\). Then \(\int\limits_{0}^{10} f(x) \mathrm{d} x+\int\limits_{0}^{10}(f(x))^{2} \mathrm{~d} x+\int\limits_{0}^{10}|f(x)| \mathrm{d} x\) is equal to ________________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q13.</span>
+</div>
+<div class="c5"><p>If \([t]\) denotes the greatest integer \(\leq t\), then the value of \(\int_{0}^{1}\left[2 x-\left|3 x^{2}-5 x+2\right|+1\right] \mathrm{d} x\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{\sqrt{37}+\sqrt{13}-4}{6}\]</li>
+<li class="c8">\[\frac{\sqrt{37}-\sqrt{13}-4}{6}\]</li>
+<li class="c8">\[\frac{-\sqrt{37}-\sqrt{13}+4}{6}\]</li>
+<li class="c8">\[\frac{-\sqrt{37}+\sqrt{13}+4}{6}\]</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>A</strong></li><li>Q3: <strong>C</strong></li><li>Q4: <strong>B</strong></li><li>Q5: <strong>0</strong></li><li>Q6: <strong>2</strong></li><li>Q7: <strong>A</strong></li><li>Q8: <strong>D</strong></li><li>Q9: <strong>C</strong></li><li>Q10: <strong>B</strong></li><li>Q11: <strong>B</strong></li><li>Q12: <strong>1</strong></li><li>Q13: <strong>A</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(I = {{3(e - 1)} \over e}\int_1^2 {{x^2}{e^{[x] + [{x^3}]}}dx} \)</p>
+<p>\( = {{3(e - 1)} \over e}\int_1^2 {{x^2}{e^{1 + [{x^3}]}}dx} \) (\(\because\) \([x] = 1\) when \(x \in (12)\))</p>
+<p>\( = 3(e - 1)\int_1^2 {{x^2}{e^{[{x^3}]}}dx} \)</p>
+<p>Let \({x^3} = t\)</p>
+<p>\(I = (e - 1)\int_1^8 {{e^{[t]}}dt} \)</p>
+<p>\( = ({e^{ - 1}})({e^1} + {e^2} + {e^3}\, + \,...\, + \,{e^7})\)</p>
+<p>\( = (e - 1)e{{({e^7} - 1)} \over {e - 1}}\)</p>
+<p>\( = {e^8} - e\)</p></li><li><strong>Q2:</strong> \(f(x)=x+\int\limits_{0}^{\pi / 2}(\sin x \cos y+\cos x \sin y) f(y) d y\)
+<br/><br/>
+\(f(x)=x+\int\limits_{0}^{\pi / 2}((\cos y f(y) d y) \sin x+(\sin y f(y) d y) \cos x)\quad....(1)\)
+<br/><br/>
+On comparing with
+<br/><br/>
+\(f(x)=x+\frac{a}{\pi^{2}-4} \sin x+\frac{b}{\pi^{2}-4} \cos x, x \in \mathbb{R}\) then
+<br/><br/>
+\(\Rightarrow \frac{a}{\pi^{2}-4}=\int_{0}^{\pi / 2} \cos y f(y) d y \quad....(2)\)
+<br/><br/>
+\(\Rightarrow \frac{b}{\pi^{2}-4}=\int_{0}^{\pi / 2} \sin y f(y) d y \quad....(3)\)
+<br/><br/>
+<b>Add (2) and (3)</b>
+<br/><br/>
+\(\frac{a+b}{\pi^{2}-4}=\int_{0}^{\pi / 2}(\sin y+\cos y) f(y) d y \quad....(4)\)
+<br/><br/>
+\(\frac{a+b}{\pi^{2}-4}=\int_{0}^{\pi / 2}(\sin y+\cos y) f\left(\frac{\pi}{2}-y\right) d y\quad....(5)\)
+<br/><br/>
+<b>Add (4) and (5)</b>
+<br/><br/>
+\(\frac{2(a+b)}{\pi^{2}-4}=\int_{0}^{\pi / 2}(\sin y+\cos y)\left(\frac{\pi}{2}+\frac{(a+b)}{\pi^{2}-4}(\sin y+\cos y)\right) d y\)
+<br/><br/>
+\(=\pi+\frac{a+b}{\pi^{2}-4}\left(\frac{\pi}{2}+1\right)\)
+<br/><br/>
+\((a+b)=-2 \pi(\pi+2)\)</li><li><strong>Q3:</strong> The integral equation is given by :
+
+<br/><br/>\(\int\limits_0^{\frac{\pi}{2}} f(\sin 2x) \sin x \, dx + \alpha \int\limits_0^{\frac{\pi}{4}} f(\cos 2x) \cos x \, dx = 0\)
+
+<br/><br/>Step 1 : Break the first integral into two parts :
+
+<br/><br/>\(I = \int\limits_0^{\frac{\pi}{4}} f(\sin 2x) \sin x \, dx + \int\limits_{\frac{\pi}{4}}^{\frac{\pi}{2}} f(\sin 2x) \sin x \, dx + \alpha \int\limits_0^{\frac{\pi}{4}} f(\cos 2x) \cos x \, dx\)
+
+<br/><br/>3. Apply the King's property, \(\int\limits_a^b f(x) dx = \int\limits_a^b f(a+b-x) dx\), to the first integral and substitute \(x - \frac{\pi}{4} = t\) in the second integral. 
+
+<br/><br/>This gives :
+<br/><br/>\(
+\int\limits_0^{\frac{\pi}{4}} f(\cos 2x) \sin(\frac{\pi}{4}-x) \, dx + \int\limits_0^{\frac{\pi}{4}} f(\cos 2t) \sin(\frac{\pi}{4}+t) \, dt + \alpha \int\limits_0^{\frac{\pi}{4}} f(\cos 2x) \cos x \, dx = 0
+\)
+
+<br/><br/>\(
+\int\limits_0^{\frac{\pi}{4}} f(\cos 2x) [2 \sin \frac{\pi}{4} \cos x + \alpha \cos x] \, dx = 0
+\)
+
+<br/><br/>Then, noticing that \(2 \sin \frac{\pi}{4} = \sqrt{2}\), you can factor out the term \(\cos x\):
+
+<br/><br/>\(
+= (\alpha + \sqrt{2}) \int\limits_0^{\frac{\pi}{4}} f(\cos 2x) \cos x \, dx = 0
+\)
+
+<br/><br/>In order for this equation to hold true, either the integral of the function is zero, or the term outside the integral is zero. Since we have no reason to assume that the integral of the function is zero, we set the term outside the integral to zero, yielding the solution:
+
+<br/><br/>\(
+\alpha + \sqrt{2} = 0 \Rightarrow \alpha = -\sqrt{2}
+\)
+
+<br/><br/>So, the correct answer to the original problem is \(\alpha = -\sqrt{2}\), which corresponds to Option C.</li><li><strong>Q4:</strong> \(
+\begin{aligned}
+\operatorname{Minimum}\left\{\mathrm{x}^2,\{\mathrm{x}\}\right\} &amp; =\mathrm{x}^2 ; \mathrm{x} \in[0,1) \\\\
+{\left[\mathrm{x}-\log _{\mathrm{e}} \mathrm{x}\right] } &amp; =1 ; \mathrm{x} \in[1,2)
+\end{aligned}
+\)
+<br/><br/>\(
+\therefore \mathrm{f}(\mathrm{x})=\left\{\begin{array}{l}
+\mathrm{e}^{\mathrm{x}^2} ; \mathrm{x} \in[0,1) \\\\
+\mathrm{e} ; \mathrm{x} \in[1,2)
+\end{array}\right.
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \int\limits_0^2 x f(x)=\int\limits_0^1 x \cdot e^{x^2} d x+\int\limits_1^2 x \cdot e d x \\\\
+&amp; x^2=t \Rightarrow 2 x d x=d t
+\end{aligned}
+\)
+<br/><br/>\(
+=\frac{1}{2} \int\limits_0^1 e^t d t+\left.e \frac{x^2}{2}\right|_1 ^2
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; =\frac{1}{2}(\mathrm{e}-1)+\frac{1}{2}(4-1) \mathrm{e} \\\\
+&amp; =2 \mathrm{e}-\frac{1}{2}
+\end{aligned}
+\)</li><li><strong>Q5:</strong> \(
+\begin{aligned}
+\int\limits_0^{2.4}\left[x^2\right] d x &amp; =\int\limits_0^1\left[x^2\right] d x+\int\limits_1^{\sqrt{2}}\left[x^2\right] d x \\\\
+&amp; +\int\limits_{\sqrt{2}}^{\sqrt{3}}\left[x^2\right] d x+\int\limits_{\sqrt{3}}^2\left[x^2\right] d x+\int\limits_2^{\sqrt{5}}\left[x^2\right] d x+\int\limits_{\sqrt{5}}^{2.4}\left[x^2\right] d x
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; =\int_0 0 . d x+\int_1^{\sqrt{2}} 1 \cdot d x+\int_{\sqrt{2}}^{\sqrt{3}} 2 d x+\int_{\sqrt{3}}^2 3 d x+\int_2^{\sqrt{5}} 4 d x+\int_{\sqrt{5}}^{2.4} 5 d x \\\\
+&amp; = 0+[x]_1^{\sqrt{2}}+2[x]_{\sqrt{2}}^{\sqrt{3}}+3[x]_{\sqrt{3}}^2+4[x]_2^{\sqrt{5}}+5[x]_{\sqrt{5}}^{2.4} \\\\
+&amp; =\sqrt{2}-1+2 \sqrt{3}-2 \sqrt{2}+6-3 \sqrt{3}+4 \sqrt{5}-8+12-5 \sqrt{5} \\\\
+&amp; =-\sqrt{2}-\sqrt{3}-\sqrt{5}+9 \\\\
+&amp; \therefore \alpha=9, \beta=-1, \gamma=-1, \delta=-1 \\\\
+&amp; \text { So, } \alpha+\beta+\gamma+\delta=9-1-1-1=6
+\end{aligned}
+\)</li><li><strong>Q6:</strong> \(
+\begin{aligned}
+&amp; \text { Let } \mathrm{I}=\frac{2}{\pi} \int\limits_{\frac{\pi}{6}}^{ \frac{5\pi}{6}}\{8[\operatorname{cosec} x]-5[\cot x]\} d x \\\\
+&amp; =\frac{2}{\pi}\left[8 \int\limits_{\frac{\pi}{6}}^{\frac{5 \pi}{6}}[\operatorname{cosec} x] d x-5 \int\limits_{\frac{\pi}{6}}^{\frac{5 \pi}{6}}[\cot x] d x\right]
+\end{aligned}
+\)
+<br/><br/>\(
+\left.\begin{array}{r}
+=\frac{2}{\pi}\left[8 \int\limits_{\pi / 6}^{5 \pi / 6} d x-5\left\{\int\limits_{\pi / 6}^{\pi / 4} d x+\int\limits_{\pi / 4}^{\pi / 2} 0 . d x+\int\limits_{\pi / 2}^{3 \pi / 4}(-1) d x+\right.\right.
+\left.\left.+\int\limits_{3 \pi / 4}^{5 \pi / 6}(-2) d x\right\}\right]
+\end{array}\right]
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; =\frac{2}{\pi}\left[8 \times\left(\frac{5 \pi}{6} - \frac{\pi}{6}\right)-5\left\{\left(\frac{\pi}{4}-\frac{\pi}{6}\right)-\left(\frac{3 \pi}{4}-\frac{\pi}{2}\right)\right\}\right.\left.-2\left(\frac{5 \pi}{6}-\frac{3 \pi}{4}\right)\right] \\\\
+&amp; =\frac{2}{\pi}\left[\frac{16 \pi}{3}+\frac{5 \pi}{3}\right]=14
+\end{aligned}
+\)</li><li><strong>Q7:</strong> Let \(I=\int\limits_0^\pi f(x) \sin x d x\) ..........(i)
+<br/><br/>\(
+\begin{aligned}
+&amp; =\int\limits_0^\pi f(\pi-x) \sin (\pi-x) d x \\\\
+&amp; =\int\limits_0^\pi f(\pi-x) \sin x d x ........(ii)
+\end{aligned}
+\)
+<br/><br/>On adding Equations (i) and (ii), we get
+<br/><br/>\(
+\begin{aligned}
+&amp; 2 I=\int\limits_0^\pi[f(x)+f(\pi-x)] \sin x d x \\\\
+&amp; \Rightarrow 2 I=\int\limits_0^\pi \pi^2 \sin x d x=\pi^2 \int\limits_0^\pi \sin x d x \\\\
+&amp; =\pi^2(-\cos x)_0^\pi=-\pi^2(-1-1)=2 \pi^2 \\\\
+&amp; \Rightarrow I=\pi^2
+\end{aligned}
+\)</li><li><strong>Q8:</strong> <p>We know,</p>
+<p>\(\left[ {{x \over 2}} \right]\) is discontinuous at 1, 2, 3, 4 ........</p>
+<p>\(\therefore\) [ x ] is discontinuous at 2, 4, 6, 8 .....</p>
+<p>In between 0 to 5 it is discontinuous at 2 and 4.</p>
+<p>Break the integration into 3 parts</p>
+<p>(1) 0 to 2</p>
+<p>(2) 2 to 4</p>
+<p>(3) 4 to 5</p>
+<p>\(\therefore\) \(\int\limits_0^5 {\cos \left( {\pi \left( {x - \left[ {{x \over 2}} \right]} \right)} \right)dx} \)</p>
+<p>\( = \int\limits_0^2 {\cos \left( {\pi (x - 0)} \right)dx + \int\limits_2^4 {\cos \left( {\pi (x - 1)} \right)dx + \int\limits_4^5 {\cos \left( {\pi (x - 2)} \right)dx} } } \)</p>
+<p>\( = \int\limits_0^2 {\cos \pi x\,dx + \int\limits_2^4 {\cos (\pi x - \pi )dx + \int\limits_4^5 {\cos (\pi x - 2\pi )dx} } } \)</p>
+<p>\( = \int\limits_0^2 {\cos \pi dx - \int\limits_2^4 {\cos \pi x\,dx + \int\limits_4^5 {\cos \pi x\,dx} } } \)</p>
+<p>\( = \left[ {{{\sin \pi x} \over \pi }} \right]_0^2 - \left[ {{{\sin \pi x} \over \pi }} \right]_2^4 + \left[ {{{\sin \pi x} \over \pi }} \right]_4^5\)</p>
+<p>\( = 0 - 0 + 0\)</p>
+<p>\( = 0\)</p></li><li><strong>Q9:</strong> \(\int_{0}^{1}\left[-8 x^{2}+6 x-1\right] d x\)<br/><br/>
+<img alt="JEE Main 2022 (Online) 28th June Morning Shift Mathematics - Definite Integration Question 146 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lc8eip72/1a7f4845-0be6-46f8-ac5d-62ddcb930a44/438942e0-8717-11ed-b3ec-0bde88094e1e/file-1lc8eip73.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lc8eip72/1a7f4845-0be6-46f8-ac5d-62ddcb930a44/438942e0-8717-11ed-b3ec-0bde88094e1e/file-1lc8eip73.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/><br/>
+\(=\int_{0}^{\frac{1}{4}}(-1) d x+\int_{\frac{1}{4}}^{\frac{3}{4}} 0 d x+\int_{\frac{1}{2}}^{\frac{3}{4}}-1 d x+\int_{\frac{3}{4}}^{8}-2 d x+\int_{\frac{3+\sqrt{17}}{8}}^{1}-3 d x\)<br/><br/> \(=-\frac{1}{4}-\frac{1}{4}-2\left(\frac{3+\sqrt{17}}{8}-\frac{3}{4}\right)-3\left(1-\frac{3+\sqrt{17}}{8}\right)\)<br/><br/> \(=\frac{\sqrt{17}-13}{8}\)</li><li><strong>Q10:</strong> <p>\(f(x) = a\sin \left( {{{\pi [x]} \over 2}} \right) + [2 - x]\,a \in R\)</p>
+<p>Now,</p>
+<p>\(\because\) \(\mathop {\lim }\limits_{x \to  - 1} f(x)\) exist</p>
+<p>\(\therefore\) \(\mathop {\lim }\limits_{x \to  - {1^ - }} f(x) = \mathop {\lim }\limits_{x \to  - {1^ + }} f(x)\)</p>
+<p>\( \Rightarrow a\sin \left( {{{ - 2\pi } \over 2}} \right) + 3 = a\sin \left( {{{ - \pi } \over 2}} \right) + 2\)</p>
+<p>\( \Rightarrow  - a = 1 \Rightarrow a =  - 1\)</p>
+<p>Now, \(\int_0^4 {f(x)dx = \int_0^4 {\left( { - \sin \left( {{{\pi [x]} \over 2}} \right) + [2 - x]} \right)dx} } \)</p>
+<p>\( = \int_0^1 {1dx + \int_1^2 { - 1dx + \int_2^3 { - 1dx + \int_3^4 {(1 - 2)dx} } } } \)</p>
+<p>\( = 1 - 1 - 1 - 1 =  - 2\)</p></li><li><strong>Q11:</strong> <p>\(\int\limits_0^2 {|2{x^2} - 3x|dx + \int\limits_0^2 {\left[ {x - {1 \over 2}} \right]dx} } \)</p>
+<p>\( = \int\limits_0^{3/2} {(3x - 2{x^2})dx + \int\limits_{3/2}^2 {(2{x^2} - 3x)dx + \int\limits_0^{1/2} { - 1dx + \int\limits_{1/2}^{3/2} {0\,dx + \int\limits_{3/2}^2 {1dx} } } } } \)</p>
+<p>\( = \left. {\left( {{{3{x^2}} \over 2} - {{2{x^3}} \over 3}} \right)} \right|_0^{3/2} + \left. {\left( {{{2{x^3}} \over 3} - {{3{x^2}} \over 2}} \right)} \right|_{3/2}^2 - {1 \over 2} + {1 \over 2}\)</p>
+<p>\( = \left( {{{27} \over 8} - {{27} \over {12}}} \right) + \left( {{{16} \over 3} - 6 - {{27} \over {12}} + {{27} \over 8}} \right)\)</p>
+<p>\( = {{19} \over {12}}\)</p></li><li><strong>Q12:</strong> <p>\(\because\) \(f(x) = \min \,\{ [x - 1],[x - 2],\,......,\,[x - 10]\}  = [x - 10]\)</p>
+<p>Also \(|f(x)| = \left\{ {\matrix{
+   { - f(x),} &amp; {if\,x \le 10}  \cr 
+   {f(x),} &amp; {if\,x \ge 10}  \cr 
+
+ } } \right.\)</p>
+<p>\(\therefore\) \(\int\limits_0^{10} {f(x)dx + \int\limits_0^{10} {{{(f(x))}^2}dx + \int\limits_0^{10} {( - f(x))dx} } } \)</p>
+<p>\( = \int\limits_0^{10} {{{(f(x))}^2}dx} \)</p>
+<p>\( = {10^2} + {9^2} + {8^2}\, + \,.....\, + \,{1^2}\)</p>
+<p>\( = {{10 \times 11 \times 21} \over 6} = 385\)</p></li><li><strong>Q13:</strong> <p>\(\int_0^1 {\left[ {2x - |3{x^2} - 5x + 2| + 1} \right]dx} \)</p>
+<p>\(3{x^2} - 5x + 2 = 0\)</p>
+<p>\( \Rightarrow 3{x^2} - 3x - 2x + 2 = 0\)</p>
+<p>\( \Rightarrow 3x(x - 1) - 2(x - 1) = 0\)</p>
+<p>\( \Rightarrow (x - 1)(3x - 2) = 0\)</p>
+<p><img alt="JEE Main 2022 (Online) 29th July Evening Shift Mathematics - Definite Integration Question 107 English Explanation 1" data-orsrc="https://app-content.cdn.examgoal.net/image/1l7e9s1mi/e836d5da-b39f-4776-82f3-0bfd2186d40f/58c699a0-2754-11ed-a077-1f1e3989e798/file-1l7e9s1mj.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l7e9s1mi/e836d5da-b39f-4776-82f3-0bfd2186d40f/58c699a0-2754-11ed-a077-1f1e3989e798/file-1l7e9s1mj.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(\therefore\) In 0 to \({2 \over 3},\,|3{x^2} - 5x + 2| = 3{x^2} - 5x + 2\)</p>
+<p>And in \({2 \over 3}\) to 1, \(|3{x^2} - 5x + 2| =  - (3{x^2} - 5x + 2)\)</p>
+<p>\(\therefore\) \(\int_0^{{2 \over 3}} {\left[ {2x - 3{x^2} + 5x - 2 + 1} \right]dx + \int_{{2 \over 3}}^1 {\left[ {2x + 3{x^2} - 5x + 2 + 1} \right]dx} } \)</p>
+<p>\( = \int_0^{{2 \over 3}} {\left[ { - 3{x^2} + 7x - 1} \right]dx + \int_{{2 \over 3}}^1 {\left[ {3{x^2} - 3x + 3} \right]dx} } \)</p>
+<p>Now, let \(f(x) =  - 3{x^2} + 7x - 1\)</p>
+<p>\( \Rightarrow f'(x) =  - 6x + 7\)</p>
+<p>\( =  - 6\left( {x - {7 \over 6}} \right)\)</p>
+<p><img alt="JEE Main 2022 (Online) 29th July Evening Shift Mathematics - Definite Integration Question 107 English Explanation 2" data-orsrc="https://app-content.cdn.examgoal.net/image/1l7e9ullv/94ab05fd-e1dc-4b97-860b-aead321779c9/9fd49a40-2754-11ed-a077-1f1e3989e798/file-1l7e9ullw.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l7e9ullv/94ab05fd-e1dc-4b97-860b-aead321779c9/9fd49a40-2754-11ed-a077-1f1e3989e798/file-1l7e9ullw.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(f(0) =  - 1\)</p>
+<p>\(f\left( {{2 \over 3}} \right) =  - 3 \times {4 \over 9} + {{14} \over 3} - 1\)</p>
+<p>\( = {7 \over 3} = 2.33\)</p>
+<p>\(\therefore\) Range of \(f(x) = \left[ { - 1,{7 \over 3}} \right]\)</p>
+<p>Integer value between \( - 1\) to \({7 \over 3} =  - 1,0,1,2,{7 \over 3}\)</p>
+<p>When \(f(x) =  - 1\)</p>
+<p>\( \Rightarrow  - 3{x^2} + 7x - 1 =  - 1\)</p>
+<p>\( \Rightarrow 3{x^2} - 7x = 0\)</p>
+<p>\( \Rightarrow x(3x - 7) = 0\)</p>
+<p>\( \Rightarrow x = 0,{7 \over 3}\) (not possible as \({7 \over 3} \notin (0,2)\))</p>
+<p>When \(f(x) = 0\)</p>
+<p>\( \Rightarrow  - 3{x^2} + 7x - 1 = 0\)</p>
+<p>\( \Rightarrow 3{x^2} - 7x + 1 = 0\)</p>
+<p>\( \Rightarrow x = {{7\, \pm \,\sqrt {49 - 12} } \over 6}\)</p>
+<p>\( = {{7\, \pm \sqrt {37} } \over 6}\)</p>
+<p>\(\therefore\) \(x = {{7 - \sqrt {37} } \over 6}\)</p>
+<p>When \(f(x) = 1\)</p>
+<p>\( \Rightarrow  - 3{x^2} + 7x - 1 = 1\)</p>
+<p>\( \Rightarrow 3{x^2} - 7x + 2 = 0\)</p>
+<p>\( \Rightarrow x = {{7\, \pm \,\sqrt {49 - 24} } \over 6}\)</p>
+<p>\( = {{7\, \pm \,\sqrt {25} } \over 6}\)</p>
+<p>\( = {{7\, \pm \,5} \over 6}\)</p>
+<p>\( \Rightarrow x = 2,\,{1 \over 3}\)</p>
+<p>When \(f(x) = 2\)</p>
+<p>\( \Rightarrow  - 3{x^2} + 7x - 1 = 2\)</p>
+<p>\( \Rightarrow 3{x^2} - 7x + 3 = 0\)</p>
+<p>\( \Rightarrow x = {{7\, \pm \,\sqrt {49 - 36} } \over 6}\)</p>
+<p>\( = {{7\, \pm \,\sqrt {13} } \over 6}\)</p>
+<p>\(\therefore\) \(x = {{7\, - \sqrt {13} } \over 6}\)</p>
+<p>\(\therefore\) Possible values of \(x = 0,\,{{7\, - \,\sqrt {37} } \over 6},{1 \over 3},{{7\, - \,\sqrt {13} } \over 6},{2 \over 3}\)</p>
+<p>\(\therefore\) \(\int_0^{{2 \over 3}} {\left[ { - 3{x^2} + 7x - 1} \right]dx} \)</p>
+<p>\( = \int_0^{{{7\, - \,\sqrt {37} } \over 6}} {( - 1)dx + \int_{{{7\, - \,\sqrt {37} } \over 6}}^{{1 \over 3}} {0\,dx + \int_{{1 \over 3}}^{{{7\, - \,\sqrt {13} } \over 6}} {(1)\,dx + \int_{{{7\, - \,\sqrt {13} } \over 6}}^{{2 \over 3}} {2\,dx} } } } \)</p>
+<p>\( = {{ - 7\, + \,\sqrt {37} } \over 6} + 0 + {{7\, - \,\sqrt {13} } \over 6} - {1 \over 3} + 2\left[ {{2 \over 3} - {{7\, - \,\sqrt {13} } \over 6}} \right]\)</p>
+<p>\( = {{ - 7 + \sqrt {37}  + 7 - \sqrt {13}  - 2 + 8 - 14 + 2\sqrt {13} } \over 6}\)</p>
+<p>\( = {{\sqrt {37}  + \sqrt {13}  - 8} \over 6}\)</p>
+<p>Now, \(\int_{{2 \over 3}}^1 {\left[ {3{x^2} - 3x + 3} \right]dx} \)</p>
+<p>Let \(f(x) = 3{x^2} - 3x + 3\)</p>
+<p>\(f'(x) = 6x - 3 = 3(2x - 1)\)</p>
+<p>\(f'(x) = 0 \Rightarrow 2x - 1 = 0 \Rightarrow x = {1 \over 2}\)</p>
+<p><img alt="JEE Main 2022 (Online) 29th July Evening Shift Mathematics - Definite Integration Question 107 English Explanation 3" data-orsrc="https://app-content.cdn.examgoal.net/image/1l7e9vv1e/90dc8535-185a-41da-a8c1-52842238a21e/c2ecac20-2754-11ed-a077-1f1e3989e798/file-1l7e9vv1f.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l7e9vv1e/90dc8535-185a-41da-a8c1-52842238a21e/c2ecac20-2754-11ed-a077-1f1e3989e798/file-1l7e9vv1f.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(f\left( {{2 \over 3}} \right) = 3\left( {{4 \over 9} - {2 \over 3} + 1} \right)\)</p>
+<p>\( = {7 \over 3} = 2.3\)</p>
+<p>\(f(1) = 3(1 - 1 + 1)\)</p>
+<p>\( = 3\)</p>
+<p>No integer values present in between \({7 \over 3}\) and 3.</p>
+<p>\(\therefore\) Possible value of \(x = {2 \over 3},\,1\)</p>
+<p>So, integration don't break anywhere.</p>
+<p>\(\therefore\) \(\int_{{2 \over 3}}^1 {\left[ {3{x^2} - 3x + 3} \right]dx} \)</p>
+<p>\( = \int_{{2 \over 3}}^1 {\left[ {2.33} \right]\,dx} \)</p>
+<p>\( = \int_{{2 \over 3}}^1 {2\,dx = 2\left( {1 - {2 \over 3}} \right) = {2 \over 3}} \)</p>
+<p>\(\therefore\) Value of Integration</p>
+<p>\( = {{\sqrt {37}  + \sqrt {13}  - 1} \over 6} + {2 \over 3}\)</p>
+<p>\( = {{\sqrt {37}  + \sqrt {13}  - 8 + 4} \over 6}\)</p>
+<p>\( = {{\sqrt {37}  + \sqrt {13}  - 4} \over 6}\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \(f(x)=\int_\limits0^x g(t) \log _{\mathrm{e}}\left(\frac{1-\mathrm{t}}{1+\mathrm{t}}\right) \mathrm{dt}\), where \(g\) is a continuous odd function.
+If \(\int_{-\pi / 2}^{\pi / 2}\left(f(x)+\frac{x^2 \cos x}{1+\mathrm{e}^x}\right) \mathrm{d} x=\left(\frac{\pi}{\alpha}\right)^2-\alpha\), then \(\alpha\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(f:\left[-\frac{\pi}{2}, \frac{\pi}{2}\right] \rightarrow \mathbf{R}\) be a differentiable function such that \(f(0)=\frac{1}{2}\). If the \(\lim _\limits{x \rightarrow 0} \frac{x \int_0^x f(\mathrm{t}) \mathrm{dt}}{\mathrm{e}^{x^2}-1}=\alpha\), then \(8 \alpha^2\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">4</li>
+<li class="c8">2</li>
+<li class="c8">1</li>
+<li class="c8">16</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let \(f(t) = \int\limits_0^t {{e^{{x^3}}}\left( {{{{x^8}} \over {{{({x^6} + 2{x^3} + 2)}^2}}}} \right)dx} \). If \(f(1) + f'(1) = \alpha e - {1 \over 6}\), then the value of 150\(\alpha\) is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>If \(f(\alpha)=\int\limits_{1}^{\alpha} \frac{\log _{10} \mathrm{t}}{1+\mathrm{t}} \mathrm{dt}, \alpha&gt;0\), then \(f\left(\mathrm{e}^{3}\right)+f\left(\mathrm{e}^{-3}\right)\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">9</li>
+<li class="c8">\[\frac{9}{2}\]</li>
+<li class="c8">\[\frac{9}{\log _{e}(10)}\]</li>
+<li class="c8">\[\frac{9}{2 \log _{e}(10)}\]</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>0</strong></li><li>Q2: <strong>B</strong></li><li>Q3: <strong>0</strong></li><li>Q4: <strong>D</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(f(x)=\int_\limits0^x g(t) \ln \left(\frac{1-t}{1+t}\right) d t\)</p>
+<p>\(f(-x)=\int_\limits0^{-x} g(t) \ln \left(\frac{1-t}{1+t}\right) d t\)</p>
+<p>\(f(-x)=-\int_\limits0^x g(-y) \ln \left(\frac{1+y}{1-y}\right) d y\)</p>
+<p>\(=-\int_\limits0^x g(y) \ln \left(\frac{1-y}{1+y}\right) d y\) (g is odd)</p>
+<p>\(f(-x)=-f(x) \Rightarrow f\) is also odd</p>
+<p>Now,</p>
+<p>\(\begin{aligned}
+&amp; I=\int_\limits{-\pi / 2}^{\pi / 2}\left(f(x)+\frac{x^2 \cos x}{1+e^x}\right) d x \quad \text{... (1)}\\
+&amp; I=\int_\limits{-\pi / 2}^{\pi / 2}\left(f(-x)+\frac{x^2 e^x \cos x}{1+e^x}\right) d x \quad \text{... (2)}\\
+&amp; 2 I=\int_\limits{-\pi / 2}^{\pi / 2} x^2 \cos x d x=2 \int_0^{\pi / 2} x^2 \cos x d x
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; I=\left(x^2 \sin x\right)_0^{\pi / 2}-\int_\limits0^{\pi / 2} 2 x \sin x d x \\
+&amp; =\frac{\pi^2}{4}-2\left(-x \cos x+\int \cos x d x\right)_0^{\pi / 2} \\
+&amp; =\frac{\pi^2}{4}-2(0+1)=\frac{\pi^2}{4}-2 \Rightarrow\left(\frac{\pi}{2}\right)^2-2 \\
+&amp; \therefore \alpha=2
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; \lim _{x \rightarrow 0} \frac{x \int_0^x f(t) d t}{\left(\frac{e^{x^2}-1}{x^2}\right) \times x^2} \\\\
+&amp; \lim _{x \rightarrow 0} \frac{\int_0^x f(t) d t}{x} \quad\left(\lim _{x \rightarrow 0} \frac{e^{x^2}-1}{x^2}=1\right) \\\\
+&amp; =\lim _{x \rightarrow 0} \frac{f(x)}{1} \text { (using L Hospital) } \\\\
+&amp; f(0)=\frac{1}{2} \\\\
+&amp; \alpha=\frac{1}{2} \\\\
+&amp; 8 \alpha^2=2
+\end{aligned}\)</p></li><li><strong>Q3:</strong> <p>Given,</p>
+<p>\(f(t) = \int\limits_0^t {{e^{{x^3}}}\left( {{{{x^8}} \over {{{({x^6} + 2{x^3} + 2)}^2}}}} \right)dx} \)</p>
+<p>\(f'(t) = {e^{{t^3}}}\left( {{{{t^8}} \over {{{({t^6} + 2{t^3} + 2)}^2}}}} \right)\)</p>
+<p>\(\therefore\) \(f'(1) = {e^1}\left( {{1 \over {{{(1 + 2 + 2)}^2}}}} \right)\)</p>
+<p>\( = {e \over {{5^2}}}\)</p>
+<p>Now, \(f(t) = \int\limits_0^t {{e^{{x^3}}}\left( {{{{x^8}} \over {{{({x^6} + 2{x^2} + 2)}^2}}}} \right)dx} \)</p>
+<p>Let \({x^3} = z \Rightarrow 3{x^2}dx = dz\)</p>
+<p>\( = \int\limits_0^{{t^3}} {{e^z}\left( {{{{x^6}\,.\,{x^2}dx} \over {{{({x^6} + 2{x^3} + 2)}^2}}}} \right)} \)</p>
+<p>\( = {1 \over 3}\int\limits_0^{{t^3}} {{e^z}\left( {{{{z^2}dz} \over {{{({z^2} + 2z + 2)}^2}}}} \right)} \)</p>
+<p>\( = {1 \over 3}\int\limits_0^{{t^3}} {{e^z}\left( {{{{z^2} + 2z + 2 - 2z - 2} \over {{{({z^2} + 2z + 2)}^2}}}} \right)} dz\)</p>
+<p>\( = {1 \over 3}\int\limits_0^{{t^3}} {{e^z}\left( {{{{z^2} + 2z + 2} \over {{{({z^2} + 2z + 2)}^2}}} - {{2z + 2} \over {{{({z^2} + 2z + 2)}^2}}}} \right)dz} \)</p>
+<p>\( = {1 \over 3}\int\limits_0^{{t^3}} {{e^z}\left( {{1 \over {{z^2} + 2z + 2}} - {{2z + 2} \over {{{({z^2} + 2z + 2)}^2}}}} \right)dz} \)</p>
+<p>\( = {1 \over 3}\int\limits_0^{{t^3}} {{e^z}\left( {f(z) + f'(z)} \right)dz} \)</p>
+<p>\( = {1 \over 3}\left[ {{e^z}f(z)} \right]_0^{{t^3}}\)</p>
+<p>\( = {1 \over 3}\left[ {{e^z} \times {1 \over {{z^2} + 2z + 2}}} \right]_0^{{t^3}}\)</p>
+<p>\( = {1 \over 3}\left[ {{e^{{t^3}}} \times {1 \over {{t^6} + 2{t^3} + 2}} - {1 \over 2}} \right]\)</p>
+<p>\(\therefore\) \(f(t) = {1 \over 3}\left[ {{{{e^{{t^3}}}} \over {{t^6} + 2{t^3} + 2}} - {1 \over 2}} \right]\)</p>
+<p>So, \(f(1) = {1 \over 3}\left[ {{e \over {1 + 2 + 2}} - {1 \over 2}} \right]\)</p>
+<p>\( = {1 \over 3}\left[ {{e \over 5} - {1 \over 2}} \right]\)</p>
+<p>Given, \(f(1) + f'(1) = \alpha e - {1 \over 6}\)</p>
+<p>\( \Rightarrow {1 \over 3}\left[ {{e \over 5} - {1 \over 2}} \right] + {e \over {25}} = \alpha e - {1 \over 6}\)</p>
+<p>\( \Rightarrow {e \over {15}} - {1 \over 6} + {e \over {25}} = \alpha e - {1 \over 6}\)</p>
+<p>\( \Rightarrow {e \over {15}} + {e \over {25}} = \alpha e\)</p>
+<p>\( \Rightarrow {{10e + 6e} \over {150}} = \alpha e\)</p>
+<p>\( \Rightarrow {{16e} \over {150}} = \alpha e\)</p>
+<p>\( \Rightarrow \alpha  = {{16} \over {150}}\)</p>
+<p>\(\therefore\) \(150\alpha  = 150 \times {{16} \over {150}} = 16\)</p></li><li><strong>Q4:</strong> <p>\(f(\alpha ) = \int_1^\alpha  {{{{{\log }_{10}}t} \over {1 + t}}dt} \) ...... (i)</p>
+<p>\(f\left( {{1 \over \alpha }} \right) = \int_1^{{1 \over \alpha }} {{{{{\log }_{10}}t} \over {1 + t}}dt} \)</p>
+<p>Substituting \(t \to {1 \over p}\)</p>
+<p>\(f\left( {{1 \over \alpha }} \right) = \int_1^\alpha  {{{{{\log }_{10}}\left( {{1 \over p}} \right)} \over {1 + {1 \over p}}}\left( {{{ - 1} \over {{p^2}}}} \right)dp} \)</p>
+<p>\( = \int_1^\alpha  {{{{{\log }_{10}}p} \over {p(p + 1)}}dp = \int_1^\alpha  {\left( {{{{{\log }_{10}}t} \over t} - {{{{\log }_{10}}t} \over {t + 1}}} \right)dt} } \) ....... (ii)</p>
+<p>By (i) + (ii)</p>
+<p>\(f(\alpha ) + f\left( {{1 \over \alpha }} \right) = \int_1^\alpha  {{{{{\log }_{10}}t} \over t}dt = \int_1^\alpha  {{{\ln t} \over t}\,.\,{{\log }_{10}}e\,dt} } \)</p>
+<p>\( = {{{{(\ln \alpha )}^2}} \over {2{{\log }_e}10}}\)</p>
+<p>\(\alpha  = {e^3} \Rightarrow f({e^3}) + f({e^{ - 3}}) = {9 \over {2{{\log }_e}10}}\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>The value of \(\int_\limits{-1}^1 \frac{(1+\sqrt{|x|-x}) e^x+(\sqrt{|x|-x}) e^{-x}}{e^x+e^{-x}} d x\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(1+\frac{2 \sqrt{2}}{3}\)</li>
+<li class="c8">\(1-\frac{2 \sqrt{2}}{3}\)</li>
+<li class="c8">\(2+\frac{2 \sqrt{2}}{3}\)</li>
+<li class="c8">\(3-\frac{2 \sqrt{2}}{3}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The value of the integral \(\int_\limits{-1}^2 \log _e\left(x+\sqrt{x^2+1}\right) d x\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\sqrt{5}-\sqrt{2}+\log _e\left(\frac{7+4 \sqrt{5}}{1+\sqrt{2}}\right)\]
+</li>
+<li class="c8">\[\sqrt{2}-\sqrt{5}+\log _e\left(\frac{7+4 \sqrt{5}}{1+\sqrt{2}}\right)\]
+</li>
+<li class="c8">\[\sqrt{5}-\sqrt{2}+\log _e\left(\frac{9+4 \sqrt{5}}{1+\sqrt{2}}\right)\]
+</li>
+<li class="c8">\[\sqrt{2}-\sqrt{5}+\log _e\left(\frac{9+4 \sqrt{5}}{1+\sqrt{2}}\right)\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>The value of the integral \(\int_\limits{-\log _{e} 2}^{\log _{e} 2} e^{x}\left(\log _{e}\left(e^{x}+\sqrt{1+e^{2 x}}\right)\right) d x\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\log _{e}\left(\frac{(2+\sqrt{5})^{2}}{\sqrt{1+\sqrt{5}}}\right)+\frac{\sqrt{5}}{2}\]</li>
+<li class="c8">\[\log _{e}\left(\frac{\sqrt{2}(2+\sqrt{5})^{2}}{\sqrt{1+\sqrt{5}}}\right)-\frac{\sqrt{5}}{2}\]</li>
+<li class="c8">\[\log _{e}\left(\frac{2(2+\sqrt{5})}{\sqrt{1+\sqrt{5}}}\right)-\frac{\sqrt{5}}{2}\]</li>
+<li class="c8">\[\log _{e}\left(\frac{\sqrt{2}(3-\sqrt{5})^{2}}{\sqrt{1+\sqrt{5}}}\right)+\frac{\sqrt{5}}{2}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>The value of the integral <br><br>\(\int\limits_{ - 2}^2 {{{|{x^3} + x|} \over {({e^{x|x|}} + 1)}}dx} \) is equal to :</br></br></p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">5e<sup>2</sup></li>
+<li class="c8">3e<sup>\[-\]2</sup></li>
+<li class="c8">4</li>
+<li class="c8">6</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>D</strong></li><li>Q3: <strong>B</strong></li><li>Q4: <strong>D</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp; I=\int_{-1}^1 \frac{(1+\sqrt{|x|-x}) e^x+(\sqrt{|x|-x}) e^{-x}}{e^x+e^{-x}} d x \\
+&amp; =\int_0^1 \frac{(1+\sqrt{|x|-x}) e^x+(\sqrt{|x|-x}) e^{-x}}{e^x+e^{-x}}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; +\left(\frac{(1+\sqrt{|x|+x}) e^{-x}+(\sqrt{|x|+x}) e^{-x}}{e^{-x}+e^x}\right) d x \\
+= &amp; \int_0^1 \frac{(1+\sqrt{|x|-x}+\sqrt{|x|+x})\left(e^x+e^{-x}\right)}{e^x+e^{-x}} d x \\
+= &amp; \int_0^1(1+\sqrt{|x|-x}+\sqrt{|x|+x}) d x
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; =\int_0^1(1+\sqrt{2 x}) d x=\left.x\right|_0 ^1+\left.\frac{\sqrt{2} x^{\frac{3}{2}}}{\frac{3}{2}}\right|_0 ^1 \\
+&amp; =1+\frac{2 \sqrt{2}}{3}
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; \int_\limits{-1}^2 \log _e\left(x+\sqrt{x^2+1}\right) d x \\
+&amp; =\left[x \log _e\left(x+\sqrt{x^2+1}\right)\right]_{-1}^2-\int_\limits{-1}^2 \frac{x}{\left(x+\sqrt{x^2+1}\right)}\left(1+\frac{x}{\sqrt{x^2+1}}\right) d x \\
+&amp; =2 \log _2(2+\sqrt{5})+\log _e(\sqrt{2}-1)-\int_\limits{-1}^2 \frac{x}{\sqrt{x^2+1}} d x \\
+&amp; =\log _e\left[(2+\sqrt{5})^2(\sqrt{2}-1)\right]-\left[\sqrt{x^2+1}\right]_{-1}^2 \\
+&amp; =\log _e\left[\frac{9+4 \sqrt{5}}{1+\sqrt{2}}\right]-\sqrt{5}+\sqrt{2} \\
+&amp; =\sqrt{2}-\sqrt{5}+\log _e\left[\frac{9+4 \sqrt{5}}{1+\sqrt{2}}\right]
+\end{aligned}\)</p></li><li><strong>Q3:</strong> \(\int_\limits{-\log _{e} 2}^{\log _{e} 2} e^{x}\left(\log _{e}\left(e^{x}+\sqrt{1+e^{2 x}}\right)\right) d x\)
+<br><br>Let \(e^x=t \Rightarrow e^x d x=d t\)
+<br><br>When, \(x \rightarrow-\log _e 2\), then \(t \rightarrow \frac{1}{2}\)
+<br><br/>When, \(x \rightarrow \log _e 2\), then \(t \rightarrow 2\)
+<br/><br/>\(
+I=\int_\limits{\frac{1}{2}}^2\left[\log _e\left(t+\sqrt{1+t^2}\right)\right] d t
+\) ...........(i)
+<br/><br/>On applying integration by part method in Eq. (i), we get
+<br/><br/>\(
+\begin{aligned}
+&amp; I=\left[t \log _e\left(t+\sqrt{1+t^2}\right)\right]_{1 / 2}^2-\int_{1 / 2}^2 \frac{t}{t+\sqrt{1+t^2}}\left(1+\frac{2 t}{2 \sqrt{1+t^2}}\right) d t \\\\
+&amp; =2 \log _e(2+\sqrt{5})-\frac{1}{2} \log _e\left(\frac{1+\sqrt{5}}{2}\right)-\int_{1 / 2}^2 \frac{t}{\sqrt{1+t^2}} d t
+\end{aligned}
+\)
+<br/><br/>\(
+=\log _e\left(\frac{(2+\sqrt{5})^2}{\left(\frac{1+\sqrt{5}}{2}\right)^{1 / 2}}\right)-\frac{1}{2} \int_{1 / 2}^2 \frac{2 t}{\sqrt{1+t^2}} d t
+\) .............(ii)
+<br/><br/>Let \(\quad I_1=\int_{1 / 2}^2 \frac{2 t}{\sqrt{1+t^2}} d t\)
+<br/><br/>Let \(1+t^2=w\)
+<br/><br/>\(2 t d t=d w\)
+<br/><br/>When, \(t \rightarrow \frac{1}{2}\), then \(w=\frac{5}{4}\)
+<br/><br/>When, \(t \rightarrow 2\), then \(w=5\)
+<br/><br/>\(
+\begin{aligned}
+I_1 &amp; =\int_{5 / 4}^5 \frac{1}{\sqrt{w}} d w \\\\
+&amp; =[2 \sqrt{w}]_{5 / 4}^5 \\\\
+&amp; =2\left[\sqrt{5}-\frac{\sqrt{5}}{2}\right]=\sqrt{5}
+\end{aligned}
+\)
+<br/><br/>On substitute value of \(I_1\) in Eq. (ii), we get
+<br/><br/>\(
+I=\log _e\left(\frac{\sqrt{2}(2+\sqrt{5})^2}{\sqrt{1+\sqrt{5}}}\right)-\frac{\sqrt{5}}{2}
+\)</br></br></br></br></br></li><li><strong>Q4:</strong> <p>\(I = \int\limits_{ - 2}^2 {{{|{x^3} + x|} \over {{e^{x|x|}} + 1}}dx} \) ..... (i)</p>
+<p>\(I = \int\limits_{ - 2}^2 {{{|{x^3} + x|} \over {{e^{ - x|x|}} + 1}}dx} \) ..... (ii)</p>
+<p>\(2I = \int\limits_{ - 2}^2 {|{x^3} + x|dx} \)</p>
+<p>\(2I =2 \int\limits_0^2 {({x^3} + x)dx} \)</p>
+<p>\(I = \int\limits_0^2 {({x^3} + x)dx} \)</p>
+<p>\( = \left. {{{{x^4}} \over 4} + {{{x^2}} \over 2}} \right]_0^2\)</p>
+<p>\( = \left( {{{16} \over 4} + {4 \over 2}} \right) - 0\)</p>
+<p>\( = 4 + 2 = 6\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5">\(4 \int_0^1\left(\frac{1}{\sqrt{3+x^2}+\sqrt{1+x^2}}\right) d x-3 \log _e(\sqrt{3})\) is equal to :
+</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(2-\sqrt{2}-\log _{\mathrm{e}}(1+\sqrt{2})\)
+</li>
+<li class="c8"> \(2+\sqrt{2}+\log _{\mathrm{e}}(1+\sqrt{2})\)
+</li>
+<li class="c8"> \(2+\sqrt{2}-\log _{\mathrm{e}}(1+\sqrt{2})\)
+</li>
+<li class="c8"> \(2-\sqrt{2}+\log _e(1+\sqrt{2})\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5">If \(\int\limits_{-\pi / 2}^{\pi / 2} \frac{8 \sqrt{2} \cos x \mathrm{~d} x}{\left(1+\mathrm{e}^{\sin x}\right)\left(1+\sin ^4 x\right)}=\alpha \pi+\beta \log _{\mathrm{e}}(3+2 \sqrt{2})\), where \(\alpha, \beta\) are integers, then \(\alpha^2+\beta^2\) equals :</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5">If \(\int\limits_0^1 \frac{1}{\sqrt{3+x}+\sqrt{1+x}} \mathrm{~d} x=\mathrm{a}+\mathrm{b} \sqrt{2}+\mathrm{c} \sqrt{3}\), where \(\mathrm{a}, \mathrm{b}, \mathrm{c}\) are rational numbers, then \(2 \mathrm{a}+3 \mathrm{~b}-4 \mathrm{c}\) is equal to :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">10</li>
+<li class="c8">7</li>
+<li class="c8">4</li>
+<li class="c8">8</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>If \(\int_0^{\frac{\pi}{4}} \frac{\sin ^2 x}{1+\sin x \cos x} \mathrm{~d} x=\frac{1}{\mathrm{a}} \log _{\mathrm{e}}\left(\frac{\mathrm{a}}{3}\right)+\frac{\pi}{\mathrm{b} \sqrt{3}}\), where \(\mathrm{a}, \mathrm{b} \in \mathrm{N}\), then \(\mathrm{a}+\mathrm{b}\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>2</strong></li><li>Q3: <strong>D</strong></li><li>Q4: <strong>0</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp; I=4 \int_0^1 \frac{1}{\sqrt{3+x^2}+\sqrt{1+x^2}} d x \\
+&amp; =2 \int_0^1 \sqrt{3+x^2}-\sqrt{1+x^2} d x
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; =2\left[\int_0^1 \sqrt{3+x^2} d x-\int_0^1 \sqrt{1+x^2} d x\right] \\
+&amp; =2\left[\left(\frac{1}{2} x \sqrt{x^2+3}+\frac{3}{2} \ln \left|\sqrt{3+x^2}+x\right|\right)-\right. \\
+&amp; \left.\quad\left(\frac{1}{2} x \sqrt{1+x^2}+\frac{1}{2} \ln \left|\sqrt{1+x^2}+x\right|\right)\right]_0^1
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; =2\left[\left(1+\frac{3}{2} \ln 3-\frac{3}{2} \ln \sqrt{3}\right)-\left(\frac{\sqrt{2}}{2}+\frac{1}{2} \ln (\sqrt{2}+1)\right)\right] \\
+&amp; =2\left(1+\frac{3}{4} \ln 3-\frac{1}{\sqrt{2}}-\frac{1}{2} \ln (\sqrt{2}+1)\right) \\
+&amp; =3 \ln \sqrt{3}+2-\sqrt{2}-\ln (\sqrt{2}+1) \\
+&amp; I-3 \ln \sqrt{3}=2-\sqrt{2}-\ln (\sqrt{2}+1)
+\end{aligned}\)</p></li><li><strong>Q2:</strong> \(
+I=\int\limits_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{8 \sqrt{2} \cos x}{\left(1+e^{\sin x}\right)\left(1+\sin ^4 x\right)} d x
+\) ............(1)
+
+<br/><br/>Apply king's rule
+<br/><br/>\(
+I=\int\limits_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{8 \sqrt{2} \cos x\left(e^{\sin x}\right)}{\left(1+e^{\sin x}\right)\left(1+\sin ^4 x\right)} d x
+\) ..........(2)
+<br/><br/>Adding (1) and (2), we get
+<br/><br/>\(
+\begin{aligned}
+&amp; 2 I=\int\limits_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{8 \sqrt{2} \cos x}{1+\sin ^4 x} d x \\\\
+&amp; I=\int\limits_0^{\frac{\pi}{2}} \frac{8 \sqrt{2} \cos x}{1+\sin ^4 x} d x,
+\end{aligned}
+\)
+<br/><br/>Let \(\sin x=t\)
+<br/><br/>\(
+\begin{aligned}
+&amp; I=8 \sqrt{2} \int\limits_0^1 \frac{d t}{1+t^4} \\\\
+&amp; =4 \sqrt{2} \int\limits_0^1 \frac{\left(1+\frac{1}{t^2}\right)-\left(1-\frac{1}{t^2}\right)}{t^2+\frac{1}{t^2}} d t
+\end{aligned}
+\)
+<br/><br/>\(\begin{aligned} &amp; =4 \sqrt{2} \int\limits_0^1 \frac{\left(1+\frac{1}{t^2}\right) d t}{\left(t-\frac{1}{t^2}\right)^2+2}-4 \sqrt{2} \int\limits_0^1 \frac{\left(1-\frac{1}{t^2}\right) d t}{\left(t+\frac{1}{t^2}\right)^2-2} \\\\ &amp; =4 \sqrt{2} \cdot \frac{1}{\sqrt{2}}\left(\left.\tan ^{-1} \frac{t-\frac{1}{t}}{\sqrt{2}}\right|_0 ^1-4 \sqrt{2} \cdot \frac{1}{2 \sqrt{2}}\left[\log \left|\frac{t+\frac{1}{t}-\sqrt{2}}{t+\frac{1}{t}+\sqrt{2}}\right|\right]_0^1\right. \\\\ &amp; =2 \pi-2 \log \left|\frac{2-\sqrt{2}}{2+\sqrt{2}}\right|\end{aligned}\)
+<br/><br/>\(\begin{aligned} &amp; =2 \pi+2 \log (3+2 \sqrt{2})=\alpha \pi+\beta \log _e(3+2 \sqrt{2}) \\\\ &amp; \Rightarrow \alpha=2, \beta=2 \\\\ &amp; \Rightarrow \alpha^2+\beta^2=8\end{aligned}\)</li><li><strong>Q3:</strong> <p>\(\begin{aligned}
+&amp; \int_\limits0^1 \frac{1}{\sqrt{3+x}+\sqrt{1+x}} d x=\int_\limits0^1 \frac{\sqrt{3+x}-\sqrt{1+x}}{(3+x)-(1+x)} d x \\
+&amp; \frac{1}{2}\left[\int_\limits0^1 \sqrt{3+x} d x-\int_\limits0^1(\sqrt{1+x}) d x\right]
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \frac{1}{2}\left[2 \frac{(3+x)^{\frac{3}{2}}}{3}-\frac{2(1+x)^{\frac{3}{2}}}{3}\right]_0^1 \\
+&amp; \frac{1}{2}\left[\frac{2}{3}(8-3 \sqrt{3})-\frac{2}{3}\left(2^{\frac{3}{2}}-1\right)\right] \\
+&amp; \frac{1}{3}[8-3 \sqrt{3}-2 \sqrt{2}+1] \\
+&amp; =3-\sqrt{3}-\frac{2}{3} \sqrt{2}=a+b \sqrt{2}+c \sqrt{3} \\
+&amp; a=3, b=-\frac{2}{3}, c=-1 \\
+&amp; 2 a+3 b-4 c=6-2+4=8
+\end{aligned}\)</p></li><li><strong>Q4:</strong> <p>\(I=\int_\limits0^{\frac{\pi}{4}} \frac{\sin ^2 x}{1+\sin x \cos x} d x=\int_\limits0^{\frac{\pi}{4}} \frac{\sin ^2 x}{\sin ^2 x+\cos ^2 x+\sin x \cos x} d x\)
+<p>\(I=\int_\limits0^{\frac{\pi}{4}} \frac{\tan ^2 x}{1+\tan x+\tan ^2 x} d x\)</p>
+<p>\(=\int_\limits0^{\frac{\pi}{4}} \frac{\tan x \cdot \sec ^2 x d x}{\left(1+\tan ^2 x\right)\left(1+\tan x+\tan ^2 x\right)}\)</p>
+<p>Let \(\tan x=t\)</p>
+<p>\(\begin{aligned}
+I &amp; =\int_\limits0^1 \frac{t^2}{\left(1+t^2\right)\left(1+t+t^2\right)} d t \\
+&amp; =\int_\limits0^1\left(\frac{x}{1+x^2}-\frac{x}{1+x+x^2}\right) d x
+\end{aligned}\)</p>
+<p>\({1 \over 2}\int\limits_0^1 {{{2x} \over {1 + {x^2}}}dx - \int\limits_0^{} {{{{1 \over 2}(2x + 1) - {1 \over 2}} \over {1 + x + {x^2}}}dx} } \)</p>
+<p>\(\begin{aligned}
+&amp; =\frac{1}{2} \ln 2-\frac{1}{2} \ln 3 \frac{1}{2} \int_\limits0^1 \frac{d x}{\left(x+\frac{1}{2}\right)^2+\frac{3}{4}} \\
+&amp; =\frac{1}{2} \ln \frac{2}{3}+\frac{1}{2} \cdot \frac{2}{\sqrt{3}}\left[\tan ^{-1} \frac{2 x+1}{\sqrt{3}}\right]_0^1 \\
+&amp; =\frac{1}{2} \ln \frac{2}{3}+\frac{1}{\sqrt{3}}\left(\frac{\pi}{3}-\frac{\pi}{6}\right) \\
+&amp; =\frac{1}{2} \ln \frac{2}{3}+\frac{1}{\sqrt{3}} \cdot \frac{\pi}{6} \\
+&amp; \therefore \quad a=2, b=6 \\
+&amp; \therefore \quad a+b=8
+\end{aligned}\)</p></p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>If \(\mathrm{I}=\int_0^{\frac{\pi}{2}} \frac{\sin ^{\frac{3}{2}} x}{\sin ^{\frac{3}{2}} x+\cos ^{\frac{3}{2}} x} \mathrm{~d} x\), then \(\int_0^{2I} \frac{x \sin x \cos x}{\sin ^4 x+\cos ^4 x} \mathrm{~d} x\) equals :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\frac{\pi^2}{12}\)
+</li>
+<li class="c8">\(\frac{\pi^2}{4}\)
+</li>
+<li class="c8">\(\frac{\pi^2}{16}\)
+</li>
+<li class="c8">\(\frac{\pi^2}{8}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The integral \(\int\limits_{-1}^{\frac{3}{2}} \left(| \pi^2 x \sin(\pi x) \right|) dx\) is equal to:</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>\(2 + 3\pi\)</p></li>
+<li class="c8"><p>\(4 + \pi\)</p></li>
+<li class="c8"><p>\(1 + 3\pi\)</p></li>
+<li class="c8"><p>\(3 + 2\pi\)</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>The integral \(\int_0^\pi \frac{(x+3) \sin x}{1+3 \cos ^2 x} d x\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\frac{\pi}{\sqrt{3}}(\pi+1)\)</li>
+<li class="c8">\(\frac{\pi}{3 \sqrt{3}}(\pi+6)\)</li>
+<li class="c8">\(\frac{\pi}{\sqrt{3}}(\pi+2)\)</li>
+<li class="c8">\(\frac{\pi}{2 \sqrt{3}}(\pi+4)\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5">The value of the integral \(\int\limits_0^{\pi / 4} \frac{x \mathrm{~d} x}{\sin ^4(2 x)+\cos ^4(2 x)}\) equals :
+</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\frac{\sqrt{2} \pi^2}{8}\)</li>
+<li class="c8">\(\frac{\sqrt{2} \pi^2}{16}\)</li>
+<li class="c8">\(\frac{\sqrt{2} \pi^2}{32}\)</li>
+<li class="c8">\(\frac{\sqrt{2} \pi^2}{64}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>\(\left|\frac{120}{\pi^3} \int_\limits0^\pi \frac{x^2 \sin x \cos x}{\sin ^4 x+\cos ^4 x} d x\right| \text { is equal to }\) ________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>\(\int_\limits0^{\pi / 4} \frac{\cos ^2 x \sin ^2 x}{\left(\cos ^3 x+\sin ^3 x\right)^2} d x \text { is equal to }\)</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">1/9</li>
+<li class="c8">1/6</li>
+<li class="c8">1/3</li>
+<li class="c8">1/12</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>The value of \(\int_\limits{\frac{\pi}{3}}^{\frac{\pi}{2}} \frac{(2+3 \sin x)}{\sin x(1+\cos x)} d x\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{10}{3}-\sqrt{3}+\log _{e} \sqrt{3}\]</li>
+<li class="c8">\[\frac{7}{2}-\sqrt{3}-\log _{e} \sqrt{3}\]</li>
+<li class="c8">\[\frac{10}{3}-\sqrt{3}-\log _{e} \sqrt{3}\]</li>
+<li class="c8">\[-2+3\sqrt{3}+\log _{e} \sqrt{3}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>The value of the integral <br/><br/>\({{48} \over {{\pi ^4}}}\int\limits_0^\pi  {\left( {{{3\pi {x^2}} \over 2} - {x^3}} \right){{\sin x} \over {1 + {{\cos }^2}x}}dx} \) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>The value of \(\int\limits_0^\pi  {{{{e^{\cos x}}\sin x} \over {(1 + {{\cos }^2}x)({e^{\cos x}} + {e^{ - \cos x}})}}dx} \) is equal to:</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{{{\pi ^2}} \over 4}\]</li>
+<li class="c8">\[{{{\pi ^2}} \over 2}\]</li>
+<li class="c8">\[{\pi  \over 4}\]</li>
+<li class="c8">\[{\pi  \over 2}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q10.</span>
+</div>
+<div class="c5"><p>The value of the integral <br/><br/>\(\int\limits_{ - \pi /2}^{\pi /2} {{{dx} \over {(1 + {e^x})({{\sin }^6}x + {{\cos }^6}x)}}} \) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2\[\pi\]</li>
+<li class="c8">0</li>
+<li class="c8">\[\pi\]</li>
+<li class="c8">\[{\pi  \over 2}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q11.</span>
+</div>
+<div class="c5"><p>\(
+\int\limits_{0}^{20 \pi}(|\sin x|+|\cos x|)^{2} d x \text { is equal to }
+\)</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[10(\pi+4)\]</li>
+<li class="c8">\[10(\pi+2)\]</li>
+<li class="c8">\[20(\pi-2)\]</li>
+<li class="c8">\[20(\pi+2)\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q12.</span>
+</div>
+<div class="c5"><p>The integral \(\int\limits_{0}^{\frac{\pi}{2}} \frac{1}{3+2 \sin x+\cos x} \mathrm{~d} x\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\tan ^{-1}(2)\]</li>
+<li class="c8">\[\tan ^{-1}(2)-\frac{\pi}{4}\]</li>
+<li class="c8">\[\frac{1}{2} \tan ^{-1}(2)-\frac{\pi}{8}\]</li>
+<li class="c8">\[\frac{1}{2}\]</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>C</strong></li><li>Q2: <strong>C</strong></li><li>Q3: <strong>B</strong></li><li>Q4: <strong>C</strong></li><li>Q5: <strong>0</strong></li><li>Q6: <strong>B</strong></li><li>Q7: <strong>A</strong></li><li>Q8: <strong>48</strong></li><li>Q9: <strong>C</strong></li><li>Q10: <strong>C</strong></li><li>Q11: <strong>D</strong></li><li>Q12: <strong>B</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>For I</p>
+<p>Apply king (\(\mathrm{P}-5\)) and add</p>
+<p>\(\begin{aligned}
+&amp; 2 I=\int_0^{\pi / 2} d x=\frac{\pi}{2} \Rightarrow I=\frac{\pi}{4} \\
+&amp; I_2=\int_0^{\pi / 2} \frac{x \sin x \cos x}{\sin ^4 x+\cos ^4 x} d x
+\end{aligned}\)</p>
+<p>Apply king and add</p>
+<p>\(\begin{aligned}
+&amp; \mathrm{I}_2=\frac{\pi}{4} \int_0^{\pi / 2} \frac{\tan \mathrm{xsec}{ }^2 \mathrm{xdx}}{\tan ^4 \mathrm{x}+1} \\
+&amp; \text { put } \tan ^2 \mathrm{x}=\mathrm{t} \\
+&amp; \frac{\pi}{8} \int_0^{\infty} \frac{\mathrm{dt}}{\mathrm{t}^2+1} \\
+&amp; =\frac{\pi}{8} \cdot \frac{\pi}{2}=\frac{\pi^2}{16}
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp;\text { Let, } \mathrm{I}=\pi^2 \int_{-1}^{3 / 2}|\mathrm{x} \sin \pi \mathrm{x}| \mathrm{dx}\\
+&amp;\begin{aligned}
+&amp; =\pi^2\left\{\int_{-1}^1 \mathrm{x} \sin \pi \mathrm{xdx}-\int_1^{3 / 2} \mathrm{x} \sin \pi \mathrm{xdx}\right\} \\
+&amp; =\pi^2\left\{2 \int_0^1 \mathrm{x} \sin \pi \mathrm{xdx}-\int_{-1}^{3 / 2} \mathrm{x} \sin \pi \mathrm{xdx}\right\}
+\end{aligned}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp;\text { Consider }\\
+&amp;\begin{aligned}
+&amp; \int \mathrm{x} \sin \pi \mathrm{xdx} \\
+&amp; -\mathrm{x} \cdot \frac{1}{\pi} \cos \pi \mathrm{x}+\int 1 \cdot \frac{1}{\pi} \cos \pi \mathrm{xdx} \\
+&amp; =--\frac{\mathrm{x}}{\pi} \cos \pi \mathrm{x}+\frac{\sin \pi \mathrm{x}}{\pi^2} \\
+&amp; \mathrm{I}=\pi^2\left\{2\left(-\frac{\mathrm{x}}{\pi} \cos \pi \mathrm{x}+\frac{\sin \pi \mathrm{x}}{\pi^2}\right)_0^1-\left(-\frac{\mathrm{x}}{\pi} \cos \pi \mathrm{x}+\frac{\sin \pi \mathrm{x}}{\pi^2}\right)_1^{3 / 2}\right\} \\
+&amp; =\pi^2\left\{\frac{2}{\pi}-\left(-\frac{1}{\pi^2}-\frac{1}{\pi}\right)\right\} \\
+&amp; =\pi^2\left\{\frac{3}{\pi}+\frac{1}{\pi^2}\right\} \\
+&amp; =3 \pi+1
+\end{aligned}
+\end{aligned}\)</p></li><li><strong>Q3:</strong> <p>\(\begin{aligned}
+&amp; I=\int_0^\pi \frac{(x+3) \sin x}{1+3 \cos ^2 x} d x \quad\text{..... (i)}\\
+&amp; =\int_0^\pi \frac{(\pi-x+3) \sin (\pi-x)}{1+3 \cos ^2(\pi-x)} d x \\
+&amp; =\int_0^\pi \frac{(\pi+3) \sin x-x \sin x}{1+3 \cos ^2 x} d x \quad\text{..... (ii)}
+\end{aligned}\)</p>
+<p>Add (i) &amp; (ii)</p>
+<p>\(2 I=\int_0^\pi \frac{(\pi+6) \sin x}{1+3 \cos ^2 x} d x\)</p>
+<p>Let \(\cos x=t \Rightarrow-\sin x d x=d t\)</p>
+<p>\((\pi+6) \int_1^{-1} \frac{-d t}{\left(1+3 t^2\right)}=\left(\frac{\pi+6}{3}\right) \int_{-1}^1 \frac{d t}{t^2+\left(\frac{1}{\sqrt{3}}\right)^2}\)</p>
+<p>\(\Rightarrow \quad 2 I=\left.\left(\frac{\pi+6}{3}\right) \cdot \frac{1}{\left(\frac{1}{\sqrt{3}}\right)} \cdot \tan ^{-1} \frac{t}{\frac{1}{\sqrt{3}}}\right|_{-1} ^1\)</p>
+<p>\(\begin{aligned}
+&amp; \Rightarrow \quad 2 I=\left(\frac{\pi+6}{\sqrt{3}}\right)\left[\tan ^{-1}(\sqrt{3})-\tan ^{-1}(-\sqrt{3})\right] \\
+&amp;=\left(\frac{\pi+6}{\sqrt{3}}\right) \cdot\left(\frac{\pi}{3}-\left(-\frac{\pi}{3}\right)\right) \\
+&amp;=\left(\frac{\pi+6}{\sqrt{3}}\right) \cdot \frac{2 \pi}{3} \\
+&amp; \Rightarrow \quad I=\frac{\pi(\pi+6)}{3 \sqrt{3}}
+\end{aligned}\)</p></li><li><strong>Q4:</strong> Take \(I=\int\limits_0^{\pi / 4} \frac{x d x}{\sin ^4(2 x)+\cos ^4(2 x)}\)
+<br/><br/>Let \(2 x=t\)
+<br/><br/>\(2 d x=d t\)
+<br/><br/>\(d x=\frac{d t}{2}\)
+<br/><br/>\(\begin{aligned} &amp; I=\int\limits_0^{\pi / 2} \frac{t / 2 \cdot 1 / 2 d t}{\sin ^4 t+\cos ^4 t} \\\\ &amp; I=\frac{1}{4} \int\limits_0^{\pi / 2} \frac{t d t}{\sin ^4 t+\cos ^4 t} \\\\ &amp; =\frac{1}{4} \int\limits_0^{\pi / 2} \frac{\left(\frac{\pi}{2}-t\right) d t}{\sin ^4(\pi / 2-t)+\cos ^4(\pi / 2-t)} \\\\ &amp; =\frac{1}{4} \int\limits_0^{\pi / 2} \frac{\left(\frac{\pi}{2}-t\right)}{\sin ^4 t+\cos ^4 t}\end{aligned}\)
+<br/><br/>\(\begin{aligned} &amp; 2 I=\frac{1}{4} \int\limits_0^{\pi / 2} \frac{\frac{\pi}{2}}{\sin ^4 t+\cos ^4 t} d t \\\\ &amp; 2 I=\frac{\pi}{8} \int\limits_0^{\pi / 2} \frac{d t}{\sin ^4 t+\cos ^4 t} \\\\ &amp; 2 I=\frac{\pi}{8} \int\limits_0^{\pi / 2} \frac{\sec ^4 t}{1+\tan ^4 t} d t\end{aligned}\)
+<br/><br/>\(\begin{aligned} &amp; \text { Put tant }=y \\\\ &amp; \sec ^2 t d t=d y \\\\ &amp; 2 I=\frac{\pi}{8} \int\limits_0^{\infty} \frac{\left(1+y^2\right) d y}{1+y^4} \\\\ &amp; =\frac{\pi}{8} \int\limits_0^{\infty} \frac{1+\frac{1}{y^2}}{y^2+\frac{1}{y^2}-2+2} d y \\\\ &amp; = \frac{\pi}{8} \int\limits_0^{\infty} \frac{\left(1+\frac{1}{y^2}\right) d y}{2+\left(y-\frac{1}{y}\right)^2}\end{aligned}\)
+<br/><br/>\(\begin{aligned} &amp; \text { Put, } y-\frac{1}{y}=4 \\\\ &amp; 2 I=\frac{\pi}{8} \int\limits_{-\infty}^{\infty} \frac{d u}{2+u^2} \\\\ &amp; =\frac{\pi}{8 \sqrt{2}}\left[\tan ^{-1} \frac{y}{\sqrt{2}}\right]_{-\infty}^{\infty} \\\\ &amp; =\frac{\sqrt{2} \pi^2}{32}\end{aligned}\)</li><li><strong>Q5:</strong> <p>\(\begin{aligned}
+&amp; \int_\limits0^\pi \frac{x^2 \sin x \cdot \cos x}{\sin ^4 x+\cos ^4 x} d x \\
+&amp; =\int_\limits0^{\frac{\pi}{2}} \frac{\sin x \cdot \cos x}{\sin ^4 x+\cos ^4 x}\left(x^2-(\pi-x)^2\right) d x \\
+&amp; =\int_\limits0^{\frac{\pi}{2}} \frac{\sin x \cdot \cos x\left(2 \pi x-\pi^2\right)}{\sin ^4 x+\cos ^4 x} \\
+&amp; =2 \pi \int_\limits0^{\frac{\pi}{2}} \frac{x \sin x \cos x}{\sin ^4 x+\cos 4 x} d x-\pi^2 \int_\limits0^{\frac{\pi}{2}} \frac{\sin x \cos x}{\sin ^4 x+\cos 4 x} d x \\
+&amp; =2 \pi \cdot \frac{\pi}{4} \int_\limits0^{\frac{\pi}{2}} \frac{\sin x \cos ^4 x}{\sin ^4 x+\cos ^4 x} d x-\pi^2 \int_\limits0^{\frac{\pi}{2}} \frac{\sin x \cos ^4 x}{\sin ^4 x+\cos ^4 x} d x
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; =-\frac{\pi^2}{2} \int_\limits0^{\frac{\pi}{2}} \frac{\sin x \cos x}{\sin ^4 x+\cos ^4 x} d x \\
+&amp; =-\frac{\pi^2}{2} \int_\limits0^{\frac{\pi}{2}} \frac{\sin x \cos x d x}{1-2 \sin ^2 x \times \cos ^2 x} \\
+&amp; =-\frac{\pi^2}{2} \int_\limits0^{\frac{\pi}{2}} \frac{\sin 2 x}{2-\sin ^2 2 x} d x \\
+&amp; =-\frac{\pi^2}{2} \int_\limits0^{\frac{\pi}{2}} \frac{\sin 2 x}{1+\cos ^2 2 x} d x
+\end{aligned}\)</p>
+<p>Let \(\cos 2 \mathrm{x}=\mathrm{t}\)</p></li><li><strong>Q6:</strong> <p>\(\begin{aligned}
+&amp; \int_\limits0^{\pi / 4} \frac{\cos ^2 x \cdot \sin ^2 x}{\left(\cos ^3 x+\sin ^3 x\right)^2} d x \\
+&amp; =\int_\limits0^{\pi / 4} \frac{\tan ^2 x \cdot \sec ^2 x}{\left(1+\tan ^3 x\right)^2} d x
+\end{aligned}\)</p>
+<p>Let \(\tan x=t\)</p>
+<p>\(\int_\limits0^1 \frac{t^2 d t}{\left(1+t^3\right)^2}\)</p>
+<p>Let \(1+t^3=\mathrm{z}\)</p>
+<p>\(\begin{gathered}
+3 t^2 d t=d z \\
+\frac{1}{3} \int_\limits1^2 \frac{d z}{z^2}=\left.\frac{1}{3}\left(-\frac{1}{z}\right)\right|_1 ^2 \\
+=-\frac{1}{3}\left(\frac{1}{2}-1\right)=\frac{1}{6}\end{gathered}\)</p></li><li><strong>Q7:</strong> Let I = \(\int_\limits{\frac{\pi}{3}}^{\frac{\pi}{2}} \frac{(2+3 \sin x)}{\sin x(1+\cos x)} d x\)
+<br/><br/>\(
+=\int\limits_{\pi / 3}^{\pi / 2} \frac{2}{\sin x(1+\cos x)} d x+\int\limits_{\pi / 3}^{\pi / 2} \frac{3}{1+\cos x} d x
+\)
+<br/><br/>\(
+\begin{aligned}
+=\int\limits_{\pi / 3}^{\pi / 2} \frac{2(1-\cos x)}{\sin x\left(1-\cos ^2 x\right)} &amp; d x +\int\limits_{\pi / 3}^{\pi / 2} \frac{3}{1+\cos x} d x
+\end{aligned}
+\)
+<br/><br/>\(
+=\int\limits_{\pi / 3}^{\pi / 2} \frac{2(1-\cos x)}{\sin ^3 x} d x+\int\limits_{\pi / 3}^{\pi / 2} \frac{3}{2 \cos ^2 \frac{x}{2}} d x
+\)
+<br/><br/>\(
+\begin{array}{r}
+=\int\limits_{\pi / 3}^{\pi / 2} \frac{2}{\sin ^3 x} d x-\int\limits_{\pi / 3}^{\pi / 2} 2 \cot x \operatorname{cosec}^2 x d x 
++\int\limits_{\pi / 3}^{\pi / 2} \frac{3}{2} \sec ^2 \frac{x}{2} d x
+\end{array}
+\)
+<br/><br/>\(
+=2 I_1-2 I_2+\frac{3}{2} I_3
+\)
+<br/><br/>Now, 
+<br/><br/>\(
+ \begin{aligned}
+I_1 &amp; =\int\limits_{\pi / 3}^{\pi / 2} \operatorname{cosec}^3 x d x \\\\
+&amp; =\int\limits_{\pi / 3}^{\pi / 2} \sqrt{1+\cot ^2 x} \operatorname{cosec}^2 x d x
+\end{aligned}
+\)
+<br/><br/>Put \(\cot x=t \Rightarrow-\operatorname{cosec}^2 x d x=d t\)
+<br/><br/>When, \(x=\frac{\pi}{3} \Rightarrow t=\frac{1}{\sqrt{3}} \text { and } x=\frac{\pi}{2} 
+ \Rightarrow t=0\)
+<br/><br/>\(
+\begin{aligned}
+\therefore &amp; I_1=-\int\limits_{\frac{1}{\sqrt{3}}}^0 \sqrt{1+t^2} d t \\\\
+= &amp; \int\limits_0^{\frac{1}{\sqrt{3}}} \sqrt{1+t^2} d t \\\\
+= &amp; {\left[\frac{t}{2} \sqrt{1+t^2}+\frac{1}{2} \log \left[t+\sqrt{1+t^2}\right]\right]_0^{\frac{1}{\sqrt{3}}} } \\\\
+= &amp; \frac{1}{3}+\frac{1}{2} \log \sqrt{3}
+\end{aligned}
+\)
+<br/><br/>\(
+I_2=\int\limits_{\pi / 3}^{\pi / 2} \cot x \operatorname{cosec}^2 x d x
+\)
+<br/><br/>Put \(\cot x=t \Rightarrow \operatorname{cosec}^2 x d x=-d t\)
+<br/><br/>When, \(x=\frac{\pi}{3}\)
+\(\Rightarrow t=\frac{1}{\sqrt{3}}\) and \(x=\frac{\pi}{2} \Rightarrow t=0\)
+<br/><br/>\(
+\therefore \begin{aligned}
+I_2 &amp; =-\int\limits_{\frac{1}{\sqrt{3}}}^0 t d t \\\\
+&amp; =\int\limits_0^{\frac{1}{\sqrt{3}} t} t d t=\left[\frac{t^2}{2}\right]_0^{\frac{1}{\sqrt{3}}}=\frac{1}{6}
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; I_3=\int\limits_{\frac{\pi}{3}}^{\frac{\pi}{2}} \sec ^2 \frac{x}{2} d x \\\\
+= &amp; 2\left(\tan \frac{\pi}{4}-\tan \frac{\pi}{6}\right)=2\left(1-\frac{1}{\sqrt{3}}\right)
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \therefore \quad I=2 I_1-2 I_2+\frac{3}{2} I_3 \\\\
+&amp; =2\left(\frac{1}{3}+\frac{1}{2} \log \sqrt{3}\right)-2\left(\frac{1}{6}\right) +\frac{3}{2}\left(2\left(1-\frac{1}{\sqrt{3}}\right)\right)
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; =\frac{2}{3}+\log \sqrt{3}-\frac{1}{3}+3-\sqrt{3} \\\\
+&amp; =\frac{10}{3}-\sqrt{3}+\log _e \sqrt{3}
+\end{aligned}
+\)</li><li><strong>Q8:</strong> <p>\(I = {{48} \over {{\pi ^4}}}\int_0^\pi  {\left[ {{{\left( {{\pi  \over 2} - x} \right)}^3} - {{3{\pi ^2}} \over 4}\left( {{\pi  \over 2} - x} \right) + {{{\pi ^3}} \over 4}} \right]{{\sin xdx} \over {1 + {{\cos }^2}x}}} \)</p>
+<p>Using \(\int_a^b {f(x)dx = \int_a^b {f(a + b - x)dx} } \)</p>
+<p>\(I = {{48} \over {{\pi ^4}}}\int_0^\pi  {\left[ { - {{\left( {{\pi  \over 2} - x} \right)}^3} + {{3{\pi ^4}} \over 4}\left( {{\pi  \over 2} - x} \right) + {{{\pi ^3}} \over 4}} \right]{{\sin xdx} \over {1 + {{\cos }^2}x}}} \)</p>
+<p>Adding these two equations, we get</p>
+<p>\(2I = {{48} \over {{\pi ^4}}}\int_0^\pi  {{{{\pi ^3}} \over 2}\,.\,{{\sin xdx} \over {1 + {{\cos }^2}x}}} \)</p>
+<p>\( \Rightarrow I = {{12} \over \pi }\left[ { - {{\tan }^{ - 1}}(\cos x)} \right]_0^\pi  = {{12} \over \pi }\,.\,{\pi  \over 2} = 6\)</p></li><li><strong>Q9:</strong> <p>\(\int\limits_0^\pi  {{{{e^{\cos x}}\sin x} \over {\left( {1 + {{\cos }^2}x} \right)\left( {{e^{\cos x}} + {e^{ - \cos x}}} \right)}}dx} \)</p>
+<p>Let \(\cos x = t\)</p>
+<p>\(\sin xdx = dt\)</p>
+<p>\( = \int\limits_1^{ - 1} {{{ - {e^t}dt} \over {\left( {1 + {t^2}} \right)\left( {{e^t} + {e^{ - t}}} \right)}}} \)</p>
+<p>\(I = \int\limits_{ - 1}^1 {{{{e^t}} \over {\left( {1 + {t^2}} \right)\left( {{e^t} + {e^{ - t}}} \right)}}dt} \) ...... (i)</p>
+<p>\(I = \int\limits_{ - 1}^1 {{{{e^{ - t}}} \over {\left( {1 + {t^2}} \right)\left( {{e^{ - t}} + {e^t}} \right)}}dt} \) .... (ii)</p>
+<p>Adding (i) and (ii)</p>
+<p>\(2I = \int\limits_{ - 1}^1 {{{dt} \over {1 + {t^2}}}} \)</p>
+<p>\(2I = \left. {{{\tan }^{ - t}}} \right|_{ - 1}^1\)</p>
+<p>\(2I = {\pi  \over 4} - \left( { - {\pi  \over 4}} \right)\)</p>
+<p>\(2I = {\pi  \over 2}\)</p>
+<p>\(I = {\pi  \over 4}\)</p></li><li><strong>Q10:</strong> <p>\(I = \int\limits_{{{ - \pi } \over 2}}^{{\pi  \over 2}} {{{dx} \over {(1 + {e^x})({{\sin }^6}x + {{\cos }^6}x)}}} \) ...... (i)</p>
+<p>\(I = \int\limits_{{{ - \pi } \over 2}}^{{\pi  \over 2}} {{{dx} \over {(1 + {e^{ - x}})(si{n^6}x + {{\cos }^6}x)}}} \) ..... (ii)</p>
+<p>(i) and (ii)</p>
+<p>From equation (i) &amp; (ii)</p>
+<p>\(2I = \int\limits_{{{ - \pi } \over 2}}^{{\pi  \over 2}} {{{dx} \over {{{\sin }^6}x + {{\cos }^6}x}}} \)</p>
+<p>\( \Rightarrow I = \int\limits_0^{{\pi  \over 2}} {{{dx} \over {{{\sin }^6}x + {{\cos }^6}x}} = \int\limits_0^{{\pi  \over 2}} {{{dx} \over {1 - {3 \over 4}{{\sin }^2}2x}}} } \)</p>
+<p>\( \Rightarrow I = \int\limits_0^{{\pi  \over 2}} {{{4{{\sec }^2}2xdx} \over {4 + {{\tan }^2}2x}} = 2\int\limits_0^{{\pi  \over 4}} {{{4{{\sec }^2}2x} \over {4 + {{\tan }^2}2x}}dx} } \)</p>
+<p>when x = 0, t = 0</p>
+<p>Now, \(\tan 2x = t\)</p>
+<p>when \(x = {\pi  \over 4},\,\,t \to \infty \)</p>
+<p>\(2{\sec ^2}2x\,dx = dt\)</p>
+<p>\(\therefore\) \(I = 2\int\limits_0^\infty  {{{2dt} \over {4 + {t^2}}} = 2\left( {{{\tan }^{ - 1}}{t \over 2}} \right)_0^\infty } \)</p>
+<p>\( = 2{\pi  \over 2} = \pi \)</p></li><li><strong>Q11:</strong> <p>\(I = \int\limits_0^{20\pi } {{{\left( {|\sin x| + |\cos x|} \right)}^2}\,dx} \)</p>
+<p>\( = 20\int\limits_0^\pi  {\left( {1 + |\sin 2x|} \right)\,dx} \)</p>
+<p>\( = 40\int\limits_0^{{\pi  \over 2}} {(1 + \sin 2x)\,dx} \)</p>
+<p>\( = \left. {40\left( {x - {{\cos 2x} \over 2}} \right)} \right|_0^{{\pi  \over 2}}\)</p>
+<p>\( = 40\left( {{\pi  \over 2} + {1 \over 2} + {1 \over 2}} \right) = 20(\pi  + 2)\)</p></li><li><strong>Q12:</strong> <p>\(I = \int\limits_0^{\pi /2} {{1 \over {3 + 2\sin x + \cos x}}dx} \)</p>
+<p>\( = \int\limits_0^{\pi /2} {{{(1 + {{\tan }^2}x/2)dx} \over {3(1 + {{\tan }^2}x/2) + 2(2\tan x/2) + (1 - {{\tan }^2}x/2)}}} \)</p>
+<p>Let \(\tan x/2 = t \Rightarrow {\sec ^2}x/2dx = 2dt\)</p>
+<p>\(I = \int\limits_0^1 {{{2dt} \over {4 + 2{t^2} + 4t}}} \)</p>
+<p>\( = \int\limits_0^1 {{{dt} \over {{t^2} + 2t + 2}} = \int\limits_0^1 {{{dt} \over {{{(t + 1)}^2} + 1}}} } \)</p>
+<p>\( = \left. {{{\tan }^{ - 1}}(t + 1)} \right|_0^1 = {\tan ^{ - 1}}2 - {\pi  \over 4}\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5">Let \(f(x)=\int\limits_0^x \mathrm{t}\left(\mathrm{t}^2-9 \mathrm{t}+20\right) \mathrm{dt}, 1 \leq x \leq 5\). If the range of \(f\) is \([\alpha, \beta]\), then \(4(\alpha+\beta)\) equals :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>253</p></li>
+<li class="c8"><p>157</p></li>
+<li class="c8"><p>154</p></li>
+<li class="c8"><p>125</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The integral \(80 \int\limits_0^{\frac{\pi}{4}}\left(\frac{\sin \theta+\cos \theta}{9+16 \sin 2 \theta}\right) d \theta\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>3 \( \log 4 \)</p></li>
+<li class="c8"><p>4 \( \log 3 \)</p></li>
+<li class="c8"><p>6 \( \log \frac{4}{3} \)</p></li>
+<li class="c8"><p>2 \( \log 3 \)</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>If \( 24 \int\limits_0^{\frac{\pi}{4}} \bigg[\sin \left| 4x - \frac{\pi}{12} \right| + [2 \sin x] \bigg] dx = 2\pi + \alpha \), where \([\cdot]\) denotes the greatest integer function, then \(\alpha\) is equal to ________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5">If \(\lim\limits _{t \rightarrow 0}\left(\int\limits_0^1(3 x+5)^t d x\right)^{\frac{1}{t}}=\frac{\alpha}{5 e}\left(\frac{8}{5}\right)^{\frac{2}{3}}\), then \(\alpha\) is equal to ________________.</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>Let for \(f(x)=7 \tan ^8 x+7 \tan ^6 x-3 \tan ^4 x-3 \tan ^2 x, \quad \mathrm{I}_1=\int_0^{\pi / 4} f(x) \mathrm{d} x\) and \(\mathrm{I}_2=\int_0^{\pi / 4} x f(x) \mathrm{d} x\). Then \(7 \mathrm{I}_1+12 \mathrm{I}_2\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2\(\pi\)</li>
+<li class="c8">1</li>
+<li class="c8">\(\pi\)</li>
+<li class="c8">2</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>Let \(f\) be a real valued continuous function defined on the positive real axis such that \(g(x)=\int\limits_0^x t f(t) d t\). If \(g\left(x^3\right)=x^6+x^7\), then value of \(\sum\limits_{r=1}^{15} f\left(r^3\right)\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>270</p></li>
+<li class="c8"><p>340</p></li>
+<li class="c8"><p>310</p></li>
+<li class="c8"><p>320</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>The value of \(\int_{e^2}^{e^4} \frac{1}{x}\left(\frac{e^{\left(\left(\log _e x\right)^2+1\right)^{-1}}}{e^{\left(\left(\log _e x\right)^2+1\right)^{-1}}+e^{\left(\left(6-\log _e x\right)^2+1\right)^{-1}}}\right) d x\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">1</li>
+<li class="c8">\(\log_e2\)</li>
+<li class="c8">\(e^2\)</li>
+<li class="c8">2</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>If \(I(m, n)=\int_0^1 x^{m-1}(1-x)^{n-1} d x, m, n&gt;0\), then \(I(9,14)+I(10,13)\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(I(9,1)\)
+</li>
+<li class="c8">\(I(1,13)\)
+</li>
+<li class="c8">\(\mathrm{I}(19,27)\)
+</li>
+<li class="c8">\(\mathrm{I}(9,13)\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>If \(\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{96 x^2 \cos ^2 x}{\left(1+e^x\right)} \mathrm{d} x=\pi\left(\alpha \pi^2+\beta\right), \alpha, \beta \in \mathbb{Z}\), then \((\alpha+\beta)^2\) equals</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">196</li>
+<li class="c8">100</li>
+<li class="c8">64</li>
+<li class="c8">144</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q10.</span>
+</div>
+<div class="c5"><p>Let <em>f(x)</em> be a positive function and \(I_{1} = \int\limits_{-\frac{1}{2}}^{1} 2x \, f(2x(1-2x)) \, dx\) and \(I_{2} = \int\limits_{-1}^{2} f(x(1-x)) \, dx\). Then the value of \(\frac{I_{2}}{I_{1}}\) is equal to ________</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>12</p></li>
+<li class="c8"><p>9</p></li>
+<li class="c8"><p>6</p></li>
+<li class="c8"><p>4</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q11.</span>
+</div>
+<div class="c5"><p>Let [.] denote the greatest integer function. If \(\int_\limits0^{e^3}\left[\frac{1}{e^{x-1}}\right] d x=\alpha-\log _e 2\), then \(\alpha^3\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q12.</span>
+</div>
+<div class="c5">Let \((a, b)\) be the point of intersection of the curve \(x^2=2 y\) and the straight line \(y-2 x-6=0\) in the second quadrant. Then the integral \(\mathrm{I}=\int_{\mathrm{a}}^{\mathrm{b}} \frac{9 x^2}{1+5^x} \mathrm{~d} x\) is equal to :
+</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"> 27
+</li>
+<li class="c8"> 18
+</li>
+<li class="c8"> 24
+</li>
+<li class="c8"> 21</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q13.</span>
+</div>
+<div class="c5"><p>Let the domain of the function \(f(x)=\log _2 \log _4 \log _6\left(3+4 x-x^2\right)\) be \((a, b)\). If \(\int_0^{b-a}\left[x^2\right] d x=p-\sqrt{q}-\sqrt{r}, p, q, r \in \mathbb{N}, \operatorname{gcd}(p, q, r)=1\), where \([\cdot]\) is the greatest integer function, then \(p+q+r\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">10</li>
+<li class="c8">11</li>
+<li class="c8">9</li>
+<li class="c8">8</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q14.</span>
+</div>
+<div class="c5">The integral \(\int_0^\pi \frac{8 x d x}{4 \cos ^2 x+\sin ^2 x}\) is equal to
+</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(2 \pi^2\)
+</li>
+<li class="c8"> \(4 \pi^2\)
+</li>
+<li class="c8"> \(\pi^2\)
+</li>
+<li class="c8">\(\frac{3 \pi^2}{2}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q15.</span>
+</div>
+<div class="c5">If \(\int\limits_0^{\frac{\pi}{3}} \cos ^4 x \mathrm{~d} x=\mathrm{a} \pi+\mathrm{b} \sqrt{3}\), where \(\mathrm{a}\) and \(\mathrm{b}\) are rational numbers, then \(9 \mathrm{a}+8 \mathrm{b}\) is equal to :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2</li>
+<li class="c8">1</li>
+<li class="c8">3</li>
+<li class="c8">\(\frac{3}{2}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q16.</span>
+</div>
+<div class="c5">The value of \(\int\limits_0^1\left(2 x^3-3 x^2-x+1\right)^{\frac{1}{3}} \mathrm{~d} x\) is equal to :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">-1</li>
+<li class="c8">2</li>
+<li class="c8">0</li>
+<li class="c8">1</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q17.</span>
+</div>
+<div class="c5">If \((a, b)\) be the orthocentre of the triangle whose vertices are \((1,2),(2,3)\) and \((3,1)\), and \(\mathrm{I}_1=\int\limits_{\mathrm{a}}^{\mathrm{b}} x \sin \left(4 x-x^2\right) \mathrm{d} x, \mathrm{I}_2=\int\limits_{\mathrm{a}}^{\mathrm{b}} \sin \left(4 x-x^2\right) \mathrm{d} x\), then \(36 \frac{\mathrm{I}_1}{\mathrm{I}_2}\) is equal to :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">80</li>
+<li class="c8">72</li>
+<li class="c8">66</li>
+<li class="c8">88</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q18.</span>
+</div>
+<div class="c5"><p>For \(0 &lt; \mathrm{a} &lt; 1\), the value of the integral \(\int_\limits0^\pi \frac{\mathrm{d} x}{1-2 \mathrm{a} \cos x+\mathrm{a}^2}\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{\pi^2}{\pi+a^2}\]
+</li>
+<li class="c8">\[\frac{\pi^2}{\pi-a^2}\]
+</li>
+<li class="c8">\[\frac{\pi}{1-\mathrm{a}^2}\]
+</li>
+<li class="c8">\[\frac{\pi}{1+\mathrm{a}^2}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q19.</span>
+</div>
+<div class="c5"><p>Let \(f, g:(0, \infty) \rightarrow \mathbb{R}\) be two functions defined by \(f(x)=\int\limits_{-x}^x\left(|t|-t^2\right) e^{-t^2} d t\) and \(g(x)=\int\limits_0^{x^2} t^{1 / 2} e^{-t} d t\). Then, the value of \(9\left(f\left(\sqrt{\log _e 9}\right)+g\left(\sqrt{\log _e 9}\right)\right)\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">10</li>
+<li class="c8">9</li>
+<li class="c8">8</li>
+<li class="c8">6</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q20.</span>
+</div>
+<div class="c5"><p>If the integral \(525 \int_\limits0^{\frac{\pi}{2}} \sin 2 x \cos ^{\frac{11}{2}} x\left(1+\operatorname{Cos}^{\frac{5}{2}} x\right)^{\frac{1}{2}} d x\) is equal to \((n \sqrt{2}-64)\), then \(n\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q21.</span>
+</div>
+<div class="c5"><p>Let \(f: \mathbb{R} \rightarrow \mathbb{R}\) be a function defined by \(f(x)=\frac{4^x}{4^x+2}\) and \(M=\int_\limits{f(a)}^{f(1-a)} x \sin ^4(x(1-x)) d x, N=\int_\limits{f(a)}^{f(1-a)} \sin ^4(x(1-x)) d x ; a \neq \frac{1}{2}\). If \(\alpha M=\beta N, \alpha, \beta \in \mathbb{N}\), then the least value of \(\alpha^2+\beta^2\) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q22.</span>
+</div>
+<div class="c5"><p>If the value of the integral \(\int_\limits{-\frac{\pi}{2}}^{\frac{\pi}{2}}\left(\frac{x^2 \cos x}{1+\pi^x}+\frac{1+\sin ^2 x}{1+e^{\sin x^{2123}}}\right) d x=\frac{\pi}{4}(\pi+a)-2\), then the value of \(a\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[-\frac{3}{2}\]
+</li>
+<li class="c8">3</li>
+<li class="c8">\[\frac{3}{2}\]
+</li>
+<li class="c8">2</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q23.</span>
+</div>
+<div class="c5"><p>If \(\int_\limits{\frac{\pi}{6}}^{\frac{\pi}{3}} \sqrt{1-\sin 2 x} d x=\alpha+\beta \sqrt{2}+\gamma \sqrt{3}\), where \(\alpha, \beta\) and \(\gamma\) are rational numbers, then
+\(3 \alpha+4 \beta-\gamma\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q24.</span>
+</div>
+<div class="c5"><p>Let \(f: \mathbb{R} \rightarrow \mathbb{R}\) be a function defined by \(f(x)=\frac{x}{\left(1+x^4\right)^{1 / 4}}\), and \(g(x)=f(f(f(f(x))))\). Then, \(18 \int_0^{\sqrt{2 \sqrt{5}}} x^2 g(x) d x\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">36</li>
+<li class="c8">33</li>
+<li class="c8">39</li>
+<li class="c8">42</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q25.</span>
+</div>
+<div class="c5"><p>Let \(y=f(x)\) be a thrice differentiable function in \((-5,5)\). Let the tangents to the curve \(y=f(x)\) at \((1, f(1))\) and \((3, f(3))\) make angles \(\pi / 6\) and \(\pi / 4\), respectively with positive \(x\)-axis. If \(27 \int_\limits1^3\left(\left(f^{\prime}(t)\right)^2+1\right) f^{\prime \prime}(t) d t=\alpha+\beta \sqrt{3}\) where \(\alpha, \beta\) are integers, then the value of \(\alpha+\beta\) equals</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">26</li>
+<li class="c8">\[-\]16</li>
+<li class="c8">36</li>
+<li class="c8">\[-\]14</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q26.</span>
+</div>
+<div class="c5"><p>Let \(a\) and \(b\) be real constants such that the function \(f\) defined by \(f(x)=\left\{\begin{array}{ll}x^2+3 x+a &amp; , x \leq 1 \\ b x+2 &amp; , x&gt;1\end{array}\right.\) be differentiable on \(\mathbb{R}\). Then, the value of \(\int_\limits{-2}^2 f(x) d x\) equals</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">21</li>
+<li class="c8">19/6</li>
+<li class="c8">17</li>
+<li class="c8">15/6</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q27.</span>
+</div>
+<div class="c5"><p>The value of \(9 \int_\limits0^9\left[\sqrt{\frac{10 x}{x+1}}\right] \mathrm{d} x\), where \([t]\) denotes the greatest integer less than or equal to \(t\), is</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q28.</span>
+</div>
+<div class="c5"><p>The integral \(\int_\limits{1 / 4}^{3 / 4} \cos \left(2 \cot ^{-1} \sqrt{\frac{1-x}{1+x}}\right) d x\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[-1/2\]</li>
+<li class="c8">\[-1/4\]</li>
+<li class="c8">1/4</li>
+<li class="c8">1/2</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q29.</span>
+</div>
+<div class="c5"><p>\(\text { Let } f(x)=\left\{\begin{array}{lr}
+-2, &amp; -2 \leq x \leq 0 \\
+x-2, &amp; 0&lt; x \leq 2
+\end{array} \text { and } \mathrm{h}(x)=f(|x|)+|f(x)| \text {. Then } \int_\limits{-2}^2 \mathrm{~h}(x) \mathrm{d} x\right. \text { is equal to: }\)</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2</li>
+<li class="c8">6</li>
+<li class="c8">4</li>
+<li class="c8">1</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q30.</span>
+</div>
+<div class="c5"><p>If the shortest distance between the lines \(\frac{x+2}{2}=\frac{y+3}{3}=\frac{z-5}{4}\) and \(\frac{x-3}{1}=\frac{y-2}{-3}=\frac{z+4}{2}\) is \(\frac{38}{3 \sqrt{5}} \mathrm{k}\), and \(\int_\limits 0^{\mathrm{k}}\left[x^2\right] \mathrm{d} x=\alpha-\sqrt{\alpha}\), where \([x]\) denotes the greatest integer function, then \(6 \alpha^3\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q31.</span>
+</div>
+<div class="c5"><p>If the value of the integral \(\int\limits_{-1}^1 \frac{\cos \alpha x}{1+3^x} d x\) is \(\frac{2}{\pi}\).Then, a value of \(\alpha\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{\pi}{2}\]
+</li>
+<li class="c8">\[\frac{\pi}{4}\]
+</li>
+<li class="c8">\[\frac{\pi}{3}\]
+</li>
+<li class="c8">\[\frac{\pi}{6}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q32.</span>
+</div>
+<div class="c5"><p>Let \(\int_\limits\alpha^{\log _e 4} \frac{\mathrm{d} x}{\sqrt{\mathrm{e}^x-1}}=\frac{\pi}{6}\). Then \(\mathrm{e}^\alpha\) and \(\mathrm{e}^{-\alpha}\) are the roots of the equation :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[2 x^2-5 x+2=0\]
+</li>
+<li class="c8">\[x^2-2 x-8=0\]
+</li>
+<li class="c8">\[2 x^2-5 x-2=0\]
+</li>
+<li class="c8">\[x^2+2 x-8=0\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q33.</span>
+</div>
+<div class="c5"><p>The value of \(k \in \mathbb{N}\) for which the integral \(I_n=\int_0^1\left(1-x^k\right)^n d x, n \in \mathbb{N}\), satisfies \(147 I_{20}=148 I_{21}\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">8</li>
+<li class="c8">14</li>
+<li class="c8">7</li>
+<li class="c8">10</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q34.</span>
+</div>
+<div class="c5"><p>The integral \(\int_\limits0^{\pi / 4} \frac{136 \sin x}{3 \sin x+5 \cos x} \mathrm{~d} x\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[3 \pi-50 \log _e 2+20 \log _e 5\]
+</li>
+<li class="c8">\[3 \pi-25 \log _e 2+10 \log _e 5\]
+</li>
+<li class="c8">\[3 \pi-10 \log _{\mathrm{e}}(2 \sqrt{2})+10 \log _{\mathrm{e}} 5\]
+</li>
+<li class="c8">\[3 \pi-30 \log _e 2+20 \log _e 5\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q35.</span>
+</div>
+<div class="c5"><p>The value of \(\int_\limits{-\pi}^\pi \frac{2 y(1+\sin y)}{1+\cos ^2 y} d y\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{\pi}{2}\]
+</li>
+<li class="c8">\[\pi^2\]
+</li>
+<li class="c8">\[\frac{\pi^2}{2}\]
+</li>
+<li class="c8">\[2 \pi^2\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q36.</span>
+</div>
+<div class="c5"><p>Let \(\beta(\mathrm{m}, \mathrm{n})=\int_\limits0^1 x^{\mathrm{m}-1}(1-x)^{\mathrm{n}-1} \mathrm{~d} x, \mathrm{~m}, \mathrm{n}&gt;0\). If \(\int_\limits0^1\left(1-x^{10}\right)^{20} \mathrm{~d} x=\mathrm{a} \times \beta(\mathrm{b}, \mathrm{c})\), then \(100(\mathrm{a}+\mathrm{b}+\mathrm{c})\) equals _________.</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2012</li>
+<li class="c8">1021</li>
+<li class="c8">1120</li>
+<li class="c8">2120</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q37.</span>
+</div>
+<div class="c5"><p>If \(f(t)=\int_\limits0^\pi \frac{2 x \mathrm{~d} x}{1-\cos ^2 \mathrm{t} \sin ^2 x}, 0&lt;\mathrm{t}&lt;\pi\), then the value of \(\int_\limits0^{\frac{\pi}{2}} \frac{\pi^2 \mathrm{dt}}{f(\mathrm{t})}\) equals __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q38.</span>
+</div>
+<div class="c5"><p>Let \([t]\) denote the largest integer less than or equal to \(t\). If \(\int_\limits0^3\left(\left[x^2\right]+\left[\frac{x^2}{2}\right]\right) \mathrm{d} x=\mathrm{a}+\mathrm{b} \sqrt{2}-\sqrt{3}-\sqrt{5}+\mathrm{c} \sqrt{6}-\sqrt{7}\), where \(\mathrm{a}, \mathrm{b}, \mathrm{c} \in \mathbf{Z}\), then \(\mathrm{a}+\mathrm{b}+\mathrm{c}\) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q39.</span>
+</div>
+<div class="c5"><p>Let \(r_k=\frac{\int_0^1\left(1-x^7\right)^k d x}{\int_0^1\left(1-x^7\right)^{k+1} d x}, k \in \mathbb{N}\). Then the value of \(\sum_\limits{k=1}^{10} \frac{1}{7\left(r_k-1\right)}\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q40.</span>
+</div>
+<div class="c5"><p>The value of the integral <br/><br/>\(\int\limits_{ - {\pi  \over 4}}^{{\pi  \over 4}} {{{x + {\pi  \over 4}} \over {2 - \cos 2x}}dx} \) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{{{\pi ^2}} \over {6\sqrt 3 }}\]</li>
+<li class="c8">\[{{{\pi ^2}} \over 6}\]</li>
+<li class="c8">\[{{{\pi ^2}} \over {3\sqrt 3 }}\]</li>
+<li class="c8">\[{{{\pi ^2}} \over {12\sqrt 3 }}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q41.</span>
+</div>
+<div class="c5"><p>If \(\int\limits_0^\pi  {{{{5^{\cos x}}(1 + \cos x\cos 3x + {{\cos }^2}x + {{\cos }^3}x\cos 3x)dx} \over {1 + {5^{\cos x}}}} = {{k\pi } \over {16}}} \), then k is equal to _____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q42.</span>
+</div>
+<div class="c5">Let \(\alpha&gt;0\). If \(\int\limits_0^\alpha \frac{x}{\sqrt{x+\alpha}-\sqrt{x}} \mathrm{~d} x=\frac{16+20 \sqrt{2}}{15}\), then \(\alpha\) is equal to :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">4
+</li>
+<li class="c8">2</li>
+<li class="c8">\(2 \sqrt{2}\)</li>
+<li class="c8">\(\sqrt{2}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q43.</span>
+</div>
+<div class="c5"><p>If \(\int_\limits{0}^{1}\left(x^{21}+x^{14}+x^{7}\right)\left(2 x^{14}+3 x^{7}+6\right)^{1 / 7} d x=\frac{1}{l}(11)^{m / n}\) where \(l, m, n \in \mathbb{N}, m\) and \(n\) are coprime then \(l+m+n\) is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q44.</span>
+</div>
+<div class="c5"><p>Let \(f: \mathbb{R} \rightarrow \mathbb{R}\) be a differentiable function such that \(f^{\prime}(x)+f(x)=\int_\limits{0}^{2} f(t) d t\). If \(f(0)=e^{-2}\), then \(2 f(0)-f(2)\) is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q45.</span>
+</div>
+<div class="c5"><p>Let \(\alpha  \in (0,1)\) and \(\beta  = {\log _e}(1 - \alpha )\). Let \({P_n}(x) = x + {{{x^2}} \over 2} + {{{x^3}} \over 3}\, + \,...\, + \,{{{x^n}} \over n},x \in (0,1)\). Then the integral \(\int\limits_0^\alpha  {{{{t^{50}}} \over {1 - t}}dt} \) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[ - \left( {\beta  + {P_{50}}\left( \alpha  \right)} \right)\]</li>
+<li class="c8">\[\beta  - {P_{50}}(\alpha )\]</li>
+<li class="c8">\[{P_{50}}(\alpha ) - \beta \]</li>
+<li class="c8">\[\beta  + {P_{50}} - (\alpha )\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q46.</span>
+</div>
+<div class="c5"><p>The value of the integral \(\int_1^2 {\left( {{{{t^4} + 1} \over {{t^6} + 1}}} \right)dt} \) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{\tan ^{ - 1}}{1 \over 2} - {1 \over 3}{\tan ^{ - 1}}8 + {\pi  \over 3}\]</li>
+<li class="c8">\[{\tan ^{ - 1}}2 - {1 \over 3}{\tan ^{ - 1}}8 + {\pi  \over 3}\]</li>
+<li class="c8">\[{\tan ^{ - 1}}2 + {1 \over 3}{\tan ^{ - 1}}8 - {\pi  \over 3}\]</li>
+<li class="c8">\[{\tan ^{ - 1}}{1 \over 2} + {1 \over 3}{\tan ^{ - 1}}8 - {\pi  \over 3}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q47.</span>
+</div>
+<div class="c5"><p>The value of the integral \(\int\limits_{1/2}^2 {{{{{\tan }^{ - 1}}x} \over x}dx} \) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{\pi  \over 2}{\log _e}2\]</li>
+<li class="c8">\[{\pi  \over 4}{\log _e}2\]</li>
+<li class="c8">\[{1 \over 2}{\log _e}2\]</li>
+<li class="c8">\[\pi {\log _e}2\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q48.</span>
+</div>
+<div class="c5"><p>The integral \(16\int\limits_1^2 {{{dx} \over {{x^3}{{\left( {{x^2} + 2} \right)}^2}}}} \) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{{11} \over {12}} + {\log _e}4\]</li>
+<li class="c8">\[{{11} \over 6} + {\log _e}4\]</li>
+<li class="c8">\[{{11} \over {12}} - {\log _e}4\]</li>
+<li class="c8">\[{{11} \over 6} - {\log _e}4\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q49.</span>
+</div>
+<div class="c5"><p>If \(\int\limits_{{1 \over 3}}^3 {|{{\log }_e}x|dx = {m \over n}{{\log }_e}\left( {{{{n^2}} \over e}} \right)} \), where m and n are coprime natural numbers, then \({m^2} + {n^2} - 5\) is equal to _____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q50.</span>
+</div>
+<div class="c5"><p>The minimum value of the function \(f(x) = \int\limits_0^2 {{e^{|x - t|}}dt} \) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2</li>
+<li class="c8">\[2(e-1)\]</li>
+<li class="c8">\[e(e-1)\]</li>
+<li class="c8">\[2e-1\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q51.</span>
+</div>
+<div class="c5"><p>\(\int\limits_{{{3\sqrt 2 } \over 4}}^{{{3\sqrt 3 } \over 4}} {{{48} \over {\sqrt {9 - 4{x^2}} }}dx} \) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{\pi  \over 2}\]</li>
+<li class="c8">\[{\pi  \over 3}\]</li>
+<li class="c8">\[{\pi  \over 6}\]</li>
+<li class="c8">\[2\pi \]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q52.</span>
+</div>
+<div class="c5"><p>The value of \(12\int\limits_0^3 {\left| {{x^2} - 3x + 2} \right|dx} \) is ____________</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q53.</span>
+</div>
+<div class="c5"><p>The value of \({8 \over \pi }\int\limits_0^{{\pi  \over 2}} {{{{{(\cos x)}^{2023}}} \over {{{(\sin x)}^{2023}} + {{(\cos x)}^{2023}}}}dx} \) is ___________</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q54.</span>
+</div>
+<div class="c5"><p>The value of \({{{e^{ - {\pi  \over 4}}} + \int\limits_0^{{\pi  \over 4}} {{e^{ - x}}{{\tan }^{50}}xdx} } \over {\int\limits_0^{{\pi  \over 4}} {{e^{ - x}}({{\tan }^{49}}x + {{\tan }^{51}}x)dx} }}\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">51</li>
+<li class="c8">50</li>
+<li class="c8">25</li>
+<li class="c8">49</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q55.</span>
+</div>
+<div class="c5"><p>Let \(f_{n}=\int_\limits{0}^{\frac{\pi}{2}}\left(\sum_\limits{k=1}^{n} \sin ^{k-1} x\right)\left(\sum_\limits{k=1}^{n}(2 k-1) \sin ^{k-1} x\right) \cos x d x, n \in \mathbb{N}\). Then \(f_{21}-f_{20}\) is equal to _________</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q56.</span>
+</div>
+<div class="c5"><p>\(\int_\limits{0}^{\infty} \frac{6}{e^{3 x}+6 e^{2 x}+11 e^{x}+6} d x=\)</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\log _{e}\left(\frac{256}{81}\right)\]</li>
+<li class="c8">\[\log _{e}\left(\frac{64}{27}\right)\]</li>
+<li class="c8">\[\log _{e}\left(\frac{32}{27}\right)\]</li>
+<li class="c8">\[\log _{e}\left(\frac{512}{81}\right)\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q57.</span>
+</div>
+<div class="c5"><p>Let for \(x \in \mathbb{R}, S_{0}(x)=x, S_{k}(x)=C_{k} x+k \int_{0}^{x} S_{k-1}(t) d t\), where 
+<br/><br/>\(C_{0}=1, C_{k}=1-\int_{0}^{1} S_{k-1}(x) d x, k=1,2,3, \ldots\) Then \(S_{2}(3)+6 C_{3}\) is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q58.</span>
+</div>
+<div class="c5"><p>If \(\int_\limits{-0.15}^{0.15}\left|100 x^{2}-1\right| d x=\frac{k}{3000}\), then \(k\) is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q59.</span>
+</div>
+<div class="c5"><p>For \(m, n &gt; 0\), let \(\alpha(m, n)=\int_\limits{0}^{2} t^{m}(1+3 t)^{n} d t\). If \(11 \alpha(10,6)+18 \alpha(11,5)=p(14)^{6}\), then \(p\) is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q60.</span>
+</div>
+<div class="c5"><p>Let \(f:R \to R\) be a function defined by :</p>
+<p>\(f(x) = \left\{ {\matrix{
+   {\max \,\{ {t^3} - 3t\} \,t \le x} &amp; ; &amp; {x \le 2}  \cr 
+   {{x^2} + 2x - 6} &amp; ; &amp; {2 &lt; x &lt; 3}  \cr 
+   {[x - 3] + 9} &amp; ; &amp; {3 \le x \le 5}  \cr 
+   {2x + 1} &amp; ; &amp; {x &gt; 5}  \cr 
+
+ } } \right.\)</p>
+<p>where [t] is the greatest integer less than or equal to t. Let m be the number of points where f is not differentiable and \(I = \int\limits_{ - 2}^2 {f(x)\,dx} \). Then the ordered pair (m, I) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\left( {3,\,{{27} \over 4}} \right)\]</li>
+<li class="c8">\[\left( {3,\,{{23} \over 4}} \right)\]</li>
+<li class="c8">\[\left( {4,\,{{27} \over 4}} \right)\]</li>
+<li class="c8">\[\left( {4,\,{{23} \over 4}} \right)\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q61.</span>
+</div>
+<div class="c5"><p>Let f be a real valued continuous function on [0, 1] and \(f(x) = x + \int\limits_0^1 {(x - t)f(t)dt} \).</p>
+<p>Then, which of the following points (x, y) lies on the curve y = f(x) ?</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">(2, 4)</li>
+<li class="c8">(1, 2)</li>
+<li class="c8">(4, 17)</li>
+<li class="c8">(6, 8)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q62.</span>
+</div>
+<div class="c5"><p>If \(\int\limits_0^2 {\left( {\sqrt {2x}  - \sqrt {2x - {x^2}} } \right)dx = \int\limits_0^1 {\left( {1 - \sqrt {1 - {y^2}}  - {{{y^2}} \over 2}} \right)dy + \int\limits_1^2 {\left( {2 - {{{y^2}} \over 2}} \right)dy + I} } } \), then I equals</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\int\limits_0^1 {\left( {1 + \sqrt {1 - {y^2}} } \right)dy} \]</li>
+<li class="c8">\[\int\limits_0^1 {\left( {{{{y^2}} \over 2} - \sqrt {1 - {y^2}}  + 1} \right)dy} \]</li>
+<li class="c8">\[\int\limits_0^1 {\left( {1 - \sqrt {1 - {y^2}} } \right)dy} \]</li>
+<li class="c8">\[\int\limits_0^1 {\left( {{{{y^2}} \over 2} + \sqrt {1 - {y^2}}  + 1} \right)dy} \]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q63.</span>
+</div>
+<div class="c5"><p>Let f : R \(\to\) R be a differentiable function such that \(f\left( {{\pi  \over 4}} \right) = \sqrt 2 ,\,f\left( {{\pi  \over 2}} \right) = 0\) and \(f'\left( {{\pi  \over 2}} \right) = 1\) and <br/><br/>let \(g(x) = \int_x^{\pi /4} {(f'(t)\sec t + \tan t\sec t\,f(t))\,dt} \) for \(x \in \left[ {{\pi  \over 4},{\pi  \over 2}} \right)\). Then \(\mathop {\lim }\limits_{x \to {{\left( {{\pi  \over 2}} \right)}^ - }} g(x)\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2</li>
+<li class="c8">3</li>
+<li class="c8">4</li>
+<li class="c8">\[-\]3</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q64.</span>
+</div>
+<div class="c5"><p>Let f : R \(\to\) R be a continuous function satisfying f(x) + f(x  + k) = n, for all x \(\in\) R where k &gt; 0 and n is a positive integer. If \({I_1} = \int\limits_0^{4nk} {f(x)dx} \) and \({I_2} = \int\limits_{ - k}^{3k} {f(x)dx} \), then :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{I_1} + 2{I_2} = 4nk\]</li>
+<li class="c8">\[{I_1} + 2{I_2} = 2nk\]</li>
+<li class="c8">\[{I_1} + n{I_2} = 4{n^2}k\]</li>
+<li class="c8">\[{I_1} + n{I_2} = 6{n^2}k\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q65.</span>
+</div>
+<div class="c5"><p>The integral \(\int\limits_0^1 {{1 \over {{7^{\left[ {{1 \over x}} \right]}}}}dx} \), where [ . ] denotes the greatest integer function, is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[1 + 6{\log _e}\left( {{6 \over 7}} \right)\]</li>
+<li class="c8">\[1 - 6{\log _e}\left( {{6 \over 7}} \right)\]</li>
+<li class="c8">\[{\log _e}\left( {{7 \over 6}} \right)\]</li>
+<li class="c8">\[1 - 7{\log _e}\left( {{6 \over 7}} \right)\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q66.</span>
+</div>
+<div class="c5"><p>Let f(x) = max {|x  + 1|, |x + 2|, ....., |x + 5|}. Then \(\int\limits_{ - 6}^0 {f(x)dx} \) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q67.</span>
+</div>
+<div class="c5"><p>The integral \({{24} \over \pi }\int_0^{\sqrt 2 } {{{(2 - {x^2})dx} \over {(2 + {x^2})\sqrt {4 + {x^4}} }}} \) is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q68.</span>
+</div>
+<div class="c5"><p>If \({b_n} = \int_0^{{\pi  \over 2}} {{{{{\cos }^2}nx} \over {\sin x}}dx,\,n \in N} \), then</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{b_3} - {b_2},\,{b_4} - {b_3},\,{b_5} - {b_4}\] are in A.P. with common difference \[-\]2</li>
+<li class="c8">\[{1 \over {{b_3} - {b_2}}},{1 \over {{b_4} - {b_3}}},{1 \over {{b_5} - {b_4}}}\] are in an A.P. with common difference 2 </li>
+<li class="c8">\[{b_3} - {b_2},\,{b_4} - {b_3},\,{b_5} - {b_4}\] are in a G.P.</li>
+<li class="c8">\[{1 \over {{b_3} - {b_2}}},{1 \over {{b_4} - {b_3}}},{1 \over {{b_5} - {b_4}}}\] are in an A.P. with common difference \[-\]2</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q69.</span>
+</div>
+<div class="c5"><p>The value of b &gt; 3 for which \(12\int\limits_3^b {{1 \over {({x^2} - 1)({x^2} - 4)}}dx = {{\log }_e}\left( {{{49} \over {40}}} \right)} \), is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q70.</span>
+</div>
+<div class="c5"><p>Let \(f(\theta ) = \sin \theta  + \int\limits_{ - \pi /2}^{\pi /2} {(\sin \theta  + t\cos \theta )f(t)dt} \). Then the value of \(\left| {\int_0^{\pi /2} {f(\theta )d\theta } } \right|\) is _____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q71.</span>
+</div>
+<div class="c5"><p>Let \(\mathop {Max}\limits_{0\, \le x\, \le 2} \left\{ {{{9 - {x^2}} \over {5 - x}}} \right\} = \alpha \) and \(\mathop {Min}\limits_{0\, \le x\, \le 2} \left\{ {{{9 - {x^2}} \over {5 - x}}} \right\} = \beta \).</p>
+<p>If \(\int\limits_{\beta  - {8 \over 3}}^{2\alpha  - 1} {Max\left\{ {{{9 - {x^2}} \over {5 - x}},x} \right\}dx = {\alpha _1} + {\alpha _2}{{\log }_e}\left( {{8 \over {15}}} \right)} \) then \({\alpha _1} + {\alpha _2}\) is equal to _____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q72.</span>
+</div>
+<div class="c5"><p>For any real number \(x\), let \([x]\) denote the largest integer less than equal to \(x\). Let \(f\) be a real valued function defined on the interval \([-10,10]\) by \(f(x)=\left\{\begin{array}{l}x-[x], \text { if }[x] \text { is odd } \\ 1+[x]-x, \text { if }[x] \text { is even } .\end{array}\right.\)
+
+Then the value of \(\frac{\pi^{2}}{10} \int_{-10}^{10} f(x) \cos \pi x \,d x\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">4</li>
+<li class="c8">2</li>
+<li class="c8">1</li>
+<li class="c8">0</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q73.</span>
+</div>
+<div class="c5"><p>Let \([t]\) denote the greatest integer less than or equal to \(t\). Then the value of the integral \(\int_{-3}^{101}\left([\sin (\pi x)]+e^{[\cos (2 \pi x)]}\right) d x\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{52(1-e)}{e}\]</li>
+<li class="c8">\[\frac{52}{e}\]</li>
+<li class="c8">\[\frac{52(2+e)}{e}\]</li>
+<li class="c8">\[\frac{104}{e}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q74.</span>
+</div>
+<div class="c5"><p>Let \({a_n} = \int\limits_{ - 1}^n {\left( {1 + {x \over 2} + {{{x^2}} \over 3} + \,\,.....\,\, + \,\,{{{x^{n - 1}}} \over n}} \right)dx} \) for every n \(\in\) N. Then the sum of all the elements of the set {n \(\in\) N : a<sub>n</sub> \(\in\) (2, 30)} is ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q75.</span>
+</div>
+<div class="c5"><p>If \(\mathrm{n}(2 \mathrm{n}+1) \int_{0}^{1}\left(1-x^{\mathrm{n}}\right)^{2 \mathrm{n}} \mathrm{d} x=1177 \int_{0}^{1}\left(1-x^{\mathrm{n}}\right)^{2 \mathrm{n}+1} \mathrm{~d} x\), then \(\mathrm{n} \in \mathbf{N}\) is equal to ______________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q76.</span>
+</div>
+<div class="c5"><p>Let \(
+I=\int_{\pi / 4}^{\pi / 3}\left(\frac{8 \sin x-\sin 2 x}{x}\right) d x
+\). Then</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{\pi  \over 2} &lt; I &lt; {{3\pi } \over 4}\]</li>
+<li class="c8">\[{\pi  \over 5} &lt; I &lt; {{5\pi } \over {12}}\]</li>
+<li class="c8">\[{{5\pi } \over {12}} &lt; I &lt; {{\sqrt 2 } \over 3}\pi \]</li>
+<li class="c8">\[{{3\pi } \over 4} &lt; I &lt; \pi \]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q77.</span>
+</div>
+<div class="c5"><p>Let a function \(f: \mathbb{R} \rightarrow \mathbb{R}\) be defined as :</p>
+<p>\(f(x)= \begin{cases}\int\limits_{0}^{x}(5-|t-3|) d t, &amp; x&gt;4 \\ x^{2}+b x &amp; , x \leq 4\end{cases}\)</p>
+<p>where \(\mathrm{b} \in \mathbb{R}\). If \(f\) is continuous at \(x=4\), then which of the following statements is NOT true?</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[f\] is not differentiable at \[x=4\]</li>
+<li class="c8">\[f^{\prime}(3)+f^{\prime}(5)=\frac{35}{4}\]</li>
+<li class="c8">\[f\] is increasing in \[\left(-\infty, \frac{1}{8}\right) \cup(8, \infty)\]</li>
+<li class="c8">\[f\] has a local minima at \[x=\frac{1}{8}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q78.</span>
+</div>
+<div class="c5"><p>Let \(f(x)=2+|x|-|x-1|+|x+1|, x \in \mathbf{R}\).</p>
+<p>Consider</p>
+<p>\((\mathrm{S} 1): f^{\prime}\left(-\frac{3}{2}\right)+f^{\prime}\left(-\frac{1}{2}\right)+f^{\prime}\left(\frac{1}{2}\right)+f^{\prime}\left(\frac{3}{2}\right)=2\)</p>
+<p>\((\mathrm{S} 2): \int\limits_{-2}^{2} f(x) \mathrm{d} x=12\)</p>
+<p>Then,</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">both (S1) and (S2) are correct</li>
+<li class="c8">both (S1) and (S2) are wrong</li>
+<li class="c8">only (S1) is correct</li>
+<li class="c8">only (S2) is correct</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q79.</span>
+</div>
+<div class="c5"><p>If \(\int\limits_{0}^{\sqrt{3}} \frac{15 x^{3}}{\sqrt{1+x^{2}+\sqrt{\left(1+x^{2}\right)^{3}}}} \mathrm{~d} x=\alpha \sqrt{2}+\beta \sqrt{3}\), where \(\alpha, \beta\) are integers, then \(\alpha+\beta\) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q80.</span>
+</div>
+<div class="c5"><p>Let \(I_{n}(x)=\int_{0}^{x} \frac{1}{\left(t^{2}+5\right)^{n}} d t, n=1,2,3, \ldots .\) Then :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[50 I_{6}-9 I_{5}=x I_{5}^{\prime}\]</li>
+<li class="c8">\[50 I_{6}-11 I_{5}=x I_{5}^{\prime}\]</li>
+<li class="c8">\[50 I_{6}-9 I_{5}=I_{5}^{\prime}\]</li>
+<li class="c8">\[50 I_{6}-11 I_{5}=I_{5}^{\prime}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q81.</span>
+</div>
+<div class="c5"><p>The value of the integral \(\int\limits_{0}^{\frac{\pi}{2}} 60 \frac{\sin (6 x)}{\sin x} d x\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>B</strong></li><li>Q2: <strong>B</strong></li><li>Q3: <strong>24</strong></li><li>Q4: <strong>1</strong></li><li>Q5: <strong>B</strong></li><li>Q6: <strong>C</strong></li><li>Q7: <strong>A</strong></li><li>Q8: <strong>D</strong></li><li>Q9: <strong>B</strong></li><li>Q10: <strong>D</strong></li><li>Q11: <strong>0</strong></li><li>Q12: <strong>C</strong></li><li>Q13: <strong>A</strong></li><li>Q14: <strong>A</strong></li><li>Q15: <strong>A</strong></li><li>Q16: <strong>C</strong></li><li>Q17: <strong>B</strong></li><li>Q18: <strong>C</strong></li><li>Q19: <strong>C</strong></li><li>Q20: <strong>0</strong></li><li>Q21: <strong>1</strong></li><li>Q22: <strong>B</strong></li><li>Q23: <strong>6</strong></li><li>Q24: <strong>C</strong></li><li>Q25: <strong>A</strong></li><li>Q26: <strong>C</strong></li><li>Q27: <strong>10</strong></li><li>Q28: <strong>B</strong></li><li>Q29: <strong>A</strong></li><li>Q30: <strong>1</strong></li><li>Q31: <strong>A</strong></li><li>Q32: <strong>A</strong></li><li>Q33: <strong>C</strong></li><li>Q34: <strong>A</strong></li><li>Q35: <strong>B</strong></li><li>Q36: <strong>D</strong></li><li>Q37: <strong>0</strong></li><li>Q38: <strong>0</strong></li><li>Q39: <strong>0</strong></li><li>Q40: <strong>A</strong></li><li>Q41: <strong>0</strong></li><li>Q42: <strong>B</strong></li><li>Q43: <strong>0</strong></li><li>Q44: <strong>0</strong></li><li>Q45: <strong>A</strong></li><li>Q46: <strong>C</strong></li><li>Q47: <strong>A</strong></li><li>Q48: <strong>D</strong></li><li>Q49: <strong>1</strong></li><li>Q50: <strong>B</strong></li><li>Q51: <strong>D</strong></li><li>Q52: <strong>0</strong></li><li>Q53: <strong>8</strong></li><li>Q54: <strong>B</strong></li><li>Q55: <strong>0</strong></li><li>Q56: <strong>C</strong></li><li>Q57: <strong>0</strong></li><li>Q58: <strong>-0.15</strong></li><li>Q59: <strong>0</strong></li><li>Q60: <strong>C</strong></li><li>Q61: <strong>D</strong></li><li>Q62: <strong>C</strong></li><li>Q63: <strong>B</strong></li><li>Q64: <strong>C</strong></li><li>Q65: <strong>A</strong></li><li>Q66: <strong>1</strong></li><li>Q67: <strong>24</strong></li><li>Q68: <strong>D</strong></li><li>Q69: <strong>1</strong></li><li>Q70: <strong>1</strong></li><li>Q71: <strong>2</strong></li><li>Q72: <strong>A</strong></li><li>Q73: <strong>B</strong></li><li>Q74: <strong>1</strong></li><li>Q75: <strong>0</strong></li><li>Q76: <strong>C</strong></li><li>Q77: <strong>C</strong></li><li>Q78: <strong>D</strong></li><li>Q79: <strong>2</strong></li><li>Q80: <strong>A</strong></li><li>Q81: <strong>0</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(f^{\prime}(x)=x^3-9 x^2+20 x=x(x-4)(x-5)\)</p>
+<p><img alt="JEE Main 2025 (Online) 29th January Evening Shift Mathematics - Definite Integration Question 23 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m71f65mw/fe972031-b18a-4e3e-9f0b-5e2e49d39b25/080bc880-e8fb-11ef-b48b-c3f51ea93f48/file-jaoe38c1m71f65mx.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m71f65mw/fe972031-b18a-4e3e-9f0b-5e2e49d39b25/080bc880-e8fb-11ef-b48b-c3f51ea93f48/file-jaoe38c1m71f65mx.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; \therefore f(x)=\frac{x^4}{4}-\frac{9 x^3}{3}+\frac{20 x^2}{2} \\
+&amp; f(1)=\frac{1}{4}-3+10=\frac{29}{4}=\alpha \\
+&amp; \left.f(4)=\frac{256}{4}-3(64) \right\rvert\,+10(16)=32=\beta \\
+&amp; 4(\alpha+\beta)=4\left(\frac{29}{4}+32\right)=157
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; I=80 \int_0^{\frac{\pi}{4}}\left(\frac{\sin \theta+\cos \theta}{9+16(2 \sin \theta \cdot \cos \theta)}\right) d \theta \\
+&amp; =80 \int_0^{\frac{\pi}{4}} \frac{\sin \theta+\cos \theta}{9-16(1-2 \sin \theta \cdot \cos \theta-1)} d \theta
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp;=80 \int_0^{\frac{\pi}{4}} \frac{\sin \theta+\cos \theta}{9+16-16(\sin \theta-\cos \theta)^2} \mathrm{~d} \theta\\
+&amp;\text { Let } \sin \theta-\cos \theta=\mathrm{t}\\
+&amp;(\cos \theta+\sin \theta) \mathrm{d} \theta=\mathrm{dt}\\
+&amp;=80 \int_{-1}^0 \frac{\mathrm{dt}}{25-16 \mathrm{t}^2}\\
+&amp;=\frac{80}{16} \int_{-1}^0 \frac{\mathrm{dt}}{\left(\frac{5}{4}\right)^2-\mathrm{t}^2}\\
+&amp;\left.=\frac{5}{2\left(\frac{5}{4}\right)} \ln \left|\frac{\frac{5}{4}+t}{\frac{5}{4}-t}\right|\right]_{-1}^0\\
+&amp;=2 \ln (1)+4 \ln 3\\
+&amp;=4 \ln 3
+\end{aligned}\)</p></li><li><strong>Q3:</strong> <p>\(\begin{aligned}
+= &amp; 24 \int_0^{\frac{\pi}{48}}-\sin \left(4 \mathrm{x}-\frac{\pi}{12}\right)+\int_{\pi / 48}^{\pi / 4} \sin \left(4 \mathrm{x}-\frac{\pi}{12}\right) \\
+&amp; +\int_0^{\frac{\pi}{6}}[0] \mathrm{dx}+\int_{\pi / 6}^{\pi / 4}[2 \sin \mathrm{x}] \mathrm{dx}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; =24\left[\frac{\left(1-\cos \frac{\pi}{12}\right)}{4}-\frac{\left(-\cos \frac{\pi}{12}-1\right)}{4}\right]+\frac{\pi}{4}-\frac{\pi}{6} \\
+&amp; =24\left(\frac{1}{2}+\frac{\pi}{12}\right)=2 \pi+12 \\
+&amp; \alpha=12
+\end{aligned}\)</p></li><li><strong>Q4:</strong> <p>\(1^{\infty}\) form</p>
+<p>Now \(\mathrm{L}=\mathrm{e}^{\mathrm{t} \rightarrow 0} \frac{1}{\mathrm{t}}\left(\left.\frac{(3 \mathrm{x}+5)^{\mathrm{t}+1}}{3(\mathrm{t}+1)}\right|_0 ^1-1\right)\)</p>
+<p>\(\begin{aligned}
+&amp; =e^{t \rightarrow 0} \frac{8^{t+1}-5^{t+1}-3 t-3}{3 t(t+1)} \\
+&amp; =e \frac{8 \ln 8-5 \ln 5-3}{3} \\
+&amp; =\left(\frac{8}{5}\right)^{2 / 3}\left(\frac{64}{5}\right)=\frac{\alpha}{5 \mathrm{e}}\left(\frac{8}{5}\right)^{2 / 3}
+\end{aligned}\)</p>
+<p>On comparing</p>
+<p>\(\alpha=64\)</p></li><li><strong>Q5:</strong> <p>\(\begin{aligned} f(x) &amp; =7 \tan ^8 x+7 \tan ^6 x-3 \tan ^4 x-3 \tan ^2 x \\ &amp; =7 \tan ^6 x\left(1+\tan ^2 x\right)-3 \tan ^2 x\left(1+\tan ^2 x\right) \\ &amp; =\left(7 \tan ^6 x-3 \tan ^2 x\right)\left(1+\tan ^2 x\right) \\ &amp; =\left(7 \tan ^6 x-3 \tan ^2 x\right) \sec ^2 x\end{aligned}\)</p>
+<p>\(\begin{aligned} I_1= &amp; \int_0^{\frac{\pi}{4}} f(x) d x=\int_0^{\frac{\pi}{4}}\left(7 \tan ^6 x-3 \tan ^2 x\right) \sec ^2 x d x \\ &amp; =\left.\left(\frac{7 \tan ^7 x}{7}-\frac{3 \tan ^3 x}{3}\right)\right|_0 ^{\frac{\pi}{4}}=1-1=0\end{aligned}\)</p>
+<p>\(\begin{aligned} I_2= &amp; \int_0^{\frac{\pi}{4}} x f(x) d x=\int_0^{\frac{\pi}{4}} x\left(7 \tan ^6 x-3 \tan ^2 x\right) \sec ^2 x d x \\ &amp; =\left.x\left(\tan ^7 x-\tan ^3 x\right)\right|_0 ^{\frac{\pi}{4}}-\int_0^{\frac{\pi}{4}} 1 \cdot\left(\tan ^7 x-\tan ^3 x\right) d x \\ &amp; =0-\int_0^{\frac{\pi}{4}} \tan ^3 x\left(\tan ^2 x-1\right)\left(\tan ^2 x+1\right) d x\end{aligned}\)</p>
+<p>\( \begin{aligned} &amp; =\int_0^{\frac{\pi}{4}}\left(\tan ^3 x-\tan ^5 x\right) \sec ^2 x d x=\frac{\tan ^4 x}{4}-\left.\frac{\tan ^6 x}{6}\right|_0 ^{\frac{\pi}{4}} \\ &amp; =\frac{1}{12} \end{aligned} \)</p>
+<p>Hence \(7 I_1+12 I_2=1\)</p></li><li><strong>Q6:</strong> <p>\(\begin{aligned}
+&amp; g(x)=x 2+x^{\frac{7}{3}} \\
+&amp; g^{\prime}(x)=2 x+\frac{7}{3} x^{\frac{4}{3}} \\
+&amp; f(x)=\frac{g^{\prime}(x)}{x} \\
+&amp; f(x)=2+\frac{7}{3} x^{\frac{1}{3}} \\
+&amp; f\left(r^3\right)=2+\frac{7 r}{3} \\
+&amp; \sum_{r=1}^{15}\left(1+\frac{7}{3} r\right)=310
+\end{aligned}\)</p></li><li><strong>Q7:</strong> <p>\(\begin{aligned}
+&amp;\text { Let } \ln \mathrm{x}=\mathrm{t} \Rightarrow \frac{\mathrm{dx}}{\mathrm{x}}=\mathrm{dt}\\
+&amp;\begin{aligned}
+&amp; I=\int_2^4 \frac{e^{\frac{1}{1+t^2}}}{e^{\frac{1}{1+t^2}}+e^{\frac{1}{1+(6-t)^2}}} d t \\
+&amp; I=\int_2^4 \frac{\frac{1}{e^{1+(6-t)^2}}}{\frac{1}{e^{1+(6-t)^2}}+e^{\frac{1}{1+t^2}}} d t \\
+&amp; 2 I=\int_2^4 d t=(t)_2^4=4-2=2 \\
+&amp; I=1
+\end{aligned}
+\end{aligned}\)</p></li><li><strong>Q8:</strong> <p>\(\begin{aligned}
+&amp; \mathrm{I}(\mathrm{~m}, \mathrm{~m})=\int_0^1 \mathrm{x}^{\mathrm{m}-1}(1-\mathrm{x})^{\mathrm{n}-1} \mathrm{dx} \\
+&amp; \text { Let } \mathrm{x}=\sin ^2 \theta \quad \mathrm{dx}=2 \sin \theta \cos \theta \mathrm{~d} \theta \\
+&amp; \mathrm{I}(\mathrm{~m}, \mathrm{n})=2 \int_0^{\pi / 2}(\sin \theta)^{2 \mathrm{~m}-1}(\cos \theta)^{2 \mathrm{n}-1} \mathrm{~d} \theta \\
+&amp; \mathrm{I}(9,14)+\mathrm{I}(10,13)=2 \int_0^{\pi / 2}(\sin \theta)^{17}(\cos \theta)^{27} \mathrm{~d} \theta \\
+&amp; +2 \int_0^{\pi / 2}(\sin \theta)^{19}(\cos \theta)^{25} \mathrm{~d} \theta \\
+&amp; =2 \int_0^{\pi / 2}(\sin \theta)^{17}(\cos \theta)^{25} \mathrm{~d} \theta \\
+&amp; =\mathrm{I}(9,13)
+\end{aligned}\)</p></li><li><strong>Q9:</strong> <p>\(\int_\limits{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{96 x^2 \cos ^2 x}{\left(1+e^x\right)} d x \quad\) (Apply King Property)</p>
+<p>\(\begin{aligned}
+&amp; \int_0^{\frac{\pi}{2}} 96 x^2 \cos ^2 x=48 \int_0^{\frac{\pi}{2}} x^2(1+\cos 2 x) d x \\
+&amp; 48\left[\left(\frac{x^3}{3}\right)_0^{\pi / 2}+\int_0^{\frac{\pi}{2}} x_1^2 \cos _{I I} 2 x d x\right] \\
+&amp; \Rightarrow \text { On solving } \pi\left(2 \pi^2-12\right) \\
+&amp; \Rightarrow \alpha=2, \beta=-12 \\
+&amp; \Rightarrow(\alpha+\beta)^2=100
+\end{aligned}\)</p></li><li><strong>Q10:</strong> <p>\(\begin{aligned}
+&amp; I_1=\int_{-\frac{1}{2}}^1 2 x f(2 x(1-2 x)) d x \\
+&amp; \Rightarrow 2 x=t \Rightarrow 2 d x=d t \quad \Rightarrow I_1=\frac{1}{2} \int_{-1}^2 t f(t(1-t)) d t \\
+&amp; \Rightarrow 2 I_1=\int_{-1}^2(1-t) f(1-t)(1-(1-t)) d t
+\end{aligned}\)</p>
+<p>\( \Rightarrow 2{I_1} = \int\limits_{ - 1}^2 {f(t(1 - t)dt - \int\limits_{ - 1}^2 {tf(t(1 - t)dt} } \)</p>
+<p>\(\begin{aligned}
+&amp; \Rightarrow 2 \mathrm{I}_1=\mathrm{I}_2-2 \mathrm{I}_1 \\
+&amp; \Rightarrow 4 \mathrm{I}_1=\mathrm{I}_2 \\
+&amp; \Rightarrow \frac{\mathrm{I}_2}{\mathrm{I}_1}=4
+\end{aligned}\)</p></li><li><strong>Q11:</strong> <p>To solve this, we start by evaluating the integral:</p>
+<p>\(  I = \int_0^{e^3} \left[ \frac{1}{e^{x-1}} \right] \, dx  \)</p>
+<p>The greatest integer function \([\cdot]\) returns the largest integer less than or equal to the input value. Here's how we can approach the problem:</p>
+<p><p><strong>Determine the function inside the integral</strong>:  </p>
+<p>\(\frac{1}{e^{x-1}} = e^{1-x}\).</p></p>
+<p><p><strong>Identifying the intervals</strong>:</p></p>
+<p><p>When \(e^{1-x} \geq 2\), which simplifies to \(x \leq 1 - \ln 2\), we have \(\left[e^{1-x}\right] = 2\).</p></p>
+<p><p>When \(1 \leq e^{1-x} &lt; 2\), simplifying gives \(1 - \ln 2 &lt; x \leq 1\), and thus \(\left[e^{1-x}\right] = 1\).</p></p>
+<p><p>When \(0 \leq e^{1-x} &lt; 1\), which holds for \(x &gt; 1\), thus \(\left[e^{1-x}\right] = 0\) from \(x = 1\) to \(x = e^3\).</p></p>
+<p><p><strong>Evaluate the integral on these intervals</strong>:</p>
+<p>\(    \int_0^{1-\ln 2} 2 \, dx = 2(1-\ln 2)    \) </p>
+<p>\(    \int_{1-\ln 2}^1 1 \, dx = 1 - (1 - \ln 2) = \ln 2    \) </p>
+<p>\(    \int_1^{e^3} 0 \, dx = 0    \)</p></p>
+<p><p><strong>Combine these results</strong>:</p>
+<p>\(    I = 2(1-\ln 2) + \ln 2 + 0 = 2 - \ln 2    \)</p></p>
+<p>Thus, we are given that:</p>
+<p>\(  \alpha - \ln 2 = 2 - \ln 2 \)</p>
+<p>This implies that:</p>
+<p>\(  \alpha = 2 \)</p>
+<p>Therefore, \(\alpha^3 = 2^3 = 8\).</p></li><li><strong>Q12:</strong> <p>\(\begin{aligned}
+&amp; x^2=2 y \text { and } y-2 x-6=0 \\
+&amp; \frac{x^2}{2}-2 x-6=0 \\
+&amp; x^2-4 x-12=0 \\
+&amp; x^2-6 x+2 x-12=0 \\
+&amp; x(x-6)+2(x-6)=0 \\
+&amp; (x-6)(x+2)=0
+\end{aligned}\)</p>
+<p>Point of intersection are \((6,18)\) and \((-2,2)\)</p>
+<p>\((-2,2)\) is in second quadrant</p>
+<p>\(\begin{aligned}
+&amp; a=-2, b=2 \\
+&amp; I=\int_{-2}^2 \frac{9 x^2}{1+5^x} d x\quad\text{..... (i)}
+\end{aligned}\)</p>
+<p>\(I=\int_{-2}^2 \frac{9 x^2}{1+5^{-x}} d x\quad\text{..... (ii)}\)</p>
+<p>\(\begin{aligned}
+&amp;\text { Adding (i) and (ii) }\\
+&amp;\begin{aligned}
+&amp; 2 I=\int_{-2}^2 9 x^2 d x \\
+&amp; I=9 \int_0^2 x^2 d x \\
+&amp; I=9\left(\frac{x^3}{3}\right)_0^2 \Rightarrow I=24
+\end{aligned}
+\end{aligned}\)</p></li><li><strong>Q13:</strong> <p><strong>Step 1</strong>: Ensure the innermost function is greater than zero:  </p>
+<p>\(    \log_6(3 + 4x - x^2) &gt; 1    \)</p>
+<p><p><strong>Step 2</strong>: Simplify the inequality from Step 1:</p>
+<p>\(    3 + 4x - x^2 &gt; 6 \implies x^2 - 4x + 3 &lt; 0    \)</p></p>
+<p><p><strong>Step 3</strong>: Solve the quadratic inequality:</p>
+<p>\(    (x - 1)(x - 3) &lt; 0    \)</p>
+<p>This inequality indicates that \( x \) must lie between the roots, giving the interval \( x \in (1, 3) \).</p></p>
+<p>With the domain of \( f(x) \) identified as \( (a, b) = (1, 3) \), we calculate the definite integral over \([0, b-a]\):</p>
+<h3>Calculate the Integral:</h3>
+<p>Given:</p>
+<p>\( \int_0^{b-a} [x^2] \, dx \)</p>
+<p>For \( b - a = 2 \), we compute:</p>
+<p>\( \int_1^2 [x^2] \, dx = \int_1^{\sqrt{2}} 1 \, dx + \int_{\sqrt{2}}^{\sqrt{3}} 2 \, dx + \int_{\sqrt{3}}^2 3 \, dx  \)</p>
+<h3>Computation of Each Integral Segment:</h3>
+<p><p>\(\int_1^{\sqrt{2}} 1 \, dx = \sqrt{2} - 1\)</p></p>
+<p><p>\(\int_{\sqrt{2}}^{\sqrt{3}} 2 \, dx = 2(\sqrt{3} - \sqrt{2})\)</p></p>
+<p><p>\(\int_{\sqrt{3}}^2 3 \, dx = 3(2 - \sqrt{3})\)</p></p>
+<p>Summing these, we have:</p>
+<p>\( 5 - \sqrt{2} - \sqrt{3} \)</p>
+<h3>Conclusion:</h3>
+<p>The values for \( p, q, \) and \( r \) are \( p = 5 \), \( q = 2 \), and \( r = 3 \), with the greatest common divisor of these numbers being 1. Therefore, adding them together gives:</p>
+<p>\(  p + q + r = 5 + 2 + 3 = 10 \)</p></li><li><strong>Q14:</strong> <p>\(\begin{aligned}
+&amp; I=\int_0^\pi \frac{8 x}{4 \cos ^2 x+\sin ^2 x} d x \ldots(1) \\
+&amp; I=\int_0^\pi \frac{8(\pi-x)}{4 \cos ^2(\pi-x)+\sin ^2(\pi-x)} d x \\
+&amp; I=\int_0^\pi \frac{8(\pi-x)}{4 \cos ^2 x+\sin ^2 x} d x \ldots(2)
+\end{aligned}\)</p>
+<p>Adding (1) and (2)</p>
+<p>\(\begin{aligned}
+&amp; 2 I=8 \pi \int_0^\pi \frac{1}{4 \cos ^2 x+\sin ^2 x} d x \\
+&amp; I=4 \pi \times 2 \int_0^\pi \frac{\sec ^2 x}{4 \tan ^2 x} d x
+\end{aligned}\)</p>
+<p>Put \(\tan x=t\)</p>
+<p>\(\sec ^2 x d x=d t\)</p>
+<p>\(I=8 \pi \int_0^{\infty} \frac{d t}{4+t^2}\)</p>
+<p>\(\begin{aligned}
+&amp; I=8 \pi \frac{1}{2}\left(\tan ^{-1} \frac{t}{2}\right)_0^{\infty} \\
+&amp; I=4 \pi\left(\frac{\pi}{2}\right) \\
+&amp; I=2 \pi^2
+\end{aligned}\)</p></li><li><strong>Q15:</strong> <p>To solve the given integral \(\int\limits_0^{\frac{\pi}{3}} \cos ^4 x \mathrm{~d} x\), we'll apply a known power-reduction formula that allows us to express even powers of sine and cosine functions in terms of cosine of multiple angles. Specifically for \(\cos^4 x\), we can write it in terms of double angles as:</p>
+<p>\(
+\cos^4 x = \left(\frac{1 + \cos(2x)}{2}\right)^2
+\)</p>
+<p>We can then expand and simplify the integral using this formula. Let's proceed with this:</p>
+<p>\(
+\int\limits_0^{\frac{\pi}{3}} \cos^4 x \mathrm{~d}x = \int\limits_0^{\frac{\pi}{3}} \left(\frac{1 + \cos(2x)}{2}\right)^2 \mathrm{~d}x
+\)</p>
+<p>Now, let's expand the integrand and then integrate term by term:</p>
+<p>\(
+= \int\limits_0^{\frac{\pi}{3}} \left(\frac{1}{4} + \frac{1}{2} \cos(2x) + \frac{1}{4} \cos^2(2x)\right)\mathrm{~d}x
+\)</p>
+<p>For the \(\cos^2(2x)\) term, we again use the power reduction formula:</p>
+<p>\(
+\cos^2(2x) = \frac{1 + \cos(4x)}{2}
+\)</p>
+<p>Let's substitute this into the integral and continue:</p>
+<p>\(
+= \int\limits_0^{\frac{\pi}{3}} \left(\frac{1}{4} + \frac{1}{2} \cos(2x) + \frac{1}{4} \left(\frac{1 + \cos(4x)}{2}\right)\right)\mathrm{~d}x
+\)</p>
+<p>Simplify and integrate:</p>
+<p>\(
+= \int\limits_0^{\frac{\pi}{3}} \left(\frac{1}{4} + \frac{1}{2} \cos(2x) + \frac{1}{8} + \frac{1}{8} \cos(4x)\right)\mathrm{~d}x
+\)</p>
+<p>\(
+= \int\limits_0^{\frac{\pi}{3}} \left(\frac{3}{8} + \frac{1}{2} \cos(2x) + \frac{1}{8} \cos(4x)\right)\mathrm{~d}x
+\)</p>
+<p>\(
+= \left. \left(\frac{3}{8} x + \frac{1}{4} \sin(2x) + \frac{1}{32} \sin(4x)\right) \right|_0^{\frac{\pi}{3}}
+\)</p>
+<p>Evaluating this from \(0\) to \(\frac{\pi}{3}\):</p>
+<p>\(
+= \left(\frac{3}{8} \cdot \frac{\pi}{3} + \frac{1}{4} \sin\left(2 \cdot \frac{\pi}{3}\right) + \frac{1}{32} \sin\left(4 \cdot \frac{\pi}{3}\right)\right) - \left(\frac{3}{8} \cdot 0 + \frac{1}{4} \sin(0) + \frac{1}{32} \sin(0)\right)
+\)</p>
+<p>\(
+= \frac{\pi}{8} + \frac{1}{4} \sin\left(\frac{2\pi}{3}\right) + \frac{1}{32} \sin\left(\frac{4\pi}{3}\right)
+\)</p>
+<p>\(\sin\left(\frac{2\pi}{3}\right)\) is \(\frac{\sqrt{3}}{2}\) and \(\sin\left(\frac{4\pi}{3}\right)\) is \(-\frac{\sqrt{3}}{2}\):</p>
+<p>\(
+= \frac{\pi}{8} + \frac{1}{4} \cdot \frac{\sqrt{3}}{2} - \frac{1}{32} \cdot \frac{\sqrt{3}}{2}
+\)</p>
+<p>\(
+= \frac{\pi}{8} + \frac{\sqrt{3}}{8} - \frac{\sqrt{3}}{64}
+\)</p>
+<p>Now, combining terms we get the final result:</p>
+<p>\(
+= \frac{\pi}{8} + \frac{8\sqrt{3} - \sqrt{3}}{64}
+\)</p>
+<p>\(
+= \frac{\pi}{8} + \frac{7\sqrt{3}}{64}
+\)</p>
+<p>Now, let's match this result to the form \(\mathrm{a}\pi + \mathrm{b}\sqrt{3}\) and find \(a\) and \(b\):</p>
+<p>\(
+a = \frac{1}{8}, \quad b = \frac{7}{64}
+\)</p>
+<p>Now we find \(9a + 8b\):</p>
+<p>\(
+9a + 8b = 9 \cdot \frac{1}{8} + 8 \cdot \frac{7}{64}
+\)</p>
+<p>\(
+= \frac{9}{8} + \frac{7}{8}
+\)</p>
+<p>\(
+= \frac{16}{8}
+\)</p>
+<p>\(
+= 2
+\)</p>
+<p>Therefore, the value of \(9a + 8b\) is 2, which correspond to Option A.</p>
+</li><li><strong>Q16:</strong> \(\begin{aligned} &amp; I=\int_0^1\left(2 x^3-3 x^2-x+1\right)^{1 / 3} d x \\\\ &amp; I=\int_0^1\left((2 x-1)\left(x^2-x-1\right)\right)^{1 / 3} d x \\\\ &amp; I=\int_0^1\left[(2(1-x)-1)\left((1-x)^2-(1-x)-1\right)\right]^{1 / 3} d x \\\\ &amp; I=\int_0^1\left((1-2 x)\left(x^2-x-1\right)\right)^{1 / 3} d x\end{aligned}\)
+<br/><br/>\(\begin{aligned} &amp; I=-\int_0^1\left((2 x-1)\left(x^2-x-1\right)\right)^{1 / 3} d x \\\\ &amp; I=-I \\\\ &amp; 2 I=0 \\\\ &amp; I=0\end{aligned}\)</li><li><strong>Q17:</strong> <p>Equation of CE</p>
+<p>\(\begin{aligned}
+&amp; y-1=-(x-3) \\
+&amp; x+y=4
+\end{aligned}\)</p>
+<p><img alt="JEE Main 2024 (Online) 27th January Morning Shift Mathematics - Definite Integration Question 60 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lt1cekv6/bbd7771e-59aa-40fe-80f6-e5c8fe8d22a7/2f978020-d3c5-11ee-a50b-bb659a2e1d74/file-1lt1cekv7.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lt1cekv6/bbd7771e-59aa-40fe-80f6-e5c8fe8d22a7/2f978020-d3c5-11ee-a50b-bb659a2e1d74/file-1lt1cekv7.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>orthocentre lies on the line \(x+y=4\)</p>
+<p>so, \(a+b=4\)</p>
+<p>\(I_1=\int_\limits a^b x \sin (x(4-x)) d x\quad\) ..... (i)</p>
+<p>Using king rule</p>
+<p>\(I_1=\int_\limits a^b(4-x) \sin (x(4-x)) d x\quad\) .... (ii)</p>
+<p>\(\begin{aligned}
+&amp; \text { (i) }+ \text { (ii) } \\
+&amp; 2 \mathrm{I}_1=\int_\limits{\mathrm{a}}^{\mathrm{b}} 4 \sin (\mathrm{x}(4-\mathrm{x})) \mathrm{dx} \\
+&amp; 2 \mathrm{I}_1=4 \mathrm{I}_2 \\
+&amp; \mathrm{I}_1=2 \mathrm{I}_2 \\
+&amp; \frac{\mathrm{I}_1}{\mathrm{I}_2}=2 \\
+&amp; \frac{36 \mathrm{I}_1}{\mathrm{I}_2}=72
+\end{aligned}\)</p></li><li><strong>Q18:</strong> <p>\(\begin{aligned}
+&amp; I=\int_\limits0^\pi \frac{d x}{1-2 a \cos x+a^2} ; 0&lt; a&lt;1 \\
+&amp; I=\int_\limits0^\pi \frac{d x}{1+2 a \cos x+a^2} \\
+&amp; 2 I=2 \int_\limits0^{\pi / 2} \frac{2\left(1+a^2\right)}{\left(1+a^2\right)^2-4 a^2 \cos ^2 x} d x \\
+&amp; \Rightarrow I=\int_\limits0^{\pi / 2} \frac{2\left(1+a^2\right) \cdot \sec ^2 x}{\left(1+a^2\right)^2 \cdot \sec ^2 x-4 a^2} d x \\
+&amp; \Rightarrow I=\int_\limits0^{\pi / 2} \frac{2 \cdot\left(1+a^2\right) \cdot \sec ^2 x}{\left(1+a^2\right)^2 \cdot \tan ^2 x+\left(1-a^2\right)^2} d x
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \Rightarrow \mathrm{I}=\int_\limits0^{\pi / 2} \frac{\frac{2 \cdot \sec ^2 \mathrm{x}}{1+\mathrm{a}^2} \cdot \mathrm{dx}}{\tan ^2 \mathrm{x}+\left(\frac{1-\mathrm{a}^2}{1+\mathrm{a}^2}\right)^2} \\
+&amp; \Rightarrow \mathrm{I}=\frac{2}{\left(1-\mathrm{a}^2\right)}\left[\frac{\pi}{2}-0\right] \\
+&amp; \mathrm{I}=\frac{\pi}{1-\mathrm{a}^2}
+\end{aligned}\)</p></li><li><strong>Q19:</strong> <p>\(\begin{aligned}
+&amp; \mathrm{f}(\mathrm{x})=\int_\limits{-\mathrm{x}}^{\mathrm{x}}\left(|\mathrm{t}|-\mathrm{t}^2\right) \mathrm{e}^{-\mathrm{t}^2} \mathrm{dt} \\
+&amp; \Rightarrow \mathrm{f}^{\prime}(\mathrm{x})=2 \cdot\left(|\mathrm{x}|-\mathrm{x}^2\right) \mathrm{e}^{-\mathrm{x}^2} \ldots \ldots \ldots . .(1) \\
+&amp; \mathrm{g}(\mathrm{x})=\int_\limits0^{\mathrm{x}^2} \mathrm{t}^{\frac{1}{2}} \mathrm{e}^{-t} \mathrm{dt} \\
+&amp; \mathrm{g}^{\prime}(\mathrm{x})=\mathrm{xe}^{-\mathrm{x}^2}(2 \mathrm{x})-0 \\
+&amp; \mathrm{f}^{\prime}(\mathrm{x})+\mathrm{g}^{\prime}(\mathrm{x})=2 \mathrm{xe}^{-\mathrm{x}^2}-2 \mathrm{x}^2 \mathrm{e}^{-\mathrm{x}^2}+2 \mathrm{x}^2 \mathrm{e}^{-\mathrm{x}^2}
+\end{aligned}\)</p>
+<p>Integrating both sides w.r.t. \(\mathrm{x}\)</p>
+<p>\(\begin{aligned}
+&amp; \mathrm{f}(\mathrm{x})+\mathrm{g}(\mathrm{x})=\int_\limits0^\alpha 2 \mathrm{xe}^{-\mathrm{x}^2} \mathrm{dx} \\
+&amp; \mathrm{x}^2=\mathrm{t} \\
+&amp; \Rightarrow \int_0^{\sqrt{\alpha}} \mathrm{e}^{-\mathrm{t}} \mathrm{dt}=\left[-\mathrm{e}^{-\mathrm{t}}\right]_0^{\sqrt{\alpha}} \\
+&amp; =-\mathrm{e}^{\left(\log _c(9)^{-1}\right)+1} \\
+&amp; \Rightarrow 9(\mathrm{f}(\mathrm{x})+\mathrm{g}(\mathrm{x}))=\left(1-\frac{1}{9}\right) 9=8
+\end{aligned}\)</p></li><li><strong>Q20:</strong> <p>\(I=\int_\limits0^{\frac{\pi}{2}} \sin 2 x \cdot(\cos x)^{\frac{11}{2}}\left(1+(\cos x)^{\frac{5}{2}}\right)^{\frac{1}{2}} d x\)</p>
+<p>Put \(\cos x=t^2 \Rightarrow \sin x d x=-2 t d t\)</p>
+<p>\(\begin{aligned}
+&amp; \therefore \mathrm{I}=4 \int_\limits0^1 \mathrm{t}^2 \cdot \mathrm{t}^{11} \sqrt{\left(1+\mathrm{t}^5\right)}(\mathrm{t}) \mathrm{dt} \\
+&amp; \mathrm{I}=4 \int_\limits0^1 \mathrm{t}^{14} \sqrt{1+\mathrm{t}^5} \mathrm{dt}
+\end{aligned}\)</p>
+<p>Put \(1+\mathrm{t}^5=\mathrm{k}^2\)</p>
+<p>\(\Rightarrow 5 \mathrm{t}^4 \mathrm{dt}=2 \mathrm{k} \mathrm{dk}\)</p>
+<p>\(\therefore \mathrm{I}=4 \cdot \int_\limits1^{\sqrt{2}}\left(\mathrm{k}^2-1\right)^2 \cdot \mathrm{k} \frac{2 \mathrm{k}}{5} \mathrm{dk}\)</p>
+<p>\(\mathrm{I}=\frac{8}{5} \int_\limits1^{\sqrt{2}} \mathrm{k}^6-2 \mathrm{k}^4+\mathrm{k}^2 \mathrm{dk}\)</p>
+<p>\(\mathrm{I}=\frac{8}{5}\left[\frac{\mathrm{k}^7}{7}-\frac{2 \mathrm{k}^5}{5}+\frac{\mathrm{k}^3}{3}\right]_1^{\sqrt{2}}\)</p>
+<p>\(\mathrm{I}=\frac{8}{5}\left[\frac{8 \sqrt{2}}{7}-\frac{8 \sqrt{2}}{5}+\frac{2 \sqrt{2}}{3}-\frac{1}{7}+\frac{2}{5}-\frac{1}{3}\right]\)</p>
+<p>\(\begin{aligned}
+&amp;\mathrm{I}=\frac{8}{5}\left[\frac{22 \sqrt{2}}{105}-\frac{8}{105}\right]\\
+&amp;\therefore 525 \cdot \mathrm{I}=176 \sqrt{2}-64
+\end{aligned}\)</p></li><li><strong>Q21:</strong> <p>\(\mathrm{f}(\mathrm{a})+\mathrm{f}(1-\mathrm{a})=1\)</p>
+<p>\(M=\int_\limits{f(a)}^{f(1-a)}(1-x) \cdot \sin ^4 x(1-x) d x\)</p>
+<p>\(\mathrm{M}=\mathrm{N}-\mathrm{M} \qquad 2 \mathrm{M}=\mathrm{N}\)</p>
+<p>\(\alpha=2 ; \beta=1 \text {; }\)</p>
+<p>Ans. 5</p></li><li><strong>Q22:</strong> <p>\(\begin{aligned}
+&amp; I=\int_\limits{-\pi / 2}^{\pi / 2}\left(\frac{x^2 \cos x}{1+\pi^x}+\frac{1+\sin ^2 x}{1+e^{\sin x^{2023}}}\right) d x \\
+&amp; I=\int_\limits{-\pi / 2}^{\pi / 2}\left(\frac{x^2 \cos x}{1+\pi^{-x}}+\frac{1+\sin ^2 x}{1+e^{\sin (-x)^{2023}}}\right) d x
+\end{aligned}\)</p>
+<p>On Adding, we get</p>
+<p>\(2 I=\int_\limits{-\pi / 2}^{\pi / 2}\left(x^2 \cos x+1+\sin ^2 x\right) d x\)</p>
+<p>On solving</p>
+<p>\(\begin{aligned}
+&amp; \mathrm{I}=\frac{\pi^2}{4}+\frac{3 \pi}{4}-2 \\
+&amp; \mathrm{a}=3
+\end{aligned}\)</p></li><li><strong>Q23:</strong> <p>\(\begin{aligned}
+&amp; =\int_\limits{\frac{\pi}{6}}^{\frac{\pi}{3}} \sqrt{1-\sin 2 x} d x \\
+&amp; =\int_\limits{\frac{\pi}{6}}^{\frac{\pi}{3}}|\sin x-\cos x| d x \\
+&amp; =\int_\limits{\frac{\pi}{6}}^{\frac{\pi}{4}}(\cos x-\sin x) d x+\int_\limits{\frac{\pi}{4}}^{\frac{\pi}{3}}(\sin x-\cos x) d x \\
+&amp; =-1+2 \sqrt{2}-\sqrt{3} \\
+&amp; =\alpha+\beta \sqrt{2}+\gamma \sqrt{3} \\
+&amp; \alpha=-1, \beta=2, \gamma=-1 \\
+&amp; 3 \alpha+4 \beta-\gamma=6
+\end{aligned}\)</p></li><li><strong>Q24:</strong> <p>\(\begin{aligned}
+&amp;f(x)=\frac{x}{\left(1+x^4\right)^{1 / 4}}\\
+&amp;f \circ f(x)=\frac{f(x)}{\left(1+f(x)^4\right)^{1 / 4}}=\frac{\frac{x}{\left(1+x^4\right)^{1 / 4}}}{\left(1+\frac{x^4}{1+x^4}\right)^{1 / 4}}=\frac{x}{\left(1+2 x^4\right)^{1 / 4}}\\
+&amp;f(f(f(f(x))))=\frac{x}{\left(1+4 x^4\right)^{1 / 4}}
+\end{aligned}\)</p>
+<p>\(18 \int_\limits0^{\sqrt{2 \sqrt{5}}} \frac{x^3}{\left(1+4 x^4\right)^{1 / 4}} d x\)</p>
+<p>\(\begin{aligned}
+&amp; \text { Let } 1+4 \mathrm{x}^4=\mathrm{t}^4 \\
+&amp; 16 \mathrm{x}^3 \mathrm{dx}=4 \mathrm{t}^3 \mathrm{dt} \\
+&amp; \frac{18}{4} \int_\limits1^3 \frac{\mathrm{t}^3 \mathrm{dt}}{\mathrm{t}} \\
+&amp; =\frac{9}{2}\left(\frac{\mathrm{t}^3}{3}\right)_1^3 \\
+&amp; =\frac{3}{2}[26]=39
+\end{aligned}\)</p></li><li><strong>Q25:</strong> <p>\(\begin{aligned}
+&amp; y=f(x) \Rightarrow \frac{d y}{d x}=f^{\prime}(x) \\
+&amp; \left.\frac{d y}{d x}\right)_{(1, f(1))}=f^{\prime}(1)=\tan \frac{\pi}{6}=\frac{1}{\sqrt{3}} \Rightarrow f^{\prime}(1)=\frac{1}{\sqrt{3}} \\
+&amp; \left.\frac{d y}{d x}\right)_{(3, f(3))}=f^{\prime}(3)=\tan \frac{\pi}{4}=1 \Rightarrow f^{\prime}(3)=1 \\
+&amp; 27 \int_\limits1^3\left(\left(f^{\prime}(t)\right)^2+1\right) f^{\prime \prime}(t) d t=\alpha+\beta \sqrt{3} \\
+&amp; I=\int_\limits1^3\left(\left(f^{\prime}(t)\right)^2+1\right) f^{\prime \prime}(t) d t \\
+&amp; f^{\prime}(t)=z \Rightarrow f^{\prime \prime}(t) d t=d z \\
+&amp; z=f^{\prime}(3)=1 \\
+&amp; z=f^{\prime}(1)=\frac{1}{\sqrt{3}}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; I=\int_\limits{1 / \sqrt{3}}^1\left(z^2+1\right) d z=\left(\frac{z^3}{3}+z\right)_{1 / \sqrt{3}}^1 \\
+&amp; =\left(\frac{1}{3}+1\right)-\left(\frac{1}{3} \cdot \frac{1}{3 \sqrt{3}}+\frac{1}{\sqrt{3}}\right) \\
+&amp; =\frac{4}{3}-\frac{10}{9 \sqrt{3}}=\frac{4}{3}-\frac{10}{27} \sqrt{3} \\
+&amp; \alpha+\beta \sqrt{3}=27\left(\frac{4}{3}-\frac{10}{27} \sqrt{3}\right)=36-10 \sqrt{3} \\
+&amp; \alpha=36, \beta=-10 \\
+&amp; \alpha+\beta=36-10=26
+\end{aligned}\)</p></li><li><strong>Q26:</strong> <p>To determine the integral of the piecewise function <span class="c11">\(f\)</span> over the interval <span class="c11">\([-2, 2]\)</span>, we first ensure that <span class="c11">\(f\)</span> is differentiable on <span class="c11">\(\mathbb{R}\)</span>, as given in the problem statement. Differentiability implies continuity, so <span class="c11">\(f\)</span> must also be continuous at <span class="c11">\(x=1\)</span>.</p>
+<p>The condition for continuity at <span class="c11">\(x=1\)</span> is:</p>
+<p><span class="c11">\(x^2 + 3x + a = bx + 2\)</span> at <span class="c11">\(x=1\)</span>.</p>
+<p>This simplifies to:</p>
+<p><span class="c11">\(1 + 3 + a = b(1) + 2\)</span></p>
+<p><span class="c11">\(\Rightarrow a = b - 2\)</span></p>
+<p>The first derivative of <span class="c11">\(f\)</span> gives us two different expressions depending on the value of <span class="c11">\(x\)</span>:</p>
+<p>For <span class="c11">\(x \leq 1\)</span>, <span class="c11">\(f'(x) = 2x + 3\)</span>;
+and for <span class="c11">\(x &gt; 1\)</span>, <span class="c11">\(f'(x) = b\)</span>.</p>
+<p>For <span class="c11">\(f\)</span> to be differentiable at <span class="c11">\(x=1\)</span>, these derivatives must be equal at that point. Setting <span class="c11">\(f'(1)\)</span> from both expressions equal to each other gives <span class="c11">\(2(1) + 3 = b\)</span>, thus <span class="c11">\(b = 5\)</span>. And from <span class="c11">\(a = b - 2\)</span>, we have <span class="c11">\(a = 3\)</span>.</p>
+<p>Now, we can calculate the integral of <span class="c11">\(f\)</span> over the specified interval:</p>
+<p><span class="c11">\(\int\limits_{-2}^1 (x^2 + 3x + 3) \, dx + \int\limits_{1}^2 (5x + 2) \, dx\)</span></p>
+<p>\(\begin{aligned}
+&amp; =\left[\frac{x^3}{3}+\frac{3 x^2}{2}+3 x\right]_{-2}^1+\left[\frac{5 x^2}{2}+2 x\right]_1^2 \\\\
+&amp; =\left(\frac{1}{3}+\frac{3}{2}+3\right)-\left(\frac{-8}{3}+6-6\right)+\left(10+4-\frac{5}{2}-2\right) \\\\
+&amp; =6+\frac{3}{2}+12-\frac{5}{2}=17
+\end{aligned}\)</p></li><li><strong>Q27:</strong> <p>\(\begin{array}{ll}
+\frac{10 x}{x+1}=1 &amp; \Rightarrow x=\frac{1}{9} \\
+\frac{10 x}{x+1}=4 &amp; \Rightarrow x=\frac{2}{3} \\
+\frac{10 x}{x+1}=9 &amp; \Rightarrow x=9
+\end{array}\)</p>
+<p>\(\begin{aligned}
+&amp; \mathrm{I}=9\left(\int_\limits0^{1 / 9} 0 \mathrm{dx}+\int_\limits{1 / 9}^{2 / 3} 1\mathrm{d} x+\int_\limits{2 / 3}^9 2 \mathrm{dx}\right) \\
+&amp; =155
+\end{aligned}\)</p></li><li><strong>Q28:</strong> <p>\(\begin{aligned}
+&amp; \int_\limits{\frac{1}{4}}^{\frac{3}{4}} \cos \left(2 \cot ^{-1} \sqrt{\frac{1-x}{1+x}}\right) d x \\
+&amp; x=\cos 2 \theta \\
+&amp; \Rightarrow d x=(-2 \sin 2 \theta \mathrm{d} \theta)
+\end{aligned}\)</p>
+<p>Take limit as \(\alpha\) and \(\beta\)</p>
+<p>\(\begin{aligned}
+&amp; -2 \int_\limits\alpha^\beta \cos 2 \theta \cdot \sin 2 \theta d \theta \\
+&amp; =\int_\limits\alpha^\beta \sin 4 \theta d \theta \\
+&amp; =\left.\frac{-\cos 4 \theta}{4}\right|_\alpha ^\beta \\
+&amp; =-\left.\frac{1}{4}\left(2 \cdot\left(x^2\right)-1\right)\right|_{1 / 4} ^{3 / 4} \\
+&amp; =-\left.\frac{1}{4}\left(2 x^2-1\right)\right|_{1 / 4} ^{3 / 4} \\
+&amp; =-\frac{1}{4}\left(\frac{18}{16}-1-\frac{2}{16}+1\right) \\
+&amp; =-\frac{1}{4}
+\end{aligned}\)</p></li><li><strong>Q29:</strong> <p>\(f(x)=\left\{\begin{array}{cc}
+-2 &amp; -2 \leq x \leq 0 \\
+x-2 &amp; 0&lt; x \leq 2
+\end{array} h(x)=f|x|+|f(x)|\right.\)</p>
+<p><img alt="JEE Main 2024 (Online) 4th April Morning Shift Mathematics - Definite Integration Question 37 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lwk8ygqe/f2db7258-aa84-4e80-8605-2f6185c78c16/3e8a8d60-198f-11ef-b65b-abc5d1349d93/file-1lwk8ygqf.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lwk8ygqe/f2db7258-aa84-4e80-8605-2f6185c78c16/3e8a8d60-198f-11ef-b65b-abc5d1349d93/file-1lwk8ygqf.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; h(x)=\left\{\begin{array}{cc}
+-x-2+2=-x &amp; -2 \leq x \leq 0 \\
+0 &amp; 0&lt; x \leq 2
+\end{array}\right. \\
+&amp; \therefore \int_\limits{-2}^2 h(x) d x=\int_\limits{-2}^0-x d x+\int_\limits0^2 0 d x \\
+&amp; \left.\frac{x^2}{2}\right|_{-2} ^0=\frac{4}{2}=2
+\end{aligned}\)</p></li><li><strong>Q30:</strong> <p>\(L_1: \frac{x+2}{2}=\frac{y+3}{3}=\frac{z-5}{4}\)</p>
+<p>\(\begin{aligned}
+&amp; \vec{b}_1=2 \hat{i}+3 \hat{j}+4 \hat{k} \\
+&amp;  \vec{a}_1=-2 \hat{i}-3 \hat{j}+5 \hat{k}
+\end{aligned}\)</p>
+<p>\(L_2=\frac{x-3}{1}=\frac{y-2}{-3}=\frac{z+4}{2}\)</p>
+<p>\(\begin{aligned}
+&amp; \vec{a}_2=3 \hat{i}+2 \hat{j}-4 \hat{k} \\
+&amp; \vec{b}_2=1 \hat{i}-3 \hat{j}+2 \hat{k}
+\end{aligned}\)</p>
+<p>\(d=\left|\frac{\left(\vec{a}_2-\vec{a}_1\right) \cdot\left(\vec{b}_1 \times \vec{b}_2\right)}{\left|\vec{b}_1 \times \vec{b}_2\right|}\right|\)</p>
+<p>\(\begin{gathered}
+d=\left|\frac{(5 \hat{i}+5 \hat{j}-9 \hat{k}) \cdot(18 \hat{i}-9 \hat{k})}{\sqrt{324+81}}\right| \\
+\left|\vec{b}_1 \times \vec{b}\right|\left|\begin{array}{ccc}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+2 &amp; 3 &amp; 4 \\
+1 &amp; -3 &amp; 2
+\end{array}\right| \\
+\Rightarrow \hat{i}(6+12)-\hat{j}(4-4)+\hat{k}(-6-3) \\
+\Rightarrow(18 \hat{i}-9 \hat{k})
+\end{gathered}\)</p>
+<p>\(\begin{aligned}
+&amp; d=\left|\frac{90+81}{9 \sqrt{5}}\right| \\
+&amp; d=\frac{171}{9 \sqrt{5}} \\
+&amp; \frac{38}{3 \sqrt{5}} k=\frac{171}{9 \sqrt{5}} \\
+&amp; \frac{38}{3 \sqrt{5}} k=\frac{57}{3 \sqrt{5}}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; {k=\frac{57}{38}}=\frac{3}{2} \\
+&amp; \int_\limits0^{\frac{3}{2}}\left[x^2\right] d x \\
+&amp; \int_\limits0^1 0 d x+\int_\limits0^{\sqrt{ }} 1 d x+\int_\limits{\sqrt{2}}^{\frac{3}{2}} 2 d x \\
+&amp; 0+(\sqrt{2}-1)+2\left(\frac{3}{2}-\sqrt{2}\right) \\
+&amp; \sqrt{2}-1+3-2 \sqrt{2} \\
+&amp; 2-\sqrt{2}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \alpha=2 \\
+&amp; 6 \alpha^3=6(2)^3=48
+\end{aligned}\)</p></li><li><strong>Q31:</strong> <p>\(\begin{aligned}
+&amp; \text { Given, } \int_\limits{-1}^1 \frac{\cos \alpha x}{1+3^x} d x=\frac{2}{\pi} \\
+&amp; \begin{aligned}
+I &amp; =\int_\limits{-1}^1 \frac{\cos \alpha x}{1+3^x} d x \\
+\Rightarrow I &amp; =\int_\limits0^1\left(\frac{\cos \alpha x}{1+3^x}+\frac{\cos \alpha x}{1+3^{-x}}\right) d x \\
+&amp; =\int_\limits0^1 \cos \alpha x d x \\
+&amp; =\left(\frac{\sin \alpha x}{\alpha}\right)_0^1 \\
+&amp; =\frac{\sin \alpha}{\alpha} \\
+\Rightarrow &amp; \frac{\sin \alpha}{\alpha}=\frac{2}{\pi} \\
+\Rightarrow &amp; \alpha=\frac{\pi}{2}
+\end{aligned}
+\end{aligned}\)</p></li><li><strong>Q32:</strong> <p>\(\begin{aligned}
+&amp; \text { Let } \sqrt{e^x-1}=t \\
+&amp; e^x-1=t^2 \\
+&amp; e^x=1+t^2 \\
+&amp; e^x=0+2 t-\frac{d t}{d x} \\
+&amp; \frac{d t}{d x}=\frac{e^x}{2 t}=\frac{t^2+1}{2 t} \\
+&amp; I=\int \frac{2 t}{t\left(1+t^2\right)} d t=2 \tan ^{-1} t \\
+&amp; \Rightarrow \quad I=\int_\limits\alpha^{\log ^4} \frac{d x}{\sqrt{e^x-1}} \\
+&amp; I=\left.2 \tan ^{-1} \sqrt{e^x-1}\right|_\alpha ^{\log 4} \\
+&amp; =2\left(\tan ^{-1} \sqrt{3}-\tan ^{-1} \sqrt{e^\alpha-1}\right)=\frac{\pi}{6} \\
+&amp; \Rightarrow \frac{\pi}{3}-\tan ^{-1}\left(\sqrt{e^\alpha-1}\right)=\frac{\pi}{12} \\
+&amp; \tan ^{-1}\left(\sqrt{e^\alpha-1}\right)=\frac{\pi}{4} \\
+&amp; \Rightarrow e^\alpha-1=1 \\
+&amp; e^\alpha=2 \Rightarrow e^{-\alpha}=\frac{1}{2}
+\end{aligned}\)</p>
+<p>\(\therefore \quad\) Quadratic equation whose roots are \(e^a\) &amp; \(e^{-\alpha}\) is</p>
+<p>\(\begin{aligned}
+&amp; x^2-\left(e^\alpha+e^{-\alpha}\right) x+e^\alpha \times e^{-\alpha}=0 \\
+&amp; x^2-\left(2+\frac{1}{2}\right) x+1=0 \\
+&amp; 2 x^2-5 x+2=0
+\end{aligned}\)</p></li><li><strong>Q33:</strong> <p>\(\begin{aligned}
+&amp; I(21)=\int_\limits0^1\left(1-x^k\right)^{21} d x \\
+&amp; =\int_\limits0^1\left(1-x^k\right)\left(1-x^k\right)^{20} d x \\
+&amp; =\int_\limits0^1\left(1-x^k\right)^{20} d x-\int_0 x^k\left(1-x^k\right)^{20} d x \\
+&amp; I(21)=I(20)-\int_\limits0^1 x^k\left(1-x^k\right)^{20} d x
+\end{aligned}\)</p>
+<p><img alt="JEE Main 2024 (Online) 8th April Morning Shift Mathematics - Definite Integration Question 31 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lw8swbwa/de26032d-c065-4f0a-b1b3-032767344a76/d1fa19a0-1343-11ef-9cb4-095599b9956f/file-1lw8swbwb.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lw8swbwa/de26032d-c065-4f0a-b1b3-032767344a76/d1fa19a0-1343-11ef-9cb4-095599b9956f/file-1lw8swbwb.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(I(21)=I(20)-\left\lfloor\frac{\left(1-x^k\right)^{21}}{-21 k} x-\int_\limits0^1 \frac{(1-x^k)^{21}}{-21 k} d x\right\rfloor\)</p>
+<p>\(\begin{aligned}
+&amp; I(21)=I(20)-\frac{1}{21 k} I(20) \\
+&amp; \Rightarrow[I(21)](21 k+1)=21 K I(20) \\
+&amp; \Rightarrow 21 K=147 \Rightarrow K=7
+\end{aligned}\)</p></li><li><strong>Q34:</strong> <p>\(\int_0^{\pi / 4} \frac{136 \sin x}{3 \sin x+5 \cos x} d x\)</p>
+<p>\(\begin{aligned}
+&amp; \sin x=A(3 \sin x+5 \cos x)+B(3 \cos x-5 \sin x) \\
+&amp; \begin{array}{l}
+3 A-5 B=1 \\
+5 A+3 B=0
+\end{array}&gt;A=\frac{3}{34} \quad B=\frac{-5}{34}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \int_0^{\pi / 4} \frac{136\left[\frac{3}{34}(3 \sin x+5 \cos x)-\frac{5}{34}(3 \cos x-5 \sin x)\right]}{3 \sin x+5 \cos x} d x \\
+&amp; \int_0^{\pi / 4} 12 d x-20 \int_0^{\pi / 4} \frac{3 \cos x-5 \sin x}{3 \sin x+5 \cos x} d x \\
+&amp; 12 \times \frac{\pi}{4}-20\left[\ln \left|\frac{3}{\sqrt{2}}+\frac{5}{\sqrt{2}}\right|-\ln 5\right] \\
+&amp; 3 \pi-20 \ln 2^{5 / 2}+20 \ln 5 \\
+&amp; \Rightarrow 3 \pi-50 \ln 2+20 \ln 5
+\end{aligned}\)</p></li><li><strong>Q35:</strong> <p>\(\begin{aligned}
+&amp; I=\int_\limits{-\pi}^\pi \frac{2 y(1+\sin y)}{1+\cos ^2 y} d y \\
+&amp; =\int_\limits0^\pi\left(\frac{2 y(1+\sin y)}{1+\cos ^2 y}+\frac{-2 y(1-\sin y)}{1+\cos ^2 y}\right) d y \\
+&amp; =\int_\limits0^\pi\left(\frac{2 y+2 y \sin y-2 y+2 y \sin y}{1+\cos ^2 y}\right) d y
+\end{aligned}\)</p>
+<p>\(I=4 \int_0^\pi\left(\frac{y \sin }{1+\cos ^2 y}\right) d y \quad \text{... (1)}\)</p>
+<p>\(\begin{aligned}
+&amp; I=4 \int_\limits0^\pi\left(\frac{(\pi-y) \sin (\pi-)}{1+\cos ^2(\pi-y)}\right) d y \\
+&amp; I=4\left\lfloor\int_\limits0\left(\frac{\pi \sin y}{1+\cos ^2 y}\right) d y-\int_\limits0^\pi \frac{y \sin y}{1+\cos ^2 y} d y\right\rfloor \quad \text{... (2)}
+\end{aligned}\)</p>
+<p>Adding equation (1) and (2)</p>
+<p>\(\begin{aligned}
+&amp; 2 I=4 \int_\limits0^\pi\left(\frac{\pi \sin y}{1+\cos ^2 y}\right) d y \\
+&amp; I=2 \pi \int_\limits0^\pi \frac{\sin y}{1+\cos ^2 y} d y \\
+&amp; =2 \pi \times \frac{\pi}{2} \\
+&amp; =\pi^2
+\end{aligned}\)</p></li><li><strong>Q36:</strong> <p>First, let's rewrite the given integral using the given form of the Beta function. The given integral is:</p>
+<p>
+<p>\(\int_\limits0^1\left(1-x^{10}\right)^{20} \mathrm{~d} x\)</p>
+</p>
+<p>To use the Beta function, let us make a substitution. Let \( x^{10} = t \). Then, \( dx = \frac{1}{10}t^{-\frac{9}{10}} dt \) or \( dx = \frac{1}{10} t^{-\frac{9}{10}} dt \). The limits of integration change as follows: when \( x = 0 \), \( t = 0 \), and when \( x = 1 \), \( t = 1 \).</p>
+<p>Substituting these into the integral, we have:</p>
+<p>
+<p>\(\int_\limits0^1 (1 - t)^{20} \cdot \frac{1}{10} t^{-\frac{9}{10}} dt\)</p>
+</p>
+<p>which simplifies to:</p>
+<p>
+<p>\(\frac{1}{10} \int_\limits0^1 (1 - t)^{20} t^{-\frac{9}{10}} dt\)</p>
+</p>
+<p>We recognize this integral as a Beta function \( \beta(m, n) \) where \( m = 1 - \frac{9}{10} = \frac{1}{10} \) and \( n = 20 + 1 = 21 \).</p>
+<p>Therefore, we can write this as:</p>
+<p>
+<p>\(\frac{1}{10} \beta \left( \frac{1}{10}, 21 \right)\)</p>
+</p>
+<p>Comparing this to \( a \times \beta(b, c) \), we have \( a = \frac{1}{10} \), \( b = \frac{1}{10} \), and \( c = 21 \).</p>
+<p>Now we calculate \( 100(a + b + c) \):</p>
+<p>
+<p>\(100 \left( \frac{1}{10} + \frac{1}{10} + 21 \right) = 100 \left( \frac{1}{10} + \frac{1}{10} + 21 \right) = 100 \left( \frac{1}{5} + 21 \right) = 100 \left( \frac{1}{5} + \frac{105}{5} \right) = 100 \left( \frac{106}{5} \right) = 100 \times 21.2 = 2120\)</p>
+</p>
+<p>So, the answer is Option D, 2120.</p></li><li><strong>Q37:</strong> <p>\(\begin{aligned}
+&amp; f(t)=\int_\limits0^\pi \frac{2 x d x}{1-\cos ^2 t \sin ^2 x} \\
+&amp; x \rightarrow \pi-x
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; f(t)=\int_\limits0^\pi \frac{2(\pi-x) d x}{1-\cos ^2 t \sin ^2 x}=2 \pi \int_\limits0^\pi \frac{d x}{1-\cos ^2 t \sin ^2 x}-f(t) \\
+&amp; \Rightarrow f(t)=\pi \int_\limits0^\pi \frac{d x}{1-\cos ^2 t \sin ^2 x} \\
+&amp; =2 \pi \int_\limits0^{\frac{\pi}{2}} \frac{d x}{1-\cos ^2 t \sin ^2 x} \\
+&amp; f(t)=2 \pi \int_\limits0^{\frac{\pi}{2}} \frac{\sec ^2 x d x}{\sec ^2 x-\cos ^2 t \tan ^2 x} \\
+&amp; I_1=\int \frac{\sec ^2 x d x}{\sec ^2 x-\cos ^2 t \tan ^2 x} \\
+&amp; \text { Put } \cos t \tan x=\lambda \Rightarrow \cos t \sec ^2 x d x=d \lambda \\
+&amp; I_1=\int \frac{d \lambda}{\cos t \cdot\left(1+\lambda^2 \sec ^2 t-\lambda^2\right)}=\int \frac{d \lambda}{\cos t\left(1+\lambda^2 \tan ^2 t\right)} \\
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+=\frac{1}{\cos t \cdot \tan ^2 t} \cdot \int \frac{d \lambda}{\lambda^2+\cos ^2 t}= &amp; \frac{1}{\cos t \tan ^2 t} \\
+&amp; \times \frac{1}{\cos t} \tan ^{-1}(\lambda \tan t)
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; =\frac{1}{\sin t} \tan ^{-1}(\sin t \tan x) \\
+\Rightarrow &amp; \left.f(t)=\frac{2 \pi}{\sin t} \tan ^{-1}(\sin t \tan x)\right]_0^{\frac{\pi}{2}}=\frac{\pi^2}{\sin t} \\
+\Rightarrow &amp; \int_\limits0^{\frac{\pi}{2}} \frac{\pi^2 d t}{f(t)}=\int_\limits0^{\frac{\pi}{2}} \sin t d t=1
+\end{aligned}\)</p></li><li><strong>Q38:</strong> <p>\(\int_\limits0^3\left(\left[x^2\right]+\left[\frac{x^2}{2}\right]\right) d x \quad=\int_\limits0^1 0 d x+\int_1^{\sqrt{2}} 1 d x+\int_\limits{\sqrt{2}}^{\sqrt{3}} 3 d x+\)</p>
+<p>\(
+\begin{aligned}
+&amp; \int_\limits{\sqrt{3}}^2 4 d x+\int_\limits2^{\sqrt{5}} 6 d x+\int_\limits{\sqrt{5}}^{\sqrt{6}} 7 d x+\int_\limits{\sqrt{6}}^{\sqrt{7}} 9 d x+\int_\limits{\sqrt{7}}^{\sqrt{8}} 10 d x+\int_\limits{\sqrt{8}}^3 12 d x \\
+&amp; =31-6 \sqrt{2}-\sqrt{3}-\sqrt{5}-\sqrt{7}-2 \sqrt{6} \\
+&amp; \Rightarrow a=31, b=-6, c=-2 \\
+&amp; \Rightarrow a+b+c=23
+\end{aligned}\)</p></li><li><strong>Q39:</strong> <p>\(r_k=\frac{I_a}{I_b} \text {, where } I_a=\int_0^1\left(1-x^7\right)^k d x\)</p>
+<p><img alt="JEE Main 2024 (Online) 6th April Morning Shift Mathematics - Definite Integration Question 24 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lwd3wwxo/4611eb8f-9da2-472d-abed-83945d5d0d49/093f3fc0-15a2-11ef-9ea4-3bb319c2f90f/file-1lwd3wwxp.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lwd3wwxo/4611eb8f-9da2-472d-abed-83945d5d0d49/093f3fc0-15a2-11ef-9ea4-3bb319c2f90f/file-1lwd3wwxp.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; \left.=\left(1-x^7\right)^{k+1} \cdot x\right]_0^1-\int_0^1(k+1)\left(1-x^7\right)^k\left(-7 x^6\right) \cdot x d x \\
+&amp; =-7(k+1) \int_0^1\left(1-x^7\right)^k\left(-1+1-x^7\right) \\
+&amp; I_b=-7(k+1)\left[-l_a+l_b\right] \\
+&amp; \Rightarrow r_k=\frac{l_a}{I_b}=\frac{7 k+8}{7 k+7}=1+\frac{1}{7(k+1)} \\
+&amp; \frac{1}{7\left(r_k-1\right)}=(k+1) \\
+&amp; \Rightarrow \sum_{r=-1}^{10} \frac{1}{7\left(r_K-1\right)}=\sum_{r=1}^{10}(k+1)=\frac{11.12}{2}-1=65
+\end{aligned}\)</p></li><li><strong>Q40:</strong> \(
+I=\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}} \frac{x+\frac{\pi}{4}}{(2-\cos 2 x)} d x
+\)
+<br/><br/>Using \(\int_a^b f(x) d x=\int_a^b f(a+b-x) d x\)
+<br/><br/>\(
+I=\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\left(\frac{-x+\frac{\pi}{4}}{2-\cos 2 x}\right) d x
+\)
+<br/><br/>\(\begin{aligned} &amp; \therefore 2 I=\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}} \frac{\pi d x}{2(2-\cos 2 x)} \\\\ &amp; \Rightarrow  I=\frac{2 \pi}{4} \int_0^{\frac{\pi}{4}}\left(\frac{d x}{\left.\frac{2-1-\tan ^2 x}{1+\tan ^2 x}\right)}\right. \\\\ &amp; \Rightarrow  I=\frac{\pi}{2} \int_0^{\frac{\pi}{4}}\left(\frac{1+\tan ^2 x}{1+3 \tan ^2 x}\right) d x\end{aligned}\)
+<br/><br/>Now,
+<br/><br/>\(
+\begin{aligned}
+&amp; \tan x=t \\\\
+&amp; =\frac{\pi}{2} \int_0^1 \frac{d t}{1+3 t^2} \\\\
+&amp; =\frac{\pi}{2}\left[\frac{\tan ^{-1}(\sqrt{3} t)}{\sqrt{3}}\right]_0^1 \\\\
+&amp; =\frac{\pi}{2 \sqrt{3}}\left(\frac{\pi}{3}\right)=\frac{\pi^2}{6 \sqrt{3}}
+\end{aligned}
+\)</li><li><strong>Q41:</strong> \(
+\begin{aligned}
+&amp; \mathrm{I}=\int_0^\pi \frac{5^{\cos x}\left(1+\cos x \cos 3 x+\cos ^2 x+\cos ^3 x \cos 3 x\right)}{1+5^{\cos x}} d x \\\\
+&amp; I=\int_0^\pi \frac{5^{-\cos x}\left(1+\cos x \cos 3 x+\cos ^2 x+\cos ^3 x \cos 3 x\right)}{1+5^{-\cos x}} d x \\\\
+&amp; 2 \mathrm{I}=\int_0^\pi\left(1+\cos x \cos 3 x+\cos ^2 x+\cos ^3 x \cos 3 x\right) d x \\\\
+&amp; {2 I}={2} \int_0^{\frac{\pi}{2}}\left(1+\cos x \cos 3 x+\cos ^2 x+\cos ^3 x \cos 3 x\right) d x
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; I=\int_0^{\frac{\pi}{2}}\left(1+\sin x(-\sin 3 x)+\sin ^2 x-\sin ^3 x \sin 3 x\right) d x \\\\
+&amp; 2 I=\int_0^{\frac{\pi}{2}}\left(3+\cos 4 x+\cos ^3 x \cos 3 x-\sin ^3 x \sin 3 x\right) d x \\\\
+&amp; 2 I=\int_0^{\frac{\pi}{2}} 3+\cos 4 x+\left(\frac{\cos 3 x+3 \cos x}{4}\right) \cos 3 x-\sin 3 x\left(\frac{3 \sin x-\sin 3 x}{4}\right) d x
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; 2 \mathrm{I}=\int_0^{\frac{\pi}{2}}\left(3+\cos 4 \mathrm{x}+\frac{1}{4}+\frac{3}{4} \cos 4 \mathrm{x}\right) \mathrm{dx} \\\\
+&amp; 2 \mathrm{I}=\frac{13}{4} \times \frac{\pi}{2}+\frac{7}{4}\left(\frac{\sin 4 \mathrm{x}}{4}\right)_0^{\frac{\pi}{2}} \Rightarrow \mathrm{I}=\frac{13 \pi}{16}
+\end{aligned}
+\)</li><li><strong>Q42:</strong> \(I=\int\limits_{0}^{\alpha} \frac{x}{\sqrt{x+\alpha}-\sqrt{x}} d x, \alpha&gt;0\)
+
+<br/><br/>\(
+\begin{aligned}
+&amp; =\frac{1}{\alpha} \int\limits_{0}^{\alpha} x(\sqrt{x+\alpha}+\sqrt{x}) d x 
+\end{aligned}
+\)
+<br/><br/>\(\eqalign{
+  &amp;  = {1 \over \alpha }\int\limits_0^\alpha  {\left( {x\sqrt {x + \alpha }  + x\sqrt x } \right)} dx  \cr 
+  &amp;  = {1 \over \alpha }\int\limits_0^\alpha  {\left[ {\left( {x + \alpha  - \alpha } \right)\sqrt {x + \alpha }  + {x^{{3 \over 2}}}} \right]} dx \cr} \)
+<br/><br/>\(
+\begin{aligned}
+&amp; =\frac{1}{\alpha}\int\limits_0^\alpha \left[(x+\alpha)^{3 / 2}-\alpha(x+\alpha)^{1 / 2}+x^{3 / 2}\right] d x \\\\
+&amp; =\frac{1}{\alpha}\left[\frac{2}{5}(x+\alpha)^{5 / 2}-\alpha \frac{2}{3}(x+\alpha)^{3 / 2}+\frac{2}{5} x^{5 / 2}\right]_0^\alpha \\\\
+&amp; =\frac{1}{\alpha}\left(\frac{2}{5}(2 \alpha)^{5 / 2}-\frac{2 \alpha}{3}(2 \alpha)^{3 / 2}+\frac{2}{5} \alpha^{5 / 2}-\frac{2}{5} \alpha^{5 / 2}+\frac{2}{3} \alpha^{5 / 2}\right) \\\\
+&amp; =\frac{1}{\alpha}\left(\frac{2^{7 / 2} \alpha^{5 / 2}}{5}-\frac{2^{5 / 2} \alpha^{5 / 2}}{3}+\frac{2}{3} \alpha^{5 / 2}\right)=\alpha^{3 / 2}\left(\frac{2^{7 / 2}}{5}-\frac{2^{5 / 2}}{3}+\frac{2}{3}\right) \\\\
+&amp; =\frac{\alpha^{3 / 2}}{15}(24 \sqrt{2}-20 \sqrt{2}+10)=\frac{\alpha^{3 / 2}}{15}(4 \sqrt{2}+10)
+\end{aligned}
+\)
+<br/><br/>Now, \(\frac{\alpha^{3 / 2}}{15}(4 \sqrt{2}+10)=\frac{16+20 \sqrt{2}}{15}=\frac{2 \sqrt{2}(4 \sqrt{2}+10)}{15}\)
+<br/><br/>\(
+\Rightarrow \alpha^{3 / 2}=2 \sqrt{2}=2^{3 / 2} \)
+<br/><br/>\(\Rightarrow \alpha=2
+\)</li><li><strong>Q43:</strong> \(I=\int_{0}^{1}\left(x^{21}+x^{14}+x^{7}\right)\left(2 x^{14}+3 x^{7}+6\right)^{1 / 7} d x\) <br/><br/>\(I=\int_{0}^{1}\left(x^{20}+x^{13}+x^{6}\right)\left(2 x^{21}+3 x^{14}+6 x^{7}\right)^{1 / 7} d x\)
+
+<br/><br/>Let \(2 x^{21}+3 x^{14}+6 x^{7}=t\)
+
+<br/><br/>\(\Rightarrow 42\left(x^{20}+x^{13}+x^{6}\right) d x=d t\)
+
+<br/><br/>\(I=\frac{1}{42} \int_{0}^{11} t^{1 / 7} d t=\frac{1}{42} \frac{7}{8}\left[t^{8 / 7}\right]_{0}^{11}\)
+
+<br/><br/>\(=\frac{1}{48} (11)^{8/7}\)
+
+<br/><br/>\(\therefore \quad I=48, m=8, n=7\)
+
+<br/><br/>\(\therefore \quad l+m+n=63\)</li><li><strong>Q44:</strong> \(f^{\prime}(x)+f(x)=k\)
+
+<br/><br/>\(
+\begin{aligned}
+&amp; \Rightarrow e^{x} f(x)=k e^{x}+c \\\\
+&amp; f(x)=k+c e^{-x} \\\\
+&amp; k=\int_{0}^{2}\left(k+c e^{-t}\right) d t \\\\
+&amp; k=2 k+\left.c \cdot \frac{e^{-t}}{-1}\right|_{0} ^{2} \\\\
+&amp; k=2 k+c\left(\frac{e^{-2}}{-1}+1\right) \\\\
+&amp; -k=c\left(1-\frac{1}{e^{2}}\right) \\\\
+&amp; f(x)=c e^{-x}-c\left(1-\frac{1}{e^{2}}\right) \\\\
+&amp; f(0)=c-c+\frac{c}{e^{2}}=\frac{1}{e^{2}} \Rightarrow c=1 \\\\
+&amp; f(2)=e^{-2}-r\left(1-e^{-2}\right) \\\\
+&amp; =2 e^{-2}-1 \\\\
+&amp; 2f(0)-f(2)=1
+\end{aligned}
+\)
+
+</li><li><strong>Q45:</strong> \(\int_{0}^{\alpha} \frac{t^{50}}{1-t} d t\)
+
+<br/><br/>\(
+\begin{aligned}
+&amp; = \int_{0}^{\alpha} \frac{t^{50}-1+1}{1-t}\\\\
+&amp; =-\int_{0}^{\alpha}\left(\frac{1-t^{50}}{1-t}-\frac{1}{1-t}\right) d t\\\\
+&amp; =-\int_{0}^{\alpha}\left(1+t+\ldots . .+t^{49}\right)+\int_{0}^{\alpha} \frac{1}{1-t} d t
+\end{aligned}
+\)
+<br/><br/>\(=-\left(\frac{\alpha^{50}}{50}+\frac{\alpha^{49}}{49}+\ldots . .+\frac{\alpha^{1}}{1}\right)+\left(\frac{\ln (1-\mathrm{f})}{-1}\right)_{0}^{\alpha}\) 
+<br/><br/>\(=-\mathrm{P}_{50}(\alpha)-\ln (1-\alpha)\)
+
+<br/><br/>\(=-\mathrm{P}_{50}(\alpha)-\beta\)</li><li><strong>Q46:</strong> <p>\(\int_1^2 {{{{t^4} + 1} \over {{t^6} + 1}}dt} \)</p>
+<p>\( = \int_1^2 {{{{{({t^2} + 1)}^2}} \over {{t^6} + 1}}dt - 2\int_1^2 {{{{t^2}} \over {{t^6} + 1}}dt} } \)</p>
+<p>\( = \int_1^2 {{{{t^2} + 1} \over {{t^4} - {t^2} + 1}}dt - 2\int_1^2 {{{{t^2}} \over {{{({t^3})}^2} + 1}}dt} } \)</p>
+<p>\( = \left. {{{\tan }^{ - 1}}(2t + \sqrt 3 ) + {{\tan }^{ - 1}}(2t - \sqrt 3 )} \right|_1^2 - \left. {{2 \over 3}{{\tan }^{ - 1}}({t^3})} \right|_1^2\)</p>
+<p>\( = {\tan ^{ - 1}}(4 + \sqrt 3 ) + {\tan ^{ - 1}}(4 - \sqrt 3 ) - {\tan ^{ - 1}}(2 + \sqrt 3 ) - {\tan ^{ - 1}}(2 + \sqrt 3 ) - {\tan ^{ - 1}}(2\sqrt 3 ) - {2 \over 3}({\tan ^{ - 1}}8 - {\tan ^{ - 1}}1)\)</p>
+<p>\( = {\tan ^{ - 1}}2 + {1 \over 3}{\tan ^{ - 1}}8 - {\pi  \over 3}\)</p></li><li><strong>Q47:</strong> <p>\(I = \int\limits_{{1 \over 2}}^2 {{{{{\tan }^{ - 1}}x} \over x}dx} \) ..... (i)</p>
+<p>\(x \to {1 \over x}\)</p>
+<p>\(I = \int\limits_{{1 \over 2}}^2 {{1 \over x}{{\tan }^{ - 1}}{1 \over x}dx} \) ..... (ii)</p>
+<p>\(2I = \int\limits_{{1 \over 2}}^2 {{1 \over x}\,.\,{\pi  \over 2}dx} \)</p>
+<p>\( = \left. {{\pi  \over 2}\ln x} \right|_{{1 \over 2}}^2 = \pi \ln 2\)</p>
+<p>\( \Rightarrow I = {\pi  \over 2}\ln 2\)</p></li><li><strong>Q48:</strong> \(I=\int \frac{d x}{x^{3}\left(x^{2}+2\right)^{2}}\) <br/><br/>\(=\frac{1}{4} \int \frac{x}{x^{2}+2} d x+\frac{1}{4} \int \frac{x}{\left(x^{2}+2\right)^{2}}-\frac{1}{4} \int \frac{d x}{x}+\frac{1}{4} \int \frac{d x}{x^{3}}\)<br/><br/> \(=\frac{1}{8} \ln \left(x^{2}+2\right)-\frac{\ln x}{4}-\frac{1}{8\left(x^{2}+2\right)}-\frac{1}{8 x^{3}}\)
+<br/><br/>
+Now, \(16 \int_{1}^{2} \frac{d x}{x^{3}\left(x^{2}+2\right)^{2}}=2 \ln 6-2 \ln 3-4 \ln 2+\frac{11}{6}\) <br/><br/>\(=\frac{11}{6}-\ln 4\)</li><li><strong>Q49:</strong> \(I=\int\limits_{\frac{1}{3}}^{3}|\ln x| d x=-\int\limits_{\frac{1}{3}}^{1} \ln x d x+\int\limits_{1}^{3} \ln x d x\)
+<br/><br/>
+\(
+\begin{aligned}
+&amp; \left.=-[x \ln x-x]_{\frac{1}{3}}^{1}+x \ln x-x\right]_{1}^{3} \\\\
+&amp; =-\left[(0-1)-\left(\frac{1}{3} \ln 3-\frac{1}{3}\right)\right]+[(3 \ln 3-3)-(0-1)] \\\\
+&amp; =\frac{2}{3}-\frac{1}{3} \ln 3+3 \ln 3-2
+\end{aligned}
+\)<br/><br/>
+\(
+\begin{aligned}
+&amp; =\frac{8}{3} \ln 3-\frac{4}{3} \\\\
+&amp; =\frac{4}{3}(2 \ln 3-\ln e) \\\\
+&amp; =\frac{4}{3} \ln \left(\frac{3^{2}}{e}\right) \\\\
+&amp; m=4, m^{m}=3 \\\\
+&amp; m^{2}+n^{2}-5=20
+\end{aligned}
+\)
+</li><li><strong>Q50:</strong> \(
+f(x)=\int_0^2 e^{|x-t|} d t
+\)<br/><br/>
+For \(x&gt;2\)<br/><br/>
+\(
+f(x)=\int_0^2 e^{x-t} d t=e^x\left(1-e^{-2}\right)
+\)<br/><br/>
+For \(x&lt;0\)<br/><br/>
+\(
+f(x)=\int_0^2 e^{t-x} d t=e^{-x}\left(e^2-1\right)
+\)<br/><br/>
+For \(x \in[0,2]\)<br/><br/>
+\(
+\begin{aligned}
+&amp; f(x)=\int_0^x e^{x-t} d t + \int_x^2 e^{t-x} d t \\\\
+&amp; =e^{2-x}+e^x-2
+\end{aligned}
+\)<br/><br/>
+For \(x&gt;2\)<br/><br/>
+\(
+\left.f(x)\right|_{\min =e^2-1}
+\)<br/><br/>
+For \(\mathrm{x}&lt;0\)<br/><br/>
+\(
+\left.f(x)\right|_{\min =e^2-1}
+\)<br/><br/>
+For \(x \in[0,2]\)<br/><br/>
+\(
+\left.f(x)\right|_{\min }=2(e-1)
+\)</li><li><strong>Q51:</strong> \(
+\int_{\frac{3 \sqrt{2}}{4}}^{\frac{3 \sqrt{3}}{4}} \frac{48}{\sqrt{9-4 x^2}} d x
+\)<br/><br/>
+We have \(\int \frac{d x}{\sqrt{a^2-x^2}}=\sin ^{-1} \frac{x}{a}+C\)<br/><br/>
+Hence \(\int_{\frac{3 \sqrt{2}}{4}}^{\frac{3 \sqrt{3}}{4}} \frac{48}{\sqrt{9-4 x^2}} d x=\frac{48}{2} \times\left[\sin ^{-1} \frac{2 x}{3}\right]_{\frac{3 \sqrt{2}}{4}}^{\frac{3 \sqrt{3}}{4}}\)<br/><br/>
+\(=24 \times\left[\sin ^{-1}\left(\frac{2}{3} \times \frac{3 \sqrt{3}}{4}\right)-\sin ^{-1}\left(\frac{2}{3} \times \frac{3 \sqrt{2}}{4}\right)\right]\)
+\(=24 \times\left[\sin ^{-1} \frac{\sqrt{3}}{2}-\sin ^{-1} \frac{1}{\sqrt{2}}\right]\)<br/><br/>
+\(=24 \times\left(\frac{\pi}{3}-\frac{\pi}{4}\right)\)<br/><br/>
+\(=24 \times \frac{\pi}{12}=2 \pi\)</li><li><strong>Q52:</strong> <p>Let I = \(\int\limits_0^3 {|{x^2} - 3x + 2|dx} \)</p>
+<p>\( = \int\limits_0^3 {|(x - 1)(x - 2)|dx} \)</p>
+<p><img alt="JEE Main 2023 (Online) 24th January Morning Shift Mathematics - Definite Integration Question 86 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1le2gufhw/2197edc8-523a-4ea7-bfd4-68c608ff54fb/16df8b40-ab6c-11ed-b566-111c81fc645a/file-1le2gufhx.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1le2gufhw/2197edc8-523a-4ea7-bfd4-68c608ff54fb/16df8b40-ab6c-11ed-b566-111c81fc645a/file-1le2gufhx.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\( = \int\limits_0^1 { + ({x^2} - 3x + 2)dx + \int\limits_1^2 { - ({x^2} - 3x + 2)dx + \int\limits_2^3 {({x^2} - 3x + 2)dx} } } \)</p>
+<p>\( = \left[ {{{{x^3}} \over 3} - {{3{x^2}} \over 2} + 2x} \right]_0^1 - \left[ {{{{x^3}} \over 3} - {{3{x^2}} \over 2} + 2x} \right]_1^2 + \left[ {{{{x^3}} \over 3} - {{3{x^2}} \over 2} + 2x} \right]_2^3\)</p>
+<p>\( = \left( {{1 \over 3} - {3 \over 2} + 2} \right) - \left[ {\left( {{8 \over 3} - 6 + 4} \right) - \left( {{1 \over 3} - {3 \over 2} + 2} \right)} \right] + \left[ {\left( {{{27} \over 3} - {{27} \over 2} + 6} \right) - \left( {{8 \over 3} - 6 + 4} \right)} \right]\)</p>
+<p>\( = {5 \over 6} - \left( {{2 \over 3} - {5 \over 6}} \right) + \left( {{3 \over 2} - {2 \over 3}} \right)\)</p>
+<p>\( = {5 \over 6} + {5 \over 6} - {2 \over 3} - {2 \over 3} + {3 \over 2}\)</p>
+<p>\( = {{10} \over 6} - {4 \over 3} + {3 \over 2}\)</p>
+<p>\( = {{10 - 8 + 9} \over 6} = {{11} \over 6}\)</p>
+<p>\( \therefore \) 12I = \(12 \times {{11} \over 6}\) = 22</p></li><li><strong>Q53:</strong> <p>Let, \(I = {8 \over \pi }\int\limits_0^{{\pi  \over 2}} {{{{{(\cos x)}^{2023}}} \over {{{(\sin x)}^{2023}} + {{(\cos x)}^{2023}}}}dx} \) ..... (1)</p>
+<p>Using formula,</p>
+<p>\(\int\limits_a^b {f(x)dx = \int\limits_a^b {f(a + b - x)dx} } \)</p>
+<p>\(I = {8 \over \pi }\int\limits_0^{{\pi  \over 2}} {{{{{\left[ {\cos \left( {{\pi  \over 2} - x} \right)} \right]}^{2023}}} \over {{{\left[ {\sin \left( {{\pi  \over 2} - x} \right)} \right]}^{2023}} + {{\left[ {\cos \left( {{\pi  \over 2} - x} \right)} \right]}^{2023}}}}dx} \)</p>
+<p>\( = {8 \over \pi }\int\limits_0^{{\pi  \over 2}} {{{{{(\sin x)}^{2023}}} \over {{{(\cos x)}^{2023}} + {{(\sin x)}^{2023}}}}dx} \) ..... (2)</p>
+<p>Adding equation (1) and (2), we get</p>
+<p>\(2I = {8 \over \pi }\int\limits_0^{{\pi  \over 2}} {{{{{(\sin x)}^{2023}} + {{(\cos x)}^{2023}}} \over {{{(\sin x)}^{2023}} + {{(\cos x)}^{203}}}}dx} \)</p>
+<p>\( \Rightarrow 2I = {8 \over \pi }\int\limits_0^{{\pi  \over 2}} {dx} \)</p>
+<p>\( \Rightarrow 2I = {8 \over \pi }\left[ x \right]_0^{{\pi  \over 2}}\)</p>
+<p>\( \Rightarrow 2I = {8 \over \pi } \times {\pi  \over 2}\)</p>
+<p>\( \Rightarrow 2I = 4\)</p>
+<p>\( \Rightarrow I = 2\)</p></li><li><strong>Q54:</strong> <p>We're given the expression:</p>
+<p>\(\frac{e^{-\pi/4} + \int_0^{\pi / 4} e^{-x} \tan ^{50} x dx}{\int_0^{\pi / 4} e^{-x}(\tan x)^{49} dx + \int_0^{\pi / 4} e^{-x}(\tan x)^{51} dx}\)</p>
+<p>Notice that the integrals in the numerator and denominator have the same form. They both involve an integral of \(e^{-x} \tan^n x\) from 0 to \(\pi / 4\), where \(n\) is an integer. Let's denote this integral as \(I(n)\):</p>
+<p>\(I(n) = \int_0^{\pi / 4} e^{-x} \tan^n x dx\)</p>
+<p>We can then rewrite the original expression in terms of \(I(n)\):</p>
+<p>\(\frac{e^{-\pi/4} + I(50)}{I(49) + I(51)}\)</p>
+<p>Now, we'll apply the method of integration by parts, which states that for two functions \(u(x)\) and \(v(x)\):</p>
+<p>\(\int u dv = uv - \int v du\)</p>
+<p>We'll choose:</p>
+<p>\(u = \tan^n x, \quad dv = e^{-x} dx\)</p>
+<p>Then we get:</p>
+<p>\(du = n \tan^{n-1} x \sec^2 x dx, \quad v = -e^{-x}\)</p>
+<p>Applying integration by parts, we have:</p>
+<p>\(I(n) = -e^{-x} \tan^n x \Bigg|_0^{\pi / 4} + n \int_0^{\pi / 4} e^{-x} \tan^{n-1} x \sec^2 x dx\)</p>
+<p>Since \(\tan(\pi / 4) = 1\), the first term evaluates to:</p>
+<p>\(-e^{-\pi / 4}\)</p>
+<p>The second term becomes:</p>
+<p>\(n \int_0^{\pi / 4} e^{-x} \tan^{n-1} x (1 + \tan^2 x) dx = n \int_0^{\pi / 4} e^{-x} \tan^{n-1} x dx + n \int_0^{\pi / 4} e^{-x} \tan^{n+1} x dx\)</p>
+<p>This is equal to:</p>
+<p>\(n(I(n-1) + I(n+1))\)</p>
+<p>So we have:</p>
+<p>\(I(n) = -e^{-\pi / 4} + n(I(n-1) + I(n+1))\)</p>
+<p>Now we can substitute \(n = 50\) into this equation:</p>
+<p>\(I(50) = -e^{-\pi / 4} + 50(I(49) + I(51))\)</p>
+<p>So the original expression becomes:</p>
+<p>\(\frac{e^{-\pi/4} + I(50)}{I(49) + I(51)} = \frac{e^{-\pi/4} - e^{-\pi / 4} + 50(I(49) + I(51))}{I(49) + I(51)} = 50\)</p></li><li><strong>Q55:</strong> Given, \(f_{n}=\int_\limits{0}^{\frac{\pi}{2}}\left(\sum_\limits{k=1}^{n} \sin ^{k-1} x\right)\left(\sum_\limits{k=1}^{n}(2 k-1) \sin ^{k-1} x\right) \cos x d x\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \text { Put } \sin x=t \\\\
+&amp; \cos x d x=d t \\\\
+&amp; f_n=\int_0^1\left(\sum_{k=1}^n(t)^{k-1}\right)\left(\sum_{k=1}^n(2 k-1)(t)^{k-1}\right) d t
+\end{aligned}
+\)
+<br/><br/>\( \therefore \) \(
+\begin{aligned}
+ f_{21}=\int_0^1\left(\sum_{k=1}^{21}(t)^{20}\right)\left(\sum_{k=1}^{21}(2 k-1)(t)^{20}\right) d t
+\end{aligned}
+\)
+<br/><br/>= \(\int\limits_0^1 {\left( {{t^0} + {t^1} + {t^2} + ...... + {t^{20}}} \right)\left( {1{t^0} + 3{t^1} + 5{t^2} + ...... + 41{t^{20}}} \right)} dt\)
+<br/><br/>\( \therefore \) \(
+\begin{aligned}
+ f_{20}=\int_0^1\left(\sum_{k=1}^{20}(t)^{19}\right)\left(\sum_{k=1}^{20}(2 k-1)(t)^{19}\right) d t
+\end{aligned}
+\)
+<br/><br/>= \(\int\limits_0^1 {\left( {{t^0} + {t^1} + {t^2} + ...... + {t^{19}}} \right)\left( {1{t^0} + 3{t^1} + 5{t^2} + ...... + 39{t^{19}}} \right)} dt\)
+<br/><br/>Now, \(
+f_{21}-f_{20}
+\)
+<br/><br/>\(
+\begin{aligned}
+=\int_0^1\left(1+t+t^2+\ldots .\right. &amp; \left.+t^{19}\right)(41) t^{20} \\
+&amp; +\left(1+3 t+5 t^2+\ldots . .+41 t^{20}\right) t^{20} d t
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; =\left(\frac{1}{21}+\frac{1}{22}+\ldots+\frac{1}{40}\right) 41+\left(\frac{1}{21}+\frac{3}{22}+\ldots . .+\frac{39}{40}+\frac{41}{41}\right) \\\\
+&amp; =\left[\frac{42}{21}+\frac{44}{22}+\frac{46}{23}+\ldots .+\frac{80}{40}+\frac{41}{41}\right] \\\\
+&amp; =40+1=41
+\end{aligned}
+\)</li><li><strong>Q56:</strong> \(
+\begin{aligned}
+&amp; \mathrm{l}=\int_0^{\infty} \frac{6}{\left(\mathrm{e}^{\mathrm{x}}+1\right)\left(\mathrm{e}^{\mathrm{x}}+2\right)\left(\mathrm{e}^{\mathrm{x}}+3\right)} \mathrm{dx} \\\\
+&amp; =6 \int_0^{\infty}\left(\frac{\frac{1}{2}}{\mathrm{e}^{\mathrm{x}}+1}+\frac{-1}{\mathrm{e}^{\mathrm{x}}+2}+\frac{\frac{1}{2}}{\mathrm{e}^{\mathrm{x}}+3}\right) \mathrm{dx} \\\\
+&amp; =3 \int_0^{\infty} \frac{\mathrm{e}^{-\mathrm{x}}}{1+\mathrm{e}^{-\mathrm{x}}} \mathrm{dx}-6 \int_0^{\infty} \frac{\mathrm{e}^{-\mathrm{x}} \mathrm{dx}}{1+2 \mathrm{e}^{-\mathrm{x}}}+3 \int_0^{\infty} \frac{\mathrm{e}^{-\mathrm{x}}}{1+3 \mathrm{e}^{-\mathrm{x}}} \mathrm{dx} \\\\
+&amp; =3\left[-\ln \left(1+\mathrm{e}^{-\mathrm{x}}\right)\right]_0^{\infty}+6 \frac{1}{2}\left[\ln \left(1+2 \mathrm{e}^{-\mathrm{x}}\right)\right]_0^{\infty}  -\frac{3}{3}\left[\ln \left(1+3 \mathrm{e}^{-\mathrm{x}}\right)\right]_0^{\infty} \\\\
+&amp; =3 \ln 2-3 \ln 3+\ln 4 \\\\
+&amp; =3 \ln \frac{2}{3}+\ln 4 \\\\
+&amp; =\ln \frac{32}{27}
+\end{aligned}
+\)</li><li><strong>Q57:</strong> Given,
+<br/><br/>\(
+S_k(x)=C_k x+k \int_0^x S_{k-1}(t) d t
+\)
+<br/><br/>Put \(\mathrm{k}=2\) and \(\mathrm{x}=3\)
+<br/><br/>\(
+\mathrm{S}_2(3)=\mathrm{C}_2(3)+2 \int_0^3 \mathrm{~S}_1(\mathrm{t}) \mathrm{dt}
+\) .........(i)
+<br/><br/>Also,
+<br/><br/>\(
+\begin{aligned}
+&amp; S_1(x)=C_1(x)+\int_0^x S_0(t) d t \\\\
+&amp; =C_1 x+\frac{x^2}{2} \\\\
+&amp; S_2(3)=3 C_2+2 \int_0^3\left(C_1 t+\frac{t^2}{2}\right) d t \\\\
+&amp; =3 C_2+9 C_1+9
+\end{aligned}
+\)
+<br/><br/>Also,
+<br/><br/>\(
+\begin{aligned}
+&amp; \mathrm{C}_1=1-\int_0^1 \mathrm{~S}_0(\mathrm{x}) \mathrm{dx}=\frac{1}{2} \\\\
+&amp; \mathrm{C}_2=1-\int_0^1 \mathrm{~S}_1(\mathrm{x}) \mathrm{dx}=0 \\\\
+&amp; \mathrm{C}_3=1-\int_0^1 \mathrm{~S}_2(\mathrm{x}) \mathrm{dx} \\\\
+&amp; =1-\int_0^1\left(\mathrm{C}_2 \mathrm{x}+\mathrm{C}_1 \mathrm{x}^2+\frac{\mathrm{x}^3}{3}\right) \mathrm{dx} \\\\
+&amp; =\frac{3}{4}
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; S_2(x)=C_2 x+2 \int_0^x S_1(t) d t \\\\
+&amp;=C_2 x+C_1 x^2+\frac{x^3}{3} \\\\
+&amp; = S_2(3)+6 C_3=6 C_3+3 C_2+9 C_1+9 \\\\
+&amp;=18
+\end{aligned}
+\)</li><li><strong>Q58:</strong> \(
+\int\limits_{-0.15}^{0.15}\left|100 x^2-1\right| d x=2 \int\limits_0^{0.15}\left|100 x^2-1\right| \mathrm{dx}
+\)
+<br/><br/>\(
+\text { Now } 100 x^2-1=0 \Rightarrow x^2=\frac{1}{100} \Rightarrow x=0.1
+\)
+<br/><br/>\(
+I=2\left[\int_0^{0.1}\left(1-100 x^2\right) d x+\int_{0.1}^{0.15}\left(100 x^2-1\right) d x\right]
+\)
+<br/><br/>\(
+\begin{aligned}
+I &amp; =2\left[x-\frac{100}{3} x^3\right]_0^{0.1}+2\left[\frac{100 x^3}{3}-x\right]_{0.1}^{0.15} \\\\
+&amp; =2\left[0.1-\frac{0.1}{3}\right]+2\left[\frac{0.3375}{3}-0.15-\frac{0.1}{3}+0.1\right] \\\\
+&amp; =2\left[0.2-\frac{0.2}{3}+0.1125-0.15\right] \\\\
+&amp; =2\left[\frac{5}{100}-\frac{2}{30}+\frac{1125}{10000}\right]=2\left(\frac{1500-2000+3375}{30000}\right) \\\\
+&amp; =\frac{575}{3000} \Rightarrow \mathrm{k}=575
+\end{aligned}
+\)</li><li><strong>Q59:</strong> We have, \(\alpha(m, n)=\int\limits_0^2 t^m(1+3 t)^n d t\)
+<br/><br/>Also, \(11 \alpha(10,6)+18 \alpha(11,5)=P(14)^6\)
+<br/><br/>\(\Rightarrow 11 \int\limits_0^2 t^{10}(1+3 t)^6 d t+18 \int\limits_0^2 t^{11}(1+3 t)^5 d t=P(14)^6\)
+<br/><br/>Using integration by part for expression \(t^{10}(1+3 t)^6\)
+<br/><br/>\(
+\begin{array}{r}
+\left.\Rightarrow 11\left[(1+3 t)^6 \times \frac{t^{11}}{11}\right]_0^2-\int\limits_0^2 6(1+3 t)^5 \times 3 \times \frac{t^{11}}{11} d t\right] \\\\
++18 \int\limits_0^2 t^{11}(1+3 t)^5 d t=P(14)^6
+\end{array}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \Rightarrow 7^6 \times 2^{11}-18 \int\limits_0^2 t^{11}(1+3 t)^5 d t+18 \int\limits_0^2 t^{11}(1+3 t)^5 d t=P(14)^6 \\\\
+&amp; \Rightarrow 7^6 \times 2^{11}=P(14)^6 \Rightarrow(7 \times 2)^6 \times 2^5=P(14)^6 \\\\
+&amp; \Rightarrow P=2^5=32
+\end{aligned}
+\)</li><li><strong>Q60:</strong> \(
+\left\{\begin{array}{l}
+f(x)=x^3-3 x, x \leq-1 \\\\
+2,-1 &lt; x &lt; 2 \\\\
+x^2+2 x-6,2 &lt; x &lt; 3 \\\\
+9,3 \leq x &lt; 4 \\\\
+10,4 \leq x &lt; 5 \\\\
+11, x=5 \\\\
+2 x+1, x&gt;5
+\end{array}\right.
+\)<br/><br/> Clearly \(\mathrm{f}(\mathrm{x})\) is not differentiable at<br/><br/>
+\(
+\begin{aligned}
+&amp; x=2,3,4,5 \Rightarrow m=4 \\\\
+&amp; I=\int_{-2}^{-1}\left(x^3-3 x\right) d x+\int_{-1}^2 2 \cdot d x=\frac{27}{4}
+\end{aligned}
+\)</li><li><strong>Q61:</strong> <p>Given,</p>
+<p>\(f(x) = x + \int_0^1 {(x - t)f(t)dt} \)</p>
+<p>\( = x + x\int_0^1 {f(t)dt - \int_0^1 {tf(t)dt} } \)</p>
+<p>\( = x\left( {1 + \int_0^1 {f(t)dt} } \right) - \int_0^1 {tf(t)dt} \)</p>
+<p>Now,</p>
+<p>let \(A = 1 + \int_0^1 {f(t)dt} \)</p>
+<p>and \(B = \int_0^1 {tf(t)dt} \)</p>
+<p>\(\therefore\) \(f(x) = Ax - B\)</p>
+<p>\( \Rightarrow f(t) = At - B\)</p>
+<p>So, \(A = 1 + \int_0^1 {f(t)dt} \)</p>
+<p>\( = 1 + \int_0^1 {(At - B)dt} \)</p>
+<p>\( = 1 + \left[ {{{A{t^2}} \over 2} - Bt} \right]_0^1\)</p>
+<p>\( = 1 + {A \over 2} - B\)</p>
+<p>\( \Rightarrow {A \over 2} = 1 - B\) ...... (1)</p>
+<p>\(B = \int_0^1 {tf(t)dt} \)</p>
+<p>\( = \int_0^1 {t(At - B)dt} \)</p>
+<p>\( = \int_0^1 {(A{t^2} - Bt)dt} \)</p>
+<p>\( = \left[ {{{A{t^3}} \over 3} - {{B{t^2}} \over 2}} \right]_0^1\)</p>
+<p>\( = {A \over 3} - {B \over 2}\)</p>
+<p>\( \Rightarrow {{3B} \over 2} = {A \over 3}\) ....... (2)</p>
+<p>Solving equation (1) and (2) we get,</p>
+<p>\(A = {{18} \over {13}}\) and \(B = {4 \over {13}}\)</p>
+<p>\(\therefore\) \(f(x) = {{18} \over {13}}x - {4 \over {13}}\)</p>
+<p>By checking all the options you can see when x = 6 we get</p>
+<p>\(y = f(x) = {{18} \over {13}} \times 6 - {4 \over {13}}\)</p>
+<p>\( = {{108 - 4} \over {13}} = 8\)</p>
+<p>\(\therefore\) Point (6, 8) lies on the curve.</p></li><li><strong>Q62:</strong> <p>Given,</p>
+<p>\(\int_0^2 {\left( {\sqrt {2x}  - \sqrt {2x - {x^2}} } \right)dx = \int_0^1 {\left( {1 - \sqrt {1 - {y^2}}  - {{{y^2}} \over 2}} \right)dy + \int_1^2 {\left( {2 - {{{y^2}} \over 2}} \right)dy + I} } } \)</p>
+<p>Now,</p>
+<p>\(L.H.S. = \int_0^2 {\left( {\sqrt {2x}  - \sqrt {2x - {x^2}} } \right)dx} \)</p>
+<p>\( = \sqrt 2 \int_0^2 {{x^{1/2}}dx - \int_0^2 {\sqrt { - ({x^2} - 2x)} dx} } \)</p>
+<p>\( = \sqrt 2 \left[ {{{{x^{3/2}}} \over {{3 \over 2}}}} \right]_0^2 - \int_0^2 {\sqrt { - \left[ {{{(x - 1)}^2} - 1} \right]} dx} \)</p>
+<p>\( = \sqrt 2  \times {2 \over 3}\left[ {{2^{{3 \over 2}}}} \right] - \int_0^2 {\sqrt {1 - {{(x - 1)}^2}} dx} \)</p>
+<p>[We know,</p>
+<p>\(\sqrt {{a^2} - {x^2}}  = {x \over 2}\sqrt {{a^2} - {x^2}}  + {{{a^2}} \over 2}{\sin ^{ - 1}}\left( {{x \over a}} \right) + C\)]</p>
+<p>\( = {{2\sqrt 2  \times 2\sqrt 2 } \over 3} - \left[ {{{x - 1} \over 2}\sqrt {1 - {{(x - 1)}^2}}  + {1 \over 2}{{\sin }^{ - 1}}\left( {{{x - 1} \over 1}} \right)} \right]_0^2\)</p>
+<p>\( = {8 \over 3} - \left[ {{1 \over 2}\sqrt {1 - 1}  + {1 \over 2}{{\sin }^{ - 1}}(1) - \left( {\left( {{1 \over 2}} \right)\sqrt {1 - 1}  + {1 \over 2}{{\sin }^{ - 1}}( - 1)} \right)} \right]\)</p>
+<p>\( = {8 \over 3} - {1 \over 2}{\sin ^{ - 1}}\left( {\sin {\pi  \over 2}} \right) + {1 \over 2}{\sin ^{ - 1}}\left( {\sin {{3\pi } \over 2}} \right)\)</p>
+<p>\( = {8 \over 3} - {1 \over 2}\,.\,{\pi  \over 2} + {1 \over 2}\,.\,{{3\pi } \over 2}\)</p>
+<p>\( = {8 \over 3} - {\pi  \over 4} + {{3\pi } \over 4}\)</p>
+<p>\( = {8 \over 3} - {{2\pi } \over 4}\)</p>
+<p>\( = {8 \over 3} - {\pi  \over 2}\)</p>
+<p>Now in R.H.S.,</p>
+<p>\(\int_0^1 {\left( {1 - \sqrt {1 - {y^2}}  - {{{y^2}} \over 2}} \right)dy} \)</p>
+<p>\( = \int_0^1 {dy - \int_0^1 {\sqrt {1 - {y^2}}  - \int_0^1 {{{{y^2}} \over 2}dy} } } \)</p>
+<p>\( = \left[ y \right]_0^1 - \left[ {{y \over 2}\sqrt {1 - {y^2}}  + {1 \over 2}{{\sin }^{ - 1}}\left( {{y \over 1}} \right)} \right]_0^1 - \left[ {{{{y^3}} \over 6}} \right]_0^1\)</p>
+<p>\( = 1 - \left[ {\left( {{1 \over 2}\sqrt {1 - 0}  + {1 \over 2}{{\sin }^{ - 1}}(1)} \right) - \left( {0 + {{\sin }^{ - 1}}(0)} \right)} \right] - {1 \over 6}\)</p>
+<p>\( = 1 - {1 \over 2}{\sin ^{ - 1}}\left( {\sin {\pi  \over 2}} \right) - {1 \over 6}\)</p>
+<p>\( = 1 - {1 \over 2} \times {\pi  \over 2} - {1 \over 6}\)</p>
+<p>\( = {5 \over 6} - {\pi  \over 4}\)</p>
+<p>Now,</p>
+<p>\(\int_1^2 {\left( {2 - {{{y^2}} \over 2}} \right)dy} \)</p>
+<p>\( = \left[ {2y - {{{y^3}} \over 6}} \right]_1^2\)</p>
+<p>\( = \left[ {\left( {4 - {8 \over 6}} \right) - \left( {2 - {1 \over 6}} \right)} \right]\)</p>
+<p>\( = 4 - {8 \over 6} - 2 + {1 \over 6}\)</p>
+<p>\( = 2 - {7 \over 6}\)</p>
+<p>\( = {5 \over 6}\)</p>
+<p>\(\therefore\) \(R.H.S. = {5 \over 6} - {\pi  \over 4} + {5 \over 6} + I\)</p>
+<p>As \(L.H.S. = R.H.S.\)</p>
+<p>\( \Rightarrow {8 \over 3} - {\pi  \over 2} = {{10} \over 6} - {\pi  \over 4} + I\)</p>
+<p>\( \Rightarrow {{10} \over 6} - {8 \over 3} + I =  - {\pi  \over 2} + {\pi  \over 4}\)</p>
+<p>\( \Rightarrow {{ - 6} \over 6} + I =  - {\pi  \over 4}\)</p>
+<p>\( \Rightarrow I = 1 - {\pi  \over 4}\)</p>
+<p>From option (c)</p>
+<p>\(\int_0^1 {(1 - \sqrt {1 - {y^2}} )dy} \)</p>
+<p>\( = \left[ y \right]_0^1 - \int_0^1 {(\sqrt {1 - {y^2}} )dy} \)</p>
+<p>\( = 1 - \left[ {{y \over 2}\sqrt {1 - {y^2}}  + {1 \over 2}{{\sin }^{ - 1}}\left( {{y \over 1}} \right)} \right]_0^1\)</p>
+<p>\( = 1 - \left[ {{1 \over 2}\sqrt {1 - 1}  + {1 \over 2}{{\sin }^{ - 1}}(1) - \left( {0 + {1 \over 2}{{\sin }^{ - 1}}(0)} \right)} \right]\)</p>
+<p>\( = 1 - \left[ {{1 \over 2} \times {\pi  \over 2} - 0} \right]\)</p>
+<p>\( = 1 - {\pi  \over 4} = I\)</p>
+<p>\(\therefore\) Option (c) is the right answer.</p>
+<p>Note :</p>
+<p>There is no way to guess which option is correct. You have to check all the options to see which give value equal to I.</p></li><li><strong>Q63:</strong> Given : \(f\left(\frac{\pi}{4}\right)=\sqrt{2}, f\left(\frac{\pi}{2}\right)=0\) and \(f^{\prime}\left(\frac{\pi}{2}\right)=1\)
+<br/><br/>
+\(
+\begin{aligned}
+&amp;g(x)=\int_{x}^{\frac{\pi}{4}}\left(f^{\prime}(t) \sec t+\tan t \sec t f(t)\right) d t \\\\
+&amp;=[\sec t+f(t)]_{x}^{\frac{\pi}{4}}=2-\sec x f(x)
+\end{aligned}
+\)
+<br/><br/>
+Now, \(\lim \limits_{x \rightarrow \frac{\pi^{-}}{2}} g(x)=\lim \limits_{h \rightarrow 0} g\left(\frac{\pi}{2}-h\right)\)
+<br/><br/>
+\(
+=\lim \limits_{h \rightarrow 0} 2-(\operatorname{cosec} h) f\left(\frac{\pi}{2}-h\right)
+\)
+<br/><br/>
+\(=\lim \limits_{h \rightarrow 0}\left[2-\frac{f\left(\frac{\pi}{2}-h\right)}{\sin h}\right]\)
+<br/><br/>
+\(=\lim \limits_{h \rightarrow 0}\left[2+\frac{f^{\prime}\left(\frac{\pi}{2}-h\right)}{\cos h}\right]\)
+<br/><br/>
+\(
+=3
+\)</li><li><strong>Q64:</strong> \(f: R \rightarrow R\) and \(f(x)+f(x+k)=n \quad \forall x \in R\)
+<br/><br/>
+\(
+\begin{aligned}
+&amp;x \rightarrow x+k \\\\
+&amp;f(x+k)+f(x+2 k)=n \\\\
+&amp;\therefore \quad f(x+2 k)=f(x)
+\end{aligned}
+\)
+<br/><br/>
+So, period of \(f(x)\) is \(2 k\)
+<br/><br/>
+\(
+\begin{aligned}
+&amp;\text { Now, } I_{1}=\int_{0}^{4 n k} f(x) d x = 2 n \int_{0}^{2 k} f(x) d x \\\\
+&amp;=2 n\left[\int_{0}^{k} f(x) d x+\int_{k}^{2 k} f(x) d x\right] \\\\
+&amp;x=t+k \Rightarrow d x=d t \text { (in second integral) } \\\\
+&amp;=2 n\left[\int_{0}^{k} f(x) d x+\int_{0}^{k} f(t+k) d t\right] \\\\
+&amp;=2 n^{2} k
+\end{aligned}
+\)
+<br/><br/>
+Now, \(I_2=\int_{-k}^{3 k} f(x) d x=2 \int_{0}^{2 k} f(x) d x\)
+<br/><br/>
+\(
+I_{2}=2(n k)
+\)
+<br/><br/>
+\(\therefore \quad l_{1}+n l_{2}=4 n^{2} k\)</li><li><strong>Q65:</strong> <p>\(\int_0^1 {{1 \over {{7^{\left[ {{1 \over x}} \right]}}}}dx} \), let \({1 \over x} = t\)</p>
+<p>\({{ - 1} \over {{x^2}}}dx = dt\)</p>
+<p>\( = \int_\infty ^1 {{1 \over { - {t^2}{7^{[t]}}}}dt = \int_1^\infty  {{1 \over {{t^2}{7^{[t]}}}}dt} } \)</p>
+<p>\( = \int_1^2 {{1 \over {7{t^2}}}dt + \int_2^3 {{1 \over {{7^2}{t^2}}}dt + \,\,....} } \)</p>
+<p>\( = {1 \over 7}\left[ { - {1 \over t}} \right]_1^2 + {1 \over {{7^2}}}\left[ {{{ - 1} \over t}} \right]_2^3 + {1 \over {{7^3}}}\left[ { - {1 \over t}} \right]_2^3 + \,\,....\)</p>
+<p>\( = \sum\limits_{n = 1}^\infty  {{1 \over {{7^n}}}\left( {{1 \over n} - {1 \over {n + 1}}} \right)} \)</p>
+<p>\( = \sum\limits_{n = 1}^\infty  {{{{{\left( {{1 \over 7}} \right)}^n}} \over n} - 7\sum\limits_{n = 1}^\infty  {{{{{\left( {{1 \over 7}} \right)}^{n + 1}}} \over {n + 1}}} } \)</p>
+<p>\( =  - \log \left( {1 - {1 \over 7}} \right) + 7\log \left( {1 - {1 \over 7}} \right) + 1\)</p>
+<p>\( = 1 + 6\log {6 \over 7}\)</p></li><li><strong>Q66:</strong> <p>For \(\left| {x + 1} \right|\) critical point, x + 1 = 0 \(\Rightarrow\) x = \(-\)1</p>
+<p>For \(\left| {x + 2} \right|\) critical point, x + 2 = 0 \(\Rightarrow\) x = \(-\)2</p>
+<p>For \(\left| {x + 3} \right|\) critical point, x + 3 = 0 \(\Rightarrow\) x = \(-\)3</p>
+<p>For \(\left| {x + 4} \right|\) critical point, x + 4 = 0 \(\Rightarrow\) x = \(-\)4</p>
+<p>For \(\left| {x + 5} \right|\) critical point, x + 5 = 0 \(\Rightarrow\) x = \(-\)5</p>
+<p> <img alt="JEE Main 2022 (Online) 26th June Morning Shift Mathematics - Definite Integration Question 140 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1l5e62gr9/169b6319-b73d-43b9-8dcb-7f912dd4450a/67482850-ffad-11ec-94de-eb2a82e25f79/file-1l5e62gra.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l5e62gr9/169b6319-b73d-43b9-8dcb-7f912dd4450a/67482850-ffad-11ec-94de-eb2a82e25f79/file-1l5e62gra.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 60vh"/> </p>
+<p>Here maximum function is represent by the dotted line.</p>
+<p>\(\therefore\) Point of intersection A of line y = \(-\)x \(-\)1 and y = x + 5 :</p>
+<p>\( - x - 1 = x + 5\)</p>
+<p>\( \Rightarrow 2x =  - 6\)</p>
+<p>\( \Rightarrow x =  - 3\)</p>
+<p>\(\therefore\) \(y =  - 3 + 5 = 2\)</p>
+<p>\(\therefore\) Point \(A = ( - 3,2)\)</p>
+<p>\(\therefore\) \(\int_{ - 6}^0 {f(x)dx} \)</p>
+<p>\( = \int_{ - 6}^{ - 3} {( - x - 1)dx + \int_{ - 3}^0 {(x + 5)dx} } \)</p>
+<p>\( = \left( { - {{{x^2}} \over 2} - x} \right)_{ - 6}^{ - 3} + \left[ {{{{x^2}} \over 2} + 5x} \right]_{ - 3}^0\)</p>
+<p>\( = \left[ {\left( { - {9 \over 2} + 3} \right) - \left( { - {{36} \over 2} + 6} \right)} \right] + \left[ {0 - \left( {{9 \over 2} - 15} \right)} \right]\)</p>
+<p>\( = \left( { - {3 \over 2} + 12} \right) + {{21} \over 2}\)</p>
+<p>\( =  + {{21} \over 2} + {{21} \over 2}\)</p>
+<p>\( = 21\)</p></li><li><strong>Q67:</strong> <p>\(I = {{24} \over \pi }\int_0^{\sqrt 2 } {{{2 - {x^2}} \over {(2 + {x^2})\sqrt {4 + {x^4}} }}dx} \)</p>
+<p>Let \(x = \sqrt 2 t \Rightarrow dx = \sqrt 2 dt\)</p>
+<p>\(I = {{24} \over \pi }\int_0^1 {{{(2 - 2{t^2})\,.\,\sqrt 2 dt} \over {(2 + 2{t^2})\sqrt {4 + 4{t^4}} }}} \)</p>
+<p>\( = {{12\sqrt 2 } \over \pi }\int_0^1 {{{\left( {{1 \over {{t^2}}} - 1} \right)dt} \over {\left( {t + {1 \over t}} \right)\sqrt {{{\left( {t + {1 \over t}} \right)}^2} - 2} }}} \)</p>
+<p>Let \(t + {1 \over t} = u\)</p>
+<p>\( \Rightarrow \left( {1 - {1 \over {{t^2}}}} \right)dt = du\)</p>
+<p>\( = {{12\sqrt 2 } \over \pi }\int_\infty ^2 {{{ - du} \over {u\sqrt {{4^2} - 2} }}} \)</p>
+<p>\( = {{12\sqrt 2 } \over \pi }\int_2^\infty  {{{du} \over {{u^2}\sqrt { - {{\left( {{{\sqrt 2 } \over u}} \right)}^2}} }}} \)</p>
+<p>\( = {{12\sqrt 2 } \over \pi }\int_{{1 \over {\sqrt 2 }}}^0 {{{ - {1 \over {\sqrt 2 }}dp} \over {\sqrt {1 - {p^2}} }}} \)</p>
+<p>\( = {{12} \over \pi }\left[ {{{\sin }^{ - 1}}p} \right]_0^{{1 \over {\sqrt 2 }}}\)</p>
+<p>\( = {{12} \over \pi }\,.\,{\pi  \over 4} = 3\)</p></li><li><strong>Q68:</strong> <p>\({b_n} - {b_{n - 1}} = \int_0^{{\pi  \over 2}} {{{{{\cos }^2}nx - {{\cos }^2}(n - 1)x} \over {\sin x}}dx} \)</p>
+<p>\( = \int_0^{{\pi  \over 2}} {{{ - \sin (2n - 1)x\,.\,\sin x} \over {\sin x}}dx} \)</p>
+<p>\( = \left. {{{\cos (2n - 1)x} \over {2n - 1}}} \right|_0^{\pi /2} =  - {1 \over {2n - 1}}\)</p>
+<p>So, \({b_3} - {b_2}\), \({b_4} - {b_3}\), \({b_5} - {b_4}\) are in H.P.</p>
+<p>\( \Rightarrow {1 \over {{b_3} - {b_2}}},\,{1 \over {{b_4} - {b_3}}},\,{1 \over {{b_5} - {b_4}}}\) are in A.P. with common difference \(-\)2.</p></li><li><strong>Q69:</strong> <p>\(I = \int {{1 \over {({x^2} - 1)({x^2} - 4)}}dx = {1 \over 3}\int {\left( {{1 \over {{x^2} - 4}} - {1 \over {{x^2} - 1}}} \right)dx} } \)</p>
+<p>\( = {1 \over 3}\left( {{1 \over 4}\ln \left| {{{x - 2} \over {x + 2}}} \right| - {1 \over 2}\ln \left| {{{x - 1} \over {x + 1}}} \right|} \right) + C\)</p>
+<p>\(12I = \ln \left| {{{x - 2} \over {x + 2}}} \right| + 2\ln \left| {{{x - 1} \over {x + 1}}} \right| + C\)</p>
+<p>\(12\int\limits_3^b {{{dx} \over {({x^2} - 4)({x^2} - 1)}}} \)</p>
+<p>\( = \ln \left( {{{b - 2} \over {b + 2}}} \right) - 2\ln \left( {{{b - 1} \over {b + 1}}} \right) - \left( {\ln \left( {{1 \over 5}} \right) - 2\ln \left( {{1 \over 2}} \right)} \right)\)</p>
+<p>\( = \ln \left( {\left( {{{b - 2} \over {b + 2}}} \right)\,.\,{{{{(b + 1)}^2}} \over {{{(b - 1)}^2}}}} \right) - \left( {\ln {4 \over 5}} \right)\)</p>
+<p>So, \({{49} \over {40}} = {{(b - 2)} \over {(b + 2)}}{{{{(b + 1)}^2}} \over {{{(b - 1)}^2}}}\,.\,{5 \over 4}\)</p>
+<p>\( \Rightarrow b = 6\)</p></li><li><strong>Q70:</strong> \(f(\theta)=\sin \theta\left(1+\int_{-\pi / 2}^{\pi / 2} f(t) d t\right)+\cos \theta\left(\int_{-\pi / 2}^{\pi / 2} t f(t) d t\right)\)
+<br/><br/>
+Clearly \(f(\theta)=a \sin \theta+b \cos \theta\)
+<br/><br/>
+Where \(a=1+\int_{-\pi / 2}^{\pi / 2}(a \sin t+b \cos t) d t \Rightarrow a=1+2 b\quad\quad...(i)\)
+<br/><br/>
+and \(b=\int_{-\pi / 2}^{\pi / 2}(a t \sin t+b t \cos t) d t \Rightarrow b=2 a\quad\quad...(ii)\)
+<br/><br/>
+from (i) and (ii) we get
+<br/><br/>
+\(
+a=-\frac{1}{3} \text { and } b=-\frac{2}{3}
+\)
+<br/><br/>
+So \(f(\theta)=-\frac{1}{3}(\sin \theta+2 \cos \theta)\)
+<br/><br/>
+\(
+\Rightarrow\left|\int_{0}^{\pi / 2} f(\theta) d \theta\right|=\frac{1}{3}(1+2 \times 1)=1
+\)</li><li><strong>Q71:</strong> Let \(f(x)=\frac{x^{2}-9}{x-5} \Rightarrow f^{\prime}(x)=\frac{(x-1)(x-9)}{(x-5)^{2}}\)
+<br/><br/>
+So, \(\alpha=f(1)=2\) and \(\beta=\min (f(0), f(2))=\frac{5}{3}\)
+<br/><br/>
+Now, \(\int_{-1}^{3} \max \left\{\frac{x^{2}-9}{x-5}, x\right\} d x=\int_{-1}^{9 / 5} \frac{x^{2}-9}{x-5} d x+\int_{9 / 5}^{3} x d x\)
+<br/><br/>
+\(
+=\int_{-1}^{9 / 5}\left(x+5+\frac{16}{x-5}\right) d x+\left.\frac{x^{2}}{2}\right|_{9 / 5} ^{3}
+\)
+<br/><br/>
+\(
+=\frac{28}{25}+14+16 \ln \left(\frac{8}{15}\right)+\frac{72}{25}=18+16 \ln \left(\frac{8}{15}\right)
+\)
+<br/><br/>
+Clearly \(\alpha_{1}=18\) and \(\alpha_{2}=16\), so \(\alpha_{1}+\alpha_{2}=34\).</li><li><strong>Q72:</strong> <p>Case 1 :</p>
+<p>Let \(0 \le x &lt; 1\)</p>
+<p>then \(\left[ x \right] = 0\), which is even</p>
+<p>\(\therefore\) \(f(x) = 1 + \left[ x \right] - x\)</p>
+<p>\( = 1 + 0 - x\)</p>
+<p>\( = 1 - x\)</p>
+<p>Case 2 :</p>
+<p>Let \(1 \le x &lt; 2\)</p>
+<p>then \(\left[ x \right] = 1\), which is odd</p>
+<p>\(\therefore\) \(f(x) = x - \left[ x \right]\)</p>
+<p>\( = x - 1\)</p>
+<p>Case 3 :</p>
+<p>Let \(2 \le x &lt; 3\)</p>
+<p>then \(\left[ x \right] = 2\), which is even</p>
+<p>\(\therefore\) \(f(x) = 1 + \left[ x \right] - x\)</p>
+<p>\( = 1 + 2 - x\)</p>
+<p>\( = 3 - x\)</p>
+<p>Case 4 :</p>
+<p>Let \(3 \le x &lt; 4\)</p>
+<p>then \(\left[ x \right] = 3\), which is odd</p>
+<p>\(\therefore\) \(f(x) = x - \left[ x \right]\)</p>
+<p>\( = x - 3\)</p>
+<p>\(\therefore\) \(f(x) = \left\{ {\matrix{
+   {1 - x} &amp; ; &amp; {0 \le x &lt; 1}  \cr 
+   {x - 1} &amp; ; &amp; {1 \le x &lt; 2}  \cr 
+   {3 - x} &amp; ; &amp; {2 \le x &lt; 3}  \cr 
+   {x - 3} &amp; ; &amp; {3 \le x &lt; 4}  \cr 
+
+ } } \right.\)</p>
+<p><img alt="JEE Main 2022 (Online) 25th July Morning Shift Mathematics - Definite Integration Question 129 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1l79fc2ri/bc49e861-7a20-4168-b847-928ce9f0304f/283cb1e0-24aa-11ed-8d2e-5f0df5271c2d/file-1l79fc2rj.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l79fc2ri/bc49e861-7a20-4168-b847-928ce9f0304f/283cb1e0-24aa-11ed-8d2e-5f0df5271c2d/file-1l79fc2rj.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(\therefore\) \(f(x)\) is periodic and period of \(f(x) = 2\)</p>
+<p>And period of \(\cos \pi x = {{2\pi } \over \pi } = 2\)</p>
+<p>\(\therefore\) Period of \(f(x)\cos \pi x = 2\)</p>
+<p>Now,</p>
+<p>\(I = {{{\pi ^2}} \over {10}}\int_{ - 10}^{10} {f(x)\cos \pi x\,dx} \)</p>
+<p>\( = {{{\pi ^2}} \over {10}}\int_{ - 10}^{ - 10 + 10 \times 2} {f(x)\cos \pi x\,dx} \)</p>
+<p>\( = {{{\pi ^2}} \over {10}}\int_0^{10 \times 2} {f(x)\cos \pi x\,dx} \)</p>
+<p>\( = {{{\pi ^2}} \over {10}} \times 10\int_0^2 {f(x)\cos \pi x\,dx} \)</p>
+<p>\( = {\pi ^2}\int_0^2 {f(x)\cos \pi x\,dx} \)</p>
+<p>\(\therefore\) \(I = {\pi ^2}\left[ {\int_0^1 {f(x)\cos \pi x\,dx + \int_1^2 {f(x)\cos \pi x\,dx} } } \right]\)</p>
+<p>\( = {\pi ^2}\left[ {\int_0^1 {(1 - x)\cos \pi x\,dx + \int_1^2 {(x - 1)\cos \pi x\,dx} } } \right]\)</p>
+<p>\( = {\pi ^2}\left[ {\int_0^1 {\cos \pi x\,dx - \int_0^1 {x\cos \pi x\,dx + \int_1^2 {x\cos \pi x\,dx - \int_1^2 {\cos \pi x\,dx} } } } } \right]\)</p>
+<p>\( = {\pi ^2}\left[ {{1 \over \pi }\left[ {\sin \pi x} \right]_0^1 - \int_0^1 {x\cos \pi x\,dx + \int_1^2 {x\cos \pi x\,dx - {1 \over \pi }\left[ {\sin \pi x} \right]_1^2} } } \right]\)</p>
+<p>\( = {\pi ^2}\left[ {0 - \int_0^1 {x\cos \pi x\,dx + \int_1^2 {x\cos \pi x\,dx - 0} } } \right]\)</p>
+<p>\( = {\pi ^2}\left[ { - \left[ {x{{\sin \pi x} \over \pi } + {1 \over {{\pi ^2}}}\cos \pi x} \right]_0^1 + \left[ {x{{\sin \pi x} \over \pi } + {1 \over {{\pi ^2}}}\cos \pi x} \right]_1^2} \right]\)</p>
+<p>\(\left[ {\mathrm{As}\,\int {x\cos \pi x\,dx = x\,.\,\int {\cos \pi x - \int {\left( {1\,.\,{{\sin \pi x} \over \pi }} \right)dx = x\,.\,{{\sin \pi x} \over \pi } + {1 \over {{\pi ^2}}}\cos \pi x + c} } } } \right]\)</p>
+<p>\( = {\pi ^2}\left[ { - \left[ {\left( {1\,.\,{{\sin \pi } \over \pi } + {1 \over {{\pi ^2}}}\,.\,\cos \pi } \right) - \left( {0 + {1 \over {{\pi ^2}}}\,.\,\cos 0} \right)} \right] + \left[ {\left( {2\,.\,{{\sin 2\pi } \over \pi } + {1 \over {{\pi ^2}}}\cos 2\pi } \right) - \left( {1\,.\,{{\sin \pi } \over \pi } + {1 \over {{\pi ^2}}}\cos \pi } \right)} \right]} \right]\)</p>
+<p>\( = {\pi ^2}\left[ { - \left\{ {\left( { - {1 \over {{\pi ^2}}}} \right) - \left( {{1 \over {{\pi ^2}}}} \right)} \right\} + \left( {\left( { + {1 \over {{\pi ^2}}}} \right) - \left( { - {1 \over {{\pi ^2}}}} \right)} \right.} \right]\)</p>
+<p>\( = {\pi ^2}\left[ { - \left( { - {2 \over {{\pi ^2}}}} \right) + {2 \over {{\pi ^2}}}} \right]\)</p>
+<p>\( = {\pi ^2}\left[ {{2 \over {{\pi ^2}}} + {2 \over {{\pi ^2}}}} \right]\)</p>
+<p>\( = {\pi ^2} \times {4 \over {{\pi ^2}}}\)</p>
+<p>\( = 4\)</p></li><li><strong>Q73:</strong> <p>\(I = \int_{ - 3}^{101} {\left( {\left[ {\sin (\pi x)} \right] + {e^{[\cos (2\pi x)]}}} \right)dx} \)</p>
+\([\sin \pi x]\) is periodic with period 2 and \({{e^{[\cos (2\pi x)]}}}\) is periodic with period 1.
+<p>So,</p>
+<p>\(I = 52\int_0^2 {\left( {\left[ {\sin \pi x} \right] + {e^{[\cos 2\pi x]}}} \right)dx} \)</p>
+<p>\( = 52\left\{ {\int_1^2 { - 1} \,dx + \int_{{1 \over 4}}^{{3 \over 4}} {{e^{ - 1}}\,dx + \int_{{5 \over 4}}^{{7 \over 4}} {{e^{ - 1}}\,dx + \int_0^{{1 \over 4}} {{e^0}\,dx + \int_{{3 \over 4}}^{{5 \over 4}} {{e^0}\,dx + \int_{{7 \over 4}}^2 {{e^0}\,dx} } } } } } \right\}\)</p>
+<p>\( = {{52} \over e}\)</p></li><li><strong>Q74:</strong> <p>\(\because\) \({a_n} = \int\limits_{ - 1}^n {\left( {1 + {x \over 2} + {{{x^2}} \over 3}\, + \,....\, + \,{{{x^{n - 1}}} \over n}} \right)dx} \)</p>
+<p>\( = \left[ {x + {{{x^2}} \over {{2^2}}} + {{{x^3}} \over {{3^2}}}\, + \,......\, + \,{{{x^n}} \over {{n^2}}}} \right]_{ - 1}^n\)</p>
+<p>\({a_n} = {{n + 1} \over {{1^2}}} + {{{n^2} - 1} \over {{2^2}}} + {{{n^3} + 1} \over {{3^2}}} + {{{n^4} - 1} \over {{4^2}}}\, + \,...\, + \,{{{n^n} + {{( - 1)}^{n + 1}}} \over {{n^2}}}\)</p>
+<p>Here, \({a_1} = 2,\,{a_2} = {{2 + 1} \over 1} + {{{2^2} - 1} \over 2} = 3 + {3 \over 2} = {9 \over 2}\)</p>
+<p>\({a_3} = 4 + 2 + {{28} \over 9} = {{100} \over 9}\)</p>
+<p>\({a_4} = 5 + {{15} \over 4} + {{65} \over 9} + {{255} \over {16}} &gt; 31\).</p>
+<p>\(\therefore\) The required set is \(\{ 2,3\} \). \(\because\) \({a_n} \in (2,30)\)</p>
+<p>\(\therefore\) Sum of elements = 5.</p></li><li><strong>Q75:</strong> <p>\(\int_0^1 {{{(1 - {x^n})}^{2n + 1}}dx = \int_0^1 {1\,.\,{{(1 - {x^n})}^{2n + 1}}dx} } \)</p>
+<p>\( = \left[ {{{(1 - {x^n})}^{2n + 1}}\,.\,x} \right]_0^1 - \int_0^1 {x\,.\,(2n + 1){{(1 - {x^n})}^{2n}}\,.\, - n{x^{n - 1}}dx} \)</p>
+<p>\( = n(2n + 1)\int_0^1 {(1 - (1 - {x^n})){{(1 - {x^n})}^{2n}}dx} \)</p>
+<p>\( = n(2n + 1)\int_0^1 {{{(1 - {x^n})}^{2n}}dx - n(2n + 1)\int_0^1 {{{(1 - {x^n})}^{2n + 1}}dx} } \)</p>
+<p>\((1 + n(2n + 1))\int_0^1 {{{(1 - {x^n})}^{2n + 1}}dx = n(2n + 1)\int_0^1 {{{(1 - {x^n})}^{2n}}dx} } \)</p>
+<p>\((2{n^2} + n + 1)\int_0^1 {{{(1 - {x^n})}^{2n + 1}}dx = 1177\int_0^1 {{{(1 - {x^n})}^{2n + 1}}dx} } \)</p>
+<p>\(\therefore\) \(2{n^2} + n + 1 = 1177\)</p>
+<p>\(2{n^2} + n - 1176 = 0\)</p>
+<p>\(\therefore\) \(n = 24\) or \( - {{49} \over 2}\)</p>
+<p>\(\therefore\) \(n = 24\)</p></li><li><strong>Q76:</strong> <p>I comes out around 1.536 which is not satisfied by any given options.</p>
+<p>\(\int\limits_{\pi /4}^{\pi /3} {{{8x - 2x} \over x}dx &gt; I &gt; \int\limits_{\pi /4}^{\pi /3} {{{8\sin x - 2x} \over x}dx} } \)</p>
+<p>\({\pi  \over 2} &gt; I &gt; \int\limits_{\pi /4}^{\pi /3} {\left( {{{8\sin x} \over x} - 2} \right)dx} \)</p>
+<p>\({{\sin x} \over x}\) is decreasing in \(\left( {{\pi  \over 4},{\pi  \over 3}} \right)\) so it attains maximum at \(x = {\pi  \over 4}\)</p>
+<p>\(I &gt; \int\limits_{\pi /4}^{\pi /3} {\left( {{{8\sin x/3} \over {x/3}} - 2} \right)dx} \)</p>
+<p>\(I &gt; \sqrt 3  - {\pi  \over 6}\)</p></li><li><strong>Q77:</strong> <p>\(\because\) f(x) is continuous at x = 4</p>
+<p>\( \Rightarrow f({4^ - }) = f({4^ + })\)</p>
+<p>\( \Rightarrow 16 + 4b = \int\limits_0^4 {(5 - |t - 3|)dt} \)</p>
+<p>\( = \int\limits_0^3 {(2 + t)dt + \int\limits_3^4 {(8 - t)dt} } \)</p>
+<p>\( = \left. {2t + {{{t^2}} \over 2}} \right)_0^3 + \left. {8t - {{{t^2}} \over 3}} \right]_3^4\)</p>
+<p>\( = 6 + {9 \over 2} - 0 + (32 - 8) - \left( {24 - {9 \over 2}} \right)\)</p>
+<p>\(16 + 4b = 15\)</p>
+<p>\( \Rightarrow b = {{ - 1} \over 4}\)</p>
+<p>\( \Rightarrow f(x) = \left\{ {\matrix{
+   {\int\limits_0^x {5 - |t - 3|\,dt} } &amp; {x &gt; 4}  \cr 
+   {{x^2} - {x \over 4}} &amp; {x \le 4}  \cr 
+
+ } } \right.\)</p>
+<p>\( \Rightarrow f'(x) = \left\{ {\matrix{
+   {5 - |x - 3|} &amp; {x &gt; 4}  \cr 
+   {2x - {1 \over 4}} &amp; {x \le 4}  \cr 
+
+ } } \right.\)</p>
+<p>\( \Rightarrow f'(x) = \left\{ {\matrix{
+   {8 - x} &amp; {x &gt; 4}  \cr 
+   {2x - {1 \over 4}} &amp; {x \le 4}  \cr 
+
+ } } \right.\)</p>
+<p>\(f'(x) &lt; 0 = x \in \left( { - \infty ,{1 \over 8}} \right) \cup (8,\infty )\)</p>
+<p>\(f'(3) + f'(5) = 6 - {1 \over 4} = {{35} \over 4}\)</p>
+<p>\(f'(x) = 0 \Rightarrow x = {1 \over 8}\) have local minima</p>
+<p>\(\therefore\) (C) is only incorrect option.</p></li><li><strong>Q78:</strong> <p>\(f(x) = 2 + |x| - |x - 1| + |x + 1|,\,x \in R\)</p>
+<p>\(\therefore\) \(f(x) = \left\{ {\matrix{
+   { - x} &amp; , &amp; {x &lt;  - 1}  \cr 
+   {x + 2} &amp; , &amp; { - 1 \le x &lt; 0}  \cr 
+   {3x + 2} &amp; , &amp; {0 \le x &lt; 1}  \cr 
+   {x + 4} &amp; , &amp; {x \ge 1}  \cr 
+
+ } } \right.\)</p>
+<p>\(\therefore\) \(f'\left( { - {3 \over 2}} \right) + f'\left( { - {1 \over 2}} \right) + f'\left( {{1 \over 2}} \right) + f'\left( {{3 \over 2}} \right) =  - 1 + 1 + 3 + 1 = 4\)</p>
+<p>and \(\int\limits_{ - 2}^2 {f(x)dx = \int\limits_{ - 2}^{ - 1} {f(x)dx + \int\limits_{ - 1}^0 {f(x)dx + \int\limits_0^1 {f(x)dx + \int\limits_1^2 {f(x)dx} } } } } \)</p>
+<p>\( = \left[ { - {{{x^2}} \over 2}} \right]_2^{ - 1} + \left[ {{{{{(x + 2)}^2}} \over 2}} \right]_{ - 1}^0 + \left[ {{{{{(3x + 2)}^2}} \over 6}} \right]_0^1 + \left[ {{{{{(x + 4)}^2}} \over 2}} \right]_1^2\)</p>
+<p>\( = {3 \over 2} + {3 \over 2} + {7 \over 2} + {{11} \over 2} = {{24} \over 2} = 12\)</p>
+<p>\(\therefore\) Only (S2) is correct</p></li><li><strong>Q79:</strong> <p>Put \(x = \tan \theta  \Rightarrow dx = {\sec ^2}\theta \,d\theta \)</p>
+<p>\( \Rightarrow I = \int\limits_0^{{\pi  \over 3}} {{{15{{\tan }^3}\theta \,.\,{{\sec }^2}\theta \,d\theta } \over {\sqrt {1 + {{\tan }^2}\theta  + \sqrt {{{\sec }^6}\theta } } }}} \)</p>
+<p>\( \Rightarrow I = \int\limits_0^{{\pi  \over 3}} {{{15{{\tan }^2}\theta {{\sec }^2}\theta \,d\theta } \over {\sec \theta \sqrt {1 + \sec \theta } }}} \)</p>
+<p>\( \Rightarrow I = \int\limits_0^{{\pi  \over 3}} {{{15({{\sec }^2}\theta  - 1)\sec \theta \tan \theta \,d\theta } \over {\left( {\sqrt {1 + \sec \theta } } \right)}}} \)</p>
+<p>Now put \(1 + \sec \theta  = {t^2}\)</p>
+<p>\( \Rightarrow \sec \theta \tan \theta \,d\theta  = 2tdt\)</p>
+<p>\( \Rightarrow I = \int\limits_{\sqrt 2 }^{\sqrt 3 } {{{15\left( {{{({t^2} - 1)}^2} - 1} \right)2t\,dt} \over t}} \)</p>
+<p>\( \Rightarrow I = 30\int\limits_{\sqrt 2 }^{\sqrt 3 } {({t^4} - 2{t^2} + 1 - 1)\,dt} \)</p>
+<p>\( \Rightarrow I = 30\int\limits_{\sqrt 2 }^{\sqrt 3 } {({t^4} - 2{t^2})\,dt} \)</p>
+<p>\( \Rightarrow I = \left. {30\left( {{{{t^5}} \over 5} - {{2{t^3}} \over 3}} \right)} \right|_{\sqrt 2 }^{\sqrt 3 }\)</p>
+<p>\( = 30\left[ {\left( {{9 \over 5}\sqrt 3  - 2\sqrt 3 } \right) - \left( {{{4\sqrt 2 } \over 5} - {{4\sqrt 2 } \over 3}} \right)} \right]\)</p>
+<p>\( = \left( {54\sqrt 3  - 60\sqrt 3 } \right) - \left( {24\sqrt 2  - 40\sqrt 2 } \right)\)</p>
+<p>\( = 16\sqrt 2  - 6\sqrt 3 \)</p>
+<p>\(\therefore\) \(\alpha  = 16\) and \(\beta  =  - 6\)</p>
+<p>\(\alpha  + \beta  = 10.\)</p></li><li><strong>Q80:</strong> <p>\({I_n}(x) = \int\limits_0^x {{1 \over {{{({t^2} + 5)}^n}}}dt} \)</p>
+<p>\( = \int\limits_0^x {{1 \over {\underbrace {{{({t^2} + 5)}^n}}_I}} \times \mathop I\limits_{II} \,dt} \)</p>
+<p>\( = \left. {{t \over {{{({t^2} + 5)}^n}}}} \right|_0^x - \int\limits_0^x {{{ - 2nt} \over {{{({t^2} + 5)}^{n + 1}}}} \times t\,dt} \)</p>
+<p>\( = {x \over {{{({x^2} + 5)}^n}}} + \int\limits_0^x {2n\left( {{{{t^2} + 5 - 5} \over {{{({t^2} + 5)}^{n + 1}}}}} \right)dt} \)</p>
+<p>\({I_n}(x) = {x \over {{{({x^2} + 5)}^n}}} + 2n\,{I_n}(x) - 10n\,{I_{n + 1}}(x)\)</p>
+<p>\(10n\,{I_{n + 1}}(x) - (2n - 1)\,{I_n}(x) = xI{'_n}(x)\)</p>
+<p>For \(n = 5\)</p>
+<p>\(50{I_6}(x) - 9{I_5}(x) = xI{'_5}(x)\)</p></li><li><strong>Q81:</strong> <p>\(I = \int\limits_0^{{\pi  \over 2}} {60\,.\,{{\sin 6x} \over {\sin x}}dx} \)</p>
+<p>\( = 60\,.\,2\int\limits_0^{{\pi  \over 2}} {(3 - 4{{\sin }^2}x)(4{{\cos }^2}x - 3)\cos x\,dx} \)</p>
+<p>\( = 120\int\limits_0^{{\pi  \over 2}} {(3 - 4{{\sin }^2}x)(1 - 4{{\sin }^2}x)\cos x\,dx} \)</p>
+<p>Let \(\sin x = t \Rightarrow \cos xdx = dt\)</p>
+<p>\( = 120\int\limits_0^1 {(3 - 4{t^2})(1 - 4{t^2})dt} \)</p>
+<p>\( = 120\int\limits_0^1 {(3 - 16{t^2} + 16{t^4})dt} \)</p>
+<p>\( = 120\left[ {3t - {{16{t^3}} \over 3} + {{16{t^5}} \over 5}} \right]_0^1\)</p>
+<p>\( = 104\)</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

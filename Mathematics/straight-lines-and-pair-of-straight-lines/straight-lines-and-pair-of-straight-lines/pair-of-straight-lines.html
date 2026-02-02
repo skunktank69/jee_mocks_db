@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>straight-lines-and-pair-of-straight-lines</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>straight-lines-and-pair-of-straight-lines</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5">The lines \(\mathrm{L}_1, \mathrm{~L}_2, \ldots, \mathrm{L}_{20}\) are distinct. For \(\mathrm{n}=1,2,3, \ldots, 10\) all the lines \(\mathrm{L}_{2 \mathrm{n}-1}\) are parallel to each other and all the lines \(L_{2 n}\) pass through a given point \(P\). The maximum number of points of intersection of pairs of lines from the set \(\left\{\mathrm{L}_1, \mathrm{~L}_2, \ldots, \mathrm{L}_{20}\right\}\) is equal to ___________.</div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c7" style="list-style-type: none;">
+<li>Q1: <strong>10</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c8">
+<li><strong>Q1:</strong> <p>To find the maximum number of points of intersection of pairs of lines from the given set, we need to consider how the lines are arranged based on the given conditions.</p><p>Firstly, there are 10 lines (\({L}_1, {L}_3, ..., {L}_{19}\)) that are parallel to each other. Since parallel lines do not intersect with each other, these 10 lines will not contribute to the number of intersection points among themselves.</p><p>Secondly, there are 10 lines (\({L}_2, {L}_4, ..., {L}_{20}\)) that all pass through a given point \(P\). Although these lines intersect at \(P\), they only contribute one unique point of intersection to the total count.</p><p>To calculate the maximum number of intersection points, we need to consider the total number of ways to pick pairs of lines from the 20 lines available without restrictions, then subtract the combinations that do not result in intersections, which includes the combinations of parallel lines among themselves and the concurrent lines through point \(P\).</p><p>This calculation is represented as:</p><p>\(Total = ^{20}C_2 - ^{10}C_2 - ^{10}C_2 + 1\)</p><p>Here, \(^{20}C_2\) calculates the total number of ways to pick any two lines out of 20, which includes intersecting and non-intersecting lines. \(^{10}C_2\) is subtracted twice: once for the set of parallel lines (\({L}_1, {L}_3, ..., {L}_{19}\)) that don't intersect among themselves and once more for the set of concurrent lines (\({L}_2, {L}_4, ..., {L}_{20}\)) intersecting only at point \(P\). Since all the concurrent lines intersect at the same point, we add 1 back to include this intersection point.</p><p>Carrying out this calculation gives us the total number of distinct intersection points as \(101\).</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

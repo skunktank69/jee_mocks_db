@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>permutations-and-combinations</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>permutations-and-combinations</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>In an examination, 5 students have been allotted their seats as per their roll numbers. The number of ways, in which none of the students sits on the allotted seat, is _________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c7" style="list-style-type: none;">
+<li>Q1: <strong>5</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c8">
+<li><strong>Q1:</strong> This problem can be solved using the concept of derangements, which is a permutation of objects where no object appears in its original position. In this case, we have 5 students who should not sit in their allotted seats. 
+
+<br/><br/>The formula for calculating the number of derangements (also known as subfactorials) is :
+
+<br/><br/>D(n) \(
+=n !\left[\frac{1}{0!}-\frac{1}{1 !}+\frac{1}{2 !}-\frac{1}{3 !}+\frac{1}{4 !}-\ldots \ldots . .+(-1)^n \frac{1}{n !}\right]
+\)
+
+<br/><br/>Where n is the number of students, in this case, 5.
+
+<br/><br/>Using the formula, let's calculate the derangements for 5 students :
+
+<br/><br/>D(5) = \(5! \left(\frac{1}{0!} - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} + \frac{1}{4!} - \frac{1}{5!}\right)\)
+
+<br/><br/>D(5) = \(120 \left(1 - 1 + \frac{1}{2} - \frac{1}{6} + \frac{1}{24} - \frac{1}{120}\right)\)
+
+<br/><br/>D(5) = \(120 \left(0 + \frac{1}{2} - \frac{1}{6} + \frac{1}{24} - \frac{1}{120}\right)\)
+
+<br/><br/>D(5) = \(120 \left(\frac{1}{2} - \frac{1}{6} + \frac{1}{24} - \frac{1}{120}\right)\)
+
+<br/><br/>D(5) = \(120 \left(\frac{60}{120} - \frac{20}{120} + \frac{5}{120} - \frac{1}{120}\right)\)
+
+<br/><br/>D(5) = \(120 \left(\frac{44}{120}\right)\)
+
+<br/><br/>D(5) = 44
+
+<br/><br/>So, there are 44 ways in which none of the students sits on the allotted seat.</li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

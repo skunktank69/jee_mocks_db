@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>probability</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>probability</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Bag 1 contains 4 white balls and 5 black balls, and Bag 2 contains <i>n</i> white balls and 3 black balls. One ball is drawn randomly from Bag 1 and transferred to Bag 2. A ball is then drawn randomly from Bag 2. If the probability, that the ball drawn is white, is \( \frac{29}{45} \), then <i>n</i> is equal to:</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>5</p></li>
+<li class="c8"><p>6</p></li>
+<li class="c8"><p>4</p></li>
+<li class="c8"><p>3</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5">A bag contains 8 balls, whose colours are either white or black. 4 balls are drawn at random without replacement and it was found that 2 balls are white and other 2 balls are black. The probability that the bag contains equal number of white and black balls is :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\frac{2}{5}\)</li>
+<li class="c8">\(\frac{2}{7}\)</li>
+<li class="c8">\(\frac{1}{7}\)</li>
+<li class="c8">\(\frac{1}{5}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5">A bag contains 6 white and 4 black balls. A die is rolled once and the number of balls equal to the number obtained on the die are drawn from the bag at random. The probability that all the balls drawn are white is :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\frac{1}{4}\)</li>
+<li class="c8">\(\frac{9}{50}\)</li>
+<li class="c8">\(\frac{1}{5}\)</li>
+<li class="c8">\(\frac{11}{50}\)</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>B</strong></li><li>Q2: <strong>B</strong></li><li>Q3: <strong>C</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp; \text { Bag } 1=\{4 \mathrm{~W}, 5 \mathrm{~B}\} \\
+&amp; \text { Bag } \mathbf{2}=\{\mathbf{n W}, \mathbf{3 B}\} \\
+&amp; \mathrm{P}\left(\frac{\mathrm{~W}}{\mathrm{Bag} 2}\right)=\frac{29}{45} \\
+&amp; \Rightarrow \mathrm{P}\left(\frac{\mathrm{~W}}{\mathrm{~B}_1}\right) \times \mathrm{P}\left(\frac{\mathrm{~W}}{\mathrm{~B}_2}\right)+\mathrm{P}\left(\frac{\mathrm{~B}}{\mathrm{~B}_1}\right) \times \mathrm{P}\left(\frac{\mathrm{~W}}{\mathrm{~B}_2}\right)=\frac{29}{45} \\
+&amp; \frac{4}{9} \times \frac{\mathrm{n}+1}{\mathrm{n}+4}+\frac{5}{9} \times \frac{\mathrm{n}}{\mathrm{n}+4}=\frac{29}{45}
+\end{aligned}\)</p>
+<p>\(\mathrm{n = 6}\)</p></li><li><strong>Q2:</strong> \(\begin{aligned} &amp; \mathrm{P}(4 \mathrm{~W} 4 \mathrm{~B} / 2 \mathrm{~W} 2 \mathrm{~B})= \\\\ &amp; \frac{P(4 W 4 B) \times P(2 W 2 B / 4 W 4 B)}{P(2 W 6 B) \times P(2 W 2 B / 2 W 6 B)+P(3 W 5 B) \times P(2 W 2 B / 3 W 5 B)} \\ &amp; +\ldots \ldots \ldots \ldots+P(6 W 2 B) \times P(2 W 2 B / 6 W 2 B)\end{aligned}\)
+<br/><br/>\(\begin{aligned} &amp; =\frac{\frac{1}{5} \times \frac{{ }^4 \mathrm{C}_2 \times{ }^4 \mathrm{C}_2}{{ }^8 \mathrm{C}_4}}{\frac{1}{5} \times \frac{{ }^2 \mathrm{C}_2 \times{ }^6 \mathrm{C}_2}{{ }^8 \mathrm{C}_4}+\frac{1}{5} \times \frac{{ }^3 \mathrm{C}_2 \times{ }^5 \mathrm{C}_2}{{ }^8 \mathrm{C}_4}+\ldots+\frac{1}{5} \times \frac{{ }^6 \mathrm{C}_2 \times{ }^2 \mathrm{C}_2}{{ }^8 \mathrm{C}_4}} \\\\ &amp; =\frac{2}{7}\end{aligned}\)</li><li><strong>Q3:</strong> Let \(X\) be the number rolled on the die, and let \(W\) be the event that all balls drawn are white. We want to find the probability \(P(W)\), which can be calculated using the law of total probability as follows :
+
+<br/><br/>\(P(W) = \sum\limits_{x=1}^{6} P(W|X=x)P(X=x)\)
+
+<br/><br/>The probability of rolling any number from 1 to 6 on the die is equal, so \(P(X=x) = \frac{1}{6}\) for all \(x \in \{1, 2, 3, 4, 5, 6\}\). 
+
+<br/><br/>Now let's calculate the conditional probabilities \(P(W|X=x)\) for each possible value of \(x\) :
+
+<br/><br/>1. \(P(W|X=1) = {{{}^6{C_1}} \over {{}^{10}{C_1}}}= \frac{6}{10} = \frac{3}{5}\), since there are 6 white balls out of a total of 10 balls.
+<br/><br/>2. \(P(W|X=2) = {{{}^6{C_2}} \over {{}^{10}{C_2}}} = \frac{15}{45} = \frac{1}{3}\), since there are 15 ways to choose 2 white balls out of 6, and 45 ways to choose 2 balls out of 10.
+<br/><br/>3. \(P(W|X=3) = {{{}^6{C_3}} \over {{}^{10}{C_3}}} = \frac{20}{120} = \frac{1}{6}\), since there are 20 ways to choose 3 white balls out of 6, and 120 ways to choose 3 balls out of 10.
+<br/><br/>4. \(P(W|X=4) = {{{}^6{C_4}} \over {{}^{10}{C_4}}} = \frac{15}{210} = \frac{1}{14}\), since there are 15 ways to choose 4 white balls out of 6, and 210 ways to choose 4 balls out of 10.
+<br/><br/>5. \(P(W|X=5) = {{{}^6{C_5}} \over {{}^{10}{C_5}}} = \frac{6}{252} = \frac{1}{42}\), since there are 6 ways to choose 5 white balls out of 6, and 252 ways to choose 5 balls out of 10.
+<br/><br/>6. \(P(W|X=6) = {{{}^6{C_6}} \over {{}^{10}{C_6}}} = \frac{1}{210}\), since there are 1 ways to choose 6 white balls out of 6, and 210 ways to choose 6 balls out of 10.
+
+<br/><br/>Using the law of total probability, we have :
+
+<br/><br/>\(P(W) = \frac{1}{6} \left(P(W|X=1) + P(W|X=2) + P(W|X=3) + P(W|X=4) + P(W|X=5) + P(W|X=6)\right)\)
+
+<br/><br/>\(P(W) = \frac{1}{6} \left(\frac{3}{5} + \frac{1}{3} + \frac{1}{6} + \frac{1}{14} + \frac{1}{42} + \frac{1}{210}\right)\)
+
+<br/><br/>To simplify this expression, find a common denominator :
+
+<br/><br/>\(P(W) = \frac{1}{6} \left(\frac{126}{210} + \frac{70}{210} + \frac{35}{210} + \frac{15}{210} + \frac{5}{210} + \frac{1}{210}\right)\)
+
+<br/><br/>Add the fractions :
+
+<br/><br/>\(P(W) = \frac{1}{6}\left(\frac{126+70+35+15+5+1}{210}\right)=\frac{42}{210}=\frac{1}{5}\)</li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>matrices-and-determinants</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>matrices-and-determinants</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>For a \(3 \times 3\) matrix \(M\), let trace \((M)\) denote the sum of all the diagonal elements of \(M\). Let \(A\) be a \(3 \times 3\) matrix such that \(|A|=\frac{1}{2}\) and trace \((A)=3\). If \(B=\operatorname{adj}(\operatorname{adj}(2 A))\), then the value of \(|B|+\) trace \((B)\) equals :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">56
+</li>
+<li class="c8">132
+</li>
+<li class="c8">174
+</li>
+<li class="c8">280</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(A\) be a \(2 \times 2\) real matrix and \(I\) be the identity matrix of order 2. If the roots of the equation \(|\mathrm{A}-x \mathrm{I}|=0\) be \(-1\) and 3, then the sum of the diagonal elements of the matrix \(\mathrm{A}^2\) is</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let \(R=\left(\begin{array}{ccc}x &amp; 0 &amp; 0 \\ 0 &amp; y &amp; 0 \\ 0 &amp; 0 &amp; z\end{array}\right)\) be a non-zero \(3 \times 3\) matrix, where \(x \sin \theta=y \sin \left(\theta+\frac{2 \pi}{3}\right)=z \sin \left(\theta+\frac{4 \pi}{3}\right) \neq 0, \theta \in(0,2 \pi)\). For a square matrix \(M\), let trace \((M)\) denote the sum of all the diagonal entries of \(M\). Then, among the statements:</p>
+<p>(I) Trace \((R)=0\)</p>
+<p>(II) If trace \((\operatorname{adj}(\operatorname{adj}(R))=0\), then \(R\) has exactly one non-zero entry.</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">Only (I) is true
+</li>
+<li class="c8">Only (II) is true
+</li>
+<li class="c8">Both (I) and (II) are true
+</li>
+<li class="c8">Neither (I) nor (II) is true</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Let \(A\) be a square matrix of order 2 such that \(|A|=2\) and the sum of its diagonal elements is \(-\)3 . If the points \((x, y)\) satisfying \(\mathrm{A}^2+x \mathrm{~A}+y \mathrm{I}=\mathrm{O}\) lie on a hyperbola, whose transverse axis is parallel to the \(x\)-axis, eccentricity is \(\mathrm{e}\) and the length of the latus rectum is \(l\), then \(\mathrm{e}^4+l^4\) is equal to ________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>Let \(A=\left[\begin{array}{cc}2 &amp; -1 \\ 1 &amp; 1\end{array}\right]\). If the sum of the diagonal elements of \(A^{13}\) is \(3^n\), then \(n\) is equal to ________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>Let \(A = \left( {\matrix{
+   1 &amp; 0 &amp; 0  \cr 
+   0 &amp; 4 &amp; { - 1}  \cr 
+   0 &amp; {12} &amp; { - 3}  \cr 
+
+ } } \right)\). Then the sum of the diagonal elements of the matrix \({(A + I)^{11}}\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">4094</li>
+<li class="c8">2050</li>
+<li class="c8">6144</li>
+<li class="c8">4097</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>D</strong></li><li>Q2: <strong>0</strong></li><li>Q3: <strong>D</strong></li><li>Q4: <strong>2</strong></li><li>Q5: <strong>2</strong></li><li>Q6: <strong>D</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\( B = \operatorname{adj}(\operatorname{adj}(2A)) = \det(2A) \cdot (2A) \)</p>
+<p>Since \( A \) is a \( 3 \times 3 \) matrix with</p>
+<p>\( \det(A) = \frac{1}{2}, \)</p>
+<p>the determinant of \( 2A \) is computed as</p>
+<p>\( \det(2A) = 2^3 \det(A) = 8 \cdot \frac{1}{2} = 4. \)</p>
+<p>Thus,</p>
+<p>\( B = 4 \cdot (2A) = 8A. \)</p>
+<p>Now, compute the determinant and the trace of \( B \):</p>
+<p><p>Determinant of \( B \):</p>
+<p>\( \det(B) = \det(8A) = 8^3 \det(A) = 512 \cdot \frac{1}{2} = 256. \)</p></p>
+<p><p>Trace of \( B \):</p>
+<p>\( \operatorname{trace}(B) = \operatorname{trace}(8A) = 8 \cdot \operatorname{trace}(A) = 8 \cdot 3 = 24. \)</p></p>
+<p>Finally, adding these results:</p>
+<p>\( \det(B) + \operatorname{trace}(B) = 256 + 24 = 280. \)</p></li><li><strong>Q2:</strong> <p>\(|A-x I|=0\)</p>
+<p>Roots are \(-\)1 and 3</p>
+<p>Sum of roots \(=\operatorname{tr}(A)=2\)</p>
+<p>Product of roots \(=|\mathrm{A}|=-3\)</p>
+<p>Let \(A=\left[\begin{array}{ll}a &amp; b \\ c &amp; d\end{array}\right]\)</p>
+<p>We have \(\mathrm{a}+\mathrm{d}=2\)</p>
+<p>\(\mathrm{ad}-\mathrm{bc}=-3\)</p>
+<p>\(A^2=\left[\begin{array}{ll}a &amp; b \\
+c &amp; d
+\end{array}\right] \times\left[\begin{array}{ll}
+a &amp; b \\
+c &amp; d
+\end{array}\right]=\left[\begin{array}{ll}
+a^2+b c &amp; a b+b d \\
+a c+c d &amp; b c+d^2
+\end{array}\right]\)</p>
+<p>We need \(a^2+b c+b c+d^2\)</p>
+<p>\(\begin{aligned}
+&amp; =a^2+2 b c+d^2 \\
+&amp; =(a+d)^2-2 a d+2 b c \\
+&amp; =4-2(a d-b c) \\
+&amp; =4-2(-3) \\
+&amp; =4+6 \\
+&amp; =10
+\end{aligned}\)</p></li><li><strong>Q3:</strong> <p>\(\begin{aligned}
+&amp; x \sin \theta=y \sin \left(\theta+\frac{2 \pi}{3}\right)=z \sin \left(\theta+\frac{4 \pi}{3}\right) \neq 0 \\
+&amp; \Rightarrow x, y, z \neq 0
+\end{aligned}\)</p>
+<p>Also,</p>
+<p>\(\begin{aligned}
+&amp; \sin \theta+\sin \left(\theta+\frac{2 \pi}{3}\right)+\sin \left(\theta+\frac{4 \pi}{3}\right)=0 \forall \theta \in \mathrm{R} \\
+&amp; \Rightarrow \frac{1}{\mathrm{x}}+\frac{1}{\mathrm{y}}+\frac{1}{\mathrm{z}}=0 \\
+&amp; \Rightarrow \mathrm{xy}+\mathrm{yz}+\mathrm{zx}=0
+\end{aligned}\)</p>
+<p>(i) \(\quad \operatorname{Trace}(\mathrm{R})=\mathrm{x}+\mathrm{y}+\mathrm{z}\)</p>
+<p>If \(x+y+z=0\) and \(x y+y z+z x=0\)</p>
+<p>\(\Rightarrow \mathrm{x}=\mathrm{y}=\mathrm{z}=0\)</p>
+<p>Statement (i) is False</p>
+<p>(ii) \(\quad \operatorname{Adj}(\operatorname{Adj}(\mathrm{R}))=|\mathrm{R}| \mathrm{R}\)</p>
+<p>Trace \((\operatorname{Adj}(\operatorname{Adj}(\mathrm{R})))\)</p>
+<p>\(=x y z(x+y+z) \neq 0\)</p>
+<p>Statement (ii) is also False</p></li><li><strong>Q4:</strong> <p>\(|A|=2 \sum \mathrm{dia}=-3\)</p>
+<p>\(\therefore \quad\) character equation : \(A^2+3 A+2 I=0\)</p>
+<p>\(\Rightarrow x=3 \quad y=2\)</p>
+<p>\(\because\) We are getting only one point \((3,2)\) but its given many points satisfy this equation.</p>
+<p>Moreover hyperbola whose transverse axis is \(x\) axis and passing through \((3,2)\) is not unique.</p>
+<p>\(\therefore\) multiple value of '\(e\)' and \(L(L R)\) is possible.</p>
+<p>We'll not get a unique result.</p></li><li><strong>Q5:</strong> <p>\(\begin{aligned}
+&amp; A=\left[\begin{array}{cc}
+2 &amp; -1 \\
+1 &amp; 1
+\end{array}\right] \\
+&amp; A^2=\left[\begin{array}{cc}
+2 &amp; -1 \\
+1 &amp; 1
+\end{array}\right]\left[\begin{array}{cc}
+2 &amp; -1 \\
+1 &amp; 1
+\end{array}\right] \\
+&amp; A^2=\left[\begin{array}{cc}
+3 &amp; -3 \\
+3 &amp; 0
+\end{array}\right]=3\left[\begin{array}{cc}
+1 &amp; -1 \\
+1 &amp; 0
+\end{array}\right] \\
+&amp; A^4=9\left[\begin{array}{ll}
+0 &amp; -1 \\
+1 &amp; -1
+\end{array}\right] \\
+&amp; A^8=81\left[\begin{array}{ll}
+-1 &amp; 1 \\
+-1 &amp; 0
+\end{array}\right] \\
+&amp; A^{12}=729\left[\begin{array}{ll}
+1 &amp; 0 \\
+0 &amp; 1
+\end{array}\right] \\
+&amp; A^{13}=729\left[\begin{array}{ll}
+1 &amp; 0 \\
+0 &amp; 1
+\end{array}\right]\left[\begin{array}{cc}
+2 &amp; -1 \\
+1 &amp; 1
+\end{array}\right] \\
+&amp; A^{13}=\left[\begin{array}{cc}
+1458 &amp; -729 \\
+729 &amp; 729
+\end{array}\right]
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \text { Sum }=2187=3^n \\
+&amp; 3^7=3^n \\
+&amp; n=7
+\end{aligned}\)</p></li><li><strong>Q6:</strong> \(A^{2}=\left[\begin{array}{ccc}1 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; -1 \\ 0 &amp; 12 &amp; -3\end{array}\right]\left[\begin{array}{ccc}1 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; -1 \\ 0 &amp; 12 &amp; -3\end{array}\right]\)
+
+<br/><br/>\(
+=\left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 4 &amp; -1 \\
+0 &amp; 12 &amp; -3
+\end{array}\right]=A
+\)
+<br/><br/>\(\Rightarrow \mathrm{A}_{3}=\mathrm{A}_{4}=.......=\mathrm{A}\)
+
+<br/><br/>Now,
+
+<br/><br/>\(
+\begin{aligned}
+(A+I)^{11} &amp; ={ }^{11} C_{0} A^{11}+{ }^{11} C_{1} A^{10}+\ldots{ }^{11} C_{11} I \\\\
+&amp; =A\left({ }^{11} C_{0}+{ }^{11} C_{1} \ldots{ }^{11} C_{10}\right)+I \\\\
+&amp; =A\left(2^{11}-1\right)+I
+\end{aligned}
+\)
+
+
+
+<br/><br/>Trace of 
+<br/><br/>\(
+\begin{aligned}
+(A+I)^{11} &amp; =2^{11}+4\left(2^{11}-1\right)+1-3\left(2^{11}-1\right)+1 \\\\
+&amp; =2 \times 2^{11}-4+3+2 \\\\
+&amp; =2^{12}+1 \\\\
+&amp; =4097
+\end{aligned}
+\)</li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

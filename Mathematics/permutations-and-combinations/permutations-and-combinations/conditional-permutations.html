@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>permutations-and-combinations</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>permutations-and-combinations</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>The number of 6-letter words, with or without meaning, that can be formed using the letters of the word MATHS such that any letter that appears in the word must appear at least twice, is _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The number of words, which can be formed using all the letters of the word "DAUGHTER", so that all the vowels never come together, is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">34000
+</li>
+<li class="c8">37000
+</li>
+<li class="c8">35000
+</li>
+<li class="c8">36000</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>The number of words, with or without meaning, that can be formed using all the letters of the word ASSASSINATION so that the vowels occur together, is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>The number of arrangements of the letters of the word "INDEPENDENCE" in which all the vowels always occur together is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">16800</li>
+<li class="c8">14800</li>
+<li class="c8">18000</li>
+<li class="c8">33600</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>The number of 4-letter words, with or without meaning, each consisting of 2 vowels and 2 consonants, which can be formed from the letters of the word UNIVERSE without repetition is __________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>5</strong></li><li>Q2: <strong>D</strong></li><li>Q3: <strong>8</strong></li><li>Q4: <strong>A</strong></li><li>Q5: <strong>4</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>(i) Single letter is used, then no. of words \(=5\)</p>
+<p>(ii) Two distinct letters are used, then no. of words</p>
+<p>\({ }^5 \mathrm{C}_2 \times\left(\frac{6!}{2!4!} \times 2+\frac{6!}{3!3!}\right)=10(30+20)=500\)</p>
+<p>(iii) Three distinct letters are used, then no. of words</p>
+<p>\({ }^5 \mathrm{C}_3 \times \frac{6!}{2!2!2!}=900\)</p>
+<p>Total no. of words \(=1405\)</p></li><li><strong>Q2:</strong> <p>DAUGHTER</p>
+<p>Total words \(=8\) !</p>
+<p>Total words in which vowels are together \(=6!\times 3!\) words in which all vowels are not together</p>
+<p>\(\begin{aligned}
+&amp; =8!-6!\times 3! \\
+&amp; =6![56-6] \\
+&amp; =720 \times 50 \\
+&amp; =36000
+\end{aligned}\)</p></li><li><strong>Q3:</strong> Vowels : A,A,A,I,I,O
+<br/><br/>Consonants : S,S,S,S,N,N,T
+<br/><br/>\( \therefore \) Total number of ways in which vowels come together
+<br/><br/>\(=\frac{8 !}{4 ! 2 !} \times \frac{6 !}{3 ! 2 !}=50400\)</li><li><strong>Q4:</strong> In the given word, <br/><br/>vowels are : I, E, E, E, E <br/><br/>Consonants are : N, D, P, N, D, N, C <br/><br/>So, number of words \(=\frac{8 !}{3 ! 2 !} \times \frac{5 !}{4 !}\) <br/><br/>\(=\frac{8 \times 7 \times 6 \times 5 \times 4}{2} \times 5=16800\)
+<br/><br/><b>Concept :</b>
+<br/><br/>Out of \(n\) objects, if \(r\) things are same, so number of ways \(=\frac{n !}{r !}\)</li><li><strong>Q5:</strong> Given, word is UNIVERSE
+
+<br/><br/>Here, vowels are E, I, U and consonants are N, R, S, V 
+<br/><br/>\(\therefore\) Required number of 4-letters words, with or without meaning, 
+<br/><br/>each consisting of 2 vowels and 2 consonants
+<br/><br/>\(
+\begin{aligned}
+&amp; ={ }^3 C_2 \times{ }^4 C_2 \times 4 ! \\\\
+&amp; ={ }^3 C_1 \times{ }^4 C_2 \times 24 \\\\
+&amp; =3 \times 6 \times 24=432
+\end{aligned}
+\)</li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>The number of different 5 digit numbers greater than 50000 that can be formed using the digits 0 , \(1,2,3,4,5,6,7\), such that the sum of their first and last digits should not be more than 8 , is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">5720</li>
+<li class="c8">5719</li>
+<li class="c8">4608</li>
+<li class="c8">4607</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The total number of six digit numbers, formed using the digits 4, 5, 9 only and divisible by 6, is ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Number of 4-digit numbers that are less than or equal to 2800 and either divisible by 3 or by 11 , is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5">The number of seven digits odd numbers, that can
+be formed using all the<br/><br/>seven digits 1, 2, 2, 2, 3, 3,
+5 is ____________.</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>Number of 4-digit numbers (the repetition of digits is allowed) which are made using the digits 1, 2, 3 and 5, and are divisible by 15, is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>The number of numbers, strictly between 5000 and 10000 can be formed using the digits 1, 3, 5, 7, 9 without repetition, is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">120</li>
+<li class="c8">6</li>
+<li class="c8">72</li>
+<li class="c8">12</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5">The total number of three-digit numbers, divisible by 3, which can be formed using the digits \(1,3,5,8\), if repetition of digits is allowed, is :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">21</li>
+<li class="c8">22</li>
+<li class="c8">18</li>
+<li class="c8">20</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>Total numbers of 3-digit numbers that are divisible by 6 and can be formed by using the digits \(1,2,3,4,5\) with repetition, is _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>The number of five digit numbers, greater than 40000 and divisible by 5 , which can be formed using the digits \(0,1,3,5,7\) and 9 without repetition, is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">132</li>
+<li class="c8">72</li>
+<li class="c8">120</li>
+<li class="c8">96</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q10.</span>
+</div>
+<div class="c5"><p>The total number of four digit numbers such that each of first three digits is divisible by the last digit, is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q11.</span>
+</div>
+<div class="c5"><p>The total number of 5-digit numbers, formed by using the digits 1, 2, 3, 5, 6, 7 without repetition, which are multiple of 6, is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">36</li>
+<li class="c8">48</li>
+<li class="c8">60</li>
+<li class="c8">72</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q12.</span>
+</div>
+<div class="c5"><p>The total number of three-digit numbers, with one digit repeated exactly two times, is ______________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q13.</span>
+</div>
+<div class="c5"><p>The number of 3-digit odd numbers, whose sum of digits is a multiple of 7, is _____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q14.</span>
+</div>
+<div class="c5"><p>The number of 7-digit numbers which are multiples of 11 and are formed using all the digits 1, 2, 3, 4, 5, 7 and 9 is _____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q15.</span>
+</div>
+<div class="c5"><p>The number of 6-digit numbers made by using the digits 1, 2, 3, 4, 5, 6, 7, without repetition and which are multiple of 15 is ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q16.</span>
+</div>
+<div class="c5"><p>Numbers are to be formed between 1000 and 3000 , which are divisible by 4 , using the digits \(1,2,3,4,5\) and 6 without repetition of digits. Then the total number of  such numbers is ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q17.</span>
+</div>
+<div class="c5"><p>The number of natural numbers lying between 1012 and 23421 that can be formed using the digits \(2,3,4,5,6\) (repetition of digits is not allowed) and divisible by 55 is _________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>D</strong></li><li>Q2: <strong>6</strong></li><li>Q3: <strong>3</strong></li><li>Q4: <strong>1</strong></li><li>Q5: <strong>4</strong></li><li>Q6: <strong>C</strong></li><li>Q7: <strong>B</strong></li><li>Q8: <strong>6</strong></li><li>Q9: <strong>C</strong></li><li>Q10: <strong>1</strong></li><li>Q11: <strong>D</strong></li><li>Q12: <strong>1</strong></li><li>Q13: <strong>1</strong></li><li>Q14: <strong>1</strong></li><li>Q15: <strong>15</strong></li><li>Q16: <strong>1</strong></li><li>Q17: <strong>4</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>Case I \(5{ }_{---} 0\)</p>
+<p>Case II \(5{ }_{---} 1\)</p>
+<p>\(
+\begin{array}{ll}
+5 &amp; 2 \\
+5 &amp; 3 \\
+6 &amp; 0 \\
+6 &amp; 1 \\
+6 &amp; 2 \\
+7 &amp; 0
+\end{array}\)</p>
+<p>Case IX \(7{ }_{---} 1\)</p>
+<p>\(9 \times(8 \times 8 \times 8)=4608\) but 50000 is not included, so total numbers \(4608-1=4607\)</p>
+</li><li><strong>Q2:</strong> A number will be divisible by 6 iff the digit at the unit place of the number is divisible by 2 and sum of all digits of the number is divisible by 3 .
+<br/><br/>Units, place must be occupied by 4 and hence, at 
+least one 4 must be there.
+<br/><br/>Possible combination of 4, 5, 9 are as follows :
+<br/><br/>
+<table class="c11">
+<thead>
+<tr>
+<th class="c12">4</th>
+<th class="c12">5</th>
+<th class="c12">9</th>
+<th class="c12">Total number<br/> of Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c12">1</td>
+<td class="c12">1</td>
+<td class="c12">4</td>
+<td class="c12">\({{5!} \over {4!}} = 5\)</td>
+</tr>
+<tr>
+<td class="c12">1</td>
+<td class="c12">4</td>
+<td class="c12">1</td>
+<td class="c12">\({{5!} \over {4!}} = 5\)</td>
+</tr>
+<tr>
+<td class="c12">2</td>
+<td class="c12">2</td>
+<td class="c12">2</td>
+<td class="c12">\({{5!} \over {2!2!}} = 30\)</td>
+</tr>
+<tr>
+<td class="c12">3</td>
+<td class="c12">0</td>
+<td class="c12">3</td>
+<td class="c12">\({{5!} \over {2!3!}} = 10\)</td>
+</tr>
+<tr>
+<td class="c12">3</td>
+<td class="c12">3</td>
+<td class="c12">0</td>
+<td class="c12">\({{5!} \over {2!3!}} = 10\)</td>
+</tr>
+<tr>
+<td class="c12">4</td>
+<td class="c12">1</td>
+<td class="c12">1</td>
+<td class="c12">\({{5!} \over {3!}} = 20\)</td>
+</tr>
+<tr>
+<td class="c12">6</td>
+<td class="c12">0</td>
+<td class="c12">0</td>
+<td class="c12">\({{5!} \over {5!}} = 1\)</td>
+</tr>
+</tbody>
+</table>
+<br><br/>Total = 5 + 5 + 30 + 10 + 10 + 20 + 1 = 81.</br></li><li><strong>Q3:</strong> Numbers which are divisible by 3 (4 digit) and less than or equal to 2800
+
+<br/><br/>\(=\frac{2799-1002}{3}+1=600\)
+
+<br/><br/>Numbers which are divisible by 11 (4 digit) and less than or equal to 2800
+
+<br/><br/>\(=\frac{2794-1001}{11}+1=164\)
+
+<br/><br/>Numbers which are divisible by 33 (4 digit) and less than or equal to 2800
+
+<br/><br/>\(=\frac{2772-1023}{33}+1=54\)
+
+<br/><br/>\(\therefore\) Total numbers = \(600+164-54=710\)</li><li><strong>Q4:</strong> <p>\(.......1 \to {{6!} \over {2!3!}} = 60\)</p>
+<p>\(.......3 \to {{6!} \over {3!}} = 120\)</p>
+<p>\(.......5 \to {{6!} \over {3!2!}} = 60\)</p>
+<p>Total = 240</p></li><li><strong>Q5:</strong> <p>We have to make 4 digit numbers using the
+digits, 1, 2, 3 and 5.
+<br/><br/>The unit digit of the 4 digit number will be 5.</p>
+<p><img alt="JEE Main 2023 (Online) 30th January Morning Shift Mathematics - Permutations and Combinations Question 78 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lf61sqp4/9a9d5f7b-a4f5-43a8-8dd7-0303f78b9d4c/98f24a80-c130-11ed-8b61-5f07d5ca97fb/file-1lf61sqp5.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lf61sqp4/9a9d5f7b-a4f5-43a8-8dd7-0303f78b9d4c/98f24a80-c130-11ed-8b61-5f07d5ca97fb/file-1lf61sqp5.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Now, the sum (x + y + z) should be of the (3p + 1).
+<br/><br/>Therefore, the possible cases are
+<br/><br/>(x, y, z) = (1, 1, 5), (1, 1, 2), (2, 2, 3), (2, 3, 5), (3, 3, 1) and
+(5, 5, 3).</p>
+<p>So, total arrangements are
+<br/><br/>For \((1,1,5) \rightarrow \frac{3 !}{2 !}=3 ;\) 
+<br/><br/>For \((1,1,2) \rightarrow \frac{3 !}{2 !}=3 ;\)
+<br/><br/>For \((2,2,3) \rightarrow \frac{3 !}{2 !}=3 ;\) 
+<br/><br/>For \((2,3,5) \rightarrow 3 !=6 ;\)
+<br/><br/>For \((3,3,1) \rightarrow \frac{3 !}{2 !}=3 ;\)
+<br/><br/>For \((5,5,3) \rightarrow \frac{3 !}{2 !}=3 ;\)
+<br/><br/>So, total number of arrangements \(=3+3+3+6+3+3=\) 21</p></li><li><strong>Q6:</strong> Numbers between 5000 &amp; 10000<br/><br/>
+Using digits 1, 3, 5, 7, 9<br/><br/>
+<img alt="JEE Main 2023 (Online) 25th January Evening Shift Mathematics - Permutations and Combinations Question 69 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lef5alut/f8dc7152-4573-493d-a2cc-0b09243a1255/1b9fc550-b265-11ed-a126-5dfa1a9d5fb8/file-1lef5aluu.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lef5alut/f8dc7152-4573-493d-a2cc-0b09243a1255/1b9fc550-b265-11ed-a126-5dfa1a9d5fb8/file-1lef5aluu.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/><br/>
+Total Numbers = 3 × 4 × 3 × 2 = 72</li><li><strong>Q7:</strong> The number of three-digit numbers divisible by 3 by considering the possible sums of digits that are divisible by 3. Your approach is as follows:
+
+<br><br>1. Sum of digits is 3: \((1, 1, 1)\) - 1 possible number
+<br><br>2. Sum of digits is 9: \((1, 3, 5)\) and \((3, 3, 3)\) -
+<br><br> Let's consider the cases separately :
+
+<br><br><b>a.</b> Sum of digits is 9: \((1, 3, 5)\)
+   For this case, we can arrange the digits in \(3!\) ways :
+   135, 153, 315, 351, 513, and 531.
+
+<br><br><b>b.</b> Sum of digits is 9: \((3, 3, 3)\)
+   For this case, since all the digits are the same, there is only 1 possible number :
+   333.
+
+<br><br>Now, the total number of possible numbers when the sum of digits is 9 is :
+
+<br><br>\(
+3! + 1 = 6 + 1 = 7
+\)
+
+<br><br>3. Sum of digits is 12: \((1, 3, 8)\) - \(3!\) possible numbers
+<br><br>4. Sum of digits is 15: \((5, 5, 5)\) - 1 possible number
+<br><br>5. Sum of digits is 18: \((5, 5, 8)\) - \(\frac{3!}{2!}\) possible numbers (since 5 is repeated)
+<br><br>6. Sum of digits is 21: \((5, 8, 8)\) - \(\frac{3!}{2!}\) possible numbers (since 8 is repeated)
+<br><br>7. Sum of digits is 24: \((8, 8, 8)\) - 1 possible number
+
+<br><br/>Adding up the possible numbers for each case, we get:
+
+<br/><br/>\(
+1 + 7 + 3! + 1 + \frac{3!}{2!} + \frac{3!}{2!} + 1 = 1 + 7 + 6 + 1 + 3 + 3 + 1 = 22
+\)
+<br/><br/>So, there are a total of 22 three-digit numbers divisible by 3 that can be formed using the digits \(1, 3, 5, 8\) with repetition allowed.</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></li><li><strong>Q8:</strong> A number is divisible by 6 if it is divisible by both 2 and 3. A number is divisible by 2 if its last digit is even, which means it must be either 2 or 4 from the given digits. A number is divisible by 3 if the sum of its digits is divisible by 3.
+<br/><br/>\(
+\begin{aligned}
+&amp; (2,1,3),(2,3,4),(2,5,5),(2,2,5),(2,2,2) \\\\
+&amp; (4,1,1),(4,4,1),(4,4,4),(4,3,5) \\\\
+&amp; 2,1,3 \Rightarrow 312,132 \\\\
+&amp; 2,3,4 \Rightarrow 342,432,234,324 \\\\
+&amp; 2,5,5 \Rightarrow 552 \\\\
+&amp; 2,2,5 \Rightarrow 252,522 \\\\
+&amp; 2,2,2 \Rightarrow 222 \\\\
+&amp; 4,1,1 \Rightarrow 114 \\\\
+&amp; 4,4,1 \Rightarrow 414,144 \\\\
+&amp; 4,4,4 \Rightarrow 444 \\\\
+&amp; 4,3,5 \Rightarrow 354,534
+\end{aligned}
+\)
+<br/><br/>Total 16 numbers.</li><li><strong>Q9:</strong> Since the five-digit number must be greater than 40000, the only options for the first digit are 5, 7, or 9. That leaves 3 remaining choices for the first digit. 
+
+<br/><br/>Since the number has to be divisible by 5, the last digit must be 0 or 5. If the first digit is 5, the last digit can only be 0, since digits cannot be repeated. If the first digit is 7 or 9, the last digit can be 0 or 5, so there are 2 choices. 
+
+<br/><br/>Five possible configurations for the first and last digits :
+
+<br/><br/>- 5xxx0
+<br/><br/>- 7xxx0
+<br/><br/>- 7xxx5
+<br/><br/>- 9xxx0
+<br/><br/>- 9xxx5
+
+<br/><br/>For each of these configurations, there are three places in the middle that can be filled with the remaining 4 unused digits. 
+
+<br/><br/>Since repetition isn't allowed, there are 4 options for the second digit, 3 for the third, and 2 for the fourth, which can be represented as <sup>4</sup>P<sub>3</sub>, or permutations of 4 items taken 3 at a time. This is equal to 4 \( \times \) 3 \( \times \) 2 = 24.
+
+<br/><br/>So, for each of the 5 configurations, there are 24 ways to arrange the middle three digits. Therefore, the total number of five-digit numbers that meet the criteria is 5 \( \times \) 24 = 120.
+</li><li><strong>Q10:</strong> If unit digit is 1 then \(\rightarrow 9 \times\) s \(10 \times 10=900\) numbers <br/><br/>If unit digit is 2 then \(\rightarrow 4 \times 5 \times 5=100\) numbers <br/><br/>If unit digit is 3 then \(\rightarrow 3 \times 4 \times 4=48\) numbers<br/><br/> If unit digit is 4 then \(\rightarrow 2 \times 3 \times 3=18\) numbers<br/><br/> If unit digit is 5 then \(\rightarrow 1 \times 2 \times 2=4\) numbers <br/><br/>If unit digit is 6 then \(\rightarrow 1 \times 2 \times 2=4\) numbers
+<br/><br/>
+For \(7,8,9 \rightarrow 4+4+4=12\) Numbers
+<br/><br/>
+Total \(=1086\) Numbers</li><li><strong>Q11:</strong> To make a no. divisible by 3 we can use the digits
+1,2,5,6,7 or 1,2,3,5,7.<br/><br/>
+ Using 1,2,5,6,7, number of even numbers is
+ = 4 × 3 × 2 × 1 × 2 = 48<br/><br/>
+ Using 1,2,3,5,7, number of even numbers is
+ = 4 × 3 × 2 × 1 × 1 = 24<br/><br/>
+ Required answer is 72.</li><li><strong>Q12:</strong> <p>\(C - 1:\) All digits are non-zero</p>
+<p>\({}^9{C_2}\,.\,2\,.\,{{3!} \over 2} = 216\)</p>
+<p>\(C - 2\) : One digit is 0</p>
+<p>\(0,\,0,\,x \Rightarrow {}^9{C_1}\,.\,1 = 9\)</p>
+<p>\(0,x,\,x \Rightarrow {}^9{C_1}\,.\,2 = 18\)</p>
+<p>Total \( = 216 + 27 = 243\)</p></li><li><strong>Q13:</strong> For odd number unit place shall be \(1,3,5,7\) or 9 .<br/><br/>
+\(\therefore\) x y 1, x y 3, x y 5, x y 7, x y 9 are the type of numbers. numbers.<br/><br/>
+If \(x \,y\, 1\) then \(x+y=6,13,20\)... Cases are required<br/><br/>
+i.e., \(6+6+0+\ldots=12\) ways<br/><br/>
+If \(x \, y \,3\) then<br/><br/>
+\(x+y=4,11,18, \ldots\) Cases are required<br/><br/>
+i.e., \(4+8+1+0 \ldots=13\) ways<br/><br/>
+Similarly for \(x \,y \,5\), we have \(x+y=2,9,16, \ldots\)<br/><br/>
+i.e., \(2+9+3=14\) ways<br/><br/>
+for \(x \,y\) we have<br/><br/>
+\(x+y=0,7,14, \ldots\)<br/><br/>
+i.e., \(0+7+5=12\) ways<br/><br/>
+And for \(x\) y we have<br/><br/>
+\(
+x+y=5,12,19 \ldots
+\)<br/><br/>
+i.e., \(5+7+0 \ldots=12\) ways<br/><br/>
+\(\therefore\) Total 63 ways</li><li><strong>Q14:</strong> Digits are \(1,2,3,4,5,7,9\)<br/><br/>
+Multiple of \(11 \rightarrow\) Difference of sum at even and odd place is divisible by 11 .<br/><br/>
+Let number of the form <b>abcdefg</b><br/><br/>
+\(
+\begin{aligned}
+&amp;\therefore(\mathrm{a}+\mathrm{c}+\mathrm{e}+\mathrm{g})-(\mathrm{b}+\mathrm{d}+\mathrm{f})=11 \mathrm{x} \\\\
+&amp;\mathrm{a}+\mathrm{b}+\mathrm{c}+\mathrm{d}+\mathrm{e}+\mathrm{f}=31 \\\\
+&amp;\therefore \text { either } \mathrm{a}+\mathrm{c}+\mathrm{e}+\mathrm{g}=21 \text { or } 10 \\\\
+&amp;\therefore \mathrm{b}+\mathrm{d}+\mathrm{f}=10 \text { or } 21
+\end{aligned}
+\)<br/><br/>
+<b>Case-1</b><br/><br/>
+\(
+\begin{aligned}
+&amp;a+c+e+g=21 \\\\
+&amp;b+d+f=10 \\\\
+&amp;(b, d, f) \in\{(1,2,7)(2,3,5)(1,4,5)\} \\\\
+&amp;(a, c, e, g) \in\{(1,4,7,9),(3,4,5,9),(2,3,7,9)\}
+\end{aligned}
+\)<br/><br/>
+<b>Case-2</b><br/><br/>
+\(
+\begin{aligned}
+&amp;\mathrm{a}+\mathrm{c}+\mathrm{e}+\mathrm{g}=10 \\\\
+&amp;\mathrm{~b}+\mathrm{d}+\mathrm{f}=21 \\\\
+&amp;(\mathrm{a}, \mathrm{b}, \mathrm{e}, \mathrm{g}) \in\{1,2,3,4)\} \\\\
+&amp;(\mathrm{b}, \mathrm{d}, \mathrm{f}) \&amp;\{(5,7,9)\} \\\\
+&amp;\therefore \text { Total number in case } 2=3 ! \times 4 !=144 \\\\
+&amp;\therefore \text { Total numbers }=144+432=576
+\end{aligned}
+\)</li><li><strong>Q15:</strong> <p>A number is multiple of 15 when the number is divisible by 5 and sum of digits of the number is divisible by 3.</p>
+<p><img alt="JEE Main 2022 (Online) 30th June Morning Shift Mathematics - Permutations and Combinations Question 97 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1l65uqr2z/3aa8732e-2bc7-4c8a-a45b-f53f925f4291/0f4fb6b0-0ee7-11ed-a7de-eff776fdb55c/file-1l65uqr30.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l65uqr2z/3aa8732e-2bc7-4c8a-a45b-f53f925f4291/0f4fb6b0-0ee7-11ed-a7de-eff776fdb55c/file-1l65uqr30.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Among 1, 2, 3, 4, 5, 6, 7 unit place is filled with 5 so it is multiple of 5.</p>
+<p>Now to make it divisible by 3, take remaining 5 digits such a way that sum becomes divisible by 3.</p>
+<p>Remaining 5 digits can be</p>
+<p>(1) 1, 2, 3, 4, 6</p>
+<p>Here sum = 1 + 2 + 3 + 4 + 6 + 5 = 21 (divisible by 3)</p>
+<p>This 5 digits can be filled in those 5 placed without repetition in 5 \(\times\) 4 \(\times\) 3 \(\times\) 2 \(\times\) 1 = 51 = 120 ways</p>
+<p>(2) 2, 3, 4, 6, 7</p>
+<p>Here sum = 2 + 3 + 4 + 6 + 7 + 5 = 27 (divisible by 3)</p>
+<p>\(\therefore\) Number of ways = 51 = 120</p>
+<p>(3) 1, 2, 3, 6, 7</p>
+<p>Here sum = 1 + 2 + 3 + 6 + 7 + 5 = 24 (divisible by 3)</p>
+<p>\(\therefore\) Number of ways = 51 = 120</p>
+<p>\(\therefore\) Total possible 6 digit numbers divisible by 15</p>
+<p>= 120 + 120 + 120 = 360</p></li><li><strong>Q16:</strong> Here 1<sup>st</sup> digit is 1 or 2 only<br/><br/>
+<b>Case-I</b><br/><br/>
+If first digit is 1<br/><br/>
+Then last two digits can be 24, 32, 36, 52, 56, 64 <br/><br/>
+<img alt="JEE Main 2022 (Online) 26th July Evening Shift Mathematics - Permutations and Combinations Question 94 English Explanation 1" data-orsrc="https://app-content.cdn.examgoal.net/image/1l97twac2/f9689a1f-abde-44d3-bf0b-1a1289bdd7bc/f788ec10-4b61-11ed-80b9-4154b7faa509/file-1l97twac3.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l97twac2/f9689a1f-abde-44d3-bf0b-1a1289bdd7bc/f788ec10-4b61-11ed-80b9-4154b7faa509/file-1l97twac3.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/><br/>
+<b>Case – II </b><br/><br/>
+If first digit is 2 then last two digit can be 16, 36,
+56, 64 <br/><br/><img alt="JEE Main 2022 (Online) 26th July Evening Shift Mathematics - Permutations and Combinations Question 94 English Explanation 2" data-orsrc="https://app-content.cdn.examgoal.net/image/1l97tyhd1/d57389e9-902a-407f-843c-e06ca2c6e0b2/3494f950-4b62-11ed-80b9-4154b7faa509/file-1l97tyhd2.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l97tyhd1/d57389e9-902a-407f-843c-e06ca2c6e0b2/3494f950-4b62-11ed-80b9-4154b7faa509/file-1l97tyhd2.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/><br/>
+Total ways = 12 + 18 = 30 ways </li><li><strong>Q17:</strong> <b>Case-I</b><br><br> When number is 4-digit number \((\overline{a b c d})\) here \(d\) is fixed as 5
+<br><br>
+So, \((a, b, c)\) can be \((6,4,3),(3,4,6),(2,3,6)\), \((6,3,2),(3,2,4)\) or \((4,2,3)\)
+<br><br>
+\(\Rightarrow 6\) numbers
+<br><br>
+<b>Case-II</b><br><br> No number possible</br></br></br></br></br></br></br></br></br></br></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>In a group of 3 girls and 4 boys, there are two boys \(B_1\) and \(B_2\). The number of ways, in which these girls and boys can stand in a queue such that all the girls stand together, all the boys stand together, but \(B_1\) and \(B_2\) are not adjacent to each other, is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">120</li>
+<li class="c8">96</li>
+<li class="c8">72</li>
+<li class="c8">144</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The number of ways, 5 boys and 4 girls can sit in a row so that either all the boys sit together or no two boys sit together, is ________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>If all the six digit numbers \(x_1\,x_2\,x_3\,x_4\,x_5\,x_6\) with \(0&lt; x_1 &lt; x_2 &lt; x_3 &lt; x_4 &lt; x_5 &lt; x_6\) are arranged in the increasing order, then the sum of the digits in the \(\mathrm{72^{th}}\) number is _____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5">A person forgets his 4-digit ATM pin code. But he remembers that in the code all the digits are different, the greatest digit is 7 and the sum of the first two digits is equal to the sum of the last two digits. Then the maximum number of trials necessary to obtain the correct code is ___________.</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>Let the digits a, b, c be in A. P. Nine-digit numbers are to be formed using each of these three digits thrice such that three consecutive digits are in A.P. at least once. How many such numbers can be formed?</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>The number of permutations, of the digits 1, 2, 3, ..., 7 without repetition, which neither contain the string 153 nor the string 2467, is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>If the number of words, with or without meaning, which can be made using all the letters of the word MATHEMATICS in which \(\mathrm{C}\) and \(\mathrm{S}\) do not come together, is \((6 !) \mathrm{k}\), then \(\mathrm{k}\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">5670</li>
+<li class="c8">1890</li>
+<li class="c8">2835</li>
+<li class="c8">945</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>Let b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub> be a 4-element permutation with b<sub>i</sub> \(\in\) {1, 2, 3, ........, 100} for 1 \(\le\) i \(\le\) 4 and b<sub>i</sub> \(\ne\) b<sub>j</sub> for i \(\ne\) j, such that either b<sub>1</sub>, b<sub>2</sub>, b<sub>3</sub> are consecutive integers or b<sub>2</sub>, b<sub>3</sub>, b<sub>4</sub> are consecutive integers. Then the number of such permutations b<sub>1</sub>b<sub>2</sub>b<sub>3</sub>b<sub>4</sub> is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>The number of 5-digit natural numbers, such that the product of their digits is 36 , is __________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>D</strong></li><li>Q2: <strong>5</strong></li><li>Q3: <strong>1</strong></li><li>Q4: <strong>4</strong></li><li>Q5: <strong>3</strong></li><li>Q6: <strong>1</strong></li><li>Q7: <strong>A</strong></li><li>Q8: <strong>98</strong></li><li>Q9: <strong>36</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>Let's break the problem down step by step:</p>
+<p><p>There are two blocks because all girls must stand together and all boys must stand together. The two blocks can be arranged in:</p>
+<p>\(2 \text{ ways} \quad \text{(i.e., girls first then boys, or boys first then girls).}\)</p></p>
+<p><p>The girls can be arranged among themselves in:</p>
+<p>\(3! = 6 \text{ ways.}\)</p></p>
+<p><p>For the boys (4 in total), they must be arranged such that the specific boys \(B_1\) and \(B_2\) are not adjacent.</p></p>
+<p><p>First, calculate the total number of arrangements of 4 boys:</p>
+<p>\(4! = 24.\)</p></p>
+<p><p>Next, count the arrangements where \(B_1\) and \(B_2\) are adjacent. Think of \(B_1\) and \(B_2\) as a single unit. This unit can be arranged in:</p>
+<p>\(2! = 2 \text{ ways (since }B_1\text{ and }B_2\text{ can swap positions).}\)</p>
+<p>Now, with this new unit, we have 3 units in total (the \(B_1B_2\) unit and the other 2 boys), which can be arranged in:</p>
+<p>\(3! = 6 \text{ ways.}\)</p>
+<p>So, the number of arrangements where \(B_1\) and \(B_2\) are adjacent is:</p>
+<p>\(2! \times 3! = 2 \times 6 = 12.\)</p></p>
+<p><p>Therefore, the number of valid arrangements for the boys where \(B_1\) and \(B_2\) are not adjacent is:</p>
+<p>\(24 - 12 = 12.\)</p></p>
+<p><p>Finally, multiply all the factors together:</p>
+<p>\(\text{Total ways} = 2 \times 6 \times 12 = 144.\)</p></p>
+<p>Thus, the number of ways in which the girls and boys can stand in the queue under the given conditions is \(\boxed{144}.\) </p>
+<p>This corresponds to Option D.</p></li><li><strong>Q2:</strong> <p>A : number of ways that all boys sit together \(=5!\times 5!\)</p>
+<p>B : number of ways if no 2 boys</p>
+<p>sit together \(=4!\times 5!\)</p>
+<p>\(\mathrm{A} \cap \mathrm{B}=\phi\)</p>
+<p>Required no. of ways \(=5!\times 5!+4!\times 5!=17280\)</p></li><li><strong>Q3:</strong> \(1 \ldots \ldots \ldots \ldots \ldots \rightarrow{ }^{8} C_{5}=56\)
+<br><br>
+23 \(\ldots\ldots\ldots\ldots\ldots\rightarrow{ }^{6} C_{4}=\frac{15}{71}\)
+<br><br>
+\(72^{\text {th }}\) number \(=245678\)
+<br/><br/>
+Sum \(=32\)</br></br></br></br></li><li><strong>Q4:</strong> Let the 4-digit ATM pin code be represented by the digits \(abxy\), where all digits are different, the greatest digit is 7, and the sum of the first two digits is equal to the sum of the last two digits: \(a + b = x + y\).
+
+<br/><br/>Since the greatest digit is 7, the possible digits for the pin code are \(0, 1, 2, 3, 4, 5, 6,\) and \(7\).
+
+<br/><br/>1. Let's denote the sum of the first two digits and the sum of the last two digits as \(\lambda\). Since the largest digit is 7, we can analyze different possible values for \(\lambda\).
+
+<br/><br/>We will analyze different possible values for \(\lambda\) and the corresponding possible pairs of digits:
+
+<br/><br/>- \(\lambda = 7\): The pairs of digits that have a sum of 7 are \((0,7),(7,0),(1,6),(6,1),(2,5),(5,2),(3,4),(4,3)\). Since 7 must be present, we consider the pairs with 7: \((0,7),(7,0)\). 
+
+<br/><br/>When the pair \((0,7)\) is chosen, the other two digits can be any one of the remaining pairs: \((1,6),(6,1),(2,5),(5,2),(3,4),(4,3)\). For each of these pairs, there are 2 possible pin codes: \(07xy\) and \(07yx\), where \(x\) and \(y\) are the digits from the chosen pair. In total, there are 12 possible pin codes for this case.
+
+<br/><br/>When the pair \((7,0)\) is chosen, the other two digits can also be any one of the remaining pairs: \((1,6),(6,1),(2,5),(5,2),(3,4),(4,3)\). For each of these pairs, there are 2 possible pin codes: \(70xy\) and \(70yx\), where \(x\) and \(y\) are the digits from the chosen pair. In total, there are 12 possible pin codes for this case.
+
+<br/><br/><br/>So, there are 24 possible pin codes for \(\lambda = 7\).<br/>
+<br/><img alt="JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Permutations and Combinations Question 62 English Explanation 1" data-orsrc="https://app-content.cdn.examgoal.net/image/1lgv2wsca/cbc5754b-29f9-4539-a370-acd512a8c4f5/c2331800-e2c0-11ed-920b-3fff2b1cb8d0/file-1lgv2wscg.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lgv2wsca/cbc5754b-29f9-4539-a370-acd512a8c4f5/c2331800-e2c0-11ed-920b-3fff2b1cb8d0/file-1lgv2wscg.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/>
+<br/><br/>- \(\lambda = 8\): The pairs of digits that have a sum of 8 are \((1,7),(7,1),(2,6),(6,2),(3,5),(5,3)\). Since 7 must be present, we consider the pairs with 7: \((1,7),(7,1)\).
+
+<br/><br/>When the pair \((1,7)\) is chosen, the other two digits can be any one of the remaining pairs: \((2,6),(6,2),(3,5),(5,3)\). For each of these pairs, there are 2 possible pin codes: \(17xy\) and \(17yx\), where \(x\) and \(y\) are the digits from the chosen pair. In total, there are 8 possible pin codes for this case.
+
+<br/><br/>When the pair \((7,1)\) is chosen, the other two digits can also be any one of the remaining pairs: \((2,6),(6,2),(3,5),(5,3)\). For each of these pairs, there are 2 possible pin codes: \(71xy\) and \(71yx\), where \(x\) and \(y\) are the digits from the chosen pair. In total, there are 8 possible pin codes for this case.
+
+<br/><br/>So, there are 16 possible pin codes for \(\lambda = 8\).
+<br/><br/><img alt="JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Permutations and Combinations Question 62 English Explanation 2" data-orsrc="https://app-content.cdn.examgoal.net/image/1lgv2zu9s/f697b5a7-ed4b-4299-82b8-a7a0d3445b64/171d6000-e2c1-11ed-920b-3fff2b1cb8d0/file-1lgv2zu9t.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lgv2zu9s/f697b5a7-ed4b-4299-82b8-a7a0d3445b64/171d6000-e2c1-11ed-920b-3fff2b1cb8d0/file-1lgv2zu9t.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/>
+<br/><br/>- \(\lambda = 9\): The pairs of digits that have a sum of 9 are \((2,7),(7,2),(3,6),(6,3),(4,5),(5,4)\). Since 7 must be present, we consider the pairs with 7: \((2,7),(7,2)\).
+
+<br/><br/>When the pair \((2,7)\) is chosen, the other two digits can be any one of the remaining pairs: \((3,6),(6,3),(4,5),(5,4)\). For each of these pairs, there are 2 possible pin codes: \(27xy\) and \(27yx\), where \(x\) and \(y\) are the digits from the chosen pair. In total, there are 8 possible pin codes for this case.
+
+<br/><br/>When the pair \((7,2)\) is chosen, the other two digits can also be any one of the remaining pairs: \((3,6),(6,3),(4,5),(5,4)\). For each of these pairs, there are 2 possible pin codes: \(72xy\) and \(72yx\), where \(x\) and \(y\) are the digits from the chosen pair. In total, there are 8 possible pin codes for this case.
+
+<br/><br/>So, there are 16 possible pin codes for \(\lambda = 9\).
+
+<br/><br/><img alt="JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Permutations and Combinations Question 62 English Explanation 3" data-orsrc="https://app-content.cdn.examgoal.net/image/1lgv31bpl/c0980147-5172-44a2-a58d-c6cb14a3f1ab/4066ae30-e2c1-11ed-99f0-2347181d377e/file-1lgv31bpy.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lgv31bpl/c0980147-5172-44a2-a58d-c6cb14a3f1ab/4066ae30-e2c1-11ed-99f0-2347181d377e/file-1lgv31bpy.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/>
+<br/><br/>- \(\lambda = 10\): The pairs of digits that have a sum of 10 are \((3,7),(7,3),(4,6),(6,4)\). Since 7 must be present, we consider the pairs with 7: \((3,7),(7,3)\).
+
+<br/><br/>When the pair \((3,7)\) is chosen, the other two digits can be any one of the remaining pairs: \((4,6),(6,4)\). For each of these pairs, there are 2 possible pin codes: \(37xy\) and \(37yx\), where \(x\) and \(y\) are the digits from the chosen pair. In total, there are 4 possible pin codes for this case.
+
+<br/><br/>When the pair \((7,3)\) is chosen, the other two digits can also be any one of the remaining pairs: \((4,6),(6,4)\). For each of these pairs, there are 2 possible pin codes: \(73xy\) and \(73yx\), where \(x\) and \(y\) are the digits from the chosen pair. In total, there are 4 possible pin codes for this case.
+
+<br/><br/>So, there are 8 possible pin codes for \(\lambda = 10\).
+<br/><br/><img alt="JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Permutations and Combinations Question 62 English Explanation 4" data-orsrc="https://app-content.cdn.examgoal.net/image/1lgv32tqq/b0d7959c-9018-4ef6-a138-3892ec03995b/6a221f20-e2c1-11ed-99f0-2347181d377e/file-1lgv32tqr.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lgv32tqq/b0d7959c-9018-4ef6-a138-3892ec03995b/6a221f20-e2c1-11ed-99f0-2347181d377e/file-1lgv32tqr.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/>
+<br/><br/>- \(\lambda = 11\): The pairs of digits that have a sum of 11 are \((4,7),(7,4),(5,6),(6,5)\). Since 7 must be present, we consider the pairs with 7: \((4,7),(7,4)\).
+
+<br/><br/>When the pair \((4,7)\) is chosen, the other two digits can be any one of the remaining pairs: \((5,6),(6,5)\). For each of these pairs, there are 2 possible pin codes: \(47xy\) and \(47yx\), where \(x\) and \(y\) are the digits from the chosen pair. In total, there are 4 possible pin codes for this case.
+
+<br/><br/>When the pair \((7,4)\) is chosen, the other two digits can also be any one of the remaining pairs: \((5,6),(6,5)\). For each of these pairs, there are 2 possible pin codes: \(74xy\) and \(74yx\), where \(x\) and \(y\) are the digits from the chosen pair. In total, there are 4 possible pin codes for this case.
+
+<br/><br/>So, there are 8 possible pin codes for \(\lambda = 11\).
+
+<br/><br/><img alt="JEE Main 2023 (Online) 15th April Morning Shift Mathematics - Permutations and Combinations Question 62 English Explanation 5" data-orsrc="https://app-content.cdn.examgoal.net/image/1lgv34b44/8ad108c1-684d-453a-8d6e-de913d462fc1/935ca040-e2c1-11ed-99f0-2347181d377e/file-1lgv34b45.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lgv34b44/8ad108c1-684d-453a-8d6e-de913d462fc1/935ca040-e2c1-11ed-99f0-2347181d377e/file-1lgv34b45.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/>
+<br/><br/>- \(\lambda = 12\): The only pair of digits that have a sum of 12 is \((5,7)\). Since 7 must be present, this case is not possible.
+
+<br/><br/>- \(\lambda = 13\): The only pair of digits that have a sum of 13 is \((6,7)\). Since 7 must be present, this case is not possible.
+
+<br/><br/>- \(\lambda = 14\): The only pair of digits that have a sum of 14 is \((7,7)\). Since all the digits must be different, this case is not possible.
+
+<br/><br/>Adding up all the possible pin codes for each value of \(\lambda\), we get:
+
+<br/><br/>\(16 + 24 + 24 + 16 + 8 = 72\)
+
+<br/><br/>Therefore, the maximum number of trials necessary to obtain the correct code is 72.</li><li><strong>Q5:</strong> <p>The problem involves forming nine-digit numbers from three digits a, b, c which are in Arithmetic Progression (AP), used three times each, such that at least once, three consecutive digits are in AP.</p>
+<p>We have the two possible sequences for the AP :</p>
+<ol>
+<li>a, b, c</li>
+<li>c, b, a</li>
+</ol>
+<p>This shows the flexibility in ordering the three digits that are in AP in our nine-digit number.</p>
+<p>The next step is to choose the location of this sequence of three numbers within our nine-digit number.</p>
+<p>Since there are nine places in our number and our sequence takes up three places, we have seven different starting points for our sequence : it can start at the first place, the second place, and so on, up to the seventh place.</p>
+<p>Therefore, the number of ways to select 3 consecutive places out of the 9 places for the AP sequence is 7.</p>
+<p>However, we also have to account for the fact that our sequence can be in one of two orders (a, b, c or c, b, a). So, we multiply the number of starting points by 2 to get \(^7C_1 \times 2 = 14\) ways to arrange the sequence within our nine-digit number.</p>
+<p>The remaining 6 digits (two 'a', two 'b', two 'c") can be arranged in \(\frac{6!}{2!2!2!}\) ways.</p>
+<p>Therefore, the total number of such nine-digit numbers is \(^7C_1 \times 2 \times \frac{6!}{2!2!2!} = 1260\).</p>
+</li><li><strong>Q6:</strong> Given that digits are \(1,2,3,4,5,6,7\)
+<br><br>Total permutations \(=7\)!
+<br><br>Let \(p=\) Number which containing string 153
+<br><br>\(q=\) Number which containing string 2467
+<br><br>\(
+\begin{array}{ll}
+&amp; \therefore n(p)=5! \times 1 \\\\
+&amp; \Rightarrow n(q)=4! \times 1 \\\\
+&amp; \Rightarrow n(p \cap q)=2!
+\end{array}
+\)
+<br><br>\(
+\begin{aligned}
+&amp; \therefore  n(p \cup q)=n(p)+n(q)-n(p \cap q) \\\\
+&amp; = 5 !+4 !-2 !=120+24-2=142
+\end{aligned}
+\)
+<br><br>\(\therefore n\) (neither string 143 nor string 2467)
+<br><br>\(
+=7 !-142=5040-142=4898
+\)</br></br></br></br></br></br></br></br></br></br></br></br></br></br></li><li><strong>Q7:</strong> \(
+\text { Total number of words }=\frac{11 !}{2 ! 2 ! 2 !}
+\)
+<br><br>Number of words in which \(\mathrm{C}\) and \(\mathrm{S}\) are together
+<br><br>\(
+=\frac{10 !}{2 ! 2 ! 2 !} \times 2 \text { ! }
+\)
+<br><br>So, required number of words
+<br><br>\(
+\begin{aligned}
+&amp; =\frac{11 !}{2 ! 2 ! 2 !}-\frac{10 !}{2 ! 2 !} \\\\
+&amp; =\frac{11 \times 10 !}{2 ! 2 ! 2 !}-\frac{10 !}{2 ! 2 !} \\\\
+&amp; =\frac{10 !}{2 ! 2 !}\left[\frac{11}{2}-1\right]=\frac{10 !}{2 ! 2 !} \times \frac{9}{2} \\\\
+&amp; =5670 \times 6 ! \\\\
+&amp; \Rightarrow k(6 !)=5670 \times 6 ! \\\\
+&amp; \Rightarrow k=5670
+\end{aligned}
+\)</br></br></br></br></br></br></br></br></li><li><strong>Q8:</strong> <p>There are 98 sets of three consecutive integer and 97 sets of four consecutive integers.</p>
+<p>Using the principle of inclusion and exclusion,</p>
+<p>Number of permutations of \(b_{1} b_{2} b_{3} b_{4}=\) Number of permutations when \(b_{1} b_{2} b_{3}\) are consecutive + Number of permutations when \(b_{2} b_{3} b_{4}\) are consecutive - Number of permutations when \(b_{1} b_{2}\) \(b_{3} b_{4}\) are consecutive</p>
+<p>\(=97 \times 98+97 \times 98-97=97 \times 195=18915\).</p></li><li><strong>Q9:</strong> <p>Factors of 36 = 2<sup>2</sup> . 3<sup>2</sup> . 1</p>
+<p>Five-digit combinations can be</p>
+<p>(1, 2, 2, 3, 3) (1, 4, 3, 3, 1), (1, 9, 2, 2, 1)</p>
+<p>(1, 4, 9, 11) (1, 2, 3, 6, 1) (1, 6, 6, 1, 1)</p>
+<p>i.e., total numbers</p>
+<p>\({{5!} \over {2!2!}} + {{5!} \over {2!2!}} + {{5!} \over {2!2!}} + {{5!} \over {3!}} + {{5!} \over {2!}} + {{5!} \over {3!2!}}\)</p>
+<p>\( = (30 \times 3) + 20 + 60 + 10 = 180\).</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

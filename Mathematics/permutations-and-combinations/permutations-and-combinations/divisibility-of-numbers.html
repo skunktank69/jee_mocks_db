@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>permutations-and-combinations</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>permutations-and-combinations</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>The number of 3 -digit numbers, that are divisible by 2 and 3 , but not divisible by 4 and 9 , is _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let m and \(\mathrm{n},(\mathrm{m}&lt;\mathrm{n})\), be two 2-digit numbers. Then the total numbers of pairs \((\mathrm{m}, \mathrm{n})\), such that \(\operatorname{gcd}(m, n)=6\), is __________ .</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>The total number of 4-digit numbers whose greatest common divisor with 54 is 2, is __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>The total number of 3-digit numbers, whose greatest common divisor with 36 is 2, is ___________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c7" style="list-style-type: none;">
+<li>Q1: <strong>3</strong></li><li>Q2: <strong>6</strong></li><li>Q3: <strong>54</strong></li><li>Q4: <strong>100</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c8">
+<li><strong>Q1:</strong> <p>No, of 3 digits \(=999-99=900\)</p>
+<p>No. of 3 digit numbers divisible by 2 &amp; 3 i.e. by 6</p>
+<p>\(\frac{900}{6}=150\)</p>
+<p>No. of 3 digit numbers divisible by 4 &amp; 9 i.e. by 36</p>
+<p>\(\frac{900}{36}=25\)</p>
+<p>\(\therefore\) No of 3 digit numbers divisible by \(2 \&amp; 3\) but not by \(4 \&amp; 9\)</p>
+<p>\(150-25=125\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; m=6 a, n=6 b \\
+&amp; \text { So } \operatorname{gcd}(m, n)=6 \Rightarrow \operatorname{gcd}(a, b)=1 \\
+&amp; m=6 a \geq 10 \Rightarrow a \geq\left[\frac{10}{6}\right]=2 \\
+&amp; m=6 a \leq 99 \Rightarrow a \leq\left[\frac{99}{6}\right]=16
+\end{aligned}\)</p>
+<p>So \(a, b \in\{2,3, \ldots, 16\}\), and we count how many coprime pairs \((a, b)\) with \(a&lt; b, \operatorname{gcd}(a, b)=1\)</p>
+<p>\(\begin{aligned}
+&amp; a=2 \Rightarrow b=3,5,7,9,11,13,15 \Rightarrow 7 \\
+&amp; a=3 \Rightarrow \mathrm{~b}=4,5,7,8,10,11,13,14,16 \Rightarrow 9 \\
+&amp; a=4 \Rightarrow b=5,7,9,11,13,15 \Rightarrow 6 \\
+&amp; a=5 \Rightarrow \mathrm{~b}=6,7,8,9,11,12,13,14,16 \Rightarrow 9 \\
+&amp; a=6 \Rightarrow \mathrm{~b}=7,11,13 \Rightarrow 3 \\
+&amp; a=7 \Rightarrow b=8,9,10,11,12,13,15,16 \Rightarrow 8 \\
+&amp; a=8 \Rightarrow \mathrm{~b}=9,11,13,15 \Rightarrow 4 \\
+&amp; a=9 \Rightarrow \mathrm{~b}=10,11,13,14,16 \Rightarrow 5 \\
+&amp; a=10 \Rightarrow b=11,13 \Rightarrow 2 \\
+&amp; a=11 \Rightarrow b=12,13,14,15,16 \Rightarrow 5 \\
+&amp; a=12 \Rightarrow b=13,17 \times \rightarrow \text { only } 13 \text { is valid } \Rightarrow 1 \\
+&amp; a=13 \Rightarrow b=14,15,16 \Rightarrow 3 \\
+&amp; a=14 \Rightarrow b=15, \Rightarrow 1 \\
+&amp; a=15 \Rightarrow b=16 \Rightarrow 1
+\end{aligned}\)</p>
+<p>\(\begin{aligned} &amp; \text { Total }=7+9+6+9+3+8+4+5+2+5+1 \\ &amp; +3+1+1=64\end{aligned}\)</p></li><li><strong>Q3:</strong> <p>\(\gcd (a,54) = 2\) when a is a 4 digit no.</p>
+<p>And \(54 = 3 \times 3 \times 3 \times 2\)</p>
+<p>So, \(a=\) all even no. of 4 digits \(-\) Even multiple of 3 (4 digits)</p>
+<p>\( = 4500 - 1500\)</p>
+<p>\( = 3000\)</p></li><li><strong>Q4:</strong> <p>\(\because\) x \(\in\) [100, 999], x \(\in\) N</p>
+<p>Then \({x \over 2}\) \(\in\) [50, 499], \({x \over 2}\) \(\in\) N</p>
+<p>Number whose G.C.D. with 18 is 1 in this range have the required condition. There are 6 such number from 18 \(\times\) 3 to 18 \(\times\) 4. Similarly from 18 \(\times\) 4 to 18 \(\times\) 5 ......., 26 \(\times\) 18 to 27 \(\times\) 18</p>
+<p>\(\therefore\) Total numbers = 24 \(\times\) 6 + 6 = 150</p>
+<p>The extra numbers are 53, 487, 491, 493, 497 and 499.</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

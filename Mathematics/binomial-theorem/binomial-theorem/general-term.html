@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>binomial-theorem</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>binomial-theorem</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>If the coefficient of \(x^{15}\) in the expansion of \(\left(\mathrm{a} x^{3}+\frac{1}{\mathrm{~b} x^{1 / 3}}\right)^{15}\) is equal to the coefficient of \(x^{-15}\) in the expansion of \(\left(a x^{1 / 3}-\frac{1}{b x^{3}}\right)^{15}\), where \(a\) and \(b\) are positive real numbers, then for each such ordered pair \((\mathrm{a}, \mathrm{b})\) :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">a = 3b</li>
+<li class="c8">ab = 1</li>
+<li class="c8">ab = 3</li>
+<li class="c8">a = b</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The coefficient of \(x^{5}\) in the expansion of \(\left(2 x^{3}-\frac{1}{3 x^{2}}\right)^{5}\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{26}{3}\]</li>
+<li class="c8">\[\frac{80}{9}\]</li>
+<li class="c8">9</li>
+<li class="c8">8</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>B</strong></li><li>Q2: <strong>B</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>For \(\left( {a{x^3} + {1 \over {b{x^{{1 \over 3}}}}}} \right)\)</p>
+<p>\({T_{r + 1}} = {}^{15}{C_r}{(a{x^3})^{15 - r}}{\left( {{1 \over {b{x^{{1 \over 3}}}}}} \right)^1}\)</p>
+<p>\(\therefore\) \({x^{15}} \to 3(15 - r) - {r \over 3} = 15\)</p>
+<p>\( \Rightarrow 30 = {{10r} \over 3} \Rightarrow r = 9\)</p>
+<p>Similarly, for \({\left( {a{x^{{1 \over 3}}} - {1 \over {b{x^3}}}} \right)^{15}}\)</p>
+<p>\({T_{r + 1}} = {}^{15}{C_r}{\left( {a{x^{{1 \over 3}}}} \right)^{15 - r}}{\left( { - {1 \over {b{x^3}}}} \right)^2}\)</p>
+<p>\(\therefore\) For \({x^{ - 15}} \to {{15 - r} \over 3} - 3r =  - 15 \Rightarrow r = 6\)</p>
+<p>\(\therefore\) \({}^{15}{C_9}{{{a^6}} \over {{b^9}}} = {}^{15}{C_6}{{{a^9}} \over {{b^6}}} \Rightarrow ab = 1\)</p></li><li><strong>Q2:</strong> Given, \(\left(2 x^{3}-\frac{1}{3 x^{2}}\right)^{5}\)
+<br/><br/>General term,
+<br/><br/>\(
+\begin{aligned}
+&amp; T_{r+1}={ }^5 C_r\left(2 x^3\right)^{5-r}\left(\frac{-1}{3 x^2}\right)^r={ }^5 C_r \frac{(2)^{5-r}}{(-3)^r}(x)^{15-5 r} \\\\
+&amp; \therefore 15-5 \mathrm{r}=5 \\\\
+&amp; \therefore \mathrm{r}=2 \\\\
+&amp; T_3=10\left(\frac{8}{9}\right) x^5
+\end{aligned}
+\)
+<br/><br/>So, coefficient is \(\frac{80}{9}\).</li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>The term independent of \(x\) in the expansion of \(\left(\frac{(x+1)}{\left(x^{2 / 3}+1-x^{1 / 3}\right)}-\frac{(x-1)}{\left(x-x^{1 / 2}\right)}\right)^{10}, x&gt;1\), is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">240</li>
+<li class="c8">120</li>
+<li class="c8">150</li>
+<li class="c8">210</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>If the constant term in the expansion of \(\left(1+2 x-3 x^3\right)\left(\frac{3}{2} x^2-\frac{1}{3 x}\right)^9\) is \(\mathrm{p}\), then \(108 \mathrm{p}\) is equal to ________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>D</strong></li><li>Q2: <strong>3</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> \({\left( {{{x + 1} \over {{x^{2/3}} - {x^{1/3}} + 1}} - {{x - 1} \over {x - {x^{1/2}}}}} \right)^{10}}\)
+<br/><br/>= \({\left( {{{{{\left( {{x^{1/3}}} \right)}^3} + {{\left( {{1^{1/3}}} \right)}^3}} \over {{x^{2/3}} - {x^{1/3}} + 1}} - {{{{\left( {\sqrt x } \right)}^2} - {{\left( 1 \right)}^2}} \over {x - {x^{1/2}}}}} \right)^{10}}\)
+<br/><br/>= \({\left( {{{\left( {{x^{1/3}} + 1} \right)\left( {{x^{2/3}} - {x^{1/3}} + 1} \right)} \over {{x^{2/3}} - {x^{1/3}} + 1}} - {{\left( {\sqrt x  + 1} \right)\left( {\sqrt x  - 1} \right)} \over {\sqrt x \left( {\sqrt x  - 1} \right)}}} \right)^{10}}\)
+<br/><br/>= \({\left( {\left( {{x^{1/3}} + 1} \right) - {{\left( {\sqrt x  + 1} \right)} \over {\sqrt x }}} \right)^{10}}\)
+<br/><br/>= \({\left( {\left( {{x^{1/3}} + 1} \right) - \left( {1 + {1 \over {\sqrt x }}} \right)} \right)^{10}}\)
+<br/><br/>= \({\left( {{x^{1/3}} - {1 \over {{x^{1/2}}}}} \right)^{10}}\)
+<br/><br/>[<b>Note:</b>
+<br/><br/>For \({\left( {{x^\alpha } \pm {1 \over {{x^\beta }}}} \right)^n}\) the \(\left( {r + 1} \right)\)<sup>th</sup> term with power m of x is 
+<br/><br/>\(r = {{n\alpha  - m} \over {\alpha  + \beta }}\)]
+<br/><br/>Here \(\alpha  = {1 \over 3}\), \(\beta  = {1 \over 2}\) and m = 0
+<br/><br/>then \(r = {{10 \times {1 \over 3} - 0} \over {{1 \over 3} + {1 \over 2}}}\) = \({{10} \over 3} \times {6 \over 5}\) = 4
+<br/><br/>\(\therefore\) T<sub>5</sub> is the term independent of x.
+<br/><br/>\(\therefore\) T<sub>5</sub> = \({}^{10}{C_4}\) = 210</li><li><strong>Q2:</strong> <p>\(\text { General term of }\left(\frac{3}{2} x^2-\frac{1}{3 x}\right)^9\)</p>
+<p>\(T_{r+1}={ }^9 C_r\left(\frac{3}{2} x^2\right)^{9-r}\left(-\frac{1}{3 x}\right)^r={ }^9 C_r(-1)^r 3^{9-2 r} 2^{r-9} x^{18-35}\)</p>
+<p>Constant term in expansion of \(\left(1+2 x-3 x^3\right)\)</p>
+<p>\(\begin{aligned}
+&amp; \left(\frac{3}{2} x^2-\frac{1}{3 x}\right)^9 \\
+&amp; =T_7-3 T_8={ }^9 C_6 3^{-3} \cdot 2^{-3}+3{ }^9 C_7 \cdot 3^{-5} \cdot 2^{-2} \\
+&amp; =\frac{3 \times 4 \times 7}{3^3 \cdot 2^3}+\frac{3 \times 9 \times 4}{3^5 \times 2^2}= \\
+&amp; p=\frac{42+12}{108}=\frac{54}{108} \\
+&amp; 108 p=54
+\end{aligned}\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>In the expansion of \(\left(\sqrt[3]{2}+\frac{1}{\sqrt[3]{3}}\right)^n, n \in \mathrm{~N}\), if the ratio of \(15^{\text {th }}\) term from the beginning to the \(15^{\text {th }}\) term from the end is \(\frac{1}{6}\), then the value of \({ }^n \mathrm{C}_3\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"> 4960
+</li>
+<li class="c8"> 2300
+</li>
+<li class="c8"> 1040
+</li>
+<li class="c8">4060</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>If the constant term in the expansion of \(\left(\frac{\sqrt[5]{3}}{x}+\frac{2 x}{\sqrt[3]{5}}\right)^{12}, x \neq 0\), is \(\alpha \times 2^8 \times \sqrt[5]{3}\), then \(25 \alpha\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">724</li>
+<li class="c8">742</li>
+<li class="c8">693</li>
+<li class="c8">639</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>If the term without \(x\) in the expansion of \(\left(x^{\frac{2}{3}}+\frac{\alpha}{x^{3}}\right)^{22}\) is 7315 , then \(|\alpha|\) is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Let \(\alpha&gt;0\), be the smallest number such that the expansion of \(\left(x^{\frac{2}{3}}+\frac{2}{x^{3}}\right)^{30}\) has a term \(\beta x^{-\alpha}, \beta \in \mathbb{N}\). Then \(\alpha\) is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>The constant term in the expansion of \({\left( {2x + {1 \over {{x^7}}} + 3{x^2}} \right)^5}\) is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>Let \(\alpha\) be the constant term in the binomial expansion of \(\left(\sqrt{x}-\frac{6}{x^{\frac{3}{2}}}\right)^{n}, n \leq 15\). If the sum of the coefficients of the remaining terms in the expansion is 649 and the coefficient of \(x^{-n}\) is \(\lambda \alpha\), then \(\lambda\) is equal to _____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>Let \([t]\) denote the greatest integer \(\leq t\). If the constant term in the expansion of \(\left(3 x^{2}-\frac{1}{2 x^{5}}\right)^{7}\) is \(\alpha\), then \([\alpha]\) is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>If the ratio of the fifth term from the beginning to the fifth term from the end in the expansion of \(\left(\sqrt[4]{2}+\frac{1}{\sqrt[4]{3}}\right)^{\mathrm{n}}\) is \(\sqrt{6}: 1\), then the third term from the beginning is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[30 \sqrt{2}\]</li>
+<li class="c8">\[60 \sqrt{3}\]</li>
+<li class="c8">\[60 \sqrt{2}\]</li>
+<li class="c8">\[30 \sqrt{3}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>Let the ratio of the fifth term from the beginning to the fifth term from the end in the binomial expansion of \(\left(\sqrt[4]{2}+\frac{1}{\sqrt[4]{3}}\right)^{\mathrm{n}}\), in the increasing powers of \(\frac{1}{\sqrt[4]{3}}\) be \(\sqrt[4]{6}: 1\). If the sixth term from the beginning is \(\frac{\alpha}{\sqrt[4]{3}}\), then \(\alpha\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>B</strong></li><li>Q2: <strong>C</strong></li><li>Q3: <strong>2</strong></li><li>Q4: <strong>+1</strong></li><li>Q5: <strong>2</strong></li><li>Q6: <strong>6</strong></li><li>Q7: <strong>+1</strong></li><li>Q8: <strong>B</strong></li><li>Q9: <strong>4</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>In the expansion of \((a+b)^n\)</p>
+<p>\(15^{\text {th }}\) term from beginning: \(T_{15}={ }^n C_{14} a^{n-14} b^{14}\)<p>
+<p>\(15^{\text {th }}\) term from end: \(T_{15}^{\prime}={ }^n C_{14} b^{n-14} a^{14}\)</p>
+<p>\(\begin{aligned}
+&amp; \therefore \quad \frac{T_{15}}{T_{15}^{\prime}}=\frac{1}{6} \\
+&amp; \left(\frac{a}{b}\right)^{n-28}=\frac{1}{6} \\
+&amp; \left(6^{\frac{1}{3}}\right)^{n-28}=6^{-1} \\
+&amp; \Rightarrow \quad \frac{n-28}{3}=-1 \\
+&amp; n=25 \\
+&amp; \therefore \quad{ }^{25} C_3=2300
+\end{aligned}\)</p></p></p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; \left(\frac{\sqrt[5]{3}}{x}+\frac{2 x}{\sqrt[5]{3}}\right)^{12} \\
+&amp; T_{r+1}={ }^{12} C r\left(\frac{\sqrt[5]{3}}{x}\right)^{12-r}\left(\frac{2 x}{\sqrt[3]{5}}\right)^r
+\end{aligned}\)</p>
+<p>For constant term \(-12+r+r=0\)</p>
+<p>\(\begin{aligned}
+&amp; \Rightarrow \quad r=6 \\
+&amp; \therefore \quad \text { Constant term }={ }^{12} C_6 \frac{(3)^{\frac{6}{5}}}{(5)^{\frac{6}{3}}}(2)^6
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; ={ }^{12} C_6 \times \frac{2^6}{25} \times 3.3^{\frac{1}{5}} \\
+&amp; =\frac{231}{25} \times 2^8 \cdot 3^{\frac{1}{5}} \cdot 3 \\
+&amp; =\frac{693}{25} \cdot 2^8 \sqrt[5]{3} \\
+&amp; \therefore \quad \alpha=\frac{693}{25} \\
+&amp; 25 \alpha=693
+\end{aligned}\)</p></li><li><strong>Q3:</strong> Given expansion \(\left(x^{\frac{2}{3}}+\frac{\alpha}{x^3}\right)^{22}\)
+<br><br>\(
+T_{r+1}={ }^{22} C_r\left(x^{\frac{2}{3}}\right)^{22-r}\left(\frac{\alpha}{x^3}\right)^r
+\)
+<br><br>For constant term
+<br><br>\(
+\begin{aligned}
+&amp; \frac{44-2 r}{3}-3 r=0 \\\\
+&amp; \Rightarrow r=4
+\end{aligned}
+\)
+<br><br>Now \({ }^{22} \mathrm{C}_4 \alpha^4=7315\)
+<br><br>\(
+\begin{aligned}
+&amp; \frac{22 \times 21 \times 20 \times 19}{4 \times 3 \times 2 \times 1} \alpha^4=7315 \\\\
+&amp; \therefore  \alpha^4=1 \\\\
+&amp; \therefore |\alpha|=1
+\end{aligned}
+\)</br></br></br></br></br></br></br></br></br></br></li><li><strong>Q4:</strong> \(\mathrm{T}_{\mathrm{r}+1}={ }^{30} \mathrm{C}_{\mathrm{r}}\left(\mathrm{x}^{2 / 3}\right)^{30-\mathrm{r}}\left(\frac{2}{\mathrm{x}^{3}}\right)^{\mathrm{r}}\)
+
+<br><br>\(={ }^{30} \mathrm{C}_{\mathrm{r}} \cdot 2^{\mathrm{r}} \cdot \mathrm{x}^{\frac{60-11 \mathrm{r}}{3}}\)
+
+<br><br>\(\frac{60-11 \mathrm{r}}{3}&lt;0 
+\)
+<br><br>\(\Rightarrow 11 \mathrm{r}&gt;60 \)
+<br><br>\(\Rightarrow \mathrm{r}&gt;\frac{60}{11} \)
+<br><br>\(\Rightarrow \mathrm{r}=6\)
+
+<br><br>\(\mathrm{T}_{7}={ }^{30} \mathrm{C}_{6} \cdot 2^{6} \mathrm{x}^{-2}\)
+
+<br><br>We have also observed \(\beta={ }^{30} \mathrm{C}_{6}(2)^{6}\) is a natural number.
+
+<br/><br/>\(\therefore \alpha=2\)</br></br></br></br></br></br></br></br></br></br></br></br></br></br></li><li><strong>Q5:</strong> Constant term in the expansion of
+<br/><br/>
+\(
+\begin{aligned}
+&amp; \left(2 x+\frac{1}{x^{7}}+3 x^{2}\right)^{5} \\\\
+&amp; \frac{1}{x^{35}}\left(2 x^{8}+1+3 x^{9}\right)^{5} \\\\
+&amp; \frac{1}{x^{35}}\left(1+x^{8}(3 x+2)\right)^{5}
+\end{aligned}
+\)
+<br/><br/>
+Term independent of \(x=\) coefficient of \(x^{35}\) in
+<br/><br/>
+\(
+\begin{aligned}
+&amp; ^{5} C_{4}\left(x^{8}(3 x+2)\right)^{4} \\\\
+= &amp; { }^{5} C_{4} \text { coefficient of } x^{3} \text { in }(2+3 x)^{4} \\\\
+= &amp; { }^{5} C_{4} \times{ }^{4} C_{3}(2)^{1}(3)^{3} \\\\
+= &amp; 5 \times 4 \times 2 \times 27 \\\\
+= &amp; 1080
+\end{aligned}
+\)</li><li><strong>Q6:</strong> Given expression \((\sqrt{x}-\frac{6}{x^{3/2}})^n\). Here, \(a = \sqrt{x}\) and \(b = -\frac{6}{x^{3/2}}\).
+
+<br/><br/>The \(r\)-th term of the binomial expansion of \((a+b)^n\) is given by 
+
+<br/><br/>\(T_{r} = {}^n{C_r}a^{n-r}b^{r}\).
+
+<br/><br/>Substitute \(a\) and \(b\) in this formula, we get:
+
+<br/><br/>\(T_{r} = {}^n{C_r}(\sqrt{x})^{n-r}\left(-\frac{6}{x^{3/2}}\right)^r = {}^n{C_r}(-6)^r x^{\frac{n-4r}{2}}\).
+
+<br/><br/>The constant term in the binomial expansion is obtained when the power of \(x\) in the terms equals zero. 
+
+<br/><br/>This happens when \(\frac{n-4r}{2} = 0\), which gives \(n = 4r\).
+<br/><br/>\(
+\begin{aligned}
+&amp; { }^n C_{\frac{n}{4}}(-6)^{\frac{n}{4}}=\alpha \\\\
+&amp; (-5)^n-{ }^n C_{\frac{n}{4}}(-6)^{n / 4}=649 \\\\
+&amp; \text { By observation (625 + 24 = 649) , we get n = 4 } \\\\
+&amp;  \therefore \alpha=-24
+\end{aligned}
+\)
+<br/><br/>Now, for coefficient of \(x^{-4}\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \frac{n-4 r}{2}=-4 \\\\
+&amp; n=4 r-8 \Rightarrow r=3 \\\\
+&amp; \lambda(-24)=(-6)^3 \cdot{ }^4 C_3 \\\\
+&amp;  \Rightarrow \lambda=36
+\end{aligned}
+\)
+
+</li><li><strong>Q7:</strong> Let \(\mathrm{T}_{r+1}\) be the constant term.
+<br/><br/>\(
+\mathrm{T}_{r+1}={ }^7 \mathrm{C}_r\left(3 x^2\right)^{7-r}\left(\frac{-1}{2 x^5}\right)^r
+\)
+<br/><br/>For constant term, power of \(x\) should be zero.
+<br/><br/>\(
+\begin{aligned}
+&amp; \text { i.e., } 14-2 r-5 r=0 \\\\
+&amp; \Rightarrow 14=7 r \Rightarrow r=2
+\end{aligned}
+\)
+<br/><br/>Now, constant term \(=\alpha\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \Rightarrow{ }^7 C_2(3)^5\left(\frac{-1}{2}\right)^2=\alpha \\\\
+&amp; \Rightarrow 21 \times 243 \times \frac{1}{4}=\alpha \\\\
+&amp; \Rightarrow[\alpha]=[1275.75]=1275
+\end{aligned}
+\)</li><li><strong>Q8:</strong> \(
+\mathrm{T}_{r+1}={ }^n \mathrm{C}_r x^{n-r} a^r
+\)
+<br/><br/>\(
+\frac{T_5}{T_5^{\prime}}=\frac{{ }^n C_4 \times\left((2)^{\frac{1}{4}}\right)^{n-4}\left(\frac{1}{3^{1 / 4}}\right)^4}{{ }^n C_4\left(\frac{1}{3^{1 / 4}}\right)^{n-4}\left(2^{1 / 4}\right)^4}=\sqrt{6}
+\)
+<br/><br/>\(\left[\because r\right.\)th term from end in the expansion of \((x+y)^n=r\)th term from beginning in the expansion of \(\left.(y+x)^n\right]\)
+<br/><br/>\(
+\Rightarrow \frac{{ }^n C_4(2)^{\frac{n-4}{4}}\left(\frac{1}{3}\right)^{4 / 4}}{{ }^n C_4\left(\frac{1}{3}\right)^{\frac{n-4}{4}}(2)^{4 / 4}}=\frac{\sqrt{6}}{1}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp;\Rightarrow  (2)^{\frac{n-8}{4}}(3)^{\frac{n-8}{4}} =6^{1 / 2} \\\\
+&amp;\Rightarrow  6^{\frac{n-8}{4}}  =6^{1 / 2} \\\\
+&amp;\Rightarrow  \frac{n-8}{4}  =\frac{1}{2} \\\\
+&amp;\Rightarrow  n-8=2 \Rightarrow n  =10
+\end{aligned}
+\)
+<br/><br/>\(
+\therefore T_3={ }^{10} C_2(\sqrt[4]{2})^8\left(\frac{1}{\sqrt[4]{3}}\right)^2=45(2)^{\frac{8}{4}} \frac{1}{3^{1 / 2}}
+\)
+<br/><br/>\(
+=45(4) \times \frac{\sqrt{3}}{3}=60 \sqrt{3}
+\)</li><li><strong>Q9:</strong> <p>Fifth term from beginning \( = {}^n{C_4}{\left( {{2^{{1 \over 4}}}} \right)^{n - 4}}{\left( {{3^{{{ - 1} \over 4}}}} \right)^4}\)</p>
+<p>Fifth term from end \( = {(n - 5 + 1)^{th}}\) term from begin \( = {}^n{C_{n - 4}}{\left( {{2^{{1 \over 4}}}} \right)^3}{\left( {{3^{{{ - 1} \over 4}}}} \right)^{n - 4}}\)</p>
+<p>Given \({{{}^n{C_4}{2^{{{n - 4} \over 4}}}\,.\,{3^{ - 1}}} \over {{}^n{C_{n - 3}}{2^{{4 \over 4}}}\,.\,{3^{ - \left( {{{n - 4} \over 4}} \right)}}}} = {6^{{1 \over 4}}}\)</p>
+<p>\( \Rightarrow {6^{{{n - 8} \over 4}}} = {6^{{1 \over 4}}}\)</p>
+<p>\( \Rightarrow {{n - 8} \over 4} = {1 \over 4} \Rightarrow n = 9\)</p>
+<p>\({T_6} = {T_{5 + 1}} = {}^9{C_5}{\left( {{2^{{1 \over 4}}}} \right)^4}{\left( {{3^{{{ - 1} \over 4}}}} \right)^5}\)</p>
+<p>\( = {{{}^9{C_5}\,.\,2} \over {{3^{{1 \over 4}}}\,.\,3}} = {{84} \over {{3^{{1 \over 4}}}}} = {\alpha  \over {{3^{{1 \over 4}}}}}\)</p>
+<p>\( \Rightarrow \alpha  = 84.\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>The coefficient of \(x^{2012}\) in the expansion of \((1-x)^{2008}\left(1+x+x^2\right)^{2007}\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>If the term independent of \(x\) in the expansion of \(\left(\sqrt{\mathrm{a}} x^2+\frac{1}{2 x^3}\right)^{10}\) is 105 , then \(\mathrm{a}^2\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">6</li>
+<li class="c8">4</li>
+<li class="c8">2</li>
+<li class="c8">9</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>If the second, third and fourth terms in the expansion of \((x+y)^n\) are 135, 30 and \(\frac{10}{3}\), respectively, then \(6\left(n^3+x^2+y\right)\) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Let the sixth term in the binomial expansion of \({\left( {\sqrt {{2^{{{\log }_2}\left( {10 - {3^x}} \right)}}}  + \root 5 \of {{2^{(x - 2){{\log }_2}3}}} } \right)^m}\) in the increasing powers of \(2^{(x-2) \log _{2} 3}\), be 21 . If the binomial coefficients of the second, third and fourth terms in the expansion are respectively the first, third and fifth terms of an A.P., then the sum of the squares of all possible values of \(x\) is __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5">The coefficient of \(x^{-6}\), in the 
+<br/><br/>expansion of \(\left(\frac{4 x}{5}+\frac{5}{2 x^{2}}\right)^{9}\), is</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5">If the constant term in the binomial expansion of \(\left(\frac{x^{\frac{5}{2}}}{2}-\frac{4}{x^{l}}\right)^{9}\) is \(-84\) and the coefficient of \(x^{-3 l}\) is
+
+\(2^{\alpha} \beta\), where \(\beta&lt;0\) is an odd number, then \(|\alpha l-\beta|\) is equal to ________.</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>Let the coefficients of three consecutive terms in the binomial expansion of \((1+2x)^n\) be in the ratio 2 : 5 : 8. Then the coefficient of the term, which is in the middle of those three terms, is __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>If the co-efficient of \(x^9\) in \({\left( {\alpha {x^3} + {1 \over {\beta x}}} \right)^{11}}\) and the co-efficient of \(x^{-9}\) in \({\left( {\alpha x - {1 \over {\beta {x^3}}}} \right)^{11}}\) are equal, then \((\alpha\beta)^2\) is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>Let the sum of the coefficients of the first three terms in the expansion of \({\left( {x - {3 \over {{x^2}}}} \right)^n},x \ne 0.~n \in \mathbb{N}\), be 376. Then the coefficient of \(x^4\) is __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q10.</span>
+</div>
+<div class="c5"><p>The sum of the coefficients of three consecutive terms in the binomial expansion of \((1+\mathrm{x})^{\mathrm{n}+2}\), which are in the ratio \(1: 3: 5\), is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">63</li>
+<li class="c8">92</li>
+<li class="c8">25</li>
+<li class="c8">41</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q11.</span>
+</div>
+<div class="c5"><p>If the \(1011^{\text {th }}\) term from the end in the binominal expansion of \(\left(\frac{4 x}{5}-\frac{5}{2 x}\right)^{2022}\) is 1024 times \(1011^{\text {th }}\)R term from the beginning, then \(|x|\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[
+\frac{5}{16}
+\]</li>
+<li class="c8">8</li>
+<li class="c8">12</li>
+<li class="c8">15</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q12.</span>
+</div>
+<div class="c5"><p>The mean of the coefficients of \(x, x^{2}, \ldots, x^{7}\) in the binomial expansion of \((2+x)^{9}\) is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q13.</span>
+</div>
+<div class="c5"><p>The number of integral terms in the expansion of \(\left(3^{\frac{1}{2}}+5^{\frac{1}{4}}\right)^{680}\) is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q14.</span>
+</div>
+<div class="c5"><p>If the coefficients of \(x\) and \(x^{2}\) in \((1+x)^{\mathrm{p}}(1-x)^{\mathrm{q}}\) are 4 and \(-\)5 respectively, then \(2 p+3 q\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">66</li>
+<li class="c8">60</li>
+<li class="c8">69</li>
+<li class="c8">63</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q15.</span>
+</div>
+<div class="c5"><p>If the coefficient of \({x^7}\) in \({\left( {ax - {1 \over {b{x^2}}}} \right)^{13}}\) and the coefficient of \({x^{ - 5}}\) in \({\left( {ax + {1 \over {b{x^2}}}} \right)^{13}}\) are equal, then \({a^4}{b^4}\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">22</li>
+<li class="c8">33</li>
+<li class="c8">44</li>
+<li class="c8">11</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q16.</span>
+</div>
+<div class="c5"><p>The absolute difference of the coefficients of \(x^{10}\) and \(x^{7}\) in the expansion of \(\left(2 x^{2}+\frac{1}{2 x}\right)^{11}\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[11^{3}-11\]</li>
+<li class="c8">\[13^{3}-13\]</li>
+<li class="c8">\[12^{3}-12\]</li>
+<li class="c8">\[10^{3}-10\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q17.</span>
+</div>
+<div class="c5"><p>If the coefficient of \({x^7}\) in \({\left( {a{x^2} + {1 \over {2bx}}} \right)^{11}}\) and \({x^{ - 7}}\) in \({\left( {ax - {1 \over {3b{x^2}}}} \right)^{11}}\) are equal, then :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[243ab = 64\]</li>
+<li class="c8">\[32ab = 729\]</li>
+<li class="c8">\[64ab = 243\]</li>
+<li class="c8">\[729ab = 32\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q18.</span>
+</div>
+<div class="c5"><p>Let the coefficients of x<sup>\(-\)1</sup> and x<sup>\(-\)3</sup> in the expansion of \({\left( {2{x^{{1 \over 5}}} - {1 \over {{x^{{1 \over 5}}}}}} \right)^{15}},x &gt; 0\), be m and n respectively. If r is a positive integer such that \(m{n^2} = {}^{15}{C_r}\,.\,{2^r}\), then the value of r is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q19.</span>
+</div>
+<div class="c5"><p>The term independent of x in the expansion of <br/><br/>\((1 - {x^2} + 3{x^3}){\left( {{5 \over 2}{x^3} - {1 \over {5{x^2}}}} \right)^{11}},\,x \ne 0\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{7 \over {40}}\]</li>
+<li class="c8">\[{33 \over {200}}\]</li>
+<li class="c8">\[{39 \over {200}}\]</li>
+<li class="c8">\[{11 \over {50}}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q20.</span>
+</div>
+<div class="c5"><p>The number of positive integers k such that the constant term in the binomial expansion of \({\left( {2{x^3} + {3 \over {{x^k}}}} \right)^{12}}\), x \(\ne\) 0 is 2<sup>8</sup> . l, where l is an odd integer, is ______________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q21.</span>
+</div>
+<div class="c5"><p>If the coefficient of x<sup>10</sup> in the binomial expansion of \({\left( {{{\sqrt x } \over {{5^{{1 \over 4}}}}} + {{\sqrt 5 } \over {{x^{{1 \over 3}}}}}} \right)^{60}}\) is \({5^k}\,.\,l\), where l, k \(\in\) N and l is co-prime to 5, then k is equal to _____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q22.</span>
+</div>
+<div class="c5"><p>The coefficient of x<sup>101</sup> in the expression \({(5 + x)^{500}} + x{(5 + x)^{499}} + {x^2}{(5 + x)^{498}} + \,\,.....\,\, + \,\,{x^{500}}\), x &gt; 0, is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><sup>501</sup>C<sub>101</sub> (5)<sup>399</sup></li>
+<li class="c8"><sup>501</sup>C<sub>101</sub> (5)<sup>400</sup></li>
+<li class="c8"><sup>501</sup>C<sub>100</sub> (5)<sup>400</sup></li>
+<li class="c8"><sup>500</sup>C<sub>101</sub> (5)<sup>399</sup></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q23.</span>
+</div>
+<div class="c5"><p>If the sum of the co-efficient of all the positive even powers of x in the binomial expansion of \({\left( {2{x^3} + {3 \over x}} \right)^{10}}\) is \({5^{10}} - \beta \,.\,{3^9}\), then \(\beta\) is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q24.</span>
+</div>
+<div class="c5"><p>For two positive real numbers a and b such that \({1 \over {{a^2}}} + {1 \over {{b^3}}} = 4\), then minimum value of the constant term in the expansion of \({\left( {a{x^{{1 \over 8}}} + b{x^{ - {1 \over {12}}}}} \right)^{10}}\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{{105} \over 2}\]</li>
+<li class="c8">\[{{105} \over 4}\]</li>
+<li class="c8">\[{{105} \over 8}\]</li>
+<li class="c8">\[{{105} \over 16}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q25.</span>
+</div>
+<div class="c5"><p>If the maximum value of the term independent of \(t\) in the expansion of \(\left(\mathrm{t}^{2} x^{\frac{1}{5}}+\frac{(1-x)^{\frac{1}{10}}}{\mathrm{t}}\right)^{15}, x \geqslant 0\), is \(\mathrm{K}\), then \(8 \mathrm{~K}\) is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q26.</span>
+</div>
+<div class="c5"><p>Let for the \(9^{\text {th }}\) term in the binomial expansion of \((3+6 x)^{\mathrm{n}}\), in the increasing powers of \(6 x\), to be the greatest for \(x=\frac{3}{2}\), the least value of \(\mathrm{n}\) is \(\mathrm{n}_{0}\). If \(\mathrm{k}\) is the ratio of the coefficient of \(x^{6}\) to the coefficient of \(x^{3}\), then \(\mathrm{k}+\mathrm{n}_{0}\) is equal to :</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>1</strong></li><li>Q2: <strong>B</strong></li><li>Q3: <strong>2</strong></li><li>Q4: <strong>1</strong></li><li>Q5: <strong>-6</strong></li><li>Q6: <strong>5</strong></li><li>Q7: <strong>+1</strong></li><li>Q8: <strong>9</strong></li><li>Q9: <strong>1</strong></li><li>Q10: <strong>A</strong></li><li>Q11: <strong>A</strong></li><li>Q12: <strong>2</strong></li><li>Q13: <strong>3</strong></li><li>Q14: <strong>D</strong></li><li>Q15: <strong>A</strong></li><li>Q16: <strong>C</strong></li><li>Q17: <strong>D</strong></li><li>Q18: <strong>2</strong></li><li>Q19: <strong>B</strong></li><li>Q20: <strong>2</strong></li><li>Q21: <strong>5</strong></li><li>Q22: <strong>A</strong></li><li>Q23: <strong>2</strong></li><li>Q24: <strong>C</strong></li><li>Q25: <strong>2</strong></li><li>Q26: <strong>3</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp; (1-x)(1-x)^{2007}\left(1+x+x^2\right)^{2007} \\
+&amp; (1-x)\left(1-x^3\right)^{2007} \\
+&amp; (1-x)\left({ }^{2007} C_0-{ }^{2007} C_1\left(x^3\right)+\ldots \ldots .\right)
+\end{aligned}\)</p>
+<p>General term</p>
+<p>\(\begin{aligned}
+&amp; (1-x)\left((-1)^r{ }^{2007} C_r x^{3 r}\right) \\
+&amp; (-1)^{r 2007} C_r x^{3 r}-(-1)^{r 2007} C_r x^{3 r+1} \\
+&amp; 3 r=2012 \\
+&amp; r \neq \frac{2012}{3} \\
+&amp; 3 r+1=2012 \\
+&amp; 3 r=2011 \\
+&amp; r \neq \frac{2011}{3}
+\end{aligned}\)</p>
+<p>Hence there is no term containing \(\mathrm{x}^{2012}\).</p>
+<p>So coefficient of \(\mathrm{x}^{2012}=0\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; \left(\sqrt{a} x^2+\frac{1}{2 x^3}\right)^{10} \\
+&amp; T_{r+1}={ }^{10} C_r\left(\sqrt{a} x^2\right)^{10-r}\left(\frac{1}{2 x^3}\right)^r
+\end{aligned}\)</p>
+<p>Independent of \(x \Rightarrow 20-2 r-3 r=0\)</p>
+<p>\(r=4\)</p>
+<p>Independent of \(x\) is \({ }^{10} C_4(\sqrt{a})^6\left(\frac{1}{2}\right)^4=105\)</p>
+<p>\(\begin{gathered}
+\frac{210}{2 \times 8} a^3=105 \\
+\Rightarrow \quad a=2 \\
+a^2=4
+\end{gathered}\)</p></li><li><strong>Q3:</strong> <p>\(\begin{aligned}
+&amp; T_2={ }^n C_1 y^1 \cdot x^{n-1}=135 \\
+&amp; T_3={ }^n C_2 y^2 \cdot x^{n-2}=30 \\
+&amp; T_4={ }^n C_3 y^3 x^{n-3}=\frac{10}{3}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+\Rightarrow \frac{135}{30} &amp; =\left(\frac{x}{y}\right) \frac{n \cdot 2}{n(n-1)}=\left(\frac{2}{n-1}\right)\left(\frac{x}{y}\right) \quad \text{... (i)}\\
+\frac{30}{\frac{10}{3}} &amp; =\frac{n(n-1)}{2} \frac{3!}{n(n-1)(n-2)}\left(\frac{x}{y}\right) \\
+9 &amp; =\left(\frac{3}{n-2}\right)\left(\frac{x}{y}\right)
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+\Rightarrow &amp; 3(n-2)=\frac{135}{60}(n-1) \Rightarrow n=5 \\
+\Rightarrow &amp; x=9 y \quad \text{.... (i)}\\
+&amp; y \cdot x^4=27 \Rightarrow \frac{x}{9} \cdot x^4=3^3 \\
+\Rightarrow &amp; x^5=3^5 \Rightarrow x=3 y=\frac{1}{3} \\
+\Rightarrow &amp; 6\left(5^3+3^2+\frac{1}{3}\right)=6\left(125+9+\frac{1}{3}\right)
+\end{aligned}\)</p>
+<p>\(=6(134)+2=806\)</p></li><li><strong>Q4:</strong> \({ }^m C_1,{ }^m C_2,{ }^m C_3\) are first, third and fifth term of \(A P\)
+<br/><br/>\(
+\begin{aligned}
+\therefore \quad &amp; a={ }^m C_1 \\\\
+&amp; a+2 d={ }^m C_2 \\\\
+&amp; a+4 d={ }^m C_3 \\\\
+\therefore \quad &amp; 2{ }^m C_2-{ }^m C_3=m \\\\
+\Rightarrow &amp; m=7 \text { or } m=2 \\\\
+\because &amp; m=2 \text { is not possible } \\\\
+\therefore &amp; m=7
+\end{aligned}
+\)
+<br/><br/>\(\mathrm{T}_6={ }^{\mathrm{m}} \mathrm{C}_5\left(10-3^{\mathrm{x}}\right)^{\frac{\mathrm{m}-5}{2}} \cdot\left(3^{\mathrm{x}-2}\right)=21\)
+<br/><br/>Putting value of m = 7, we get
+<br/><br/>\(\begin{aligned} &amp; T_{5+1}={ }^7 C_5\left(10-3^x\right)^{\frac{7-5}{2}} 3^{x-2}=21 \\\\ &amp; \Rightarrow \frac{10.3^x-\left(3^x\right)^2}{3^2}=1\end{aligned}\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \Rightarrow \left(3^x\right)^2-10 \cdot 3^x+9=0 \\\\
+&amp; \Rightarrow 3^x=9,1 \\\\
+&amp; \Rightarrow x=0,2
+\end{aligned}
+\)
+<br/><br/>Sum of squares of values of x = 0<sup>2</sup> + 2<sup>2</sup> = 4</li><li><strong>Q5:</strong> Coeff of \(x^{-6}\) in \(\left(\frac{4 x}{5}+\frac{5}{2 x^{2}}\right)^{9}\)
+
+<br/><br/>\(
+\begin{aligned}
+T_{r+1} &amp; ={ }^{9} C_{r}\left(\frac{4 x}{5}\right)^{9-r}\left(\frac{5}{2 x^{2}}\right)^{r} \\\\
+9-3 r &amp; =-6 \\\\
+r &amp; =5
+\end{aligned}
+\)
+
+<br/><br/>Coeff of \(x^{-6}={ }^{9} C_{5}\left(\frac{4}{5}\right)^{4}\left(\frac{5}{2}\right)^{5}\)
+
+\(
+=5040
+\)</li><li><strong>Q6:</strong> Given binomial expansion of \(\left(\frac{x^{\frac{5}{2}}}{2}-\frac{4}{x^{l}}\right)^{9}\)
+
+<br/><br/>\(
+\begin{aligned}
+T_{r+1} &amp; ={ }^{9} C_{r}\left(\frac{x^{\frac{5}{2}}}{2}\right)^{9-r}\left(\frac{-4}{x^{l}}\right)^{r} \\
+&amp; ={ }^{9} C_{r} x^{\frac{45-5 r}{2}-lr} \cdot 2^{r-9} \cdot 4^{r} \cdot(-1)^{r}
+\end{aligned}
+\)
+
+<br/><br/>For constant term, power of x is zero.
+
+<br/><br/>So, \(\frac{45-5 r}{2}=l r \Rightarrow 2 l r+5 r=45\)
+
+<br/><br/>Now constant term \(=-84\)
+
+<br/><br/>and \({ }^{9} C_{r} \cdot 2^{3 r-9}(-1)^{r}=-84\)
+
+<br/><br/>So, \(r=3\) and \(l=5\) 
+<br/><br/>Now for \(x^{-15}, \frac{45-5 r}{2}-5 r=-15\)
+
+<br/><br/>\( \Rightarrow \) \(
+45-15 r=-30
+\)
+
+<br/><br/>\( \Rightarrow \) \(
+r=5
+\)
+
+<br/><br/>\(\therefore \) Coefficient \(=-{ }^{9} C_{5} 2^{6}=-63.2^{7}\)
+
+<br/><br/>\(\therefore  \alpha=7, \beta=-63\)
+
+<br/><br/>and \(|\alpha l-\beta|=|7 \times 5+63|=98\)</li><li><strong>Q7:</strong> \(\mathrm{t}_{\mathrm{r}+1}={ }^{\mathrm{n}} \mathrm{C}_{\mathrm{r}}(2 \mathrm{x})^{\mathrm{r}}\)
+<br/><br/>
+\(
+\begin{aligned}
+&amp; \Rightarrow \frac{{ }^{\mathrm{n}} \mathrm{C}_{\mathrm{r}-1}(2)^{\mathrm{r}-1}}{{ }^{\mathrm{n}} \mathrm{C}_{\mathrm{r}}(2)^{\mathrm{r}}}=\frac{2}{5} \\\\
+&amp; \Rightarrow \frac{\frac{n !}{(r-1) !(n-r+1) !}}{\frac{n !(2)}{r !(n-r) !}}=\frac{2}{5} \\\\
+&amp; \Rightarrow \frac{\mathrm{r}}{\mathrm{n}-\mathrm{r}+1}=\frac{4}{5} \Rightarrow 5 \mathrm{r}=4 \mathrm{n}-4 \mathrm{r}+4 \\\\
+&amp; \Rightarrow 9 \mathrm{r}=4(\mathrm{n}+1) \quad\quad...(1)\\\\
+&amp; \Rightarrow \frac{{ }^{n} C_{r}(2)^{\mathrm{r}}}{{ }^{\mathrm{n}} \mathrm{C}_{\mathrm{r}+1}(2)^{\mathrm{r}+1}}=\frac{5}{8} \\\\
+&amp; \Rightarrow \frac{\frac{n !}{r !(n-r) !}}{\frac{n !}{(r+1) !(n-r-1) !}}=\frac{5}{4} \Rightarrow \frac{r+1}{n-r}=\frac{5}{4} \\\\
+&amp; \Rightarrow 4 \mathrm{r}+4=5 \mathrm{n}-5 \mathrm{r} \Rightarrow 5 \mathrm{n}-4=9 \mathrm{r} \quad\quad...(2)
+\end{aligned}
+\)
+<br/><br/>
+From (1) and (2)
+<br/><br/>
+\(
+\Rightarrow 4 \mathrm{n}+4=5 \mathrm{n}-4 \Rightarrow \mathrm{n}=8
+\)
+<br/><br/>
+\((1) \Rightarrow r=4\)
+<br/><br/>
+so, coefficient of middle term is
+<br/><br/>
+\(
+{ }^{8} \mathrm{C}_{4} 2^{4}=16 \times \frac{8 \times 7 \times 6 \times 5}{4 \times 3 \times 2 \times 1}=16 \times 70=1120
+\)
+</li><li><strong>Q8:</strong> Coefficient of \(\mathrm{x}^{9}\) in \(\left(\alpha x^{3}+\frac{1}{\beta x}\right)={ }^{11} C_{6} \cdot \frac{\alpha^{5}}{\beta^{6}}\)
+<br/><br/>
+\(\because\) Both are equal
+<br/><br/>
+\(\therefore \frac{11}{C_{6}} \cdot \frac{\alpha^{5}}{\beta^{6}}=-\frac{11}{C_{5}} \cdot \frac{\alpha^{6}}{\beta^{5}}\)
+<br/><br/>
+\(\Rightarrow \frac{1}{\beta}=-\alpha\)
+<br/><br/>
+\(\Rightarrow \alpha \beta=-1\)
+<br/><br/>
+\(\Rightarrow(\alpha \beta)^{2}=1\)</li><li><strong>Q9:</strong> \(S=1-3 n+\frac{9 n(n-1)}{2}=376\)
+<br/><br/>
+\(
+\begin{aligned}
+&amp; 3 n^{2}-5 n-250=0 \\\\
+&amp; n=10, \frac{-25}{3} \text { (Rejected) } \\\\
+&amp; T_{r+1}={ }^{n} C_{r} \cdot x^{n-r}\left(\frac{-3}{x^{2}}\right)^{r} \\\\
+&amp; ={ }^{n} C_{r} x x^{n-3 r}(-3)^{r} \\\\
+&amp; ={ }^{10} C_{r} x^{10-3 r}(-3)^{r}
+\end{aligned}
+\)
+<br/><br/>
+Here \(r=2\)
+<br/><br/>
+\(
+\begin{aligned}
+\text {Required coefficient } &amp; ={ }^{10} \mathrm{C}_{2}(-3)^{2} \\\\
+&amp; =45 \times 9 \\\\
+&amp; =405
+\end{aligned}
+\)</li><li><strong>Q10:</strong> The problem asks for the sum of the coefficients of three consecutive terms in the binomial expansion of \((1+x)^{n+2}\), which are in the ratio 1 : 3 : 5. 
+
+<br/><br/>Given that the ratios of the coefficients are 1:3:5, we let the terms be \(T_r\), \(T_{r+1}\), and \(T_{r+2}\). The coefficients of these terms are \({ }^{n+2} C_{r-1}\), \({ }^{n+2} C_{r}\), and \({ }^{n+2} C_{r+1}\), respectively. 
+
+<br/><br/>
+\(
+\begin{aligned}
+&amp; \frac{T_{r+1}}{T_r}=\frac{{ }^{n+2} C_r}{{ }^{n+2} C_{r-1}}=\frac{n+2-r+1}{r}=\frac{n+3-r}{r}=3 \\\\
+&amp; n-4 r+3=0 ......(1) \\\\
+&amp; \frac{T_{r+2}}{T_{r+1}}=\frac{{ }^{n+2} C_{r+1}}{{ }^{n+2} C_r}=\frac{(n+2)-(r+1)+1}{r+1}=\frac{n-r+2}{r+1}=\frac{5}{3} \\\\
+&amp; 3 n-8 r+1=0 ......(2)
+\end{aligned}
+\)
+<br/><br/>By solving (1) and (2), we get
+<br/><br/>\(\Rightarrow n=5, r=2\)
+<br/><br/>\(
+\begin{aligned}
+T_r+T_{r+1}+T_{r+2} &amp; ={ }^7 C_1+{ }^7 C_2+{ }^7 C_3 \\\\
+&amp; =7+21+35=63
+\end{aligned}
+\)</li><li><strong>Q11:</strong> \(\mathrm{T}_{1011}\) from beginning \(=\mathrm{T}_{1010+1}\)
+<br/><br/>\(
+={ }^{2022} \mathrm{C}_{1010}\left(\frac{4 \mathrm{x}}{5}\right)^{1012}\left(\frac{-5}{2 \mathrm{x}}\right)^{1010}
+\)
+<br/><br/>\(\mathrm{T}_{1011}\) from end
+<br/><br/>\(
+={ }^{2022} \mathrm{C}_{1010}\left(\frac{-5}{2 \mathrm{x}}\right)^{1012}\left(\frac{4 \mathrm{x}}{5}\right)^{1010}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \text { Given : }{ }^{2022} \mathrm{C}_{1010}\left(\frac{-5}{2 \mathrm{x}}\right)^{1012}\left(\frac{4 \mathrm{x}}{5}\right)^{1010} \\\\
+&amp; =2^{10} \cdot{ }^{2022} \mathrm{C}_{1010}\left(\frac{-5}{2 \mathrm{x}}\right)^{1010}\left(\frac{4 \mathrm{x}}{5}\right)^{1012}
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp;\Rightarrow \left(\frac{-5}{2 x}\right)^2=2^{10}\left(\frac{4 x}{5}\right)^2 \\\\
+&amp;\Rightarrow  x^4=\frac{5^4}{2^{16}} \\\\
+&amp; \Rightarrow |x|=\frac{5}{16}
+\end{aligned}
+\)</li><li><strong>Q12:</strong> We have, binomial coefficient, \((2+x)^9\)
+<br/><br/>\(
+T_{r+1}={ }^n C_r 2^{n-r} \times x^r
+\)
+<br/><br/>Coefficient of \(x\left(T_1\right)={ }^9 C_1 \times 2^8\)
+<br/><br/>Coefficient of \(x^2\left(T_2\right)={ }^9 C_2 \times 2^7\)
+<br/><br/>Coefficient of \(x^3\left(T_3\right)={ }^9 C_3 \times 2^6\)
+<br/>              .                    .
+<br/>              .                    .
+<br/>              .                    .
+<br/><br/>Coefficient of \(x^7\left(T_7\right)={ }^9 C_7 \times 2^2\)
+<br/><br/>\(
+\text { Mean }=\frac{{ }^9 C_1 \times 2^8+{ }^9 C_2 \times 2^7+{ }^9 C_3 \times 2^6+\ldots+{ }^9 C_7 \times 2^2}{7}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; { }^9 C_0 \times 2^9+{ }^9 C_1 \times 2^8+{ }^9 C_2 \times 2^7+{ }^9 C_3 \times 2^6+\ldots .+{ }^9 C_7 \times 2^2 \\
+&amp; =\frac{+{ }^9 C_8 \times 2^1+{ }^9 C_9 \times 2^0-{ }^9 C_0 \times 2^9-{ }^9 C_8 \times 2^1-{ }^9 C_9 \times 2^0}{7} 
+\end{aligned}
+\)
+<br/><br/>\(
+=\frac{(1+2)^9-2^9-18-1}{7}=\frac{19152}{7}=2736
+\)</li><li><strong>Q13:</strong> \(
+\begin{aligned}
+&amp; \text { General term of the expansion }\left(3^{\frac{1}{2}}+5^{\frac{1}{4}}\right)^{680} \\\\
+&amp; \qquad={ }^{680} C_r\left(3^{1 / 2}\right)^{680-r}\left(5^{1 / 4}\right)^r={ }^{680} C_r \times 3^{\frac{680-r}{2}} \times 5^{\frac{r}{4}}
+\end{aligned}
+\)
+<br/><br/>The term will be integral if \(r\) is a multiple of 4 .
+<br/><br/>\(
+\begin{gathered}
+\therefore r=0,4,8,12, \ldots, 680(\text { which is an } \mathrm{AP}) \\\\
+680=0+(n-1) 4 \\\\
+n=\frac{680}{4}+1=171
+\end{gathered}
+\)</li><li><strong>Q14:</strong> We have, coefficient of \(x\) in \((1+x)^p(1-x)^q=4\) and 
+<br/><br/>coefficient of \(x^2\) in \((1+x)^p(1-x)^q=-5\)
+<br/><br/>\(
+\begin{aligned}
+&amp; (1+x)^p(1-x)^q \\\\
+&amp; =\left(1+p x+\frac{p(p-1)}{2} x^2+\ldots\right)\left(1-q x+\frac{q(q-1)}{2} x^2+\ldots\right) \\\\
+&amp; =1+(p-q) x+\left(\frac{p(p-1)}{2}+\frac{q(q-1)}{2}-p q\right) x^2+\ldots \ldots
+\end{aligned}
+\)
+<br/><br/>Coefficient of \(x\) in \((1+x)^p(1-x)^q=-q+p\) 
+<br/><br/>\(\Rightarrow p-q=4\) ...........(i)
+<br/><br/>\(
+\text { Coefficient of } x^2 \text { in }(1+x)^p(1-x)^q=\frac{q(q-1)}{2}-p q+\frac{p(p-1)}{2}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \Rightarrow \frac{q^2-q-2 p q+p^2-p}{2}  =-5 \\\\
+&amp; \Rightarrow \frac{p^2+q^2-2 p q-(p+q)}{2}  =-5 \\\\
+&amp; \Rightarrow (p-q)^2-(p+q)  =-10 \\\\
+&amp; \Rightarrow (4)^2-(p+q)  =-10 \quad[\because \text { From Eq. (i) }] \\\\
+&amp; \Rightarrow p+q  =26 ...........(ii)
+\end{aligned}
+\)
+<br/><br/>Form Eqs. (i) and (ii), we get \(p=15, q=11\) 
+<br/><br/>\(\therefore 2 p+3 q=2 \times 15+3 \times 11=30+33=63\)</li><li><strong>Q15:</strong> The given expression is \(\left(a x-\frac{1}{b x^2}\right)^{13}\)
+<br/><br/>So,
+<br/><br/>\(
+\begin{aligned}
+T_{r+1} &amp; ={ }^{13} C_r(a x)^{13-r}\left(-\frac{1}{b x^2}\right)^r \\\\
+&amp; ={ }^{13} C_r(a)^{13-r} x^{13-r-2 r}(-1 / b)^r \\\\
+&amp; ={ }^{13} C_r(a)^{13-r}\left(-\frac{1}{b}\right)^r x^{13-3 r}
+\end{aligned}
+\)
+<br/><br/>For coefficient of \(x^7\) in \(\left(a x-\frac{1}{b x^2}\right)^{13}\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \quad 13-3 r=7 \\\\
+&amp; \Rightarrow 3 r=6 \Rightarrow r=2 \\\\
+&amp; \therefore \text { Coefficient of } x^7={ }^{13} C_2 \cdot(a)^{11} \cdot \frac{1}{b^2}
+\end{aligned}
+\)
+<br/><br/>Again, the another expression is \(\left(a x+\frac{1}{b x^2}\right)^{13}\)
+<br/><br/>So, \(T_{n+1}={ }^{13} C_r(a x)^{13-r}\left(\frac{1}{b x^2}\right)^r={ }^{13} C_r(a)^{13-r}\left(\frac{1}{b}\right)^r x^{13-3 r}\)
+<br/><br/>For coefficient \(x^{-5}\) in \(\left(a x+\frac{1}{b x^2}\right)^{13}\)
+<br/><br/>\(
+\begin{aligned}
+&amp;13-3 r  =-5 \\\\
+&amp;\Rightarrow r  =6
+\end{aligned}
+\)
+<br/><br/>So, coefficient of \(x^{-5}={ }^{13} C_6(a)^7 \frac{1}{b^6}\)
+<br/><br/>Now, according to the question, 
+<br/><br/>\({ }^{13} C_2(a)^{11} \frac{1}{b^2}={ }^{13} C_6(a)^7 \frac{1}{b^6}\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \Rightarrow a^4 b^4=\frac{{ }^{13} C_6}{{ }^{13} C_2} \\\\
+&amp; \therefore a^4 b^4=22
+\end{aligned}
+\)</li><li><strong>Q16:</strong> General term of \(\left(2 x^2+\frac{1}{2 x}\right)^{11}\) is :
+<br/><br/>\(
+\begin{aligned}
+&amp; \mathrm{T}_{\mathrm{r}+1}={ }^{11} \mathrm{C}_r\left(2 x^2\right){ }^{11-r}\left(\frac{1}{2 x}\right)^r \\\\
+&amp; ={ }^{11} \mathrm{C}_r 2^{11-r} x^{22-2 r} 2^{-r} x^{-r} \\\\
+&amp; ={ }^{11} \mathrm{C}_r 2^{11-r} x^{22-3 r}
+\end{aligned}
+\)
+<br/><br/>Now, \(22-2 r=10\) and \(22-3 r=7\)
+<br/><br/>\(
+\begin{array}{ll}
+\Rightarrow 3 r=12 &amp;&amp;&amp; \Rightarrow 3 r=15 \\\\
+\Rightarrow r=4 &amp;&amp;&amp; \Rightarrow r=5
+\end{array}
+\)
+<br/><br/>\(\therefore\) Coeff. of \(x^{10}={ }^{11} \mathrm{C}_4 \cdot 2^{11-8}={ }^{11} \mathrm{C}_4 \times 8\)
+<br/><br/>Coeff. of \(x^7={ }^{11} C_5 \cdot 2^{11-10}={ }^{11} C_4 \times 2\)
+<br/><br/>Now, required difference
+<br/><br/>\(
+\begin{aligned}
+&amp; ={ }^{11} \mathrm{C}_4 \times 8-{ }^{11} \mathrm{C}_5 \times 2 \\\\
+&amp; =\frac{11 \times 10 \times 9 \times 8 \times 7 !}{4 ! \times 7 !} \times 8-\frac{11 \times 10 \times 9 \times 8 \times 7 \times 6 ! \times 2}{5 ! 6 !}
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; =\frac{11 \times 10 \times 9 \times 8 \times 8}{24}-\frac{11 \times 10 \times 9 \times 8 \times 7 \times 2}{120} \\\\
+&amp; =11 \times 10 \times 8 \times 3-11 \times 3 \times 4 \times 7 \\\\
+&amp; =11 \times 3 \times 4[20-7] \\\\
+&amp; =11 \times 12 \times 13=(12-1) \times 12 \times(12+1) \\\\
+&amp; =12\left(12^2-1\right)=12^3-12
+\end{aligned}
+\)</li><li><strong>Q17:</strong> General term of \(\left(a x^2+\frac{1}{2 b x}\right)^{11}\) is
+<br/><br/>\(
+T_{r+1}={ }^{11} C_r\left(a x^2\right)^{11-r}\left(\frac{1}{2 b x}\right)^r={ }^{11} C_r(a)^{11-r}\left(\frac{1}{2 b}\right)^r x^{22-3 r}
+\)
+<br/><br/>\(
+\begin{array}{rlrl}
+&amp;\text { Now, } 22-3 r  =7 \\\\
+&amp;\Rightarrow  15  =3 r \\\\
+&amp;\Rightarrow  r  =5
+\end{array}
+\)
+<br/><br/>and general term of \(\left(a x-\frac{1}{3 b x^2}\right)^{11}\) is
+<br/><br/>\(
+\begin{aligned}
+T_{r+1} &amp; ={ }^{11} C_r(a x)^{11-r}\left(-\frac{1}{3 b x^2}\right)^r \\\\
+&amp; ={ }^{11} C_r a^{11-r}\left(-\frac{1}{3 b}\right)^r x^{11-3 r}
+\end{aligned}
+\)
+
+<br/><br/>Now, \(11-3 r=-7\)
+<br/><br/>\(
+\Rightarrow 18=3 r \Rightarrow r=6
+\)
+<br/><br/>\(\begin{aligned} &amp; \text { Since, coefficient of } x^7 \text { in }\left(a x^2+\frac{1}{2 b x}\right)^{11} \\\\ &amp; =\text { Coefficient of } x^{-7} \text { in }\left(a x-\frac{1}{3 b x^2}\right)^{11} \\\\ &amp; \Rightarrow{ }^{11} C_5(a)^6\left(\frac{1}{2 b}\right)^5={ }^{11} C_6(a)^5\left(-\frac{1}{3 b}\right)^6 \\\\ &amp; \Rightarrow \frac{a}{32 b^5}=\frac{1}{729 b^6} \Rightarrow 729 a b=32\end{aligned}\)</li><li><strong>Q18:</strong> <p>Given, Binomial expansion</p>
+<p>\({\left( {2{x^{{1 \over 5}}} - {1 \over {{x^{{1 \over 5}}}}}} \right)^{15}}\)</p>
+<p>\(\therefore\) General Term</p>
+<p>\({T_{r + 1}} = {}^{15}{C_r}\,.\,{\left( {2{x^{{1 \over 5}}}} \right)^{15 - r}}\,.\,{\left( { - {1 \over {{x^{{1 \over 5}}}}}} \right)^r}\)</p>
+<p>\( = {}^{15}{C_r}\,.\,{2^{15 - r}}\,.\,{x^{{1 \over 5}(15 - r - r)}}\,.\,{( - 1)^r}\)</p>
+<p>For \({x^{ - 1}}\) term;</p>
+<p>\({1 \over 5}(15 - 2r) =  - 1\)</p>
+<p>\( \Rightarrow 15 - 2r =  - 5\)</p>
+<p>\( \Rightarrow 2r = 20\)</p>
+<p>\( \Rightarrow r = 10\)</p>
+<p>m is the coefficient of \({x^{ - 1}}\) term,</p>
+<p>\(\therefore\) \(m = {}^{15}{C_{10}}\,.\,{2^{15 - 10}}\,.\,{( - 1)^{10}}\)</p>
+<p>\( = {}^{15}{C_{10}}\,.\,{2^5}\)</p>
+<p>For \({x^{ - 3}}\) term;</p>
+<p>\({1 \over 5}(15 - 2r) =  - 3\)</p>
+<p>\( \Rightarrow 15 - 2r =  - 15\)</p>
+<p>\( \Rightarrow 2r = 30\)</p>
+<p>\( \Rightarrow r = 15\)</p>
+<p>n is the coefficient of \({x^{ - 3}}\) term,</p>
+<p>\(\therefore\) \(n = {}^{15}{C_{15}}\,.\,{2^{15 - 15}}\,.\,{( - 1)^{15}}\)</p>
+<p>\( = 1\,.\,1\,.\, - 1\)</p>
+<p>\( =  - 1\)</p>
+<p>Given,</p>
+<p>\(m{n^2} = {}^{15}{C_r}\,.\,{2^r}\)</p>
+<p>\( \Rightarrow {}^{15}{C_{10}}\,.\,{2^5}\,.\,{(1)^2} = {}^{15}{C_r}\,.\,{2^r}\) [putting value of m and n]</p>
+<p>\( \Rightarrow {}^{15}{C_{15 - 10}}\,.\,{2^5} = {}^{15}{C_r}\,.\,{2^r}\)</p>
+<p>\( \Rightarrow {}^{15}{C_5}\,.\,{2^5} = {}^{15}{C_r}.\,{2^r}\)</p>
+<p>Comparing both side, we get</p>
+<p>\(r = 5\).</p></li><li><strong>Q19:</strong> <p>General term of Binomial expansion \({\left( {{5 \over 2}{x^3} - {1 \over {5{x^2}}}} \right)^{11}}\) is</p>
+<p>\({T_{r + 1}} = {}^{11}{C_r}\,.\,{\left( {{5 \over 2}{x^3}} \right)^{11 - r}}\,.\,{\left( { - {1 \over {5{x^2}}}} \right)^r}\)</p>
+<p>\( = {}^{11}{C_r}\,.\,{\left( {{5 \over 2}} \right)^{11 - r}}\,.\,{\left( { - {1 \over 5}} \right)^r}\,.\,{x^{33 - 5r}}\)</p>
+<p>In the term,</p>
+<p>\(\left( {1 - {x^2} + 3{x^3}} \right){\left( {{5 \over 2}{x^3} - {1 \over {5{x^2}}}} \right)^{11}}\)</p>
+<p>Term independent of x is when</p>
+<p>(1) \(33 - 5r = 0\)</p>
+<p>\( \Rightarrow r = {{33} \over 5}\,\, \notin \) integer</p>
+<p>(2) \(33 - 5r = -2\)</p>
+<p>\( \Rightarrow 5r = 35\)</p>
+<p>\( \Rightarrow r = 7\,\, \in \) integer</p>
+<p>(3) \(33 - 5r =  - 3\)</p>
+<p>\( \Rightarrow 5r = 36\)</p>
+<p>\( \Rightarrow r = {{36} \over 5}\,\, \notin \) integer</p>
+<p>\(\therefore\) Only for r = 7 independent of x term possible.</p>
+<p>\(\therefore\) Independent of x term</p>
+<p>\( =  - \left( {{}^{11}{C_7}{{\left( {{5 \over 2}} \right)}^4}\,.\,{{\left( { - {1 \over 5}} \right)}^7}} \right)\)</p>
+<p>\( =  - \left( {{{11\,.\,10\,.\,9\,.\,8} \over {4\,.\,3\,.\,2\,.\,1}}\,.\,{{{5^4}} \over {{2^4}}}\,.\, - {1 \over {{5^7}}}} \right)\)</p>
+<p>\( = {{11\,.\,10\,.\,3} \over {{2^4}\,.\,{5^3}}}\)</p>
+<p>\( = {{11\,.\,3} \over {{2^3}\,.\,{5^2}}}\)</p>
+<p>\( = {{33} \over {200}}\)</p></li><li><strong>Q20:</strong> <p>Given Binomial expression is</p>
+<p>\({\left( {2{x^3} + {3 \over {{x^k}}}} \right)^{12}}\)</p>
+<p>General term,</p>
+<p>\({T_{r + 1}} = {}^{12}{C_r}{(2{x^3})^r}\,.\,{\left( {{3 \over {{x^k}}}} \right)^{12 - r}}\)</p>
+<p>\( = \left( {{}^{12}{C_r}\,.\,{2^r}\,.\,{3^{12 - r}}} \right)\,.\,{x^{3r - 12k + kr}}\)</p>
+<p>For constant term,</p>
+<p>\(3r - 12k + kr = 0\)</p>
+<p>\( \Rightarrow k(12 - r) = 3r\)</p>
+<p>\( \Rightarrow k = {{3r} \over {12 - r}}\)</p>
+<p>For r = 1, \(k = {3 \over {11}}\) (not integer)</p>
+<p>For r = 2, \(k = {6 \over {10}}\) (not integer)</p>
+<p>For r = 3, \(k = {9 \over {9}}=1\)  (integer)</p>
+<p>For r = 6, \(k = {18 \over {6}}=3\) (integer)</p>
+<p>For r = 8, \(k = {24 \over {4}}=6\) (integer)</p>
+<p>For r = 9, \(k = {27 \over {3}}=9\) (integer)</p>
+<p>For r = 10, \(k = {30 \over {2}}=15\) (integer)</p>
+<p>For r = 11, \(k = {33 \over {1}}=33\) (integer)</p>
+<p>So, for r = 3, 6, 8, 9, 10 and 11 k is positive integer.</p>
+<p>When k = 1 then r  = 3 and constant term is</p>
+<p>\( = {}^{12}{C_3}\,.\,{2^3}\,.\,{3^9}\)</p>
+<p>\( = {{12\,.\,11\,.\,10} \over {3\,.\,2\,.\,1}}\,.\,{2^3}\,.\,{3^9}\)</p>
+<p>\( = 2\,.\,11\,.\,2\,.\,5\,.\,{2^3}\,.\,{3^9}\)</p>
+<p>\( = 11\,.\,5\,.\,{2^5}\,.\,{3^9}\)</p>
+<p>\( = {2^5}\,.\,(55\,.\,{3^9})\)</p>
+<p>\( = {2^5}(l)\)</p>
+<p>\( \ne {2^8}\,.\,l\)</p>
+<p>When x = 3 then r = 6 and constant term</p>
+<p>\( = {}^{12}{C_6}\,.\,{2^6}\,.\,{3^6}\)</p>
+<p>\( = {{12\,.\,11\,.\,10\,.\,9\,.\,8\,.\,7} \over {6\,.\,5\,.\,4\,.\,3\,.\,2\,.\,1}}\,.\,{2^6}\,.\,{3^6}\)</p>
+<p>\( = {2^8}\,.\,231\,.\,{3^6}\)</p>
+<p>\( = {2^8}(l)\)</p>
+<p>When k = 6 then r = 8 and constant term</p>
+<p>\( = {}^{12}{C_8}\,.\,{2^8}\,.\,{3^4}\)</p>
+<p>\( = {{12\,.\,11\,.\,10\,.\,9} \over {4\,.\,3\,.\,2\,.\,1}}\,.\,{2^8}\,.\,{3^4}\)</p>
+<p>\( = {2^8}\,.\,55\,.\,{3^6}\)</p>
+<p>\( = {2^8}(l)\)</p>
+<p>When x = 9 then r = 9 and constant term</p>
+<p>\( = {}^{12}{C_9}\,.\,{2^9}\,.\,{3^3}\)</p>
+<p>\( = {{12\,.\,11\,.\,10} \over {3\,.\,2\,.\,1}}\,.\,{2^9}\,.\,{3^3}\)</p>
+<p>\( = {2^{11}}\,.\,55\,.\,{3^3}\)</p>
+<p>Here power of 2 is 11 which is greater than 8. So, k = 9 is not possible.</p>
+<p>Similarly for k = 15 and k = 33, \({2^8}\,.\,l\) form is not possible.</p>
+<p>\(\therefore\) k = 3 and k = 6 is accepted.</p>
+<p>\(\therefore\) For 2 positive integer value of k, \({2^8}\,.\,l\) form of constant term possible.</p></li><li><strong>Q21:</strong> <p>Given Binomial Expansion</p>
+<p>\( = {\left( {{{\sqrt x } \over {{5^{{1 \over 4}}}}} + {{\sqrt x } \over {{5^{{1 \over 3}}}}}} \right)^{60}}\)</p>
+<p>\(\therefore\) General term</p>
+<p>\({T_{r + 1}} = {}^{60}{C_r}\,.\,{\left( {{{{x^{1/2}}} \over {{5^{1/4}}}}} \right)^{60 - r}}\,.\,{\left( {{{{5^{1/2}}} \over {{x^{1/3}}}}} \right)^r}\)</p>
+<p>\( = {}^{60}{C_r}\,.\,{5^{\left( {{r \over 4} - 15 + {r \over 2}} \right)}}\,.\,{x^{\left( {30 - {r \over 2} - {r \over 3}} \right)}}\)</p>
+<p>\( = {}^{60}{C_r}\,.\,{5^{\left( {{{3r - 60} \over 4}} \right)}}\,.\,{x^{\left( {{{180 - 5r} \over 6}} \right)}}\)</p>
+<p>For x<sup>10</sup> term,</p>
+<p>\({{180 - 5r} \over 6} = 10\)</p>
+<p>\( \Rightarrow 5r = 120\)</p>
+<p>\( \Rightarrow r = 24\)</p>
+<p>\(\therefore\) Coefficient of \({x^{10}} = {}^{60}{C_{24}}\,.\,{5^{\left( {{{3 \times 24 - 60} \over 4}} \right)}}\)</p>
+<p>\( = {}^{60}{C_{24}}\,.\,{5^3}\)</p>
+<p>\( = {{60!} \over {24!\,\,36!}}\,.\,{5^3}\)</p>
+<p>It is given that,</p>
+<p>\({{60!} \over {24!\,\,36!}}\,.\,{5^3} = {5^k}\,.\,l\) ...... (1)</p>
+<p>Also given that, l is coprime to 5 means l can't be multiple of 5. So we have to find all the factors of 5 in 60!, 24! and 36!</p>
+<p>[Note : Formula for exponent or degree of prime number in n!.</p>
+<p>Exponent of p in \(n! = \left\lceil {{n \over p}} \right\rceil  + \left\lceil {{n \over {{p^2}}}} \right\rceil  + \left\lceil {{n \over {{p^3}}}} \right\rceil  + \) ..... until 0 comes</p>
+<p>here p is a prime number. ]</p>
+<p>\(\therefore\) Exponent of 5 in 60!</p>
+<p>\(= \left\lceil {{{60} \over 5}} \right\rceil  + \left\lceil {{{60} \over {{5^2}}}} \right\rceil  + \left\lceil {{{60} \over {{5^3}}}} \right\rceil  + \) .....</p>
+<p>\( = 12 + 2 + 0 + \) .....</p>
+<p>\( = 14\)</p>
+<p>Exponent of 5 in 24!</p>
+<p>\( = \left\lceil {{{24} \over 5}} \right\rceil  + \left\lceil {{{24} \over {{5^2}}}} \right\rceil  + \left\lceil {{{24} \over {{5^3}}}} \right\rceil  + \) ......</p>
+<p>\( = 4 + 0 + 0\) ......</p>
+<p>\( = 4\)</p>
+<p>Exponent of 5 in 36!</p>
+<p>\( = \left\lceil {{{36} \over 5}} \right\rceil  + \left\lceil {{{36} \over {{5^2}}}} \right\rceil  + \left\lceil {{{36} \over {{5^3}}}} \right\rceil  + \) .......</p>
+<p>\( = 7 + 1 + 0\) ......</p>
+<p>\( = 8\)</p>
+<p>\(\therefore\) From equation (1), exponent of 5 overall</p>
+<p>\({{{5^{14}}} \over {{5^4}\,.\,{5^8}}}\,.\,{5^3} = {5^k}\)</p>
+<p>\( \Rightarrow {5^5} = {5^k}\)</p>
+<p>\( \Rightarrow k = 5\)</p></li><li><strong>Q22:</strong> <p>Given,</p>
+<p>\({(5 + x)^{500}} + x{(5 + x)^{499}} + {x^2}{(5 + x)^{498}}\,\, + \) ...... \({x^{500}}\)</p>
+<p>This is a G.P. with first term \({(5 + x)^{500}}\)</p>
+<p>Common ratio \( = {{x{{(5 + x)}^{499}}} \over {{{(5 + x)}^{500}}}} = {x \over {5 + x}}\) and 501 terms present.</p>
+<p>\(\therefore\) Sum \( = {{{{(5 + x)}^{500}}\left( {{{\left( {{x \over {5 + x}}} \right)}^{501}} - 1} \right)} \over {{x \over {5 + x}} - 1}}\)</p>
+<p>\( = {{{{(5 + x)}^{500}}\left( {{{{x^{501}} - {{(5 + x)}^{501}}} \over {{{(5 + x)}^{501}}}}} \right)} \over {{{x - 5 - x} \over {5 + x}}}}\)</p>
+<p>\( = {{{{{x^{501}} - {{(5 + x)}^{501}}} \over {5 + x}}} \over {{{ - 5} \over {5 + x}}}}\)</p>
+<p>\( = {1 \over 5}\left( {{{\left( {5 + x} \right)}^{501}} - {x^{501}}} \right)\)</p>
+<p>Coefficient of x<sup>101</sup> in \({(5 + x)^{501}}\) is \( = {}^{501}{C_{101}}\,.\,{5^{400}}\)</p>
+<p>\(\therefore\) In \({1 \over 5}\left( {{{(5 + x)}^{500}} - {x^{501}}} \right)\) coefficient of x<sup>101</sup> is \( = {1 \over 5}\,.\,{}^{501}{C_{101}}\,.\,{5^{400}}\)</p>
+<p>\( = {}^{501}{C_{101}}\,.\,{5^{399}}\)</p></li><li><strong>Q23:</strong> <p>Given, Binomial Expansion</p>
+<p>\({\left( {2{x^3} + {3 \over x}} \right)^{10}}\)</p>
+<p>General term</p>
+<p>\({T_{r + 1}} = {}^{10}{C_r}\,.\,{(2{x^3})^{10 - r}}\,.\,{\left( {{3 \over x}} \right)^r}\)</p>
+<p>\( = {}^{10}{C_r}\,.\,{2^{10 - r}}\,.\,{3^r}\,.\,{x^{30 - 3r}}\,.\,{x^{ - r}}\)</p>
+<p>\( = {}^{10}{C_r}\,.\,{2^{10 - r}}\,.\,{3^r}\,.\,{x^{30 - 4r}}\)</p>
+<p>For positive even power of x, 30 \(-\) 4r should be even and positive.</p>
+<p>For r = 0, 30 \(-\) 4 \(\times\) 0 = 30 (even and positive)</p>
+<p>For r = 1, 30 \(-\) 4 \(\times\) 1 = 26 (even and positive)</p>
+<p>For r = 2, 30 \(-\) 4 \(\times\) 2 = 22 (even and positive)</p>
+<p>For r = 3, 30 \(-\) 4 \(\times\) 3 = 18 (even and positive)</p>
+<p>For r = 4, 30 \(-\) 4 \(\times\) 4 = 14 (even and positive)</p>
+<p>For r = 5, 30 \(-\) 4 \(\times\) 5 = 10 (even and positive)</p>
+<p>For r = 6, 30 \(-\) 4 \(\times\) 6 = 6 (even and positive)</p>
+<p>For r = 7, 30 \(-\) 4 \(\times\) 7 = 2 (even and positive)</p>
+<p>For r = 8, 30 \(-\) 4 \(\times\) 8 = \(-\)2 (even but not positive)</p>
+<p>So, for r = 1, 2, 3, 4, 5, 6 and 7 we can get positive even power of x.</p>
+<p>\(\therefore\) Sum of coefficient for positive even power of x</p>
+<p>\( = {}^{10}{C_0}\,.\,{2^{10}}\,.\,{3^0} + {}^{10}{C_1}\,.\,{2^9}\,.\,{3^1} + {}^{10}{C_2}\,.\,{2^8}\,.\,{3^2} + {}^{10}{C_3}\,.\,{2^7}\,.\,{3^3} + {}^{10}{C_4}\,.\,{2^6}\,.\,{3^4} + {}^{10}{C_5}\,.\,{2^5}\,.\,{3^5} + {}^{10}{C_6}\,.\,{2^4}\,.\,{3^6} + {}^{10}{C_7}\,.\,{2^3}\,.\,{3^7}\)</p>
+<p>\( = {}^{10}{C_{10}}\,.\,{2^{10}}\,.\,{3^0} + {}^{10}{C_1}\,.\,{2^9}\,.\,{3^1}\,\, + \,\,.....\,\, + \,\,{}^{10}{C_{10}}\,.\,{2^0}\,.\,{3^{10}} - \left[ {{}^{10}{C_8}\,.\,{2^2}\,.\,{3^8} + {}^{10}{C_9}\,.\,2\,.\,{3^9} + {}^{10}{C_{10}}\,.\,{2^0}\,.\,{3^{10}}} \right]\)</p>
+<p>\( = {(2 + 3)^{10}} - \left[ {45\,.\,4\,.\,{3^8} + 10\,.\,2\,.\,{3^9} + 1\,.\,1\,.\,{3^{10}}} \right]\)</p>
+<p>\( = {5^{10}} - \left[ {60 \times {3^9} + 20\,.\,{3^9} + 3\,.\,{3^9}} \right]\)</p>
+<p>\( = {5^{10}} - \left( {60 + 20 + 3} \right){3^9}\)</p>
+<p>\( = {5^{10}} - 83\,.\,{3^9}\)</p>
+<p>\(\therefore\) \(\beta  = 83\)</p></li><li><strong>Q24:</strong> <p>Given, Binomial expansion,</p>
+<p>\({\left( {a{x^{{1 \over 8}}} + b{x^{ - {1 \over {12}}}}} \right)^{10}}\)</p>
+<p>General term,</p>
+<p>\({T_{r + 1}} = {}^{10}{C_r}\,.\,{\left( {a{x^{{1 \over 8}}}} \right)^{10 - r}}\,.\,{\left( {b{x^{ - {1 \over {12}}}}} \right)^r}\)</p>
+<p>\( = {}^{10}{C_r}\,.\,{a^{10 - r}}\,.\,{b^r}\,.\,{x^{{{10 - r} \over 8}}}\,.\,{x^{ - {r \over {12}}}}\)</p>
+<p>\( = {}^{10}{C_r}\,.\,{a^{10 - r}}\,.\,{b^r}\,.\,{x^{\left( {{{10 - r} \over 8} - {r \over {12}}} \right)}}\)</p>
+<p>\( = {}^{10}{C_r}\,.\,{a^{10 - r}}\,.\,{b^r}\,.\,{x^{{{30 - 3r - 2r} \over {24}}}}\)</p>
+<p>\( = {}^{10}{C_r}\,.\,{a^{10 - r}}\,.\,{b^r}\,.\,{x^{{{30 - 5r} \over {24}}}}\)</p>
+<p>For constant term,</p>
+<p>\({{30 - 5r} \over {24}} = 0\)</p>
+<p>\( \Rightarrow r = 6\)</p>
+<p>\(\therefore\) Constant term,</p>
+<p>\({T_{r + 1}} = {T_{6 + 1}} = {}^{10}{C_6}\,.\,{a^4}\,.\,{b^6}\)</p>
+<p>\( = {{10!} \over {6!\,4!}}{a^4}\,.\,{b^6}\)</p>
+<p>\( = {{10 \times 9 \times 8 \times 7} \over {4 \times 3 \times 2 \times 1}}\,.\,{a^4}\,.\,{b^6}\)</p>
+<p>\( = 210{a^4}{b^6}\)</p>
+<p>We know, \(GM \ge HM\)</p>
+<p>For terms a<sup>2</sup> and b<sup>3</sup>,</p>
+<p>\(\sqrt {{a^2}{b^3}}  \ge {2 \over {{1 \over {{a^2}}} + {1 \over {{b^3}}}}}\)</p>
+<p>\( \Rightarrow \sqrt {{a^2}{b^3}}  \ge {2 \over 4}\)</p>
+<p>\( \Rightarrow {a^2}{b^3} \ge {1 \over 4}\)</p>
+<p>\( \Rightarrow {({a^2}{b^3})^2} \ge {1 \over {16}}\)</p>
+<p>\(\therefore\) \({a^4}{b^6} \ge {1 \over {16}}\)</p>
+<p>\(\therefore\) Minimum value of \({a^4}{b^6} = {1 \over {16}}\)</p>
+<p>\(\therefore\) Minimum value of constant term</p>
+<p>\({T_7} = 210 \times {a^4}{b^6}\)</p>
+<p>\( = 210 \times {1 \over {16}}\)</p>
+<p>\( = {{105} \over 8}\)</p></li><li><strong>Q25:</strong> <p>General term of \({\left( {{t^2}{x^{{1 \over 5}}} + {{{{(1 - x)}^{{1 \over {10}}}}} \over t}} \right)^{15}}\) is</p>
+<p>\({T_{r + 1}} = {}^{15}{C_r}\,.\,{\left( {{t^2}{x^{{1 \over 5}}}} \right)^{15 - r}}\,.\,{\left( {{{{{(1 - x)}^{{1 \over {10}}}}} \over t}} \right)^r}\)</p>
+<p>\( = {}^{15}{C_r}\,.\,{t^{30 - 2r}}\,.\,{x^{{{15 - r} \over 5}}}\,.\,{\left( {1 - x} \right)^{{r \over {10}}}}\,.\,{t^{ - r}}\)</p>
+<p>\( = {}^{15}{C_r}\,.\,{t^{30 - 3r}}\,.\,{x^{{{15 - r} \over 5}}}\,.\,{\left( {1 - x} \right)^{{r \over {10}}}}\)</p>
+<p>Term will be independent of \(\mathrm{t}\) when \(30 - 3r = 0 \Rightarrow r = 10\)</p>
+<p>\(\therefore\) \({T_{10 + 1}} = {T_{11}}\) will be independent of \(\mathrm{t}\)</p>
+<p>\(\therefore\) \({T_{11}} = {}^{15}{C_{10}}\,.\,{x^{{{15 - 10} \over 5}}}\,.\,{\left( {1 - x} \right)^{{{10} \over {10}}}}\)</p>
+<p>\( = {}^{15}{C_{10}}\,.\,{x^1}\,.\,{\left( {1 - x} \right)^1}\)</p>
+<p>\(\mathrm{T_{11}}\) will be maximum when \(x(1 - x)\) is maximum.</p>
+<p>Let \(f(x) = x(1 - x) = x - {x^2}\)</p>
+<p>\(f(x)\) is maximum or minimum when \(f'(x) = 0\)</p>
+<p>\(\therefore\) \(f'(x) = 1 - 2x\)</p>
+<p>For maximum/minimum \(f'(x) = 0\)</p>
+<p>\(\therefore\) \(1 - 2x = 0\)</p>
+<p>\( \Rightarrow x = {1 \over 2}\)</p>
+<p>Now, \(f''(x) =  - 2 &lt; 0\)</p>
+<p>\(\therefore\) At \( x = {1 \over 2}\), \(f(x)\) maximum</p>
+<p>\(\therefore\) Maximum value of \(\mathrm{T_{11}}\) is</p>
+<p>\( = {}^{15}{C_{10}}\,.\,{1 \over 2}\left( {1 - {1 \over 2}} \right)\)</p>
+<p>\( = {}^{15}{C_{10}}\,.\,{1 \over 4}\)</p>
+<p>Given \(K = {}^{15}{C_{10}}\,.\,{1 \over 4}\)</p>
+<p>Now, \(8K = 2\left( {{}^{15}{C_{10}}} \right)\)</p>
+<p>\( = 6006\)</p></li><li><strong>Q26:</strong> <p>\({(3 + 6x)^n} = {3^n}{(1 + 2x)^n}\)</p>
+<p>If T<sub>9</sub> is numerically greatest term</p>
+<p>\(\therefore\) \({T_8} \le {T_9} \le {T_{10}}\)</p>
+<p>\({}^n{C_7}{3^{n - 7}}{(6x)^7} \le {}^n{C_8}{3^{n - 8}}{(6x)^8} \ge {}^n{C_9}{3^{n - 9}}{(6x)^9}\)</p>
+<p>\( \Rightarrow {{n!} \over {(n - 7)!7!}}9 \le {{n!} \over {(n - 8)!8!}}3\,.\,(6x) \ge {{n!} \over {(n - 9)!9!}}{(6x)^2}\)</p>
+<p>\( \Rightarrow \underbrace {{9 \over {(n - 7)(n - 8)}}}_{} \le \underbrace {{{18\left( {{3 \over 2}} \right)} \over {(n - 8)8}} \ge {{36} \over {9.8}}{9 \over 4}}_{}\)</p>
+<p>\(72 \le 27(n - 7)\) and \(27 \ge 9(n - 8)\)</p>
+<p>\({{29} \over 3} \le n\)and \(n \le 11\)</p>
+<p>\(\therefore\) \({n_0} = 10\)</p>
+<p>For \({(3 + 6x)^{10}}\)</p>
+<p>\({T_{r + 1}} = {}^{10}{C_r}\)</p>
+<p>\({3^{10 - r}}{(6x)^r}\)</p>
+<p>For coeff. of x<sup>6</sup></p>
+<p>\(r = 6 \Rightarrow {}^{10}{C_6}{3^4}{.6^6}\)</p>
+<p>For coeff. of x<sup>3</sup></p>
+<p>\(r = 3 \Rightarrow {}^{10}{C_3}{3^7}{.6^3}\)</p>
+<p>\(\therefore\) \(k = {{{}^{10}{C_6}} \over {{}^{10}{C_3}}}.{{{3^4}{{.6}^6}} \over {{3^7}{{.6}^3}}} = {{10!7!3!} \over {6!4!10!}}.8\)</p>
+<p>\( \Rightarrow k = 14\)</p>
+<p>\(\therefore\) \(k + {n_0} = 24\)</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

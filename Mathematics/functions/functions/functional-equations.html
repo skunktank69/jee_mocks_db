@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>functions</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>functions</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \(f:\mathbb{R}-{0,1}\to \mathbb{R}\) be a function such that \(f(x)+f\left(\frac{1}{1-x}\right)=1+x\). Then \(f(2)\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{9}{4}\]</li>
+<li class="c8">\[\frac{7}{4}\]</li>
+<li class="c8">\[\frac{7}{3}\]</li>
+<li class="c8">\[\frac{9}{2}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>If \(f(x) = {{{2^{2x}}} \over {{2^{2x}} + 2}},x \in \mathbb{R}\), then \(f\left( {{1 \over {2023}}} \right) + f\left( {{2 \over {2023}}} \right)\, + \,...\, + \,f\left( {{{2022} \over {2023}}} \right)\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2011</li>
+<li class="c8">2010</li>
+<li class="c8">1010</li>
+<li class="c8">1011</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let f : R \(\to\) R be a function defined by \(f(x) = {{2{e^{2x}}} \over {{e^{2x}} + e}}\). Then \(f\left( {{1 \over {100}}} \right) + f\left( {{2 \over {100}}} \right) + f\left( {{3 \over {100}}} \right) + \,\,\,.....\,\,\, + \,\,\,f\left( {{{99} \over {100}}} \right)\) is equal to ______________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>D</strong></li><li>Q3: <strong>2</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> \(\begin{aligned} &amp; \mathrm{f}(\mathrm{x})+\mathrm{f}\left(\frac{1}{1-\mathrm{x}}\right)=1+\mathrm{x} \\\\ &amp; \mathrm{x}=2 \Rightarrow \mathrm{f}(2)+\mathrm{f}(-1)=3 ........(1) \\\\ &amp; \mathrm{x}=-1 \Rightarrow \mathrm{f}(-1)+\mathrm{f}\left(\frac{1}{2}\right)=0 .........(2) \\\\ &amp; \mathrm{x}=\frac{1}{2} \Rightarrow \mathrm{f}\left(\frac{1}{2}\right)+\mathrm{f}(2)=\frac{3}{2} ........(3) \\\\ &amp; (1)+(3)-(2) \Rightarrow 2 \mathrm{f}(2)=\frac{9}{2} \\\\ &amp; \therefore \mathrm{f}(2)=\frac{9}{4}\end{aligned}\)</li><li><strong>Q2:</strong> \(
+\begin{aligned}
+&amp; f(x)=\frac{4^x}{4^x+2} \\\\
+&amp; f(x)+f(1-x)=\frac{4^x}{4^x+2}+\frac{4^{1-x}}{4^{1-x}+2} \\\\
+&amp; =\frac{4^x}{4^x+2}+\frac{4}{4+2\left(4^x\right)} \\\\
+&amp; =\frac{4^x}{4^{\mathrm{x}}+2}+\frac{2}{2+4^{\mathrm{x}}} \\\\
+&amp; =1 \\\\
+&amp; \Rightarrow \mathrm{f}(\mathrm{x})+\mathrm{f}(1-\mathrm{x})=1 \\\\
+&amp; \text { Now } \mathrm{f}\left(\frac{1}{2023}\right)+\mathrm{f}\left(\frac{2}{2023}\right)+\mathrm{f}\left(\frac{3}{2023}\right)+\ldots \ldots .+ \\\\
+&amp; \ldots \ldots \ldots . .+\mathrm{f}\left(1-\frac{3}{2023}\right)+\mathrm{f}\left(1-\frac{2}{2023}\right)+\mathrm{f}\left(1-\frac{1}{2023}\right)
+\end{aligned}
+\)<br/><br/>
+Now sum of terms equidistant from beginning and end is 1<br/><br/>
+\(
+\begin{aligned}
+&amp; \text { Sum }=1+1+1+\ldots \ldots \ldots+1 \text { (1011 times }) \\\\
+&amp; =1011
+\end{aligned}
+\)</li><li><strong>Q3:</strong> <p>Given,</p>
+<p>\(f(x) = {{2{e^{2x}}} \over {{e^{2x}} + e}}\)</p>
+<p>\(\therefore\) \(f(1 - x) = {{2{e^{2(1 - x)}}} \over {{e^{2(1 - x)}} + e}}\)</p>
+<p>\( = {{2\,.\,{{{e^2}} \over {{e^{2x}}}}} \over {{{{e^2}} \over {{e^{2x}}}} + e}}\)</p>
+<p>\( = {{2{e^2}} \over {{e^2} + {e^{2x}}\,.\,e}}\)</p>
+<p>\( = {{2{e^2}} \over {e(e + {e^{2x}})}}\)</p>
+<p>\( = {{2e} \over {e + {e^{2x}}}}\)</p>
+<p>\(\therefore\) \(f(x) + f(1 - x) = {{2{e^{2x}}} \over {{e^{2x}} + e}} + {{2e} \over {{e^{2x}} + e}}\)</p>
+<p>\( = {{2({e^{2x}} + e)} \over {{e^{2x}} + e}}\)</p>
+<p>\( = 2\) ...... (1)</p>
+<p>Now,</p>
+<p>\(f\left( {{1 \over {100}}} \right) + f\left( {{{99} \over {100}}} \right)\)</p>
+<p>\( = f\left( {{1 \over {100}}} \right) + f\left( {1 - {1 \over {100}}} \right)\)</p>
+<p>\( = 2\) [as \(f(x) + f(1 - x) = 2\)]</p>
+<p>Similarly,</p>
+<p>\(f\left( {{2 \over {100}}} \right) + f\left( {1 - {2 \over {100}}} \right) = 2\)</p>
+<p>\( \vdots \)</p>
+<p>\(f\left( {{{49} \over {100}}} \right) + f\left( {1 - {{49} \over {100}}} \right) = 2\)</p>
+<p>\(\therefore\) Total sum \( = 49 \times 2\)</p>
+<p>Remaining term \( = f\left( {{{50} \over {100}}} \right) = f\left( {{1 \over 2}} \right)\)</p>
+<p>Put \(x = {1 \over 2}\) in equation (1), we get</p>
+<p>\(f\left( {{1 \over 2}} \right) + f\left( {1 - {1 \over 2}} \right) = 2\)</p>
+<p>\( \Rightarrow 2f\left( {{1 \over 2}} \right) = 2\)</p>
+<p>\( \Rightarrow f\left( {{1 \over 2}} \right) = 1\)</p>
+<p>\(\therefore\) Sum \( = 49 \times 2 + 1 = 99\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \(f: \mathbb{R} \rightarrow \mathbb{R}\) be a function defined by \(f(x)=(2+3 a) x^2+\left(\frac{a+2}{a-1}\right) x+b, a \neq 1\). If \(f(x+y)=f(x)+f(\mathrm{y})+1-\frac{2}{7} x \mathrm{y}\), then the value of \(28 \sum\limits_{i=1}^5|f(i)|\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">735</li>
+<li class="c8">675</li>
+<li class="c8">715</li>
+<li class="c8">545</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>If a function \(f\) satisfies \(f(\mathrm{~m}+\mathrm{n})=f(\mathrm{~m})+f(\mathrm{n})\) for all \(\mathrm{m}, \mathrm{n} \in \mathbf{N}\) and \(f(1)=1\), then the largest natural number \(\lambda\) such that \(\sum_\limits{\mathrm{k}=1}^{2022} f(\lambda+\mathrm{k}) \leq(2022)^2\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Consider a function \(f:\mathbb{N}\to\mathbb{R}\), satisfying \(f(1)+2f(2)+3f(3)+....+xf(x)=x(x+1)f(x);x\ge2\) with \(f(1)=1\). Then \(\frac{1}{f(2022)}+\frac{1}{f(2028)}\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">8000</li>
+<li class="c8">8400</li>
+<li class="c8">8100</li>
+<li class="c8">8200</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Suppose \(f\) is a function satisfying \(f(x + y) = f(x) + f(y)\) for all \(x,y \in N\) and \(f(1) = {1 \over 5}\). If \(\sum\limits_{n = 1}^m {{{f(n)} \over {n(n + 1)(n + 2)}} = {1 \over {12}}} \), then \(m\) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>Let \(f(x)\) be a function such that \(f(x+y)=f(x).f(y)\) for all \(x,y\in \mathbb{N}\). If \(f(1)=3\) and \(\sum\limits_{k = 1}^n {f(k) = 3279} \), then the value of n is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">9</li>
+<li class="c8">7</li>
+<li class="c8">6</li>
+<li class="c8">8</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>Let c, k \(\in\) R. If \(f(x) = (c + 1){x^2} + (1 - {c^2})x + 2k\) and \(f(x + y) = f(x) + f(y) - xy\), for all x, y \(\in\) R, then the value of \(|2(f(1) + f(2) + f(3) + \,\,......\,\, + \,\,f(20))|\) is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>B</strong></li><li>Q2: <strong>1</strong></li><li>Q3: <strong>C</strong></li><li>Q4: <strong>1</strong></li><li>Q5: <strong>B</strong></li><li>Q6: <strong>1</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp; f(x)=(3 a+2) x^2+\left(\frac{a+2}{a-1}\right) x+b \\
+&amp; f\left(x+\frac{1}{2}\right)=f(x)+f(y)+1-\frac{2}{7} x y\quad\text{.... (1)}
+\end{aligned}\)</p>
+<p>In (1) Put \(x=y=0 \Rightarrow f(0)=2 f(0)+1 \Rightarrow f(0)=-1\)</p>
+<p>So, \(\mathrm{f}(0)=0+0+\mathrm{b}=-1 \Rightarrow \mathrm{~b}=-1\)</p>
+<p>\(\begin{aligned}
+&amp; \text { In (1) Put } y=-x \Rightarrow f(0)=f(x)+f(-x)+1+\frac{2}{7} x^2 \\
+&amp; -1=2(3 a+2) x^2+2 b+1+\frac{2}{7} x^2
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; -1=\left(2(3 a+2)+\frac{2}{7}\right) x^2+1-2 \\
+&amp; \Rightarrow 6 a+4+\frac{2}{7}=0 \\
+&amp; a=-\frac{5}{7}
+\end{aligned}\)</p>
+<p>So \(\mathrm{f}(\mathrm{x})=-\frac{1}{7} \mathrm{x}^2-\frac{3}{4} \mathrm{x}-1\)</p>
+<p>\(\Rightarrow|\mathrm{f}(\mathrm{x})|=\frac{1}{28}\left|4 \mathrm{x}^2+21 \mathrm{x}+28\right|\)</p>
+<p>Now, \(28 \sum_{i=1}^5|f(i)|=28(|f(1)|+|f(2)|+\ldots+|f(5)|)\)</p>
+<p>\(28 \cdot \frac{1}{28} \cdot 675=675\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; f(m+n)=f(m)+f(n) \\
+&amp; f(x)=k x \\
+&amp; \because f(1)=1 \\
+&amp; \Rightarrow k=1 \\
+&amp; \Rightarrow f(x)=x
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \sum_{k=1}^{2022} f(\lambda+k)=\sum_{k=1}^{2022}(\lambda+k)=\underbrace{\lambda+\lambda+\ldots+\lambda}_{2022}+(1+2+\ldots+2022) \\
+&amp; =2022 \lambda+\frac{2022 \times 2023}{2} \leq(2022)^2 \\
+&amp; \Rightarrow \lambda \leq \frac{2021}{2} \\
+&amp; \text { largest } \lambda=1010
+\end{aligned}\)</p></li><li><strong>Q3:</strong> <p>\(f(1) + 2f(2) + 3f(3)\, + \,...\, + \,nf(n) = n(n + 1) + (n)\) ..... (i)</p>
+<p>\(n \to n + 1\)</p>
+<p>\(f(1) + 2f(2)\, + \,...\, + \,(n + 1)f(n + 1) = (n + 1)(n + 2)f(n + 1)\) ...... (ii)</p>
+<p>(i) and (ii) gives</p>
+<p>\(3f(3) - 2f(2) = 0\)</p>
+<p>\(4f(4) - 3f(3) = 0\)</p>
+<p>\( \vdots \)</p>
+<p>\((n + 1)f(n + 1) - nf(n) = 0\)</p>
+<p>\( \Rightarrow f(n + 1) = {{2f(2)} \over {n + 1}}\)</p>
+<p>\(f(n) = {1 \over {2n}}\)</p>
+<p>\({1 \over {f(2022)}} + {1 \over {f(2028)}} = 8100\)</p></li><li><strong>Q4:</strong> \(\because f(1)=\frac{1}{5} ~\therefore f(2)=f(1)+f(1)=\frac{2}{5}\)
+<br/><br/>
+\(f(2)=\frac{2}{5} \quad\quad f(3)=f(2)+f(1)=\frac{3}{5}\)
+<br/><br/>
+\(f(3)=\frac{3}{5}\)
+<br/><br/>
+\(\therefore \sum\limits_{n=1}^{m} \frac{f(n)}{n(n+1)(n+2)}\)
+<br/><br/>
+\(=\frac{1}{5} \sum\limits_{n=1}^{m}\left(\frac{1}{n+1}-\frac{1}{n+2}\right)\)
+<br/><br/>
+\(=\frac{1}{5}\left(\frac{1}{2}-\frac{1}{3}+\frac{1}{3}-\frac{1}{4}+\ldots .+\frac{1}{m+1}-\frac{1}{m+2}\right)\)
+<br/><br/>
+\(=\frac{1}{5}\left(\frac{1}{2}-\frac{1}{m+2}\right)=\frac{m}{10(m+2)}=\frac{1}{12}\)
+<br/><br/>
+\(\therefore m=10\)</li><li><strong>Q5:</strong> \(
+\begin{aligned}
+&amp; \mathrm{f}(\mathrm{x}+\mathrm{y})=\mathrm{f}(\mathrm{x}) \cdot \mathrm{f}(\mathrm{y}) \forall \mathrm{x}, \mathrm{y} \in \mathrm{N}, \mathrm{f}(1)=3 \\\\
+&amp; \mathrm{f}(2)=\mathrm{f}^2(1)=3^2 \\\\
+&amp; \mathrm{f}(3)=\mathrm{f}(1) \mathrm{f}(2)=3^3 \\\\
+&amp; \mathrm{f}(4)=3^4 \\\\
+&amp; \mathrm{f}(\mathrm{k})=3^{\mathrm{k}} \\\\
+&amp; \sum_{\mathrm{k}=1}^{\mathrm{n}} \mathrm{f}(\mathrm{k})=3279 \\\\
+&amp; \mathrm{f}(1)+\mathrm{f}(2)+\mathrm{f}(3)+\ldots \ldots \ldots+\mathrm{f}(\mathrm{k})=3279 \\\\
+&amp; 3+3^2+3^3+\ldots \ldots \ldots 3^{\mathrm{k}}=3279 \\\\
+&amp; \frac{3\left(3^{\mathrm{k}}-1\right)}{3-1}=3279 \\\\
+&amp; \frac{3^{\mathrm{k}}-1}{2}=1093 \\\\
+&amp; 3^{\mathrm{k}}-1=2186 \\\\
+&amp; 3^{\mathrm{k}}=2187 \\\\
+&amp; \text{So, } \mathrm{k}=7
+\end{aligned}
+\)</li><li><strong>Q6:</strong> <p>f(x) is polynomial</p>
+<p>Put y = 1/x in given functional equation we get</p>
+<p>\(f\left( {x + {1 \over x}} \right) = f(x) + f\left( {{1 \over x}} \right) - 1\)</p>
+<p>\( \Rightarrow (c + 1){\left( {x + {1 \over x}} \right)^2} + (1 - {c^2})\left( {x + {1 \over x}} \right) + 2K\)</p>
+<p>\( = (c + 1){x^2} + (1 - {c^2})x + 2K + (c + 1){1 \over {{x^2}}} + (1 - {c^2}){1 \over x} + 2K - 1\)</p>
+<p>\( \Rightarrow 2(c + 1) = 2K - 1\) ..... (1)</p>
+<p>and put \(x = y = 0\) we get</p>
+<p>\(f(0) = 2 + f(0) - 0 \Rightarrow f(0) = 0 \Rightarrow k = 0\)</p>
+<p>\(\therefore\) \(k = 0\) and \(2c =  - 3 \Rightarrow c =  - 3/2\)</p>
+<p>\(f(x) =  - {{{x^2}} \over 2} - {{5x} \over 4} = {1 \over 4}(5x + 2{x^2})\)</p>
+<p>\(\left| {2\sum\limits_{i = 1}^{20} {f(i)} } \right| = \left| {{{ - 2} \over 4}\left( {{{5.20.21} \over 2} + {{2.20.21.41} \over 6}} \right)} \right|\)</p>
+<p>\( = \left| {{{ - 1} \over 2}(2730 + 5740)} \right|\)</p>
+<p>\( = \left| { - {{6790} \over 2}} \right| = 3395\).</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>If \(f(x)=\frac{2^x}{2^x+\sqrt{2}}, \mathrm{x} \in \mathbb{R}\), then \(\sum_\limits{\mathrm{k}=1}^{81} f\left(\frac{\mathrm{k}}{82}\right)\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(82\)
+</li>
+<li class="c8">\(81 \sqrt{2}\)
+</li>
+<li class="c8">\(41\)
+</li>
+<li class="c8">\(\frac{81}{2}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5">Let \(f\) be a function such that \(f(x)+3 f\left(\frac{24}{x}\right)=4 x, x \neq 0\). Then \(f(3)+f(8)\) is equal to</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">13</li>
+<li class="c8">11</li>
+<li class="c8">10</li>
+<li class="c8">12</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>If \(S=\{a \in \mathbf{R}:|2 a-1|=3[a]+2\{a \}\}\), where \([t]\) denotes the greatest integer less than or equal to \(t\) and \(\{t\}\) represents the fractional part of \(t\), then \(72 \sum_\limits{a \in S} a\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5">The absolute minimum value, of the function
+<br/><br/>\(f(x)=\left|x^{2}-x+1\right|+\left[x^{2}-x+1\right]\), 
+<br/><br/>where \([t]\) denotes the greatest integer function, in the interval \([-1,2]\), is :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\frac{3}{4}\)</li>
+<li class="c8">\(\frac{3}{2}\)</li>
+<li class="c8">\(\frac{1}{4}\)</li>
+<li class="c8">\(\frac{5}{4}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>Let \(f(x) = \left| {\matrix{
+   {1 + {{\sin }^2}x} &amp; {{{\cos }^2}x} &amp; {\sin 2x}  \cr 
+   {{{\sin }^2}x} &amp; {1 + {{\cos }^2}x} &amp; {\sin 2x}  \cr 
+   {{{\sin }^2}x} &amp; {{{\cos }^2}x} &amp; {1 + \sin 2x}  \cr 
+
+ } } \right|,\,x \in \left[ {{\pi  \over 6},{\pi  \over 3}} \right]\). If \(\alpha\) and \(\beta\) respectively are the maximum and the minimum values of \(f\), then</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{\alpha ^2} - {\beta ^2} = 4\sqrt 3 \]</li>
+<li class="c8">\[{\beta ^2} - 2\sqrt \alpha   = {{19} \over 4}\]</li>
+<li class="c8">\[{\beta ^2} + 2\sqrt \alpha   = {{19} \over 4}\]</li>
+<li class="c8">\[{\alpha ^2} + {\beta ^2} = {9 \over 2}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5">Let \(A=\{1,2,3,5,8,9\}\). Then the number of possible functions \(f: A \rightarrow A\) such that \(f(m \cdot n)=f(m) \cdot f(n)\) for every \(m, n \in A\) with \(m \cdot n \in A\) is equal to ___________.</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>Let \(f:\mathbb{R}\to\mathbb{R}\) be a function defined by \(f(x) = {\log _{\sqrt m }}\{ \sqrt 2 (\sin x - \cos x) + m - 2\} \), for some \(m\), such that the range of \(f\) is [0, 2]. Then the value of \(m\) is _________</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">4</li>
+<li class="c8">3</li>
+<li class="c8">5</li>
+<li class="c8">2</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>Let \(f(x) = 2{x^n} + \lambda ,\lambda  \in R,n \in N\), and \(f(4) = 133,f(5) = 255\). Then the sum of all the positive integer divisors of \((f(3) - f(2))\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">60</li>
+<li class="c8">58</li>
+<li class="c8">61</li>
+<li class="c8">59</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>If \(f(x) = {{(\tan 1^\circ )x + {{\log }_e}(123)} \over {x{{\log }_e}(1234) - (\tan 1^\circ )}},x &gt; 0\), then the least value of \(f(f(x)) + f\left( {f\left( {{4 \over x}} \right)} \right)\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2</li>
+<li class="c8">4</li>
+<li class="c8">0</li>
+<li class="c8">8</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q10.</span>
+</div>
+<div class="c5"><p>Let f : N \(\to\) R be a function such that \(f(x + y) = 2f(x)f(y)\) for natural numbers x and y. If f(1) = 2, then the value of \(\alpha\) for which</p>
+<p>\(\sum\limits_{k = 1}^{10} {f(\alpha + k) = {{512} \over 3}({2^{20}} - 1)} \)</p>
+<p>holds, is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2</li>
+<li class="c8">3</li>
+<li class="c8">4</li>
+<li class="c8">6</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q11.</span>
+</div>
+<div class="c5"><p> Let \(f(x)=2 x^{2}-x-1\) and \(\mathrm{S}=\{n \in \mathbb{Z}:|f(n)| \leq 800\}\). Then, the value of \(\sum\limits_{n \in S} f(n)\) is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q12.</span>
+</div>
+<div class="c5"><p>For \(\mathrm{p}, \mathrm{q} \in \mathbf{R}\), consider the real valued function \(f(x)=(x-\mathrm{p})^{2}-\mathrm{q}, x \in \mathbf{R}\) and \(\mathrm{q}&gt;0\). Let \(\mathrm{a}_{1}\), \(\mathrm{a}_{2^{\prime}}\) \(\mathrm{a}_{3}\) and \(\mathrm{a}_{4}\) be in an arithmetic progression with mean \(\mathrm{p}\) and positive common difference. If \(\left|f\left(\mathrm{a}_{i}\right)\right|=500\) for all \(i=1,2,3,4\), then the absolute difference between the roots of \(f(x)=0\) is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q13.</span>
+</div>
+<div class="c5"><p>\(
+\text { Let } f(x)=a x^{2}+b x+c \text { be such that } f(1)=3, f(-2)=\lambda \text { and } \) \(f(3)=4\). If \(f(0)+f(1)+f(-2)+f(3)=14\), then \(\lambda\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[-\]4</li>
+<li class="c8">\[\frac{13}{2}\]</li>
+<li class="c8">\[\frac{23}{2}\]</li>
+<li class="c8">4</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>D</strong></li><li>Q2: <strong>B</strong></li><li>Q3: <strong>2</strong></li><li>Q4: <strong>A</strong></li><li>Q5: <strong>B</strong></li><li>Q6: <strong>1</strong></li><li>Q7: <strong>C</strong></li><li>Q8: <strong>A</strong></li><li>Q9: <strong>B</strong></li><li>Q10: <strong>C</strong></li><li>Q11: <strong>800</strong></li><li>Q12: <strong>1</strong></li><li>Q13: <strong>D</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp; f(x)=\frac{2^x}{2^x+\sqrt{2}} \\
+&amp; f(x)+f(1-x)=\frac{2^x}{2^x+\sqrt{2}}+\frac{2^{1-x}}{2^{1-x}+\sqrt{2}} \\
+&amp; =\frac{2^x}{2^x+\sqrt{2}}+\frac{2}{2+\sqrt{2} 2^x}=\frac{2^x+\sqrt{2}}{2^x+\sqrt{2}}=1
+\end{aligned}\)</p>
+<p>\(\begin{array}{r}
+\text { Now, } \sum_{\mathrm{k}=1}^{81} \mathrm{f}\left(\frac{\mathrm{k}}{82}\right)=\mathrm{f}\left(\frac{1}{82}\right)+\mathrm{f}\left(\frac{2}{82}\right)+\ldots \ldots+\mathrm{f}\left(\frac{81}{82}\right) \\
+=\mathrm{f}\left(\frac{1}{82}\right)+\mathrm{f}\left(\frac{2}{82}\right)+\ldots \ldots .+\mathrm{f}\left(1-\frac{2}{82}\right)+\mathrm{f}\left(1-\frac{1}{82}\right) \\
+=\left[\mathrm{f}\left(\frac{1}{82}\right)+\mathrm{f}\left(1-\frac{1}{82}\right)\right]+\left[\mathrm{f}\left(\frac{2}{82}\right)+\mathrm{f}\left(1-\frac{2}{82}\right)\right]+\ldots . .40 \text { cases }+\mathrm{f}\left(\frac{41}{82}\right)
+\end{array}\)</p>
+<p>\(\begin{aligned}
+&amp; =(1+1+\ldots 40 \text { times })+\frac{2^{1 / 2}}{2^{1 / 2}+2^{1 / 2}} \\
+&amp; 40+\frac{1}{2}=\frac{81}{2}
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; f(x)+3 f\left(\frac{24}{x}\right)=4 x, x \neq 0 \quad \ldots(1)\\
+&amp; \text { replace } x \text { by } \frac{24}{x} \\
+&amp; f\left(\frac{24}{x}\right)+3 f\left(\frac{24}{24}\right)=4\left(\frac{24}{x}\right)=\frac{96}{x} \quad \ldots(2) \\
+&amp; 3 \times(2)-(1) \\
+&amp; \Rightarrow 8 f(x)=\frac{96.3}{x}-4 x \Rightarrow f(x)=\frac{36}{x}-\frac{x}{2} \\
+&amp; f(3)+f(8)=\left(12-\frac{3}{2}\right)+\left(\frac{36}{8}-4\right)
+\end{aligned}\)</p>
+<p>\(=8+\frac{36}{8}-\frac{12}{8}=11\)</p></li><li><strong>Q3:</strong> <p>\(\begin{aligned}
+&amp; S:\{a \in R:|2 a-1|=3[a]+2\{a\}\} \\
+&amp; |2 a-1|=3[a]+2(a-[a]) \\
+&amp; |2 a-1|=[a]+2 a
+\end{aligned}\)</p>
+<p>Case I: If \(0 &lt; a &lt; \frac{1}{2}\)</p>
+<p>\(\begin{aligned}
+&amp; 1-2 a=0+2 a \\
+&amp; \Rightarrow a=\frac{1}{4}
+\end{aligned}\)</p>
+<p>Case II: If \(\frac{1}{2} &lt; a &lt; 1\)</p>
+<p>\(2 a-1=0+2 a\)</p>
+<p>No solution</p>
+<p>Case III: If \(1 \leq a&lt;2\)</p>
+<p>\(2 a-1=1+2 a\)</p>
+<p>\(\Rightarrow\) No solution</p>
+<p>\(\therefore\) only solution is \(a=\frac{1}{4}\)</p>
+<p>\(72 \sum_\limits{a \in S} a=72 \times \frac{1}{4}=18\)</p></li><li><strong>Q4:</strong> \(\mathrm{f}(\mathrm{x})=\left|\mathrm{x}^{2}-\mathrm{x}+1\right|+\left[\mathrm{x}^{2}-\mathrm{x}+1\right] ; \mathrm{x} \in[-1,2]\)
+
+<br/><br/>Let \(g(x)=x^{2}-x+1\)
+
+<br/><br/>\(
+=\left(x-\frac{1}{2}\right)^{2}+\frac{3}{4}
+\)
+
+
+
+<br/><br/>\(
+\because\left|\mathrm{x}^{2}-\mathrm{x}+1\right| \text { and }\left[\mathrm{x}^{2}-\mathrm{x}+1\right]
+\)
+
+<br/><br/>Both have minimum value at \(\mathrm{x}=1 / 2\)
+
+<br/><br/>\(\Rightarrow\) Minimum \(\mathrm{f}(\mathrm{x})=\frac{3}{4}+0\)
+
+<br/><br/>\(=\frac{3}{4}\)</li><li><strong>Q5:</strong> \(f(x) = \left| {\matrix{
+   {1 + {{\sin }^2}x} &amp; {{{\cos }^2}x} &amp; {\sin 2x}  \cr 
+   {{{\sin }^2}x} &amp; {1 + {{\cos }^2}x} &amp; {\sin 2x}  \cr 
+   {{{\sin }^2}x} &amp; {{{\cos }^2}x} &amp; {1 + \sin 2x}  \cr 
+
+ } } \right|\)
+<br/><br/>\(C_{1} \rightarrow C_{1}+C_{2}+C_{3}\)
+
+<br/><br/>\(
+\begin{aligned}
+&amp; = (2+\sin 2 x)\left|\begin{array}{ccc}1 &amp; \cos ^{2} x &amp; \sin 2 x \\1 &amp; 1+\cos ^{2} x &amp; \sin 2 x \\1 &amp; \cos ^{2} x &amp; 1+\sin 2 x\end{array}\right| \\\\
+&amp; R_{2} \rightarrow R_{2} \rightarrow R_{1} ; R_{3} \rightarrow R_{3} \rightarrow R_{1} \\\\
+&amp; = (2+\sin 2 x)\left|\begin{array}{ccc}1 &amp; \cos ^{2} x &amp; \sin 2 x \\0 &amp; 1 &amp; 0 \\0 &amp; 0 &amp; 1\end{array}\right| \\\\
+&amp; f(x)=2+\sin 2 x ; x \in\left[\frac{\pi}{6}, \frac{\pi}{3}\right] \\\\
+&amp; f(x)_{\max }=2+1=3 \text { for } x=\frac{\pi}{4} \\\\
+&amp; f(x)_{\min }=2+\frac{\sqrt{3}}{2} \text { for } x=\frac{\pi}{6}, \frac{\pi}{3} \\\\
+&amp; \beta^{2}-2 \sqrt{\alpha}=4+\frac{3}{4}+2 \sqrt{3}-2 \sqrt{3} \\\\
+&amp; =\frac{19}{4}
+\end{aligned}
+\)</li><li><strong>Q6:</strong> <p>\(f(1.n)=f(1).f(n)\Rightarrow f(1)=1\).</p>
+<p>\(f(3.3)=(f(3))^2\)</p>
+<p>Hence, the possibilities for \((t(3),(9))\) are \((1,1)\) and \((3,9)\).</p>
+<p>Other three i.e. \(f(2),f(5),f(8)\)</p>
+<p>Can be chosen in 6\(^3\) ways.</p>
+<p>Hence, total number of functions</p>
+<p>\(6^3\times2=432\)</p></li><li><strong>Q7:</strong> We know that \(\sin x-\cos x \in[-\sqrt{2}, \sqrt{2}]\)
+<br/><br/>
+\(
+\begin{aligned}
+&amp; \log _{\sqrt{M}}(\sqrt{2}(\sin x-\cos ) +M-2) \\\\
+&amp;\quad\quad\in {\left[\log _{\sqrt{M}}(M-4), \log _{\sqrt{M}} M\right] }
+\end{aligned}
+\)
+<br/><br/>
+\(\Rightarrow \log _{\sqrt{M}}(M-4)=0 \Rightarrow M=5\)
+</li><li><strong>Q8:</strong> \(f(x)=2 x^{n}+\lambda, \lambda \in \mathbb{R}, n \in \mathbb{N}\)
+<br/><br/>
+\(f(4)=2 \cdot 4^{n}+\lambda=133, f(5)=2 \cdot 5^{n}+\lambda=255\)
+<br/><br/>
+\(f(5)-f(4)=2 \cdot\left(5^{n} \cdot 4^{n}\right)=122 \Rightarrow n=3\)
+<br/><br/>
+\(\Rightarrow f(3)-f(2)=2 \cdot\left(3^{n} \cdot 2^{n}\right)=2 \cdot\left(3^{3}-2^{3}\right)=2 \times 19\)
+<br/><br/>
+Required sum \(=1+2+19+38=60\)</li><li><strong>Q9:</strong> Given that \(f(x)=\frac{\left(\tan 1^{\circ}\right) x+\log _e(123)}{x \log _e(1234)-\left(\tan 1^{\circ}\right)}\)
+<br/><br/>Let us consider a similar function of \((x)\), 
+<br/><br/>\(\therefore f(x)=\frac{A x+B}{C x-A}\)
+<br/><br/>\(\text { Now, } \)
+<br/><br/>\(
+\begin{aligned}
+&amp;f(f(x)) =\frac{A\left(\frac{A x+B}{C x-A}\right)+B}{C\left(\frac{A x+B}{C x-A}\right)-A} \\\\
+&amp; =\frac{A^2 x+A B+B C x-A B}{A C x+B C-A C x+A^2} \\\\
+&amp; =\frac{x\left(A^2+B C\right)}{\left(B C+A^2\right)}=x
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \therefore \quad f(f(x))=x \\\\
+&amp; \text { Similarly, } f\left(f\left(\frac{4}{x}\right)\right)=\frac{4}{x} \\\\
+&amp; \text { Apply, AM } \geq \text { GM } \\\\
+&amp; \left(x+\frac{4}{x}\right) \geq 2 \sqrt{x \cdot \frac{4}{x}}=4(x&gt;0) \\\\
+&amp; \Rightarrow f(f(x))+f\left(f\left(\frac{4}{x}\right)\right) \geq 4
+\end{aligned}
+\)
+<br/><br/>Hence, the least value is 4 .</li><li><strong>Q10:</strong> <p>Given,</p>
+<p>\(f(x + y) = 2f(x)f(y)\)</p>
+<p>and \(f(1) = 2\)</p>
+<p>For x = 1 and y = 1,</p>
+<p>\(f(1 + 1) = 2f(1)f(1)\)</p>
+<p>\( \Rightarrow f(2) = 2{\left( {f(1)} \right)^2} = 2{(2)^2} = {2^3}\)</p>
+<p>For x = 1, y = 2,</p>
+<p>\(f(1 + 2) = 2f(1)y(2)\)</p>
+<p>\( \Rightarrow f(3) = 2\,.\,2\,.\,{2^3} = {2^5}\)</p>
+<p>For x = 1, y = 3,</p>
+<p>\(f(1 + 3) = 2f(1)f(3)\)</p>
+<p>\( \Rightarrow f(4) = 2\,.\,2\,.\,{2^5} = {2^7}\)</p>
+<p>For x = 1, y = 4,</p>
+<p>\(f(1 + 4) = 2f(1)f(4)\)</p>
+<p>\( \Rightarrow f(5) = 2\,.\,2\,.\,{2^7} = {2^9}\) ..... (1)</p>
+<p>Also given</p>
+<p>\(\sum\limits_{k = 1}^{10} {f(\alpha  + k) = {{512} \over 3}({2^{20}} - 1)} \)</p>
+<p>\( \Rightarrow f(\alpha  + 1) + f(\alpha  + 2) + f(\alpha  + 3)\, + \,\,...\,\, + \,\,f(\alpha  + 10) = {{512} \over 3}({2^{20}} - 1)\)</p>
+<p>\( \Rightarrow f(\alpha  + 1) + f(\alpha  + 2) + f(\alpha  + 3)\, + \,\,....\,\, + f(\alpha  + 10) = {{{2^9}\left( {{{({2^2})}^{10}} - 1} \right)} \over {{2^2} - 1}}\)</p>
+<p>This represent a G.P with first term = 2<sup>9</sup> and common ratio = 2<sup>2</sup></p>
+<p>\(\therefore\) First term \( = f(\alpha  + 1) = {2^9}\) ..... (2)</p>
+<p>From equation (1), \(f(5) = {2^9}\)</p>
+<p>\(\therefore\) From (1) and (2), we get</p>
+<p>\(f(\alpha  + 1) = {2^9} = f(5)\)</p>
+<p>\( \Rightarrow f(\alpha  + 1) = f(5)\)</p>
+<p>\( \Rightarrow f(\alpha  + 1) = f(4 + 1)\)</p>
+<p>Comparing both sides we get,</p>
+<p>\(\alpha  = 4\)</p></li><li><strong>Q11:</strong> <p>\(\because\) \(\left| {f(n)} \right| \le 800\)</p>
+<p>\( \Rightarrow  - 800 \le 2{n^2} - n - 1 \le 800\)</p>
+<p>\( \Rightarrow 2{n^2} - n - 801 \le 0\)</p>
+<p>\(\therefore\) \(n \in \left[ {{{ - \sqrt {6409}  + 1} \over 4},{{\sqrt {6409}  + 1} \over 4}} \right]\) and \(n \in z\)</p>
+<p>\(\therefore\) \(n =  - 19, - 18, - 17,\,..........,\,19,20.\)</p>
+<p>\(\therefore\) \(\sum {\left( {2{x^2} - x - 1} \right) = 2\sum {{x^2} - \sum {x - \sum 1 } } } \).</p>
+<p>\( = 2\,.\,2\,.\,\left( {{1^2} + {2^2}\, + \,...\, + \,{{19}^2}} \right) + 2\,.\,{20^2} - 20 - 40\)</p>
+<p>\( = 10620\)</p></li><li><strong>Q12:</strong> <p>\(\because\) \({a_1},{a_2},{a_3},{a_4}\)</p>
+<p>\(\therefore\) \({a_2} = p - 3d,\,{a_2} = p - d,\,{a_3} = p + d\) and \({a_4} = p + 3d\)</p>
+<p>Where \(d &gt; 0\)</p>
+<p>\(\because\) \(\left| {f({a_i})} \right| = 500\)</p>
+<p>\( \Rightarrow |9{d^2} - q| = 500\)</p>
+<p>and \(|{d^2} - q| = 500\) ..... (i)</p>
+<p>either \(9{d^2} - q = {d^2} - q\)</p>
+<p>\( \Rightarrow d = 0\) not acceptable</p>
+<p>\(\therefore\) \(9{d^2} - q = q - {d^2}\)</p>
+<p>\(\therefore\) \(5{d^2} - q = 0\) ..... (ii)</p>
+<p>Roots of \(f(x) = 0\) are \(p + \sqrt q \) and \(p - \sqrt q \)</p>
+<p>\(\therefore\) absolute difference between roots \( = \left| {2\sqrt q } \right| = 50\)</p></li><li><strong>Q13:</strong> <p>\(f(1) = a + b + c = 3\) ..... (i)</p>
+<p>\(f(3) = 9a + 3b + c = 4\) .... (ii)</p>
+<p>\(f(0) + f(1) + f( - 2) + f(3) = 14\)</p>
+<p>OR \(c + 3 + (4a - 2b + c) + 4 = 14\)</p>
+<p>OR \(4a - 2b + 2c = 7\) ..... (iii)</p>
+<p>From (i) and (ii) \(8a + 2b = 1\) ..... (iv)</p>
+<p>From (iii) \( - (2) \times \) (i)</p>
+<p>\( \Rightarrow 2a - 4b = 1\) ..... (v)</p>
+<p>From (iv) and (v) \(a = {1 \over 6},\,b = {{ - 1} \over 6}\) and \(c = 3\)</p>
+<p>\(f( - 2) = 4a - 2b + c\)</p>
+<p>\( = {4 \over 6} + {2 \over 6} + 3 = 4\)</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

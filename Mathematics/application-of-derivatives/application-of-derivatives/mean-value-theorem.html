@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>application-of-derivatives</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>application-of-derivatives</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5">Let for a differentiable function \(f:(0, \infty) \rightarrow \mathbf{R}, f(x)-f(y) \geqslant \log _{\mathrm{e}}\left(\frac{x}{y}\right)+x-y, \forall x, y \in(0, \infty)\). Then \(\sum\limits_{n=1}^{20} f^{\prime}\left(\frac{1}{n^2}\right)\) is equal to ____________.</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(f:[2,4] \rightarrow \mathbb{R}\) be a differentiable function such that \(\left(x \log _{e} x\right) f^{\prime}(x)+\left(\log _{e} x\right) f(x)+f(x) \geq 1, x \in[2,4]\) with \(f(2)=\frac{1}{2}\) and \(f(4)=\frac{1}{4}\).</p>
+<p>Consider the following two statements :</p>
+<p>(A) : \(f(x) \leq 1\), for all \(x \in[2,4]\)</p>
+<p>(B) : \(f(x) \geq \frac{1}{8}\), for all \(x \in[2,4]\)</p>
+<p>Then,</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">Neither statement (A) nor statement (B) is true</li>
+<li class="c8">Only statement (A) is true</li>
+<li class="c8">Only statement (B) is true</li>
+<li class="c8">Both the statements \[(\mathrm{A})\] and (B) are true</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>+1</strong></li><li>Q2: <strong>D</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp; f(x)-f(y) \geq \ln x-\ln y+x-y \\
+&amp; \frac{f(x)-f(y)}{x-y} \geq \frac{\ln x-\ln y}{x-y}+1
+\end{aligned}\)</p>
+<p>Let \(x&gt;y\)</p>
+<p>\(\lim _\limits{y \rightarrow x} f^{\prime}\left(x^{-}\right) \geq \frac{1}{x}+1\quad\text{.... (1)}\)</p>
+<p>Let \(x&lt; y\)</p>
+<p>\(\lim _\limits{y \rightarrow x} f^{\prime}\left(x^{+}\right) \leq \frac{1}{x}+1 \quad\text{.... (2)}\)</p>
+<p>\(\begin{aligned}
+&amp; \mathrm{f}^1\left(\mathrm{x}^{-}\right)=\mathrm{f}^1\left(\mathrm{x}^{+}\right) \\
+&amp; \mathrm{f}^1(\mathrm{x})=\frac{1}{\mathrm{x}}+1 \\
+&amp; \mathrm{f}^{\prime}\left(\frac{1}{\mathrm{x}^2}\right)=\mathrm{x}^2+1
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \sum_{x=1}^{20}\left(x^2+1\right)=\sum_{x-1}^{20} x^2+20 \\
+&amp; =\frac{20 \times 21 \times 41}{6}+20 \\
+&amp; =2890
+\end{aligned}\)</p></li><li><strong>Q2:</strong> Given, \(\left(x \log _{e} x\right) f^{\prime}(x)+\left(\log _{e} x\right) f(x)+f(x) \geq 1, x \in[2,4]\)
+<br/><br/>\(
+
+\left(x\log _e x\right) f^{\prime}(x)+f(x)\left[\log _e x+1\right] \geq 1\)
+<br/><br/>\( \Rightarrow \) \(
+\frac{d}{d x}\left[x \log _e x f(x)\right] \geq 1\)
+<br/><br/>\(
+\begin{aligned}
+&amp;\Rightarrow  \frac{d}{d x}\left[x \log _e x f(x)-x\right] \geq 0 \quad\left[\because \frac{d}{d x}(x)=1\right] \\\\
+&amp; \forall x \in[2,4]
+\end{aligned}
+\)
+<br/><br/>Let \(g(x)=x \log _e x f(x)-x\)
+<br/><br/>As \(g(x) \geq 0, \forall x \in[2,4], 
+g(x)\) is an increasing function in \([2,4]\)
+<br/><br/>\(
+\begin{aligned}
+g(2) &amp; =2 \log _e 2 f(2)-2 \\\\
+&amp; =\log _e 2-2 \quad\left[\because f(x)=\frac{1}{2}\right]
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; g(4)=4 \log _e 4 f(4)-4=\log _e 4-4 \\\\
+
+&amp;=2\left(\log _e 2-2\right)\\\\
+&amp; {\left[\therefore f(4)=\frac{1}{4}\right] }
+\end{aligned}
+\)
+<br/><br/>As, \(g(x)\) is an increasing function,
+<br/><br/>\(
+\begin{aligned}
+&amp; g(2) \leq g(x) \leq g(4) \\\\
+&amp; \log _e 2-2 \leq g(x) \leq 2\left(\log _e 2-2\right) \\\\
+&amp; \log _e 2-2 \leq x \log _e x f(x)-x \leq 2\left(\log _e 2-2\right)
+\end{aligned}
+\)
+<br/><br/>\(
+\frac{\log _e 2-2+x}{x \log _e x} \leq f(x) \leq \frac{2\left(\log _e 2-2\right)+x}{x \log _e x}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \text {Now for } x \in[2,4] \\\\
+&amp; \begin{aligned}
+\frac{\log _e 2-2+x}{x \log _e x} &amp; \leq \frac{2\left(\log _e 2-2\right)+e^2}{2 \log _e 2} =1-\frac{1}{\log _e 2}&lt;1
+\end{aligned}
+\end{aligned}
+\)
+<br/><br/>\(
+\Rightarrow \mathrm{f}(\mathrm{x}) \leq 1 \text { for } \mathrm{x} \in[2,4]
+\)
+<br/><br/>\(
+\text { Also for } \mathrm{x} \in[2,4] \text { : }
+\)
+<br/><br/>Now, 
+<br/><br/>\(
+\begin{aligned}
+\frac{2\left(\log _e 2-2\right)+2}{2 \log _e 2} &amp; \geq \frac{\log _e 2-2+4}{4 \log _e 4} =\frac{1}{8}+\frac{1}{2 \log _e 2}&gt;\frac{1}{8}
+\end{aligned}
+\)
+<br/><br/>\(
+\therefore f(x) \geq \frac{1}{8}, \forall x \in[2,4]
+\)
+<br/><br/>Hence, both statements \(A\) and \(B\) are true.
+<br/><br/><b>Note :</b> LMVT on \((\mathrm{yx}(\ln \mathrm{x}))\) not satisfied.
+<br/><br/>Hence no such function exists.
+<br/><br/>Therefore it should be bonus.</li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

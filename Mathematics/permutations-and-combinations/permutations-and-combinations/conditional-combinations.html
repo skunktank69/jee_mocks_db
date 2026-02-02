@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>permutations-and-combinations</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>permutations-and-combinations</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \( P \) be the set of seven digit numbers with sum of their digits equal to 11. If the numbers in \( P \) are formed by using the digits 1, 2 and 3 only, then the number of elements in the set \( P \) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>164</p></li>
+<li class="c8"><p>158</p></li>
+<li class="c8"><p>161</p></li>
+<li class="c8"><p>173</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The number of integers, between 100 and 1000 having the sum of their digits equals to 14 , is __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Number of integral solutions to the equation \(x+y+z=21\), where \(x \ge 1,y\ge3,z\ge4\), is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>The number of square matrices of order 5 with entries from the set {0, 1}, such that the sum of all the elements in each row is 1 and the sum of all the elements in each column is also 1, is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">125</li>
+<li class="c8">150</li>
+<li class="c8">225</li>
+<li class="c8">120</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>The number of 9 digit numbers, that can be formed using all the digits of the number 123412341 so that the even digits occupy only even places, is ______________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>The number of seven digit positive integers formed using the digits \(1,2,3\) and \(4\) only and sum of the digits equal to \(12\) is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>The number of triplets \((x, \mathrm{y}, \mathrm{z})\), where \(x, \mathrm{y}, \mathrm{z}\) are distinct non negative integers satisfying \(x+y+z=15\), is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">136</li>
+<li class="c8">80</li>
+<li class="c8">92</li>
+<li class="c8">114</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>Let A be a matrix of order 2 \(\times\) 2, whose entries are from the set {0, 1, 2, 3, 4, 5}. If the sum of all the entries of A is a prime number p, 2 &lt; p &lt; 8, then the number of such matrices A is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>Let A be a 3 \(\times\) 3 matrix having entries from the set {\(-\)1, 0, 1}. The number of all such matrices A having sum of all the entries equal to 5, is ___________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>C</strong></li><li>Q2: <strong>3</strong></li><li>Q3: <strong>21</strong></li><li>Q4: <strong>D</strong></li><li>Q5: <strong>2</strong></li><li>Q6: <strong>1</strong></li><li>Q7: <strong>D</strong></li><li>Q8: <strong>2</strong></li><li>Q9: <strong>1</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>(i) number of numbers created using</p>
+<p>\(1111133=\frac{7!}{5!2!} \Rightarrow 21\)</p>
+<p>(ii) number of numbers created using</p>
+<p>\(1111223=\frac{7!}{4!2!} \Rightarrow 105\)</p>
+<p>(iii) number of numbers created using</p>
+<p>\(\begin{aligned}
+&amp; 1112222=\frac{7!}{4!3!} \Rightarrow 35 \\
+&amp; \text { Total }=161
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>Number in this range will be 3-digit number.</p>
+<p>\(N=\overline{a b c}\) such that \(a+b+c=14\)</p>
+<p>Also, \(a \geq 1, \quad a, b, c \in\{0,1,2, \ldots 9\}\)</p>
+<p>Case I</p>
+<p>All 3-digit same</p>
+<p>\(\Rightarrow 3 a=14\) not possible</p>
+<p>Case II</p>
+<p>Exactly 2 digit same:</p>
+<p>\(\Rightarrow 2 a+c=14\)</p>
+<p>\(\begin{aligned}
+&amp; (a, c) \in\{(3,8),(4,6),(5,4),(6,2),(7,0)\} \\
+&amp; \Rightarrow\left(\frac{3!}{2!}\right) \text { ways } \Rightarrow 5 \times 3-1 \\
+&amp; =15-1=14
+\end{aligned}\)</p>
+<p>Case III</p>
+<p>All digits are distinct</p>
+<p>\(a+b+c=14\)</p>
+<p>without losing generality \(a &gt; b &gt; c\)</p>
+<p>\(\begin{aligned}
+&amp; (a, b, c) \in\left\{\begin{array}{l}
+(9,5,0),(9,4,1),(9,3,2) \\
+(8,6,0),(8,5,1),(8,4,2) \\
+(7,6,1),(7,5,2),(7,4,3) \\
+(6,5,3)
+\end{array}\right. \\
+&amp; \Rightarrow 8 \times 3!+2(3!-2!)=48+8=56 \\
+&amp; =0+14+56=70
+\end{aligned}\)</p></li><li><strong>Q3:</strong> \(\begin{aligned} &amp; x+y+z=21 \\\\ &amp; \because \quad x \geq 1, y \geq 3, y \geq 4 \\\\ &amp; \therefore \quad x_1+y_1+z_1=13 \\\\ &amp; \text { Number of solutions }={ }^{13+3-1} C_{3-1} \\\\ &amp; ={ }^{15} C_2=\frac{15 \times 14}{2}=7 \times 15 \\\\ &amp; =105\end{aligned}\)</li><li><strong>Q4:</strong> <p><img alt="JEE Main 2023 (Online) 24th January Evening Shift Mathematics - Permutations and Combinations Question 66 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1le5h0vkb/6ab5456d-64a1-4237-89f3-e400627057ab/241652a0-ad13-11ed-8a8c-4d67f5492755/file-1le5h0vkc.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1le5h0vkb/6ab5456d-64a1-4237-89f3-e400627057ab/241652a0-ad13-11ed-8a8c-4d67f5492755/file-1le5h0vkc.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(\because\) In every row and every column there would be exactly one 1 and four zeroes.
+<br/><br/>
+Number of matrices \(={ }^{5} C_{1} \cdot{ }^{4} C_{1} \cdot{ }^{3} C_{1} \cdot{ }^{2} C_{1} \cdot{ }^{1} C_{1}=\) 120</p></li><li><strong>Q5:</strong> <p>Here, even digits are 2 and 4.</p>
+<p>Number of digit "2" presents = 2</p>
+<p>Number of digit "4" presents = 2</p>
+<p>\(\therefore\) Total even digits = 4</p>
+<p><img alt="JEE Main 2023 (Online) 24th January Morning Shift Mathematics - Permutations and Combinations Question 65 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1le2pxjq6/e260bc6f-c1c6-485e-abbc-aa68e85a10dd/9fbb03e0-ab8f-11ed-a599-53c07234da0d/file-1le2pxjq7.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1le2pxjq6/e260bc6f-c1c6-485e-abbc-aa68e85a10dd/9fbb03e0-ab8f-11ed-a599-53c07234da0d/file-1le2pxjq7.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(\therefore\) Total 4 even places presents.</p>
+<p>Number of ways to put those 4 digits in those 4 places \( = {{{}^4{C_4} \times 4!} \over {2!2!}} = {{4!} \over {2!2!}}\)</p>
+<p>Now, remaining 5 digits (three 1 and two 3) can be put in those 5 places in \( = {{{}^5{C_5} \times 5!} \over {3!2!}} = {{5!} \over {3!2!}}\) ways.</p>
+<p>\(\therefore\) Total possible 9 digit numbers</p>
+<p>\( = {{4!} \over {2!2!}} \times {{5!} \over {3!2!}} = 60\)</p></li><li><strong>Q6:</strong> \(
+x_1+x_2+x_3+\ldots x_7=12
+\). This equation represents the number of ways to distribute 12 identical items (the sum of the digits) into 7 distinct boxes (the seven digits of the number), where each box can contain one of the numbers 1, 2, 3, or 4.
+<br><br>Number of solutions
+<br/><br/>\(
+\begin{aligned}
+&amp; =\text { Coefficient of } x^{12} \text { in }\left(x^1+x^2+x^3+x^4\right)^7 \\\\
+&amp; =\text { Coefficient of } x^5 \text { in }\left(1+x+x^2+x^3\right)^7 \\\\
+&amp; =\text { Coefficient of } x^5 \text { in }\left(1-x^4\right)^7(1-x)^{-7} \\\\
+&amp; =\text { Coefficient of } x^5 \text { in }\left(1-7 x^4\right)(1-x)^{-7} \\\\
+&amp; =\text { Coefficient of } x^5 \text { in }\left(1-7 x^4\right) \sum_{r=0}^{\infty}{ }^{7+r-1} C_r \cdot x^r \\\\
+&amp; ={ }^{11} C_5-7 \times{ }^7 C_1 \\\\
+&amp; =462-49=413
+\end{aligned}
+\)</br></br></li><li><strong>Q7:</strong> We have, \(x+y+z=15\)
+<br/><br/>\(
+\begin{aligned}
+\text { Total number of solution } &amp; ={ }^{15+3-1} C_{3-1} \\\\
+&amp; ={ }^{17} C_2=\frac{17 \times 16}{1 \times 2}=136
+\end{aligned}
+\)
+<br/><br/>Now, we need to exclude the solutions where two of \((x, y, z)\) are the same.
+
+<br/><br/>1) For the case \(x = y \neq z\) :
+<br/><br/>\( 2x + z = 15 \)
+<br/><br/>The solutions are :
+<br/><br/>\( x = 0, z = 15 \)
+<br/><br/>\( x = 1, z = 13 \)
+<br/><br/>\( x = 2, z = 11 \)
+<br/><br/>\( x = 3, z = 9 \)
+<br/><br/>\( x = 4, z = 7 \)
+<br/><br/>\( x = 5, z = 5 \) (Not valid as all are the same)
+<br/><br/>\( x = 6, z = 3 \)
+<br/><br/>\( x = 7, z = 1 \)
+<br/><br/>Out of these, 7 are valid.
+
+<br/><br/>Similarly, for the cases \(y = z \neq x\) and \(z = x \neq y\), there will be 7 valid solutions for each, so a total of \( 7 \times 3 = 21 \) solutions where two of the variables are equal.
+
+<br/><br/>Thus, the number of triplets where all are distinct is :
+<br/><br/>\( 136 - 21 = 115 \)
+<br/><br/>There is one solution in which \(\mathrm{x}=\mathrm{y}=\mathrm{z}\)
+<br/><br/>Required answer \(=136-21-1=114\)</li><li><strong>Q8:</strong> <p>\(\because\) Sum of all entries of matrix A must be prime p such that 2 &lt; p &lt; 8 then sum of entries may be 3, 5 or 7.</p>
+<p>If sum is 3 then possible entries are (0, 0, 0, 3), (0, 0, 1, 2) or (0, 1, 1, 1).</p>
+<p>\(\therefore\) Total number of matrices = 4  + 4 + 12 = 20</p>
+<p>If sum of 5 then possible entries are</p>
+<p>(0, 0, 0, 5), (0, 0, 1, 4), (0, 0, 2, 3), (0, 1, 1, 3), (0, 1, 2, 2) and (1, 1, 1, 2).</p>
+<p>\(\therefore\) Total number of matrices = 4 + 12 + 12 + 12 + 12 + 4 = 56</p>
+<p>If sum is 7 then possible entries are</p>
+<p>(0, 0, 2, 5), (0, 0, 3, 4), (0, 1, 1, 5), (0, 3, 3, 1), (0, 2, 2, 3), (1, 1, 1, 4), (1, 2, 2, 2), (1, 1, 2, 3) and (0, 1, 2, 4).</p>
+<p>Total number of matrices with sum 7 = 104</p>
+<p>\(\therefore\) Total number of required matrices</p>
+<p>= 20 + 56 + 104</p>
+<p>= 180</p></li><li><strong>Q9:</strong> <b>Case-I</b>: <br/><br/>\(\begin{aligned} 1 &amp; \rightarrow 7 \text { times } \\\\ \text { and }-1 &amp; \rightarrow 2 \text { times } \end{aligned}\)<br/><br/>
+number of possible marrix \(=\frac{9 !}{7 ! 2 !}=36\)<br/><br/>
+<b>Case-II</b>: <br/><br/>\(1 \rightarrow 6\) times,<br/><br/>
+\(-1 \rightarrow 1\) times<br/><br/>
+and \(0 \rightarrow 2\) times<br/><br/>
+number of possible marrix \(=\frac{9 !}{6 ! 2 !}=252\)<br/><br/>
+<b>Case-III</b>: <br/><br/>\( 1 \rightarrow 5\) times,<br/><br/>
+and \(0 \rightarrow 4\) times<br/><br/>
+number of possible marrix \(=\frac{9 !}{5 ! 4 !}=126\)<br/><br/>
+Hence total number of all such matrix \(A\) \(=414\)</li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>From all the English alphabets, five letters are chosen and are arranged in alphabetical order. The total number of ways, in which the middle letter is ' M ', is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">6084
+</li>
+<li class="c8">5148</li>
+<li class="c8">14950
+</li>
+<li class="c8">4356</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The number of ways in which 21 identical apples can be distributed among three children such that each child gets at least 2 apples, is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">130</li>
+<li class="c8">136</li>
+<li class="c8">142</li>
+<li class="c8">406</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>The number of ways five alphabets can be chosen from the alphabets of the word MATHEMATICS, where the chosen alphabets are not necessarily distinct, is equal to:</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">179</li>
+<li class="c8">177</li>
+<li class="c8">175</li>
+<li class="c8">181</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Suppose Anil's mother wants to give 5 whole fruits to Anil from a basket of 7 red apples, 5 white apples and 8 oranges. If in the selected 5 fruits, at least 2 oranges, at least one red apple and at least one white apple must be given, then the number of ways, Anil's mother can offer 5 fruits to Anil is ____________</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>A boy needs to select five courses from 12 available courses, out of which 5 courses are language courses. If he can choose at most two language courses, then the number of ways he can choose five courses is __________</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>The number of ways of giving 20 distinct oranges to 3 children such that each child gets at least one orange is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>The number of ways to distribute 30 identical candies among four children C<sub>1</sub>, C<sub>2</sub>, C<sub>3</sub> and C<sub>4</sub> so that C<sub>2</sub> receives at least 4 and at most 7 candies, C<sub>3</sub> receives at least 2 and at most 6 candies, is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">205</li>
+<li class="c8">615</li>
+<li class="c8">510</li>
+<li class="c8">430</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>There are ten boys B<sub>1</sub>, B<sub>2</sub>, ......., B<sub>10</sub> and five girls G<sub>1</sub>, G<sub>2</sub>, ........, G<sub>5</sub> in a class. Then the number of ways of forming a group consisting of three boys and three girls, if both B<sub>1</sub> and B<sub>2</sub> together should not be the members of a group, is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>In an examination, there are 5 multiple choice questions with 3 choices, out of which exactly one is correct. There are 3 marks for each correct answer, \(-\)2 marks for each wrong answer and 0 mark if the question is not attempted. Then, the number of ways a student appearing in the examination gets 5 marks is ____________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>B</strong></li><li>Q2: <strong>B</strong></li><li>Q3: <strong>A</strong></li><li>Q4: <strong>8</strong></li><li>Q5: <strong>12</strong></li><li>Q6: <strong>3</strong></li><li>Q7: <strong>D</strong></li><li>Q8: <strong>1</strong></li><li>Q9: <strong>3</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>First, note that we are choosing <strong>5 distinct letters</strong> (in strictly increasing alphabetical order) such that the <strong>middle (third) letter is ‘M’</strong>. Symbolically, if we denote the chosen letters as:</p>
+<p>\( L_1 &lt; L_2 &lt; L_3 &lt; L_4 &lt; L_5, \)</p>
+<p>we want \(L_3 = \text{M}\). The English alphabet has 26 letters, and M is the \(13^\text{th}\).</p>
+<hr/>
+<h3>Step 1: Letters before M</h3>
+<p><p>The letters before M are \(\{A, B, C, \ldots, L\}\).  </p></p>
+<p><p>There are <strong>12</strong> letters here (\(A\) through \(L\)).  </p></p>
+<p><p>We need to pick <strong>2</strong> of these 12 letters to occupy \(L_1\) and \(L_2\).  </p></p>
+<p><p>The number of ways to choose 2 letters out of 12 is \({ }^{12} \mathrm{C}_2\).</p></p>
+<h3>Step 2: Letters after M</h3>
+<p><p>The letters after M are \(\{N, O, P, \ldots, Z\}\).  </p></p>
+<p><p>There are <strong>13</strong> letters here (\(N\) through \(Z\)).  </p></p>
+<p><p>We need to pick <strong>2</strong> of these 13 letters to occupy \(L_4\) and \(L_5\).  </p></p>
+<p><p>The number of ways to choose 2 letters out of 13 is \({ }^{13} \mathrm{C}_2\).</p></p>
+<h3>Step 3: Multiply the choices</h3>
+<p>Since these choices are independent (picking the two letters before M and two letters after M), the total number of ways is:</p>
+<p>\( { }^{12} \mathrm{C}_2 \;\times\;{ }^{13} \mathrm{C}_2 \)</p>
+<p>Calculate each combination:</p>
+<p>\( { }^{12} \mathrm{C}_2 = \frac{12 \times 11}{2} = 66,  \quad { }^{13} \mathrm{C}_2 = \frac{13 \times 12}{2} = 78. \)</p>
+<p>So,</p>
+<p>\( { }^{12} \mathrm{C}_2 \times { }^{13} \mathrm{C}_2 = 66 \times 78 = 5148. \)</p>
+<hr/>
+<h2><strong>Answer: 5148</strong> (Option B)</h2></li><li><strong>Q2:</strong> <p>To solve this problem, we can use a classic combinatorics method known as "stars and bars" (or "balls and bins"), which is a way to solve problems involving distributing identical items into distinct groups with certain restrictions.</p>
+<p>First, since each child must get at least 2 apples, let's give 2 apples to each child right away. That accounts for 6 apples (2 apples for each of the 3 children). Now, we have 21 - 6 = 15 apples left to distribute freely among the three children.</p>
+<p>The "stars and bars" technique involves representing the apples as stars (*) and the divisions between children as bars (|). For example, if we had 5 apples to distribute among three children, one possible distribution could be represented as **|*|**. This means the first child gets 2 apples, the second child gets 1 apple, and the third child gets 2 apples.</p>
+<p>In our case, we need to distribute 15 apples (stars) among the three children with 2 bars to create the partitions. We arrange 15 stars and 2 bars in a row, where the arrangement of stars and bars corresponds to a distribution of the apples.</p>
+<p>The total number of objects we're arranging is 15 apples + 2 bars = 17 objects. We need to choose 2 positions out of these 17 to place the bars. The remaining positions will be occupied by the stars (apples).</p>
+<p>The number of ways to choose 2 positions out of 17 for the bars is given by the binomial coefficient:</p>
+
+\(
+\text{Number of ways} = \binom{17}{2} = \frac{17!}{2!(17-2)!} = \frac{17 \times 16}{2 \times 1} = 136
+\)
+
+<p>Thus, there are 136 ways to distribute the 21 identical apples among three children such that each child gets at least 2 apples. The correct answer is Option B: 136.</p></li><li><strong>Q3:</strong> <p>\(\begin{aligned}
+&amp; 2 M \\
+&amp; 2 A \\
+&amp; 2 T \\
+&amp; H, E, I, C, S
+\end{aligned}\)</p>
+<p>Case-I</p>
+<p>2 Alike 2 Alike 1 Diff</p>
+<p>\({ }^3 C_2 \times{ }^6 C_1=18\)</p>
+<p>Case-II</p>
+<p>2 Alike + 3 Diff</p>
+<p>\({ }^3 C_1 \times{ }^7 C_3=105\)</p>
+<p>Case-III</p>
+<p>All different</p>
+<p>\({ }^8 C_5=56\)</p>
+<p>Total ways \(=179\)</p></li><li><strong>Q4:</strong> Total 8 oranges, 5 white apple and 7 red apple. 5 fruits needs to be selected.
+<br/><br/>
+<b>Case I</b>: 3 orange \(+1\) red apple \(+1\) white apple
+<br/><br/>
+\(
+={ }^{8} C_{3} \times{ }^{7} C_{1} \times{ }^{5} C_{1}=1960
+\)
+<br/><br/>
+<b>Case II</b> : 2 oranges \(+2\) red apples \(+1\) white apple.
+<br/><br/>
+\(
+={ }^{8} C_{2} \times{ }^{7} C_{2} \times{ }^{5} C_{1}=2940
+\)
+<br/><br/>
+<b>Case III</b> : 2 oranges \(+1\) red apples \(+2\) white apple.
+<br/><br/>
+\(
+\begin{aligned}
+&amp; ={ }^{8} C_{2} \times{ }^{7} C_{1} \times{ }^{5} C_{2} \\\\
+&amp; =1960 \\\\
+\text { Total } &amp; =1960+2940+1960 \\\\
+&amp; =6860
+\end{aligned}
+\)</li><li><strong>Q5:</strong> <p>Among 12 courses, 5 courses are of language.</p>
+<p>\(\therefore\) Remaining 7 are different courses.</p>
+<p>Now, number of ways to select 5 courses where at most 2 language courses present.</p>
+<p>
+<table class="c11" style="undefined;table-layout: fixed; width: 448px">
+<colgroup>
+<col style="width: 106px"/>
+<col style="width: 87px"/>
+<col style="width: 86px"/>
+<col style="width: 169px"/>
+</colgroup>
+<thead>
+<tr>
+<th class="c12"></th>
+<th class="c12">Language</th>
+<th class="c12">Different</th>
+<th class="c12">Number of ways</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c13">Case 1</td>
+<td class="c13">0</td>
+<td class="c13">5</td>
+<td class="c13">\({}^5{C_0} \times {}^7{C_5}\)</td>
+</tr>
+<tr>
+<td class="c13">Case 2</td>
+<td class="c13">1</td>
+<td class="c13">4</td>
+<td class="c13">\({}^5{C_1} \times {}^7{C_4}\)</td>
+</tr>
+<tr>
+<td class="c13">Case 3</td>
+<td class="c13">2</td>
+<td class="c13">3</td>
+<td class="c13">\({}^5{C_2} \times {}^7{C_3}\)</td>
+</tr>
+</tbody>
+</table></p>
+<p>\(\therefore\) Total number of ways</p>
+<p>\( = {}^5{C_0} \times {}^7{C_5} + {}^5{C_1} \times {}^7{C_4} + {}^5{C_2} \times {}^7{C_3}\)</p>
+<p>\( = 546\)</p></li><li><strong>Q6:</strong> <li><p><strong>Total ways without any restrictions :</strong>
+<br/><br/>There are \(3^{20}\) ways to distribute the oranges to the 3 children.</p>
+</li>
+<li><p><strong>Number of ways one child receives no orange :</strong>
+<br/><br/>Choose 1 child out of the 3 to not receive any orange in \({ }^3 C_1 = 3\) ways. Distribute 20 oranges to the remaining 2 children in \(2^{20}\) ways. However, we've included the scenarios where the 2 children each get all the oranges. So, we subtract the 2 ways where one of the two remaining children gets all the oranges.
+\( { }^3 C_1(2^{20} - 2) \)</p>
+</li>
+<li><p><strong>Number of ways two children receive no orange :</strong>
+<br/><br/>Choose 2 children out of the 3 to not receive any oranges in \({ }^3 C_2 = 3\) ways. The third child will receive all 20 oranges in \(1^{20} = 1\) way.
+\( { }^3 C_2 \times 1^{20} = 3 \)</p>
+</li>
+</li></ol>
+<br/>Number of ways <br/><br/>\(=\) Total \(-(\) One child receive no orange + two child receive no orange)
+<br/><br/>\(
+\begin{aligned}
+&amp; =3^{20}-\left({ }^3 C_1\left(2^{20}-2\right)+{ }^3 C_2 1^{20}\right) \\\\
+&amp; =3483638676
+\end{aligned}
+\)<li><strong>Q7:</strong> <p>By multinomial theorem, no. of ways to distribute 30 identical candies among four children C<sub>1</sub>, C<sub>2</sub> and C<sub>3</sub>, C<sub>4</sub></p>
+<p>= Coefficient of x<sup>30</sup> in (x<sup>4</sup> + x<sup>5</sup> + .... + x<sup>7</sup>) (x<sup>2</sup> + x<sup>3</sup> + .... + x<sup>6</sup>) (1 + x + x<sup>2</sup> ....)<sup>2</sup></p>
+<p>= Coefficient of x<sup>24</sup> in \({{(1 - {x^4})} \over {1 - x}}{{(1 - {x^5})} \over {1 - x}}{{{{(1 - {x^{31}})}^2}} \over {{{(1 - x)}^2}}}\)</p>
+<p>= Coefficient of x<sup>24</sup> in \((1 - {x^4} - {x^5} + {x^9}){(1 - x)^{ - 4}}\)</p>
+<p>\( = {}^{27}{C_{24}} - {}^{23}{C_{20}} - {}^{22}{C_{19}} + {}^{18}{C_{15}} = 430\)</p></li><li><strong>Q8:</strong> <p>Number of ways when B<sub>1</sub> and B<sub>2</sub> are not together</p>
+<p>= Total number of ways of selecting 3 boys \(-\) B<sub>1</sub> and B<sub>2</sub> are together</p>
+<p>= <sup>10</sup>C<sub>3</sub> \(-\) <sup>8</sup>C<sub>1</sub></p>
+<p>= \({{10\,.\,9\,.\,8} \over {1\,.\,2\,.\,3}} - 8\)</p>
+<p>= 112</p>
+<p>Number of ways to select 3 girls = <sup>5</sup>C<sub>3</sub> = 10</p>
+<p>\(\therefore\) Total number of ways = 112 \(\times\) 10 = 1120</p></li><li><strong>Q9:</strong> Let student marks \(x\) correct answers and \(y\) incorrect. So
+<br/><br/>
+\(3 x-2 y=5\) and \(x+y \leq 5\) where \(x, y \in \mathrm{W}\)
+<br/><br/>
+Only possible solution is \((x, y)=(3,2)\)
+<br/><br/>
+Students can mark correct answers by only one choice but for an incorrect answer, there are two choices. So total number of ways of scoring 5 marks \(={ }^{5} C_{3}(1)^{3} \cdot(2)^{2}=40\)</li>
+
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Group A consists of 7 boys and 3 girls, while group B consists of 6 boys and 5 girls. The number of ways, 4 boys and 4 girls can be invited for a picnic if 5 of them must be from group \(A\) and the remaining 3 from group \(B\), is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">8925
+</li>
+<li class="c8">9100
+</li>
+<li class="c8">8575
+</li>
+<li class="c8">8750</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>From a group of 7 batsmen and 6 bowlers, 10 players are to be chosen for a team, which should include atleast 4 batsmen and atleast 4 bowlers. One batsmen and one bowler who are captain and vice-captain respectively of the team should be included. Then the total number of ways such a selection can be made, is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">145</li>
+<li class="c8">165</li>
+<li class="c8">155</li>
+<li class="c8">135</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5">The number of ways of selecting two numbers \(a\) and \(b, a \in\{2,4,6, \ldots ., 100\}\) and \(b \in\{1,3,5, \ldots . ., 99\}\) such that 2 is the remainder when \(a+b\) is divided by 23 is :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">186</li>
+<li class="c8">54</li>
+<li class="c8">108</li>
+<li class="c8">268</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>The number of 3 digit numbers, that are divisible by either 3 or 4 but not divisible by 48, is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">400</li>
+<li class="c8">472</li>
+<li class="c8">507</li>
+<li class="c8">432</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>The number of ways, 16 identical cubes, of which 11 are blue and rest are red, can be placed in a row so that between any two red cubes there should be at least 2 blue cubes, is _____________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>C</strong></li><li>Q3: <strong>C</strong></li><li>Q4: <strong>D</strong></li><li>Q5: <strong>5</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p><img alt="JEE Main 2025 (Online) 24th January Evening Shift Mathematics - Permutations and Combinations Question 11 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m7c21asa/a3efa841-34d8-481b-a497-aa3076bf21fd/497163a0-eed4-11ef-81d9-610d814056f7/file-jaoe38c1m7c21asb.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7c21asa/a3efa841-34d8-481b-a497-aa3076bf21fd/497163a0-eed4-11ef-81d9-610d814056f7/file-jaoe38c1m7c21asb.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{array}{ll}
+\text { C-I } &amp; (3 \mathrm{G} \&amp; 2 \mathrm{~B}) \&amp;(1 \mathrm{G} \&amp; 2 \mathrm{~B}) \\
+\text { C-II } &amp; (2 \mathrm{G} \&amp; 3 \mathrm{~B}) \&amp;(2 \mathrm{G} \&amp; 1 \mathrm{~B}) \\
+\text { C-III } &amp; (1 \mathrm{G} \&amp; 4 \mathrm{~B}) \&amp;(3 \mathrm{G} \&amp; 0 \mathrm{~B})
+\end{array}\)</p>
+<p>\(\begin{aligned}
+&amp; \text { Total }=\text { C-I }+ \text { C-II }+ \text { C-III } \\
+&amp; ={ }^7 \mathrm{C}_2 \cdot{ }^3 \mathrm{C}_3 \cdot{ }^6 \mathrm{C}_2 \cdot{ }^5 \mathrm{C}_1+{ }^7 \mathrm{C}_3 \cdot{ }^3 \mathrm{C}_2 \cdot{ }^6 \mathrm{C}_1{ }^5 \mathrm{C}_2+{ }^7 \mathrm{C}_4 \cdot{ }^3 \mathrm{C}_1 \cdot{ }^6 \mathrm{C}_0 \cdot{ }^5 \mathrm{C}_3 \\
+&amp; =8925
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>1 Captain, 1 vice-captain are already present</p>
+<p>\(\Rightarrow\) We need to select 8 players such that atleast 3 batsman and bowler must be there</p>
+<p>
+<table class="c11" style="undefined;table-layout: fixed; width: 506px"><colgroup>
+<col style="width: 165px"/>
+<col style="width: 129px"/>
+<col style="width: 212px"/>
+</colgroup>
+<thead>
+<tr>
+<th class="c12">Batsman</th>
+<th class="c12">Bowler</th>
+<th class="c12">Number of ways</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="c13">3</td>
+<td class="c13">5</td>
+<td class="c13">\({ }^6 C_3 \cdot{ }^5 C_5=20\)</td>
+</tr>
+<tr>
+<td class="c13">4</td>
+<td class="c13">4</td>
+<td class="c13">\({ }^6 C_4 \cdot{ }^5 C_4=75\)</td>
+</tr>
+<tr>
+<td class="c13">5</td>
+<td class="c13">3</td>
+<td class="c13">\({ }^6 C_5 \cdot{ }^5 C_3=60\)</td>
+</tr>
+</tbody>
+</table></p>
+<p>Total = 155 ways</p></li><li><strong>Q3:</strong> <p>\(a+b=23\lambda+2\)</p>
+<p>\(\lambda=0,1,2,\) ...., but \(\lambda\) cannot be even as \(a+b\) is odd</p>
+<p>\(\lambda=1\) \((a, b)\to12\) pairs</p>
+<p>\(\lambda=3\) \((a,b)\to35\) pairs</p>
+<p>\(\lambda=5\) \((a,b)\to42\) pairs</p>
+<p>\(\lambda=7\) \((a,b)\to19\) pairs</p>
+<p>\(\lambda=9\) \((a,b)\to0\) pairs</p>
+<p>\( \vdots \)</p>
+<p>Total \(=12+35+42+19=108\)</p></li><li><strong>Q4:</strong> <p>Number divisible by 3 = 300</p>
+<p>Number divisible by 4 = 225</p>
+<p>Number divisible by 12 = 75</p>
+<p>Number divisible by 48 = 18</p>
+<p>Total required number = 300 + 225\(-\) 75 \(-\) 18 = 432</p>
+<p>\(\therefore\) Option (1) is correct.</p></li><li><strong>Q5:</strong> First we arrange 5 red cubes in a row and assume
+x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, x<sub>4</sub>, x<sub>5</sub> and x<sub>6</sub> number of blue cubes
+between them<br/><br/>
+<img alt="JEE Main 2022 (Online) 27th June Morning Shift Mathematics - Permutations and Combinations Question 105 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lc3zecxi/95ec386f-1c04-46f9-b1e8-eca213646d74/ff4a6070-84a8-11ed-9e2c-bf48676ab5eb/file-1lc3zecxj.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lc3zecxi/95ec386f-1c04-46f9-b1e8-eca213646d74/ff4a6070-84a8-11ed-9e2c-bf48676ab5eb/file-1lc3zecxj.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/><br/><br/>
+Here, \(x_1+x_2+x_3+x_4+x_5+x_6=11\) and \(x_2, x_3, x_4, x_5 \geq 2\)<br/><br/>
+So \(x_1+x_2+x_3+x_4+x_5+x_6=3\)<br/><br/>
+No. of solutions \(={ }^8 C_5=56\)</li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>differentiation</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>differentiation</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \(y=f(x)=\sin ^{3}\left(\frac{\pi}{3}\left(\cos \left(\frac{\pi}{3 \sqrt{2}}\left(-4 x^{3}+5 x^{2}+1\right)^{\frac{3}{2}}\right)\right)\right)\). Then, at x = 1,</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[2 y^{\prime}+\sqrt{3} \pi^{2} y=0\]</li>
+<li class="c8">\[y^{\prime}+3 \pi^{2} y=0\]</li>
+<li class="c8">\[\sqrt{2} y^{\prime}-3 \pi^{2} y=0\]</li>
+<li class="c8">\[2 y^{\prime}+3 \pi^{2} y=0\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(f(x)=\sum_\limits{k=1}^{10} k x^{k}, x \in \mathbb{R}\). If \(2 f(2)+f^{\prime}(2)=119(2)^{\mathrm{n}}+1\) then \(\mathrm{n}\) is equal to ___________</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let \(f(x)=\frac{\sin x+\cos x-\sqrt{2}}{\sin x-\cos x}, x \in[0, \pi]-\left\{\frac{\pi}{4}\right\}\). Then \(f\left(\frac{7 \pi}{12}\right) f^{\prime \prime}\left(\frac{7 \pi}{12}\right)\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{2}{3 \sqrt{3}}\]</li>
+<li class="c8">\[\frac{2}{9}\]</li>
+<li class="c8">\[\frac{-1}{3 \sqrt{3}}\]</li>
+<li class="c8">\[\frac{-2}{3}\]</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>D</strong></li><li>Q2: <strong>1</strong></li><li>Q3: <strong>B</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> \(f(x)=\sin ^{3}\left(\frac{\pi}{3} \cos \left(\frac{\pi}{3 \sqrt{2}}\left(-4 x^{3}+5 x^{2}+1\right)^{3 / 2}\right)\right)\)
+
+<br/><br/>\(
+\begin{aligned}
+&amp; f^{\prime}(x)=3 \sin ^{2}\left(\frac{\pi}{3} \cos \left(\frac{\pi}{3 \sqrt{2}}\left(-4 x^{3}+5 x^{2}+1\right)^{3 / 2}\right)\right) \\\\
+&amp; \cos \left(\frac{\pi}{3} \cos \left(\frac{\pi}{3 \sqrt{2}}\left(-4 x^{3}+5 x^{2}+1\right)^{3 / 2}\right)\right) \\\\
+&amp; \frac{\pi}{3}\left(-\sin \left(\frac{\pi}{3 \sqrt{2}}\left(-4 x^{3}+5 x^{2}+1\right)^{3 / 2}\right)\right) \\\\
+&amp; \frac{\pi}{3 \sqrt{2}} \frac{3}{2}\left(-4 x^{3}+5 x^{3}+1\right)^{1 / 2}\left(-12 x^{2}+10 x\right)
+\end{aligned}
+\)
+
+<br/><br/>\(f^{\prime}(1)=\frac{3 \pi^{2}}{16}\)
+
+<br/><br/>\(
+\begin{aligned}
+&amp; f(1)=\sin ^{3}\left(\frac{\pi}{3} \cos \left(\frac{\pi}{3 \sqrt{2}} 2 \sqrt{2}\right)\right) \\\\
+&amp;=\sin ^{3}\left(-\frac{\pi}{6}\right)=\frac{-1}{8} \\\\
+&amp; \therefore 2 f^{\prime}(1)+3 \pi^{2} f(1)=0
+\end{aligned}
+\)</li><li><strong>Q2:</strong> Given, \(f(x)=\sum_\limits{k=1}^{10} k x^{k}\)
+<br/><br/>\(
+\begin{aligned}
+&amp; f(x)=x+2 x^2+\ldots \ldots \ldots+10 x^{10} \\\\
+&amp; f(x) . x=x^2+2 x^3+\ldots \ldots \ldots+9 x^{10}+10 x^{11} \\\\
+&amp; f(x)(1-x)=x+x^2+x^3+\ldots \ldots \ldots+x^{10}-10 x^{11} \\\\
+&amp; \therefore f(x)=\frac{x\left(1-x^{10}\right)}{(1-x)^2}-\frac{10 x^{11}}{(1-x)}
+\end{aligned}
+\)
+<br/><br/>\( \Rightarrow \) \(
+f(x)=\frac{x-x^{11}-10 x^{11}+10 x^{12}}{(1-x)^2} = \frac{10 x^{12}-11 x^{11}+x}{(1-x)^2}
+\)
+<br/><br/>So, 
+<br/><br/>\(
+\begin{aligned}
+&amp; f(2)=2\left(1-2^{10}\right)+10 \cdot 2^{11} \\\\
+&amp; =2+18 \cdot 2^{10}
+\end{aligned}
+\)
+<br/><br/>\(f'\left( x \right) = {{{{\left( {1 - x} \right)}^2}\left( {120{x^{11}} - 121{x^{10}} + 1} \right) + 2\left( {1 - x} \right)\left( {10{x^{12}} - {{11.x}^{11}} + 2} \right)} \over {{{\left( {1 - x} \right)}^4}}}\)
+<br/><br/>So,
+<br/><br/>\(f'\left( x \right) = {{1\left( {{{120.2}^{11}} - {{121.2}^{10}} + 1} \right) + 2\left( { - 1} \right)\left( {{{10.2}^{12}} - {{11.2}^{11}} + 2} \right)} \over {{{\left( { - 1} \right)}^4}}}\)
+<br/><br/>= \({2^{10}}\left( {83} \right) - 3\)
+<br/><br/>Hence \(2 f(2)+f^{\prime}(2)=119.2^{10}+1\)
+<br/><br/>\(
+\Rightarrow \text { So, } \mathrm{n}=10
+\)</li><li><strong>Q3:</strong> \(f(x)=\frac{\sin x+\cos x-\sqrt{2}}{\sin x-\cos x}\)
+<br/><br/>\(
+\begin{aligned}
+&amp; =\frac{\frac{1}{\sqrt{2}} \sin x+\frac{1}{\sqrt{2}} \cos x-1}{\frac{1}{\sqrt{2}} \sin x-\frac{1}{\sqrt{2}} \cos x} \\\\
+&amp; =\frac{\cos \left(x-\frac{\pi}{4}\right)-1}{\sin \left(x-\frac{\pi}{4}\right)} \\\\
+&amp; =\frac{-2 \sin ^2\left(\frac{x}{2}-\frac{\pi}{8}\right)}{2 \sin \left(\frac{x}{2}-\frac{\pi}{8}\right) \cos \left(\frac{x}{2}-\frac{\pi}{8}\right)}
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \Rightarrow f(x)=-\tan \left(\frac{x}{2}-\frac{\pi}{8}\right) \\\\
+&amp; \Rightarrow f^{\prime}(x)=-\frac{1}{2} \sec ^2\left(\frac{x}{2}-\frac{\pi}{8}\right)
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \Rightarrow f^{\prime \prime}(x)=-\frac{1}{2} \cdot 2 \sec \left(\frac{x}{2}-\frac{\pi}{8}\right) \cdot \sec \left(\frac{x}{2}-\frac{\pi}{8}\right)\tan \left(\frac{x}{2}-\frac{\pi}{8}\right) \times \frac{1}{2} \\\\
+&amp; =-\frac{1}{2} \sec ^2\left(\frac{x}{2}-\frac{\pi}{8}\right) \cdot \tan \left(\frac{x}{2}-\frac{\pi}{8}\right)
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \text { Now, } f\left(\frac{7 \pi}{12}\right) f^{\prime \prime}\left(\frac{7 \pi}{12}\right) \\\\
+&amp; =-\tan \left(\frac{7 \pi}{24}-\frac{\pi}{8}\right) \times \frac{-1}{2} \sec ^2\left(\frac{7 \pi}{24}-\frac{\pi}{8}\right) \times \tan \left(\frac{7 \pi}{24}-\frac{\pi}{8}\right) \\\\
+&amp; =\frac{1}{2} \tan ^2\left(\frac{\pi}{6}\right) \times \sec ^2 \frac{\pi}{6} \\\\
+&amp; =\frac{1}{2} \times \frac{1}{3} \times \frac{4}{3}=\frac{2}{9}
+\end{aligned}
+\)</li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

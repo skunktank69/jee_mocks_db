@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>straight-lines-and-pair-of-straight-lines</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>straight-lines-and-pair-of-straight-lines</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let the distance between two parallel lines be 5 units and a point \(P\) lie between the lines at a unit distance from one of them. An equilateral triangle \(P Q R\) is formed such that \(Q\) lies on one of the parallel lines, while R lies on the other. Then \((Q R)^2\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The distance between the two points A and A' which lie on y = 2 such that both the line segments AB and A' B (where B is the point (2, 3)) subtend angle \({\pi  \over 4}\) at the origin, is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">10</li>
+<li class="c8">\[{48  \over 5}\]</li>
+<li class="c8">\[{52  \over 5}\]</li>
+<li class="c8">3</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>0</strong></li><li>Q2: <strong>C</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>We set up a coordinate system so that the two parallel lines are given by</p>
+<p>\( y = 0 \quad \text{and} \quad y = 5, \)</p>
+<p>since their distance is 5 units. Choose point</p>
+<p>\( P = (0,1) \)</p>
+<p>so that the distance from \(P\) to the line \(y=0\) is 1 unit (and its distance to the line \(y=5\) is 4 units).</p>
+<p>Let point</p>
+<p>\( Q = (a,0) \)</p>
+<p>be on the line \(y = 0\), and let point</p>
+<p>\( R = (b,5) \)</p>
+<p>be on the line \(y = 5\). Since triangle \(PQR\) is equilateral with side length \(s\), we require:</p>
+<p>\( PQ = PR = QR = s. \)</p>
+<p>A convenient method is to “rotate” \(Q\) about \(P\) by an angle of \(60^\circ\) to obtain \(R\). In complex-number (or vector) terms, if we translate so that \(P\) is at the origin, then the rotation is given by</p>
+<p>\( e^{i60^\circ} = \cos 60^\circ + i \sin 60^\circ = \frac{1}{2} + i \frac{\sqrt{3}}{2}. \)</p>
+<p>Thus, writing \(Q\) in vector form relative to \(P\), we have</p>
+<p>\( Q - P = (a, -1). \)</p>
+<p>Rotating this by \(60^\circ\) gives</p>
+<p>\( R - P = \left(a\cos60^\circ - (-1)\sin60^\circ,\; a\sin60^\circ + (-1)\cos60^\circ\right). \)</p>
+<p>Substituting the values \(\cos60^\circ = \frac{1}{2}\) and \(\sin60^\circ = \frac{\sqrt{3}}{2}\), we obtain</p>
+<p>\( \begin{aligned} R - P &amp;= \left(\frac{a}{2} + \frac{\sqrt{3}}{2},\; \frac{a\sqrt{3}}{2} - \frac{1}{2}\right), \\ \text{so} \quad R &amp;= \left( \frac{a+\sqrt{3}}{2},\; 1 + \frac{a\sqrt{3}}{2} - \frac{1}{2} \right) = \left( \frac{a+\sqrt{3}}{2},\; \frac{a\sqrt{3}+1}{2} \right). \end{aligned} \)</p>
+<p>Since \(R\) lies on \(y = 5\), its \(y\)-coordinate must equal 5:</p>
+<p>\( \frac{a\sqrt{3}+1}{2} = 5. \)</p>
+<p>Solve for \(a\):</p>
+<p>\( \begin{aligned} a\sqrt{3} + 1 &amp;= 10, \\ a\sqrt{3} &amp;= 9, \\ a &amp;= \frac{9}{\sqrt{3}} = 3\sqrt{3}. \end{aligned} \)</p>
+<p>Now, the side length \(s\) (which is the distance \(PQ\)) is given by</p>
+<p>\( \begin{aligned} s^2 &amp;= PQ^2 = \left(3\sqrt{3} - 0\right)^2 + \left(0 - 1\right)^2 \\ &amp;= (3\sqrt{3})^2 + 1^2 \\ &amp;= 27 + 1 \\ &amp;= 28. \end{aligned} \)</p>
+<p>Thus, the square of side \(QR\) is</p>
+<p>\( (QR)^2 = s^2 = 28. \)</p></li><li><strong>Q2:</strong> Let \(A(\alpha, 2) \quad\) Given \(B(2,3)\)
+<br/><br/>
+\(
+\begin{aligned}
+&amp; m_{O A}=\frac{2}{\alpha} \quad\&amp;\quad m_{O B}=\frac{3}{2} \\\\
+&amp; \tan \frac{\pi}{4}=\left|\frac{\frac{2}{\alpha}-\frac{3}{2}}{1+\frac{2}{\alpha} \cdot \frac{3}{2}}\right| \Rightarrow \frac{4-3 \alpha}{2 \alpha+6}=\pm 1 \\\\
+&amp; 4-3 \alpha=2 \alpha+6 \quad \&amp; 4-3 \alpha=-2 \alpha-6 \\\\
+&amp; \alpha=\frac{-2}{5} \&amp; \alpha=10 \\\\
+&amp; A\left(-\frac{2}{5}, 2\right) \&amp; A^{\prime}(10,2) \text { and } B(2,3) \\\\
+&amp; A A^{\prime}=10+\frac{2}{5}=\frac{52}{5}
+\end{aligned}
+\)</li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>functions</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>functions</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{A}=\{1,2,3,4\}\) and \(\mathrm{B}=\{1,4,9,16\}\). Then the number of many-one functions \(f: \mathrm{A} \rightarrow \mathrm{B}\) such that \(1 \in f(\mathrm{~A})\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">151
+</li>
+<li class="c8">139
+</li>
+<li class="c8">163
+</li>
+<li class="c8">127</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(A=\{1,3,7,9,11\}\) and \(B=\{2,4,5,7,8,10,12\}\). Then the total number of one-one maps \(f: A \rightarrow B\), such that \(f(1)+f(3)=14\), is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">120</li>
+<li class="c8">180</li>
+<li class="c8">240</li>
+<li class="c8">480</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>C</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\( \textbf{Step 1: Total Functions with } 1 \in f(A) \)</p>
+<p>Any function \( f: A \to B \) where \( A = \{1, 2, 3, 4\} \) and \( B = \{1, 4, 9, 16\} \) is defined by choosing one of the four elements of \( B \) for each element of \( A \). Thus, the total number of functions is</p>
+<p>\( 4^4 = 256. \)</p>
+<p>To count those functions where \( 1 \) appears at least once in the set \( f(A) \), we can use the complementary counting method: subtract the functions that never use \( 1 \). If \( 1 \) is excluded, each element of \( A \) has only 3 choices (namely, \( \{4, 9, 16\} \)), so the number of such functions is</p>
+<p>\( 3^4 = 81. \)</p>
+<p>Thus, the number of functions such that \( 1 \in f(A) \) is</p>
+<p>\( 256 - 81 = 175. \)</p>
+<p>\( \textbf{Step 2: Counting Many-One Functions} \)</p>
+<p>In this context, "many-one functions" are understood to be non-injective functions. Since an injective (one-to-one) function from \( A \) to \( B \) must be a permutation (because both sets have 4 elements), the number of one-to-one functions is</p>
+<p>\( 4! = 24. \)</p>
+<p>It is important to note that every injective function \( f: A \to B \) has \( f(A) = B \) (a full permutation) which automatically means \( 1 \in f(A) \).</p>
+<p>Thus, the number of many-one (non-injective) functions \( f: A \to B \) with \( 1 \in f(A) \) is found by subtracting the one-to-one functions from the total functions that include \( 1 \):</p>
+<p>\( 175 - 24 = 151. \)</p>
+<p>\( \boxed{151} \)</p>
+<p>This detailed explanation shows that the number of many-one functions \( f: A \rightarrow B \) such that \( 1 \in f(A) \) is indeed \( 151 \).</p></li><li><strong>Q2:</strong> <p>\(f(1)+f(3)=14\)</p>
+<p>Case I</p>
+<p>\(\begin{aligned}
+&amp; f(1)=2, f(3)=12 \\
+&amp; f(1)=12, f(3)=2
+\end{aligned}\)</p>
+<p>Total one-one function</p>
+<p>\(\begin{aligned}
+&amp; =2 \times 5 \times 4 \times 3 \\
+&amp; =120
+\end{aligned}\)</p>
+<p>Case II</p>
+<p>\(\begin{aligned}
+&amp; f(1)=4, f(3)=10 \\
+&amp; f(1)=10, f(3)=4
+\end{aligned}\)</p>
+<p>Total one-one function</p>
+<p>\(\begin{aligned}
+&amp; =2 \times 5 \times 4 \times 3 \\
+&amp; =120 \\
+&amp; \text { Total cases }=120+120=240
+\end{aligned}\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{A}=\{1,2,3,4,5\}\) and \(\mathrm{B}=\{1,2,3,4,5,6\}\). Then the number of functions \(f: \mathrm{A} \rightarrow \mathrm{B}\) satisfying \(f(1)+f(2)=f(4)-1\) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The total number of functions,</p>
+<p>\(
+f:\{1,2,3,4\} \rightarrow\{1,2,3,4,5,6\}
+\)
+ such that \(f(1)+f(2)=f(3)\), is equal to :
+</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">60</li>
+<li class="c8">90</li>
+<li class="c8">108</li>
+<li class="c8">126</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>1</strong></li><li>Q2: <strong>B</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> Given that the function \(f : A \rightarrow B\) satisfies the condition \(f(1) + f(2) = f(4) - 1\), where the set \(A = \{1, 2, 3, 4, 5\}\) and the set \(B = \{1, 2, 3, 4, 5, 6\}\). 
+
+<br/><br/>We want to find out how many such functions exist.
+
+<br/><br/>First, observe that the condition \(f(1) + f(2) = f(4) - 1\) can be rewritten as \(f(1) + f(2) + 1 = f(4)\). So, the sum of \(f(1), f(2),\) and 1 is equal to \(f(4)\). Since \(f(4)\) is a value in set B, it can take values from 1 to 6. 
+
+<br/><br/>The maximum value of \(f(1) + f(2) + 1\) can be \(6 + 6 + 1 = 13\), but this is more than 6 (the maximum value of \(f(4)\)), so it's not possible. Thus, the maximum value of \(f(4)\) in this case can be 6.
+
+<br/><br/>Let's now analyze the number of functions for each value of \(f(4)\) from 3 to 6 (we start from 3 because \(f(1)\) and \(f(2)\) take values from set B and their minimum sum plus 1 is 3):
+
+<br/><br/>1. When \(f(4) = 6\), then \(f(1) + f(2) = 5\). The pairs \((f(1), f(2))\) that satisfy this equation are \((1, 4), (2, 3), (3, 2), (4, 1)\). For each of these 4 cases, the functions \(f(3)\) and \(f(5)\) can each take 6 values from set B, resulting in \(4 \times 6 \times 6 = 144\) functions.
+
+<br/><br/>2. When \(f(4) = 5\), then \(f(1) + f(2) = 4\). The pairs \((f(1), f(2))\) that satisfy this equation are \((1, 3), (2, 2), (3, 1)\). For each of these 3 cases, the functions \(f(3)\) and \(f(5)\) can each take 6 values from set B, resulting in \(3 \times 6 \times 6 = 108\) functions.
+
+<br/><br/>3. When \(f(4) = 4\), then \(f(1) + f(2) = 3\). The pairs \((f(1), f(2))\) that satisfy this equation are \((1, 2), (2, 1)\). For each of these 2 cases, the functions \(f(3)\) and \(f(5)\) can each take 6 values from set B, resulting in \(2 \times 6 \times 6 = 72\) functions.
+
+<br/><br/>4. When \(f(4) = 3\), then \(f(1) + f(2) = 2\). The only pair \((f(1), f(2))\) that satisfies this equation is \((1, 1)\). For this case, the functions \(f(3)\) and \(f(5)\) can each take 6 values from set B, resulting in \(1 \times 6 \times 6 = 36\) functions.
+
+<br/><br/>Adding the numbers of functions from all these cases, we get a total of \(144 + 108 + 72 + 36 = 360\) functions from \(A\) to \(B\) that satisfy the given condition.
+
+<br/><br/>Therefore, the number of functions \(f : A \rightarrow B\) satisfying the condition \(f(1) + f(2) = f(4) - 1\) is 360.
+</li><li><strong>Q2:</strong> <p>Given, \(f(1) + f(2) = f(3)\)</p>
+<p>It means \(f(1),f(2)\) and \(f(3)\) are dependent on each other. But there is no condition on \(f(4)\), so \(f(4)\) can be \(f(4) = 1,2,3,4,5,6\).</p>
+<p>For \(f(1),f(2)\) and we have to find how many functions possible which will satisfy the condition \(f(1) + f(2) = f(3)\)</p>
+<p>Case 1 :</p>
+<p>When \(f(3) = 2\) then possible values of \(f(1)\) and \(f(2)\) which satisfy \(f(1) + f(2) = f(3)\) is \(f(1) = 1\) and \(f(2) = 1\).</p>
+<p>And \(f(4)\) can be = 1, 2, 3, 4, 5, 6</p>
+<p>\(\therefore\) Total possible functions \(=1\times6=6\)</p>
+<p>Case 2 :</p>
+<p>When \(f(3) = 3\) then possible values</p>
+<p>(1) \(f(1) = 1\) and \(f(2) = 2\)</p>
+<p>(2) \(f(1) = 2\) and \(f(2) = 1\)</p>
+<p>And \(f(4)\) can be = 1, 2, 3, 4, 5, 6.</p>
+<p>\(\therefore\) Total functions \( = 2 \times 6 = 12\)</p>
+<p>Case 3 :</p>
+<p>When \(f(3) = 4\) then</p>
+<p>(1) \(f(1) = 1\) and \(f(2) = 3\)</p>
+<p>(2) \(f(1) = 2\) and \(f(2) = 2\)</p>
+<p>(3) \(f(1) = 3\) and \(f(2) = 1\)</p>
+<p>And \(f(4)\) can be = 1, 2, 3, 4, 5, 6</p>
+<p>\(\therefore\) Total functions \( = 3 \times 6 = 18\)</p>
+<p>Case 4 :</p>
+<p>When \(f(3) = 5\) then</p>
+<p>(1) \(f(1) = 1\) and \(f(4) = 4\)</p>
+<p>(2) \(f(1) = 2\) and \(f(4) = 3\)</p>
+<p>(3) \(f(1) = 3\) and \(f(4) = 2\)</p>
+<p>(4) \(f(1) = 4\) and \(f(4) = 1\)</p>
+<p>And \(f(4)\) can be  = 1, 2, 3, 4, 5 and 6</p>
+<p>\(\therefore\) Total functions \( = 4 \times 6 = 24\)</p>
+<p>Case 5 :</p>
+<p>When \(f(3) = 6\) then</p>
+<p>(1) \(f(1) = 1\) and \(f(2) = 5\)</p>
+<p>(2) \(f(1) = 2\) and \(f(2) = 4\)</p>
+<p>(3) \(f(1) = 3\) and \(f(2) = 3\)</p>
+<p>(4) \(f(1) = 4\) and \(f(2) = 2\)</p>
+<p>(5) \(f(1) = 5\) and \(f(2) = 1\)</p>
+<p>And \(f(4)\) can be = 1, 2, 3, 4, 5 and 6</p>
+<p>\(\therefore\) Total possible functions \( = 5 \times 6 = 30\)</p>
+<p>\(\therefore\) Total functions from those 5 cases we get</p>
+<p>\( = 6 + 12 + 18 + 24 + 30\)</p>
+<p>\( = 90\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>The function \(f:(-\infty, \infty) \rightarrow(-\infty, 1)\), defined by \(f(x)=\frac{2^x-2^{-x}}{2^x+2^{-x}}\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">One-one but not onto
+</li>
+<li class="c8">Onto but not one-one
+</li>
+<li class="c8">Both one-one and onto
+</li>
+<li class="c8">Neither one-one nor onto</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5">The function \(f: \mathbf{N}-\{1\} \rightarrow \mathbf{N}\); defined by \(f(\mathrm{n})=\) the highest prime factor of \(\mathrm{n}\), is :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">one-one only</li>
+<li class="c8">neither one-one nor onto</li>
+<li class="c8">onto only</li>
+<li class="c8">both one-one and onto</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{A}=\{1,2,3, \ldots, 7\}\) and let \(\mathrm{P}(\mathrm{A})\) denote the power set of \(\mathrm{A}\). If the number of functions \(f: \mathrm{A} \rightarrow \mathrm{P}(\mathrm{A})\) such that \(\mathrm{a} \in f(\mathrm{a}), \forall \mathrm{a} \in \mathrm{A}\) is \(\mathrm{m}^{\mathrm{n}}, \mathrm{m}\) and \(\mathrm{n} \in \mathrm{N}\) and \(\mathrm{m}\) is least, then \(\mathrm{m}+\mathrm{n}\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Let \(A=\{(x, y): 2 x+3 y=23, x, y \in \mathbb{N}\}\) and \(B=\{x:(x, y) \in A\}\). Then the number of one-one functions from \(A\) to \(B\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>The function \(f(x)=\frac{x^2+2 x-15}{x^2-4 x+9}, x \in \mathbb{R}\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">both one-one and onto.
+</li>
+<li class="c8">onto but not one-one.
+</li>
+<li class="c8">neither one-one nor onto.
+</li>
+<li class="c8">one-one but not onto.</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>Let \(S=\{1,2,3,4,5,6\}\). Then the number of one-one functions \(f: \mathrm{S} \rightarrow \mathrm{P}(\mathrm{S})\), where \(\mathrm{P}(\mathrm{S})\) denote the power set of \(\mathrm{S}\), such that \(f(n) \subset f(\mathrm{~m})\) where \(n &lt; m\) is ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>Let \(f:R \to R\) be a function such that \(f(x) = {{{x^2} + 2x + 1} \over {{x^2} + 1}}\). Then</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[f(x)\] is many-one in \[( - \infty , - 1)\]</li>
+<li class="c8">\[f(x)\] is one-one in \[( - \infty ,\infty )\]</li>
+<li class="c8">\[f(x)\] is one-one in \[[1,\infty )\] but not in \[( - \infty ,\infty )\]</li>
+<li class="c8">\[f(x)\] is many-one in \[(1,\infty )\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>The number of functions</p>
+<p>\(f:\{ 1,2,3,4\}  \to \{ a \in Z|a| \le 8\} \)</p>
+<p>satisfying \(f(n) + {1 \over n}f(n + 1) = 1,\forall n \in \{ 1,2,3\} \) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2</li>
+<li class="c8">3</li>
+<li class="c8">1</li>
+<li class="c8">4</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{R}=\{\mathrm{a}, \mathrm{b}, \mathrm{c}, \mathrm{d}, \mathrm{e}\}\) and \(\mathrm{S}=\{1,2,3,4\}\). Total number of onto functions \(f: \mathrm{R} \rightarrow \mathrm{S}\)
+such that \(f(\mathrm{a}) \neq 1\), is equal to ______________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q10.</span>
+</div>
+<div class="c5"><p>Let S = {1, 2, 3, 4}. Then the number of elements in the set { f : S \(\times\) S \(\to\) S : f is onto and f (a, b) = f (b, a) \(\ge\) a \(\forall\) (a, b) \(\in\) S \(\times\) S } is ______________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q11.</span>
+</div>
+<div class="c5"><p>Let a function f : N \(\to\) N be defined by</p>
+<p>\(f(n) = \left[ {\matrix{
+   {2n,} &amp; {n = 2,4,6,8,......}  \cr 
+   {n - 1,} &amp; {n = 3,7,11,15,......}  \cr 
+   {{{n + 1} \over 2},} &amp; {n = 1,5,9,13,......}  \cr 
+
+ } } \right.\)</p>
+<p>then, f is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">one-one but not onto</li>
+<li class="c8">onto but not one-one</li>
+<li class="c8">neither one-one nor onto</li>
+<li class="c8">one-one and onto</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q12.</span>
+</div>
+<div class="c5"><p>The number of one-one functions f : {a, b, c, d} \(\to\) {0, 1, 2, ......, 10} such 
+<br/><br/>that 2f(a) \(-\) f(b) + 3f(c) + f(d) = 0 is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q13.</span>
+</div>
+<div class="c5"><p>The number of bijective functions \(f:\{1,3,5,7, \ldots, 99\} \rightarrow\{2,4,6,8, \ldots .100\}\),  such that \(f(3) \geq f(9) \geq f(15) \geq f(21) \geq \ldots . . f(99)\), is ____________.</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{ }^{50} P_{17}\]</li>
+<li class="c8">\[{ }^{50} P_{33}\]</li>
+<li class="c8">\[33 ! \times 17\]!</li>
+<li class="c8">\[\frac{50!}{2}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q14.</span>
+</div>
+<div class="c5"><p>The number of functions \(f\), from the set \(\mathrm{A}=\left\{x \in \mathbf{N}: x^{2}-10 x+9 \leq 0\right\}\) to the set \(\mathrm{B}=\left\{\mathrm{n}^{2}: \mathrm{n} \in \mathbf{N}\right\}\) such that \(f(x) \leq(x-3)^{2}+1\), for every \(x \in \mathrm{A}\), is ___________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>B</strong></li><li>Q3: <strong>1</strong></li><li>Q4: <strong>2</strong></li><li>Q5: <strong>C</strong></li><li>Q6: <strong>1</strong></li><li>Q7: <strong>C</strong></li><li>Q8: <strong>A</strong></li><li>Q9: <strong>5</strong></li><li>Q10: <strong>16</strong></li><li>Q11: <strong>D</strong></li><li>Q12: <strong>0</strong></li><li>Q13: <strong>B</strong></li><li>Q14: <strong>2</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp; f(x)=\frac{2^{2 \mathrm{x}}-1}{2^{2 \mathrm{x}}+1} \\
+&amp; =1-\frac{2}{2^{2 \mathrm{x}}+1} \\
+&amp; \mathrm{f}^{\prime}(\mathrm{x})=\frac{2}{\left(2^{2 \mathrm{x}}+1\right)^2} \cdot 2 \cdot 2^{2 \mathrm{x}} \cdot \ln 2 \text { i.e always }+\mathrm{ve}
+\end{aligned}\)</p>
+<p>so \(f(x)\) is \(\uparrow\) function</p>
+<p>\(\begin{aligned}
+&amp; \therefore \mathrm{f}(-\infty)=-1 \\
+&amp; \mathrm{f}(\infty)=1 \\
+&amp; \therefore \mathrm{f}(\mathrm{x}) \in(-1,1) \neq \text { co-domain }
+\end{aligned}\)</p>
+<p>so function is one-one but not onto</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; \mathrm{f}: \mathrm{N}-\{1\} \rightarrow \mathrm{N} \\
+&amp; \mathrm{f}(\mathrm{n})=\text { The highest prime factor of } \mathrm{n} . \\
+&amp; \mathrm{f}(2)=2 \\
+&amp; \mathrm{f}(4)=2 \\
+&amp; \Rightarrow \text { many one } \\
+&amp; 4 \text { is not image of any element } \\
+&amp; \Rightarrow \text { into }
+\end{aligned}\)</p>
+<p>Hence many one and into</p>
+<p>Neither one-one nor onto.</p></li><li><strong>Q3:</strong> <p>\(\begin{aligned}
+&amp; f: A \rightarrow P(A) \\
+&amp; a \in f(a)
+\end{aligned}\)</p>
+<p>That means '\(a\)' will connect with subset which contain element '\(a\)'.</p>
+<p>Total options for 1 will be \(2^6\). (Because \(2^6\) subsets contains 1)</p>
+<p>Similarly, for every other element</p>
+<p>Hence, total is \(2^6 \times 2^6 \times 2^6 \times 2^6 \times 2^6 \times 2^6 \times 2^6=2^{42}\)</p>
+<p>Ans. \(2+42=44\)</p></li><li><strong>Q4:</strong> <p>\(\begin{aligned}
+&amp; A=\{(x, y) ; 2 x+3 y=23, x, y \in N\} \\
+&amp; A=\{(1,7),(4,5),(7,3),(10,1)\} \\
+&amp; B=\{x:(x, y) \in A\} \\
+&amp; B=\{1,4,7,10\}
+\end{aligned}\)</p>
+<p>So, total number of one-one functions from A to B is \(4!=24\)</p></li><li><strong>Q5:</strong> <p>The function \( f(x)=\frac{x^2+2x-15}{x^2-4x+9}, x \in \mathbb{R} \) can be simplified to \( f(x)=\frac{(x-3)(x+5)}{x^2-4x+9} \).</p>
+<p>For \( x=3 \) and \( x=-5 \), \( f(x) \) equals 0. Therefore, \( f(x) \) is not one-one as it yields the same output for different input values.</p>
+<p>The range of \( f(x) \) is \( [-2, 1.6] \), indicating that \( f(x) \) does not cover all possible real values. Consequently, \( f(x) \) is not onto.</p>
+<p>Thus, the function is neither one-one nor onto.</p></li><li><strong>Q6:</strong> <p>\(\because S={1,2,3,4,5,6}\) and \(P(S) = \{ \phi ,\{ 1\} ,\{ 2\} ,....,\{ 1,2,3,4,5,6\} \} \)</p>
+<p>\(f(n)\) corresponding a set having m elements which belongs to P(S), should be a subset of \(f(n+1)\), so \(f(n+1)\) should be a subset of P(S) having at least \(m+1\) elements.</p>
+<p>Now, if f(1) has one element then f(2) has 3, f(3) has 3 and so on and f(6) has 6 elements. Total number of possible functions = 6! = 720 .... (1)
+<br/><br/>If f(1) has no elements (i.e. null set \(\phi\)) then</p>
+<p><img alt="JEE Main 2023 (Online) 30th January Morning Shift Mathematics - Functions Question 58 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1leq0kxw4/6ceb3c53-46ad-4822-99ec-6ae534f92aed/4c82d540-b85f-11ed-9fed-b1659a6c339b/file-1leq0kxw5.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1leq0kxw4/6ceb3c53-46ad-4822-99ec-6ae534f92aed/4c82d540-b85f-11ed-9fed-b1659a6c339b/file-1leq0kxw5.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Each index number represents the number of elements in respective rows</p>
+<p>Taking every series of arrow and counting number of such possible functions (sets)</p>
+<p>\( = {}^6{C_2} \times {}^4{C_1} \times {}^3{C_1} \times {}^2{C_1} + {}^6{C_1} \times {}^5{C_2} \times {}^3{C_1} \times {}^2{C_1} + {}^6{C_1} \times {}^5{C_1} \times {}^4{C_2} \times {}^2{C_1} + {}^6{C_1} \times {}^5{C_1} \times {}^4{C_1} \times {}^3{C_2} + {}^6{C_1} \times {}^5{C_1} \times {}^4{C_1} \times {}^3{C_1} \times {}^2{C_2} + {}^6{C_1} \times {}^5{C_1} \times {}^4{C_1} \times {}^3{C_1} \times {}^2{C_1}\)</p>
+<p>\( = 2520\) ..........(2)</p>
+<p>From (1) and (2) : Total number of functions</p>
+<p>= 2520 + 720 = 3240</p></li><li><strong>Q7:</strong> <p>\(f(x) = {{{x^2} + 2x + 1} \over {({x^2} + 1)}}\)</p>
+<p>\( \Rightarrow f'(x) = {{({x^2} + 1)(2x + 2) - ({x^2} + 2x + 1)(2x)} \over {{{({x^2} + 1)}^2}}}\)</p>
+<p>\( \Rightarrow f'(x) = {{2 - 2{x^2}} \over {{{({x^2} + 1)}^2}}}\)</p>
+<p>\( = {{2\left( {1 + x} \right)\left( {1 - x} \right)} \over {{{\left( {{x^2} + 1} \right)}^2}}}\)</p>
+<p>\( \therefore \) \(f'(x) = 0\) at x = 1 and x = -1. So, x = 1 and x = -1 are point of maxima/minima.</p>
+<p><b>Option A :</b> \(f(x)\) is many-one in \(( - \infty , - 1)\).
+<br><br>As x = -1 is a point of maxima/minima. So it is a boundary point in the range \(( - \infty , - 1)\). So, \(f(x)\) is one-one in \(( - \infty , - 1)\).
+<br/><br/>\( \therefore \) Option A is incorrect.</br></br></p>
+<p><b>Option B :</b> \(f(x)\) is one-one in \(( - \infty ,\infty )\).
+<br/><br/>As, x = 1 and x = -1 are point of maxima/minima which is present inside the range \(( - \infty ,\infty )\). So, \(f(x)\) is many-one function in \(( - \infty ,\infty )\).
+<br/><br/>\( \therefore \) Option B is incorrect.</p>
+<p><b>Option C :</b> \(f(x)\) is one-one in \([1,\infty )\) but not in \(( - \infty ,\infty )\).
+<br/><br/>As x = 1 is a point of maxima/minima. So it is a boundary point in the range \([1,\infty )\). So, \(f(x)\) is one-one in \([1,\infty )\).
+<br/><br/>As, x = 1 and x = -1 are point of maxima/minima which is present inside the range \(( - \infty ,\infty )\). So, \(f(x)\) is many-one function in \(( - \infty ,\infty )\) .
+<br/><br/>\( \therefore \) Option C is correct.</p>
+<p><b>Option D :</b> \(f(x)\) is many-one in \((1,\infty )\).
+<br/><br/>As x = 1 is a point of maxima/minima. So it is a boundary point in the range \([1,\infty )\). So, \(f(x)\) is one-one in \([1,\infty )\).
+<br/><br/>\( \therefore \) Option D is incorrect.</p>
+<p><b>Note :</b></p>
+<p><b>Methods to Check One-One Function :</b>
+<br/><br/>(i) If a function is one-one, any line parallel to \(x\)-axis cuts the graph of the function maximum at one point.
+<br/><br/>(ii) Any continuous function which is entirely increasing or decreasing (no maxima/minima is present) in whole domain will always be one-one function.
+</p></li><li><strong>Q8:</strong> \(\because f:\{1,2,3,4\} \rightarrow\{a \in \mathbb{Z}:|9| \leq 8\}\)
+<br/><br/>
+and \(f(n)+\frac{1}{n} f(n+1)=1\)
+<br/><br/>
+\(\Rightarrow n f(n)+f(n+1)=n \quad \ldots\) (i)
+<br/><br/>
+\(\therefore f(1)+f(2)=1 \Rightarrow f(2)=1-f(1)\)
+<br/><br/>
+But \(f(1) \in[-8,8]\)
+<br/><br/>
+Hence, \(f(2) \in[-8,8] \Rightarrow f(1) \in[-7,8] \quad\ldots(\mathrm{A})\)
+<br/><br/>
+and \(2 f(2)+f(3)=2 \Rightarrow f(3)=2 f(1)\)
+<br/><br/>
+\(\therefore 2 f(1) \in[-8,8] \Rightarrow f(1) \in[-4,4] \quad\ldots(\mathrm{B})\)
+<br/><br/>
+and \(3 f(3)+f(4)=3 \Rightarrow f(4)=3-6 f(1)\)
+<br/><br/>
+\(\therefore f(1) \in\left[-\frac{5}{6}, \frac{11}{6}\right]\quad...(C)\)
+<br/><br/>
+From (A), (B) and (C) : \(f(1)=0\) or 1
+<br/><br/>
+\(\therefore\) Only two functions are possible.</li><li><strong>Q9:</strong> Total number of onto functions
+<br/><br/>\(
+\begin{aligned}
+&amp; =\frac{5 !}{3 ! 2 !} \times 4 ! \\\\
+&amp; =\frac{5 \times 4}{2} \times 24=240
+\end{aligned}
+\)
+<br/><br/>When \(f(a)=1\), number of onto functions
+<br/><br/>\(
+\begin{aligned}
+&amp; =4 !+\frac{4 !}{2 ! 2 !} \times 3 ! \\\\
+&amp; =24+36=60
+\end{aligned}
+\)
+<br/><br/>So, required number of onto functions <br/><br/>\(=240-60=180\)</li><li><strong>Q10:</strong> There are 16 ordered pairs in \(S \times S\). We write all these ordered pairs in 4 sets as follows.
+<br/><br/>
+\(A=\{(1,1)\}\)
+<br/><br/>
+\(B=\{(1,4),(2,4),(3,4)(4,4),(4,3),(4,2),(4,1)\}\)
+<br/><br/>
+\(C=\{(1,3),(2,3),(3,3),(3,2),(3,1)\}\)
+<br/><br/>
+\(D=\{(1,2),(2,2),(2,1)\}\)
+<br/><br/>
+All elements of set \(B\) have image 4 and only element of \(A\) has image 1.
+<br/><br/>
+All elements of set \(C\) have image 3 or 4 and all elements of set \(D\) have image 2 or 3 or 4 .
+<br/><br/>
+We will solve this question in two cases.
+<br/><br/>
+<b>Case I</b>: When no element of set \(C\) has image 3.
+<br/><br/>
+Number of onto functions \(=2\) (when elements of set \(D\) have images 2 or 3\()\)
+<br/><br/>
+<b>Case II</b>: When atleast one element of set \(C\) has image 3.<br/><br/> Number of onto functions \(=\left(2^{3}-1\right)(1+2+2)\)
+<br/><br/>
+\(
+=35
+\)
+<br/><br/>
+Total number of functions \(=37\)</li><li><strong>Q11:</strong> <p>When n = 1, 5, 9, 13 then \({{n + 1} \over 2}\) will give all odd numbers.</p>
+<p>When n = 3, 7, 11, 15 .....</p>
+<p>n \(-\) 1 will be even but not divisible by 4</p>
+<p>When n = 2, 4, 6, 8 .....</p>
+<p>Then 2n will give all multiples of 4</p>
+<p>So range will be N.</p>
+<p>And no two values of n give same y, so function is one-one and onto.</p></li><li><strong>Q12:</strong> <p>Given one-one function</p>
+<p>\(f:\{ a,b,c,d\}  \to \{ 0,1,2,\,\,....\,\,10\} \)</p>
+<p>and \(2f(a) - f(b) + 3f(c) + f(d) = 0\)</p>
+<p>\( \Rightarrow 3f(c) + 2f(a) + f(d) = f(b)\)</p>
+<p>Case I:</p>
+<p>(1) Now let \(f(c) = 0\) and \(f(a) = 1\) then</p>
+<p>\(3 \times 0 + 2 \times 1 + f(d) = f(b)\)</p>
+<p>\( \Rightarrow 2 + f(d) = f(b)\)</p>
+<p>Now possible value of \(f(d) = 2,3,4,5,6,7,\) and \(8\).</p>
+<p>f(d) can't be 9 and 10 as if \(f(d) = 9\) or 10 then \(f(b) = 2 + 9 = 11\) or \(f(b) = 2 + 10 = 12\), which is not possible as here any function's maximum value can be 10.</p>
+<p>\(\therefore\) Total possible functions when \(f(c) = 0\) and \(f(a) = 1\) are = 7</p>
+<p>(2) When \(f(c) = 0\) and \(f(a) = 2\) then</p>
+<p>\(3 \times 0 + 2 \times 2 + f(d) = f(b)\)</p>
+<p>\( \Rightarrow 4 + f(d) = f(b)\)</p>
+<p>\(\therefore\) possible value of \(f(d) = 1,3,4,5,6\)</p>
+<p>\(\therefore\) Total possible functions in this case = 5</p>
+<p>(3) When \(f(c) = 0\) and \(f(a) = 3\) then</p>
+<p>\(3 \times 0 + 2 \times 3 + f(d) = f(b)\)</p>
+<p>\( \Rightarrow 6 + f(d) = f(b)\)</p>
+<p>\(\therefore\) Possible value of \(f(d) = 1,2,4\)</p>
+<p>\(\therefore\) Total possible functions in this case = 3</p>
+<p>(4) When \(f(c) = 0\) and \(f(a) = 4\) then</p>
+<p>\(3 \times 0 + 2 \times 4 + f(d) = f(b)\)</p>
+<p>\( \Rightarrow 8 + f(d) = f(b)\)</p>
+<p>\(\therefore\) Possible value of \(f(d) = 1,2\)</p>
+<p>\(\therefore\) Total possible functions in this case = 2</p>
+<p>(5) When \(f(c) = 0\) and \(f(a) = 5\) then</p>
+<p>\(3 \times 0 + 2 \times 5 + f(d) = f(b)\)</p>
+<p>\( \Rightarrow 10 + f(d) = f(b)\)</p>
+<p>Possible value of f(d) can be 0 but f(c) is already zero. So, no value to f(d) can satisfy.</p>
+<p>\(\therefore\) No function is possible in this case.</p>
+<p>\(\therefore\) Total possible functions when \(f(c) = 0\) and \(f(a) = 1,2,3\) and \(4\) are \( = 7 + 5 + 3 + 2 = 17\)</p>
+<p>Case II:</p>
+<p>(1) When \(f(c) = 1\) and \(f(a) = 0\) then</p>
+<p>\(3 \times 1 + 2 \times 0 + f(d) = f(b)\)</p>
+<p>\( \Rightarrow 3 + f(d) = f(b)\)</p>
+<p>\(\therefore\) Possible value of \(f(d) = 2,3,4,5,6,7\)</p>
+<p>\(\therefore\) Total possible functions in this case = 6</p>
+<p>(2) When \(f(c) = 1\) and \(f(a) = 2\) then</p>
+<p>\(3 \times 1 + 2 \times 2 + f(d) = f(b)\)</p>
+<p>\( \Rightarrow 7 + f(d) = f(b)\)</p>
+<p>\(\therefore\) Possible value of \(f(d) = 0,3\)</p>
+<p>\(\therefore\) Total possible functions in this case = 2</p>
+<p>(3) When \(f(c) = 1\) and \(f(a) = 3\) then</p>
+<p>\(3 \times 1 + 2 \times 3 + f(d) = f(b)\)</p>
+<p>\( \Rightarrow 9 + f(d) = f(b)\)</p>
+<p>\(\therefore\) Possible value of \(f(d) = 0\)</p>
+<p>\(\therefore\) Total possible functions in this case = 1</p>
+<p>\(\therefore\) Total possible functions when \(f(c) = 1\) and \(f(a) = 0,2\) and \(3\) are</p>
+<p>\( = 6 + 2 + 1 = 9\)</p>
+<p>Case III:</p>
+<p>(1) When \(f(c) = 2\) and \(f(a) = 0\) then</p>
+<p>\(3 \times 2 + 2 \times 0 + f(d) = f(b)\)</p>
+<p>\( \Rightarrow 6 + f(d) = f(b)\)</p>
+<p>\(\therefore\) Possible values of \(f(d) = 1,3,4\)</p>
+<p>\(\therefore\) Total possible functions in this case = 3</p>
+<p>(2) When \(f(c) = 2\) and \(f(a) = 1\) then,</p>
+<p>\(3 \times 2 + 2 \times 1 + f(d) = f(b)\)</p>
+<p>\( \Rightarrow 8 + f(d) = f(b)\)</p>
+<p>\(\therefore\) Possible values of \(f(d) = 0\)</p>
+<p>\(\therefore\) Total possible function in this case = 1</p>
+<p>\(\therefore\) Total possible functions when \(f(c) = 2\) and \(f(a) = 0,1\) are</p>
+<p>\( = 3 + 1 = 4\)</p>
+<p>Case IV:</p>
+<p>(1) When \(f(c) = 3\) and \(f(a) = 0\) then</p>
+<p>\(3 \times 3 + 2 \times 0 + f(d) = f(b)\)</p>
+<p>\( \Rightarrow 9 + f(d) = f(b)\)</p>
+<p>\(\therefore\) Possible values of \(f(d) = 1\)</p>
+<p>\(\therefore\) Total one-one functions from four cases</p>
+<p>\( = 17 + 9 + 4 + 1 = 31\)</p></li><li><strong>Q13:</strong> <p>As function is one-one and onto, out of 50 elements of domain set 17 elements are following restriction \(f(3) &gt; f(9) &gt; f(15)\,.......\, &gt; f(99)\)</p>
+<p>So number of ways \( = {}^{50}{C_{17}}\,.\,1\,.\,33!\)</p>
+<p>\( = {}^{50}{P_{33}}\)</p></li><li><strong>Q14:</strong> <p>\(A = \left\{ {\matrix{
+   {x \in N,} &amp; {{x^2} - 10x + 9 \le 0}  \cr 
+
+ } } \right\}\)</p>
+<p>\( = \{ 1,2,3,\,....,\,9\} \)</p>
+<p>\(B = \{ 1,4,9,16,\,.....\} \)</p>
+<p>\(f(x) \le {(x - 3)^2} + 1\)</p>
+<p>\(f(1) \le 5,\,f(2) \le 2,\,\,..........\,f(9) \le 37\)</p>
+<p>\(x = 1\) has 2 choices</p>
+<p>\(x = 2\) has 1 choice</p>
+<p>\(x = 3\) has 1 choice</p>
+<p>\(x = 4\) has 1 choice</p>
+<p>\(x = 5\) has 2 choices</p>
+<p>\(x = 6\) has 3 choices</p>
+<p>\(x = 7\) has 4 choices</p>
+<p>\(x = 8\) has 5 choices</p>
+<p>\(x = 9\) has 6 choices</p>
+<p>\(\therefore\) Total functions = \(2\times1\times1\times1\times2\times3\times4\times5\times6=1440\)</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

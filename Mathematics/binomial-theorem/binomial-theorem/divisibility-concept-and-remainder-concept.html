@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>binomial-theorem</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>binomial-theorem</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>The remainder, when \(7^{103}\) is divided by 23, is equal to:</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>9</p></li>
+<li class="c8"><p>6</p></li>
+<li class="c8"><p>14</p></li>
+<li class="c8"><p>17</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The remainder when \(\left((64)^{(64)}\right)^{(64)}\) is divided by 7 is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">4</li>
+<li class="c8">6</li>
+<li class="c8">3</li>
+<li class="c8">1</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>C</strong></li><li>Q2: <strong>D</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp; 7^{103}=7\left(7^{102}\right)=7(343)^{34}=7(345-2)^{34} \\
+&amp; 7^{103}=23 \mathrm{~K}_1+7.2^{34} \\
+&amp; \text { Now } 7.2^{34}=7 \cdot 2^2 \cdot 2^{32} \\
+&amp; =28 \cdot(256)^4 \\
+&amp; =28(253+3)^4 \\
+&amp; \therefore 28 \times 81 \Rightarrow(23+5)(69+12) \\
+&amp; 23 \mathrm{~K}_2+60 \\
+&amp; \therefore \text { Remainder }=14
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp;\begin{aligned}
+&amp; 64^{64} \Rightarrow(63+1)^{64}=63 \lambda+1 \\
+&amp; 64^{664^{64}} \Rightarrow(63+1)^{64^{64}} \\
+&amp; 63 \lambda_1+1
+\end{aligned}\\
+&amp;\text { Required remainder when divided } 7 \text { is } 1 \text {. }
+\end{aligned}\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>The remainder when (2021)<sup>2023</sup> is divided by 7 is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">1</li>
+<li class="c8">2</li>
+<li class="c8">5</li>
+<li class="c8">6</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The remainder when 3<sup>2022</sup> is divided by 5 is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">1</li>
+<li class="c8">2</li>
+<li class="c8">3</li>
+<li class="c8">4</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>The remainder when \((2021)^{2022}+(2022)^{2021}\) is divided by 7 is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">0</li>
+<li class="c8">1</li>
+<li class="c8">2</li>
+<li class="c8">6</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>The remainder when \(7^{2022}+3^{2022}\) is divided by 5 is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">0</li>
+<li class="c8">2</li>
+<li class="c8">3</li>
+<li class="c8">4</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>C</strong></li><li>Q2: <strong>D</strong></li><li>Q3: <strong>A</strong></li><li>Q4: <strong>C</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> (2021)<sup>2023</sup>
+<p>= (2016 + 5)<sup>2023</sup> [here 2016 is divisible by 7]</p>
+<p>= <sup>2023</sup>C<sub>0</sub> (2016)<sup>2023</sup> + .......... + <sup>2023</sup>C<sub>2022</sub> (2016) (5)<sup>2022</sup> + <sup>2023</sup>C<sub>2023</sub> (5)<sup>2023</sup></p>
+<p>= 2016 [<sup>2023</sup>C<sub>0</sub> . (2016)<sup>2022</sup> + ....... + <sup>2023</sup>C<sub>2022</sub> . (5)<sup>2022</sup>] + (5)<sup>2023</sup></p>
+<p>= 2016\(\lambda\) + (5)<sup>2023</sup></p>
+<p>= 7 \(\times\) 288\(\lambda\) + (5)<sup>2023</sup></p>
+<p>= 7K + (5)<sup>2023</sup> ...... (1)</p>
+<p>Now, (5)<sup>2023</sup></p>
+<p>= (5)<sup>2022</sup> . 5</p>
+<p>= (5<sup>3</sup>)<sup>674</sup> . 5</p>
+<p>= (125)<sup>674</sup> . 5</p>
+<p>= (126 \(-\) 1)<sup>674</sup> . 5</p>
+<p>= 5[<sup>674</sup>C<sub>0</sub> (126)<sup>674</sup> + ......... \(-\) <sup>674</sup>C<sub>673</sub> (126) + <sup>674</sup>C<sub>674</sub>]</p>
+<p>= 5 \(\times\) 126 [<sup>674</sup>C<sub>0</sub>(126)<sup>673</sup> + ....... \(-\) <sup>674</sup>C<sub>673</sub>] + 5</p>
+<p>= 5 . 7 . 18 [<sup>674</sup>C<sub>0</sub>(126)<sup>673</sup> + ....... \(-\) <sup>674</sup>C<sub>673</sub>] + 5</p>
+<p>= 7\(\lambda\) + 5</p>
+<p>Replacing (5)<sup>2023</sup> in equation (1) with 7\(\lambda\) + 5, we get,</p>
+<p>(2021)<sup>2023</sup> = 7K + 7\(\lambda\) + 5</p>
+<p>= 7(K + \(\lambda\)) + 5</p>
+<p>\(\therefore\) Remainer = 5</p></li><li><strong>Q2:</strong> <p>\({3^{2022}}\)</p>
+<p>\( = {({3^2})^{1011}}\)</p>
+<p>\( = {(9)^{1011}}\)</p>
+<p>\( = {(10 - 1)^{1011}}\)</p>
+<p>\( = {}^{1011}{C_0}{(10)^{1011}} + \,\,.....\,\, + \,\,{}^{1011}{C_{1010}}\,.\,{(10)^1} - {}^{1011}{C_{1011}}\)</p>
+<p>\( = 10\left[ {{}^{1011}{C_0}{{(10)}^{1010}} + \,\,......\,\, + \,\,{}^{1011}{C_{1010}}} \right] - 1\)</p>
+<p>\( = 10\,K - 1\)</p>
+<p>[As \(10\left[ {{}^{1011}{C_0}\,.\,{{(10)}^{1010}} + \,\,......\,\, + \,\,{}^{1011}{C_{1010}}} \right]\) is multiple of 10]</p>
+<p>\( = 10K + 5 - 5 - 1\)</p>
+<p>\( = 10K - 5 + 5 - 1\)</p>
+<p>\( = 5(2K - 1) + 4\)</p>
+<p>\(\therefore\) Unit digit = 4 when divided by 5.</p></li><li><strong>Q3:</strong> <p>\({(2021)^{2022}} + {(2022)^{2021}}\)</p>
+<p>\( = {(7k - 2)^{2022}} + {(7{k_1} - 1)^{2021}}\)</p>
+<p>\( = {\left[ {{{(7k - 2)}^3}} \right]^{674}} + {(7{k_1})^{2021}} - 2021{(7{k_1})^{2020}}\, + \,....\, - 1\)</p>
+<p>\( = {(7{k_2} - 1)^{674}} + (7m - 1)\)</p>
+<p>\( = (7n + 1) + (7m - 1) = 7(m + n)\) (multiple of 7)</p>
+<p>\(\therefore\) Remainder = 0</p></li><li><strong>Q4:</strong> \(
+\begin{aligned}
+&amp; 7^{2022}+3^{2022} \\\\
+&amp; =\left(7^2\right)^{1011}+\left(3^2\right)^{1011} \\\\
+&amp;=(50-1)^{1011}+(10-1)^{1011} \\\\
+&amp;= (50^{1011}-1011.50^{1010}+\ldots-1) \\\\
+&amp; + (10^{1011}-1011.10^{1010}+\ldots . .-1) \\\\
+&amp;= 5 m-1+5 n-1=5(m+n)-2 \\\\
+&amp;= 5(m+n)-5+3=5(m+n-1)+3 \\\\
+&amp;= 5 k+3 \\\\
+&amp; \therefore \text { Remainder }=3
+\end{aligned}
+\)</li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5">The product of the last two digits of \((1919)^{1919}\) is</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The largest \(\mathrm{n} \in \mathbf{N}\) such that \(3^{\mathrm{n}}\) divides 50 ! is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">22</li>
+<li class="c8">20</li>
+<li class="c8">21</li>
+<li class="c8">23</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Remainder when \(64^{32^{32}}\) is divided by 9 is equal to ________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>The remainder when \(428^{2024}\) is divided by 21 is __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>The remainder, when \(19^{200}+23^{200}\) is divided by 49 , is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>The remainder on dividing \(5^{99}\) by 11 is ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5">\(50^{\text {th }}\) root of a number \(x\) is 12 and \(50^{\text {th }}\) root of another number \(y\) is 18 . Then the remainder obtained on dividing \((x+y)\) by 25 is ____________.</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>The remainder when (2023)\(^{2023}\) is divided by 35 is __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>The remainder, when \(7^{103}\) is divided by 17, is __________</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q10.</span>
+</div>
+<div class="c5"><p>Fractional part of the number \(\frac{4^{2022}}{15}\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{8}{15}\]</li>
+<li class="c8">\[\frac{4}{15}\]</li>
+<li class="c8">\[\frac{1}{15}\]</li>
+<li class="c8">\[\frac{14}{15}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q11.</span>
+</div>
+<div class="c5"><p>Let the number \((22)^{2022}+(2022)^{22}\) leave the remainder \(\alpha\) when divided by 3 and \(\beta\) when divided by 7. Then \(\left(\alpha^{2}+\beta^{2}\right)\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">13</li>
+<li class="c8">10</li>
+<li class="c8">20</li>
+<li class="c8">5</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q12.</span>
+</div>
+<div class="c5"><p>\(25^{190}-19^{190}-8^{190}+2^{190}\) is divisible by :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">14 but not by 34</li>
+<li class="c8">neither 14 nor 34</li>
+<li class="c8">both 14 and 34</li>
+<li class="c8">34 but not by 14</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q13.</span>
+</div>
+<div class="c5"><p>The largest natural number \(n\) such that \(3^{n}\) divides \(66 !\) is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q14.</span>
+</div>
+<div class="c5"><p>Among the statements :</p>
+<p>(S1) : \(2023^{2022}-1999^{2022}\) is divisible by 8</p>
+<p>(S2) : \(13(13)^{n}-12 n-13\) is divisible by 144 for infinitely many \(n \in \mathbb{N}\)</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">both (S1) and (S2) are incorrect</li>
+<li class="c8">only (S1) is correct</li>
+<li class="c8">only (S2) is correct</li>
+<li class="c8">both (S1) and (S2) are correct</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q15.</span>
+</div>
+<div class="c5"><p>If \({1 \over {2\,.\,{3^{10}}}} + {1 \over {{2^2}\,.\,{3^9}}} + \,\,.....\,\, + \,\,{1 \over {{2^{10}}\,.\,3}} = {K \over {{2^{10}}\,.\,{3^{10}}}}\), then the remainder when K is divided by 6 is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">1</li>
+<li class="c8">2</li>
+<li class="c8">3</li>
+<li class="c8">5</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q16.</span>
+</div>
+<div class="c5"><p>The remainder on dividing 1 + 3 + 3<sup>2</sup> + 3<sup>3</sup> + ..... + 3<sup>2021</sup> by 50 is _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q17.</span>
+</div>
+<div class="c5"><p>The remainder when \((11)^{1011}+(1011)^{11}\) is divided by 9 is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">1</li>
+<li class="c8">4</li>
+<li class="c8">6</li>
+<li class="c8">8</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>1919</strong></li><li>Q2: <strong>A</strong></li><li>Q3: <strong>32</strong></li><li>Q4: <strong>428</strong></li><li>Q5: <strong>19</strong></li><li>Q6: <strong>5</strong></li><li>Q7: <strong>1</strong></li><li>Q8: <strong>2023</strong></li><li>Q9: <strong>7</strong></li><li>Q10: <strong>C</strong></li><li>Q11: <strong>D</strong></li><li>Q12: <strong>D</strong></li><li>Q13: <strong>66</strong></li><li>Q14: <strong>D</strong></li><li>Q15: <strong>D</strong></li><li>Q16: <strong>1</strong></li><li>Q17: <strong>D</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp; (1919)^{1919}=(1920-1)^{1919} \\
+&amp; ={ }^{1919} \mathrm{C}_0(1920)^{1919}-{ }^{1919} \mathrm{C}_1(1920)^{1918}+\ldots . \\
+&amp; +{ }^{1919} \mathrm{C}_{1918}(1920)^1-{ }^{1919} \mathrm{C}_{1919} \\
+&amp; =100 \lambda+1919 \times 1920-1 \\
+&amp; =100 \lambda+3684480-1 \\
+&amp; =100 \lambda+\ldots \ldots \ldots . .79 \text { (last two digit) } \\
+&amp; \Rightarrow \text { Number having last two digit } 79 \\
+&amp; \therefore \text { Product of last two digit } 63
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; V_3(50!)=\left[\frac{50}{3}\right]+\left[\frac{50}{9}\right]+\left[\frac{50}{27}\right]+\left[\frac{50}{81}\right]+\ldots+\left[\frac{50}{3^n}\right] \\
+&amp; =16+5+1+0+0+0 \ldots=22
+\end{aligned}\)</p></li><li><strong>Q3:</strong> <p>Let \(32^{32}=\mathrm{t}\)</p>
+<p>\(\begin{aligned}
+&amp; 64^{32^{32}}=64^t=8^{2 t}=(9-1)^{2 t} \\
+&amp; =9 \mathrm{k}+1
+\end{aligned}\)</p>
+<p>Hence remainder \(=1\)</p></li><li><strong>Q4:</strong> <p>\(\begin{aligned}
+&amp; 428=21 \times 20+8 \\
+\Rightarrow \quad &amp; (428)^{2024} \equiv(20 \times 21+8)^{2024} \equiv 8^{2024}(\bmod 21) \\
+&amp; 8^2=21 \times 3+1 \\
+&amp; 8^{2024}=(21 \times 3+1)^{1012} \\
+\Rightarrow \quad &amp; 8^{2024} \equiv(21 \times 3+1)^{1012}(\bmod 21) \\
+&amp; \equiv 1^{2012}(\bmod 21) \\
+&amp; 428^{2024} \equiv 1(\bmod 21)
+\end{aligned}\)</p></li><li><strong>Q5:</strong> \(19^{200}+23^{200}\)
+
+<br/><br/>= \((21-2)^{200}+(21+2)^{200}=49 \lambda+2^{201}\)
+
+<br/><br/>Now, \(2^{201}=8^{67}=(7+1)^{67}=49 \lambda+7 \times 67+1\)
+
+<br/><br/>\(=49 \lambda+470\)
+
+<br/><br/>\(=49(\lambda+9)+29\)
+
+<br/><br/>\( \therefore \) Remainder \(=29\)</li><li><strong>Q6:</strong> \(5^{99}=5^{4} .5^{95}\)
+
+<br/><br/>\(=625\left[5^{5}\right]^{19}\)
+
+<br/><br/>\(=625[3125]^{19}\)
+
+<br/><br/>\(=625[3124+1]^{19}\)
+
+<br/><br/>\(=625[11 \mathrm{k} \times 19+1]\)
+
+<br/><br/>\(=625 \times 11 \mathrm{k} \times 19+625\)
+
+<br/><br/>\(=11 \mathrm{k}_{1}+616+9\)
+
+<br/><br/>\(=11\left(\mathrm{k}_{2}\right)+9\)
+
+<br/><br/>Remainder \(=9\)</li><li><strong>Q7:</strong> <p>Given \({x^{{1 \over {50}}}} = 12 \Rightarrow x = {12^{50}}\)</p>
+<p>\({y^{{1 \over {50}}}} = 18 \Rightarrow y = {18^{50}}\)</p>
+<p>\(12\equiv13\) (Mod 25)</p>
+<p>\(12^2\equiv19\) (Mod 25)</p>
+<p>\(12^3\equiv-3\) (Mod 25)</p>
+<p>\(12^9\equiv-2\) (Mod 25)</p>
+<p>\(12^{10}\equiv-1\) (Mod 25)</p>
+<p>\(12^{50}\equiv-1\) (Mod 25) ..... (i)</p>
+<p>Now</p>
+<p>\(18\equiv7\) (Mod 25)</p>
+<p>\(18^2\equiv-1\) (Mod 25)</p>
+<p>\(18^{-50}\equiv-1\) (Mod 25) ..... (ii)</p>
+<p>\(\therefore\) \(12^{50}+18^{50}\equiv-2\) (Mod 25)</p>
+<p>\(\equiv23\) (Mod 25)</p>
+<p>\(\therefore\) Answer = 23</p></li><li><strong>Q8:</strong> \(
+\begin{aligned}
+&amp; (2023)^{2023} \\\\
+&amp; =(2030-7)^{2023} \\\\
+&amp; =(35 \mathrm{~K}-7)^{2023} \\\\
+&amp; ={ }^{2023} \mathrm{C}_0(35 \mathrm{~K})^{2023}(-7)^0+{ }^{2023} \mathrm{C}_1(35 \mathrm{~K})^{2022}(-7)+ \\\\
+&amp; \ldots . .+\ldots \ldots .+{ }^{2023} \mathrm{C}_{2023}(-7)^{2023} \\\\
+&amp; =35 \mathrm{~N}-7^{2023} \\\\
+&amp; \text { Now },-7^{2023}=-7 \times 7^{2022}=-7\left(7^2\right)^{1011} \\\\
+&amp; =-7(50-1)^{1011} \\\\
+&amp; =-7\left({ }^{1011} \mathrm{C}_0 50^{1011}-{ }^{1011} \mathrm{C}_1(50)^{1010}+\ldots \ldots{ }^{1011} \mathrm{C}_{1011}\right) \\\\
+&amp; =-7(5 \lambda-1) \\\\
+&amp; =-35 \lambda+7
+\end{aligned}
+\)<br/><br/>
+\(\therefore\) when \((2023)^{2023}\) is divided by 35 remainder is 7</li><li><strong>Q9:</strong> \(7^{103}=7 \times 7^{102}\)
+<br/><br/>\(
+\begin{aligned}
+&amp; =7 \times(49)^{51} \\\\
+&amp; =7 \times(51-2)^{51}
+\end{aligned}
+\)
+<br/><br/>Remainder = \(7 \times(-2)^{51}\)
+<br/><br/>\(
+\begin{aligned}
+&amp; =-7\left(2^3 \cdot(16)^{12}\right) \\\\
+&amp; =-56(17-1)^{12}
+\end{aligned}
+\)
+<br/><br/>Remainder \(=-56 \times(-1)^{12}=-56+68=12\)</li><li><strong>Q10:</strong> \(
+\begin{aligned}
+&amp; \left\{\frac{4^{2022}}{15}\right\}=\left\{\frac{2^{4044}}{15}\right\} \\\\
+&amp; =\left\{\frac{(1+15)^{1011}}{15}\right\} \\\\
+&amp; =\frac{1}{15}
+\end{aligned}
+\)</li><li><strong>Q11:</strong> We have, \((22)^{2022}+(2022)^{22}\)
+<br/><br/>As 2022 is completely divisible by 3
+<br/><br/>So, \((2022)^{22}\) is also divisible by 3
+<br/><br/>\((22)^{2022}=(21+1)^{2022}=(3 \times 7+1)^{2022}=7 m+1\)
+<br/><br/>\(\Rightarrow(22)^{2022}\) leave a remainder 1 , when divisible by 3 .
+<br/><br/>\(\therefore(22)^{2022}+(2022)^{22}\) leave a remainder when divisible by 3
+<br/><br/>\(\therefore \alpha=1\)
+<br/><br/>\(
+\begin{aligned}
+(22)^{2022}+(2022)^{22} &amp; =(21+1)^{2022}+(2023-1)^{22} \\\\
+&amp; =7 K+1+7 \mu+1=7(K+\mu)+2
+\end{aligned}
+\)
+<br/><br/>\(\Rightarrow(22)^{2022}+(2022)^{22}\) leave a remainder 2 when divisible by 7
+<br/><br/>\(
+\begin{aligned}
+&amp; \therefore  \beta=2 \\\\
+&amp; \text { Hence, }  \alpha^2+\beta^2=1^2+2^2=5
+\end{aligned}
+\)</li><li><strong>Q12:</strong> The given expression is divisible by 6 and 17 .
+<br/><br/>Also, \(25^{190}-8^{190}\) is not divisible by 7
+<br/><br/>but \(19^{190}-2^{190}\) is divisible by 7 ,
+<br/><br/>So, \(25^{190}-19^{190}-8^{190}+2^{190}\) is divisible by 34 but not by 14 .</li><li><strong>Q13:</strong> We have,
+<br/><br/>\(
+\begin{aligned}
+&amp; {\left[\frac{66}{3}\right]=22} \\\\
+&amp; {\left[\frac{66}{3^2}\right]=7} \\\\
+&amp; {\left[\frac{66}{3^3}\right]=2}
+\end{aligned}
+\)
+<br/><br/>Highest powers of 3 is greater than 66. So, their g.i.f. is always 0.
+<br/><br/>\(\therefore\) Required natural number \(=22+7+2=31\)</li><li><strong>Q14:</strong> We have, \(S_1\) : \((2023)^{2022}-(1999)^{2022}\)
+<br/><br/>\(
+\begin{aligned}
+&amp; =(1999+24)^{2022}-(1999)^{2022}={ }^{2022} C_0(1999)^{2022}(24)^0 \\\\
+&amp; +{ }^{2022} C_1(1999)^{2021}(24)^1+{ }^{2022} C_2(1999)^{2020}(24)^2 \\\\
+&amp; +\ldots-(1999)^{2022} \\\\
+&amp; ={ }^{2022} C_1(1999)^{2021}(24)+{ }^{2022} C_2(1999)^{2022}(24)^2 \\\\
+&amp; =24\left({ }^{2022} C_1(1999)^{2021}+{ }^{2022} C_2(1999)^{2022}(24)+\ldots+\ldots\right) \\\\
+&amp; \Rightarrow S_1 \text { is divisible by } 24
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \text { Now, } S_2: 13(13)^n-12 n-13 \\\\
+&amp; \text { Here, } 13^n=(1+12)^n \\\\
+&amp; \quad=1+{ }^n C_1 12+{ }^n C_2(12)^2+{ }^n C_3(12)^3 \\\\
+&amp; \begin{aligned}
+\therefore S_2: &amp; 13\left(1+{ }^n C_1(12)+{ }^n C_2(12)^2+{ }^n C_3(12)^3+\ldots\right)-12 n-13 \\\\
+\quad= &amp; 13+156 n+13\left({ }^n C_2(12)^2+{ }^n C_3(12)^3+\ldots\right)-12 n-13 \\\\
+\quad= &amp; 144 \times 13\left({ }^n C_2+{ }^n C_3(12)+\ldots\right)
+\end{aligned}
+\end{aligned}
+\)
+<br/><br/>\(\Rightarrow S_2\) is divisible by 144 for infinitely many \(n \in N\)</li><li><strong>Q15:</strong> <p>\({1 \over {2\,.\,{3^{10}}}} + {1 \over {{2^2}\,.\,{3^9}}} + \,\,....\,\, + \,\,{1 \over {{2^{10}}\,.\,3}} = {K \over {{2^{10}}\,.\,{3^{10}}}}\)</p>
+<p>\( \Rightarrow {1 \over {2\,.\,{3^{10}}}}\left[ {{{{{\left( {{3 \over 2}} \right)}^{10}} - 1} \over {{3 \over 2} - 1}}} \right] = {K \over {{2^{10}}\,.\,{3^{10}}}}\)</p>
+<p>\( = {{{3^{10}} - {2^{10}}} \over {{2^{10}}\,.\,{3^{10}}}} = {K \over {{2^{10}}\,.\,{3^{10}}}} \Rightarrow K = {3^{10}} - {2^{10}}\)</p>
+<p>Now \(K = {(1 + 2)^{10}} - {2^{10}}\)</p>
+<p>\( = {}^{10}{C_0} + {}^{10}{C_1}2 + {}^{10}{C_2}{2^3} + \,\,....\,\, + \,\,{}^{10}{C_{10}}{2^{10}} - {2^{10}}\)</p>
+<p>\( = {}^{10}{C_0} + {}^{10}{C_1}2 + 6\lambda  + {}^{10}{C_9}\,.\,{2^9}\)</p>
+<p>\( = 1 + 20 + 5120 + 6\lambda \)</p>
+<p>\( = 5136 + 6\lambda  + 5\)</p>
+<p>\( = 6\mu  + 5\)</p>
+<p>\(\lambda ,\,\mu  \in N\)</p>
+<p>\(\therefore\) remainder = 5</p></li><li><strong>Q16:</strong> <p>Given,</p>
+<p>\(1 + 3 + {3^2} + {3^3} + \,\,.....\,\, + \,\,{3^{2021}}\)</p>
+<p>\( = {3^0} + {3^1} + {3^2} + {3^3} + \,\,....\,\, + \,\,{3^{2021}}\)</p>
+<p>This is a G.P with common ratio = 3</p>
+<p>\(\therefore\) Sum \( = {{1({3^{2022}} - 1)} \over {3 - 1}}\)</p>
+<p>\( = {{{3^{2022}} - 1} \over 2}\)</p>
+<p>\( = {{{{({3^2})}^{2011}} - 1} \over 2}\)</p>
+<p>\( = {{{{(10 - 1)}^{1011}} - 1} \over 2}\)</p>
+<p>\( = {{\left[ {{}^{1011}{C_0}\,.\,{{10}^{1011}} - {}^{1011}{C_1}\,.\,{{10}^{1010}} + \,\,.....\,\, - \,\,{}^{1011}{C_{1009}}\,.\,{{(10)}^2} + {}^{1011}{C_{1010}}\,.\,10 - {}^{1011}{C_{1011}}} \right] - 1} \over 2}\)</p>
+<p>\( = {{{{10}^2}\left[ {{}^{1011}{C_0}\,.\,{{(10)}^{1009}} - {}^{1011}{C_1}\,.\,(1008) + \,\,.....\,\,{}^{1011}{C_{1009}}} \right] + 10110 - 1 - 1} \over 2}\)</p>
+<p>\( = {{100k + 10110 - 2} \over 2}\)</p>
+<p>\( = {{100k + 10108} \over 2}\)</p>
+<p>\( = 50k + 5054\)</p>
+<p>\( = 50k + 50 \times 101 + 4\)</p>
+<p>\( = 50[k + 101] + 4\)</p>
+<p>\( = 50k' + 4\)</p>
+<p>\(\therefore\) By dividing 50 we get remainder as 4.</p></li><li><strong>Q17:</strong> <p>\({\mathop{\rm Re}\nolimits} \left( {{{{{(11)}^{1011}} + {{(1011)}^{11}}} \over 9}} \right) = {\mathop{\rm Re}\nolimits} \left( {{{{2^{1011}} + {3^{11}}} \over 9}} \right)\)</p>
+<p>For \({\mathop{\rm Re}\nolimits} \left( {{{{2^{1011}}} \over 9}} \right)\)</p>
+<p>\({2^{1011}} = {(9 - 1)^{337}} = {}^{337}{C_0}{9^{337}}{( - 1)^0} + {}^{337}{C_1}{9^{336}}{( - 1)^1} + {}^{337}{C_2}{9^{335}}{( - 1)^2} + \,\,.....\,\, + \,\,{}^{337}{C_{337}}{9^0}{( - 1)^{337}}\)</p>
+<p>So, remainder is 8 </p>
+<p>and \({\mathop{\rm Re}\nolimits} \left( {{{{3^{11}}} \over 9}} \right) = 0\)</p>
+<p>So, remainder is 8</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>differentiation</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>differentiation</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>If \(\log _e y=3 \sin ^{-1} x\), then \((1-x^2) y^{\prime \prime}-x y^{\prime}\) at \(x=\frac{1}{2}\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[9 e^{\pi / 2}\]
+</li>
+<li class="c8">\[9 e^{\pi / 6}\]
+</li>
+<li class="c8">\[3 e^{\pi / 2}\]
+</li>
+<li class="c8">\[3 e^{\pi / 6}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(f:(-\infty, \infty)-\{0\} \rightarrow \mathbb{R}\) be a differentiable function such that \(f^{\prime}(1)=\lim _\limits{a \rightarrow \infty} a^2 f\left(\frac{1}{a}\right)\). Then \(\lim _\limits{a \rightarrow \infty} \frac{a(a+1)}{2} \tan ^{-1}\left(\frac{1}{a}\right)+a^2-2 \log _e a\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{5}{2}+\frac{\pi}{8}\]
+</li>
+<li class="c8">\[\frac{3}{8}+\frac{\pi}{4}\]
+</li>
+<li class="c8">\[\frac{3}{4}+\frac{\pi}{8}\]
+</li>
+<li class="c8">\[\frac{3}{2}+\frac{\pi}{4}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>If \(y = {\tan ^{ - 1}}\left( {\sec {x^3} - \tan {x^3}} \right),{\pi  \over 2} &lt; {x^3} &lt; {{3\pi } \over 2}\), then</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[xy'' + 2y' = 0\]</li>
+<li class="c8">\[{x^2}y'' - 6y + {{3\pi } \over 2} = 0\]</li>
+<li class="c8">\[{x^2}y'' - 6y + 3\pi  = 0\]</li>
+<li class="c8">\[xy'' - 4y' = 0\]</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>A</strong></li><li>Q3: <strong>B</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp;\log _e y=3 \sin ^{-1} x\\
+&amp;\begin{aligned}
+&amp; y=e^{3 \sin ^{-1} x} \\
+&amp; \frac{d y}{d x}=e^{3 \sin ^{-1} x} \cdot \frac{3}{\sqrt{1-x^2}}
+\end{aligned}
+\end{aligned}\)</p>
+<p>\(\sqrt{1-x^2} \frac{d y}{d x}=3 y\)</p>
+<p>Again differentiate</p>
+<p>\(\begin{aligned}
+&amp; \sqrt{1-x^2} \cdot y^{\prime \prime}-\frac{2 x}{2 \sqrt{1-x^2}} y^{\prime}=3 y^{\prime} \\
+&amp; (1-x)^2 y^{\prime \prime}-x y^{\prime}=3 y^{\prime}\left(\sqrt{1-x^2}\right)
+\end{aligned}\)</p>
+<p>So value of \(3 y^{\prime}\left(\sqrt{1-x^2}\right)\) at \(x=\frac{1}{2}\)</p>
+<p>\(\begin{aligned}
+&amp; 3 \cdot \frac{3}{\sqrt{1-x^2}} e^{\sin ^{-1} x}\left(\sqrt{1-x^2}\right) \\
+&amp; =9 e^{3 \frac{\pi}{6}}=9 e^{\frac{\pi}{2}}
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>Let \(f^{\prime}(1)=k\)</p>
+<p>\(\Rightarrow \quad \lim _\limits{x \rightarrow 0} \frac{f(x)}{x^2}=k \quad\left(\frac{0}{0}\right)\)</p>
+<p>\(\begin{aligned}
+&amp; \lim _\limits{x \rightarrow 0} \frac{f^{\prime}(x)}{2 x}=\lim _{x \rightarrow 0} \frac{f^{\prime \prime}(x)}{2}=k \\
+\Rightarrow &amp; f^{\prime \prime}(0)=2 k
+\end{aligned}\)</p>
+<p>Given information is not complete.</p></li><li><strong>Q3:</strong> <p>Let \({x^3} = \theta  \Rightarrow {\theta  \over 2} \in \left( {{\pi  \over 4},\,{{3\pi } \over 4}} \right)\)</p>
+<p>\(\therefore\) \(y = {\tan ^{ - 1}}(\sec \theta  - \tan \theta )\)</p>
+<p>\( = {\tan ^{ - 1}}\left( {{{1 - \sin \theta } \over {\cos \theta }}} \right)\)</p>
+<p>\(\therefore\) \(y = {\pi  \over 4} - {\theta  \over 2}\)</p>
+<p>\(y = {\pi  \over 4} - {{{x^3}} \over 2}\)</p>
+<p>\(\therefore\) \(y' = {{ - 3{x^2}} \over 2}\)</p>
+<p>\(y'' =  - 3x\)</p>
+<p>\(\therefore\) \({x^2}y'' - 6y + {{3\pi } \over 2} = 0\)</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

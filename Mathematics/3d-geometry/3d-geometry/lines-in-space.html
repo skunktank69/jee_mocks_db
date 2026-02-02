@@ -1,0 +1,3289 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>3d-geometry</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>3d-geometry</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>The distance of the line \(\frac{x-2}{2}=\frac{y-6}{3}=\frac{z-3}{4}\) from the point \((1,4,0)\) along the line \(\frac{x}{1}=\frac{y-2}{2}=\frac{z+3}{3}\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\sqrt{17}\)
+</li>
+<li class="c8">\(\sqrt{13}\)
+</li>
+<li class="c8">\(\sqrt{15}\)
+</li>
+<li class="c8">\(\sqrt{14}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5">The distance of the point \((7,10,11)\) from the line \(\frac{x-4}{1}=\frac{y-4}{0}=\frac{z-2}{3}\) along the line \(\frac{x-9}{2}=\frac{y-13}{3}=\frac{z-17}{6}\) is
+</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">16</li>
+<li class="c8">12</li>
+<li class="c8">18</li>
+<li class="c8">14</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5">The distance, of the point \((7,-2,11)\) from the line <br/><br/>\(\frac{x-6}{1}=\frac{y-4}{0}=\frac{z-8}{3}\) along the line \(\frac{x-5}{2}=\frac{y-1}{-3}=\frac{z-5}{6}\), is :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">12</li>
+<li class="c8">18</li>
+<li class="c8">21</li>
+<li class="c8">14</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>D</strong></li><li>Q2: <strong>D</strong></li><li>Q3: <strong>D</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>To find the distance from the line </p>
+<p>\( \frac{x-2}{2} = \frac{y-6}{3} = \frac{z-3}{4} \)</p>
+<p>to the point \((1,4,0)\) along the line </p>
+<p>\( \frac{x}{1} = \frac{y-2}{2} = \frac{z+3}{3}, \)</p>
+<p>we first consider a parallel line passing through the point \((1,4,0)\). The equation of this parallel line is:</p>
+<p>\( \frac{x-1}{1} = \frac{y-4}{2} = \frac{z-0}{3}. \)</p>
+<p>Next, we find the point of intersection between the given line and the parallel line, which can be expressed in parameter form as:</p>
+<p>\( (\lambda + 1, 2\lambda + 4, 3\lambda) = (2t + 2, 3t + 6, 4t + 3). \)</p>
+<p>Solving for \(\lambda\) in terms of \(t\), from the first coordinate:</p>
+<p>\( \lambda = 2t + 1. \)</p>
+<p>Using the second coordinates, we equate:</p>
+<p>\( 2\lambda + 4 = 3t + 6 \quad \Rightarrow \quad 2(2t + 1) + 4 = 3t + 6. \)</p>
+<p>Simplifying gives:</p>
+<p>\( 4t + 2 + 4 = 3t + 6 \quad \Rightarrow \quad 4t + 6 = 3t + 6 \quad \Rightarrow \quad t = 0. \)</p>
+<p>Substituting \(t = 0\) into either line equation yields the point of intersection (POI) as:</p>
+<p>\( (2, 6, 3). \)</p>
+<p>The distance from the point \((1, 4, 0)\) to the POI \((2, 6, 3)\) is computed as:</p>
+<p>\( \sqrt{(2-1)^2 + (6-4)^2 + (3-0)^2} = \sqrt{1^2 + 2^2 + 3^2} = \sqrt{14}. \)</p></li><li><strong>Q2:</strong> <p>Equation of line passing through \(P(7,10,11)\) along the line \(\frac{x-9}{2}=\frac{y-13}{3}=\frac{z-17}{6}\) is</p>
+<p>\(\frac{x-7}{2}=\frac{y-10}{3}=\frac{z-11}{6}=\lambda\)</p>
+<p>Let the point on the line is</p>
+<p>\(Q(2 \lambda+7,3 \lambda+10,6 \lambda+11)\)</p>
+<p>\(Q\) lies on line \(\frac{x-4}{1}=\frac{y-4}{0}=\frac{z-2}{3}\)</p>
+<p>\(\begin{aligned}
+&amp; 3 \lambda+10=4 \Rightarrow \lambda=-2 \\
+&amp; \therefore \quad Q(3,4,-1) \\
+&amp; P Q=\sqrt{16+36+144}=14
+\end{aligned}\)</p></li><li><strong>Q3:</strong> <p>\(\mathrm{B}=(2 \lambda+7,-3 \lambda-2,6 \lambda+11)\)</p>
+<p><img alt="JEE Main 2024 (Online) 27th January Morning Shift Mathematics - 3D Geometry Question 72 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lt1c0zyx/3ef0ec08-6ff8-4ca7-97e0-1c5c0fde9c3c/b5ee7090-d3c3-11ee-a50b-bb659a2e1d74/file-1lt1c0zyy.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lt1c0zyx/3ef0ec08-6ff8-4ca7-97e0-1c5c0fde9c3c/b5ee7090-d3c3-11ee-a50b-bb659a2e1d74/file-1lt1c0zyy.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>Point B lies on \(\frac{x-6}{1}=\frac{y-4}{0}=\frac{z-8}{3}\)</p>
+<p>\(\frac{2 \lambda+7-6}{1}=\frac{-3 \lambda-2-4}{0}=\frac{6 \lambda+11-8}{3}\)</p>
+<p>\(-3 \lambda-6=0\)</p><p>
+</p><p>\(\lambda=-2\)</p>
+<p>\(\mathrm{B} \Rightarrow(3,4,-1)\)</p>
+<p>\(\mathrm{AB}=\sqrt{(7-3)^2+(4+2)^2+(11+1)^2}\)</p>
+<p>\(=\sqrt{16+36+144}\)</p>
+<p>\(=\sqrt{196}=14\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5">Let the line of the shortest distance between the lines
+<br/><br/>\(
+\begin{aligned}
+&amp; \mathrm{L}_1: \overrightarrow{\mathrm{r}}=(\hat{i}+2 \hat{j}+3 \hat{k})+\lambda(\hat{i}-\hat{j}+\hat{k}) \text { and } \\\\
+&amp; \mathrm{L}_2: \overrightarrow{\mathrm{r}}=(4 \hat{i}+5 \hat{j}+6 \hat{k})+\mu(\hat{i}+\hat{j}-\hat{k})
+\end{aligned}
+\)
+<br/><br/>intersect \(\mathrm{L}_1\) and \(\mathrm{L}_2\) at \(\mathrm{P}\) and \(\mathrm{Q}\) respectively. If \((\alpha, \beta, \gamma)\) is the mid point of the line segment \(\mathrm{PQ}\), then \(2(\alpha+\beta+\gamma)\) is equal to ____________.</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(L_1: \vec{r}=(\hat{i}-\hat{j}+2 \hat{k})+\lambda(\hat{i}-\hat{j}+2 \hat{k}), \lambda \in \mathbb{R}\),</p>
+<p>\(L_2: \vec{r}=(\hat{j}-\hat{k})+\mu(3 \hat{i}+\hat{j}+p \hat{k}), \mu \in \mathbb{R} \text {, and } L_3: \vec{r}=\delta(\ell \hat{i}+m \hat{j}+n \hat{k}), \delta \in \mathbb{R}\)</p>
+<p>be three lines such that \(L_1\) is perpendicular to \(L_2\) and \(L_3\) is perpendicular to both \(L_1\) and \(L_2\). Then, the point which lies on \(L_3\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[(1,7,-4)\]
+</li>
+<li class="c8">\[(1,-7,4)\]
+</li>
+<li class="c8">\[(-1,7,4)\]
+</li>
+<li class="c8">\[(-, 1-7,4)\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>If the shortest distance between the lines</p>
+<p>\(\begin{array}{ll}
+L_1: \vec{r}=(2+\lambda) \hat{i}+(1-3 \lambda) \hat{j}+(3+4 \lambda) \hat{k}, &amp; \lambda \in \mathbb{R} \\
+L_2: \vec{r}=2(1+\mu) \hat{i}+3(1+\mu) \hat{j}+(5+\mu) \hat{k}, &amp; \mu \in \mathbb{R}
+\end{array}\)</p>
+<p>is \(\frac{m}{\sqrt{n}}\), where \(\operatorname{gcd}(m, n)=1\), then the value of \(m+n\) equals</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">384</li>
+<li class="c8">387</li>
+<li class="c8">390</li>
+<li class="c8">377</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>1</strong></li><li>Q2: <strong>C</strong></li><li>Q3: <strong>B</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> \(\begin{array}{ll}L_1 \equiv \vec{r}=(1,2,3)+\lambda(1,-1,1) &amp; \left(\vec{r}=\vec{a}_1+\lambda \vec{b}_1\right) \\\\ L_2 \equiv \vec{r}=(4,5,6)+\mu(1,1,-1) &amp; \left(\vec{r}=\vec{a}_2+\lambda \vec{b}_2\right)\end{array}\)
+<br/><br/>\(P \equiv(\lambda+1,-\lambda+2, \lambda+3)\)
+<br/><br/>\(Q \equiv(\mu+4, \mu+5,-\mu+6)\)
+<br/><br/>\(\overrightarrow{P Q}=(\mu-\lambda+3, \mu+\lambda+3,-\mu-\lambda+3)\)
+<br/><br/>\(\overrightarrow{P Q} \cdot \vec{b}_1=0 \Rightarrow 3 \lambda+\mu=3\) ..........(i)
+<br/><br/>\(\overrightarrow{P Q} \cdot \vec{b}_2=0 \Rightarrow 3 \mu+\lambda=3\) ..........(ii)
+<br/><br/>From (i) and (ii),
+<br/><br/>\(
+\begin{aligned}
+&amp; P \equiv\left(\frac{5}{2}, \frac{1}{2}, \frac{9}{2}\right) \&amp; Q \equiv\left(\frac{5}{2}, \frac{7}{2}, \frac{15}{2}\right) \\\\
+&amp; \alpha=\frac{5}{2}, \beta=\frac{4}{2}, \gamma=\frac{12}{2} \\\\
+&amp; 2(\alpha+\beta+\gamma)=21
+\end{aligned}
+\)</li><li><strong>Q2:</strong> <p>\(\mathrm{L}_1 \perp \mathrm{L}_2 \quad \mathrm{~L}_3 \perp \mathrm{L}_1, \mathrm{~L}_2\)</p>
+<p>\(\begin{aligned}
+&amp; 3-1+2 \mathrm{P}=0 \\
+&amp; \mathrm{P}=-1 \\
+&amp; \left|\begin{array}{ccc}
+\hat{\mathrm{i}} &amp; \hat{\mathrm{j}} &amp; \hat{\mathrm{k}} \\
+1 &amp; -1 &amp; 2 \\
+3 &amp; 1 &amp; -1
+\end{array}\right|=-\hat{\mathrm{i}}+7 \hat{\mathrm{j}}+4 \hat{\mathrm{k}} \\
+&amp; \therefore(-\delta, 7 \delta, 4 \delta) \text { will lie on } \mathrm{L}_3
+\end{aligned}\)</p>
+<p>For \(\delta=1\) the point will be \((-1,7,4)\)</p></li><li><strong>Q3:</strong> <p>\(\begin{aligned}
+&amp; L_1: \vec{r}=(2+\lambda) \hat{i}+(1-3 \lambda) \hat{j}+(3+4 \lambda) \hat{k} \\
+&amp; L_1=2 \hat{i}+\hat{j}+3 \hat{k}+\lambda(\hat{i}-3 \hat{j}+4 \hat{k}) \\
+&amp; L_2: \vec{r}=2 \hat{i}+3 \hat{j}+5 \hat{k}+\mu(2 \hat{i}+3 \hat{j}+\hat{k}) \\
+&amp; \vec{a}_1=2 \hat{i}+\hat{j}+3 \hat{k} \\
+&amp; \vec{a}_2=2 \hat{i}+3 \hat{j}+5 \hat{k} \\
+&amp; \vec{a}_2-\vec{a}_1=2 \hat{j}+2 \hat{k} \\
+&amp; \vec{b}_1=\hat{i}-3 \hat{j}+4 \hat{k}, \vec{b}_2=2 \hat{i}+3 \hat{j}+\hat{k} \\
+&amp; \vec{b}_1 \times \vec{b}_2=\left|\begin{array}{ccc}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+1 &amp; -3 &amp; 4 \\
+2 &amp; 3 &amp; 1
+\end{array}\right|
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \hat{i}(-3-12)-\hat{j}(1-8)+\hat{k}(3+6) \\
+&amp; =-15 \hat{i}+7 \hat{j}+9 \hat{k} \\
+&amp; \left|\vec{b}_1 \times \vec{b}_2\right|=\sqrt{225+49+81} \\
+&amp; \left|\frac{\left(\vec{a}_2-\vec{a}_1\right) \cdot\left(\vec{b}_1 \times \vec{b}_2\right)}{\left|\vec{b}_1 \times \vec{b}_2\right|}\right|=\frac{14+18}{\sqrt{355}}=\frac{32}{\sqrt{355}} \\
+&amp; m+n=387
+\end{aligned}\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let the values of \(\lambda\) for which the shortest distance between the lines \(\frac{x-1}{2} = \frac{y-2}{3} = \frac{z-3}{4}\) 
+<br/>and \(\frac{x-\lambda}{3} = \frac{y-4}{4} = \frac{z-5}{5}\) is \(\frac{1}{\sqrt{6}}\) be \(\lambda_1\) and \(\lambda_2\). Then the radius of the circle passing through the <br/>points \((0, 0), (\lambda_1, \lambda_2)\) and \((\lambda_2, \lambda_1)\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>\(3\)</p></li>
+<li class="c8"><p>\(\frac{5\sqrt{2}}{3}\)</p></li>
+<li class="c8"><p>\(\frac{\sqrt{2}}{3}\)</p></li>
+<li class="c8"><p>\(4\)</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>If the shortest distance between the lines \(\frac{x-1}{2}=\frac{y-2}{3}=\frac{z-3}{4}\) and \(\frac{x}{1}=\frac{y}{\alpha}=\frac{z-5}{1}\) is \(\frac{5}{\sqrt{6}}\), then the sum of all possible values of \(\alpha\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"> \(\frac{3}{2}\)
+</li>
+<li class="c8">\(3\)
+</li>
+<li class="c8">\(-3\)
+</li>
+<li class="c8">\(-\frac{3}{2}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5">If the shortest distance between the lines <br/><br/>\(\frac{x-\lambda}{-2}=\frac{y-2}{1}=\frac{z-1}{1}\) and \(\frac{x-\sqrt{3}}{1}=\frac{y-1}{-2}=\frac{z-2}{1}\) is 1 , then the sum of all possible values of \(\lambda\) is :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">0</li>
+<li class="c8">\(2 \sqrt{3}\)</li>
+<li class="c8">\(3 \sqrt{3}\)</li>
+<li class="c8">\(-2 \sqrt{3}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5">If the shortest distance between the lines <br/><br/>\(\frac{x-4}{1}=\frac{y+1}{2}=\frac{z}{-3}\) and \(\frac{x-\lambda}{2}=\frac{y+1}{4}=\frac{z-2}{-5}\) is \(\frac{6}{\sqrt{5}}\), then the sum of all possible values of \(\lambda\) is :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">10</li>
+<li class="c8">5</li>
+<li class="c8">7</li>
+<li class="c8">8</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>If the shortest distance between the lines \(\frac{x-\lambda}{2}=\frac{y-4}{3}=\frac{z-3}{4}\) and \(\frac{x-2}{4}=\frac{y-4}{6}=\frac{z-7}{8}\) is \(\frac{13}{\sqrt{29}}\), then a value of \(\lambda\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{13}{25}\]
+</li>
+<li class="c8">1</li>
+<li class="c8">\[-\]1
+</li>
+<li class="c8">\[-\frac{13}{25}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>If the shortest distance between the lines \(\frac{x-\lambda}{3}=\frac{y-2}{-1}=\frac{z-1}{1}\) and \(\frac{x+2}{-3}=\frac{y+5}{2}=\frac{z-4}{4}\) is \(\frac{44}{\sqrt{30}}\), then the largest possible value of \(|\lambda|\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>If the shortest between the lines \({{x + \sqrt 6 } \over 2} = {{y - \sqrt 6 } \over 3} = {{z - \sqrt 6 } \over 4}\) and \({{x - \lambda } \over 3} = {{y - 2\sqrt 6 } \over 4} = {{z + 2\sqrt 6 } \over 5}\) is 6, then the square of sum of all possible values of \(\lambda\) is :</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5">Let \(\mathrm{S}\) be the set of all values of \(\lambda\), for which the shortest distance between<br/><br/> the lines \(\frac{x-\lambda}{0}=\frac{y-3}{4}=\frac{z+6}{1}\) and \(\frac{x+\lambda}{3}=\frac{y}{-4}=\frac{z-6}{0}\) is 13. Then \(8\left|\sum\limits_{\lambda \in S} \lambda\right|\) is equal to :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">306</li>
+<li class="c8">304</li>
+<li class="c8">308</li>
+<li class="c8">302</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>If the shortest distance between the lines \({{x - 1} \over 2} = {{y - 2} \over 3} = {{z - 3} \over \lambda }\) and \({{x - 2} \over 1} = {{y - 4} \over 4} = {{z - 5} \over 5}\) is \({1 \over {\sqrt 3 }}\), then the sum of all possible value of \(\lambda\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">16</li>
+<li class="c8">6</li>
+<li class="c8">12</li>
+<li class="c8">15</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>B</strong></li><li>Q2: <strong>C</strong></li><li>Q3: <strong>B</strong></li><li>Q4: <strong>D</strong></li><li>Q5: <strong>B</strong></li><li>Q6: <strong>1</strong></li><li>Q7: <strong>6</strong></li><li>Q8: <strong>A</strong></li><li>Q9: <strong>A</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp;\begin{aligned}
+&amp; \overrightarrow{\mathrm{p}}=2 \hat{\mathrm{i}}+3 \hat{\mathrm{j}}+4 \hat{\mathrm{k}}, \overrightarrow{\mathrm{q}}=3 \hat{\mathrm{i}}+4 \hat{\mathrm{j}}+5 \hat{\mathrm{k}} \\
+&amp; \Rightarrow \overrightarrow{\mathrm{p}} \times \overrightarrow{\mathrm{q}}=\left|\begin{array}{ccc}
+\hat{\mathrm{i}} &amp; \hat{\mathrm{j}} &amp; \hat{\mathrm{k}} \\
+2 &amp; 3 &amp; 4 \\
+3 &amp; 4 &amp; 5
+\end{array}\right|=-\hat{\mathrm{i}}+2 \hat{\mathrm{j}}-\hat{\mathrm{k}} \\
+&amp; \mathrm{~A} \equiv(1,2,3) \mathrm{B} \equiv(\lambda, 4,5) \\
+&amp; \text { Shortest Distance }=\left|\frac{\overrightarrow{\mathrm{AB}} \cdot(\overrightarrow{\mathrm{P}} \times \overrightarrow{\mathrm{q}})}{|\overrightarrow{\mathrm{p}} \times \overrightarrow{\mathrm{q}}|}\right| \\
+&amp; \frac{1}{\sqrt{6}}=\left|\frac{(\lambda-1) \hat{\mathrm{i}}+2 \hat{\mathrm{j}}+2 \hat{\mathrm{k}}) \cdot(-\hat{\mathrm{i}}+2 \hat{\mathrm{j}}-\hat{\mathrm{k}})}{\sqrt{6}}\right| \\
+&amp; \Rightarrow|-\lambda+1+4-2|=1 \Rightarrow|\lambda-3|=1 \\
+&amp; \Rightarrow \lambda=3 \pm 1=4,2
+\end{aligned}\\
+&amp;\text { Radius of circle passing through points }\\
+&amp;\begin{aligned}
+&amp; (0,0),(4,2) \&amp;(2,4) \\
+&amp; =\frac{a b c}{4 \Delta}=\frac{\sqrt{20} \times \sqrt{20} \times \sqrt{8}}{4 \times \frac{1}{2}\left|\begin{array}{lll}
+1 &amp; 1 &amp; 1 \\
+0 &amp; 4 &amp; 2 \\
+0 &amp; 2 &amp; 4
+\end{array}\right|}=\frac{20 \times 2 \sqrt{2}}{2 \times 12} \\
+&amp; =\frac{5 \sqrt{2}}{3}
+\end{aligned}
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; d=\left|\frac{(\vec{a}-\vec{b}) \cdot \vec{p}_1 \times \vec{p}_2}{\left|\vec{p}_1 \times \vec{p}_2\right|}\right|=\frac{5}{\sqrt{6}} \\
+&amp; \vec{a}-\vec{b}=\hat{i}+2 \hat{j}-2 \hat{k} \\
+&amp; \overrightarrow{p_1} \times \overrightarrow{p_2}=\left|\begin{array}{ccc}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+2 &amp; 3 &amp; 4 \\
+1 &amp; \alpha &amp; 1
+\end{array}\right| \\
+&amp; \quad=\hat{i}(3-4 \alpha)-\hat{j}(-2)+\hat{k}(2 \alpha-3) \\
+&amp; (\vec{a}-\vec{b}) \cdot\left|\overrightarrow{p_1} \times \overrightarrow{p_2}\right|=3-4 \alpha+4-4 \alpha+6 \\
+&amp; =13-8 \alpha
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \left|\frac{13-8 \alpha}{\sqrt{(3-4 \alpha)^2+4+(2 \alpha-3)^2}}\right|=\frac{5}{\sqrt{6}} \\
+&amp; \left|\frac{13-8 \alpha}{\sqrt{20 \alpha^2-36 \alpha+22}}\right|=\frac{5}{\sqrt{6}} \\
+&amp; =6(13-8 \alpha)^2=25\left(20 \alpha^2-36 \alpha+22\right) \\
+&amp; =116 \alpha^2+348 \alpha-464=0 \\
+&amp; \text { Sum of roots }=-3
+\end{aligned}\)</p></li><li><strong>Q3:</strong> <p>Given the two lines:</p>
+<p>\( L_1: \frac{x-\lambda}{-2} = \frac{y-2}{1} = \frac{z-1}{1} \)</p>
+<p>\( L_2: \frac{x-\sqrt{3}}{1} = \frac{y-1}{-2} = \frac{z-2}{1} \)</p>
+<p>We observe that these lines are not parallel as their directional vectors are not proportional. The directional vector for \(L_1\) is \((-2,1,1)\) and for \(L_2\) is \((1,-2,1)\). The shortest distance between two skew (non-intersecting and non-parallel) lines in the three-dimensional space is along the line that is perpendicular to both lines. This implies we can find a vector that is perpendicular to both directional vectors by taking their cross product.</p>
+<p>The directional vector for \(L_1\) is \(d_1 = \langle -2, 1, 1 \rangle\), and for \(L_2\) is \(d_2 = \langle 1, -2, 1 \rangle\). The cross product of \(d_1\) and \(d_2\), which will be perpendicular to both lines, is given by:</p>
+<p>\( d = d_1 \times d_2 = \left| \begin{matrix}
+
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+
+-2 &amp; 1 &amp; 1 \\
+1 &amp; -2 &amp; 1 \\
+
+\end{matrix} \right| \)
+
+<p>Expanding the determinate gives:</p>
+<p>\( d = \mathbf{i}((1)(1) - (1)(-2)) - \mathbf{j}((-2)(1) - (1)(1)) + \mathbf{k}((-2)(-2) - (1)(1)) \)</p>
+<p>\( d = \mathbf{i}(1 + 2) - \mathbf{j}(-2 - 1) + \mathbf{k}(4 - 1) \)</p>
+<p>\( d = 3\mathbf{i} + 3\mathbf{j} + 3\mathbf{k} \)</p>
+<p>\( d = \langle 3, 3, 3 \rangle \)</p>
+<p>The shortest distance \(D\) between the two lines can then be given by the formula:</p>
+<p>\( D = \frac{\left| (\mathbf{a_2} - \mathbf{a_1}) \cdot d \right|}{\|d\|} \)</p>
+<p>Where \(\mathbf{a_1}\) and \(\mathbf{a_2}\) are position vectors to any points on line \(L_1\) and line \(L_2\), respectively, and '\(\cdot\)' denotes the dot product.</p>
+<p>From the lines' equations, we can choose a point on each line (when the parameter is zero). Thus, for \(L_1\), let's choose the point \(A(\lambda, 2, 1)\), and for \(L_2\), let's choose the point \(B(\sqrt{3}, 1, 2)\). These points correspond to the vectors \(\mathbf{a_1} = \langle \lambda, 2, 1 \rangle\) and \(\mathbf{a_2} = \langle \sqrt{3}, 1, 2 \rangle\), respectively.</p>
+<p>The vector \(\mathbf{a_2} - \mathbf{a_1}\) is:</p>
+<p>\( \mathbf{a_2} - \mathbf{a_1} = \langle \sqrt{3}, 1, 2 \rangle - \langle \lambda, 2, 1 \rangle \)</p>
+<p>\( \mathbf{a_2} - \mathbf{a_1} = \langle \sqrt{3} - \lambda, 1 - 2, 2 - 1 \rangle \)</p>
+<p>\( \mathbf{a_2} - \mathbf{a_1} = \langle \sqrt{3} - \lambda, -1, 1 \rangle \)</p>
+<p>We can now substitute this, along with \(d\), into the distance formula:</p>
+<p>\( D = \frac{\left| (\langle \sqrt{3} - \lambda, -1, 1 \rangle) \cdot \langle 3, 3, 3 \rangle \right|}{\|\langle 3, 3, 3 \rangle\|} \)</p>
+<p>\( D = \frac{\left| 3(\sqrt{3} - \lambda) + 3(-1) + 3(1) \right|}{\sqrt{3^2 + 3^2 + 3^2}} \)</p>
+<p>\( D = \frac{\left| 3\sqrt{3} - 3\lambda - 3 + 3 \right|}{\sqrt{27}} \)</p>
+<p>\( D = \frac{\left| 3\sqrt{3} - 3\lambda \right|}{3\sqrt{3}} \)</p>
+<p>\( D = \frac{\left| \sqrt{3} - \lambda \right|}{\sqrt{3}} \)</p>
+<p>Given that the shortest distance \(D\) between the lines is 1, we can equate the above result to 1, and solve for \(\lambda\):</p>
+<p>\( \frac{\left| \sqrt{3} - \lambda \right|}{\sqrt{3}} = 1 \)</p>
+<p>\( \left| \sqrt{3} - \lambda \right| = \sqrt{3} \)</p>
+<p>This absolute value equation gives us two possible cases:</p>
+<p>Case 1: \(\sqrt{3} - \lambda = \sqrt{3}\), which gives \(\lambda = 0\).</p>
+<p>Case 2: \(\sqrt{3} - \lambda = -\sqrt{3}\), which gives \(\lambda = 2\sqrt{3}\).</p>
+<p>Therefore, the sum of all possible values of \(\lambda\) is:</p>
+<p>\( \lambda_{sum} = \lambda_1 + \lambda_2 = 0 + 2\sqrt{3} = 2\sqrt{3} \)</p>
+<p>Hence, option B (\(2 \sqrt{3}\)) is the correct answer.</p></p></li><li><strong>Q4:</strong> <p>\(\begin{aligned}
+&amp; \frac{x-4}{1}=\frac{y+1}{2}=\frac{z}{-3} \\
+&amp; \frac{x-\lambda}{2}=\frac{y+1}{4}=\frac{z-2}{-5}
+\end{aligned}\)</p>
+<p>the shortest distance between the lines</p>
+<p>\(=\left|\frac{(\overrightarrow{\mathrm{a}}-\overrightarrow{\mathrm{b}}) \cdot\left(\overrightarrow{\mathrm{d}_1} \times \overrightarrow{\mathrm{d}_2}\right)}{\left|\overrightarrow{\mathrm{d}_1} \times \overrightarrow{\mathrm{d}_2}\right|}\right|\)</p>
+<p>\(=\left|\frac{\left|\begin{array}{ccc}\lambda-4 &amp; 0 &amp; 2 \\ 1 &amp; 2 &amp; -3 \\ 2 &amp; 4 &amp; -5\end{array}\right|}{\left|\begin{array}{ccc}\hat{i} &amp; \hat{j} &amp; \hat{k} \\ 1 &amp; 2 &amp; -3 \\ 2 &amp; 4 &amp; -5\end{array}\right|}\right|\)</p>
+<p>\(=\left|\frac{(\lambda-4)(-10+12)-0+2(4-4)}{|2 \hat{i}-1 \hat{j}+0 \hat{k}|}\right|\)</p>
+<p>\(\begin{aligned}
+&amp; \frac{6}{\sqrt{5}}=\left|\frac{2(\lambda-4)}{\sqrt{5}}\right| \\
+&amp; 3=|\lambda-4| \\
+&amp; \lambda-4= \pm 3 \\
+&amp; \lambda=7,1
+\end{aligned}\)</p>
+<p>Sum of all possible values of \(\lambda\) is \(=8\)</p></li><li><strong>Q5:</strong> <p>\(\begin{aligned}
+&amp; \vec{l}_1=2 \hat{i}+3 \hat{j}+4 \hat{k} \\
+&amp; \vec{l}_2=4 \hat{i}+6 \hat{j}+8 \hat{k}
+\end{aligned}\)</p>
+<p><img alt="JEE Main 2024 (Online) 8th April Evening Shift Mathematics - 3D Geometry Question 47 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lw4lkbz1/158cd7a8-1619-430b-bf76-8b2ddd399871/01d314d0-10f4-11ef-8553-fdfc6347789d/file-1lw4lkbz2.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lw4lkbz1/158cd7a8-1619-430b-bf76-8b2ddd399871/01d314d0-10f4-11ef-8553-fdfc6347789d/file-1lw4lkbz2.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(S . D .=\frac{|(2 \hat{i}+3 \hat{j}+4 \hat{k}) \times((\lambda-2) \hat{i}-4 \hat{k})|}{|2 \hat{i}+3 \hat{j}+4 \hat{k}|}\)</p>
+<p>\(\begin{aligned}
+&amp; \left|\begin{array}{ccc}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+2 &amp; 3 &amp; 4 \\
+\lambda-2 &amp; 0 &amp; -4
+\end{array}\right|=-12 \hat{i}-\hat{j}(-8-4 \lambda+8)+\hat{k}(6-3 \lambda) \\
+&amp; =-12 \hat{i}+4 \lambda \hat{j}+(6-3 \lambda) \hat{k} \\
+&amp; \frac{\sqrt{144+16 \lambda^2+(6-3 \lambda)^2}}{\sqrt{29}}=\frac{13}{\sqrt{29}} \\
+&amp; 144+16 \lambda^2+(6-3 \lambda)^2=169 \\
+&amp; \Rightarrow 16 \lambda^2+9 \lambda^2+36-36 \lambda+144-169=0 \\
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \Rightarrow 25 \lambda^2-36 \lambda+11=0 \\
+&amp; \Rightarrow 25 \lambda^2-25 \lambda-11 \lambda+11=0 \\
+&amp; \Rightarrow(25 \lambda-11)(\lambda-1)=0 \\
+&amp; \Rightarrow \lambda=1, \frac{11}{25}
+\end{aligned}\)</p></li><li><strong>Q6:</strong> <p>\(\begin{aligned}
+&amp; L_1: \frac{x-\lambda}{3}=\frac{y-2}{-1}=\frac{z-1}{1} \\
+&amp; L_2: \frac{x+2}{-3}=\frac{y+5}{2}=\frac{z-4}{4}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; n_1 \times n_2=\left|\begin{array}{ccc}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+3 &amp; -1 &amp; 1 \\
+-3 &amp; 2 &amp; 4
+\end{array}\right| \\
+&amp; =-6 \hat{i}-15 \hat{j}+3 \hat{k} \\
+&amp; d=\left|\frac{[(\lambda+2) \hat{i}+7 \hat{j}-3 \hat{k}][-6 \hat{i}-15 \hat{j}+3 \hat{k}]}{|-6 \hat{i}-15 \hat{j}+3 \hat{k}|}\right|=\frac{44}{\sqrt{30}} \\
+&amp; \left|\frac{-6 \lambda-12-105-9}{\sqrt{270}}\right|=\frac{44}{\sqrt{30}} \\
+&amp; |6 \lambda+126|=132 \\
+&amp; |\lambda+21|=22 \\
+&amp; \lambda+21= \pm 22 \\
+&amp; |\lambda|_{\max }=43
+\end{aligned}\)</p></li><li><strong>Q7:</strong> Shortest distance between the lines<br/><br/> \(\frac{x+\sqrt{6}}{2}=\frac{y-\sqrt{6}}{3}=\frac{z-\sqrt{6}}{4}\)<br/><br/> \(\frac{x-\lambda}{3}=\frac{y-2 \sqrt{6}}{4}=\frac{2+2 \sqrt{6}}{5}\) is 6<br/><br/>
+Vector along line of shortest distance<br/><br/> \(=\left|\begin{array}{lll}\mathrm{i} &amp; \mathrm{j} &amp; \mathrm{k} \\ 2 &amp; 3 &amp; 4 \\ 3 &amp; 4 &amp; 5\end{array}\right|, \Rightarrow-\hat{\mathrm{i}}+2 \hat{\mathrm{j}}-\mathrm{k}\) (its magnitude is \(\sqrt{6}\) )<br/><br/>
+Now \(\frac{1}{\sqrt{6}}\left|\begin{array}{ccc}\sqrt{6}+\lambda &amp; \sqrt{6} &amp; -3 \sqrt{6} \\ 2 &amp; 3 &amp; 4 \\ 3 &amp; 4 &amp; 5\end{array}\right|=\pm 6\) <br/><br/>\(\Rightarrow \lambda=-2 \sqrt{6}, 10 \sqrt{6}\)<br/><br/>
+So, square of sum of these values
+<br/><br/>\(
+=(10 \sqrt{6}-2 \sqrt{6})^2=(8 \sqrt{6})^2=384
+\)</li><li><strong>Q8:</strong> Given the two lines :
+<br/><br/>\(
+\frac{x-\lambda}{0}=\frac{y-3}{4}=\frac{z+6}{1} \\\\
+\frac{x+\lambda}{3}=\frac{y}{-4}=\frac{z-6}{0}
+\)
+
+<br/><br/>Let's find the direction vectors of these lines: \(\vec{d_1} = \langle 0, 4, 1 \rangle\) and \(\vec{d_2} = \langle 3, -4, 0 \rangle\).
+
+<br/><br/>Now, let's find the cross product of the direction vectors, which will give a vector that is perpendicular to both lines :
+
+<br/><br/>\(\vec{n} = \vec{d_1} \times \vec{d_2} = \langle 4, 3, -12 \rangle\)
+
+<br/><br/>Let's find the vector connecting a point on line 1 to a point on line 2 :
+
+<br/><br/>\(\vec{c} = \langle 2\lambda, 3, -12 \rangle\)
+
+<br/><br/>The shortest distance between the two lines is the projection of \(\vec{c}\) onto \(\vec{n}\) :
+
+<br/><br/>\(d = \left|\frac{\vec{c} \cdot \vec{n}}{|\vec{n}|}\right| = \left|\frac{(2\lambda)(4) + (3)(3) - (12)(-12)}{\sqrt{16 + 9 + 144}}\right|\)
+
+<br/><br/>We are given that the shortest distance is 13 :
+
+<br/><br/>\(13 = \left|\frac{8\lambda + 153}{13}\right|\)
+
+<br/><br/>\(|8\lambda + 153| = 169\)
+
+<br/><br/>We have two cases :
+
+<br/><br/>1. \(8\lambda + 153 = 169\)
+
+<br/><br/>\(\lambda = \frac{16}{8}\)
+
+<br/><br/>2. \(8\lambda + 153 = -169\)
+
+<br/><br/>\(\lambda = \frac{-322}{8}\)
+
+<br/><br/>Now, let's calculate \(8\left|\sum\limits_{\lambda \in S} \lambda\right|\) :
+
+<br/><br/>\(8\left|\frac{16}{8} + \frac{-322}{8}\right| = 8\left|\frac{-306}{8}\right| = 306\)
+
+<br/><br/>Thus, the correct answer is Option A : 306.</li><li><strong>Q9:</strong> <p>Let \({\overrightarrow a _1} = \widehat i + 2\widehat j + 3\widehat k\)</p>
+<p>\({\overrightarrow a _2} = 2\widehat i + 4\widehat j + 5\widehat k\)</p>
+<p>\(\overrightarrow p  = 2\widehat i + 3\widehat j + \lambda \widehat k,\,\overrightarrow q  = \widehat i + 4\widehat j + 5\widehat k\)</p>
+<p>\(\therefore\) \(\overrightarrow p  \times \overrightarrow q  = (15 - 4\lambda )\widehat i - (10 - \lambda )\widehat j + 5\widehat k\)</p>
+<p>\({\overrightarrow a _2} - {\overrightarrow a _1} = \widehat i + 2\widehat j + 2\widehat k\)</p>
+<p>\(\therefore\) Shortest distance</p>
+<p>\( = \left| {{{(15 - 4\lambda ) - 2(10 - \lambda ) + 10} \over {\sqrt {{{(15 - 4\lambda )}^2} + {{(10 - \lambda )}^2} + 25} }}} \right| = {1 \over {\sqrt 3 }}\)</p>
+<p>\( \Rightarrow 3{(5 - 2\lambda )^2} = {(15 - 4\lambda )^2} + {(10 - \lambda )^2} + 25\)</p>
+<p>\( \Rightarrow 5{\lambda ^2} - 80\lambda  + 275 = 0\)</p>
+<p>\(\therefore\) Sum of values of \(\lambda  = {{80} \over 5} = 16\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{L}_1: \frac{x-1}{2}=\frac{y-2}{3}=\frac{z-3}{4}\) and \(\mathrm{L}_2: \frac{x-2}{3}=\frac{y-4}{4}=\frac{z-5}{5}\) be two lines. Then which of the following points lies on the line of the shortest distance between \(\mathrm{L}_1\) and \(\mathrm{L}_2\) ?</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\left(\frac{14}{3},-3, \frac{22}{3}\right)\)
+</li>
+<li class="c8">\(\left(2,3, \frac{1}{3}\right)\)
+</li>
+<li class="c8">\(\left(\frac{8}{3},-1, \frac{1}{3}\right)\)
+</li>
+<li class="c8">\(\left(-\frac{5}{3},-7,1\right)\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>The shortest distance between the lines \(\frac{x-3}{4}=\frac{y+7}{-11}=\frac{z-1}{5}\) and \(\frac{x-5}{3}=\frac{y-9}{-6}=\frac{z+2}{1}\) is:</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{185}{\sqrt{563}}\]
+</li>
+<li class="c8">\[\frac{187}{\sqrt{563}}\]
+</li>
+<li class="c8">\[\frac{178}{\sqrt{563}}\]
+</li>
+<li class="c8">\[\frac{179}{\sqrt{563}}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{P}\) be the point of intersection of the lines \(\frac{x-2}{1}=\frac{y-4}{5}=\frac{z-2}{1}\) and \(\frac{x-3}{2}=\frac{y-2}{3}=\frac{z-3}{2}\). Then, the shortest distance of \(\mathrm{P}\) from the line \(4 x=2 y=z\) is </p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{3 \sqrt{14}}{7}\]
+</li>
+<li class="c8">\[\frac{5 \sqrt{14}}{7}\]
+</li>
+<li class="c8">\[\frac{\sqrt{14}}{7}\]
+</li>
+<li class="c8">\[\frac{6 \sqrt{14}}{7}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>The shortest distance between the lines \(\frac{x-3}{2}=\frac{y+15}{-7}=\frac{z-9}{5}\) and \(\frac{x+1}{2}=\frac{y-1}{1}=\frac{z-9}{-3}\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[8 \sqrt{3}\]
+</li>
+<li class="c8">\[6 \sqrt{3}\]
+</li>
+<li class="c8">\[5 \sqrt{3}\]
+</li>
+<li class="c8">\[4 \sqrt{3}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>The shortest distance between the lines <br/><br/>\({{x - 5} \over 1} = {{y - 2} \over 2} = {{z - 4} \over { - 3}}\) and <br/><br/>\({{x + 3} \over 1} = {{y + 5} \over 4} = {{z - 1} \over { - 5}}\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[7\sqrt 3 \]</li>
+<li class="c8">\[5\sqrt 3 \]</li>
+<li class="c8">\[4\sqrt 3 \]</li>
+<li class="c8">\[6\sqrt 3 \]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>The shortest distance between the lines \({{x - 1} \over 2} = {{y + 8} \over -7} = {{z - 4} \over 5}\) and \({{x - 1} \over 2} = {{y - 2} \over 1} = {{z - 6} \over { - 3}}\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[2\sqrt3\]</li>
+<li class="c8">\[3\sqrt3\]</li>
+<li class="c8">\[4\sqrt3\]</li>
+<li class="c8">\[5\sqrt3\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>The shortest distance between the lines \(x+1=2y=-12z\) and \(x=y+2=6z-6\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">3</li>
+<li class="c8">\[\frac{5}{2}\]</li>
+<li class="c8">\[\frac{3}{2}\]</li>
+<li class="c8">2</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>The shortest distance between the lines \({{x - 2} \over 3} = {{y + 1} \over 2} = {{z - 6} \over 2}\) and \({{x - 6} \over 3} = {{1 - y} \over 2} = {{z + 8} \over 0}\) is equal to ________</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>The shortest distance between the lines \({{x + 2} \over 1} = {y \over { - 2}} = {{z - 5} \over 2}\) and \({{x - 4} \over 1} = {{y - 1} \over 2} = {{z + 3} \over 0}\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">8</li>
+<li class="c8">7</li>
+<li class="c8">6</li>
+<li class="c8">9</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q10.</span>
+</div>
+<div class="c5"><p>The shortest distance between the lines \(\frac{x-4}{4}=\frac{y+2}{5}=\frac{z+3}{3}\) and \(\frac{x-1}{3}=\frac{y-3}{4}=\frac{z-4}{2}\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[3 \sqrt{6}\]</li>
+<li class="c8">\[6 \sqrt{2}\]</li>
+<li class="c8">\[6 \sqrt{3}\]</li>
+<li class="c8">\[2 \sqrt{6}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q11.</span>
+</div>
+<div class="c5"><p>The shortest distance between the lines <br/><br/>\({{x - 3} \over 2} = {{y - 2} \over 3} = {{z - 1} \over { - 1}}\) and \({{x + 3} \over 2} = {{y - 6} \over 1} = {{z - 5} \over 3}\), is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{{18} \over {\sqrt 5 }}\]</li>
+<li class="c8">\[{{22} \over {3\sqrt 5 }}\]</li>
+<li class="c8">\[{{46} \over {3\sqrt 5 }}\]</li>
+<li class="c8">\[6\sqrt 3 \]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q12.</span>
+</div>
+<div class="c5"><p>The shortest distance between the lines \(\frac{x+7}{-6}=\frac{y-6}{7}=z\) and \(\frac{7-x}{2}=y-2=z-6\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[2 \sqrt{29}\]</li>
+<li class="c8">1</li>
+<li class="c8">\[\sqrt{\frac{37}{29}}\]</li>
+<li class="c8">\[\frac{\sqrt{29}}{2}\]</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>B</strong></li><li>Q3: <strong>A</strong></li><li>Q4: <strong>D</strong></li><li>Q5: <strong>D</strong></li><li>Q6: <strong>C</strong></li><li>Q7: <strong>D</strong></li><li>Q8: <strong>1</strong></li><li>Q9: <strong>D</strong></li><li>Q10: <strong>A</strong></li><li>Q11: <strong>A</strong></li><li>Q12: <strong>A</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned} &amp; L_1: \frac{x-1}{2}=\frac{y-2}{3}=\frac{z-3}{4} \\\\ &amp; L_2: \frac{x-2}{3}=\frac{y-4}{4}=\frac{z-5}{5}\end{aligned}\)</p>
+<p><img alt="JEE Main 2025 (Online) 22nd January Morning Shift Mathematics - 3D Geometry Question 30 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m7bincwn/ee47a0c4-2728-4780-a3ad-d9d39b9ebabf/784cb270-ee88-11ef-a27a-976df0f68c87/file-jaoe38c1m7bincwo.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7bincwn/ee47a0c4-2728-4780-a3ad-d9d39b9ebabf/784cb270-ee88-11ef-a27a-976df0f68c87/file-jaoe38c1m7bincwo.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\( \begin{aligned} &amp; P(2 \lambda+1,3 \lambda+2,4 \lambda+3) \\ &amp; Q(3 \mu+2,4 \mu+4,5 \mu+5) \end{aligned} \)</p>
+<p>Dr's of \(P Q&lt;2 \lambda-3 \mu-1,3 \lambda-4 \mu-2\),</p>
+<p>\( \begin{aligned} &amp; 4 \lambda-5 \mu-2&gt; \\ &amp; P Q=\left|\begin{array}{lll} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 2 &amp; 3 &amp; 4 \\ 3 &amp; 4 &amp; 5 \end{array}\right|=-\hat{i}+2 \hat{j}-\hat{k} \end{aligned} \)</p>
+<p>\( \begin{aligned} &amp; \Rightarrow \quad \frac{2 \lambda-3 \mu-1}{-1}=\frac{3 \lambda-4 \mu-2}{2}=\frac{4 \lambda-5 \mu-2}{-1} \\ &amp; \Rightarrow \quad \lambda=\frac{1}{3} \mu=\frac{-1}{6} \\ &amp; \Rightarrow \quad P\left(\frac{5}{3}, 3, \frac{13}{3}\right) \quad Q\left(\frac{3}{2}, \frac{10}{3}, \frac{25}{6}\right) \end{aligned} \)</p>
+<p>Dr's \(P Q\langle 1,-2,1\rangle\)</p>
+<p>\(\therefore\) Line</p>
+<p>\( \frac{y-\frac{5}{3}}{1}=\frac{y-3}{-2}=\frac{y-\frac{13}{3}}{1} \)</p></li><li><strong>Q2:</strong> <p>Given lines are</p>
+<p>\(\frac{x-3}{4}=\frac{y-(-7)}{-11}=\frac{z-1}{5}\) and</p>
+<p>\(\frac{x-5}{3}=\frac{y-9}{-6}=\frac{z-(-2)}{1}\)</p>
+<p>Shortest distance between two lines,</p>
+<p>\(\begin{aligned}
+&amp; d=\frac{\left|\left(\vec{a}_2-\vec{a}_1\right) \cdot\left(\vec{b}_1 \times \vec{b}_2\right)\right|}{\left|\left(\vec{b}_1 \times \vec{b}_2\right)\right|} \\
+&amp; \vec{a}_2-\vec{a}_1=2 \hat{i}+16 \hat{j}-3 \hat{k} \text { and } \\
+&amp; \vec{b}_1 \times \vec{b}_2=\left|\begin{array}{ccc}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+4 &amp; -11 &amp; 5 \\
+3 &amp; -6 &amp; 1
+\end{array}\right|=19 \hat{i}+11 \hat{j}+9 \hat{k} \\
+&amp; \therefore \quad d=\frac{187}{\sqrt{563}}
+\end{aligned}\)</p></li><li><strong>Q3:</strong> <p>\(\begin{aligned}
+&amp; L_1: \frac{x-2}{1}=\frac{y-4}{5}=\frac{z-2}{1} \\
+&amp; L_2: \frac{x-3}{2}=\frac{y-2}{3}=\frac{z-3}{2}
+\end{aligned}\)</p>
+<p>Point of intersection of \(L_1\) and \(L_2\) is \((-1,1,-1)\)</p>
+<p>Distance of point \(P\) from \(L_3: 4 x=2 y=z\)</p>
+<p>\(L_3: \frac{x}{\frac{1}{4}}=\frac{y}{\frac{1}{2}}=\frac{z}{1}\)</p>
+<p><img alt="JEE Main 2024 (Online) 4th April Evening Shift Mathematics - 3D Geometry Question 49 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lwhgb1g0/feeaa3f8-43fb-402d-a95e-980c0569abe3/a234b100-1805-11ef-b156-f754785ad3ce/file-1lwhgb1g1.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lwhgb1g0/feeaa3f8-43fb-402d-a95e-980c0569abe3/a234b100-1805-11ef-b156-f754785ad3ce/file-1lwhgb1g1.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>Any point on \(L_3\) be</p>
+<p>\(\begin{aligned}
+&amp; \left(\frac{\lambda}{4}, \frac{\lambda}{2}, \lambda\right) \\
+&amp; P R:\left\langle\frac{\lambda}{4}+1, \frac{\lambda}{2}-1, \lambda+1\right\rangle \\
+&amp; \because P R \perp\left\langle\frac{1}{4}, \frac{1}{2}, 1\right\rangle
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \Rightarrow\left(\frac{\lambda}{4}+1\right) \frac{1}{4}+\frac{1}{2}\left(\frac{\lambda}{2}-1\right)+\lambda+1=0 \\
+&amp; \quad \frac{\lambda}{16}+\frac{1}{4}+\frac{\lambda}{4}-\frac{1}{2}+\lambda+1=0 \\
+&amp; \Rightarrow \quad \lambda=\frac{-4}{7} \\
+&amp; \therefore \quad R\left(\frac{-1}{7}, \frac{-2}{7}, \frac{-4}{7}\right) \\
+&amp; \text { Now } R P: \sqrt{\left(\frac{-1}{7}+1\right)^2+\left(\frac{-2}{7}-1\right)^2+\left(\frac{-4}{7}+1\right)^2} \\
+&amp; \quad=\sqrt{\frac{36}{49}+\frac{81}{49}+\frac{9}{49}}=\frac{\sqrt{126}}{7}=\frac{3 \sqrt{14}}{7}
+\end{aligned}\)</p></li><li><strong>Q4:</strong> <p>Given two lines are represented as:</p>
+<p>\( \frac{x-3}{2} = \frac{y+15}{-7} = \frac{z-9}{5} \)</p>
+<p>and</p>
+<p>\( \frac{x+1}{2} = \frac{y-1}{1} = \frac{z-9}{-3} \)</p>
+<p>The formula for the shortest distance between two lines is:</p>
+<p>\( d = \frac{|\left(\vec{a}_2 - \vec{a}_1\right) \cdot \left(\vec{b}_1 \times \vec{b}_2\right)|}{|\vec{b}_1 \times \vec{b}_2|} \)</p>
+<p>From the given lines:</p>
+<p>\( \vec{a}_1 = (3, -15, 9) \)</p>
+<p>\( \vec{a}_2 = (-1, 1, 9) \)</p>
+<p>\( \vec{b}_1 = (2, -7, 5) \)</p>
+<p>\( \vec{b}_2 = (2, 1, -3) \)</p>
+<p>Calculate the difference:</p>
+<p>\( \vec{a}_2 - \vec{a}_1 = (-1-3, 1+15, 9-9) = (-4, 16, 0) \)</p>
+<p>Next, compute the cross product:</p>
+<p>\( \vec{b}_1 \times \vec{b}_2 = \begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 2 &amp; -7 &amp; 5 \\ 2 &amp; 1 &amp; -3 \end{vmatrix}  = (16\hat{i} + 16\hat{j} + 16\hat{k}) \)</p>
+<p>The magnitude of the cross product is:</p>
+<p>\( |\vec{b}_1 \times \vec{b}_2| = |(16\hat{i} + 16\hat{j} + 16\hat{k})| = 16\sqrt{3} \)</p>
+<p>Calculate the dot product:</p>
+<p>\( (\vec{a}_2 - \vec{a}_1) \cdot (\vec{b}_1 \times \vec{b}_2) = (-4\hat{i} + 16\hat{j} + 0\hat{k}) \cdot (16\hat{i} + 16\hat{j} + 16\hat{k})  = -64 + 256 + 0 = 192 \)</p>
+<p>Finally, find the shortest distance:</p>
+<p>\( d = \frac{|192|}{16\sqrt{3}} = \frac{192}{16\sqrt{3}} = 4\sqrt{3} \)</p>
+<p>Thus, the shortest distance is:</p>
+<p>\( \boxed{4 \sqrt{3}} \)</p></li><li><strong>Q5:</strong> \(
+\begin{aligned}
+&amp; \mathrm{L}_1: \frac{x-5}{1}=\frac{y-2}{2}=\frac{z-4}{-3} \\\\
+&amp; \overrightarrow{a_1}=5 \hat{i}+2 \hat{j}+4 \hat{k} \\\\
+&amp; \overrightarrow{r_1}=\hat{i}+2 \hat{j}-3 \hat{k} \\\\
+&amp; \mathrm{~L}_2: \frac{x+3}{1}=\frac{y+5}{4}=\frac{z-1}{-5} \\\\
+&amp; \overrightarrow{a_2}=-3 \hat{i}-5 \hat{j}+\hat{k} \\\\
+&amp; \overrightarrow{r_2}=\hat{i}+4 \hat{j}-5 \hat{k} \\\\
+&amp; \overrightarrow{r_1} \times \overrightarrow{r_2}=\left|\begin{array}{lll}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+1 &amp; 2 &amp; -3 \\
+1 &amp; 4 &amp; -5
+\end{array}\right| \\\\
+&amp; =2 \hat{i}+2 \hat{j}+2 \hat{k}
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \text { Shortest distance (d) }=\left|\frac{\left(\overrightarrow{r_1} \times \overrightarrow{r_2}\right) \cdot\left(\overrightarrow{a_1}-\overrightarrow{a_2}\right)}{\left|\overrightarrow{r_1} \times \overrightarrow{r_2}\right|}\right| \\\\
+&amp; =\frac{36}{2 \sqrt{3}}=6 \sqrt{3}
+\end{aligned}
+\)</li><li><strong>Q6:</strong> <p>\({\overrightarrow r _1} = \widehat i - 8\widehat j + 4\widehat k\)</p>
+<p>\({\overrightarrow r _2} = \widehat i + 2\widehat j + 6\widehat k\)</p>
+<p>\(\overrightarrow a  = 2\widehat i - 7\widehat j + 5\widehat k\)</p>
+<p>\(\overrightarrow b  = 2\widehat i + \widehat j - 3\widehat k\)</p>
+<p>S.D. \( = {{\left| {\matrix{
+   {{{\overrightarrow r }_1} - {{\overrightarrow r }_2}} &amp; {\matrix{
+   {\overrightarrow a } &amp; {\overrightarrow b }  \cr 
+
+ } }  \cr 
+
+ } } \right|} \over {\left| {\overrightarrow a  \times \overrightarrow b } \right|}}\)</p>
+<p>\(\left[ {\matrix{
+   {{{\overrightarrow r }_1} - {{\overrightarrow r }_2}} &amp; {\matrix{
+   {\overrightarrow a } &amp; {\overrightarrow b }  \cr 
+
+ } }  \cr 
+
+ } } \right] = \left| {\matrix{
+   0 &amp; { - 10} &amp; { - 2}  \cr 
+   2 &amp; { - 7} &amp; 5  \cr 
+   2 &amp; 1 &amp; { - 3}  \cr 
+
+ } } \right|\)</p>
+<p>\(\therefore\) \(10( - 16) - 2(16) =  - 192\)</p>
+<p>\(\left| {\left[ {\matrix{
+   {{{\overrightarrow r }_1} - {{\overrightarrow r }_2}} &amp; {\matrix{
+   {\overrightarrow a } &amp; {\overrightarrow b }  \cr 
+
+ } }  \cr 
+
+ } } \right]} \right| = 192\)</p>
+<p>\(\overrightarrow a  \times \overrightarrow b  = \left| {\matrix{
+   {\widehat i} &amp; {\widehat j} &amp; {\widehat k}  \cr 
+   2 &amp; { - 7} &amp; 5  \cr 
+   2 &amp; 1 &amp; { - 3}  \cr 
+
+ } } \right| = 16\widehat i + 16\widehat j + 16\widehat k\)</p>
+<p>\(\overrightarrow a  \times \overrightarrow b  = 16\sqrt 3 \)</p>
+<p>S.D. \( = {{192} \over {16\sqrt 3 }} = 4\sqrt 3 \)</p></li><li><strong>Q7:</strong> \(L_{1}: \frac{x+1}{1}=\frac{y}{\frac{1}{2}}=\frac{z}{\frac{-1}{12}}\)
+<br/><br/>
+\(
+\begin{aligned}
+&amp; L_{2}: \frac{x}{1}=\frac{y+2}{1}=\frac{z-1}{\frac{1}{6}} \\\\
+&amp; \text { S.D }=\left|\frac{(-\hat{i}+2 \hat{j}-\hat{k}) \cdot(2 \hat{i}-3 \hat{j}+6 \hat{k})}{7}\right| \\\\
+&amp; =\left|\frac{-2-6-6}{7}\right|=2 \text { units }
+\end{aligned}
+\)</li><li><strong>Q8:</strong> <p>For \({L_1}:\)\({{x - 2} \over 3} = {{y + 1} \over 2} = {{z - 6} \over 2}\)</p>
+<p>\(\therefore\) Point on line is \(A(2,-1,6)\)</p>
+<p>Parallel vector to this line is,</p>
+<p>\(\overrightarrow p  = 3\widehat i + 2\widehat j + 2\widehat k\)</p>
+<p>For \({L_2}:\)\({{x - 6} \over 3} = {{y - 1} \over -2} = {{z + 8} \over 0}\)</p>
+<p>\(\therefore\) Point on line is \(B(6,1,-8)\)</p>
+<p>Parallel vector to this line is,</p>
+<p>\(\overrightarrow q  = 3\widehat i - 2\widehat j + 0\widehat k\)</p>
+<p><img alt="JEE Main 2023 (Online) 24th January Morning Shift Mathematics - 3D Geometry Question 115 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1le2m97s7/2871d106-b3b3-42e5-b023-ab35f716d2cf/3fb28b70-ab81-11ed-88fd-4faade8d5a9f/file-1le2m97s8.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1le2m97s7/2871d106-b3b3-42e5-b023-ab35f716d2cf/3fb28b70-ab81-11ed-88fd-4faade8d5a9f/file-1le2m97s8.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Now shortest distance between this two lines is,</p>
+<p>\( = \left| {{{\overrightarrow {AB} \,.\,\left( {\overrightarrow p  \times \overrightarrow q } \right)} \over {\left| {\overrightarrow p  \times \overrightarrow q } \right|}}} \right|\)</p>
+<p>Now, \(\overrightarrow {AB}  =  4 \widehat i + 2\widehat j -14\widehat k\)</p>
+<p>\(\overrightarrow p  \times \overrightarrow q  = \left| {\matrix{
+   {\widehat i} &amp; {\widehat j} &amp; {\widehat k}  \cr 
+   3 &amp; 2 &amp; 2  \cr 
+   3 &amp; -2 &amp; 0  \cr 
+
+ } } \right|\)</p>
+<p>\( = 4\widehat i +6\widehat j -12\widehat k\)</p>
+<p>\(\therefore\) \(|\vec{p} \times \vec{q}|=\sqrt{16+36+144}=\sqrt{196}=14\)</p>
+<p>and \(\overrightarrow {AB} \,.\,\left( {\overrightarrow p  \times \overrightarrow q } \right) =  + 16 + 12 + 168 =  +196\)</p>
+<p>\(\therefore\) Shortest distance \( = \left| {{{ 196} \over {14 }}} \right| = 14\)</p></li><li><strong>Q9:</strong> Given, the lines are
+<br/><br/>\(
+\begin{aligned}
+\frac{x+2}{1} &amp; =\frac{y}{-2}=\frac{z-5}{2} ~~~~..........(i)\\\\
+\text { and } \frac{x-4}{1} &amp; =\frac{y-1}{2}=\frac{z+3}{0} ~~~~..........(ii)
+\end{aligned}
+\)
+<br/><br/>Formula for shortest distance between two skew-lines,
+<br/><br/>\(
+\begin{aligned}
+S D &amp; =\left|\frac{\left|\begin{array}{ccc}
+x_2-x_1 &amp; y_2-y_1 &amp; z_2-z_1 \\
+a_1 &amp; b_1 &amp; c_1 \\
+a_2 &amp; b_2 &amp; c_2
+\end{array}\right|}{\left|\begin{array}{ccc}
+\hat{\mathbf{i}} &amp; \hat{\mathbf{j}} &amp; \hat{\mathbf{k}} \\
+a_1 &amp; b_1 &amp; c_1 \\
+a_2 &amp; b_2 &amp; c_2
+\end{array}\right|}\right|=\left|\frac{\left|\begin{array}{ccc}
+6 &amp; 1 &amp; -8 \\
+1 &amp; -2 &amp; 2 \\
+1 &amp; 2 &amp; 0
+\end{array}\right|}{\left|\begin{array}{ccc}
+\hat{\mathbf{i}} &amp; \hat{\mathbf{j}} &amp; \hat{\mathbf{k}} \\
+1 &amp; -2 &amp; 2 \\
+1 &amp; 2 &amp; 0
+\end{array}\right|}\right| \\\\
+&amp; =\left|\frac{6(-4)-1(-2)-8(4)}{|-4 \hat{\mathbf{i}}+2 \hat{\mathbf{j}}+4 \hat{\mathbf{k}}|}\right| \\\\
+&amp; =\left|\frac{-24+2-32}{\sqrt{36}}\right| \\\\
+&amp; =\left|\frac{-54}{6}\right|=|-9|=9
+\end{aligned}
+\)</li><li><strong>Q10:</strong> The given lines are
+<br/><br/>\(\frac{x-4}{4}=\frac{y+2}{5}=\frac{z+3}{3}\) and \(\frac{x-1}{3}=\frac{y-3}{4}=\frac{z-4}{2}\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \text { So, } \vec{b}_1=4 \hat{i}+5 \hat{j}+3 \hat{k} \\\\
+&amp; \vec{b}_2=3 \hat{i}+4 \hat{j}+2 \hat{k} \\\\
+&amp; \vec{a}_1=4 \hat{i}-2 \hat{j}-3 \hat{k} \\\\
+&amp;\vec{a}_2=\hat{i}+3 \hat{j}+4 \hat{k}
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \therefore \vec{b}_1 \times \vec{b}_2=\left|\begin{array}{ccc}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+4 &amp; 5 &amp; 3 \\
+3 &amp; 4 &amp; 2
+\end{array}\right| \\\\
+&amp; =(10-12) \hat{i}-(8-9) \hat{j}+(16-15) \hat{k} \\\\
+&amp; =-2 \hat{i}+\hat{j}+\hat{k}
+\end{aligned}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \text { Shortest distance, } d=\left|\frac{\left(\vec{a}_2-\vec{a}_1\right) \cdot\left(\vec{b}_1 \times \vec{b}_2\right)}{\left|\vec{b}_1 \times \vec{b}_2\right|}\right| \\\\
+&amp; =\left|\frac{(3 \hat{i}-5 \hat{j}-7 \hat{k}) \cdot(-2 \hat{i}+\hat{j}+\hat{k})}{\sqrt{4+1+1}}\right| \\\\
+&amp; =\left|\frac{-6-5-7}{\sqrt{6}}\right|=\frac{18}{\sqrt{6}}=3 \sqrt{6} \text { units }
+\end{aligned}
+\)</li><li><strong>Q11:</strong> <p>\({L_1}:{{x - 3} \over 2} = {{y - 2} \over 3} = {{z - 1} \over { - 1}}\)</p>
+<p>\({L_2}:{{x + 3} \over 2} = {{y - 6} \over 1} = {{z - 5} \over 3}\)</p>
+<p>Now, \(\overrightarrow p  \times \overrightarrow q  = \left| {\matrix{
+   {\widehat i} &amp; {\widehat j} &amp; {\widehat k}  \cr 
+   2 &amp; 3 &amp; { - 1}  \cr 
+   2 &amp; 1 &amp; 3  \cr 
+
+ } } \right| = 10\widehat i - 8\widehat j - 4\widehat k\)</p>
+<p>and \({\overrightarrow a _2} - {\overrightarrow a _1} = 6\widehat i - 4\widehat j - 4\widehat k\)</p>
+<p>\(\therefore\) \(S.D. = \left| {{{60 + 32 + 16} \over {\sqrt {100 + 64 + 16} }}} \right| = {{108} \over {\sqrt {180} }} = {{18} \over {\sqrt 5 }}\)</p></li><li><strong>Q12:</strong> <p>\({L_1}:{{x + 7} \over 6} = {{y - 6} \over 7} = {{z - 0} \over 1}\)</p>
+<p>Any point on it \({\overrightarrow a _1}( - 7,6,0)\) and L<sub>1</sub> is parallel to \({\overrightarrow b _1}( - 6,7,1)\)</p>
+<p>\({L_2}:{{x - 7} \over { - 2}} = {{y - 2} \over 1} = {{z - 6} \over 1}\)</p>
+<p>Any point on it \({\overrightarrow a _2}(7,2,6)\) and L<sub>2</sub> is parallel to \({\overrightarrow b _2}( - 2,1,1)\)</p>
+<p>Shortest distance between L<sub>1</sub> and L<sub>2</sub></p>
+<p>\( = \left| {{{({{\overrightarrow a }_2} - {{\overrightarrow a }_1})\,.\,({{\overrightarrow b }_1} \times {{\overrightarrow b }_2})} \over {\left| {{{\overrightarrow b }_1} \times {{\overrightarrow b }_2}} \right|}}} \right| = \left| {{{( - 14,4, - 6)\,.\,(3,2,4)} \over {\sqrt {9 + 4 + 16} }}} \right|\)</p>
+<p>\( = 2\sqrt {29} \).</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{L}_1: \frac{x-1}{1}=\frac{y-2}{-1}=\frac{z-1}{2}\) and \(\mathrm{L}_2: \frac{x+1}{-1}=\frac{y-2}{2}=\frac{z}{1}\) be two lines.</p>
+<p>Let \(L_3\) be a line passing through the point \((\alpha, \beta, \gamma)\) and be perpendicular to both \(L_1\) and \(L_2\). If \(L_3\) intersects \(\mathrm{L}_1\), then \(|5 \alpha-11 \beta-8 \gamma|\) equals :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>25</p></li>
+<li class="c8"><p>20</p></li>
+<li class="c8"><p>16</p></li>
+<li class="c8"><p>18</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let a straight line \(L\) pass through the point \(P(2, -1, 3)\) and be perpendicular to the lines \( \frac{x - 1}{2} = \frac{y + 1}{1} = \frac{z - 3}{-2} \) and \( \frac{x - 3}{1} = \frac{y - 2}{3} = \frac{z + 2}{4} \). If the line \(L\) intersects the \(yz\)-plane at the point \(Q\), then the distance between the points \(P\) and \(Q\) is:</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>\(\sqrt{10}\)</p></li>
+<li class="c8"><p>\(2\)</p></li>
+<li class="c8"><p>\(2\sqrt{3}\)</p></li>
+<li class="c8"><p>\(3\)</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let the line passing through the points \((-1,2,1)\) and parallel to the line \(\frac{x-1}{2}=\frac{y+1}{3}=\frac{z}{4}\) intersect the line \(\frac{x+2}{3}=\frac{y-3}{2}=\frac{z-4}{1}\) at the point \(P\). Then the distance of \(P\) from the point \(Q(4,-5,1)\) is </p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(5 \sqrt{6}\)
+</li>
+<li class="c8">\(5\)
+</li>
+<li class="c8">\(5 \sqrt{5}\)
+</li>
+<li class="c8">\(10\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Let a line passing through the point \((4,1,0)\) intersect the line \(\mathrm{L}_1: \frac{x-1}{2}=\frac{y-2}{3}=\frac{z-3}{4}\) at the point \(A(\alpha, \beta, \gamma)\) and the line \(\mathrm{L}_2: x-6=y=-z+4\) at the point \(B(a, b, c)\). Then \(\left|\begin{array}{lll}1 &amp; 0 &amp; 1 \\ \alpha &amp; \beta &amp; \gamma \\ a &amp; b &amp; c\end{array}\right|\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">16</li>
+<li class="c8">6</li>
+<li class="c8">8</li>
+<li class="c8">12</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>The lines \(\frac{x-2}{2}=\frac{y}{-2}=\frac{z-7}{16}\) and \(\frac{x+3}{4}=\frac{y+2}{3}=\frac{z+2}{1}\) intersect at the point \(P\). If the distance of \(\mathrm{P}\) from the line \(\frac{x+1}{2}=\frac{y-1}{3}=\frac{z-1}{1}\) is \(l\), then \(14 l^2\) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>Let a line passing through the point \((-1,2,3)\) intersect the lines \(L_1: \frac{x-1}{3}=\frac{y-2}{2}=\frac{z+1}{-2}\) at \(M(\alpha, \beta, \gamma)\) and \(L_2: \frac{x+2}{-3}=\frac{y-2}{-2}=\frac{z-1}{4}\) at \(N(a, b, c)\). Then, the value of \(\frac{(\alpha+\beta+\gamma)^2}{(a+b+c)^2}\) equals __________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>D</strong></li><li>Q3: <strong>C</strong></li><li>Q4: <strong>C</strong></li><li>Q5: <strong>-2</strong></li><li>Q6: <strong>3</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p><strong>Step 1. Identify the Given Lines</strong></p>
+<p>The line </p>
+<p>\( \mathrm{L}_1:\; \frac{x-1}{1}=\frac{y-2}{-1}=\frac{z-1}{2} \) </p>
+<p>passes through the point </p>
+<p>\( P_1=(1,2,1) \) </p>
+<p>with direction vector </p>
+<p>\( \mathbf{u}=(1,-1,2). \)</p>
+<p>Similarly, the line </p>
+<p>\( \mathrm{L}_2:\; \frac{x+1}{-1}=\frac{y-2}{2}=\frac{z}{1} \) </p>
+<p>passes through the point </p>
+<p>\( P_2=(-1,2,0) \) </p>
+<p>with direction vector </p>
+<p>\( \mathbf{v}=(-1,2,1). \)</p>
+<p><strong>Step 2. Determine the Direction of \( L_3 \)</strong></p>
+<p>Since \( L_3 \) is perpendicular to both \( L_1 \) and \( L_2 \), its direction vector must be parallel to the cross product of \( \mathbf{u} \) and \( \mathbf{v} \). Compute:</p>
+<p>\( \mathbf{d} = \mathbf{u}\times\mathbf{v} = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ 1 &amp; -1 &amp; 2 \\ -1 &amp; 2 &amp; 1 \end{vmatrix}. \)</p>
+<p>Using the determinant, we obtain:</p>
+<p>\( \begin{aligned} d_x &amp;= (-1)(1) - (2)(2) = -1-4=-5,\\(1mm] d_y &amp;= (2)(-1) - (1)(1) = -2-1=-3,\\(1mm] d_z &amp;= (1)(2) - (-1)(-1) = 2-1=1. \end{aligned} \)</p>
+<p>Thus, a valid direction vector is </p>
+<p>\( \mathbf{d}=(-5,-3,1). \)</p>
+<p><strong>Step 3. Express \( L_3 \) in Terms of Its Intersection with \( L_1 \)</strong></p>
+<p>Since \( L_3 \) intersects \( L_1 \), let the intersection point (on \( L_1 \)) be expressed using a parameter \( t \) as:</p>
+<p>\( A(t) = (1+t,\, 2-t,\, 1+2t). \)</p>
+<p>Since \( L_3 \) passes through \( A(t) \) and also through the given point </p>
+<p>\( Q=(\alpha,\beta,\gamma), \) </p>
+<p>its parametric form can be written as:</p>
+<p>\( (\alpha,\beta,\gamma)=A(t) + s\,\mathbf{d} = (1+t,\,2-t,\,1+2t) + s(-5,-3,1) \)</p>
+<p>for some parameters \( s \) and \( t \).</p>
+<p><strong>Step 4. Express \(\alpha,\beta,\gamma\) in Terms of \(t\) and \(s\)</strong></p>
+<p>Comparing coordinates, we have:</p>
+<p>\( \begin{cases} \alpha = 1 + t - 5s,\\(1mm] \beta = 2 - t - 3s,\\(1mm] \gamma = 1 + 2t + s. \end{cases} \)</p>
+<p><strong>Step 5. Compute \(5\alpha - 11\beta - 8\gamma\)</strong></p>
+<p>Substitute the expressions for \(\alpha\), \(\beta\), and \(\gamma\):</p>
+<p>\( \begin{aligned} 5\alpha - 11\beta - 8\gamma &amp;= 5(1+t-5s) - 11(2-t-3s) - 8(1+2t+s)\\(1mm] &amp;= (5 + 5t - 25s) - (22 - 11t - 33s) - (8 + 16t + 8s)\\(1mm] &amp;= \left(5 - 22 - 8\right) + \left(5t + 11t - 16t\right) + \left(-25s + 33s - 8s\right)\\(1mm] &amp;= -25 + 0t + 0s\\(1mm] &amp;= -25. \end{aligned} \)</p>
+<p>Taking the absolute value yields:</p>
+<p>\( \left|5\alpha-11\beta-8\gamma\right| = 25. \)</p>
+<p><strong>Conclusion</strong></p>
+<p>The value of </p>
+<p>\( \left|5\,\alpha - 11\,\beta - 8\,\gamma\right| \) is \( \boxed{25}. \)</p></li><li><strong>Q2:</strong> <p>To find the distance between the points \( P \) and \( Q \), let's consider the following steps:</p>
+<p><p><strong>Determine the direction vector of line \( L \):</strong> </p>
+<p>For the line \( L \) to be perpendicular to both given lines, we find the direction vector of \( L \) using the cross product of the direction vectors of the given lines.</p>
+<p>The first line has direction vector \( \langle 2, 1, -2 \rangle \) and the second line has direction vector \( \langle 1, 3, 4 \rangle \). The cross product is:</p>
+<p>\(    \begin{vmatrix}    \hat{i} &amp; \hat{j} &amp; \hat{k} \\    2 &amp; 1 &amp; -2 \\    1 &amp; 3 &amp; 4    \end{vmatrix}    = 10\hat{i} - 10\hat{j} + 5\hat{k}    = 5(2\hat{i} - 2\hat{j} + \hat{k})    \)</p>
+<p>Thus, the direction vector of line \( L \) is \( \langle 2, -2, 1 \rangle \).</p></p>
+<p><p><strong>Equation of line \( L \):</strong> </p>
+<p>Since \( L \) passes through point \( P(2, -1, 3) \) with direction vector \( \langle 2, -2, 1 \rangle \), its parametric form is:</p>
+<p>\(    \frac{x-2}{2} = \frac{y+1}{-2} = \frac{z-3}{1} = \lambda    \)</p></p>
+<p><p><strong>Find the intersection with the \( yz \)-plane:</strong> </p>
+<p>On the \( yz \)-plane, \( x = 0 \). Substitute into the line equation to find \( \lambda \):</p>
+<p>\(    2\lambda + 2 = 0 \implies \lambda = -1    \)</p>
+<p>Substitute \( \lambda = -1 \) back into the parametric equations to find \( Q \):</p>
+<p>\(    x = 2(-1) + 2 = 0, \quad y = -2(-1) - 1 = 1, \quad z = (-1) + 3 = 2    \)</p>
+<p>Therefore, the intersection point \( Q \) is \( (0, 1, 2) \).</p></p>
+<p><p><strong>Calculate the distance between \( P \) and \( Q \):</strong></p>
+<p>\(    \text{d}(P, Q) = \sqrt{(2-0)^2 + (-1-1)^2 + (3-2)^2} = \sqrt{4 + 4 + 1} = \sqrt{9} = 3    \)</p></p>
+<p>Thus, the distance between points \( P \) and \( Q \) is 3.</p></li><li><strong>Q3:</strong> <p>Equation of line through point \((-1,2,1)\) is \(\rightarrow\)</p>
+<p><img alt="JEE Main 2025 (Online) 24th January Morning Shift Mathematics - 3D Geometry Question 22 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m7dekqon/847385e7-8886-42d8-a7fd-a83043876c72/1c4c2270-ef92-11ef-b7f2-b1a037ccbb53/file-jaoe38c1m7dekqoo.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7dekqon/847385e7-8886-42d8-a7fd-a83043876c72/1c4c2270-ef92-11ef-b7f2-b1a037ccbb53/file-jaoe38c1m7dekqoo.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp;\Rightarrow \frac{x+1}{2}=\frac{y-2}{3}=\frac{z-1}{4}-(2)=\lambda\\
+&amp;\text { So, }\left[\begin{array}{l}
+x=2 \lambda-1 \\
+y=3 \lambda+2 \\
+z=4 \lambda+1
+\end{array}\right.
+\end{aligned}\)</p>
+<p>By \((1) \rightarrow \frac{x+2}{3}=\frac{y-3}{2}=\frac{z-4}{1}=\mu(\) Let \()\)</p>
+<p>So, \(\left[\begin{array}{l}x=3 \mu-2 \\ y=2 \mu+3 \\ z=\mu+4\end{array}\right.\)</p>
+<p>For intersection point 'P'</p>
+<p>\(\begin{aligned}
+&amp; \mathrm{x}=2 \lambda-1=3 \mu-2 \\
+&amp; \mathrm{y}=3 \lambda+2=2 \mu+3 \quad\left[\begin{array}{l}
+\lambda=1 \\
+\mu=1
+\end{array}\right] \\
+&amp; \mathrm{z}=4 \lambda+1=\mu+4 \\
+&amp; \text { So, point } \mathrm{P}(\mathrm{x}, \mathrm{y}, \mathrm{z})=(1,5,5) \\
+&amp; \&amp; \mathrm{Q}(4,-5,1) \\
+&amp; \therefore \mathrm{PQ}=\sqrt{9+100+16} \\
+&amp; =\sqrt{125}=5 \sqrt{5}
+\end{aligned}\)</p></li><li><strong>Q4:</strong> <p><img alt="JEE Main 2025 (Online) 3rd April Morning Shift Mathematics - 3D Geometry Question 8 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m9zocx6b/efe58957-d010-433b-9908-dff651c72b9c/0b2cdb40-236a-11f0-b5f7-cfeab3fea8ed/file-jaoe38c1m9zocx6c.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9zocx6b/efe58957-d010-433b-9908-dff651c72b9c/0b2cdb40-236a-11f0-b5f7-cfeab3fea8ed/file-jaoe38c1m9zocx6c.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; A=(\alpha, \beta, 4)=(2 \lambda+1,3 \lambda+2,4 \lambda+3) \\
+&amp; \text { and } B=(a, b, c)=(\mu+6, \mu,-\mu+4) \\
+&amp; \because \frac{\mu+2}{2 \lambda-3}=\frac{\mu-1}{3 \lambda+1}=\frac{-\mu+4}{4 \lambda+3} \\
+&amp; \therefore \quad \lambda \mu+8 \lambda+4 \mu=1  \quad \ldots(1)\\
+&amp; \text { and } 7 \lambda \mu-16 \lambda+4 \mu=7 \quad \ldots(2)
+\end{aligned}\)</p>
+<p>from equation (1) and (2)</p>
+<p>\(\lambda=-1 \text { and } \mu=3\)</p>
+<p>Or \(\lambda=-\frac{1}{3}\) and \(\mu=1\)</p>
+<p>By taking, \(\lambda=-1\) and \(\mu=3\), we get</p>
+<p>\(\begin{aligned}
+&amp; \therefore \quad A(\alpha, \beta, 4)=(-1,-1,-1) \\
+&amp; \text { and } B(a, b, c)=(9,3,1)
+\end{aligned}\)</p>
+<p>\(\therefore\left|\begin{array}{ccc}
+1 &amp; 0 &amp; 1 \\
+-1 &amp; -1 &amp; -1 \\
+9 &amp; 3 &amp; 1
+\end{array}\right|=8\)</p></li><li><strong>Q5:</strong> <p>\(\begin{aligned}
+&amp; \frac{\mathrm{x}-2}{1}=\frac{\mathrm{y}}{-1}=\frac{\mathrm{z}-7}{8}=\lambda \\
+&amp; \frac{\mathrm{x}+3}{4}=\frac{\mathrm{y}+2}{3}=\frac{\mathrm{z}+2}{1}=\mathrm{k} \\
+&amp; \Rightarrow \lambda+2=4 \mathrm{k}-3 \\
+&amp; -\lambda=3 \mathrm{k}-2 \\
+&amp; \Rightarrow \mathrm{k}=1, \lambda=-1 \\
+&amp; 8 \lambda+7=\mathrm{k}-2 \\
+&amp; \therefore \mathrm{P}=(1,1,-1)
+\end{aligned}\)</p>
+<p><img alt="JEE Main 2024 (Online) 27th January Evening Shift Mathematics - 3D Geometry Question 70 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lt1xgjzw/7313cfc0-b5bf-4cc6-9a03-217f83a625f3/86406ed0-d417-11ee-b9d5-0585032231f0/file-1lt1xgjzx.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lt1xgjzw/7313cfc0-b5bf-4cc6-9a03-217f83a625f3/86406ed0-d417-11ee-b9d5-0585032231f0/file-1lt1xgjzx.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>Projection of \(2 \hat{i}-2 \hat{k}\) on \(2 \hat{i}+3 \hat{j}+\hat{k}\) is</p>
+<p>\(\begin{aligned}
+&amp; =\frac{4-2}{\sqrt{4+9+1}}=\frac{2}{\sqrt{14}} \\
+&amp; \therefore l^2=8-\frac{4}{14}=\frac{108}{14} \\
+&amp; \Rightarrow 14 l^2=108
+\end{aligned}\)</p></li><li><strong>Q6:</strong> <p>\(\begin{aligned}
+&amp; \mathrm{M}(3 \lambda+1,2 \lambda+2,-2 \lambda-1) \quad \therefore \alpha+\beta+\gamma=3 \lambda+2 \\
+&amp; \mathrm{~N}(-3 \mu-2,-2 \mu+2,4 \mu+1) \quad \therefore \mathrm{a}+\mathrm{b}+\mathrm{c}=-\mu+1
+\end{aligned}\)</p>
+<p><img alt="JEE Main 2024 (Online) 30th January Evening Shift Mathematics - 3D Geometry Question 59 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/6y3zli1lsoxte3w/356f1335-5223-47e5-b5cc-ef41c9b2c27b/bac74ec0-ccf2-11ee-a330-494dca5e9a63/file-6y3zli1lsoxte3x.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsoxte3w/356f1335-5223-47e5-b5cc-ef41c9b2c27b/bac74ec0-ccf2-11ee-a330-494dca5e9a63/file-6y3zli1lsoxte3x.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; \frac{3 \lambda+2}{-3 \mu-1}=\frac{2 \lambda}{-2 \mu}=\frac{-2 \lambda-4}{4 \mu-2} \\
+&amp; 3 \lambda \mu+2 \mu=3 \lambda \mu+\lambda \\
+&amp; 2 \mu=\lambda \\
+&amp; 2 \lambda \mu-\lambda=\lambda \mu+2 \mu \\
+&amp; \lambda \mu=\lambda+2 \mu \\
+&amp;\Rightarrow \lambda \mu=2 \lambda
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+\Rightarrow \quad &amp; \mu=2 \quad(\lambda \neq 0) \\
+\therefore \quad &amp; \lambda=4 \\
+&amp; \alpha+\beta+\gamma=14 \\
+&amp; a+b+c=-1 \\
+&amp; \frac{(\alpha+\beta+\gamma)^2}{(a+b+c)^2}=196
+\end{aligned}\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>If the image of the point \((4,4,3)\) in the line \(\frac{x-1}{2}=\frac{y-2}{1}=\frac{z-1}{3}\) is \((\alpha, \beta, \gamma)\), then \(\alpha+\beta+\gamma\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">12</li>
+<li class="c8">9</li>
+<li class="c8">7</li>
+<li class="c8">8</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5">If the image of the point \(\mathrm{P}(1,0,3)\) in the line joining the points \(\mathrm{A}(4,7,1)\) and \(\mathrm{B}(3,5,3)\) is \(Q(\alpha, \beta, \gamma)\), then \(\alpha+\beta+\gamma\) is equal to :
+</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\frac{46}{3}\)
+</li>
+<li class="c8">18
+</li>
+<li class="c8">13
+</li>
+<li class="c8">\(\frac{47}{3}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5">If the mirror image of the point \(P(3,4,9)\) in the line 
+<br/><br/>\(\frac{x-1}{3}=\frac{y+1}{2}=\frac{z-2}{1}\) is \((\alpha, \beta, \gamma)\), then 14 \((\alpha+\beta+\gamma)\) is :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">102</li>
+<li class="c8">138</li>
+<li class="c8">132</li>
+<li class="c8">108</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Let \((\alpha, \beta, \gamma)\) be the mirror image of the point \((2,3,5)\) in the line \(\frac{x-1}{2}=\frac{y-2}{3}=\frac{z-3}{4}\). Then, \(2 \alpha+3 \beta+4 \gamma\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">32</li>
+<li class="c8">31</li>
+<li class="c8">33</li>
+<li class="c8">34</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{P}(\alpha, \beta, \gamma)\) be the image of the point \(\mathrm{Q}(1,6,4)\) in the line \(\frac{x}{1}=\frac{y-1}{2}=\frac{z-2}{3}\). Then \(2 \alpha+\beta+\gamma\) is equal to ________</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>Let \((\alpha, \beta, \gamma)\) be the image of the point \((8,5,7)\) in the line \(\frac{x-1}{2}=\frac{y+1}{3}=\frac{z-2}{5}\). Then \(\alpha+\beta+\gamma\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">16</li>
+<li class="c8">20</li>
+<li class="c8">18</li>
+<li class="c8">14</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>B</strong></li><li>Q2: <strong>A</strong></li><li>Q3: <strong>D</strong></li><li>Q4: <strong>C</strong></li><li>Q5: <strong>1</strong></li><li>Q6: <strong>D</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p><img alt="JEE Main 2025 (Online) 28th January Morning Shift Mathematics - 3D Geometry Question 20 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m77mt379/15802126-76bc-45da-a81c-2c5ebc5ab0bd/99938a50-ec65-11ef-a7f5-ed1df7ab36a3/file-jaoe38c1m77mt37a.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m77mt379/15802126-76bc-45da-a81c-2c5ebc5ab0bd/99938a50-ec65-11ef-a7f5-ed1df7ab36a3/file-jaoe38c1m77mt37a.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp;\begin{aligned}
+&amp; \overrightarrow{\mathrm{PQ}} \perp(2 \hat{\mathrm{i}}+\hat{\mathrm{j}}+3 \hat{\mathrm{k}}) \\
+&amp; \Rightarrow 2(2 \lambda-3)+1(\lambda-2)+3(3 \lambda-2)=0 \\
+&amp; \Rightarrow 14 \lambda-14=0, \lambda=1 \\
+&amp; \text { So, } \mathrm{Q}(3,3,4)
+\end{aligned}\\
+&amp;\text { Let image in } R(\alpha, \beta, \gamma)\\
+&amp;\begin{aligned}
+&amp; \frac{\alpha+4}{2}=3, \frac{\beta+4}{2}=3, \frac{\gamma+3}{2}=4 \\
+&amp; (\alpha, \beta, \gamma)=(2,2,5) \\
+&amp; \Rightarrow \alpha+\beta+\gamma=9
+\end{aligned}
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p><img alt="JEE Main 2025 (Online) 2nd April Evening Shift Mathematics - 3D Geometry Question 12 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1mafda6gm/7b7e6f1a-0082-4b92-af9a-a74a798fa332/44e3fd60-2c0b-11f0-bf88-ff84dceebac9/file-jaoe38c1mafda6gn.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mafda6gm/7b7e6f1a-0082-4b92-af9a-a74a798fa332/44e3fd60-2c0b-11f0-bf88-ff84dceebac9/file-jaoe38c1mafda6gn.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>Let \(X\) be mid point of \(P\) and \(Q\), which would be also feet of perpendicular.</p>
+<p>Let \(X\) divides \(A\) and \(B\) in \(\lambda: 1, \lambda \neq-1\)</p>
+<p>\(\begin{aligned}
+&amp;X=\left(\frac{3 \lambda+4}{\lambda+1}, \frac{5 \lambda+7}{\lambda+1}, \frac{3 \lambda+1}{\lambda+1}\right)\\
+&amp;\text { Now } P X \perp A B \Rightarrow \overrightarrow{P X} \cdot \overrightarrow{A B}=0\\
+&amp;\begin{aligned}
+&amp;\left(\frac{3 \lambda+4}{\lambda+1}-1\right) \cdot(4-3)+\left(\frac{5 \lambda+7}{\lambda+1}-0\right)(7-5) \\
+&amp;+\left(\frac{3 \lambda+1}{\lambda+1}-3\right) \cdot(1-3)=0
+\end{aligned}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp;\begin{aligned}
+&amp; \frac{2 \lambda+3}{\lambda+1}+\frac{10 \lambda+14}{\lambda+1}+\frac{4}{\lambda+1}=0 \\
+&amp; \Rightarrow \frac{12 \lambda+21}{\lambda+1}=0 \Rightarrow \lambda=\frac{-7}{4} \\
+&amp; X=\left(\frac{5}{3}, \frac{7}{3}, \frac{17}{3}\right)
+\end{aligned}\\
+&amp;X \text { is mid point of } P Q\\
+&amp;\begin{aligned}
+&amp; Q \equiv\left(2 \cdot \frac{5}{3}-1,2 \cdot \frac{7}{3}-0,2 \cdot \frac{17}{3}-3\right) \equiv(\alpha, \beta, \gamma) \\
+&amp; \Rightarrow \quad \alpha+\beta+\gamma=\frac{2(5+7+17)}{3}-4=\frac{58}{3}-4=\frac{46}{3}
+\end{aligned}
+\end{aligned}\)</p></li><li><strong>Q3:</strong> <img alt="JEE Main 2024 (Online) 1st February Evening Shift Mathematics - 3D Geometry Question 75 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/6y3zli1lsohd1pb/c1eafb9f-de3f-4c37-82e0-908506938702/622ee6f0-ccb2-11ee-aa98-13f456b8f7af/file-6y3zli1lsohd1pc.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsohd1pb/c1eafb9f-de3f-4c37-82e0-908506938702/622ee6f0-ccb2-11ee-aa98-13f456b8f7af/file-6y3zli1lsohd1pc.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/>
+<br/><br/>\(\begin{aligned} &amp; \overrightarrow{\mathrm{PN}}. \overrightarrow{\mathrm{b}}=0\\\\ &amp; 3(3 \lambda-2)+2(2 \lambda-5)+(\lambda-7)=0 \\\\ &amp; 14 \lambda=23 \Rightarrow \lambda=\frac{23}{14}\end{aligned}\)
+<br/><br/>\(\begin{aligned} &amp; \mathrm{N}\left(\frac{83}{14}, \frac{32}{14}, \frac{51}{14}\right) \\\\ &amp; \therefore \frac{\alpha+3}{2}=\frac{83}{14} \Rightarrow \alpha=\frac{62}{7}\end{aligned}\)
+<br/><br/>\(\begin{aligned} &amp; \frac{\beta+4}{2}=\frac{32}{14} \Rightarrow \beta=\frac{4}{7} \\\\ &amp; \frac{\gamma+9}{2}=\frac{51}{14} \Rightarrow \gamma=\frac{-12}{7}\end{aligned}\)
+<br/><br/>Now, \(14(\alpha+\beta+\gamma)=14\left(\frac{62+4-12}{7}\right)=108\)</li><li><strong>Q4:</strong> <p><img alt="JEE Main 2024 (Online) 31st January Evening Shift Mathematics - 3D Geometry Question 68 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/6y3zli1lsjwr9eg/7ae9597b-3dbe-4745-92d2-f1eee5f94c62/ab25ed80-ca2e-11ee-8854-3b5a6c9e9092/file-6y3zli1lsjwr9eh.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsjwr9eg/7ae9597b-3dbe-4745-92d2-f1eee5f94c62/ab25ed80-ca2e-11ee-8854-3b5a6c9e9092/file-6y3zli1lsjwr9eh.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; \because \overrightarrow{\mathrm{PR}} \perp(2,3,4) \\
+&amp; \therefore \overrightarrow{\mathrm{PR}} \cdot(2,3,4)=0 \\
+&amp; (\alpha-2, \beta-3, \gamma-5) \cdot(2,3,4)=0 \\
+&amp; \Rightarrow 2 \alpha+3 \beta+4 \gamma=4+9+20=33
+\end{aligned}\)</p></li><li><strong>Q5:</strong> <p><img alt="JEE Main 2024 (Online) 8th April Evening Shift Mathematics - 3D Geometry Question 46 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lw4mrnop/6ea8698b-9387-47c8-8aca-29425e7a83aa/b6aa6990-10f8-11ef-b50f-395513bc7af2/file-1lw4mrnoq.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lw4mrnop/6ea8698b-9387-47c8-8aca-29425e7a83aa/b6aa6990-10f8-11ef-b50f-395513bc7af2/file-1lw4mrnoq.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; \overrightarrow{Q R} \cdot(\hat{i}+2 \hat{j}+3 \hat{k})=0 \\
+&amp; (t-1)+(2 t-5) \times 2+(3 t-2) \times 3=0 \Rightarrow t=\frac{17}{14} \\
+&amp; \Rightarrow R \equiv\left(\frac{17}{14}, \frac{48}{14}, \frac{79}{14}\right) \\
+&amp; \Rightarrow \frac{\alpha+1}{2}=\frac{17}{14}, \frac{\beta+6}{2}=\frac{48}{14}, \frac{\gamma+4}{2}=\frac{79}{14} \\
+&amp; 2 \alpha+\beta+\gamma=\frac{68}{14}-2+\frac{96}{14}-6+\frac{158}{14}-4=11
+\end{aligned}\)</p></li><li><strong>Q6:</strong> <p>\((x, y, z) \equiv(2 \lambda+1,3 \lambda+1,5 \lambda+2)\)</p>
+<p><img alt="JEE Main 2024 (Online) 5th April Evening Shift Mathematics - 3D Geometry Question 41 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lwenv6x5/39fb95d9-cd80-4c68-91b8-1f5c0166f573/d8931b90-167c-11ef-9070-f523f4c6bd4b/file-1lwenv6x6.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lwenv6x5/39fb95d9-cd80-4c68-91b8-1f5c0166f573/d8931b90-167c-11ef-9070-f523f4c6bd4b/file-1lwenv6x6.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>DR of \(P Q\) :</p>
+<p>\((2 \lambda-7,3 \lambda-6,5 \lambda-5)\)</p>
+<p>DR of line : \((2,3,5)\)</p>
+<p>\(\begin{array}{ll}
+\therefore &amp; 2(2 \lambda-7)+3(3 \lambda-6)+5(5 \lambda-5)=0 \\
+\Rightarrow &amp; \lambda=\frac{3}{2} \\
+\therefore \quad &amp; Q\left(4, \frac{7}{2}, \frac{19}{2}\right) \\
+\therefore \quad &amp; (\alpha, \beta, y) \equiv(0,2,12) \quad\left(Q \text { is mid point of } P \&amp; P^{\prime}\right) \\
+&amp; \alpha+\beta+y \equiv 14
+\end{array}\)</p></li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let P be the foot of the perpendicular from the point \((1,2,2)\) on the line \(\mathrm{L}: \frac{x-1}{1}=\frac{y+1}{-1}=\frac{z-2}{2}\). <br>Let the line \(\vec{r}=(-\hat{i}+\hat{j}-2 \hat{k})+\lambda(\hat{i}-\hat{j}+\hat{k}), \lambda \in \mathbf{R}\), intersect the line L at Q . Then \(2(\mathrm{PQ})^2\) is equal to :</br></p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>25</p></li>
+<li class="c8"><p>27</p></li>
+<li class="c8"><p>19</p></li>
+<li class="c8"><p>29</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{L}_1: \frac{x-1}{3}=\frac{y-1}{-1}=\frac{z+1}{0}\) and \(\mathrm{L}_2: \frac{x-2}{2}=\frac{y}{0}=\frac{z+4}{\alpha}, \alpha \in \mathbf{R}\), be two lines, which intersect at the point \(B\). If \(P\) is the foot of perpendicular from the point \(A(1,1,-1)\) on \(L_2\), then the value of \(26 \alpha(\mathrm{~PB})^2\) is _________ .</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let a line pass through two distinct points \(P(-2,-1,3)\) and \(Q\), and be parallel to the vector \(3 \hat{i}+2 \hat{j}+2 \hat{k}\). If the distance of the point Q from the point \(\mathrm{R}(1,3,3)\) is 5 , then the square of the area of \(\triangle P Q R\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">148</li>
+<li class="c8">144</li>
+<li class="c8">136</li>
+<li class="c8">140</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>The perpendicular distance, of the line \(\frac{x-1}{2}=\frac{y+2}{-1}=\frac{z+3}{2}\) from the point \(\mathrm{P}(2,-10,1)\), is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(6\)
+</li>
+<li class="c8">\(4 \sqrt{3}\)
+</li>
+<li class="c8">\(3 \sqrt{5}\)
+</li>
+<li class="c8">\(5 \sqrt{2}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>The square of the distance of the point \( \left( \frac{15}{7}, \frac{32}{7}, 7 \right) \) from the line \( \frac{x + 1}{3} = \frac{y + 3}{5} = \frac{z + 5}{7} \) in the direction of the vector \( \hat{i} + 4\hat{j} + 7\hat{k} \) is:</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>66</p></li>
+<li class="c8"><p>54</p></li>
+<li class="c8"><p>41</p></li>
+<li class="c8"><p>44</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>Let P be the foot of the perpendicular from the point \(\mathrm{Q}(10,-3,-1)\) on the line \(\frac{x-3}{7}=\frac{y-2}{-1}=\frac{z+1}{-2}\). Then the area of the right angled triangle \(P Q R\), where \(R\) is the point \((3,-2,1)\), is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"> \(\sqrt{30}\)
+</li>
+<li class="c8">\(9 \sqrt{15}\)
+</li>
+<li class="c8">\(3 \sqrt{30}\)
+</li>
+<li class="c8">\(8 \sqrt{15}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>If the square of the shortest distance between the lines \(\frac{x-2}{1}=\frac{y-1}{2}=\frac{z+3}{-3}\) and \(\frac{x+1}{2}=\frac{y+3}{4}=\frac{z+5}{-5}\) is \(\frac{m}{n}\), where \(m\), \(n\) are coprime numbers, then \(m+n\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">14</li>
+<li class="c8">6</li>
+<li class="c8">21</li>
+<li class="c8">9</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>Let in a \(\triangle A B C\), the length of the side \(A C\) be 6 , the vertex \(B\) be \((1,2,3)\) and the vertices \(A, C\) lie on the line \(\frac{x-6}{3}=\frac{y-7}{2}=\frac{z-7}{-2}\). Then the area (in sq. units) of \(\triangle A B C\) is:</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">42</li>
+<li class="c8">17</li>
+<li class="c8">56</li>
+<li class="c8">21</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>Let P be the image of the point \(\mathrm{Q}(7,-2,5)\) in the line \(\mathrm{L}: \frac{x-1}{2}=\frac{y+1}{3}=\frac{z}{4}\) and \(\mathrm{R}(5, \mathrm{p}, \mathrm{q})\) be a point on \(L\). Then the square of the area of \(\triangle P Q R\) is _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q10.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{A}(x, y, z)\) be a point in \(x y\)-plane, which is equidistant from three points \((0,3,2),(2,0,3)\) and \((0,0,1)\).</p>
+<p>Let \(\mathrm{B}=(1,4,-1)\) and \(\mathrm{C}=(2,0,-2)\). Then among the statements</p>
+<p>(S1) : \(\triangle \mathrm{ABC}\) is an isosceles right angled triangle, and</p>
+<p>(S2) : the area of \(\triangle \mathrm{ABC}\) is \(\frac{9 \sqrt{2}}{2}\),</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">both are false
+</li>
+<li class="c8">only (S2) is true
+</li>
+<li class="c8">only (S1) is true
+</li>
+<li class="c8">both are true</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q11.</span>
+</div>
+<div class="c5">Let the area of the triangle formed by the lines \(x+2=y-1=z, \frac{x-3}{5}=\frac{y}{-1}=\frac{z-1}{1}\) and \(\frac{x}{-3}=\frac{y-3}{3}=\frac{z-2}{1}\) be \(A\). Then \(A^2\) is equal to ________.</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q12.</span>
+</div>
+<div class="c5"><p>Let the vertices Q and R of the triangle PQR lie on the line \(\frac{x+3}{5}=\frac{y-1}{2}=\frac{z+4}{3}, \mathrm{QR}=5\) and the coordinates of the point \(P\) be \((0,2,3)\). If the area of the triangle \(P Q R\) is \(\frac{m}{n}\) then :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(2 \mathrm{~m}-5 \sqrt{21} \mathrm{n}=0\)
+</li>
+<li class="c8">\(\mathrm{m}-5 \sqrt{21} \mathrm{n}=0\)
+</li>
+<li class="c8">\(5 \mathrm{~m}-21 \sqrt{2} \mathrm{n}=0\)
+</li>
+<li class="c8">\(5 \mathrm{~m}-2 \sqrt{21} \mathrm{n}=0\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q13.</span>
+</div>
+<div class="c5"><p>Let \(A B C D\) be a tetrahedron such that the edges \(A B, A C\) and \(A D\) are mutually perpendicular. Let the areas of the triangles \(\mathrm{ABC}, \mathrm{ACD}\) and ADB be 5,6 and 7 square units respectively. Then the area (in square units) of the \(\triangle B C D\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\sqrt{110}\)
+</li>
+<li class="c8">12
+</li>
+<li class="c8">\(\sqrt{340}\)
+</li>
+<li class="c8">\(7 \sqrt{3}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q14.</span>
+</div>
+<div class="c5"><p>If the equation of the line passing through the point \( \left( 0, -\frac{1}{2}, 0 \right) \) and perpendicular to the lines \( \vec{r} = \lambda \left( \hat{i} + a\hat{j} + b\hat{k} \right) \) and \( \vec{r} = \left( \hat{i} - \hat{j} - 6\hat{k} \right) + \mu \left( -b \hat{i} + a\hat{j} + 5\hat{k} \right) \) is \( \frac{x-1}{-2} = \frac{y+4}{d} = \frac{z-c}{-4} \), then \( a+b+c+d \) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>13</p></li>
+<li class="c8"><p>14</p></li>
+<li class="c8"><p>12</p></li>
+<li class="c8"><p>10</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q15.</span>
+</div>
+<div class="c5"><p>Consider the lines <b>L<sub>1</sub></b>: x - 1 = y - 2 = z and <b>L<sub>2</sub></b>: x - 2 = y = z - 1. Let the feet of the perpendiculars from the point P(5, 1, -3) on the lines <b>L<sub>1</sub></b> and <b>L<sub>2</sub></b> be Q and R respectively. If the area of the triangle PQR is A, then 4A<sup>2</sup> is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"><p>151</p></li>
+<li class="c8"><p>147</p></li>
+<li class="c8"><p>139</p></li>
+<li class="c8"><p>143</p></li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q16.</span>
+</div>
+<div class="c5"><p>Let the line L pass through \((1,1,1)\) and intersect the lines \(\frac{x-1}{2}=\frac{y+1}{3}=\frac{z-1}{4}\) and \(\frac{x-3}{1}=\frac{y-4}{2}=\frac{z}{1}\). Then, which of the following points lies on the line \(L\) ?</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"> \((7,15,13)\)
+</li>
+<li class="c8"> \((4,22,7)\)
+</li>
+<li class="c8"> \((10,-29,-50)\)
+</li>
+<li class="c8"> \((5,4,3)\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q17.</span>
+</div>
+<div class="c5">The line \(\mathrm{L}_1\) is parallel to the vector \(\overrightarrow{\mathrm{a}}=-3 \hat{i}+2 \hat{j}+4 \hat{k}\) and passes through the point \((7,6,2)\) and the line \(\mathrm{L}_2\) is parallel to the vector \(\overrightarrow{\mathrm{b}}=2 \hat{i}+\hat{j}+3 \hat{k}\) and passes through the point \((5,3,4)\). The shortest distance between the lines \(L_1\) and \(L_2\) is :
+</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\frac{23}{\sqrt{38}}\)
+</li>
+<li class="c8">\(\frac{21}{\sqrt{38}}\)
+</li>
+<li class="c8"> \(\frac{23}{\sqrt{57}}\)
+</li>
+<li class="c8"> \(\frac{21}{\sqrt{57}}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q18.</span>
+</div>
+<div class="c5"><p>Line \(L_1\) passes through the point \((1,2,3)\) and is parallel to \(z\)-axis. Line \(L_2\) passes through the point \((\lambda, 5,6)\) and is parallel to \(y\)-axis. Let for \(\lambda=\lambda_1, \lambda_2, \lambda_2&lt;\lambda_1\), the shortest distance between the two lines be 3 . Then the square of the distance of the point \(\left(\lambda_1, \lambda_2, 7\right)\) from the line \(L_1\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">25</li>
+<li class="c8">32</li>
+<li class="c8">40</li>
+<li class="c8">37</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q19.</span>
+</div>
+<div class="c5"><p>Let A be the point of intersection of the lines \(\mathrm{L}_1: \frac{x-7}{1}=\frac{y-5}{0}=\frac{z-3}{-1}\) and \(\mathrm{L}_2: \frac{x-1}{3}=\frac{y+3}{4}=\frac{z+7}{5}\). Let B and C be the points on the lines \(\mathrm{L}_1\) and \(\mathrm{L}_2\) respectively such that \(A B=A C=\sqrt{15}\). Then the square of the area of the triangle \(A B C\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">63</li>
+<li class="c8">57</li>
+<li class="c8">60</li>
+<li class="c8">54</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q20.</span>
+</div>
+<div class="c5"><p>Let the values of p , for which the shortest distance between the lines \(\frac{x+1}{3}=\frac{y}{4}=\frac{z}{5}\) and \(\overrightarrow{\mathrm{r}}=(\mathrm{p} \hat{i}+2 \hat{j}+\hat{k})+\lambda(2 \hat{i}+3 \hat{j}+4 \hat{k})\) is \(\frac{1}{\sqrt{6}}\), be \(\mathrm{a}, \mathrm{b},(\mathrm{a}&lt;\mathrm{b})\). Then the length of the latus rectum of the ellipse \(\frac{x^2}{\mathrm{a}^2}+\frac{y^2}{\mathrm{~b}^2}=1\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8"> \(\frac{3}{2}\)
+</li>
+<li class="c8"> 9
+</li>
+<li class="c8"> 18
+</li>
+<li class="c8"> \(\frac{2}{3}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q21.</span>
+</div>
+<div class="c5"><p>Let the shortest distance between the lines \(\frac{x-3}{3}=\frac{y-\alpha}{-1}=\frac{z-3}{1}\) and \(\frac{x+3}{-3}=\frac{y+7}{2}=\frac{z-\beta}{4}\) be \(3 \sqrt{30}\). Then the positive value of \(5 \alpha+\beta\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">42</li>
+<li class="c8">40</li>
+<li class="c8">48</li>
+<li class="c8">46</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q22.</span>
+</div>
+<div class="c5"><p>Let \(A\) and \(B\) be two distinct points on the line \(L: \frac{x-6}{3}=\frac{y-7}{2}=\frac{z-7}{-2}\). Both \(A\) and \(B\) are at a distance \(2 \sqrt{17}\) from the foot of perpendicular drawn from the point \((1,2,3)\) on the line \(L\). If \(O\) is the origin, then \(\overrightarrow{O A} \cdot \overrightarrow{O B}\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">49</li>
+<li class="c8">21</li>
+<li class="c8">47</li>
+<li class="c8">62</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q23.</span>
+</div>
+<div class="c5">Let \(\mathrm{P}\) and \(\mathrm{Q}\) be the points on the line \(\frac{x+3}{8}=\frac{y-4}{2}=\frac{z+1}{2}\) which are at a distance of 6 units from the point \(\mathrm{R}(1,2,3)\). If the centroid of the triangle PQR is \((\alpha, \beta, \gamma)\), then \(\alpha^2+\beta^2+\gamma^2\) is :</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">18</li>
+<li class="c8">24</li>
+<li class="c8">26</li>
+<li class="c8">36</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q24.</span>
+</div>
+<div class="c5"><p>Let the image of the point \((1,0,7)\) in the line \(\frac{x}{1}=\frac{y-1}{2}=\frac{z-2}{3}\) be the point \((\alpha, \beta, \gamma)\). Then which one of the following points lies on the line passing through \((\alpha, \beta, \gamma)\) and making angles \(\frac{2 \pi}{3}\) and \(\frac{3 \pi}{4}\) with \(y\)-axis and \(z\)-axis respectively and an acute angle with \(x\)-axis ?</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[(1,-2,1+\sqrt{2})\]
+</li>
+<li class="c8">\[(3,-4,3+2 \sqrt{2})\]
+</li>
+<li class="c8">\[(3,4,3-2 \sqrt{2})\]
+</li>
+<li class="c8">\[(1,2,1-\sqrt{2})\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q25.</span>
+</div>
+<div class="c5"><p>The shortest distance, between lines \(L_1\) and \(L_2\), where \(L_1: \frac{x-1}{2}=\frac{y+1}{-3}=\frac{z+4}{2}\) and \(L_2\) is the line, passing through the points \(\mathrm{A}(-4,4,3), \mathrm{B}(-1,6,3)\) and perpendicular to the line \(\frac{x-3}{-2}=\frac{y}{3}=\frac{z-1}{1}\), is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{141}{\sqrt{221}}\]
+</li>
+<li class="c8">\[\frac{24}{\sqrt{117}}\]
+</li>
+<li class="c8">\[\frac{42}{\sqrt{117}}\]
+</li>
+<li class="c8">\[\frac{121}{\sqrt{221}}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q26.</span>
+</div>
+<div class="c5"><p>A line passes through \(A(4,-6,-2)\) and \(B(16,-2,4)\). The point \(P(a, b, c)\), where \(a, b, c\) are non-negative integers, on the line \(A B\) lies at a distance of 21 units, from the point \(A\). The distance between the points \(P(a, b, c)\) and \(Q(4,-12,3)\) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q27.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{Q}\) and \(\mathrm{R}\) be the feet of perpendiculars from the point \(\mathrm{P}(a, a, a)\) on the lines \(x=y, z=1\) and \(x=-y, z=-1\) respectively. If \(\angle \mathrm{QPR}\) is a right angle, then \(12 a^2\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q28.</span>
+</div>
+<div class="c5"><p>Let \(P Q R\) be a triangle with \(R(-1,4,2)\). Suppose \(M(2,1,2)\) is the mid point of \(\mathrm{PQ}\). The distance of the centroid of \(\triangle \mathrm{PQR}\) from the point of intersection of the lines \(\frac{x-2}{0}=\frac{y}{2}=\frac{z+3}{-1}\) and \(\frac{x-1}{1}=\frac{y+3}{-3}=\frac{z+1}{1}\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">69</li>
+<li class="c8">\[\sqrt{99}\]</li>
+<li class="c8">\[\sqrt{69}\]</li>
+<li class="c8">9</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q29.</span>
+</div>
+<div class="c5"><p>A line with direction ratios \(2,1,2\) meets the lines \(x=y+2=z\) and \(x+2=2 y=2 z\) respectively at the points \(\mathrm{P}\) and \(\mathrm{Q}\). If the length of the perpendicular from the point \((1,2,12)\) to the line \(\mathrm{PQ}\) is \(l\), then \(l^2\) is __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q30.</span>
+</div>
+<div class="c5"><p>Let O be the origin, and M and \(\mathrm{N}\) be the points on the lines \(\frac{x-5}{4}=\frac{y-4}{1}=\frac{z-5}{3}\) and \(\frac{x+8}{12}=\frac{y+2}{5}=\frac{z+11}{9}\) respectively such that \(\mathrm{MN}\) is the shortest distance between the given lines. Then \(\overrightarrow{O M} \cdot \overrightarrow{O N}\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q31.</span>
+</div>
+<div class="c5"><p>Let \((\alpha, \beta, \gamma)\) be the foot of perpendicular from the point \((1,2,3)\) on the line \(\frac{x+3}{5}=\frac{y-1}{2}=\frac{z+4}{3}\). Then \(19(\alpha+\beta+\gamma)\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">99</li>
+<li class="c8">102</li>
+<li class="c8">101</li>
+<li class="c8">100</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q32.</span>
+</div>
+<div class="c5"><p>If \(\mathrm{d}_1\) is the shortest distance between the lines \(x+1=2 y=-12 z, x=y+2=6 z-6\) and \(\mathrm{d}_2\) is the shortest distance between the lines \(\frac{x-1}{2}=\frac{y+8}{-7}=\frac{z-4}{5}, \frac{x-1}{2}=\frac{y-2}{1}=\frac{z-6}{-3}\), then the value of \(\frac{32 \sqrt{3} \mathrm{~d}_1}{\mathrm{~d}_2}\) is :</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q33.</span>
+</div>
+<div class="c5"><p>Consider the line \(\mathrm{L}\) passing through the points \((1,2,3)\) and \((2,3,5)\). The distance of the point \(\left(\frac{11}{3}, \frac{11}{3}, \frac{19}{3}\right)\) from the line \(\mathrm{L}\) along the line \(\frac{3 x-11}{2}=\frac{3 y-11}{1}=\frac{3 z-19}{2}\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">6</li>
+<li class="c8">3</li>
+<li class="c8">5</li>
+<li class="c8">4</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q34.</span>
+</div>
+<div class="c5"><p>The square of the distance of the image of the point \((6,1,5)\) in the line \(\frac{x-1}{3}=\frac{y}{2}=\frac{z-2}{4}\), from the origin is __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q35.</span>
+</div>
+<div class="c5"><p>Let the line \(\mathrm{L}\) intersect the lines \(x-2=-y=z-1,2(x+1)=2(y-1)=z+1\) and be parallel to the line \(\frac{x-2}{3}=\frac{y-1}{1}=\frac{z-2}{2}\). Then which of the following points lies on \(\mathrm{L}\) ?</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\left(-\frac{1}{3}, 1,-1\right)\]
+</li>
+<li class="c8">\[\left(-\frac{1}{3},-1,1\right)\]
+</li>
+<li class="c8">\[\left(-\frac{1}{3},-1,-1\right)\]
+</li>
+<li class="c8">\[\left(-\frac{1}{3}, 1,1\right)\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q36.</span>
+</div>
+<div class="c5"><p>Let the point, on the line passing through the points \(P(1,-2,3)\) and \(Q(5,-4,7)\), farther from the origin and at a distance of 9 units from the point \(P\), be \((\alpha, \beta, \gamma)\). Then \(\alpha^2+\beta^2+\gamma^2\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">150</li>
+<li class="c8">155</li>
+<li class="c8">160</li>
+<li class="c8">165</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q37.</span>
+</div>
+<div class="c5"><p>Consider a line \(\mathrm{L}\) passing through the points \(\mathrm{P}(1,2,1)\) and \(\mathrm{Q}(2,1,-1)\). If the mirror image of the point \(\mathrm{A}(2,2,2)\) in the line \(\mathrm{L}\) is \((\alpha, \beta, \gamma)\), then \(\alpha+\beta+6 \gamma\) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q38.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{d}\) be the distance of the point of intersection of the lines \(\frac{x+6}{3}=\frac{y}{2}=\frac{z+1}{1}\) and \(\frac{x-7}{4}=\frac{y-9}{3}=\frac{z-4}{2}\) from the point \((7,8,9)\). Then \(\mathrm{d}^2+6\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">75</li>
+<li class="c8">78</li>
+<li class="c8">72</li>
+<li class="c8">69</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q39.</span>
+</div>
+<div class="c5"><p>Let the point \((-1, \alpha, \beta)\) lie on the line of the shortest distance between the lines \(\frac{x+2}{-3}=\frac{y-2}{4}=\frac{z-5}{2}\) and \(\frac{x+2}{-1}=\frac{y+6}{2}=\frac{z-1}{0}\). Then \((\alpha-\beta)^2\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q40.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{P}(\alpha, \beta, \gamma)\) be the image of the point \(\mathrm{Q}(3,-3,1)\) in the line \(\frac{x-0}{1}=\frac{y-3}{1}=\frac{z-1}{-1}\) and \(\mathrm{R}\) be the point \((2,5,-1)\). If the area of the triangle \(\mathrm{PQR}\) is \(\lambda\) and \(\lambda^2=14 \mathrm{~K}\), then \(\mathrm{K}\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">18</li>
+<li class="c8">81</li>
+<li class="c8">72</li>
+<li class="c8">36</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q41.</span>
+</div>
+<div class="c5"><p>Let \(P\) be the point \((10,-2,-1)\) and \(Q\) be the foot of the perpendicular drawn from the point \(R(1,7,6)\) on the line passing through the points \((2,-5,11)\) and \((-6,7,-5)\). Then the length of the line segment \(P Q\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q42.</span>
+</div>
+<div class="c5"><p>Let the shortest distance between the lines 
+<br><br>\(L: \frac{x-5}{-2}=\frac{y-\lambda}{0}=\frac{z+\lambda}{1}, \lambda \geq 0\) and 
+<br><br>\(L_{1}: x+1=y-1=4-z\) be \(2 \sqrt{6}\). If \((\alpha, \beta, \gamma)\) lies on \(L\), 
+<br><br>then which of the following is NOT possible?</br></br></br></br></br></br></p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\alpha+2 \gamma=24\]</li>
+<li class="c8">\[2 \alpha+\gamma=7\]</li>
+<li class="c8">\[\alpha-2 \gamma=19\]</li>
+<li class="c8">\[2 \alpha-\gamma=9\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q43.</span>
+</div>
+<div class="c5">Let a line \(L\) pass through the point \(P(2,3,1)\) and be parallel to the line \(x+3 y-2 z-2=0=x-y+2 z\). If the distance of \(L\) from the point \((5,3,8)\) is \(\alpha\), then \(3 \alpha^2\) is equal to :</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q44.</span>
+</div>
+<div class="c5"><p>Let the co-ordinates of one vertex of \(\Delta ABC\) be \(A(0,2,\alpha)\) and the other two vertices lie on the line \({{x + \alpha } \over 5} = {{y - 1} \over 2} = {{z + 4} \over 3}\). For \(\alpha \in \mathbb{Z}\), if the area of \(\Delta ABC\) is 21 sq. units and the line segment \(BC\) has length \(2\sqrt{21}\) units, then \(\alpha^2\) is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q45.</span>
+</div>
+<div class="c5"><p>The foot of perpendicular of the point (2, 0, 5) on the line \({{x + 1} \over 2} = {{y - 1} \over 5} = {{z + 1} \over { - 1}}\) is (\(\alpha,\beta,\gamma\)). Then, which of the following is NOT correct?</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{\alpha}{\beta}=-8\]</li>
+<li class="c8">\[\frac{\alpha \beta}{\gamma}=\frac{4}{15}\]</li>
+<li class="c8">\[\frac{\beta}{\gamma}=-5\]</li>
+<li class="c8">\[\frac{\gamma}{\alpha}=\frac{5}{8}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q46.</span>
+</div>
+<div class="c5"><p>If the shortest distance between the line joining the points (1, 2, 3) and (2, 3, 4), and the line \({{x - 1} \over 2} = {{y + 1} \over { - 1}} = {{z - 2} \over 0}\) is \(\alpha\), then 28\(\alpha^2\) is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q47.</span>
+</div>
+<div class="c5"><p>The distance of the point P(4, 6, \(-\)2) from the line passing through the point (\(-\)3, 2, 3) and parallel to a line with direction ratios 3, 3, \(-\)1 is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">3</li>
+<li class="c8">\[\sqrt{14}\]</li>
+<li class="c8">\[\sqrt6\]</li>
+<li class="c8">\[2\sqrt3\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q48.</span>
+</div>
+<div class="c5"><p>Consider the lines \(L_1\) and \(L_2\) given by</p>
+<p>\({L_1}:{{x - 1} \over 2} = {{y - 3} \over 1} = {{z - 2} \over 2}\)</p>
+<p>\({L_2}:{{x - 2} \over 1} = {{y - 2} \over 2} = {{z - 3} \over 3}\).</p>
+<p>A line \(L_3\) having direction ratios 1, \(-\)1, \(-\)2, intersects \(L_1\) and \(L_2\) at the points \(P\) and \(Q\) respectively. Then the length of line segment \(PQ\) is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[4\sqrt3\]</li>
+<li class="c8">\[2\sqrt6\]</li>
+<li class="c8">4</li>
+<li class="c8">\[3\sqrt2\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q49.</span>
+</div>
+<div class="c5"><p>The line, that is coplanar to the line \(\frac{x+3}{-3}=\frac{y-1}{1}=\frac{z-5}{5}\), is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{x+1}{-1}=\frac{y-2}{2}=\frac{z-5}{4}\]</li>
+<li class="c8">\[\frac{x+1}{-1}=\frac{y-2}{2}=\frac{z-5}{5}\]</li>
+<li class="c8">\[\frac{x-1}{-1}=\frac{y-2}{2}=\frac{z-5}{5}\]</li>
+<li class="c8">\[\frac{x+1}{1}=\frac{y-2}{2}=\frac{z-5}{5}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q50.</span>
+</div>
+<div class="c5"><p>Let the lines \(l_{1}: \frac{x+5}{3}=\frac{y+4}{1}=\frac{z-\alpha}{-2}\) and \(l_{2}: 3 x+2 y+z-2=0=x-3 y+2 z-13\) be coplanar. If the point \(\mathrm{P}(a, b, c)\) on \(l_{1}\) is nearest to the point \(\mathrm{Q}(-4,-3,2)\), then \(|a|+|b|+|c|\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">12</li>
+<li class="c8">14</li>
+<li class="c8">10</li>
+<li class="c8">8</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q51.</span>
+</div>
+<div class="c5"><p>Let a line \(l\) pass through the origin and be perpendicular to the lines</p>
+<p>\(l_{1}: \vec{r}=(\hat{\imath}-11 \hat{\jmath}-7 \hat{k})+\lambda(\hat{i}+2 \hat{\jmath}+3 \hat{k}), \lambda \in \mathbb{R}\) and</p>
+<p>\(l_{2}: \vec{r}=(-\hat{\imath}+\hat{\mathrm{k}})+\mu(2 \hat{\imath}+2 \hat{\jmath}+\hat{\mathrm{k}}), \mu \in \mathbb{R}\).</p>
+<p>If \(\mathrm{P}\) is the point of intersection of \(l\) and \(l_{1}\), and \(\mathrm{Q}(\propto, \beta, \gamma)\) is the foot of perpendicular from P on \(l_{2}\), then \(9(\alpha+\beta+\gamma)\) is equal to _____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q52.</span>
+</div>
+<div class="c5"><p>One vertex of a rectangular parallelopiped is at the origin \(\mathrm{O}\) and the lengths of its edges along \(x, y\) and \(z\) axes are \(3,4\) and \(5\) units respectively. Let \(\mathrm{P}\) be the vertex \((3,4,5)\). Then the shortest distance between the diagonal OP and an edge parallel to \(\mathrm{z}\) axis, not passing through \(\mathrm{O}\) or \(\mathrm{P}\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{12}{\sqrt{5}}\]</li>
+<li class="c8">\[12 \sqrt{5}\]</li>
+<li class="c8">\[\frac{12}{5}\]</li>
+<li class="c8">\[\frac{12}{5 \sqrt{5}}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q53.</span>
+</div>
+<div class="c5"><p>If the lines \(\frac{x-1}{2}=\frac{2-y}{-3}=\frac{z-3}{\alpha}\) and \(\frac{x-4}{5}=\frac{y-1}{2}=\frac{z}{\beta}\) intersect, then the magnitude of the minimum value of \(8 \alpha \beta\) is _____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q54.</span>
+</div>
+<div class="c5"><p>Let the image of the point P(1, 2, 3) in the line \(L:{{x - 6} \over 3} = {{y - 1} \over 2} = {{z - 2} \over 3}\) be Q. Let R (\(\alpha\), \(\beta\), \(\gamma\)) be a point that divides internally the line segment PQ in the ratio 1 : 3. Then the value of 22 (\(\alpha\) + \(\beta\) + \(\gamma\)) is equal to __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q55.</span>
+</div>
+<div class="c5"><p>If the two lines \({l_1}:{{x - 2} \over 3} = {{y + 1} \over {-2}},\,z = 2\) and \({l_2}:{{x - 1} \over 1} = {{2y + 3} \over \alpha } = {{z + 5} \over 2}\) are perpendicular, then an angle between the lines l<sub>2</sub> and \({l_3}:{{1 - x} \over 3} = {{2y - 1} \over { - 4}} = {z \over 4}\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{\cos ^{ - 1}}\left( {{{29} \over 4}} \right)\]</li>
+<li class="c8">\[{\sec ^{ - 1}}\left( {{{29} \over 4}} \right)\]</li>
+<li class="c8">\[{\cos ^{ - 1}}\left( {{2 \over {29}}} \right)\]</li>
+<li class="c8">\[{\cos ^{ - 1}}\left( {{2 \over {\sqrt {29} }}} \right)\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q56.</span>
+</div>
+<div class="c5"><p>Let \(\overrightarrow a  = \widehat i + \widehat j + 2\widehat k\), \(\overrightarrow b  = 2\widehat i - 3\widehat j + \widehat k\) and \(\overrightarrow c  = \widehat i - \widehat j + \widehat k\) be three given vectors. Let \(\overrightarrow v \) be a vector in the plane of \(\overrightarrow a \) and \(\overrightarrow b \) whose projection on \(\overrightarrow c \) is \({2 \over {\sqrt 3 }}\). If \(\overrightarrow v \,.\,\widehat j = 7\), then \(\overrightarrow v \,.\,\left( {\widehat i + \widehat k} \right)\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">6</li>
+<li class="c8">7</li>
+<li class="c8">8</li>
+<li class="c8">9</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q57.</span>
+</div>
+<div class="c5"><p>Let l<sub>1</sub> be the line in xy-plane with x and y intercepts \({1 \over 8}\) and \({1 \over {4\sqrt 2 }}\) respectively, and l<sub>2</sub> be the line in zx-plane with x and z intercepts \( - {1 \over 8}\) and \( - {1 \over {6\sqrt 3 }}\) respectively. If d is the shortest distance between the line l<sub>1</sub> and l<sub>2</sub>, then d<sup>\(-\)2</sup> is equal to _______________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q58.</span>
+</div>
+<div class="c5"><p>Let a line having direction ratios, 1, \(-\)4, 2 intersect the lines \({{x - 7} \over 3} = {{y - 1} \over { - 1}} = {{z + 2} \over 1}\) and \({x \over 2} = {{y - 7} \over 3} = {z \over 1}\) at the points A and B. Then (AB)<sup>2</sup> is equal to ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q59.</span>
+</div>
+<div class="c5"><p>If the shortest distance between the lines <br><br/>\(\overrightarrow r  = \left( { - \widehat i + 3\widehat k} \right) + \lambda \left( {\widehat i - a\widehat j} \right)\) <br/><br/>and \(\overrightarrow r  = \left( { - \widehat j + 2\widehat k} \right) + \mu \left( {\widehat i - \widehat j + \widehat k} \right)\) is \(\sqrt {{2 \over 3}} \), then the integral value of a is equal to ___________.</br></p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q60.</span>
+</div>
+<div class="c5"><p>Consider a triangle ABC whose vertices are A(0, \(\alpha\), \(\alpha\)), B(\(\alpha\), 0, \(\alpha\)) and C(\(\alpha\), \(\alpha\), 0), \(\alpha\) &gt; 0. Let D be a point moving on the line x + z \(-\) 3 = 0 = y and G be the centroid of \(\Delta\)ABC. If the minimum length of GD is \(\sqrt {{{57} \over 2}} \), then \(\alpha\) is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q61.</span>
+</div>
+<div class="c5"><p>The length of the perpendicular from the point \((1,-2,5)\) on the line passing through \((1,2,4)\) and parallel to the line \(x+y-z=0=x-2 y+3 z-5\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\sqrt{\frac{21}{2}}\]</li>
+<li class="c8">\[\sqrt{\frac{9}{2}}\]</li>
+<li class="c8">\[\sqrt{\frac{73}{2}}\]</li>
+<li class="c8">1</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q62.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{Q}\) and \(\mathrm{R}\) be two points on the line \(\frac{x+1}{2}=\frac{y+2}{3}=\frac{z-1}{2}\) at a distance \(\sqrt{26}\) from the point \(P(4,2,7)\). Then the square of the area of the triangle \(P Q R\) is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q63.</span>
+</div>
+<div class="c5"><p>If the length of the perpendicular drawn from the point \(P(a, 4,2)\), a \(&gt;0\) on the line \(\frac{x+1}{2}=\frac{y-3}{3}=\frac{z-1}{-1}\) is \(2 \sqrt{6}\) units and \(Q\left(\alpha_{1}, \alpha_{2}, \alpha_{3}\right)\) is the image of the point P in this line, then \(\mathrm{a}+\sum\limits_{i=1}^{3} \alpha_{i}\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">7</li>
+<li class="c8">8</li>
+<li class="c8">12</li>
+<li class="c8">14</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>B</strong></li><li>Q2: <strong>26</strong></li><li>Q3: <strong>C</strong></li><li>Q4: <strong>C</strong></li><li>Q5: <strong>A</strong></li><li>Q6: <strong>C</strong></li><li>Q7: <strong>D</strong></li><li>Q8: <strong>D</strong></li><li>Q9: <strong>38</strong></li><li>Q10: <strong>C</strong></li><li>Q11: <strong>1</strong></li><li>Q12: <strong>A</strong></li><li>Q13: <strong>A</strong></li><li>Q14: <strong>B</strong></li><li>Q15: <strong>B</strong></li><li>Q16: <strong>A</strong></li><li>Q17: <strong>A</strong></li><li>Q18: <strong>A</strong></li><li>Q19: <strong>D</strong></li><li>Q20: <strong>D</strong></li><li>Q21: <strong>D</strong></li><li>Q22: <strong>C</strong></li><li>Q23: <strong>A</strong></li><li>Q24: <strong>C</strong></li><li>Q25: <strong>A</strong></li><li>Q26: <strong>-4</strong></li><li>Q27: <strong>1</strong></li><li>Q28: <strong>C</strong></li><li>Q29: <strong>-2</strong></li><li>Q30: <strong>1</strong></li><li>Q31: <strong>C</strong></li><li>Q32: <strong>1</strong></li><li>Q33: <strong>B</strong></li><li>Q34: <strong>1</strong></li><li>Q35: <strong>A</strong></li><li>Q36: <strong>B</strong></li><li>Q37: <strong>1</strong></li><li>Q38: <strong>A</strong></li><li>Q39: <strong>1</strong></li><li>Q40: <strong>B</strong></li><li>Q41: <strong>1</strong></li><li>Q42: <strong>A</strong></li><li>Q43: <strong>2</strong></li><li>Q44: <strong>1</strong></li><li>Q45: <strong>C</strong></li><li>Q46: <strong>1</strong></li><li>Q47: <strong>B</strong></li><li>Q48: <strong>B</strong></li><li>Q49: <strong>B</strong></li><li>Q50: <strong>C</strong></li><li>Q51: <strong>1</strong></li><li>Q52: <strong>C</strong></li><li>Q53: <strong>-1</strong></li><li>Q54: <strong>1</strong></li><li>Q55: <strong>B</strong></li><li>Q56: <strong>D</strong></li><li>Q57: <strong>1</strong></li><li>Q58: <strong>3</strong></li><li>Q59: <strong>1</strong></li><li>Q60: <strong>1</strong></li><li>Q61: <strong>A</strong></li><li>Q62: <strong>1</strong></li><li>Q63: <strong>B</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p><img alt="JEE Main 2025 (Online) 29th January Evening Shift Mathematics - 3D Geometry Question 32 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m71ej7rz/ed179328-07c0-4a08-8c9a-5b715f5c6e84/8a16faf0-e8f8-11ef-b48b-c3f51ea93f48/file-jaoe38c1m71ej7s0.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m71ej7rz/ed179328-07c0-4a08-8c9a-5b715f5c6e84/8a16faf0-e8f8-11ef-b48b-c3f51ea93f48/file-jaoe38c1m71ej7s0.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; \mathrm{L}: \frac{\mathrm{x}-1}{1}=\frac{\mathrm{y}+1}{-1}=\frac{\mathrm{z}-2}{2}=\mu \\
+&amp; \mathrm{P}(\mu+1,-\mu-1,2 \mu+2) \\
+&amp; \overrightarrow{\mathrm{AP}} \cdot \overrightarrow{\mathrm{~d}}=0 \Rightarrow(\mu,-\mu-3,2 \mu) \cdot(1,-1,2)=0 \\
+&amp; \Rightarrow \mu+\mu+3+4 \mu=0 \Rightarrow \mu=-\frac{1}{2} \\
+&amp; \therefore \mathrm{P}\left(\frac{-1}{2}+1,+\frac{1}{2}-1,2\left(\frac{-1}{2}\right)+2\right) \\
+&amp; \mathrm{P}\left(\frac{1}{2}, \frac{-1}{2}, 1\right)
+\end{aligned}\)</p>
+<p>\(\begin{array}{c|c|c}
+\mu+1=-1+\lambda &amp; -\mu-1=1-\lambda &amp; 2 \mu+2=-2+\lambda \\
+\mu=\lambda-2 &amp; \mu=\lambda-2 &amp; \downarrow
+\end{array}\)</p>
+<p>\(\qquad\qquad\qquad\qquad\qquad\qquad\qquad\begin{aligned}
+&amp; 2(\lambda-2)+2=-2+\lambda \\
+&amp; 2 \lambda-4+2=-2+\lambda
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \therefore \quad \mu=-2, \lambda=0 \\
+&amp; \therefore \quad \mathrm{Q} \equiv(-1,1-2) \\
+&amp; \mathrm{P}\left(\frac{1}{2}, \frac{-1}{2}, 1\right) \text { and } \mathrm{Q}(-1,1,-2) \\
+&amp; \mathrm{PQ}=\sqrt{\left(\frac{1}{2}+1\right)^2+\left(\frac{-1}{2}-1\right)^2+(1+2)^2} \\
+&amp; =\sqrt{\frac{9}{4}+\frac{9}{4}+9}=\sqrt{\frac{54}{4}} \\
+&amp; \therefore \quad 2(\mathrm{PQ})^2=2\left(\frac{54}{4}\right)=27
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p><strong>Explanation</strong></p>
+<p>To find the value of \(26 \alpha(\mathrm{PB})^2\), we proceed as follows:</p>
+<p><strong>Intersection Point \( B \) of \(\mathrm{L}_1\) and \(\mathrm{L}_2\)</strong></p>
+<p>We are given the equations of the lines:</p>
+<p>\( \mathrm{L}_1 : \frac{x-1}{3} = \frac{y-1}{-1} = \frac{z+1}{0} \)</p>
+<p>\( \mathrm{L}_2 : \frac{x-2}{2} = \frac{y}{0} = \frac{z+4}{\alpha} \)</p>
+<p>For \(\mathrm{L}_1\), \( z+1 = 0 \), which implies \( z = -1 \).</p>
+<p>For \(\mathrm{L}_2\), since \( y = 0 \), the direction ratios can be matched using the parameter \(\mu\):</p>
+<p>\( \begin{aligned} &amp; x = 3\lambda + 1, \quad y = -\lambda + 1, \quad z = -1, \\ &amp; x = 2\mu + 2, \quad y = 0, \quad z = \alpha \mu - 4. \end{aligned} \)</p>
+<p>Setting the coordinates equal for intersection:</p>
+<p>\( \begin{aligned} &amp; 3\lambda + 1 = 2\mu + 2, \\ &amp; -\lambda + 1 = 0, \\ &amp; -1 = \alpha \mu - 4. \end{aligned} \)</p>
+<p>From \(-\lambda + 1 = 0\), we find \(\lambda = 1\).</p>
+<p>Substituting \(\lambda = 1\) into  \(3\lambda + 1 = 2\mu + 2\) gives:</p>
+<p>\( 3(1) + 1 = 2\mu + 2 \implies \mu = 1. \)</p>
+<p>Also, substituting \(\mu = 1\) into \(-1 = \alpha \mu - 4\) gives:</p>
+<p>\( -1 = \alpha(1) - 4 \implies \alpha = 3. \)</p>
+<p>So, the intersection point \(B\) is:</p>
+<p>\( B(4, 0, -1). \)</p>
+<p><strong>Foot of Perpendicular from \(A\) to \(\mathrm{L}_2\)</strong></p>
+<p>The point \(P\) on \(\mathrm{L}_2\) is given by:</p>
+<p>\( P(2\delta + 2, 0, 3\delta - 4). \)</p>
+<p>For vector \(\overrightarrow{AP} = (2\delta + 1, -1, 3\delta - 3)\), since \(AP\) is perpendicular to \(\mathrm{L}_2\), the dot product should be zero:</p>
+<p>\( \begin{aligned} (2\delta + 1)\cdot 2 + (-1)\cdot 0 + (3\delta - 3)\cdot 3 &amp;= 0. \end{aligned} \)</p>
+<p>Simplifying gives:</p>
+<p>\( 4\delta + 2 + 9\delta - 9 = 0 \implies 13\delta = 7 \implies \delta = \frac{7}{13}. \)</p>
+<p>So, the coordinates of point \(P\) are:</p>
+<p>\( P\left(\frac{40}{13}, 0, \frac{-31}{13}\right). \)</p>
+<p><strong>Distance \(\mathrm{PB}\) and Calculation</strong></p>
+<p>The vector \(\overrightarrow{PB}\) is:</p>
+<p>\( \overrightarrow{PB} = \left(4 - \frac{40}{13}, 0 - 0, -1 - \left(\frac{-31}{13}\right)\right). \)</p>
+<p>Calculating the components:</p>
+<p>\( \overrightarrow{PB} = \left(\frac{12}{13}, 0, \frac{18}{13}\right). \)</p>
+<p>The square of the distance \((PB)^2\) is:</p>
+<p>\( \left(\frac{12}{13}\right)^2 + \left(0\right)^2 + \left(\frac{18}{13}\right)^2 = \frac{144}{169} + \frac{324}{169} = \frac{468}{169}. \)</p>
+<p>Thus, \(26 \alpha (PB)^2\) is:</p>
+<p>\( 26 \times 3 \times \frac{468}{169} = 216. \) </p>
+<p>So, the final value is 216.</p></li><li><strong>Q3:</strong> <p>\( P = (-2, -1, 3) \)</p>
+<p>Since the line through \( P \) is parallel to the vector </p>
+<p>\( \vec{d} = (3, 2, 2), \) </p>
+<p>any point \( Q \) on this line can be expressed as:</p>
+<p>\( Q = P + t\,\vec{d} = (-2 + 3t,\, -1 + 2t,\, 3 + 2t), \)</p>
+<p>where \( t \) is a real number. Given that \( P \) and \( Q \) must be distinct, we require \( t \neq 0 \).</p>
+<p>The point \( R \) is given by:</p>
+<p>\( R = (1, 3, 3). \)</p>
+<p>The distance from \( Q \) to \( R \) is \( 5 \), so we have:</p>
+<p>\( \left[ (-2 + 3t - 1)^2 + (-1 + 2t - 3)^2 + (3 + 2t - 3)^2 \right] = 5^2. \)</p>
+<p>Simplify each coordinate difference:</p>
+<p>For the \( x \)-coordinate: </p>
+<p>\( -2 + 3t - 1 = 3t - 3 = 3(t - 1). \)</p>
+<p>For the \( y \)-coordinate:</p>
+<p>\( -1 + 2t - 3 = 2t - 4 = 2(t - 2). \)</p>
+<p>For the \( z \)-coordinate:</p>
+<p>\( 3 + 2t - 3 = 2t. \)</p>
+<p>So the equation becomes:</p>
+<p>\( [3(t - 1)]^2 + [2(t - 2)]^2 + (2t)^2 = 25. \)</p>
+<p>Expanding the squares:</p>
+<p>\( 9(t - 1)^2 + 4(t - 2)^2 + 4t^2 = 25. \)</p>
+<p>Expand each term:</p>
+<p>\( 9(t^2 - 2t + 1) + 4(t^2 - 4t + 4) + 4t^2 = 25, \)</p>
+<p>which simplifies to:</p>
+<p>\( 9t^2 - 18t + 9 + 4t^2 - 16t + 16 + 4t^2 = 25. \)</p>
+<p>Combine like terms:</p>
+<p>\( (9t^2 + 4t^2 + 4t^2) - (18t + 16t) + (9 + 16) = 25, \)</p>
+<p>\( 17t^2 - 34t + 25 = 25. \)</p>
+<p>Subtract 25 from both sides:</p>
+<p>\( 17t^2 - 34t = 0. \)</p>
+<p>Factor out \( 17t \):</p>
+<p>\( 17t(t - 2) = 0. \)</p>
+<p>Since \( t \neq 0 \), we must have:</p>
+<p>\( t = 2. \)</p>
+<p>Substitute \( t = 2 \) back into the equation for \( Q \):</p>
+<p>\( Q = (-2 + 3(2),\, -1 + 2(2),\, 3 + 2(2)) = (4, 3, 7). \)</p>
+<p>Next, to find the square of the area of triangle \( PQR \), first compute the vectors:</p>
+<p>\( \vec{PQ} = Q - P = (4 - (-2),\, 3 - (-1),\, 7 - 3) = (6, 4, 4), \)</p>
+<p>\( \vec{PR} = R - P = (1 - (-2),\, 3 - (-1),\, 3 - 3) = (3, 4, 0). \)</p>
+<p>The area of the triangle is given by:</p>
+<p>\( \text{Area} = \frac{1}{2} \, \| \vec{PQ} \times \vec{PR} \|. \)</p>
+<p>Calculate the cross product:</p>
+<p>\( \vec{PQ} \times \vec{PR} = \begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 6 &amp; 4 &amp; 4 \\ 3 &amp; 4 &amp; 0 \\ \end{vmatrix}. \)</p>
+<p>Expanding the determinant:</p>
+<p>\( \hat{i} \)-component:</p>
+<p>\( 4 \times 0 - 4 \times 4 = -16, \)</p>
+<p>\( \hat{j} \)-component:</p>
+<p>\( -(6 \times 0 - 4 \times 3) = 12, \)</p>
+<p>\( \hat{k} \)-component:</p>
+<p>\( 6 \times 4 - 4 \times 3 = 24 - 12 = 12. \)</p>
+<p>Thus,</p>
+<p>\( \vec{PQ} \times \vec{PR} = (-16,\, 12,\, 12). \)</p>
+<p>Find the magnitude squared of the cross product:</p>
+<p>\( \| \vec{PQ} \times \vec{PR} \|^2 = (-16)^2 + 12^2 + 12^2 = 256 + 144 + 144 = 544. \)</p>
+<p>The square of the area of triangle \( PQR \) is:</p>
+<p>\( (\text{Area})^2 = \left(\frac{1}{2}\right)^2 \| \vec{PQ} \times \vec{PR} \|^2 = \frac{1}{4} \times 544 = 136. \)</p>
+<p>Thus, the square of the area of \( \triangle PQR \) is \(136.\)</p></li><li><strong>Q4:</strong> <p>To find the perpendicular distance from the point \(P(2,-10,1)\) to the line given by</p>
+<p>\(\frac{x-1}{2}=\frac{y+2}{-1}=\frac{z+3}{2},\)</p>
+<p>follow these steps:</p>
+<p><p><strong>Parametrize the Line:</strong></p>
+<p>From the given symmetric equations, set the common parameter as \(t\):</p></p>
+<p><p>\(x = 1 + 2t\)</p></p>
+<p><p>\(y = -2 - t\)</p></p>
+<p><p>\(z = -3 + 2t\)</p>
+<p>This shows that:</p></p>
+<p><p>A point on the line is \(A(1,-2,-3)\) (when \(t=0\)).</p></p>
+<p><p>The direction vector is \(\vec{d} = \langle 2, -1, 2 \rangle.\) </p></p>
+<p><p><strong>Determine the Vector from Point A to P:</strong></p>
+<p>Calculate</p>
+<p>\(\vec{AP} = P - A = \langle 2 - 1, \; -10 - (-2), \; 1 - (-3) \rangle = \langle 1, \; -8, \; 4 \rangle.\)</p></p>
+<p><p><strong>Compute the Cross Product:</strong></p>
+<p>The formula for the perpendicular distance from a point to a line in 3D is:</p>
+<p>\(d = \frac{\|\vec{AP} \times \vec{d}\|}{\|\vec{d}\|}.\)</p>
+<p>First, find the cross product \(\vec{AP} \times \vec{d}\):</p>
+<p>\(    \vec{AP} \times \vec{d} =     \begin{vmatrix}    \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\    1 &amp; -8 &amp; 4 \\    2 &amp; -1 &amp; 2     \end{vmatrix}    =    \Big( (-8)(2) - (4)(-1), \; (4)(2) - (1)(2), \; (1)(-1) - (-8)(2) \Big).    \)</p>
+<p>Evaluate each component:</p></p>
+<p><p>First component: \((-8 \times 2) - (4 \times -1) = -16 + 4 = -12.\)</p></p>
+<p><p>Second component: \( (4 \times 2) - (1 \times 2) = 8 - 2 = 6.\)</p></p>
+<p><p>Third component: \( (1 \times -1) - (-8 \times 2) = -1 + 16 = 15.\)</p>
+<p>So, </p>
+<p>\(\vec{AP} \times \vec{d} = \langle -12, 6, 15 \rangle.\)</p></p>
+<p><strong>Calculate the Magnitudes:</strong></p>
+<p><p>For the cross product:</p>
+<p>\(      \|\vec{AP} \times \vec{d}\| = \sqrt{(-12)^2 + 6^2 + 15^2} = \sqrt{144 + 36 + 225} = \sqrt{405} = 9\sqrt{5}.      \)</p></p>
+<p><p>For the direction vector:</p>
+<p>\(      \|\vec{d}\| = \sqrt{2^2 + (-1)^2 + 2^2} = \sqrt{4 + 1 + 4} = \sqrt{9} = 3.      \)</p></p>
+<p><p><strong>Compute the Distance:</strong></p>
+<p>Substitute the magnitudes into the distance formula:</p>
+<p>\(    d = \frac{9\sqrt{5}}{3} = 3\sqrt{5}.    \)</p></p>
+<p>Thus, the perpendicular distance from the point \(P(2,-10,1)\) to the line is \(3\sqrt{5}\).</p>
+<p>Comparing with the options given, the correct answer is:</p>
+<p>Option C: \(3\sqrt{5}\).</p></li><li><strong>Q5:</strong> <p><img alt="JEE Main 2025 (Online) 28th January Evening Shift Mathematics - 3D Geometry Question 29 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m74vtkpt/b8cc281d-42f6-44f5-a5a0-eafdbdeaf325/7f521910-eae2-11ef-b903-374a4031b0cb/file-jaoe38c1m74vtkpu.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m74vtkpt/b8cc281d-42f6-44f5-a5a0-eafdbdeaf325/7f521910-eae2-11ef-b903-374a4031b0cb/file-jaoe38c1m74vtkpu.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; L=\frac{x+1}{3}=\frac{y+3}{5}=\frac{z+5}{7} \\
+&amp; P Q=\frac{x-\frac{15}{7}}{1}=\frac{y-\frac{32}{7}}{4}=\frac{z-7}{7}=\lambda
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp;\Rightarrow \mathrm{Q}\left(\lambda+\frac{15}{7}, 4 \lambda+\frac{32}{7}, 7 \lambda+7\right)\\
+&amp;\text { Since } \mathrm{Q} \text { lies on line } \mathrm{L}\\
+&amp;\begin{aligned}
+&amp; \text { So, } \frac{\lambda+\frac{15}{7}+1}{3}=\frac{7 \lambda+7+5}{7} \\
+&amp; \Rightarrow 7 \lambda+22=21 \lambda+36 \\
+&amp; \Rightarrow \lambda=-1 \\
+&amp; \therefore \text { Point } Q\left(\frac{8}{7}, \frac{4}{7}, 0\right) \\
+&amp; \mathrm{PQ}=\sqrt{\left(\frac{15}{7}-\frac{8}{7}\right)^2+\left(\frac{32}{7}-\frac{4}{7}\right)^2+(7-0)} \\
+&amp; \mathrm{PQ}=\sqrt{66} \\
+&amp; \Rightarrow(\mathrm{PQ})^2=66
+\end{aligned}
+\end{aligned}\)</p></li><li><strong>Q6:</strong> <p><img alt="JEE Main 2025 (Online) 23rd January Morning Shift Mathematics - 3D Geometry Question 26 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m7eagi0u/80c52d73-a2dd-49e5-ad1b-b984e73ec1d2/ca80c5e0-f00e-11ef-9717-875b14a45511/file-jaoe38c1m7eagi0v.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7eagi0u/80c52d73-a2dd-49e5-ad1b-b984e73ec1d2/ca80c5e0-f00e-11ef-9717-875b14a45511/file-jaoe38c1m7eagi0v.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp;\begin{aligned}
+&amp; \frac{x-3}{7}=\frac{y-2}{-1}=\frac{z+1}{-2}=\lambda \\
+&amp; \Rightarrow 7 \lambda+3,-\lambda+2,-2 \lambda-1 \\
+&amp; \text { dr's of QP } \Rightarrow \\
+&amp; 7 \lambda-7,-\lambda+5,-2 \lambda
+\end{aligned}\\
+&amp;\text { Now }\\
+&amp;\begin{aligned}
+&amp; (7 \lambda-7) \cdot 7-(-\lambda+5)+(2 \lambda) \cdot 2=0 \\
+&amp; 54 \lambda-54=0 \Rightarrow \lambda=1 \\
+&amp; \therefore \mathrm{P}=(10,1,-3) \\
+&amp; \overrightarrow{\mathrm{PQ}}=-4 \hat{\mathrm{j}}+2 \hat{\mathrm{k}} \\
+&amp; \overrightarrow{\mathrm{PR}}=-7 \hat{\mathrm{i}}-3 \hat{\mathrm{j}}+4 \hat{\mathrm{k}}
+\end{aligned}
+\end{aligned}\)</p>
+<p>Area \(=\left| {{1 \over 2}\left| {\matrix{
+   i &amp; j &amp; k  \cr 
+   0 &amp; { - 4} &amp; 2  \cr 
+   { - 7} &amp; { - 3} &amp; 4  \cr 
+
+ } } \right|} \right| = 3\sqrt {30} \)</p></li><li><strong>Q7:</strong> <p>\(\begin{aligned}
+&amp; \overrightarrow{\mathrm{a}}=(2,1,-3) \\
+&amp; \overrightarrow{\mathrm{b}}=(-1,-3,-5) \\
+&amp; \overrightarrow{\mathrm{p}} \times \overrightarrow{\mathrm{q}}=\left|\begin{array}{ccc}
+\hat{\mathrm{i}} &amp; \hat{\mathrm{j}} &amp; \hat{\mathrm{k}} \\
+1 &amp; 2 &amp; -3 \\
+2 &amp; 4 &amp; -5
+\end{array}\right| \\
+&amp; =2 \hat{\mathrm{i}}-\hat{\mathrm{j}} \\
+&amp; \overrightarrow{\mathrm{~b}}-\overrightarrow{\mathrm{a}}=-3 \hat{\mathrm{i}}-4 \hat{\mathrm{j}}-2 \hat{\mathrm{k}} \\
+&amp; \mathrm{~S}_{\mathrm{d}}=\frac{|(\overrightarrow{\mathrm{b}}-\overrightarrow{\mathrm{a}}) \cdot(\overrightarrow{\mathrm{p}} \times \overrightarrow{\mathrm{q}})|}{|\overrightarrow{\mathrm{p}} \times \overrightarrow{\mathrm{q}}|} \\
+&amp; =\frac{2}{\sqrt{5}} \\
+&amp; \left(\mathrm{~S}_{\mathrm{d}}\right)^2=\frac{4}{5} \\
+&amp; \mathrm{~m}=4, \mathrm{n}=5 \Rightarrow \mathrm{~m}+\mathrm{n}=9
+\end{aligned}\)</p></li><li><strong>Q8:</strong> <p><img alt="JEE Main 2025 (Online) 24th January Morning Shift Mathematics - 3D Geometry Question 23 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m7dbel5i/a2f1f034-e79b-4a8e-8395-e60c6087fa6c/b5c85a70-ef85-11ef-a31c-61942b0d8216/file-jaoe38c1m7dbel5j.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7dbel5i/a2f1f034-e79b-4a8e-8395-e60c6087fa6c/b5c85a70-ef85-11ef-a31c-61942b0d8216/file-jaoe38c1m7dbel5j.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; \text { Let } \mathrm{M}(3 \lambda+6,2 \lambda+7,-2 \lambda+7) \\
+&amp; \overrightarrow{\mathrm{BM}}=(3 \lambda+5) \hat{\mathrm{i}}+(2 \lambda+5) \hat{\mathrm{j}}+(-2 \lambda+4) \hat{\mathrm{k}} \\
+&amp; \overrightarrow{\mathrm{AC}} \cdot \overrightarrow{\mathrm{BM}}=0=3(3 \lambda+5)+2(2 \lambda+5)-2(-2 \lambda+4) \\
+&amp; \overrightarrow{\mathrm{BM}}=2 \hat{\mathrm{i}}+3 \hat{\mathrm{j}}+6 \hat{\mathrm{k}} \\
+&amp; \mid \overrightarrow{\mathrm{BM}}=7 \\
+&amp; \text { Area }=\frac{1}{2} \times 6 \times 7=21
+\end{aligned}\)</p></li><li><strong>Q9:</strong> <p><img alt="JEE Main 2025 (Online) 24th January Evening Shift Mathematics - 3D Geometry Question 21 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m7c3htun/3255bb4a-5a80-4641-851d-952c88411427/fe3efef0-eed9-11ef-81d9-610d814056f7/file-jaoe38c1m7c3htuo.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m7c3htun/3255bb4a-5a80-4641-851d-952c88411427/fe3efef0-eed9-11ef-81d9-610d814056f7/file-jaoe38c1m7c3htuo.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp;\text { Let } \mathrm{R}(2 \lambda+1,3 \lambda-1,4 \lambda)\\
+&amp;\begin{aligned}
+&amp; 2 \lambda+1=5 \\
+&amp; \lambda=2 \\
+&amp; \mathrm{R}(5,5,8) \\
+&amp; \text { let } \mathrm{T}(2 \lambda+1,3 \lambda-1,4 \lambda) \\
+&amp; \overrightarrow{\mathrm{QT}}=(2 \lambda-6) \hat{\mathrm{i}}+(3 \lambda+1) \hat{\mathrm{j}}+(4 \lambda-5) \hat{\mathrm{k}} \\
+&amp; \overrightarrow{\mathrm{~b}}=2 \hat{\mathrm{i}}+3 \hat{\mathrm{j}}+4 \hat{\mathrm{k}} \\
+&amp; \overrightarrow{\mathrm{QT}} \cdot \overrightarrow{\mathrm{~b}}=0
+\end{aligned}\\
+&amp;4 \lambda-12+9 \lambda+3+16 \lambda-20=0
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \lambda=1 \\
+&amp; \mathrm{~T}(3,2,4) \\
+&amp; \mathrm{QT}=\sqrt{33} \quad \mathrm{RT}=\sqrt{29} \\
+&amp; (\text { area of } \Delta \mathrm{PQR})^2=\left(\frac{1}{2} \sqrt{29} \cdot 2 \sqrt{33}\right)^2 \\
+&amp; =957
+\end{aligned}\)</p></li><li><strong>Q10:</strong> <p>\(\begin{aligned}
+&amp; A(x, y, z) \text { Let } P(0,3,2), Q(2,0,3), R(0,0,1) \\
+&amp; A P=A Q=A R \\
+&amp; x^2+(y-3)^2+(z-2)^2=(x-2)^2+y^2+(z-3)^2=x^2+ \\
+&amp; y^2+(z-1)^2
+\end{aligned}\)</p>
+<p>In xy plane \(\mathrm{z}=0\)</p>
+<p>So, \(x^2-4 x+4+y^2+9=x^2+y^2+1\)</p>
+<p>\(\begin{aligned}
+&amp; \Rightarrow y=2 \\
+&amp; x=3 \\
+&amp; 9+y^2-6 y+9+4=x^2+y^2+1
+\end{aligned}\)</p>
+<p>So, \(A(3,2,0)\) also \(B(1,4,-1) \&amp; C(2,0,-2)\)</p>
+<p>Now \(A B=\sqrt{4+4+1}=3\)</p>
+<p>\(\begin{aligned}
+&amp;\begin{aligned}
+&amp; \mathrm{AC}=\sqrt{1+4+4}=3 \\
+&amp; \mathrm{BC}=\sqrt{1+16+1}=\sqrt{18} \\
+&amp; \mathrm{AB}=\mathrm{AC} \\
+&amp; \text { isosceles } \Delta \&amp; \mathrm{AB}^2+\mathrm{AC}^2=\mathrm{BC}^2 \\
+&amp; \text { right angle } \Delta \\
+&amp; \text { Area of } \triangle \mathrm{ABC}=\frac{1}{2} \times \text { base.height } \\
+&amp; \frac{1}{2} \times 3 \times 3=\frac{9}{2}
+\end{aligned}\\
+&amp;\text { So only } S_1 \text { is true }
+\end{aligned}\)</p></li><li><strong>Q11:</strong> <p>\(\begin{aligned}
+&amp; L_1: x+2=y-1=z=\ell \\
+&amp; L_2: \frac{x-3}{5}=\frac{y}{-1}=\frac{z-1}{1}=m \\
+&amp; L_3: \frac{x}{-3}=\frac{y-3}{5}=\frac{z-2}{1}=n
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp;\text { Point of intersection of } L_1 \text { and } L_2\\
+&amp;\left.\begin{array}{r}
+\ell-2=5 \mathrm{~m}+3 \\
+\ell+1=-\mathrm{m} \\
+\ell=\mathrm{m}+1
+\end{array}\right\} \ell=0, \mathrm{~m}=-1 \quad \mathrm{~A}(-2,1,0)
+\end{aligned}\)</p>
+<p>Point of intersection of \(L_2\) and \(L_3\)</p>
+<p>\(\left.\begin{array}{l}
+5 m+3=-3 n \\
+-m=3 n+3 \\
+m+1=n+2
+\end{array}\right\} m=0, n=-1, B(3,0,1)\)</p>
+<p>Point of intersection \(L_3\) and \(L_4\)</p>
+<p>\(\left.\begin{array}{r}
+-3 \mathrm{n}=\ell-2 \\
+3 \mathrm{n}+3=\ell+1 \\
+\mathrm{n}+2=\ell
+\end{array}\right\} \ell=2, \mathrm{n}=0, \mathrm{C}(0,3,2)\)</p>
+<p><img alt="JEE Main 2025 (Online) 8th April Evening Shift Mathematics - 3D Geometry Question 17 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m9h1byaq/4f3aec88-5a8f-4803-b0c4-a440a538d26d/e292a420-1929-11f0-aa66-05ee025e30bb/file-jaoe38c1m9h1byar.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9h1byaq/4f3aec88-5a8f-4803-b0c4-a440a538d26d/e292a420-1929-11f0-aa66-05ee025e30bb/file-jaoe38c1m9h1byar.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; \operatorname{Ar}(\triangle \mathrm{ABC})=\left|\frac{1}{2}\right| \begin{array}{ccc}
+\hat{\mathrm{i}} &amp; \hat{\mathrm{j}} &amp; \hat{\mathrm{k}} \\
+-5 &amp; 1 &amp; -1 \\
+-3 &amp; 3 &amp; 1
+\end{array}| | \\
+&amp; \mathrm{A}=\frac{1}{2}|\hat{\mathrm{i}}(4)-\hat{\mathrm{j}}(-8)+\hat{\mathrm{k}}(-12)| \\
+&amp; \mathrm{A}=\frac{1}{2} \sqrt{16+64+144}=\sqrt{56} \\
+&amp; \mathrm{~A}^2=56
+\end{aligned}\)</p></li><li><strong>Q12:</strong> <p><img alt="JEE Main 2025 (Online) 2nd April Morning Shift Mathematics - 3D Geometry Question 14 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1mahra0g1/83b3d710-9d36-4f4a-bbfd-4ba7934c377a/9159a310-2d5b-11f0-ba89-416c860861c7/file-jaoe38c1mahra0g2.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mahra0g1/83b3d710-9d36-4f4a-bbfd-4ba7934c377a/9159a310-2d5b-11f0-ba89-416c860861c7/file-jaoe38c1mahra0g2.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; H:(5 \lambda-3,2 \lambda+1,3 \lambda-4) \\
+&amp; &lt;\mathrm{DR} \text { of } \mathrm{PH}&gt; \\
+&amp; &lt;5 \lambda-3,2 \lambda-1,3 \lambda-7&gt; \\
+&amp; \overrightarrow{P H} \cdot \overrightarrow{Q R}=0 \\
+&amp; \Rightarrow(5 \lambda-3) 5+(2 \lambda-1) 2+(3 \lambda-7) 3=0 \\
+&amp; \Rightarrow 25 \lambda-15+4 \lambda-2+9 \lambda-21=0 \\
+&amp; \Rightarrow 38 \lambda=38 \\
+&amp; \Rightarrow \lambda=1 \\
+&amp; \therefore \quad H(2,3,-1) \\
+&amp; P H=\sqrt{4+1+16}=\sqrt{21} \\
+&amp; \therefore \quad \text { Area }=\frac{1}{2} \times P H \text { QR } \\
+&amp; \quad=\frac{1}{2} \times \sqrt{21} \times 5=\frac{5 \sqrt{21}}{2}=\frac{m}{n} \\
+&amp; 2 m-5 \sqrt{21} n=0
+\end{aligned}\)</p></li><li><strong>Q13:</strong> <p><img alt="JEE Main 2025 (Online) 2nd April Morning Shift Mathematics - 3D Geometry Question 13 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1mahnmjqh/dc5313d1-6a6c-408a-af82-9d0aa2184ac9/4971c590-2d4d-11f0-8000-8fc9ddec6757/file-jaoe38c1mahnmjqi.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1mahnmjqh/dc5313d1-6a6c-408a-af82-9d0aa2184ac9/4971c590-2d4d-11f0-8000-8fc9ddec6757/file-jaoe38c1mahnmjqi.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; \operatorname{ar}(\triangle A B C)=5 \\
+&amp; \frac{1}{2} \times b c=5 \\
+&amp; \Rightarrow \quad b c=10 \\
+&amp; \operatorname{ar}(\triangle A C D)=6 \\
+&amp; \frac{1}{2} \times c d=6 \\
+&amp; \Rightarrow \quad c d=12 \\
+&amp; \operatorname{ar}(\triangle A B D)=7 \\
+&amp; b d=14
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \operatorname{area}(\triangle B C D)=\frac{1}{2}|\overrightarrow{B C} \times \overrightarrow{B D}| \\
+&amp; \overrightarrow{B C}=&lt;-b, c, 0&gt; \\
+&amp; \overrightarrow{B D}=&lt;-b, 0, d&gt; \\
+&amp; |\overrightarrow{B C} \times \overrightarrow{B D}|=\sqrt{c^2 d^2+b^2 d^2+b^2 c^2} \\
+&amp; =\sqrt{12^2+14^2+10^2} \\
+&amp; =\sqrt{440} \\
+&amp; \operatorname{ar}(\triangle B C D)=\sqrt{110}
+\end{aligned}\)</p></li><li><strong>Q14:</strong> <p>The line we need to find should be orthogonal to two given lines, meaning it will be parallel to the cross product of their direction vectors: </p>
+<p>\( (\hat{i} + a \hat{j} + b \hat{k}) \times (-b \hat{i} + a \hat{j} + 5 \hat{k}) \)</p>
+<p>Calculating the cross product results in the vector:</p>
+<p>\( \hat{i}(5a - ab) - \hat{j}(b^2 + 5) + \hat{k}(a + ab) \)</p>
+<p>This shows that the direction ratios of the required line are proportional to:</p>
+<p>\( \alpha(5a - ab), - (b^2 + 5), (a + ab) \)</p>
+<p>Since the line is also expressed as \( \frac{x-1}{-2} = \frac{y+4}{d} = \frac{z-c}{-4} \), the direction ratios based on this equation are:</p>
+<p>\( \alpha(-2), d, -4 \)</p>
+<p>Thus, we have the equation:</p>
+<p>\( \frac{5a - ab}{-2} = \frac{- (b^2 + 5)}{d} = \frac{a + ab}{-4} \)</p>
+<p>The point \(\left(0, -\frac{1}{2}, 0 \right)\) lies on the line, which implies:</p>
+<p>\( \frac{0-1}{-2} = \frac{-\frac{1}{2} + 4}{d} = \frac{0-c}{-4} \)</p>
+<p>Simplifying these gives \( d = 7 \) and \( c = 2 \).</p>
+<p>Substitute into the main equation:</p>
+<p>\( \frac{5a - ab}{-2} = \frac{a + ab}{-4} \)</p>
+<p>\( \frac{-b^2 - 5}{7} = \frac{a + ab}{-4} \)</p>
+<p>Solving these yields:</p>
+<p>\(  \begin{array}{c|c} -20a + 4ab = -2a - 2ab &amp; 4b^2 + 20 = 70 + 7ab \\ 18a = 6ab &amp; 36 + 20 = 70 + 21a \\ b = 3 &amp; 56 = 28a \Rightarrow a = 2 \end{array}  \)</p>
+<p>Substituting these into the variables, we find:</p>
+<p>\( a + b + c + d = 2 + 3 + 2 + 7 = 14 \)</p></li><li><strong>Q15:</strong> <p>\(\begin{aligned}
+&amp; \mathrm{L}_1: \frac{\mathrm{x}-1}{1}=\frac{\mathrm{y}-2}{1}=\frac{\mathrm{z}-0}{2} \\
+&amp; \text { Let } \mathrm{Q}(\lambda+1, \lambda+2, \lambda) \\
+&amp; \overrightarrow{\mathrm{PQ}}=(\lambda-4, \lambda-1, \lambda+3) \\
+&amp; \overrightarrow{\mathrm{PQ}} \cdot \overrightarrow{\mathrm{~m}}=0
+\end{aligned}\)</p>
+<p><img alt="JEE Main 2025 (Online) 7th April Evening Shift Mathematics - 3D Geometry Question 15 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m9jingpq/c76e21bc-ff7e-44f1-8f9a-450b6f54f0c9/2f31b7e0-1a87-11f0-b2bf-61e6e294e88a/file-jaoe38c1m9jingpr.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9jingpq/c76e21bc-ff7e-44f1-8f9a-450b6f54f0c9/2f31b7e0-1a87-11f0-b2bf-61e6e294e88a/file-jaoe38c1m9jingpr.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp;\begin{aligned}
+&amp; \Rightarrow \lambda-4+\lambda+1, \lambda+3=0 \\
+&amp; \Rightarrow 3 \lambda=0 \\
+&amp; \Rightarrow \lambda=0 \\
+&amp; \Rightarrow \mathrm{Q}(1,2,0) \\
+&amp; \mathrm{L}_2: \frac{\mathrm{x}-2}{1}=\frac{\mathrm{y}-0}{1}=\frac{\mathrm{z}-1}{2}
+\end{aligned}\\
+&amp;\text { Let } \mathrm{R}(\mu+2, \mu, \mu+1) \overrightarrow{\mathrm{PR}}=(\mu-3, \mu-1, \mu+4)\\
+&amp;\overrightarrow{\mathrm{PR}} \cdot \overrightarrow{\mathrm{n}}=0\\
+&amp;\mu-3+\mu-1+\mu+4=0\\
+&amp;\neq \mu=0\\
+&amp;\mathrm{R}(2,0,1)
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \text { Area of } \triangle \mathrm{PQR}(\mathrm{~A})=\frac{1}{2}|\overrightarrow{\mathrm{PQ}} \times \overrightarrow{\mathrm{PR}}| \\
+&amp; \mathrm{A}=\frac{1}{2}|(-4 \hat{\mathrm{i}}+\hat{\mathrm{j}}+3 \hat{\mathrm{k}}) \times(-3 \hat{\mathrm{i}}+\hat{\mathrm{j}}+4 \hat{\mathrm{k}})| \\
+&amp; \mathrm{A}=\frac{1}{2}|7(\hat{\mathrm{i}}+\hat{\mathrm{j}}+\hat{\mathrm{k}})| \\
+&amp; \left|\begin{array}{lrr}
+\hat{\mathrm{i}} &amp; \hat{\mathrm{j}} &amp; \hat{\mathrm{k}} \\
+-4 &amp; 1 &amp; 3 \\
+-3 &amp; -1 &amp; 4
+\end{array}\right| \\
+&amp; =7 \hat{\mathrm{i}}+7 \hat{\mathrm{j}}+7 \hat{\mathrm{k}} \\
+&amp; 4 \mathrm{~A}^2=49 \times 3=147
+\end{aligned}\)</p></li><li><strong>Q16:</strong> <p><img alt="JEE Main 2025 (Online) 7th April Morning Shift Mathematics - 3D Geometry Question 10 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m9l4sxxq/8c9a95a7-c026-4c4b-9fde-abc544516fc2/99121db0-1b6a-11f0-bbff-0f04539847fe/file-jaoe38c1m9l4sxzf.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9l4sxxq/8c9a95a7-c026-4c4b-9fde-abc544516fc2/99121db0-1b6a-11f0-bbff-0f04539847fe/file-jaoe38c1m9l4sxzf.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; L: \frac{x-1}{a}=\frac{y-1}{b}=\frac{z-1}{c} \\
+&amp; L_1: \frac{x-1}{2}=\frac{y+1}{3}=\frac{z-1}{4}=\lambda \text { (say) }
+\end{aligned}\)</p>
+<p>Any point on \(L_1\) be \(A(2 \lambda+1,3 \lambda+1,4 \lambda+1)\)</p>
+<p>\(L_2: \frac{x-3}{1}=\frac{y-4}{2}=\frac{z}{1}=\mu \text { (say) }\)</p>
+<p>Any point on \(L_2\) be \(B(\mu+3,2 \mu-4, \mu)\)</p>
+<p>\(D\) of \(L\) be : \(&lt;2 \lambda, 3 \lambda-2,4 \lambda&gt;\) or \(&lt;\mu+2,2 \mu+3\), \(\mu-1&gt;\)</p>
+<p>Now \(\frac{2 \lambda}{\mu+2}=\frac{3 \lambda-7}{2 \mu+3}=\frac{4 \lambda}{\mu-1}\)</p>
+<p>\(\begin{aligned}
+&amp;\begin{aligned}
+&amp; \Rightarrow \lambda=\frac{-6}{5} \quad \mu=-5 \\
+&amp; \therefore&lt; a, b, c &gt;\equiv\langle-3,-7,-6 &gt;\text { or }&lt;3,7,6&gt; \\
+&amp; \therefore \quad L: \frac{x-1}{3}=\frac{y-1}{7}=\frac{z-1}{6}
+\end{aligned}\\
+&amp;(7,15,13) \text { lies on the line. }
+\end{aligned}\)</p></li><li><strong>Q17:</strong> <p>The line \( L_1 \) is parallel to the vector \( \overrightarrow{\mathrm{a}} = -3 \hat{i} + 2 \hat{j} + 4 \hat{k} \) and passes through the point \( (7, 6, 2) \). The line \( L_2 \) is parallel to the vector \( \overrightarrow{\mathrm{b}} = 2 \hat{i} + \hat{j} + 3 \hat{k} \) and passes through the point \( (5, 3, 4) \).</p>
+<p><strong>Equations of the Lines:</strong></p>
+<p><p>Equation of \( L_1 \): </p>
+<p>\(   \mathbf{r} = 7 \hat{i} + 6 \hat{j} + 2 \hat{k} + \lambda(-3 \hat{i} + 2 \hat{j} + 4 \hat{k})   \)</p></p>
+<p><p>Equation of \( L_2 \): </p>
+<p>\(   \mathbf{r} = 5 \hat{i} + 3 \hat{j} + 4 \hat{k} + \mu(2 \hat{i} + \hat{j} + 3 \hat{k})   \)</p></p>
+<p><strong>Shortest Distance Between \( L_1 \) and \( L_2 \):</strong></p>
+<p>The formula for the shortest distance between two skew lines is given by:</p>
+<p>\( \text{Distance} = \left|\frac{\left(\vec{a}_2 - \vec{a}_1\right) \cdot \left(\vec{b}_1 \times \vec{b}_2\right)}{\left|\vec{b}_1 \times \vec{b}_2\right|}\right| \)</p>
+<p><strong>Calculations:</strong></p>
+<p><p>Vector between the points:</p>
+<p>\(    \vec{a}_2 - \vec{a}_1 = (5 \hat{i} + 3 \hat{j} + 4 \hat{k}) - (7 \hat{i} + 6 \hat{j} + 2 \hat{k}) = -2 \hat{i} - 3 \hat{j} + 2 \hat{k}    \)</p></p>
+<p><p>Cross product of direction vectors:</p>
+<p>\(    \vec{b}_1 = -3 \hat{i} + 2 \hat{j} + 4 \hat{k}, \quad \vec{b}_2 = 2 \hat{i} + \hat{j} + 3 \hat{k}    \)</p>
+<p>\(    \vec{b}_1 \times \vec{b}_2 = \begin{vmatrix}    \hat{i} &amp; \hat{j} &amp; \hat{k} \\    -3 &amp; 2 &amp; 4 \\    2 &amp; 1 &amp; 3    \end{vmatrix} = 2 \hat{i} + 17 \hat{j} - 7 \hat{k}    \)</p></p>
+<p><p>Magnitude of the cross product:</p>
+<p>\(    \left|\vec{b}_1 \times \vec{b}_2\right| = \sqrt{2^2 + 17^2 + (-7)^2} = \sqrt{342}    \)</p></p>
+<p><p>Dot product:</p>
+<p>\(    \left(\vec{a}_2 - \vec{a}_1\right) \cdot \left(\vec{b}_1 \times \vec{b}_2\right) = (-2 \hat{i} - 3 \hat{j} + 2 \hat{k}) \cdot (2 \hat{i} + 17 \hat{j} - 7 \hat{k})    \)</p>
+<p>\(    = (-2)(2) + (-3)(17) + (2)(-7) = -4 - 51 - 14 = -69    \)</p></p>
+<p><strong>Shortest Distance:</strong></p>
+<p>\( \text{Distance} = \left|\frac{-69}{\sqrt{342}}\right| = \frac{23}{\sqrt{38}} \)</p></li><li><strong>Q18:</strong> <p><img alt="JEE Main 2025 (Online) 3rd April Morning Shift Mathematics - 3D Geometry Question 7 English Explanation 1" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m9zq7nzz/9775e7a0-f58d-4245-9c5a-44fcebe2c3fa/4b4c8cf0-2371-11f0-be72-d7d0880a3028/file-jaoe38c1m9zq7o00.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9zq7nzz/9775e7a0-f58d-4245-9c5a-44fcebe2c3fa/4b4c8cf0-2371-11f0-be72-d7d0880a3028/file-jaoe38c1m9zq7o00.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; 3=\frac{|[(\lambda-1) \hat{i}+3 \hat{j}+3 \hat{k}] .(\hat{k} \times \hat{j})|}{|\hat{k} \times \hat{j}|}=|\lambda-1|=3 \\
+&amp; \Rightarrow \lambda=4 \text { or }-2, \lambda_2&lt;\lambda_1 \Rightarrow \lambda_2=-2 \\
+&amp; \lambda_1=4
+\end{aligned}\)</p>
+<p><img alt="JEE Main 2025 (Online) 3rd April Morning Shift Mathematics - 3D Geometry Question 7 English Explanation 2" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m9zq8udd/ec887931-577f-4c6e-9dc0-31ab9306fbeb/6c07c310-2371-11f0-be72-d7d0880a3028/file-jaoe38c1m9zq8ude.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9zq8udd/ec887931-577f-4c6e-9dc0-31ab9306fbeb/6c07c310-2371-11f0-be72-d7d0880a3028/file-jaoe38c1m9zq8ude.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; (3,-4,4-k) \perp \hat{k} \\
+&amp; 4-k=0 \Rightarrow k=4 \\
+&amp; \Rightarrow \text { Distance between }(4,-2,7) \&amp;(1,2,7) \\
+&amp; \Rightarrow \sqrt{3^2+4^2}=5
+\end{aligned}\)</p></li><li><strong>Q19:</strong> <p>\(L_1: \frac{x-7}{1}=\frac{y-5}{0}=\frac{z-3}{-1} ; L_2: \frac{x-1}{3}=\frac{y+3}{4}=\frac{z+7}{5}\)</p>
+<p><img alt="JEE Main 2025 (Online) 4th April Evening Shift Mathematics - 3D Geometry Question 6 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/jaoe38c1m9rtqr4o/dc52769b-cede-4a37-a379-1be6d4cc985d/d4487580-1f18-11f0-9588-0d31893f02ea/file-jaoe38c1m9rtqr4p.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/jaoe38c1m9rtqr4o/dc52769b-cede-4a37-a379-1be6d4cc985d/d4487580-1f18-11f0-9588-0d31893f02ea/file-jaoe38c1m9rtqr4p.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-height: 40vh; vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; \cos \theta=\left|\frac{3+0-5}{\sqrt{2} \times \sqrt{50}}\right| \\
+&amp; =\frac{2}{10}=\frac{1}{5} \\
+&amp; \therefore \sin \theta=\frac{2 \sqrt{6}}{5} \\
+&amp; \text { Area }=\frac{1}{2} a b \sin \theta \\
+&amp; =\frac{1}{2} \times \sqrt{15} \times \sqrt{15} \times \frac{2 \sqrt{6}}{5} \\
+&amp; =3 \sqrt{6} \\
+&amp; (\text { Area })^2=9 \times 6=54
+\end{aligned}\)</p></li><li><strong>Q20:</strong> <p>\(\begin{aligned}
+&amp; \frac{x+1}{3}=\frac{y}{4}=\frac{z}{5} ;(p \hat{i}+2 \hat{j}+\hat{k})+\lambda(2 \hat{i}+3 \hat{j}+4 \hat{k}) \\
+&amp; d=\left|\frac{(\vec{a}-\vec{b}) \cdot\left(\vec{p}_1 \times \vec{p}_2\right)}{\left|\vec{p}_1 \times \vec{p}_2\right|}\right|=\frac{1}{\sqrt{6}} \\
+&amp; \vec{a}-\vec{b}=(p+1) \hat{i}+2 \hat{j}+\hat{k} \\
+&amp; \vec{p}_1 \times \vec{p}_2=\left|\begin{array}{lll}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+3 &amp; 4 &amp; 5 \\
+2 &amp; 3 &amp; 4
+\end{array}\right|=\hat{i}-2 \hat{j}+\hat{k} \\
+&amp; \frac{1}{\sqrt{6}}=\left|\frac{(p+1)-4+1}{\sqrt{6}}\right| \\
+&amp; =|p-2|=1 \Rightarrow p=3,1 \\
+&amp; a=1, b=3 \\
+&amp; \frac{x^2}{1}+\frac{y^2}{9}=1
+\end{aligned}\)</p>
+<p>Length of \(L R=\frac{2 a^2}{b}=\frac{2}{3}\)</p></li><li><strong>Q21:</strong> <p>\(\begin{aligned}
+&amp; L_1: \frac{x-3}{3}=\frac{y-\alpha}{-1}=\frac{z-3}{1} \\
+&amp; L_2: \frac{x+3}{-3}=\frac{y+7}{2}=\frac{z-\beta}{4}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; a_1:(3, \alpha, 3) \quad a^2=(-3,-7, \beta) \\
+&amp; \vec{b}_1=3 \hat{i}-\hat{j}+\hat{k} \quad \vec{b}_2=-3 \hat{i}+2 \hat{j}+4 \hat{k}
+\end{aligned}\)</p>
+<p>\(d=\frac{\left|\left(\vec{a}_2-\vec{a}_1\right) \cdot\left(\vec{b}_1 \times \vec{b}_2\right)\right|}{\left|\vec{b}_1 \times \vec{b}_2\right|}=3 \sqrt{30}\)</p>
+<p>\(=\frac{\left|\begin{array}{ccc}6 &amp; \alpha+7 &amp; 3-\beta \\ 3 &amp; -1 &amp; 1 \\ -3 &amp; 2 &amp; 4\end{array}\right|}{\sqrt{6^2+15^2+3^2}}=3 \sqrt{30}\)</p>
+<p>\(\begin{aligned}
+\Rightarrow &amp; |-15 \alpha-3 \beta-132|=270 \\
+&amp; |5 \alpha+\beta+44|=90 \\
+\Rightarrow &amp; 5 \alpha+\beta=90-44=46
+\end{aligned}\)</p></li><li><strong>Q22:</strong> <p>\(L: \frac{x-6}{3}=\frac{y-7}{2}=\frac{z-7}{-2}\)</p>
+<p>Point \(A(3 \lambda+6,2 \lambda+7,7-2 \lambda)\)</p>
+<p>\(B(3 \mu+6,2 \mu+7,7-2 \mu)\)</p>
+<p>Let \(P(3 k+6,2 k+7,7-2 k)\) be foot of perpendicular from \(P^{\prime}(1,2,3)\)</p>
+<p>\(\begin{aligned}
+&amp; \therefore \quad P P^{\prime}\langle 3,2,-2\rangle=0 \\
+&amp; 3(3 k+5)+(2 k+5) 2+(4-2 k)(-2)=0 \\
+&amp; 9 k+15+4 k+10-8+4 k=0 \\
+&amp; 17 k+17=0 \\
+&amp; \Rightarrow k=-1 \qquad \therefore \quad P(3,5,9)\\
+&amp; |\overrightarrow{A P}|=2 \sqrt{17}
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \Rightarrow(3 \lambda+3)^2+(2 \lambda+2)^2+(-2-2 \lambda)^2=17 \times 4 \\
+&amp; =17(\lambda+1)^2=17 \times 4 \\
+&amp; \Rightarrow \lambda+1= \pm 2 \Rightarrow \lambda=1 \text { or } \lambda=-3 \\
+&amp; \therefore A(9,9,5), B(-3,1,13) \\
+&amp; \overrightarrow{O A} \cdot \overrightarrow{O B}=(9 \hat{i}+9 \hat{j}+5 \hat{k}) \cdot(-3 \hat{i}+\hat{j}+13 \hat{k}) \\
+&amp; =-27+9+65=47
+\end{aligned}\)</p></li><li><strong>Q23:</strong> Any point on line \(\frac{x+3}{8}=\frac{y-4}{2}=\frac{z+1}{2}\) <br/><br/>can be taken as \((8 \lambda-3,2 \lambda+4,2 \lambda-1)\)
+<br/><br/> If at a distance of 6 units from \(R(1,2,3)\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \Rightarrow(8 \lambda-3-1)^2+(2 \lambda+4-2)^2+(2 \lambda-1-3)^2=36 \\\\
+&amp; \left.\Rightarrow \lambda^2-\lambda=0 \text { \{on simplification }\right\} \\\\
+&amp; \Rightarrow \lambda=0, \lambda=1
+\end{aligned}
+\)
+<br/><br/>Here \(P \&amp; Q\) are \((-3,4,-1)\) and \((5,6,1)\) Centroid of \(\triangle P Q R\)
+<br/><br/>\(
+\begin{aligned}
+&amp; (\alpha, \beta, \gamma) \equiv\left(\frac{5-3+1}{3}, \frac{6+4+2}{3}, \frac{1-1+3}{3}\right) \\\\
+&amp; \Rightarrow \alpha=1, \beta=4, \gamma=1 \\\\
+&amp; \Rightarrow \alpha^2+\beta^2+\gamma^2=18
+\end{aligned}
+\)</li><li><strong>Q24:</strong> <p>\(\mathrm{L}_1=\frac{\mathrm{x}}{1}=\frac{\mathrm{y}-1}{2}=\frac{\mathrm{z}-2}{3}=\lambda\)</p>
+<p><img alt="JEE Main 2024 (Online) 27th January Evening Shift Mathematics - 3D Geometry Question 69 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lt1toimr/45988a05-1bb2-47f1-9316-43cb63fa6ccd/bf271320-d408-11ee-b9d5-0585032231f0/file-1lt1toimt.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lt1toimr/45988a05-1bb2-47f1-9316-43cb63fa6ccd/bf271320-d408-11ee-b9d5-0585032231f0/file-1lt1toimt.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; \mathrm{M}(\lambda, 1+2 \lambda, 2+3 \lambda) \\
+&amp; \overrightarrow{\mathrm{PM}}=(\lambda-1) \hat{\mathrm{i}}+(1+2 \lambda) \hat{\mathrm{j}}+(3 \lambda-5) \hat{\mathrm{k}}
+\end{aligned}\)</p>
+<p>\(\overrightarrow{\mathrm{PM}}\) is perpendicular to line \(\mathrm{L}_1\)</p>
+<p>\(\begin{aligned}
+&amp; \overrightarrow{\mathrm{PM}} \overrightarrow{\mathrm{b}}=0 \quad(\overrightarrow{\mathrm{b}}=\hat{\mathrm{i}}+2 \hat{\mathrm{j}}+3 \hat{\mathrm{k}}) \\
+&amp; \Rightarrow \lambda-1+4 \lambda+2+9 \lambda-15=0 \\
+&amp; 14 \lambda=14 \Rightarrow \lambda=1 \\
+&amp; \therefore \mathrm{M}=(1,3,5) \\
+&amp; \overrightarrow{\mathrm{Q}}=2 \overrightarrow{\mathrm{M}}-\overrightarrow{\mathrm{P}}[\mathrm{M} \text { is midpoint of } \overrightarrow{\mathrm{P}} \&amp; \overrightarrow{\mathrm{Q}}]
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \overrightarrow{\mathrm{Q}}=2 \hat{\mathrm{i}}+6 \hat{\mathrm{j}}+10 \hat{\mathrm{k}}-\hat{\mathrm{i}}-7 \hat{\mathrm{k}} \\
+&amp; \overrightarrow{\mathrm{Q}}=\hat{\mathrm{i}}+6 \hat{\mathrm{j}}+3 \hat{\mathrm{k}} \\
+&amp; \therefore(\alpha, \beta, \gamma)=(1,6,3)
+\end{aligned}\)</p>
+<p>Required line having direction cosine \((l, \mathrm{~m}, \mathrm{n})\)</p>
+<p>\(\begin{aligned}
+&amp; l^2+m^2+n^2=1 \\
+&amp; \Rightarrow l^2+\left(-\frac{1}{2}\right)^2+\left(-\frac{1}{\sqrt{2}}\right)^2=1
+\end{aligned}\)</p>
+<p>\(l^2=\frac{1}{4}\)</p>
+<p>\(\therefore l=\frac{1}{2}\) [Line make acute angle with \(\mathrm{x}\)-axis]</p>
+<p>Equation of line passing through \((1,6,3)\) will be</p>
+<p>\(\overrightarrow{\mathrm{r}}=(\hat{\mathrm{i}}+6 \hat{\mathrm{j}}+3 \hat{\mathrm{k}})+\mu\left(\frac{1}{2} \hat{\mathrm{i}}-\frac{1}{2} \hat{\mathrm{j}}-\frac{1}{\sqrt{2}} \hat{\mathrm{k}}\right)\)</p>
+<p>Option (3) satisfying for \(\mu=4\)</p></li><li><strong>Q25:</strong> <p>\(\begin{aligned}
+&amp; \mathrm{L}_2=\frac{\mathrm{x}+4}{3}=\frac{\mathrm{y}-4}{2}=\frac{\mathrm{z}-3}{0} \\
+&amp; \therefore \mathrm{S} . \mathrm{D}=\frac{\left|\begin{array}{ccc}
+\mathrm{x}_2-\mathrm{x}_1 &amp; \mathrm{y}_2-\mathrm{y}_1 &amp; \mathrm{z}_2-\mathrm{z}_1 \\
+2 &amp; -3 &amp; 2 \\
+3 &amp; 2 &amp; 0
+\end{array}\right|}{\left|\overrightarrow{\mathrm{n}_1} \times \overrightarrow{\mathrm{n}_2}\right|} \\
+&amp; =\frac{\left|\begin{array}{ccc}
+5 &amp; -5 &amp; -7 \\
+2 &amp; -3 &amp; 2 \\
+3 &amp; 2 &amp; 0
+\end{array}\right|}{\left|\overrightarrow{\mathrm{n}_1} \times \overrightarrow{\mathrm{n}_2}\right|} \\
+&amp; =\frac{141}{|-4 \hat{\mathrm{i}}+6 \hat{\mathrm{j}}+13 \hat{\mathrm{k}}|} \\
+&amp; =\frac{141}{\sqrt{16+36+169}} \\
+&amp; =\frac{141}{\sqrt{221}}
+\end{aligned}\)</p></li><li><strong>Q26:</strong> <p>\(\begin{aligned}
+&amp; \frac{x-4}{12}=\frac{x+6}{4}=\frac{z+2}{6} \\
+&amp; \frac{x-4}{\frac{6}{7}}=\frac{y+6}{\frac{2}{7}}=\frac{z+2}{\frac{3}{7}}=21 \\
+&amp; \left(21 \times \frac{6}{7}+4, \frac{2}{7} \times 21-6, \frac{3}{7} \times 21-2\right) \\
+&amp; =(22,0,7)=(a, b, c) \\
+&amp; \therefore \sqrt{324+144+16}=22
+\end{aligned}\)</p></li><li><strong>Q27:</strong> <p>\(\begin{aligned}
+&amp; \frac{x}{1}=\frac{y}{1}=\frac{z-1}{0}=r \rightarrow Q(r, r, 1) \\
+&amp; \frac{x}{1}=\frac{y}{-1}=\frac{z+1}{0}=k \rightarrow R(k,-k,-1) \\
+&amp; \overline{P Q}=(a-r) \hat{i}+(a-r) \hat{j}+(a-1) \hat{k} \\
+&amp; a=r+a-r=0 \\
+&amp; 2 a=2 r \rightarrow a=r \\
+&amp; \overline{P R}=(a-k) i+(a+k) \hat{j}+(a+1) \hat{k} \\
+&amp; a-k-a-k=0 \Rightarrow k=0 \\
+&amp; A s, P Q \perp P R \\
+&amp; (a-r)(a-k)+(a-r)(a+k)+(a-1)(a+1)=0 \\
+&amp; a=1 \text { or }-1 \\
+&amp; 12 a^2=12
+\end{aligned}\)</p></li><li><strong>Q28:</strong> <p>Centroid \(G\) divides MR in \(1: 2\)</p>
+<p>\(\mathrm{G}(1,2,2)\)</p>
+<p>Point of intersection \(A\) of given lines is \((2,-6,0)\)</p>
+<p>\(\mathrm{AG}=\sqrt{69}\)</p></li><li><strong>Q29:</strong> <p>Let \(\mathrm{P}(\mathrm{t}, \mathrm{t}-2, \mathrm{t})\) and \(\mathrm{Q}(2 \mathrm{~s}-2, \mathrm{~s}, \mathrm{~s})\)</p>
+<p>D.R's of PQ are 2, 1, 2</p>
+<p>\(\begin{aligned}
+&amp; \frac{2 \mathrm{~s}-2-\mathrm{t}}{2}=\frac{\mathrm{s}-\mathrm{t}+2}{1}=\frac{\mathrm{s}-\mathrm{t}}{2} \\
+&amp; \Rightarrow \mathrm{t}=6 \text { and } \mathrm{s}=2 \\
+&amp; \Rightarrow \mathrm{P}(6,4,6) \text { and } \mathrm{Q}(2,2,2) \\
+&amp; \mathrm{PQ}: \frac{\mathrm{x}-2}{2}=\frac{\mathrm{y}-2}{1}=\frac{\mathrm{z}-2}{2}=\lambda
+\end{aligned}\)</p>
+<p>Let \(\mathrm{F}(2 \lambda+2, \lambda+2,2 \lambda+2)\)</p>
+<p>\(\mathrm{A}(1,2,12)\)</p>
+<p>\(\overrightarrow{\mathrm{AF}} \cdot \overrightarrow{\mathrm{PQ}}=0\)</p>
+<p>\(\therefore \lambda=2\)</p>
+<p>So \(F(6,4,6)\) and \(A F=\sqrt{65}\)</p>
+<p><img alt="JEE Main 2024 (Online) 29th January Morning Shift Mathematics - 3D Geometry Question 63 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lt30pn5h/00c97644-b936-4207-92b6-5fa8af4c0084/0701ea50-d4b1-11ee-8384-811001421c41/file-1lt30pn5i.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lt30pn5h/00c97644-b936-4207-92b6-5fa8af4c0084/0701ea50-d4b1-11ee-8384-811001421c41/file-1lt30pn5i.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p></li><li><strong>Q30:</strong> <p>\(\mathrm{L}_1: \frac{\mathrm{x}-5}{4}=\frac{\mathrm{y}-4}{1}=\frac{\mathrm{z}-5}{3}=\lambda \quad \operatorname{drs}(4,1,3)=\mathrm{b}_1\)</p>
+<p>\(\begin{aligned}
+&amp; \mathrm{M}(4 \lambda+5, \lambda+4,3 \lambda+5) \\
+&amp; \mathrm{L}_2: \frac{\mathrm{x}+8}{12}=\frac{\mathrm{y}+2}{5}=\frac{\mathrm{z}+11}{9}=\mu \\
+&amp; \mathrm{N}(12 \mu-8,5 \mu-2,9 \mu-11) \\
+&amp; \overrightarrow{\mathrm{MN}}=(4 \lambda-12 \mu+13, \lambda-5 \mu+6,3 \lambda-9 \mu+16) \quad \text{..... (1)}
+\end{aligned}\)</p>
+<p>Now</p>
+<p>\(\overrightarrow{\mathrm{b}}_1 \times \overrightarrow{\mathrm{b}}_2=\left|\begin{array}{ccc}
+\hat{\mathrm{i}} &amp; \hat{\mathrm{j}} &amp; \hat{\mathrm{k}} \\
+4 &amp; 1 &amp; 3 \\
+12 &amp; 5 &amp; 9
+\end{array}\right|=-6 \hat{\mathrm{i}}+8 \hat{\mathrm{k}} \quad \text{.... (2)}\)</p>
+<p>Equation (1) and (2)</p>
+<p>\(\therefore \frac{4 \lambda-12 \mu+13}{-6}=\frac{\lambda-5 \mu+6}{0}=\frac{3 \lambda-9 \mu+16}{8}\)</p>
+<p>I and II</p>
+<p>\(\lambda-5 \mu+6=0 \quad \text{.... (3)}\)</p>
+<p>I and III</p>
+<p>\(\lambda-3 \mu+4=0 \quad \text{.... (4)}\)</p>
+<p>Solve (3) and (4) we get</p>
+<p>\(\begin{aligned}
+\lambda= &amp; -1, \mu=1 \\
+\therefore \quad &amp; \mathrm{M}(1,3,2) \\
+&amp; \mathrm{N}(4,3,-2) \\
+\therefore \quad &amp; \overrightarrow{\mathrm{OM}} \cdot \overrightarrow{\mathrm{ON}}=4+9-4=9
+\end{aligned}\)</p></li><li><strong>Q31:</strong> <p><img alt="JEE Main 2024 (Online) 30th January Morning Shift Mathematics - 3D Geometry Question 56 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/6y3zli1lsqnidnf/3617c118-3469-40cf-b021-2c95fa43dbe8/fe8826b0-cde3-11ee-a0d3-7b75c4537559/file-6y3zli1lsqnidng.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lsqnidnf/3617c118-3469-40cf-b021-2c95fa43dbe8/fe8826b0-cde3-11ee-a0d3-7b75c4537559/file-6y3zli1lsqnidng.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>Let foot \(P(5 k-3,2 k+1,3 k-4)\)</p>
+<p>DR's \(\rightarrow\) AP : \(5 \mathrm{k}-4,2 \mathrm{k}-1,3 \mathrm{k}-7\)</p>
+<p>DR's \(\rightarrow\) Line: \(5,2,3\)</p>
+<p>Condition of perpendicular lines \((25 k-20)+(4 k-2)+(9 k-21)=0\)</p>
+<p>Then \(\mathrm{k}=\frac{43}{38}\)</p>
+<p>Then \(19(\alpha+\beta+\gamma)=\mathbf{1 0 1}\)</p></li><li><strong>Q32:</strong> <p>\(\mathrm{L}_1: \frac{\mathrm{x}+1}{1}=\frac{\mathrm{y}}{1 / 2}=\frac{\mathrm{z}}{-1 / 12}, \mathrm{~L}_2: \frac{\mathrm{x}}{1}=\frac{\mathrm{y}+2}{1}=\frac{\mathrm{z}-1}{\frac{1}{6}}\)</p>
+<p>\(\mathrm{d}_1=\) shortest distance between \(\mathrm{L}_1 ~\&amp; \mathrm{~L}_2\)</p>
+<p>\(\begin{aligned}
+&amp; =\left|\frac{\left(\vec{a}_2-\vec{a}_1\right) \cdot\left(\vec{b}_1 \times \vec{b}_2\right)}{\left|\left(\vec{b}_1 \times \vec{b}_2\right)\right|}\right| \\
+&amp; d_1=2 \\
+&amp; \mathrm{~L}_3: \frac{\mathrm{x}-1}{2}=\frac{\mathrm{y}+8}{-7}=\frac{\mathrm{z}-4}{5}, \mathrm{~L}_4: \frac{\mathrm{x}-1}{2}=\frac{\mathrm{y}-2}{1}=\frac{\mathrm{z}-6}{-3} \\
+&amp; \mathrm{~d}_2=\text { shortest distance between } \mathrm{L}_3 ~\&amp; \mathrm{~L}_4 \\
+&amp; \mathrm{~d}_2=\frac{12}{\sqrt{3}} \text { Hence } \\
+&amp; =\frac{32 \sqrt{3} \mathrm{~d}_1}{\mathrm{~d}_2}=\frac{32 \sqrt{3} \times 2}{\frac{12}{\sqrt{3}}}=16
+\end{aligned}\)</p></li><li><strong>Q33:</strong> <p>\(L: \frac{x-1}{1}=\frac{y-2}{1}=\frac{z-3}{2}=\mu\)</p>
+<p>Measured along \(L_2: \frac{x-\frac{11}{3}}{\frac{2}{3}}=\frac{y-\frac{11}{3}}{\frac{1}{3}}=\frac{z-\frac{19}{3}}{\frac{2}{3}}=\lambda\)</p>
+<p>Any point on \(L_1:(\mu+1, \mu+2,2 \mu+3)\)</p>
+<p>Any point on \(L_2\left(\frac{2}{3} \lambda+\frac{11}{3}, \frac{\lambda}{3}+\frac{11}{3}, \frac{2}{3} \lambda+\frac{19}{3}\right)\)</p>
+<p><img alt="JEE Main 2024 (Online) 9th April Evening Shift Mathematics - 3D Geometry Question 54 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lw1mpu79/db1f9115-bd83-4afa-bbc1-7bdbc6f490b3/2a21d550-0f52-11ef-91cd-f19f7dc20f18/file-1lw1mpu7a.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lw1mpu79/db1f9115-bd83-4afa-bbc1-7bdbc6f490b3/2a21d550-0f52-11ef-91cd-f19f7dc20f18/file-1lw1mpu7a.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>Now</p>
+<p>\(\begin{aligned}
+&amp; \mu+1=\frac{2}{3} \lambda+\frac{11}{3} \\
+&amp; \frac{\mu+2=\frac{\lambda}{3}+\frac{11}{3}}{\lambda=-3} \\
+&amp; \mu=\frac{2}{3} \\
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; \text { Point on } L=\left(\frac{5}{3}, \frac{8}{3}, \frac{13}{3}\right) \\
+&amp; d=\sqrt{\left(\frac{11}{3}-\frac{5}{3}\right)^2+\left(\frac{8}{3}-\frac{11}{3}\right)^2+\left(\frac{19}{3}-\frac{13}{3}\right)^2} \\
+&amp; d=\sqrt{4+1+4} \\
+&amp; d=3
+\end{aligned}\)</p></li><li><strong>Q34:</strong> <p><img alt="JEE Main 2024 (Online) 9th April Evening Shift Mathematics - 3D Geometry Question 53 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lw1my772/a7f8567c-57ab-46bd-a498-b733b7e930a6/12a4b0e0-0f53-11ef-91cd-f19f7dc20f18/file-1lw1my773.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lw1my772/a7f8567c-57ab-46bd-a498-b733b7e930a6/12a4b0e0-0f53-11ef-91cd-f19f7dc20f18/file-1lw1my773.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; \overrightarrow{P A}=(3 \lambda-5) \hat{i}+(2 \lambda-1) \hat{j}+(4 \lambda-3) \hat{k} \\
+&amp; (3 \lambda-5) 3+(2 \lambda-1) 2+(4 \lambda-3) 4=0 \\
+&amp; \Rightarrow 9 \lambda-15+4 \lambda-2+16 \lambda-12=0 \\
+&amp; \Rightarrow 29 \lambda=29 \\
+&amp; \therefore \lambda=1 \\
+&amp; \therefore \quad A(4,2,6) \\
+&amp; \therefore \quad P^{\prime}: \text { mirror image of } P \\
+&amp; \Rightarrow P^{\prime}(2,3,7) \\
+&amp; \left(O P^{\prime}\right)^2=4+9+49 \\
+&amp; =62 \\
+&amp;
+\end{aligned}\)</p></li><li><strong>Q35:</strong> <p>\(\begin{aligned}
+&amp; L_1: \frac{x-2}{1}=\frac{y}{-1}=\frac{z-1}{1}=\lambda \\
+&amp; L_2: \frac{x+1}{(1 / 2)}=\frac{y-1}{(1 / 2)}=\frac{z+1}{1}=\mu
+\end{aligned}\)</p>
+<p>Any point of \(L_1\) and \(L_2\) will be \((\lambda+2,-\lambda, \lambda+1)\) and
+\(\left(\frac{\mu}{2}-1, \frac{\mu}{2}+1, \mu-1\right)\)</p>
+<p>Now Dr of line \(&lt;\lambda-\frac{\mu}{2}+3,-\lambda-\frac{\mu}{2}-1, \lambda-\mu+2&gt;\)</p>
+<p>Now \(\frac{\lambda-\frac{\mu}{3}+3}{3}=\frac{-\lambda-\frac{\mu}{2}-1}{1}=\frac{\lambda-\mu+2}{2}\)</p>
+<p>\(\left. {\matrix{
+   {\lambda  - {\mu  \over 3} + 3 =  - 3\lambda  - {{3\mu } \over 2} - 3\,\,\,...(1)}  \cr 
+   {2\left( {\lambda  - {\mu  \over 3} + 3} \right) = 3(\lambda  - \mu  + 2)\,\,...(2)}  \cr 
+
+ } } \right\}\lambda  = {{ - 4} \over 3},\mu  = {{ - 2} \over 3}\)</p>
+<p>\(\therefore \quad\) Points will be \(\left(\frac{2}{3}, \frac{4}{3}, \frac{-1}{3}\right)\) and \(\left(\frac{-4}{3}, \frac{2}{3}, \frac{-5}{3}\right)\)</p>
+<p>\(\therefore \quad L\) will be \(\frac{x-\frac{2}{3}}{3}=\frac{y-\frac{4}{3}}{1}=\frac{z+\frac{1}{3}}{2}\)</p>
+<p>\(\therefore \quad\left(\frac{-1}{3}, 1,-1\right)\) will satisfy \(L\)</p></li><li><strong>Q36:</strong> <p>Line through \(P Q\)</p>
+<p>\(\frac{x-1}{4}=\frac{y+2}{-2}=\frac{z-3}{4}\)</p>
+<p>Any point on \(P Q\). be \(R(4 \lambda+1,-2 \lambda-2,4 \lambda+3)\)</p>
+\(P R=9\) unit
+<p>\((P R)^2=81\)</p>
+<p>\((4 \lambda+1-1)^2+(-2 \lambda-2+2)^2+(4 \lambda+3-3)^2=81\)</p>
+<p>\(16 \lambda^2+4 \lambda^2+16 \lambda^2=81\)</p>
+<p>\(36 \lambda^2=81\)</p>
+<p>\(\lambda= \pm \frac{9}{6}= \pm \frac{3}{2}\)</p>
+<p>\(\therefore R\) can be \((7,-5,9)\) or \((-5,1,-3)\)</p>
+<p>Distance from origin for both points be \(\sqrt{49+25+81}\) and \(\sqrt{25+1+9}=\sqrt{35}\)</p>
+<p>\(\therefore\) Distance of \((7,-5,9)\) is farthest from origin</p>
+<p>\(\therefore(\alpha, \beta, \gamma)=(7,-5,9)\)</p>
+<p>Now \(7^2+(-5)^2+9^2=155\)</p></li><li><strong>Q37:</strong> <p><img alt="JEE Main 2024 (Online) 4th April Evening Shift Mathematics - 3D Geometry Question 48 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lwhk80oi/a0341b0b-ecfa-449a-9d8f-e828635e1020/f2b47520-1814-11ef-a08c-4f00e8f9a4da/file-1lwhk80oj.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lwhk80oi/a0341b0b-ecfa-449a-9d8f-e828635e1020/f2b47520-1814-11ef-a08c-4f00e8f9a4da/file-1lwhk80oj.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; A(2,2,2) \\
+&amp; P Q: \frac{x-1}{1}=\frac{y-2}{-1}=\frac{z-1}{-2}
+\end{aligned}\)</p>
+<p>General point,</p>
+<p>\((k+1,-k+2,-2 k+1)\)</p>
+<p>\(\begin{aligned}
+&amp; \overrightarrow{O A}=(k+1-2) \hat{i}+(-k+2-2) \hat{j}+(-2 k+1-2) \hat{k} \\
+&amp; \overrightarrow{O A}=(k-1) \hat{i}-k \hat{j}+(-2 k-1) \hat{k} \\
+&amp; \overrightarrow{P Q}=1 \hat{i}-\hat{j}-2 \hat{k} \\
+&amp; \overrightarrow{O A} \cdot \overrightarrow{P Q}=0 \\
+&amp; (k-1)+k+2(2 k+1)=0 \\
+&amp; k-1+k+4 k+2=0 \\
+&amp; 6 k+1=0 \\
+&amp; k=\frac{-1}{6} \\
+&amp; 0\left(\frac{-1}{6}+1, \frac{+1}{6}+2,-2\left(\frac{-1}{6}\right)+1\right) \\
+&amp; 0\left(\frac{5}{6}, \frac{13}{6}, \frac{-8}{6}\right) \\
+&amp; 0\left(\frac{5}{6}, \frac{13}{6}, \frac{8}{6}\right)=\left(\frac{\alpha+2}{2}, \frac{\beta+2}{2}, \frac{\gamma+2}{2}\right)
+\end{aligned}\)</p>
+<p>\(\begin{array}{l|l}
+\alpha+2=\frac{10}{6} &amp; \beta+2=\frac{26}{6} \\
+\alpha=\frac{10}{6}-2 &amp; \beta=\frac{26-12}{6} \\
+\alpha=\frac{-2}{6} &amp; \beta=\frac{14}{6} \\
+\alpha =-\frac{1}{3} &amp; \beta=\frac{7}{3}
+\end{array}\)</p>
+<p>\(\begin{aligned}
+&amp; \gamma+2=\frac{16}{6} \\
+&amp; \gamma=\frac{16-12}{6} \\
+&amp; \gamma=\frac{4}{6} \\
+&amp; \Rightarrow \alpha+\beta+6 \gamma \\
+&amp; \Rightarrow \frac{-1}{3}+\frac{7}{3}+6 \times \frac{4}{6} \\
+&amp; \Rightarrow 2+4=6
+\end{aligned}\)</p></li><li><strong>Q38:</strong> <p>\(\begin{aligned}
+&amp; P_1:(3 k-6,2 k, k-1) \\
+&amp; P_2(4 \alpha+7,3 \alpha+9,2 \alpha+4) \\
+&amp; P_1 \equiv P_2 \\
+&amp; 3 k-6=4 \alpha+7 \Rightarrow 3 k-4 \alpha=13 \\
+&amp; 2 k=3 \alpha+9 \Rightarrow 2 k-3 \alpha=9 \\
+&amp; \therefore k=3, \alpha=-1 \\
+&amp; \therefore P_1:(3,6,2)
+\end{aligned}\)</p>
+<p>Distance of \((3,6,2)\) and \((7,8,9)\)</p>
+<p>\(\begin{aligned}
+&amp; =\sqrt{16+4+49}=\sqrt{69}=d \\
+&amp; d^2+6=69+6=75
+\end{aligned}\)</p></li><li><strong>Q39:</strong> <p><img alt="JEE Main 2024 (Online) 5th April Evening Shift Mathematics - 3D Geometry Question 40 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lweuubn4/2752e8cb-54f7-4c91-8212-691518b0463e/20511700-1698-11ef-ad74-71e0a1829759/file-1lweuubn5.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lweuubn4/2752e8cb-54f7-4c91-8212-691518b0463e/20511700-1698-11ef-ad74-71e0a1829759/file-1lweuubn5.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(\overrightarrow{A B} \perp \vec{L}_1 \text { and } \overrightarrow{A B} \perp \vec{L}_2\)</p>
+<p>\(\begin{aligned}
+&amp; \overrightarrow{A B}=(-3 m-2+n+2,4 m+2-2 n+6,2 m+5-1) \\
+&amp; =(-3 m+n, 4 m-2 n+8,2 m+4) \\
+&amp; \overrightarrow{A B} \perp \vec{L}_1 \\
+&amp; \Rightarrow-3(-3 m+n)+4(4 m-2 n+8)+2(2 m+4)=0 \\
+&amp; (9 m+16 m+4 m)+(-3 n-8 n)+32+8=0 \\
+&amp; \Rightarrow 29 m-11 n+40=0 \quad \ldots(1) \\
+&amp; \overrightarrow{A B} \perp \vec{L}_2 \\
+&amp; \Rightarrow-1(-3 m+n)+2(4 m-2 n+8)+0(2 m+4)=0 \\
+&amp; \Rightarrow 3 m-n+8 m-4 n+16=0 \\
+&amp; \Rightarrow 11 m-5 n+16=0 \Rightarrow m=-1, n=1 \\
+&amp; \Rightarrow A \equiv(1,-2,3), \quad B \equiv(-3,-4,1) \\
+&amp; A B \text { line } \Rightarrow \frac{x-1}{2}=\frac{y+2}{1}=\frac{z-3}{1} \\
+&amp; \Rightarrow \alpha=-2, \quad \beta=3 \\
+&amp; \Rightarrow(\alpha-\beta)^2=25
+\end{aligned}\)</p></li><li><strong>Q40:</strong> <p><img alt="JEE Main 2024 (Online) 6th April Evening Shift Mathematics - 3D Geometry Question 39 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lwad7urv/960c0402-e139-4dd9-89a4-53df9b260717/11b135b0-1420-11ef-90c1-6758c45d5635/file-1lwad7urw.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lwad7urv/960c0402-e139-4dd9-89a4-53df9b260717/11b135b0-1420-11ef-90c1-6758c45d5635/file-1lwad7urw.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(\text { Line } L \Rightarrow \frac{x-0}{1}=\frac{y-3}{1}=\frac{z-1}{-1}=\mu\)</p>
+<p>Point \(M(\mu, \mu+3,-\mu+1)\)</p>
+<p>Direction vector of \(Q M=(\mu-3, \mu+6,-\mu)\)</p>
+<p>Direction vector of line \(L=(1,1,-1)\)</p>
+<p>Both direction vector are perpendicular so</p>
+<p>\(\begin{aligned}
+&amp; 1 \times(\mu-3)+1 \times(\mu+6)-1 \times(-\mu)=0 \\
+&amp; \mu=-1
+\end{aligned}\)</p>
+<p>Point \(M(-1,2,2)\) midpoint of \(P Q\)</p>
+<p>So point \(P(\alpha, \beta, \gamma)=(-5,7,3)\)</p>
+<p>Area of \(\triangle P Q R=\frac{1}{2}|\overrightarrow{P Q} \times \overrightarrow{Q R}|\)</p>
+<p>\(\begin{aligned}
+&amp; \overrightarrow{P Q}=(8,-10,-2) \\
+&amp; \overrightarrow{Q R}=(-1,8,-2) \\
+&amp; \overrightarrow{P Q} \times \overrightarrow{Q R}=\left|\begin{array}{ccc}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+8 &amp; -10 &amp; -2 \\
+-1 &amp; 8 &amp; -2
+\end{array}\right|=36 \hat{i}+18 \hat{j}+54 \hat{k}
+\end{aligned}\)</p>
+<p>Area of \(\triangle P Q R=\lambda\)</p>
+<p>\(\lambda=\frac{1}{2} \sqrt{(36)^2+(18)^2+(54)^2}\)</p>
+<p>\(\begin{aligned}
+&amp; \lambda^2=\frac{1}{4}(4536) \\
+&amp; \lambda^2=1134 \\
+&amp; \lambda^2=14 K \text { (given) } \\
+&amp; 14 K=1134 \\
+&amp; K=\frac{1134}{14}=81 \\
+&amp; K=81
+\end{aligned}\)</p></li><li><strong>Q41:</strong> <p><img alt="JEE Main 2024 (Online) 6th April Morning Shift Mathematics - 3D Geometry Question 35 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lwd5pdpk/204a0778-5148-47b3-a659-091fdb696421/09fd8280-15a9-11ef-99cc-63deb36dcc4a/file-1lwd5pdpl.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lwd5pdpk/204a0778-5148-47b3-a659-091fdb696421/09fd8280-15a9-11ef-99cc-63deb36dcc4a/file-1lwd5pdpl.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>\(\begin{aligned}
+&amp; P(10,-2,-1) \\
+&amp; M N: \frac{x-2}{8}=\frac{y+5}{-12}=\frac{z-11}{16}
+\end{aligned}\)</p>
+<p>General point</p>
+<p>\((8k + 2, - 12k - 5,16k + 11)\)</p>
+<p>\(\overrightarrow {RQ}  = (8k + 2 - 1)\widehat i + ( - 12k - 5 - 7)\widehat j + (16k + 11 - 6)\widehat k\)</p>
+<p>\(\overrightarrow {RQ}  = (8k + 1)\widehat i - (12k + 12)\widehat j + (16k + 5)\widehat k\)</p>
+<p>\(\overrightarrow {RQ} \,.\,\overrightarrow {MN}  = 0\) (as both are perpendicular)</p>
+<p>\(8(8 k+1)+12(12 k+12)+16(16 k+5)=0\)</p>
+<p>\(\begin{aligned}
+&amp; 64 k+8+144 k+144+256 k+80=0 \\
+&amp; 464 k=-232 \\
+&amp; k=\frac{-232}{464}=\frac{-1}{2} \\
+&amp; Q(-4+2,6-5,-8+11) \\
+&amp; Q(-2,1,3) \\
+&amp; P Q=\sqrt{(10+2)^2+(-3)^2+(4)^2} \\
+&amp; P Q=\sqrt{12^2+3^2+4^2} \\
+&amp; P Q=\sqrt{169}=13
+\end{aligned}\)</p></li><li><strong>Q42:</strong> \(\frac{x-5}{-2}=\frac{y-\lambda}{0}=\frac{z+\lambda}{1}, \lambda \geq 0\)
+
+<br/><br/>\(
+\begin{aligned}
+&amp; \frac{x+1}{1}=\frac{y-1}{1}=\frac{z-4}{-1} \\\\
+&amp; \vec{a}_{1}=5 \hat{i}+\lambda \hat{j}-\lambda \hat{k}_{,} \vec{a}_{2}=-\hat{i}+\hat{j}+4 \hat{k} \\\\
+&amp; \vec{a}_{1}-\vec{a}_{2}=6 \hat{i}+(\lambda-1) \hat{j}-(\lambda+4) \hat{k} \\\\
+&amp; \vec{b}_{1}=-2 \hat{i}+\hat{k}, \vec{b}=\hat{i}+\hat{j}-\hat{k} \\\\
+&amp; \vec{b}_{1} \times \vec{b}_{2}=\left|\begin{array}{ccc}
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\
+-2 &amp; 0 &amp; 1 \\
+1 &amp; 1 &amp; -1
+\end{array}\right| \\
+&amp; =-\hat{i}-\hat{j}-2 \hat{k}
+\end{aligned}
+\)
+
+<br/><br/>\(\left(\vec{a}_{1}-\vec{a}_{2}\right) \cdot \vec{b}_{1} \times \vec{b}_{2}=-6+1-\lambda+2 \lambda+8=\lambda+3\)
+
+<br/><br/>and \(\left|\vec{b}_{1} \times \vec{b}_{2}\right|=\sqrt{6}\)
+
+<br/><br/>\(\because \frac{|\lambda+3|}{\sqrt{6}}=2 \sqrt{6}\)
+
+<br/><br/>\(\therefore \lambda=9, \because \lambda \geq 0\)
+
+<br/><br/>\(\therefore \quad L: \frac{x-5}{-2}=\frac{y-9}{0}=\frac{z+9}{1}=k\)
+
+<br/><br/>\(\therefore \quad \alpha=-2 k+5, \beta=9, \gamma=k-9\)
+
+<br/><br/>Here \(k\) is real then
+
+<br/><br/>\(\alpha+2 \gamma=-13 \neq 24\).
+
+<br/><br/>But all other are in terms of \(k\) hence possible.</li><li><strong>Q43:</strong> <p>\(L:{{x - 2} \over 1} = {{y - 3} \over { - 1}} = {{z - 1} \over { - 1}} = \lambda \)</p>
+<p>Any point on L can be taken as</p>
+<p>\(B(\lambda  + 2, - \lambda  + 3, - \lambda  + 1)\)</p>
+<p>Let \(A(5,3,8)\)</p>
+<p>So, \(AB\,.\,(\widehat i - \widehat j - \widehat k) = 0\)</p>
+<p>\([(\lambda  - 3)\widehat i - \lambda \widehat j - (\lambda  + 7)\widehat k]\,.\,[\widehat i - \widehat j - \widehat k] = 0\)</p>
+<p>\(\lambda  - 3 + \lambda  + \lambda  + 7 = 0\)</p>
+<p>\(\therefore\) \(\lambda  = {{ - 4} \over 3}\)</p>
+<p>\(\overrightarrow {AB}  = {{13} \over 3}\widehat i + {4 \over 3}\widehat i - {{17} \over 3}\widehat k\)</p>
+<p>\(|\overrightarrow {AB} | = \sqrt {{{169} \over 9} + {{16} \over 9} + {{289} \over 9}} \)</p>
+<p>\( = {{\sqrt {474} } \over 3} = \alpha \)</p>
+<p>\(3{\alpha ^2} = {{474} \over 9} \times 3 = 158\)</p></li><li><strong>Q44:</strong> <p>A. \(\left(\mathrm{O}_{1} 2, \alpha\right)\)</p>
+<p><img alt="JEE Main 2023 (Online) 29th January Morning Shift Mathematics - 3D Geometry Question 128 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lekt8kqs/c8535748-1d32-4d4a-8b11-6aa2b4c12893/a97e5c40-b582-11ed-b66a-d501f51666d6/file-1lekt8kqt.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lekt8kqs/c8535748-1d32-4d4a-8b11-6aa2b4c12893/a97e5c40-b582-11ed-b66a-d501f51666d6/file-1lekt8kqt.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+\(\left|\frac{1}{2} \cdot 2 \sqrt{21}.\right| \begin{array}{ccc}\mathrm{i} &amp; \mathrm{j} &amp; \mathrm{k} \\ \alpha &amp; 1 &amp; \alpha+4 \\ 5 &amp; 2 &amp; 3\end{array}\left|\frac{1}{\sqrt{25+4+9}}\right|=21 \sqrt{21}\)
+<br/><br/>
+\(\sqrt{(2 \alpha+5)^{2}+(2 \alpha+20)^{2}+(2 \alpha-5)^{2}}=\sqrt{21} \sqrt{38}\)
+<br/><br/>
+\(\Rightarrow 12 \alpha^{2}+80 \alpha+450=798\)
+<br/><br/>
+\(\Rightarrow 12 \alpha^{2}+80 \alpha-348=0\)
+<br/><br/>
+\(\Rightarrow \alpha=3 \Rightarrow \alpha^{2}=9\)</li><li><strong>Q45:</strong> <p>\(
+\mathrm{L}: \frac{\mathrm{x}+1}{2}=\frac{y-1}{5}=\frac{z+1}{-1}=\lambda \text { (let) }
+\)</p><p><img alt="JEE Main 2023 (Online) 25th January Evening Shift Mathematics - 3D Geometry Question 126 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lef5vgns/9610cbeb-a0ae-4272-89c8-8cbf8a31b61b/5f9aceb0-b267-11ed-9d4d-b96eca78f2e5/file-1lef5vgnx.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lef5vgns/9610cbeb-a0ae-4272-89c8-8cbf8a31b61b/5f9aceb0-b267-11ed-9d4d-b96eca78f2e5/file-1lef5vgnx.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>Let foot of perpendicular is<br/><br/>
+\(
+\begin{aligned}
+&amp; \mathrm{P}(2 \lambda-1,5 \lambda+1,-\lambda-1) \\\\
+&amp; \overrightarrow{\mathrm{PA}}=(3-2 \lambda) \hat{\mathrm{i}}-(5 \lambda+1) \hat{\mathrm{j}}+(6+\lambda) \hat{\mathrm{k}} \\\\
+&amp; \text { Direction ratio of line } \Rightarrow \overrightarrow{\mathrm{b}}=2 \hat{\mathrm{i}}+5 \hat{\mathrm{j}}-\hat{\mathrm{k}} \\\\
+&amp; \text { Now, } \Rightarrow \overrightarrow{\mathrm{PA}} \cdot \overrightarrow{\mathrm{b}}=0 \\\\
+&amp; \Rightarrow 2(3-2 \lambda)-5(5 \lambda+1)-(6+\lambda)=0 \\\\
+&amp; \Rightarrow \lambda=\frac{-1}{6} \\\\
+&amp; \mathrm{P}(2 \lambda-1,5 \lambda+1,-\lambda-1) \equiv \mathrm{P}(\alpha, \beta, \gamma) \\\\
+&amp; \Rightarrow \alpha=2\left(-\frac{1}{6}\right)-1=-\frac{4}{3} \Rightarrow \alpha=-\frac{4}{3} \\\\
+&amp; \Rightarrow \beta=5\left(-\frac{1}{6}\right)+1=\frac{1}{6} \Rightarrow \beta=\frac{1}{6} \\\\
+&amp; \Rightarrow \gamma=-\lambda-1=\frac{1}{6}-1 \Rightarrow \gamma=-\frac{5}{6}
+\end{aligned}
+\)
+</li><li><strong>Q46:</strong> Points \((1,2,3)\) and \((2,3,4)\)
+<br><br>
+\(L_{1}: \frac{(x-1)}{1}=\frac{(y-2)}{1}=\frac{(2-3)}{1}\)
+<br><br>
+\(L_{2}: \frac{x-1}{2}=\frac{y+1}{-1}=\frac{z-2}{0}\)
+<br><br>
+\(\vec{b}_{1}=\hat{i}+\hat{j}+\hat{k}\)
+<br><br>
+\(\vec{b}_{2}=2 \hat{i}-\hat{j}+0 \hat{k}\)<br><br>
+
+\(
+\begin{aligned}
+&amp; \overrightarrow{a_{1}}-\overrightarrow{a_{2}}=0 \hat{i}-3 \hat{j}-\hat{k} \\\\
+&amp; d=\left|\frac{\left(\bar{a}_{1}-\bar{a}_{2}\right) \cdot\left(n_{1} \times n_{2}\right)}{\left|n_{1} \times n_{2}\right|}\right| \\\\
+&amp;=\left|\frac{6-3}{\sqrt{9+1+4}}\right|=\frac{3}{\sqrt{14}}=\alpha \\\\
+&amp; 28 \alpha^{2}=\frac{28 \times 9}{14}=18
+\end{aligned}
+\)
+</br></br></br></br></br></br></br></br></br></br></li><li><strong>Q47:</strong> <img alt="JEE Main 2023 (Online) 25th January Morning Shift Mathematics - 3D Geometry Question 123 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lebz24vh/fd89cb9d-00d8-44b0-a190-8609bc533a04/5f4f5dd0-b0a6-11ed-8017-e30f07067392/file-1lebz24vi.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lebz24vh/fd89cb9d-00d8-44b0-a190-8609bc533a04/5f4f5dd0-b0a6-11ed-8017-e30f07067392/file-1lebz24vi.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/><br/><br/>
+\(\overrightarrow{A P}=7 \hat{i}+4 \hat{j}-5 \hat{k} \Rightarrow|\overrightarrow{A P}|=\sqrt{49+16+25}=\sqrt{90} A N\)
+<br/><br/>
+\(=\) projection of \(\overrightarrow{A P}\) on \(\vec{b}=\overrightarrow{A P} \cdot \vec{b}=\frac{21+12+5}{\sqrt{19}}=\frac{38}{\sqrt{19}}\)
+<br/><br/>
+\((P N)^{2}=(A P)^{2}-(A N)^{2}=90-76=14 \Rightarrow P N=\sqrt{14}\)</li><li><strong>Q48:</strong> Let,
+<br><br>
+\(
+\begin{aligned}
+&amp; P \equiv(2 \lambda+1, \lambda+3,2 \lambda+2) \text { and } Q(\mu+2,2 \mu+2 \text {, } 3 \mu+3) \\\\
+&amp; \text { d.r's of } P Q \equiv&lt;2 \lambda-\mu-1, \lambda-2 \mu+1,2 \lambda-3 \mu-1&gt; \\\\
+&amp; \therefore \quad \frac{2 \lambda-\mu-1}{1}-\frac{\lambda-2 \mu-1}{-1}=\frac{2 \lambda-3 \mu-1}{-2} \\\\
+&amp; \therefore \quad-2 \lambda+\mu+1=\lambda-2 \mu+1 \text { and }-2 \lambda+4 \mu-2= \\\\
+&amp; -2 \lambda+3 \mu+1 \\\\
+&amp; \Rightarrow 3 \lambda-3 \mu=0 \text { and } \mu=3 \\\\
+&amp; \therefore \quad \lambda=\pm 3 \text { and } \mu=3 \\\\
+&amp; \therefore \quad P \equiv(7,6,8) \text { and } Q(5,8,12) \\\\
+&amp; \therefore|P O|=\sqrt{2^{2}+2^{2}+4^{2}}=\sqrt{24}=2 \sqrt{6}
+\end{aligned}
+\)</br></br></li><li><strong>Q49:</strong> <p>Given two lines:</p>
+<p>\(\frac{x - x_1}{a_1} = \frac{y - y_1}{b_1} = \frac{z - z_1}{c_1}\)</p>
+<p>and </p>
+<p>\(\frac{x - x_2}{a_2} = \frac{y - y_2}{b_2} = \frac{z - z_2}{c_2}\)</p>
+<p>These lines are coplanar if the determinant of the matrix</p>
+<p>\(
+\begin{vmatrix}
+x_2-x_1 &amp; y_2-y_1 &amp; z_2-z_1 \\
+a_1 &amp; b_1 &amp; c_1 \\
+a_2 &amp; b_2 &amp; c_2
+\end{vmatrix}
+\) = 0</p>
+<p>Now let's apply this condition to the given problem. The given line is :</p>
+<p>\(\frac{x + 3}{-3} = \frac{y - 1}{1} = \frac{z - 5}{5}\)</p>
+<p>So, the coordinates of any point on this line are \((-3, 1, 5)\) and the direction ratios are \((-3, 1, 5)\).</p>
+<p>Now, let's calculate the determinants for each option and check which one equals zero.</p>
+<p>For Option A :</p>
+<p>\(\frac{x + 1}{-1} = \frac{y - 2}{2} = \frac{z - 5}{4}\) </p>
+<p>The coordinates of any point on this line are \((-1, 2, 5)\) and the direction ratios are \((-1, 2, 4)\).</p>
+<p>The determinant is :</p>
+<p>\(
+\begin{vmatrix}
+-1 - (-3) &amp; 2 - 1 &amp; 5 - 5 \\
+-3 &amp; 1 &amp; 5 \\
+-1 &amp; 2 &amp; 4
+\end{vmatrix}
+=
+\begin{vmatrix}
+2 &amp; 1 &amp; 0 \\
+-3 &amp; 1 &amp; 5 \\
+-1 &amp; 2 &amp; 4
+\end{vmatrix}
+\)</p>
+<p>Applying the formula :</p>
+<p>= \(2(1 \times 4 - 5\times2) - 1((-3\times4) - (5\times-1)) + 0((-3\times2) - (1\times-1))\)</p>
+<p>= \(2(4 - 10) - 1(-12 - (-5)) + 0(-6 - (-1))\)</p>
+<p>= \(2(-6) - 1(-7) + 0(-5)\)</p>
+<p>= \(-12 + 7 + 0\)</p>
+<p>= \(-5\) </p>
+<p>The determinant for Option A is not equal to zero, so this line is not coplanar with the given line.</p>
+<p>For Option B, we have :</p>
+<p>\(\frac{x + 1}{-1} = \frac{y - 2}{2} = \frac{z - 5}{5}\)</p>
+<p>The coordinates of any point on this line are \((-1, 2, 5)\) and the direction ratios are \((-1, 2, 5)\).</p>
+<p>\(
+\begin{vmatrix}
+-1 - (-3) &amp; 2 - 1 &amp; 5 - 5 \\
+-3 &amp; 1 &amp; 5 \\
+-1 &amp; 2 &amp; 5
+\end{vmatrix}
+=
+\begin{vmatrix}
+2 &amp; 1 &amp; 0 \\
+-3 &amp; 1 &amp; 5 \\
+-1 &amp; 2 &amp; 5
+\end{vmatrix}
+\)</p>
+<p>Applying the formula, we get :</p>
+<p>= \(2(1*5 - 5*2) - 1((-3*5) - (5*-1)) + 0((-3*2) - (1*-1))\)
+</p>
+<p>= \(2(5 - 10) - 1(-15 - (-5)) + 0(-6 - (-1))\)</p>
+<p>= \(2(-5) - 1(-10) + 0(-5)\)</p>
+<p>= \(-10 + 10 + 0\)</p>
+<p>= \(0\)</p>
+
+So, the determinant for Option B equals zero, which confirms that the line in Option B is coplanar with the given line.
+
+
+<p>For Option C :</p>
+<p>\(\frac{x - 1}{-1} = \frac{y - 2}{2} = \frac{z - 5}{5}\) </p>
+<p>The coordinates of any point on this line are \((1, 2, 5)\) and the direction ratios are \((-1, 2, 5)\).</p>
+<p>The determinant is:</p>
+<p>\(
+\begin{vmatrix}
+1 - (-3) &amp; 2 - 1 &amp; 5 - 5 \\
+-3 &amp; 1 &amp; 5 \\
+-1 &amp; 2 &amp; 5
+\end{vmatrix}
+=
+\begin{vmatrix}
+4 &amp; 1 &amp; 0 \\
+-3 &amp; 1 &amp; 5 \\
+-1 &amp; 2 &amp; 5
+\end{vmatrix}
+\)</p>
+<p>Applying the formula :</p>
+<p>= \(4(1*5 - 5*2) - 1((-3*5) - (5*-1)) + 0((-3*2) - (1*-1))\)
+</p>
+<p>= \(4(5 - 10) - 1(-15 - (-5)) + 0(-6 - (-1))\)</p>
+<p>= \(4(-5) - 1(-10) + 0(-5)\)</p>
+<p>= \(-20 + 10 + 0\)</p>
+<p>= \(-10\)</p>
+<p>The determinant for Option C is not equal to zero, so this line is not coplanar with the given line.</p>
+<p>For Option D :</p>
+<p>\(\frac{x + 1}{1} = \frac{y - 2}{2} = \frac{z - 5}{5}\) </p>
+<p>The coordinates of any point on this line are \((-1, 2, 5)\) and the direction ratios are \((1, 2, 5)\).</p>
+<p>The determinant is :</p>
+<p>\(
+\begin{vmatrix}
+-1 - (-3) &amp; 2 - 1 &amp; 5 - 5 \\
+-3 &amp; 1 &amp; 5 \\
+1 &amp; 2 &amp; 5
+\end{vmatrix}
+=
+\begin{vmatrix}
+2 &amp; 1 &amp; 0 \\
+-3 &amp; 1 &amp; 5 \\
+1 &amp; 2 &amp; 5
+\end{vmatrix}
+\)</p>
+<p>Applying the formula :</p>
+<p>= \(2(1*5 - 5*2) - 1((-3*5) - (5*1)) + 0((-3*2) - (1*1))\)
+</p>
+<p>= \(2(5 - 10) - 1(-15 - 5) + 0(-6 - 1)\)</p>
+<p>= \(2(-5) - 1(-20) + 0(-7)\)
+</p>
+<p>= \(-10 + 20 + 0\)</p>
+<p>= \(10\)</p>
+<p>So the determinant for Option D is not equal to zero, which means the line in Option D is not coplanar with the given line.</p></li><li><strong>Q50:</strong> \(
+\begin{aligned}
+&amp; (3 \mathrm{x}+2 \mathrm{y}+\mathrm{z}-2)+\mu(\mathrm{x}-3 \mathrm{y}+2 \mathrm{z}-13)=0 \\\\
+&amp; 3(3+\mu)+1 \cdot(2-3 \mu)-2(1+2 \mu)=0 \\\\
+&amp; 9-4 \mu=0 \\\\
+&amp; \mu=\frac{9}{4} \\\\
+&amp; 4(-15-8+\alpha-2)+9(-5+12+2 \alpha-13)=0 \\\\
+&amp; -100+4 \alpha-54+18 \alpha=0 \\\\
+&amp; \Rightarrow \alpha=7 \\\\
+&amp; \text { Let } \mathrm{P} \equiv(3 \lambda-5, \lambda-4,-2 \lambda+7) \\\\
+&amp; \text { Direction ratio of } \mathrm{PQ}(3 \lambda-1, \lambda-1,-2 \lambda+5) \\\\
+&amp; \text { But PQ } \perp \ell_1 \\\\
+&amp; \Rightarrow 3(3 \lambda-1)+1 \cdot(\lambda-1)-2(-2 \lambda+5)=0 \\\\
+&amp; \Rightarrow \lambda=1 \\\\
+&amp; \mathrm{P}(-2,-3,5) \Rightarrow|\mathrm{a}|+|\mathrm{b}|+|\mathrm{c}|=10
+\end{aligned}
+\)</li><li><strong>Q51:</strong> We have,<br>
+<p>\(l_{1}: \vec{r}=(\hat{\imath}-11 \hat{\jmath}-7 \hat{k})+\lambda(\hat{i}+2 \hat{\jmath}+3 \hat{k}), \lambda \in \mathbb{R}\) and</p>
+<p>\(l_{2}: \vec{r}=(-\hat{\imath}+\hat{\mathrm{k}})+\mu(2 \hat{\imath}+2 \hat{\jmath}+\hat{\mathrm{k}}), \mu \in \mathbb{R}\).</p>
+Let direction ratio of line \(l\) be \(a, b\) and \(c\) Equation of line \(l\)
+<br><br>\(
+\begin{aligned}
+\vec{r} &amp; =(0 \hat{\mathbf{i}}+0 \hat{\mathbf{j}}+0 \hat{\mathbf{k}})+\delta(a \hat{\mathbf{i}}+b \hat{\mathbf{j}}+c \hat{\mathbf{k}}) \\\\
+&amp; =\delta(a \hat{\mathbf{i}}+b \hat{\mathbf{j}}+c \hat{\mathbf{k}})
+\end{aligned}
+\)
+<br><br/>As, line \(l\) is perpendicular to \(l_1\) and \(l_2\),
+<br/><br/>\(
+a \hat{\mathbf{i}}+b \hat{\mathbf{j}}+c \hat{\mathbf{k}}=\left|\begin{array}{ccc}
+\hat{\mathbf{i}} &amp; \hat{\mathbf{j}} &amp; \hat{\mathbf{k}} \\
+1 &amp; 2 &amp; 3 \\
+2 &amp; 2 &amp; 1
+\end{array}\right|=-4 \hat{\mathbf{i}}+5 \hat{\mathbf{j}}-2 \hat{\mathbf{k}}
+\)
+<br/><br/>\(\therefore\) Equation of line \(l: \vec{r}=\delta(-4 \hat{\mathbf{i}}+5 \hat{\mathbf{j}}-2 \hat{\mathbf{k}})\)
+<br/><br/>As, \(P\) is the intersecting point of \(l\) and \(l_1\)
+<br/><br/>\(
+-4 \delta=1+\lambda, 5 \delta=-11+2 \lambda,-2 \delta=-7+3 \lambda
+\)
+<br/><br/>After solving the above three equation, we get
+<br/><br/>\(
+\delta=-1 \text { and } \lambda=3
+\)
+<br/><br/>\(\therefore\) Co-ordinate of point \(P\) is \((4,-5,2)\).
+<br/><br/>\(Q\) is a point on line \(l_2\)
+<br/><br/>Let co-ordinate of \(Q\) be \((-1+2 \mu, 2 \mu, 1+\mu)\)
+<br/><br/>\(
+\begin{gathered}
+\overrightarrow {PQ}=(-5+2 \mu) \hat{\mathbf{i}}+(2 \mu+5) \hat{\mathbf{j}}+(\mu-1) \hat{\mathbf{k}} \\\\
+\overrightarrow {PQ} \cdot(2 \hat{\mathbf{i}}+2 \hat{\mathbf{j}}+\hat{\mathbf{k}})=0  \left[\because \overrightarrow {PQ} \perp l_2\right]\\\\
+2(-5+2 \mu)+2(2 \mu+5)+\mu-1=0 \\\\
+9 \mu-1=0 \Rightarrow \mu=\frac{1}{9}
+\end{gathered}
+\)
+<br/><br/>\(
+\begin{aligned}
+&amp; \therefore \alpha=-1+\frac{2}{9}=\frac{-7}{9}, \beta=2 \times \frac{1}{9}=\frac{2}{9}, r=1+\frac{1}{9}=\frac{10}{9} \\\\
+&amp; \text { Hence, } 9(\alpha+\beta+\gamma)=9\left(-\frac{7}{9}+\frac{2}{9}+\frac{10}{9}\right)=5
+\end{aligned}
+\)</br></br></br></br></li><li><strong>Q52:</strong> <img alt="JEE Main 2023 (Online) 6th April Morning Shift Mathematics - 3D Geometry Question 81 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/6y3zli1lnq8po6g/d220c54e-806e-4b56-ac43-a5312272c160/0b7f4280-6aad-11ee-822f-a9d01571f2aa/file-6y3zli1lnq8po6h.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/6y3zli1lnq8po6g/d220c54e-806e-4b56-ac43-a5312272c160/0b7f4280-6aad-11ee-822f-a9d01571f2aa/file-6y3zli1lnq8po6h.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh; vertical-align: baseline;"/>
+<br/><br/>Equation of \(O P\) is
+<br/><br/>\(
+\begin{aligned}
+&amp;\frac{x-0}{3-0}=\frac{y-0}{4-0}  =\frac{z-0}{5-0} \\\\
+&amp;\Rightarrow  \frac{x}{3} =\frac{y}{4}=\frac{z}{5}
+\end{aligned}
+\)
+<br/><br/>Equation of edge parallel to \(Z\)-axis is
+<br/><br/>\(
+\frac{x-3}{0}=\frac{y-0}{0}=\frac{z-5}{1}
+\)
+<br/><br/>\(\therefore\) Shortest distance
+<br/><br/>\(
+=\frac{\left|\begin{array}{ccc}
+x_2-x_1 &amp; y_2-y_1 &amp; z_2-z_1 \\
+a_1 &amp; b_1 &amp; c_1 \\
+a_2 &amp; b_2 &amp; c_2
+\end{array}\right|}{\sqrt{\begin{array}{r}
+\left(a_1 b_2-a_2 b_1\right)^2+\left(b_1 c_2-b_2 c_1\right)^2
++\left(c_1 a_2-c_2 a_1\right)^2
+\end{array}}}
+\)
+<br/><br/>Here,
+<br/><br/>\(
+\begin{aligned}
+&amp; x_1=0, y_1=0, z_1=0 \\\\
+&amp; x_2=3, y_2=0, z_2=5 \\\\
+&amp; a_1=3, b_1=4, c_1=5 \\\\
+&amp; a_2=0, b_2=0, c_2=1
+\end{aligned}
+\)
+<br/><br/>\(
+\therefore\left|\begin{array}{ccc}
+x_2-x_1 &amp; y_2-y_1 &amp; z_2-z_1 \\
+a_1 &amp; b_1 &amp; c_1 \\
+a_2 &amp; b_2 &amp; c_2
+\end{array}\right|=\left|\begin{array}{ccc}
+3 &amp; 0 &amp; 5 \\
+3 &amp; 4 &amp; 5 \\
+0 &amp; 0 &amp; 1
+\end{array}\right|=4(3)=12
+\)
+<br/><br/>\(\begin{aligned} &amp; \text { and } \sqrt{\left(a_1 b_2-a_2 b_1\right)^2+\left(b_1 c_2-b_2 c_1\right)^2+\left(c_1 a_2-c_2 a_1\right)^2} \\\\ &amp; =\sqrt{0+(4-0)^2+(0-3)^2} \\\\ &amp; =\sqrt{16+9}=5 \\\\ &amp; \therefore \text { Required shortest distance }=\frac{12}{5} \\\\ &amp; \end{aligned}\)</li><li><strong>Q53:</strong> Given, lines
+<br><br>\(
+\begin{aligned}
+&amp; \frac{x-1}{2}  =\frac{2-y}{-3}=\frac{z-3}{\alpha} \\\\
+&amp;\Rightarrow \frac{x-1}{2} =\frac{y-2}{3}=\frac{z-3}{\alpha}=\lambda .........(i)
+\end{aligned}
+\)
+<br><br>Any point on the line (i)
+<br><br>\(
+x=2 \lambda+1, y=3 \lambda+2, z=\alpha \lambda+3
+\)
+<br><br>and line \(\frac{x-4}{5}=\frac{y-1}{2}=\frac{z}{\beta}=\mu\) ............(ii)
+<br><br>Any point on line (ii)
+<br><br>\(
+\Rightarrow x=5 \mu+4, y=2 \mu+1, z=\beta \mu
+\)
+<br><br>Since, given lines intersects
+<br><br>\(
+\begin{aligned}
+&amp; \therefore 2 \lambda+1=5 \mu+4  ..........(iii)\\\\
+&amp; 3 \lambda+2=2 \mu+1 ............(iv)\\\\
+&amp; \text { and } \alpha \lambda+3=\beta \mu ..........(iv)
+\end{aligned}
+\)
+
+<br><br>On solving (iii) and (iv), we get
+<br><br>\(
+\lambda=-1, \mu=-1
+\)
+
+<br/><br/>On putting value of \(\lambda\) and \(\mu\) in (v), we get
+<br/><br/>\(
+\begin{array}{cc} 
+&amp; \alpha(-1)+3=-\beta \\\\
+&amp;\Rightarrow \alpha=\beta+3
+\end{array}
+\)
+<br/><br/>Now,
+<br/><br/>\(
+\begin{aligned}
+&amp; 8 \alpha \beta=8 (\beta+3)(\beta) \\\\
+&amp;= 8\left(\beta^2+3 \beta\right) \\\\
+&amp; =8\left(\beta^2+3 \beta+\frac{9}{4}-\frac{9}{4}\right) \\\\
+&amp; =8\left\{\left(\beta+\frac{3}{2}\right)^2-\frac{9}{4}\right\}
+\end{aligned}
+\)
+<br/><br/>\(=8\left(\beta+\frac{3}{2}\right)^2-18\)
+<br/><br/>Here, minimum value \(=-18\)
+<br/><br/>\(\therefore\) Magnitude of the minimum value of \(8 \alpha \beta\) is 18 .</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></li><li><strong>Q54:</strong> <p>The point dividing PQ in the ratio 1 : 3 will be mid-point of P &amp; foot of perpendicular from P on the line.</p>
+<p>\(\therefore\) Let a point on line be \(\lambda\)</p>
+<p>\( \Rightarrow {{x - 6} \over 3} = {{y - 1} \over 2} = {{z - 2} \over 3} = \lambda \)</p>
+<p>\( \Rightarrow P'(3\lambda  + 6,\,2\lambda  + 1,\,3\lambda  + 2)\)</p>
+<p>as P' is foot of perpendicular</p>
+<p>\((3\lambda  + 5)3 + (2\lambda  - 1)2 + (3\lambda  - 1)3 = 0\)</p>
+<p>\( \Rightarrow 22\lambda  + 15 - 2 - 3 = 0\)</p>
+<p>\( \Rightarrow \lambda  = {{ - 5} \over {11}}\)</p>
+<p>\(\therefore\) \(P'\left( {{{51} \over {11}},{1 \over {11}},{7 \over {11}}} \right)\)</p>
+<p>Mid-point of \(PP' \equiv \left( {{{{{51} \over {11}} + 1} \over 2},{{{1 \over {11}} + 2} \over 2},{{{7 \over {11}} + 3} \over 2}} \right)\)</p>
+<p>\( \equiv \left( {{{62} \over {22}},{{23} \over {22}},{{40} \over {22}}} \right) \equiv (\alpha ,\beta ,\gamma )\)</p>
+<p>\( \Rightarrow 22(\alpha ,\beta ,\gamma ) = 62 + 23 + 40 = 125\)</p></li><li><strong>Q55:</strong> <p>\(\because\) L<sub>1</sub> and L<sub>2</sub> are perpendicular, so</p>
+<p>\(3 \times 1 + ( - 2)\left( {{\alpha  \over 2}} \right) + 0 \times 2 = 0\)</p>
+<p>\( \Rightarrow \alpha  = 3\)</p>
+<p>Now angle between l<sub>2</sub> and l<sub>3</sub>,</p>
+<p>\(\cos \theta  = {{1( - 3) + {\alpha  \over 2}( - 2) + 2(4)} \over {\sqrt {1 + {{{\alpha ^2}} \over 4} + } 4\sqrt {9 + 4 + 16} }}\)</p>
+<p>\( \Rightarrow \cos \theta  = {2 \over {{{29} \over 2}}} \Rightarrow \theta  = {\cos ^{ - 1}}\left( {{4 \over {29}}} \right) = {\sec ^{ - 1}}\left( {{{29} \over 4}} \right)\)</p></li><li><strong>Q56:</strong> <p>Let \(\overrightarrow v  = {\lambda _1}\overrightarrow a  + {\lambda _2}\overrightarrow b \), where \({\lambda _1},\,{\lambda _2} \in R\).</p>
+<p>\( = ({\lambda _1} + 2{\lambda _2})\widehat i + ({\lambda _1} - 3{\lambda _2})\widehat j + (2{\lambda _1} + {\lambda _2})\widehat k\)</p>
+<p>\(\because\) Projection of \(\overrightarrow v \) on \(\overrightarrow c \) is \({2 \over {\sqrt 3 }}\)</p>
+<p>\(\therefore\) \({{{\lambda _1} + 2{\lambda _2} - {\lambda _1} + 3{\lambda _2} + 2{\lambda _1} + {\lambda _2}} \over {\sqrt 3 }} = {2 \over {\sqrt 3 }}\)</p>
+<p>\(\therefore\) \({\lambda _1} + 3{\lambda _2} = 1\) ..... (i)</p>
+<p>and \(\overrightarrow v \,.\,\widehat j = 7 \Rightarrow {\lambda _1} - 3{\lambda _2} = 7\) ... (ii)</p>
+<p>from equation (i) and (ii)</p>
+<p>\({\lambda _1} = 4\), \({\lambda _2} =  - 1\)</p>
+<p>\(\therefore\) \(\overrightarrow v  = 2\widehat i + 7\widehat j + 7\widehat k\)</p>
+<p>\(\therefore\) \(\overrightarrow v \,.\,(\widehat i + \widehat k) = 2 + 7\)</p>
+<p>\( = 9\)</p></li><li><strong>Q57:</strong> <p>\({{x - {1 \over 8}} \over {{1 \over 8}}} = {y \over { - {1 \over {4\sqrt 2 }}}} = {z \over 0}\,\,\,\,\,\,\,\,\,\,\,\,\,\) ______L<sub>1</sub></p>
+<p>or \({{x - {1 \over 8}} \over 1} = {y \over { - \sqrt 2 }} = {z \over 0}\) ..... (i)</p>
+<p>Equation of L<sub>2</sub></p>
+<p>\({{x + {1 \over 8}} \over { - 6\sqrt 3 }} = {y \over 0} = {z \over 8}\) ...... (ii)</p>
+<p>\(d = \left| {{{(\overrightarrow c  - \overrightarrow a )\,.\,(\overrightarrow b  \times \overrightarrow d )} \over {\left| {\overrightarrow b  \times \overrightarrow d } \right|}}} \right|\)</p>
+<p>\( = {{\left( {{1 \over 4}\widehat i} \right)\,.\,\left( {4\sqrt 2 \widehat i + 4\widehat j + 3\sqrt 6 \widehat k} \right)} \over {\sqrt {{{\left( {4\sqrt 2 } \right)}^2} + {4^2} + {{\left( {3\sqrt 6 } \right)}^2}} }}\)</p>
+<p>\( = {{\sqrt 2 } \over {\sqrt {32 + 16 + 54} }} = {1 \over {\sqrt {51} }}\)</p>
+<p>\({d^{ - 2}} = 51\)</p></li><li><strong>Q58:</strong> Let \(A(3 \lambda+7,-\lambda+1, \lambda-2)\) and \(B(2 \mu, 3 \mu+7, \mu)\) <br/><br/>So, DR's of \(A B \propto 3 \lambda-2 \mu+7,-(\lambda+3 \mu+6), \lambda-\mu\) \(-2\)
+<br/><br/>
+Clearly \(\frac{3 \lambda-2 \mu+7}{1}=\frac{\lambda+3 \mu+6}{4}=\frac{\lambda-\mu-2}{2}\)
+<br/><br/>
+\(\Rightarrow 5 \lambda-3 \mu=-16\)
+<br/><br/>
+And \(\lambda-5 \mu=10\)
+<br/><br/>
+From (i) and (ii) we get \(\lambda=-5, \mu=-3\)
+<br/><br/>
+So, \(A\) is \((-8,6,-7)\) and \(B\) is \((-6,-2,-3)\)
+<br/><br/>
+\(
+A B=\sqrt{4+64+16} \Rightarrow(A B)^{2}=84
+\)</li><li><strong>Q59:</strong> \(\vec{b}_{1} \times \vec{b}_{2}=\left|\begin{array}{ccc}\hat{i} &amp; \hat{j} &amp; \hat{k} \\ 1 &amp; -a &amp; 0 \\ 1 &amp; -1 &amp; 1\end{array}\right|=-a \hat{i}-\hat{j}+(a-1) \hat{k}\) <br/><br/>\(\vec{a}_{1}-\vec{a}_{2}=-\hat{i}+\hat{j}+\hat{k}\)
+<br/><br/>
+Shortest distance \(=\left|\frac{\left(\vec{a}_{1}-\vec{a}_{2}\right) \cdot\left(\vec{b}_{1} \times \vec{b}_{2}\right)}{\left|\vec{b}_{1} \times \vec{b}_{2}\right|}\right|\)
+<br/><br/>
+\(
+\begin{aligned}
+&amp;\Rightarrow \quad \sqrt{\frac{2}{3}}=\frac{2(a-1)}{\sqrt{a^{2}+1+(a-1)^{2}}} \\\\
+&amp;\Rightarrow 6\left(a^{2}-2 a+1\right)=2 a^{2}-2 a+2 \\\\
+&amp;\Rightarrow \quad(a-2)(2 a-1)=0 \Rightarrow a=2 \text { because } a \in z .
+\end{aligned}
+\)</li><li><strong>Q60:</strong> <p><img alt="JEE Main 2022 (Online) 30th June Morning Shift Mathematics - 3D Geometry Question 171 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1l6dmv11z/765801b8-1a82-4486-8b88-3108e93f1dbd/8269d270-132e-11ed-941a-4dd6502f33e3/file-1l6dmv120.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l6dmv11z/765801b8-1a82-4486-8b88-3108e93f1dbd/8269d270-132e-11ed-941a-4dd6502f33e3/file-1l6dmv120.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>Given, G is the centroid of \(\Delta\)ABC</p>
+<p>\(\therefore\) \(G = \left( {{{0 + \alpha  + \alpha } \over 3},\,{{\alpha  + 0 + \alpha } \over 3},\,{{\alpha  + \alpha  + 0} \over 3}} \right)\)</p>
+<p>\( = \left( {{{2\alpha } \over 3},\,{{2\alpha } \over 3},\,{{2\alpha } \over 3}} \right)\)</p>
+<p>Also given, D is a point moving on the line \(x + z - 3 = 0 = y\)</p>
+<p>Let \(D = (h,\,0,\,k)\)</p>
+<p>\(x + z - 3 = 0 \Rightarrow h + k - 3 = 0 \Rightarrow h = 3 - k\)</p>
+<p>\(\therefore\) \(D = (3 - k,\,0,\,k)\)</p>
+<p>Now, length of \(GD = d\)</p>
+<p>\( = \sqrt {{{\left( {{{2\alpha } \over 3} - 3 + k} \right)}^2} + {{\left( {{{2\alpha } \over 3}} \right)}^2} + {{\left( {{{2\alpha } \over 3} - k} \right)}^2}} \)</p>
+<p>\( \Rightarrow {d^2} = {\left( {{{2\alpha } \over 3} - 3 + k} \right)^2} + {\left( {{{2\alpha } \over 3}} \right)^2} + {\left( {{{2\alpha } \over 3} - k} \right)^2}\)</p>
+<p>Differentiating both side with respect to k, we get</p>
+<p>\(2dd' = 2\left( {{{2\alpha } \over 3} - 3 + k} \right) + 0 + 2\left( {{{2\alpha } \over 3} - k} \right) \times ( - 1)\)</p>
+<p>For maximum or minimum value of k, \(d' = 0\)</p>
+<p>\(\therefore\) \(0 = 2\left( {{{2\alpha } \over 3} - 3 + k} \right) - 2\left( {{{2\alpha } \over 3} - k} \right)\)</p>
+<p>\( \Rightarrow 2\left( {{{2\alpha } \over 3} - 3 + k} \right) = 2\left( {{{2\alpha } \over 3} - k} \right)\)</p>
+<p>\( \Rightarrow  - 3 + k =  - k\)</p>
+<p>\( \Rightarrow k = {3 \over 2}\)</p>
+<p>\(\therefore\) \(G{D^2} = {\left( {{{2\alpha } \over 3} - 3 + {3 \over 2}} \right)^2} + {\left( {{{2\alpha } \over 3}} \right)^2} + {\left( {{{2\alpha } \over 3} - {3 \over 2}} \right)^2} = {{57} \over 2}\)</p>
+<p>\( \Rightarrow {{{{(4\alpha  - 9)}^2}} \over {36}} + {{16{\alpha ^2}} \over {36}} + {{{{(4\alpha  - 9)}^2}} \over {36}} = {{57} \over 2}\)</p>
+<p>\( \Rightarrow {(4\alpha  - 9)^2} + 16{\alpha ^2} + {(4\alpha  - 9)^2} = 57 \times 18\)</p>
+<p>\( \Rightarrow 16{\alpha ^2} - 72\alpha  + 81 + 16{\alpha ^2} + 16{\alpha ^2} - 72\alpha  + 81 = 57 \times 18\)</p>
+<p>\( \Rightarrow 48{\alpha ^2} - 144\alpha  + 162 = 1026\)</p>
+<p>\( \Rightarrow 24{\alpha ^2} - 72\alpha  + 81 - 513 = 0\)</p>
+<p>\( \Rightarrow 24{\alpha ^2} - 72\alpha  - 432 = 0\)</p>
+<p>\( \Rightarrow {\alpha ^2} - 3\alpha  - 18 = 0\)</p>
+<p>\( \Rightarrow {\alpha ^2} - 6\alpha  + 3\alpha  - 18 = 0\)</p>
+<p>\( \Rightarrow \alpha (\alpha  - 6) + 3(\alpha  - 6) = 0\)</p>
+<p>\( \Rightarrow (\alpha  - 6)(\alpha  + 3) = 0\)</p>
+<p>\( \Rightarrow \alpha  = 6,\, - 3\)</p>
+<p>Given, \(\alpha  &gt; 0\)</p>
+<p>\(\therefore\) Possible value of \(\alpha  = 6\).</p></li><li><strong>Q61:</strong> <p> <img alt="JEE Main 2022 (Online) 26th July Morning Shift Mathematics - 3D Geometry Question 165 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1l7nbsbor/276c38c8-004d-4184-95dc-ab0e753739ef/40a706c0-2c4f-11ed-9dc0-a1792fcc650d/file-1l7nbsbos.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l7nbsbor/276c38c8-004d-4184-95dc-ab0e753739ef/40a706c0-2c4f-11ed-9dc0-a1792fcc650d/file-1l7nbsbos.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/> </p>
+<p>The line \(x + y - z = 0 = x - 2y + 3z - 5\) is parallel to the vector</p>
+<p>\(\overrightarrow b  = \left| {\matrix{
+   {\widehat i} &amp; {\widehat j} &amp; {\widehat k}  \cr 
+   1 &amp; 1 &amp; { - 1}  \cr 
+   1 &amp; { - 2} &amp; 3  \cr 
+
+ } } \right| = (1,4, - 3)\)</p>
+<p>Equation of the line through \(P(1,2,4)\) and parallel to \(\overrightarrow b \)</p>
+<p>\({{x - 1} \over 1} = {{y - 2} \over { - 4}} = {{z - 4} \over { - 3}}\)</p>
+<p>Let \(N \equiv (\lambda  + 1, - 4\lambda  + 2, - 3\lambda  + 4)\)</p>
+<p>\(\overrightarrow {QN}  = (\lambda , - 4\lambda  + 4, - 3\lambda  - 1)\)</p>
+<p>\(\overrightarrow {QN} \) is perpendicular to \(\overrightarrow {b} \)</p>
+<p>\( \Rightarrow (\lambda , - 4\lambda  + 4, - 3\lambda  - 1)\,.\,(1,4, - 3) = 0\)</p>
+<p>\( \Rightarrow \lambda  = {1 \over 2}\)</p>
+<p>Hence \(\overrightarrow {QN}  = \left( {{1 \over 2},2,{{ - 5} \over 2}} \right)\) and \(\left| {\overrightarrow {QN} } \right| = \sqrt {{{21} \over 2}} \)</p></li><li><strong>Q62:</strong> <p>\(L:{{x + 1} \over 2} = {{y + 2} \over 3} = {{2 - 1} \over 2}\)</p>
+<p> <img alt="JEE Main 2022 (Online) 26th July Morning Shift Mathematics - 3D Geometry Question 166 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1l7nc1t7n/ab3c067b-907d-4d61-90d4-40c5dd219f33/4878de40-2c50-11ed-9dc0-a1792fcc650d/file-1l7nc1t7o.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l7nc1t7n/ab3c067b-907d-4d61-90d4-40c5dd219f33/4878de40-2c50-11ed-9dc0-a1792fcc650d/file-1l7nc1t7o.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/> </p>
+<p>Let \(T(2t - 1,\,3t - 2,\,2t + 1)\)</p>
+<p>\(\because\) \(PT\,{ \bot ^r}\,QR\)</p>
+<p>\(\therefore\) \(2(2t - 5) + 3(3t - 4) + 2(2t - 6) = 0\)</p>
+<p>\(17t = 34\)</p>
+<p>\(\therefore\) \(t = 2\)</p>
+<p>So \(T(3,4,5)\)</p>
+<p>\(\therefore\) \(PT = \sqrt {1 + 4 + 4}  = 3\)</p>
+<p>\(\therefore\) \(QT = \sqrt {26 - 9}  = \sqrt {17} \)</p>
+<p>\(\therefore\) Area of \(\Delta PQR = {1 \over 2} \times 2\sqrt {17}  \times 3 = 3\sqrt {17} \)</p>
+<p>\(\therefore\) Square of \(ar(\Delta PQR) = 153\).</p></li><li><strong>Q63:</strong> <p>\(\because\) PR is perpendicular to given line, so</p>
+<p><img alt="JEE Main 2022 (Online) 27th July Evening Shift Mathematics - 3D Geometry Question 158 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1l7qa9n3e/85e3a21e-e14a-4db6-947b-e473de8b2f29/a9e898a0-2def-11ed-a744-1fb8f3709cfa/file-1l7qa9n3f.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l7qa9n3e/85e3a21e-e14a-4db6-947b-e473de8b2f29/a9e898a0-2def-11ed-a744-1fb8f3709cfa/file-1l7qa9n3f.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\(2(2\lambda  - 1 - a) + 3(3\lambda  - 1) - 1( - \lambda  - 1) = 0\)</p>
+<p>\( \Rightarrow a = 7\lambda  - 2\)</p>
+<p>Now,</p>
+<p>\(\because\) \(PR = 2\sqrt 6 \)</p>
+<p>\( \Rightarrow {( - 5\lambda  + 1)^2} + {(3\lambda  - 1)^2} + {(\lambda  + 1)^2} = 24\)</p>
+<p>\( \Rightarrow 5{\lambda ^2} - 2\lambda  - 3 = 0 \Rightarrow \lambda  = 1\) or \( - {3 \over 5}\)</p>
+<p>\(\because\) \(a &gt; 0\) so \(\lambda  = 1\) and \(a = 5\)</p>
+<p>Now \(\sum\limits_{i = 1}^3 {{\alpha _i} = 2} \) (Sum of co-ordinate of R) \(-\) (Sum of coordinates of P)</p>
+<p>\( = 2(7) - 11 = 3\)</p>
+<p>\(a + \sum\limits_{i = 1}^3 {{\alpha _i} = 5 + 3 = 8} \)</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

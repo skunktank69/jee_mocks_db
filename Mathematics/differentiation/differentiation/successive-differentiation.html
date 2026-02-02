@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>differentiation</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>differentiation</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5">\(
+\text { If } y(x)=\left|\begin{array}{ccc}
+\sin x &amp; \cos x &amp; \sin x+\cos x+1 \\
+27 &amp; 28 &amp; 27 \\
+1 &amp; 1 &amp; 1
+\end{array}\right|, x \in \mathbb{R} \text {, then } \frac{d^2 y}{d x^2}+y \text { is equal to }
+\)</div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">28</li>
+<li class="c8">27</li>
+<li class="c8">-1</li>
+<li class="c8">1</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(y(x) = (1 + x)(1 + {x^2})(1 + {x^4})(1 + {x^8})(1 + {x^{16}})\). Then \(y' - y''\) at \(x =  - 1\) is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">496</li>
+<li class="c8">976</li>
+<li class="c8">464</li>
+<li class="c8">944</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>C</strong></li><li>Q2: <strong>A</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>To solve for \( y(x) \), we start with the determinant of the given matrix:</p>
+<p>\( \begin{vmatrix} \sin x &amp; \cos x &amp; \sin x + \cos x + 1 \\ 27 &amp; 28 &amp; 27 \\ 1 &amp; 1 &amp; 1  \end{vmatrix} \)</p>
+<p>Using the formula for a \(3 \times 3\) determinant, we expand along the first row:</p>
+<p>\( f(x) = \sin x \cdot \begin{vmatrix} 28 &amp; 27 \\ 1 &amp; 1 \end{vmatrix} - \cos x \cdot \begin{vmatrix} 27 &amp; 27 \\ 1 &amp; 1 \end{vmatrix} + (\sin x + \cos x + 1) \cdot \begin{vmatrix} 27 &amp; 28 \\ 1 &amp; 1 \end{vmatrix} \)</p>
+<p>Calculating the smaller \(2 \times 2\) determinants:</p>
+<p>\( \begin{vmatrix} 28 &amp; 27 \\ 1 &amp; 1 \end{vmatrix} = 28 \cdot 1 - 27 \cdot 1 = 1 \)</p>
+<p>\( \begin{vmatrix} 27 &amp; 27 \\ 1 &amp; 1 \end{vmatrix} = 27 \cdot 1 - 27 \cdot 1 = 0 \)</p>
+<p>\( \begin{vmatrix} 27 &amp; 28 \\ 1 &amp; 1 \end{vmatrix} = 27 \cdot 1 - 28 \cdot 1 = -1 \)</p>
+<p>Substituting these into the determinant calculation gives:</p>
+<p>\( f(x) = \sin x \cdot 1 - \cos x \cdot 0 + (\sin x + \cos x + 1) \cdot (-1) \)</p>
+<p>\( f(x) = \sin x - (\sin x + \cos x + 1) \)</p>
+<p>\( f(x) = \sin x - \sin x - \cos x - 1 \)</p>
+<p>\( f(x) = -\cos x - 1 \)</p>
+<p>Now, calculate the derivatives:</p>
+<p><p>First derivative \( f'(x) \):</p>
+<p>\(   f'(x) = \frac{d}{dx}(-\cos x - 1) = \sin x   \)</p></p>
+<p><p>Second derivative \( \frac{d^2 f}{dx^2} \):</p>
+<p>\(   \frac{d^2 f}{dx^2} = \frac{d}{dx}(\sin x) = \cos x   \)</p></p>
+<p>Finally, compute \( \frac{d^2 y}{dx^2} + y \):</p>
+<p>\( \frac{d^2 f}{dx^2} + f(x) = \cos x - \cos x - 1 = -1 \)</p>
+<p>Thus, \( \frac{d^2 y}{dx^2} + y \) is equal to \(-1\).</p></li><li><strong>Q2:</strong> \(
+\begin{aligned}
+&amp; y=\frac{1-x^{32}}{1-x}=1+x+x^2+x^3+\ldots+x^{31} \\\\
+&amp; y^{\prime}=1+2 x+3 x^2+\ldots+31 x^{30} \\\\
+&amp; y^{\prime}(-1)=1-2+3-4+\ldots+31=16 \\\\
+&amp; y^{\prime \prime}(x)=2+6 x+12 x^2+\ldots+31.30 x^{29} \\\\
+&amp; y^{\prime \prime}(-1)=2-6+12 \ldots 31.30=480 \\\\
+&amp; y^{\prime \prime}(-1)-y^{\prime}(-1)=-496
+\end{aligned}
+\)</li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \(f: \mathbf{R} \rightarrow \mathbf{R}\) be a thrice differentiable odd function satisfying \(f^{\prime}(x) \geq 0, f^{\prime}(x)=f(x), f(0)=0, f^{\prime}(0)=3\). Then \(9 f\left(\log _e 3\right)\) is equal to __________ .</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5">Let \(f(x)=x^3+x^2 f^{\prime}(1)+x f^{\prime \prime}(2)+f^{\prime \prime \prime}(3), x \in \mathbf{R}\). Then \(f^{\prime}(10)\) is equal to ____________.</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>If \(f(x)=\left|\begin{array}{ccc}
+2 \cos ^4 x &amp; 2 \sin ^4 x &amp; 3+\sin ^2 2 x \\
+3+2 \cos ^4 x &amp; 2 \sin ^4 x &amp; \sin ^2 2 x \\
+2 \cos ^4 x &amp; 3+2 \sin ^4 x &amp; \sin ^2 2 x
+\end{array}\right|,\) then \(\frac{1}{5} f^{\prime}(0)=\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2</li>
+<li class="c8">1</li>
+<li class="c8">0</li>
+<li class="c8">6</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Let \(f: \mathbb{R} \rightarrow \mathbb{R}\) be a thrice differentiable function such that \(f(0)=0, f(1)=1, f(2)=-1, f(3)=2\) and \(f(4)=-2\). Then, the minimum number of zeros of \(\left(3 f^{\prime} f^{\prime \prime}+f f^{\prime \prime \prime}\right)(x)\) is __________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>If \(y(\theta)=\frac{2 \cos \theta+\cos 2 \theta}{\cos 3 \theta+4 \cos 2 \theta+5 \cos \theta+2}\), then at \(\theta=\frac{\pi}{2}, y^{\prime \prime}+y^{\prime}+y\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{1}{2}\]</li>
+<li class="c8">1</li>
+<li class="c8">\[\frac{3}{2}\]</li>
+<li class="c8">2</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>\(\text { If } f(x)=\left\{\begin{array}{ll}
+x^3 \sin \left(\frac{1}{x}\right), &amp; x \neq 0 \\
+0 &amp; , x=0
+\end{array}\right. \text {, then }\)</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[f^{\prime \prime}(0)=0\]
+</li>
+<li class="c8">\[f^{\prime \prime}(0)=1\]
+</li>
+<li class="c8">\[f^{\prime \prime}\left(\frac{2}{\pi}\right)=\frac{24-\pi^2}{2 \pi}\]
+</li>
+<li class="c8">\[f^{\prime \prime}\left(\frac{2}{\pi}\right)=\frac{12-\pi^2}{2 \pi}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>If \(f(x) = {x^3} - {x^2}f'(1) + xf''(2) - f'''(3),x \in \mathbb{R}\), then</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[2f(0) - f(1) + f(3) = f(2)\]</li>
+<li class="c8">\[f(1) + f(2) + f(3) = f(0)\]</li>
+<li class="c8">\[f(3) - f(2) = f(1)\]</li>
+<li class="c8">\[3f(1) + f(2) = f(3)\]</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>0</strong></li><li>Q2: <strong>3</strong></li><li>Q3: <strong>C</strong></li><li>Q4: <strong>0</strong></li><li>Q5: <strong>D</strong></li><li>Q6: <strong>C</strong></li><li>Q7: <strong>A</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp;f^{\prime}(x) \geq 0, f^{\prime \prime}(x)=f(x)\\
+&amp;\text { Second order differential equation }
+\end{aligned}\)</p>
+<p>\(\begin{aligned}
+&amp; f(x)=A e^x+B e^{-x} \\
+&amp; f(0)=0 \Rightarrow A=-B \\
+&amp; \Rightarrow f(x)=A\left(e^x-e^{-x}\right) \\
+&amp; f^{\prime}(x)=A e^x+A e^{-x}=A\left(e^x+e^{-x}\right) \\
+&amp; f^{\prime}(0)=3=A\left(e^0+e^{-0}\right)=2 A \Rightarrow A=\frac{3}{2} \\
+&amp; f(x)=\frac{3}{2}\left(e^x-e^{-x}\right) \\
+&amp; \text { If }(\ln 3)=\frac{27}{2}\left(e^{\ln 3}-e^{-\ln 3}\right)=\frac{27}{2}\left(3-\frac{1}{3}\right)=\frac{27}{2} \cdot \frac{8}{3} \\
+&amp; =36
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; f(x)=x^3+x^2 \cdot f^{\prime}(1)+x \cdot f^{\prime \prime}(2)+f^{\prime \prime \prime}(3) \\
+&amp; f^{\prime}(x)=3 x^2+2 x f^{\prime}(1)+f^{\prime \prime}(2) \\
+&amp; f^{\prime \prime}(x)=6 x+2 f^{\prime}(1) \\
+&amp; f^{\prime \prime \prime}(x)=6 \\
+&amp; f^{\prime}(1)=-5, f^{\prime \prime}(2)=2, f^{\prime \prime \prime}(3)=6 \\
+&amp; f(x)=x^3+x^2 \cdot(-5)+x \cdot(2)+6 \\
+&amp; f^{\prime}(x)=3 x^2-10 x+2 \\
+&amp; f^{\prime}(10)=300-100+2=202
+\end{aligned}\)</p></li><li><strong>Q3:</strong> <p>\(\begin{aligned}
+&amp; \left|\begin{array}{ccc}
+2 \cos ^4 x &amp; 2 \sin ^4 x &amp; 3+\sin ^2 2 x \\
+3+2 \cos ^4 x &amp; 2 \sin ^4 x &amp; \sin ^2 2 x \\
+2 \cos ^4 x &amp; 3+2 \sin ^2 4 x &amp; \sin ^2 2 x
+\end{array}\right| \\
+&amp; \mathrm{R}_2 \rightarrow \mathrm{R}_2-\mathrm{R}_1, \mathrm{R}_3 \rightarrow \mathrm{R}_3-\mathrm{R}_1 \\
+&amp; \left|\begin{array}{ccc}
+2 \cos ^4 x &amp; 2 \sin ^4 x &amp; 3+\sin ^2 2 x \\
+3 &amp; 0 &amp; -3 \\
+0 &amp; 3 &amp; -3
+\end{array}\right| \\
+&amp; \mathrm{f}(\mathrm{x})=45 \\
+&amp; \mathrm{f}^{\prime}(\mathrm{x})=0 \\
+&amp;
+\end{aligned}\)</p></li><li><strong>Q4:</strong> <p>\(\because f: R \rightarrow R \text { and } f(0)=0, f(1)=1, f(2)=-1 \text {, }\)</p>
+<p>\(f(3)=2\) and \(f(4)=-2\) then</p>
+<p>\(f(x)\) has atleast 4 real roots.</p>
+<p>Then \(f(x)\) has atleast 3 real roots and \(f^{\prime}(x)\) has atleast 2 real roots.</p>
+<p>Now we know that</p>
+<p>\(\begin{aligned}
+\frac{d}{d x}\left(f^3 \cdot f^{\prime \prime}\right) &amp; =3 f^2 \cdot f^{\prime} \cdot f^{\prime \prime}+f^3 \cdot f^{\prime \prime \prime} \\
+&amp; =f^2\left(3 f^{\prime} \cdot f^{\prime}+f \cdot f^{\prime \prime}\right)
+\end{aligned}\)</p>
+<p>Here \(f^3 \cdot f'\) has atleast 6 roots.</p>
+<p>Then its differentiation has atleast 5 distinct roots.</p></li><li><strong>Q5:</strong> <p>\(\begin{aligned}
+&amp; y(\theta)=\frac{2 \cos \theta+\cos 2 \theta}{\cos 3 \theta+4 \cos 2 \theta+5 \cos \theta+2} \\
+&amp; =\frac{2 \cos ^2 \theta+2 \cos \theta-1}{4 \cos ^3 \theta+8 \cos ^2 \theta+2 \cos \theta-2} \\
+&amp; =\frac{2 \cos ^2 \theta+2 \cos \theta-1}{\left(2 \cos ^2 \theta+2 \cos \theta-1\right)(2 \cos \theta+2)} \\
+&amp; =\frac{1}{2(1+\cos \theta)}=\frac{1}{4 \cos ^2 \theta / 2}=\frac{\sec ^2 \theta / 2}{4} \\
+&amp; y^{\prime}(\theta)=\frac{1}{4}\left(2 \sec \frac{\theta}{2} \cdot \sec \frac{\theta}{2} \cdot \tan \frac{\theta}{2} \cdot \frac{1}{2}\right) \\
+&amp; =\frac{1}{4} \sec ^2 \frac{\theta}{2} \cdot \tan \frac{\theta}{2}
+\end{aligned}\)</p>
+<p>\(y^{\prime \prime}(\theta)=\frac{1}{4}\left(\tan \frac{\theta}{2}\right)\left(\sec ^2 \frac{\theta}{2} \cdot \tan \frac{\theta}{2}\right) +\frac{1}{4} \sec ^2 \frac{\theta}{2} \cdot \sec ^2 \frac{\theta}{2} \cdot \frac{1}{2}\)</p>
+<p>\(\begin{aligned}
+&amp; \text { at } \theta=\frac{\pi}{2}, y(\theta)=\frac{1}{2}, y^{\prime}(\theta)=\frac{1}{2}, y^{\prime \prime}(\theta)=1 \\
+&amp; \therefore \quad y+y^{\prime}+y^{\prime \prime}=2
+\end{aligned}\)</p></li><li><strong>Q6:</strong> <p>Given the function:</p>
+<p>\( f(x)=\left\{\begin{array}{ll} x^3 \sin \left(\frac{1}{x}\right), &amp; x \neq 0 \\ 0, &amp; x=0 \end{array}\right. \)</p>
+<p>we need to find its second derivative at specific points.</p>
+<p>First, let’s compute the first derivative \( f^{\prime}(x) \):</p>
+<p>\( f^{\prime}(x) = 3x^2 \sin \left( \frac{1}{x} \right) - x \cos \left( \frac{1}{x} \right) \)</p>
+<p>Next, the second derivative \( f^{\prime \prime}(x) \) is:</p>
+<p>\( f^{\prime \prime}(x) = 6x \sin \left(\frac{1}{x}\right) - 3x \cos \left(\frac{1}{x}\right) - \cos \left(\frac{1}{x}\right) - \frac{1}{x} \sin \left(\frac{1}{x}\right) \)</p>
+<p>Therefore, evaluating the second derivative at \( x = \frac{2}{\pi} \):</p>
+<p>\( f^{\prime \prime} \left(\frac{2}{\pi}\right) = 6 \left( \frac{2}{\pi} \right) \sin \left(\frac{\pi}{2}\right) - 3 \left( \frac{2}{\pi} \right) \cos \left(\frac{\pi}{2}\right) - \cos \left( \frac{\pi}{2} \right) - \frac{\pi}{2} \sin \left( \frac{\pi}{2} \right) \)</p>
+<p>Since \(\sin(\frac{\pi}{2}) = 1\) and \(\cos(\frac{\pi}{2}) = 0\), this simplifies to:</p>
+<p>\(  f^{\prime \prime} \left( \frac{2}{\pi} \right) = \frac{12}{\pi} - \frac{\pi}{2} = \frac{24 - \pi^2}{2\pi} \)</p>
+<p>Finally, note that \( f^{\prime}(0) \) is not defined, as it involves terms like \(\frac{1}{x}\) when \( x = 0 \).</p></li><li><strong>Q7:</strong> \(
+f(x)=x^3-x^2 f^{\prime}(1)+x f^{\prime \prime}(2)-f^{\prime \prime \prime}(3), x \in R
+\)<br/><br/>
+Let \(\mathrm{f}^{\prime}(1)=\mathrm{a}, \mathrm{f}^{\prime \prime}(2)=\mathrm{b}, \mathrm{f}^{\prime \prime \prime}(3)=\mathrm{c}\)<br/><br/>
+\(
+\begin{aligned}
+&amp; f(x)=x^3-a x^2+b x-c \\\\
+&amp; f^{\prime}(x)=3 x^2-2 a x+b \\\\
+&amp; f^{\prime \prime}(x)=6 x-2 a \\\\
+&amp; f^{\prime \prime \prime}(x)=6 \\\\
+&amp; c=6, a=3, b=6 \\\\
+&amp; f(x)=x^3-3 x^2+6 x-6 \\\\
+&amp; f(1)=-2, f(2)=2, f(3)=12, f(0)=-6 \\\\
+&amp; 2 f(0)-f(1)+f(3)=2=f(2)
+\end{aligned}
+\)</li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let \(f: \mathbf{R} \rightarrow \mathbf{R}\) be a twice differentiable function such that \((\sin x \cos y)(f(2 x+2 y)-f(2 x-2 y))=(\cos x \sin y)(f(2 x+2 y)+f(2 x-2 y))\), for all \(x, y \in \mathbf{R}\).
+If \(f^{\prime}(0)=\frac{1}{2}\), then the value of \(24 f^{\prime \prime}\left(\frac{5 \pi}{3}\right)\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">2</li>
+<li class="c8">3</li>
+<li class="c8">\(-\)3</li>
+<li class="c8">\(-\)2</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(f(x) = 2x + {\tan ^{ - 1}}x\) and \(g(x) = {\log _e}(\sqrt {1 + {x^2}}  + x),x \in [0,3]\). Then</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">there exists \[\widehat x \in [0,3]\] such that \[f'(\widehat x) &lt; g'(\widehat x)\]</li>
+<li class="c8">there exist \[0 &lt; {x_1} &lt; {x_2} &lt; 3\] such that \[f(x) &lt; g(x),\forall x \in ({x_1},{x_2})\]</li>
+<li class="c8">\[\min f'(x) = 1 + \max g'(x)\]</li>
+<li class="c8">\[\max f(x) &gt; \max g(x)\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>If \(f(x)=x^{2}+g^{\prime}(1) x+g^{\prime \prime}(2)\) and \(g(x)=f(1) x^{2}+x f^{\prime}(x)+f^{\prime \prime}(x)\), then the value of \(f(4)-g(4)\) is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Let \(f\) and \(g\) be the twice differentiable functions on \(\mathbb{R}\) such that</p>
+<p>\(f''(x)=g''(x)+6x\)</p>
+<p>\(f'(1)=4g'(1)-3=9\)</p>
+<p>\(f(2)=3g(2)=12\).</p>
+<p>Then which of the following is NOT true?</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[g(-2)-f(-2)=20\]</li>
+<li class="c8">There exists \[x_0\in(1,3/2)\] such that \[f(x_0)=g(x_0)\]</li>
+<li class="c8">\[|f'(x)-g'(x)| &lt; 6\Rightarrow -1 &lt; x &lt; 1\]</li>
+<li class="c8">If \[-1 &lt; x &lt; 2\], then \[|f(x)-g(x)| &lt; 8\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>If \(y(x) = {\left( {{x^x}} \right)^x},\,x &gt; 0\), then \({{{d^2}x} \over {d{y^2}}} + 20\) at x = 1 is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>For the curve \(C:\left(x^{2}+y^{2}-3\right)+\left(x^{2}-y^{2}-1\right)^{5}=0\), the value of \(3 y^{\prime}-y^{3} y^{\prime \prime}\), at the point \((\alpha, \alpha)\), \(\alpha&gt;0\), on C, is equal to ____________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>C</strong></li><li>Q2: <strong>D</strong></li><li>Q3: <strong>1</strong></li><li>Q4: <strong>D</strong></li><li>Q5: <strong>2</strong></li><li>Q6: <strong>2</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\begin{aligned}
+&amp; \sin (x-y) f(2 x+2 y)=f(2 x-2 y) \sin (x+y) \\
+&amp; \frac{f(2 x+2 y)}{\sin (x+y)}=\frac{f(2 x-2 y)}{\sin (x-y)}=k(\text { say }) \\
+&amp; f(2 x+2 y)=k \sin (x+y) \\
+&amp; f(2 x)=5 \sin x \quad(\because y=0) \\
+&amp; f(x)=k \sin \frac{x}{2} \\
+&amp; f^{\prime}(x)=\frac{k}{2} \cos \frac{x}{2} \\
+&amp; f^{\prime}(0)=\frac{1}{2} \Rightarrow k=1 \\
+&amp; f(x)=\sin \frac{x}{2} \Rightarrow f^{\prime}(x)=\frac{1}{2} \cos \frac{x}{2} \\
+&amp; f^{\prime \prime}(x)=-\frac{1}{4} \sin \frac{x}{2} \\
+&amp; 24 f^{\prime \prime}\left(\frac{5 \pi}{3}\right)=-3
+\end{aligned}\)</p></li><li><strong>Q2:</strong> \(
+\begin{aligned}
+&amp; f^{\prime}(x)=2+\frac{1}{1+x^2}, g^{\prime}(x)=\frac{1}{\sqrt{x^2+1}} \\\\
+&amp; f^{\prime \prime}(x)=-\frac{2 x}{\left(1+x^2\right)^2}&lt;0 \\\\
+&amp; g^{\prime \prime}(x)=-\frac{1}{2}\left(x^2+1\right)^{-3 / 2} \cdot 2 x&lt;0 \\\\
+&amp; \left.f^{\prime}(x)\right|_{\min }=f^{\prime}(3)=2+\frac{1}{10}=\frac{21}{10} \\\\
+&amp; \left.g^{\prime}(x)\right|_{\max }=g^{\prime}(0)=1 \\\\
+&amp; \left.f^{\prime}(x)\right|_{\max }=f(3)=2+\tan ^{-1} 3 \\\\
+&amp; \left.g(x)\right|_{\max }=g(3)=\ln (3+\sqrt{10})&lt;\ln &lt;7&lt;2
+\end{aligned}
+\)</li><li><strong>Q3:</strong> Let \(g^{\prime}(1)=a\) and \(g^{\prime \prime}(2)=b\)
+
+<br/><br/>\(\Rightarrow f(x)=x^{2}+a x+b\)
+
+<br/><br/>Now, \(f(1)=1+a+b ; f^{\prime}(x)=2 x+a ; f^{\prime \prime}(x)=2\)
+
+<br/><br/>\(g(x)=(1+a+b) x^{2}+x(2 x+a)+2\)
+
+<br/><br/>\(\Rightarrow g(x)=(a+b+3) x^{2}+a x+2\)
+
+<br/><br/>\(\Rightarrow g^{\prime}(x)=2 x(a+b+3)+a \Rightarrow g^{\prime}(1)=2(a+b+3)\)\(+a=a\)
+
+<br/><br/>\(\Rightarrow a+b+3=0\) .......(1)
+
+<br/><br/>\(g^{\prime \prime}(x)=2(a+b+3)=b\)
+
+<br/><br/>\(\Rightarrow 2 a+b+6=0\) ........(2)
+
+<br/><br/>Solving (i) and (ii), we get
+
+<br/><br/>\(a=-3\) and \(b=0\)
+
+<br/><br/>\(f(x)=x^{2}-3 x\) and \(g(x)=-3 x+2\)
+
+<br/><br/>\(f(4)=4\) and \(g(4)=-12+2=-10\)
+
+<br/><br/>\(\Rightarrow f(4)-g(4)=16-2=14\)</li><li><strong>Q4:</strong> <p>\(f''(x) = g''(x) + 6x\)</p>
+<p>\( \Rightarrow f'(x) = g'(x) + 3{x^2} + C\)</p>
+<p>\(f'(1) = g'(1) + 3 + C\)</p>
+<p>\( \Rightarrow g = 3 + 3 + C \Rightarrow C = 3\)</p>
+<p>\( \Rightarrow f'(x) = g'(x) + 3{x^2} + 3\)</p>
+<p>\( \Rightarrow f(x) = g(x) + {x^2} + 3x + C'\)</p>
+<p>\(x = 2\)</p>
+<p>\(f(2) = g(2) + 14 + C'\)</p>
+<p>\(12 = 4 + 14 + C'\)</p>
+<p>\( \Rightarrow C' =  - 6\)</p>
+<p>\( \Rightarrow f(x) = g(2) + {x^3} + 3x - 6\)</p>
+<p>\(f( - 2) = g( - 2) - 8 - 6 - 6\)</p>
+<p>\(g( - 2) - f( - 2) = 20\)</p>
+<p>\(f'(x) - g'(x) = 3{x^2} + 3\)</p>
+<p>\(x \in ( - 1,1)\)</p>
+<p>\(3{x^2} + 3 \in (0,6)\)</p>
+<p>\( \Rightarrow f'(x) - g'(x) \in (0,6)\)<?p>
+<p>\(f(x) - g(x) = {x^3} + 3x - 6\)</p>
+<p>At \(x =  - 1\)</p>
+<p>\(|f( - 1) - g( - 1)| = 10\)</p>
+<p>\(\therefore\) Option (4) is false.</p></p></li><li><strong>Q5:</strong> <p>\(\because\) \(y(x) = {\left( {{x^x}} \right)^x}\)</p>
+<p>\(\therefore\) \(y = {x^{{x^2}}}\)</p>
+<p>\(\therefore\) \({{dy} \over {dx}} = {x^2}\,.\,{x^{{x^2} - 1}} + {x^{{x^2}}}\ln x\,.\,2x\)</p>
+<p>\(\therefore\) \({{dx} \over {dy}} = {1 \over {{x^{{x^2} + 1}}(1 + 2\ln x)}}\) ..... (i)</p>
+<p>Now, \({{{d^2}x} \over {dx^2}} = {d \over {dx}}\left( {{{\left( {{x^{{x^2} + 1}}(1 + 2\ln x)} \right)}^{ - 1}}} \right)\,.\,{{dx} \over {dy}}\)</p>
+<p>\( = {{ - x{{\left( {{x^{{x^2} + 1}}(1 + 2\ln x)} \right)}^{ - 2}}\,.\,{x^{{x^2}}}(1 + 2\ln x)({x^2} + 2{x^2}\ln x + 3)} \over {{x^{{x^2}}}(1 + 2\ln x)}}\)</p>
+<p>\( = {{ - {x^{{x^2}}}(1 + 2\ln x)({x^3} + 3 + 2{x^2}\ln x)} \over {{{\left( {{x^{{x^2}}}(1 + 2\ln x)} \right)}^3}}}\)</p>
+<p>\({{{d^2}x} \over {d{y^2}(at\,x = 1)}} =  - 4\)</p>
+<p>\(\therefore\) \({{{d^2}x} \over {d{y^2}(at\,x = 1)}} + 20 = 16\)</p></li><li><strong>Q6:</strong> <p>\(\because\) \(C:({x^2} + {y^2} - 3) + {({x^2} - {y^2} - 1)^5} = 0\) for point (\(\alpha\), \(\alpha\))</p>
+<p>\({\alpha ^2} + {\alpha ^2} - 3 + {({\alpha ^2} - {\alpha ^2} - 1)^5} = 0\)</p>
+<p>\(\therefore\) \(\alpha  = \sqrt 2 \)</p>
+<p>On differentiating \(({x^2} + {y^2} - 3) + {({x^2} - {y^2} - 1)^5} = 0\) we get</p>
+<p>\(x + yy' + 5{({x^2} - {y^2} - 1)^4}(x - yy') = 0\) ...... (i)</p>
+<p>When \(x = y = \sqrt 2 \) then \(y' = {3 \over 2}\)</p>
+<p>Again on differentiating eq. (i) we get :</p>
+<p>\(1 + {(y')^2} + yy'' + 20({x^2} - {y^2} - 1)(2x - 2yy')(x - y'y) + 5{({x^2} - {y^2} - 1)^4}(1 - y{'^2} - yy'') = 0\)</p>
+<p>For \(x = y = \sqrt 2 \) and \(y' = {3 \over 2}\) we get \(y'' =  - {{23} \over {4\sqrt 2 }}\)</p>
+<p>\(\therefore\) \(3y' - {y^3}y'' = 3\,.\,{3 \over 2} - {\left( {\sqrt 2 } \right)^3}\,.\,\left( { - {{23} \over {4\sqrt 2 }}} \right) = 16\)</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

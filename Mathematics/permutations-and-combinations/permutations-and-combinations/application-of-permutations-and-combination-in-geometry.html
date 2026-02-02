@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>permutations-and-combinations</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>permutations-and-combinations</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>The number of triangles whose vertices are at the vertices of a regular octagon but none of whose sides is a side of the octagon is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">56</li>
+<li class="c8">16</li>
+<li class="c8">24</li>
+<li class="c8">48</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>A triangle is formed by X-axis, Y-axis and the line \(3x+4y=60\). Then the number of points P(a, b) which lie strictly inside the triangle, where a is an integer and b is a multiple of a, is ____________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Some couples participated in a mixed doubles badminton tournament. If the number of matches played, so that no couple played in a match, is 840, then the total number of persons, who participated in the tournament, is ___________.</p></div>
+<div class="c6"></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>B</strong></li><li>Q2: <strong>1</strong></li><li>Q3: <strong>2</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>To solve this problem, we need to determine the number of triangles formed by the vertices of a regular octagon such that none of the sides of the triangle is also a side of the octagon.</p>
+<p>Let's start by counting the total number of triangles that can be formed using the 8 vertices of the octagon. The number of ways to choose 3 vertices out of 8 is given by the combination formula:</p>
+<p>
+<p>\( \binom{8}{3} = \frac{8!}{3!(8-3)!} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1} = 56 \)</p>
+</p>
+<p>Next, we need to exclude those triangles that have at least one side coinciding with a side of the octagon. Let's analyze how many such invalid triangles there can be.</p>
+<p>Consider each side of the octagon. For any given side, there are exactly 5 other vertices remaining (since we must exclude the two vertices that form the current side). Out of these 5 vertices, we can choose any 1 to form a triangle that has one side common with the octagon. Hence, for each side of the octagon, there are 5 such triangles.</p>
+<p>Since the octagon has 8 sides, the total number of triangles that have at least one side as a side of the octagon is:</p>
+<p>
+<p>\( 8 \times 5 = 40 \)</p>
+</p>
+<p>Therefore, the number of triangles whose sides do not coincide with any sides of the octagon is:</p>
+<p>
+<p>\( 56 - 40 = 16 \)</p>
+</p>
+<p>So, the correct answer is:</p>
+<p><b>Option B: 16</b></p></li><li><strong>Q2:</strong> If x = 1, y = \(57 \over 4 \) = 14.25<br/><br/><img alt="JEE Main 2023 (Online) 25th January Evening Shift Mathematics - Permutations and Combinations Question 72 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lef6kjms/0eda98c6-e556-46f8-a286-86afedde79c5/1920a240-b26a-11ed-a7d3-67cb923c1f9d/file-1lef6kjmt.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lef6kjms/0eda98c6-e556-46f8-a286-86afedde79c5/1920a240-b26a-11ed-a7d3-67cb923c1f9d/file-1lef6kjmt.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/><br/>\((1,1)(1,2)-(1,14) \Rightarrow 14\) pts.<br/><br/>
+If \(x=2, y=\frac{27}{2}=13.5\)<br/><br/>
+\((2,2)(2,4) \ldots(2,12) \quad \Rightarrow 6\) pts.<br/><br/>
+If \(\mathrm{x}=3, \mathrm{y}=\frac{51}{4}=12.75\)<br/><br/>
+\((3,3)(3,6)-(3,12) \Rightarrow 4\) pts.<br/><br/>
+If \(x=4, y=12\)<br/><br/>
+\((4,4)(4,8) \quad \Rightarrow 2\) pts.<br/><br/>
+If \(x=5 . y=\frac{45}{4}=11.25\)<br/><br/>
+\((5,5),(5,10) \Rightarrow 2\) pts.<br/><br/>
+If \(\mathrm{x}=6, \mathrm{y}=\frac{21}{2}=10.5\)<br/><br/>
+\((6,6) \quad \Rightarrow 1 \mathrm{pt}\).<br/><br/>
+If \(x=7, y=\frac{39}{4}=9.75\)<br/><br/>
+\((7,7) \Rightarrow 1 \mathrm{pt}\).<br/><br/>
+If \(x=8, y=9\)<br/><br/>
+\((8,8) \quad \Rightarrow 1\) pt.<br/><br/>
+If \(\mathrm{x}=9 \mathrm{y}=\frac{33}{4}=8.25 \Rightarrow\) no \(\mathrm{pt}\).<br/><br/>
+Total \(=31\) pts.</li><li><strong>Q3:</strong> Let, \(n\) be the total number of couples who participated in the tournament.
+<br><br>According to the question, \(2 \times{ }^n C_2 \times{ }^{n-2} C_2=840\)
+<br><br>\(
+\begin{aligned}
+&amp; \Rightarrow{ }^n C_2 \times{ }^{n-2} C_2=420 \\\\
+&amp; \Rightarrow \frac{n !}{2 !(n-2) !} \times \frac{(n-2) !}{(n-4) ! 2 !}=420 \\\\
+&amp; \Rightarrow \frac{n(n-1)(n-2)(n-3)}{4}=420
+\end{aligned}
+\)
+<br><br>Put \(n=8\) satisfied the equation.
+<br><br>So, \(n=8\)
+<br><br>Hence, total number of players who participated<br>in the tournament \(=2 \times 8=16\)</br></br></br></br></br></br></br></br></br></br></br></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

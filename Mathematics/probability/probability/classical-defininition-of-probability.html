@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<title>probability</title>
+
+
+</head>
+<body>
+<div class="c1">
+<header>
+<h1>probability</h1>
+
+</header>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let the sum of two positive integers be 24 . If the probability, that their product is not less than \(\frac{3}{4}\) times their greatest possible product, is \(\frac{m}{n}\), where \(\operatorname{gcd}(m, n)=1\), then \(n\)-\(m\) equals</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">10</li>
+<li class="c8">11</li>
+<li class="c8">9</li>
+<li class="c8">8</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let N be the sum of the numbers appeared when two fair dice are rolled and let the probability that \(N-2,\sqrt{3N},N+2\) are in geometric progression be \(\frac{k}{48}\). Then the value of k is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">8</li>
+<li class="c8">16</li>
+<li class="c8">2</li>
+<li class="c8">4</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let N denote the sum of the numbers obtained when two dice are rolled. If the probability that \({2^N} &lt; N!\) is \({m \over n}\), where m and n are coprime, then \(4m-3n\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">12</li>
+<li class="c8">6</li>
+<li class="c8">8</li>
+<li class="c8">10</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>D</strong></li><li>Q3: <strong>C</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>Take two numbers as \(a\) and \(b\)</p>
+<p>\(a+b=24\)</p>
+<p><img alt="JEE Main 2024 (Online) 8th April Morning Shift Mathematics - Probability Question 29 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lw8pero8/601e15c3-bb4a-487e-b3ff-b7b116b4f031/2e363180-1336-11ef-9f8d-838c388c326d/file-1lw8pero9.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lw8pero8/601e15c3-bb4a-487e-b3ff-b7b116b4f031/2e363180-1336-11ef-9f8d-838c388c326d/file-1lw8pero9.png?format=png" style="max-width: 100%;height: auto;display: block;margin: 0 auto;max-height: 40vh;vertical-align: baseline"/></p>
+<p>For product to be maximum</p>
+<p>\(\begin{aligned}
+&amp; \frac{a+b}{2} \geq \sqrt{a b} \\
+&amp; 144&gt;a b
+\end{aligned}\)</p>
+<p>Maximum product is 144</p>
+<p>Now, \(a b \geq \frac{3}{4} \cdot 144=108\)</p>
+<p>Sample space \(=\{(23,1),(22,2), \ldots\}\)</p>
+<p>Integer points on line in shaded region</p>
+<p>\(\begin{aligned}
+&amp; \{(6,18),(7,17),(8,16), \ldots(18,6)\} \\
+&amp; P(E)=\frac{n(E)}{n(S)}=\frac{13}{23}=\frac{m}{n} \Rightarrow n-m=10
+\end{aligned}\)</p></li><li><strong>Q2:</strong>  \(n-2, \sqrt{3 n}, n+2 \rightarrow\) G.P.
+<br/><br/>
+\(3 n=n^{2}-4\)
+<br/><br/>
+\(\Rightarrow n^{2}-3 n-4=0\)
+<br/><br/>
+\(\Rightarrow n=4,-1\) (rejected)
+<br/><br/>
+\(P(S=4)=\frac{3}{36}=\frac{1}{12}=\frac{4}{48}\)
+<br/><br/>
+\(\therefore k=4\)</li><li><strong>Q3:</strong> \(N\) denote the sum of the numbers obtained when two dice are rolled.
+<br/><br/>Such that \(2^N &lt; N\)!
+<br/><br/>\(
+\text { i.e., } 4 \leq N \leq 12 \text { i.e., } N \in\{4,5,6, \ldots 12\}
+\)
+<br/><br/>Now, \(P(N=2)+P(N=3)=\frac{1}{36}+\frac{2}{36}=\frac{3}{36}=\frac{1}{12}\)
+<br/><br/>So, required probability \(=1-\frac{1}{12}=\frac{11}{12}=\frac{m}{n}\)
+<br/><br/>\(
+4 m-3 n=4 \times 11-3 \times 12=44-36=8
+\)</li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>Let M be the maximum value of the product of two positive integers when their sum is 66. Let the sample space \(S = \left\{ {x \in \mathbb{Z}:x(66 - x) \ge {5 \over 9}M} \right\}\) and the event \(\mathrm{A = \{ x \in S:x\,is\,a\,multiple\,of\,3\}}\). Then P(A) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{1}{3}\]</li>
+<li class="c8">\[\frac{1}{5}\]</li>
+<li class="c8">\[\frac{7}{22}\]</li>
+<li class="c8">\[\frac{15}{44}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>Let \(S=\left\{M=\left[a_{i j}\right], a_{i j} \in\{0,1,2\}, 1 \leq i, j \leq 2\right\}\) be a sample space and \(A=\{M \in S: M\) is invertible \(\}\) be an event. Then \(P(A)\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{47}{81}\]</li>
+<li class="c8">\[\frac{49}{81}\]</li>
+<li class="c8">\[\frac{50}{81}\]</li>
+<li class="c8">\[\frac{16}{27}\]</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>A</strong></li><li>Q2: <strong>C</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> \(x+y=66\)
+<br/><br/>
+\(
+\begin{aligned}
+&amp; \frac{x+y}{2} \geq \sqrt{x y} \\\\
+\Rightarrow &amp; 33 \geq \sqrt{x y} \\\\
+\Rightarrow &amp; x y \leq 1089 \\\\
+\therefore &amp; M=1089 \\\\
+S: &amp; x(66-x) \geq \frac{5}{9} \cdot 1089 \\\\
+&amp; 66 x-x^{2} \geq 605 \\\\
+\Rightarrow &amp; x^{2}-66 x+605 \leq 0
+\end{aligned}
+\)
+<br/><br/>\(\Rightarrow(x-55)(x-11) \leq 0 ; 11 \leq x \leq 55\)
+<br/><br/>Therefore \(S=\{11,12,13 \ldots 55\} \)
+<br/><br/>\(\Rightarrow n(S)=45\)
+<br/><br/>Elements of \(S\) which are multiple of 3 are
+<br/><br/>\(
+\begin{aligned}
+&amp; 12+(n-1) 3=54 \Rightarrow 3(n-1)=42 \Rightarrow n=15 \\\\
+&amp; n(A)=15
+\end{aligned}
+\)
+<br/><br/>\(\Rightarrow P(A)=\frac{15}{45}=\frac{1}{3}\)</li><li><strong>Q2:</strong> We have, \(S=\left\{M=\left[a_{i j}\right], a_{i j} \in\{0,1,2\}, 1 \leq i, j \leq 2\right\}\)
+<br/><br/>Let \(M=\left[\begin{array}{ll}a &amp; b \\ c &amp; d\end{array}\right]\), where \(a, b, c, d \in\{0,1,2\}\)
+<br/><br/>\(
+n(s)=3^4=81
+\)
+<br/><br/>If \(A\) is invertible, then \(|A| \neq 0\)
+<br/><br/>Now, if \(|A|=0\), then \(|M|=0\)
+<br/><br/>\(\therefore a d-b c=0\) or \(a d=b c\)
+<br/><br/><b>Case I :</b> When \(a d=b c=0\), then 
+<br/><br/>There are five ways when \(a d=0\) i.e., 
+<br/><br/>\((a, d)=(0,0),(0,1),(0,2),(1,0),(2,0)\)
+<br/><br/>Similarly, there are again five ways, when \(b c=0\)
+<br/><br/>\(\therefore\) There are total \(5 \times 5=25\) ways, when \(a d=b c=0\)
+<br/><br/><b>Case II :</b> When \(a d=b c=1\)
+<br/><br/>There is only one way, when \(a d=b c=1\)
+<br/><br/>\(
+\text { i.e. } \quad a=b=c=d=1
+\)
+<br/><br/><b>Case III :</b> When \(a d=b c=2\)
+<br/><br/>There are two ways, when \(a d=2\), i.e.
+<br/><br/>\(
+(a, d)=(1,2) \text { or }(2,1)
+\)
+<br/><br/>Similarly, there are two ways
+<br/><br/>when \(b c=2\) i.e., \((b, c)=(1,2)\) or \((2,1)\)
+<br/><br/><b>Case IV :</b> When \(a d-b c=4\)
+<br/><br/>There is only way, when \(a d=b c=4\)
+<br/><br/>\(
+\text { i.e., } a=b=c=d=2
+\)
+<br/><br/>\(\therefore\) Total number of ways, when
+<br/><br/>\(
+\begin{aligned}
+&amp; (\bar{A})=\frac{31}{81}|A|=0 \text { is } 25+1+4+1=31 \\\\
+&amp; \text { Hence, } P(A)=1-P(\bar{A})=1-\frac{31}{81}=\frac{50}{81}
+\end{aligned}
+\)</li>
+</ol>
+</div>
+
+
+
+<div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q1.</span>
+</div>
+<div class="c5"><p>One die has two faces marked 1 , two faces marked 2 , one face marked 3 and one face marked 4 . Another die has one face marked 1 , two faces marked 2 , two faces marked 3 and one face marked 4. The probability of getting the sum of numbers to be 4 or 5 , when both the dice are thrown together, is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\frac{2}{3}\)
+</li>
+<li class="c8">\(\frac{3}{5}\)
+</li>
+<li class="c8">\(\frac{4}{9}\)
+</li>
+<li class="c8">\(\frac{1}{2}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q2.</span>
+</div>
+<div class="c5"><p>\(A\) and \(B\) alternately throw a pair of dice. A wins if he throws a sum of 5 before \(B\) throws a sum of 8 , and \(B\) wins if he throws a sum of 8 before \(A\) throws a sum of 5 . The probability, that A wins if A makes the first throw, is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\frac{8}{19}\)
+</li>
+<li class="c8">\(\frac{9}{19}\)
+</li>
+<li class="c8">\(\frac{8}{17}\)
+</li>
+<li class="c8">\(\frac{9}{17}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q3.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{A}=\left[\mathrm{a}_{\mathrm{ij}}\right]\) be a square matrix of order 2 with entries either 0 or 1 . Let E be the event that A is an invertible matrix. Then the probability \(\mathrm{P}(\mathrm{E})\) is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\frac{3}{8}\)
+</li>
+<li class="c8">\(\frac{1}{8}\)
+</li>
+<li class="c8">\(\frac{3}{16}\)
+</li>
+<li class="c8">\(\frac{5}{8}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q4.</span>
+</div>
+<div class="c5"><p>Two number \(\mathrm{k}_1\) and \(\mathrm{k}_2\) are randomly chosen from the set of natural numbers. Then, the probability that the value of \(\mathrm{i}^{\mathrm{k}_1}+\mathrm{i}^{\mathrm{k}_2},(\mathrm{i}=\sqrt{-1})\) is non-zero, equals</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\(\frac{3}{4}\)
+</li>
+<li class="c8">\(\frac{1}{2}\)
+</li>
+<li class="c8">\(\frac{1}{4}\)
+</li>
+<li class="c8">\(\frac{2}{3}\)</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q5.</span>
+</div>
+<div class="c5"><p>An integer is chosen at random from the integers \(1,2,3, \ldots, 50\). The probability that the chosen integer is a multiple of atleast one of 4, 6 and 7 is</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{8}{25}\]
+</li>
+<li class="c8">\[\frac{9}{50}\]
+</li>
+<li class="c8">\[\frac{14}{25}\]
+</li>
+<li class="c8">\[\frac{21}{50}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q6.</span>
+</div>
+<div class="c5"><p>Two integers \(x\) and \(y\) are chosen with replacement from the set \(\{0,1,2,3, \ldots, 10\}\). Then the probability that \(|x-y|&gt;5\), is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{31}{121}\]
+</li>
+<li class="c8">\[\frac{60}{121}\]
+</li>
+<li class="c8">\[\frac{62}{121}\]
+</li>
+<li class="c8">\[\frac{30}{121}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q7.</span>
+</div>
+<div class="c5"><p>If an unbiased dice is rolled thrice, then the probability of getting a greater number in the \(i^{\text {th }}\) roll than the number obtained in the \((i-1)^{\text {th }}\) roll, \(i=2,3\), is equal to</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">5/54</li>
+<li class="c8">2/54</li>
+<li class="c8">1/54</li>
+<li class="c8">3/54</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q8.</span>
+</div>
+<div class="c5"><p>Let \(\mathrm{a}, \mathrm{b}\) and \(\mathrm{c}\) denote the outcome of three independent rolls of a fair tetrahedral die, whose four faces are marked \(1,2,3,4\). If the probability that \(a x^2+b x+c=0\) has all real roots is \(\frac{m}{n}, \operatorname{gcd}(\mathrm{m}, \mathrm{n})=1\), then \(\mathrm{m}+\mathrm{n}\) is equal to _________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q9.</span>
+</div>
+<div class="c5"><p>The coefficients \(a, b, c\) in the quadratic equation \(a x^2+b x+c=0\) are chosen from the set \(\{1,2,3,4,5,6,7,8\}\). The probability of this equation having repeated roots is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{1}{128}\]
+</li>
+<li class="c8">\[\frac{1}{64}\]
+</li>
+<li class="c8">\[\frac{3}{256}\]
+</li>
+<li class="c8">\[\frac{3}{128}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q10.</span>
+</div>
+<div class="c5"><p>If three letters can be posted to any one of the 5 different addresses, then the probability that the three letters are posted to exactly two addresses is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{18}{25}\]
+</li>
+<li class="c8">\[\frac{12}{25}\]
+</li>
+<li class="c8">\[\frac{6}{25}\]
+</li>
+<li class="c8">\[\frac{4}{25}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q11.</span>
+</div>
+<div class="c5">Let A be the event that the absolute difference between two randomly choosen real numbers in the sample space \([0,60]\) is less than or equal to a . If \(\mathrm{P}(\mathrm{A})=\frac{11}{36}\), then \(\mathrm{a}\) is equal to _______.</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q12.</span>
+</div>
+<div class="c5">A bag contains six balls of different colours. Two balls are drawn in succession with replacement. The probability that both the balls are of the same colour is p. Next four balls are drawn in succession with replacement and the probability that exactly three balls are of the same colour is \(q\). If \(p: q=m: n\), where \(m\) and \(n\) are coprime, then \(m+n\) is equal to :</div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q13.</span>
+</div>
+<div class="c5"><p>If an unbiased die, marked with \(-2,-1,0,1,2,3\) on its faces, is thrown five times, then the probability that the product of the outcomes is positive, is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{27}{288}\]</li>
+<li class="c8">\[\frac{521}{2592}\]</li>
+<li class="c8">\[\frac{440}{2592}\]</li>
+<li class="c8">\[\frac{881}{2592}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q14.</span>
+</div>
+<div class="c5"><p>Let N denote the number that turns up when a fair die is rolled. If the probability that the system of equations</p>
+<p>\(x + y + z = 1\)</p>
+<p>\(2x + \mathrm{N}y + 2z = 2\)</p>
+<p>\(3x + 3y + \mathrm{N}z = 3\)</p>
+<p>has unique solution is \({k \over 6}\), then the sum of value of k and all possible values of N is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">18</li>
+<li class="c8">21</li>
+<li class="c8">20</li>
+<li class="c8">19</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q15.</span>
+</div>
+<div class="c5"><p>Let \(\Omega\) be the sample space and \(\mathrm{A \subseteq \Omega}\) be an event.</p>
+<p>Given below are two statements :</p>
+<p>(S1) : If P(A) = 0, then A = \(\phi\)</p>
+<p>(S2) : If P(A) = 1, then A = \(\Omega\)</p>
+<p>Then :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">both (S1) and (S2) are true</li>
+<li class="c8">both (S1) and (S2) are false</li>
+<li class="c8">only (S2) is true</li>
+<li class="c8">only (S1) is true</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q16.</span>
+</div>
+<div class="c5"><p>Three dice are rolled. If the probability of getting different numbers on the three dice is \(\frac{p}{q}\), where \(p\) and \(q\) are co-prime, then \(q-p\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">3</li>
+<li class="c8">4</li>
+<li class="c8">1</li>
+<li class="c8">2</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q17.</span>
+</div>
+<div class="c5"><p>The probability, that in a randomly selected 3-digit number at least two digits are odd, is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{{19} \over {36}}\]</li>
+<li class="c8">\[{{15} \over {36}}\]</li>
+<li class="c8">\[{{13} \over {36}}\]</li>
+<li class="c8">\[{{23} \over {36}}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q18.</span>
+</div>
+<div class="c5"><p>If a point A(x, y) lies in the region bounded by the y-axis, straight lines 2y + x = 6 and 5x \(-\) 6y = 30, then the probability that y &lt; 1 is :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[{1 \over 6}\]</li>
+<li class="c8">\[{5 \over 6}\]</li>
+<li class="c8">\[{2 \over 3}\]</li>
+<li class="c8">\[{6 \over 7}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q19.</span>
+</div>
+<div class="c5"><p>Let S = {E<sub>1</sub>, E<sub>2</sub>, ........., E<sub>8</sub>} be a sample space of a random experiment such that \(P({E_n}) = {n \over {36}}\) for every n = 1, 2, ........, 8. Then the number of elements in the set \(\left\{ {A \subseteq S:P(A) \ge {4 \over 5}} \right\}\) is ___________.</p></div>
+<div class="c6"></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q20.</span>
+</div>
+<div class="c5"><p>If the numbers appeared on the two throws of a fair six faced die are \(\alpha\) and \(\beta\), then the probability that \(x^{2}+\alpha x+\beta&gt;0\), for all \(x \in \mathbf{R}\), is :
+</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">\[\frac{17}{36}\]</li>
+<li class="c8">\[
+\frac{4}{9}
+\]
+</li>
+<li class="c8">\[\frac{1}{2}\]</li>
+<li class="c8">\[\frac{19}{36}\]</li>
+</ol></div>
+</div>
+<div class="c2">
+<div class="c3">
+<span class="c4">Q21.</span>
+</div>
+<div class="c5"><p>Let \(S\) be the sample space of all five digit numbers. It \(p\) is the probability that a randomly selected number from \(S\), is a multiple of 7 but not divisible by 5 , then \(9 p\) is equal to :</p></div>
+<div class="c6"><ol class="c7" type="A">
+<li class="c8">1.0146</li>
+<li class="c8">1.2085</li>
+<li class="c8">1.0285</li>
+<li class="c8">1.1521</li>
+</ol></div>
+</div>
+</div>
+<div>
+<h4>Answer Key</h4>
+<ol class="c9" style="list-style-type: none;">
+<li>Q1: <strong>D</strong></li><li>Q2: <strong>B</strong></li><li>Q3: <strong>A</strong></li><li>Q4: <strong>A</strong></li><li>Q5: <strong>D</strong></li><li>Q6: <strong>D</strong></li><li>Q7: <strong>A</strong></li><li>Q8: <strong>2</strong></li><li>Q9: <strong>B</strong></li><li>Q10: <strong>B</strong></li><li>Q11: <strong>1</strong></li><li>Q12: <strong>6</strong></li><li>Q13: <strong>B</strong></li><li>Q14: <strong>C</strong></li><li>Q15: <strong>B</strong></li><li>Q16: <strong>B</strong></li><li>Q17: <strong>A</strong></li><li>Q18: <strong>B</strong></li><li>Q19: <strong>36</strong></li><li>Q20: <strong>A</strong></li><li>Q21: <strong>C</strong></li>
+</ol>
+</div>
+<div>
+<h4>Explanations</h4>
+<ol class="c10">
+<li><strong>Q1:</strong> <p>\(\mathrm{a}=\) number or dice 1</p>
+<p>\(\mathrm{b}=\) number on dice 2</p>
+<p>\((a, b)=(1,3),(3,1),(2,2),(2,3),(3,2),(1,4),(4,1)\)</p>
+<p>Required probability</p>
+<p>\(\begin{aligned}
+&amp; =\frac{2}{6} \times \frac{2}{6}+\frac{1}{6} \times \frac{1}{6}+\frac{2}{6} \times \frac{2}{6}+\frac{2}{6} \times \frac{2}{6}+\frac{1}{6} \times \frac{2}{6}+\frac{2}{6} \times \frac{1}{6}+\frac{1}{6} \times \frac{2}{6} \\
+&amp; =\frac{18}{36}=\frac{1}{2}
+\end{aligned}\)</p></li><li><strong>Q2:</strong> <p>\(\begin{aligned}
+&amp; \mathrm{p}\left(\mathrm{~S}_5\right)=\frac{1}{9} \\
+&amp; \mathrm{p}\left(\mathrm{~S}_5\right)=\frac{5}{36} \\
+&amp; \text { required prob }=\frac{1}{9}+\frac{8}{9} \cdot \frac{31}{36} \cdot \frac{1}{9}+\left(\frac{8}{9} \cdot \frac{31}{36}\right)^2 \cdot \frac{1}{9}+\ldots \infty \\
+&amp; =\frac{\frac{1}{9}}{1-\frac{62}{81}}=\frac{9}{19}
+\end{aligned}\)</p></li><li><strong>Q3:</strong> <p>C-I \(\left|\begin{array}{ll}1 &amp; 1 \\ 0 &amp; 1\end{array}\right| \rightarrow 4\) ways</p>
+<p>C-II \(\left|\begin{array}{ll}1 &amp; 0 \\ 0 &amp; 1\end{array}\right| \&amp;\left|\begin{array}{ll}0 &amp; 1 \\ 1 &amp; 0\end{array}\right| \rightarrow 2\) ways</p>
+<p>\(\mathrm{P}=\frac{\text { favourable }}{\text { total }}=\frac{6}{16}=\frac{3}{8}\)</p></li><li><strong>Q4:</strong> <p>\(i^{k_1}+i^{k_2} \neq 0 \quad i^{k_1} \rightarrow 4\) option for \(\mathrm{i},-1,-\mathrm{i}, 1\)</p>
+<p>Total cases \(\Rightarrow 4 \times 4=16\)</p>
+<p>Unfovourble cases \(\Rightarrow \mathrm{i}^{\mathrm{k}_1}+\mathrm{i}^{\mathrm{k}_2}=0\)</p>
+<p>\(\left\{\begin{array}{c}
+1,-1 \\
+-1,1 \\
+i,-i \\
+-i, i
+\end{array}\right\}\)</p>
+<p>4 Cases \(\Rightarrow\) Probability \(=\frac{16-4}{16}=\frac{3}{4}\)</p></li><li><strong>Q5:</strong> <p>Given set \(=\{1,2,3, \ldots \ldots . .50\}\)</p>
+<p>\(\mathrm{P}(\mathrm{A})=\) Probability that number is multiple of 4</p>
+<p>\(\mathrm{P(B)}=\) Probability that number is multiple of 6</p>
+<p>\(\mathrm{P}(\mathrm{C})=\) Probability that number is multiple of 7</p>
+<p>Now,</p>
+<p>\(\mathrm{P}(\mathrm{A})=\frac{12}{50}, \mathrm{P}(\mathrm{B})=\frac{8}{50}, \mathrm{P}(\mathrm{C})=\frac{7}{50}\)</p>
+<p>again</p>
+<p>\(\begin{aligned}
+&amp; \mathrm{P}(\mathrm{A} \cap \mathrm{B})=\frac{4}{50}, \mathrm{P}(\mathrm{B} \cap \mathrm{C})=\frac{1}{50}, \mathrm{P}(\mathrm{A} \cap \mathrm{C})=\frac{1}{50} \\
+&amp; \mathrm{P}(\mathrm{A} \cap \mathrm{B} \cap \mathrm{C})=0
+\end{aligned}\)</p>
+<p>Thus</p>
+<p>\(\begin{aligned}
+P(A &amp; \cup B \cup C)=\frac{12}{50}+\frac{8}{50}+\frac{7}{50}-\frac{4}{50}-\frac{1}{50}-\frac{1}{50}+0 \\
+&amp; =\frac{21}{50}
+\end{aligned}\)</p></li><li><strong>Q6:</strong> <p>If \(x=0, y=6,7,8,9,10\)</p>
+<p>If \(x=1, y=7,8,9,10\)</p>
+<p>If \(x=2, y=8,9,10\)</p>
+<p>If \(x=3, y=9,10\)</p>
+<p>If \(x=4, y=10\)</p>
+<p>If \(x=5, y=\) no possible value</p>
+<p>Total possible ways \(=(5+4+3+2+1) \times 2\)</p>
+<p>\(=30\)</p>
+<p>Required probability \(=\frac{30}{11 \times 11}=\frac{30}{121}\)</p></li><li><strong>Q7:</strong> <p>Let's denote the outcomes of the three rolls as \(X_1\), \(X_2\), and \(X_3\), where \(X_i\) represents the number obtained in the \(i^{\text{th}}\) roll. We are looking for the probability that:</p>
+<p>\(X_2 &gt; X_1 \text{ and } X_3 &gt; X_2\)</p>
+<p>The total number of outcomes when rolling a dice three times is: </p>
+<p>\(6^3 = 216\)</p>
+<p>Let's count the favorable outcomes. For each satisfying outcome, we must ensure that both inequalities are adhered to. Consider the possible sequences where every subsequent roll's number is higher than the previous roll's number. These sequences are:</p>
+<ul>
+<li>(1, 2, 3)</li>
+<li>(1, 2, 4)</li>
+<li>(1, 2, 5)</li>
+<li>(1, 2, 6)</li>
+<li>(1, 3, 4)</li>
+<li>(1, 3, 5)</li>
+<li>(1, 3, 6)</li>
+<li>(1, 4, 5)</li>
+<li>(1, 4, 6)</li>
+<li>(1, 5, 6)</li>
+<li>(2, 3, 4)</li>
+<li>(2, 3, 5)</li>
+<li>(2, 3, 6)</li>
+<li>(2, 4, 5)</li>
+<li>(2, 4, 6)</li>
+<li>(2, 5, 6)</li>
+<li>(3, 4, 5)</li>
+<li>(3, 4, 6)</li>
+<li>(3, 5, 6)</li>
+<li>(4, 5, 6)</li>
+</ul>
+<p>Clearly, there are 20 such favorable outcomes. Hence, the probability is given by:</p>
+<p>\( \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}} = \frac{20}{216} = \frac{5}{54} \)</p>
+<p>Therefore, the correct option is:</p>
+<p>Option A: \(\frac{5}{54}\)</p></li><li><strong>Q8:</strong> <p>A quadratic equation \(ax^2 + bx + c = 0\) has real roots if and only if its discriminant is non-negative. The discriminant \(\Delta\) of the quadratic equation is given by:</p>
+<p>\(\Delta = b^2 - 4ac\)</p>
+<p>For the quadratic equation to have all real roots, the discriminant must be non-negative:</p>
+<p>\(\Delta \geq 0\)</p>
+<p>That means:</p>
+<p>\(b^2 - 4ac \geq 0\)</p>
+<p>Given that \(a, b, c\) are the outcomes of rolling a fair tetrahedral die, they can each be one of the numbers 1, 2, 3, or 4. Our task is to determine the probability that this condition holds.</p>
+<p>We need to analyze the cases where \(b^2 \geq 4ac\).</p>
+<p>Let’s consider all possible values for \(a\), \(b\), and \(c\), and count how many of them satisfy the condition. Since there are 4 choices for each of the variables, there are a total of \(4 \times 4 \times 4 = 64\) possible combinations.</p>
+<p>Now, we count the valid combinations where \(b^2 \geq 4ac\):</p>
+<ul>
+<li>For \(a = 1\): \(b^2 \geq 4c\)</li>
+<ul>
+<li>\(b = 1: 1 \geq 4c \rightarrow \text{(Not possible since } c \ \text{must be } \geq 1 \text{ and not zero)}\)</li>
+<li>\(b = 2: 4 \geq 4c \rightarrow c \leq 1 \rightarrow c = 1\) (1 case)</li>
+<li>\(b = 3: 9 \geq 4c \rightarrow c \leq 2 \rightarrow c = 1 \text{ or } 2\) (2 cases)</li>
+<li>\(b = 4: 16 \geq 4c \rightarrow c \leq 4 \rightarrow c = 1, 2, 3, 4\) (4 cases)</li>
+</ul>
+<p>Total for \(a = 1 = 1 + 2 + 4 = 7\)</p>
+<li>For \(a = 2\): \(b^2 \geq 8c\)</li>
+<ul>
+<li>\(b = 1: 1 \geq 8c \rightarrow \text{(Not possible)}\)</li>
+<li>\(b = 2: 4 \geq 8c \rightarrow \text{(Not possible)}\)</li>
+<li>\(b = 3: 9 \geq 8c \rightarrow c \leq 1\) (1 case)</li>
+<li>\(b = 4: 16 \geq 8c \rightarrow c \leq 2\) (2 cases)</li>
+</ul>
+<p>Total for \(a = 2 = 1 + 2 = 3\)</p>
+<li>For \(a = 3\): \(b^2 \geq 12c\)</li>
+<ul>
+<li>\(b = 1: 1 \geq 12c \rightarrow \text{(Not possible)}\)</li>
+<li>\(b = 2: 4 \geq 12c \rightarrow \text{(Not possible)}\)</li>
+<li>\(b = 3: 9 \geq 12c \rightarrow \text{(Not possible)}\)</li>
+<li>\(b = 4: 16 \geq 12c \rightarrow c \leq 1\) (1 case)</li>
+</ul>
+<p>Total for \(a = 3 = 1\)</p>
+<li>For \(a = 4\): \(b^2 \geq 16c\)</li>
+<ul>
+<li>\(b = 1: 1 \geq 16c \rightarrow \text{(Not possible)}\)</li>
+<li>\(b = 2: 4 \geq 16c \rightarrow \text{(Not possible)}\)</li>
+<li>\(b = 3: 9 \geq 16c \rightarrow \text{(Not possible)}\)</li>
+<li>\(b = 4: 16 \geq 16c \rightarrow c \leq 1\) (1 case)</li>
+</ul>
+<p>Total for \(a = 4 = 1\)</p>
+</ul>
+<p>Adding up all the valid cases:</p>
+<p>\(7 + 3 + 1 + 1 = 12\)</p>
+<p>The total number of valid combinations is 12 out of 64. Thus, the probability is:</p>
+<p>\(\frac{12}{64} = \frac{3}{16}\)</p>
+<p>The value of \(\mathrm{m} = 3\) and \(\mathrm{n} = 16\). The sum \(\mathrm{m} + \mathrm{n} = 3 + 16 = 19\).</p>
+<p>Hence, the answer is 19.</p></li><li><strong>Q9:</strong> <p>Given quadratic equation is</p>
+<p>\(a x^2+b x+c=0 \text { where } a, b, c \in\{1,2,3, \ldots, 8\}\)</p>
+<p>For repeated roots,</p>
+<p>\(\begin{aligned}
+&amp; b^2-4 a c=0 \\
+&amp; \Rightarrow b^2=4 a c
+\end{aligned}\)</p>
+<p>\(\Rightarrow a c\) must be a perfect square</p>
+<p>\((a, c) \in\{(1,1),(1,4),(2,2),(2,8),(3,3),(4,1),(4,4),(5,5),(6,6),(7,7),(8,2),(8,8)\}\)</p>
+<p>Corresponding \(b\) must lie in set \(\{1,2,3, \ldots 8\}\)</p>
+<p>\(\begin{aligned}
+&amp; (a, b, c) \in\{(1,2,1),(1,2,4),(2,4,2),(2,8,8) \\
+&amp; (3,6,3),(4,4,1),(4,8,4),(8,8,2)\} \\
+&amp; \therefore \text { probability }=\frac{8}{8^3} \\
+&amp; =\frac{1}{64} \\
+&amp;
+\end{aligned}\)</p></li><li><strong>Q10:</strong> <p>We have 3 letters and 5 addresses, where 3 letters are posted to exactly 2 addresses. First, we will select 2 addresses in \({ }^5 C_2\) ways.</p>
+<p>Now, 3 letters can be posted to exactly 2 addresses in 6 ways.</p>
+<p>\(\begin{aligned}
+\therefore \text { Probability }=\frac{{ }^5 C_2 \times 6}{5^3} &amp; \\
+&amp; =\frac{60}{125}=\frac{12}{25}
+\end{aligned}\)</p></li><li><strong>Q11:</strong> \(
+\begin{aligned}
+&amp; |\mathrm{x}-\mathrm{y}|&lt;\mathrm{a} \Rightarrow-\mathrm{a}&lt;\mathrm{x}-\mathrm{y}&lt;\mathrm{a} \\\\
+&amp; \Rightarrow \mathrm{x}-\mathrm{y}&lt;\mathrm{a} \text { and } \mathrm{x}-\mathrm{y}&gt;-\mathrm{a}
+\end{aligned}
+\)
+<br/><br/><img alt="JEE Main 2023 (Online) 31st January Evening Shift Mathematics - Probability Question 73 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1leeeen4s/b4b3dede-ba28-4c8d-af23-57eb35c25759/f55c2dc0-b1fb-11ed-afd2-4f73ef263f1c/file-1leeeen4t.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1leeeen4s/b4b3dede-ba28-4c8d-af23-57eb35c25759/f55c2dc0-b1fb-11ed-afd2-4f73ef263f1c/file-1leeeen4t.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/>
+<br/><br/>\(
+\begin{aligned}
+&amp; \mathrm{P}(\mathrm{A})=\frac{\operatorname{ar}(\mathrm{OACDEG})}{(\mathrm{OBDF})} \\\\
+&amp; =\frac{\operatorname{ar}(\mathrm{OBDF})-\operatorname{ar}(\mathrm{ABC})-\operatorname{ar}(\mathrm{EFG})}{\operatorname{ar}(\mathrm{OBDF})} \\\\
+&amp; \Rightarrow \frac{11}{36}=\frac{(60)^2-\frac{1}{2}(60-\mathrm{a})^2-\frac{1}{2}(60-\mathrm{a})^2}{3600} \\\\
+&amp; \Rightarrow  1100=3600-(60-\mathrm{a})^2 \\\\
+&amp; \Rightarrow (60-\mathrm{a})^2=2500 \Rightarrow 60-\mathrm{a}=50 \\\\
+&amp; \Rightarrow  \mathrm{a}=10
+\end{aligned}
+\)</li><li><strong>Q12:</strong> <p>\(p = {6 \over {36}} = {1 \over 6}\)</p>
+<p>\(q = {{{}^6{C_1} \times {}^5{C_1} \times {{4!} \over {3!}}} \over {{6^4}}} = {{120} \over {1296}} = {5 \over {54}}\)</p>
+<p>\({p \over q} = {{{1 \over 6}} \over {{5 \over {54}}}} = {{54} \over {6 \times 5}} = {9 \over 5} = {m \over n}\)</p>
+<p>\(m + n = 14\)</p></li><li><strong>Q13:</strong> <p>\({}^5{C_0} \times {3^5} = 243\)</p>
+<p>\({}^5{C_2} \times {2^2} \times {3^3} = 1080\)</p>
+<p>\({}^5{C_4} \times {2^4}\,.\,3 = 240\)</p>
+<p>\(\therefore\) required probability</p>
+<p>\( = {{243 + 1080 + 240} \over {6 \times 6 \times 6 \times 6 \times 6}} = {{521} \over {2592}}\)</p></li><li><strong>Q14:</strong> For unique solution \(\Delta \neq 0\)
+<br><br>
+i.e. \(\left|\begin{array}{ccc}1 &amp; 1 &amp; 1 \\ 2 &amp; N &amp; 2 \\ 3 &amp; 3 &amp; N\end{array}\right| \neq 0\)
+<br><br>
+\(\Rightarrow\left(N^{2}-6\right)-(2 N-6)+(6-3 N) \neq 0\)
+<br/><br/>
+\(\Rightarrow N^{2}-5 N+6 \neq 0\)
+<br/><br/>
+\(\therefore N \neq 2\) and \(N \neq 3\)
+<br/><br/>
+\(\therefore \) Probability of not getting 2 or 3 in a throw of dice \(=\frac{2}{3}\)
+<br/><br/>
+As given \(\frac{2}{3}=\frac{k}{6} \Rightarrow k=4\)
+<br/><br/>
+\(\therefore\) Required value \(=1+4+5+6+4=20\)
+</br></br></br></br></li><li><strong>Q15:</strong> \(\Omega=\) sample space<br/><br/>
+\(\mathrm{A}=\) be an event<br/><br/>
+\( \Omega\) = A wire of length 1 which starts at point 0 and ends at point 1 on the coordinate axis  = \([0,1]\)<br/><br/>
+\(\mathrm{A}=\left\{\frac{1}{2}\right\}\) = Selecting a point on the wire which is at \(\left\{\frac{1} {2}\right\}\) or 0.5
+<br/><br/>As wire is an 1-D object so from geometrical probability
+<br/><br/>\(P(A)=\frac{\text { Favourable Length }}{\text { Total Length }}\)
+<br/><br/>Here total length of wire = 1 unit
+<br/><br/>and point has zero length  so point A at \(\left\{\frac{1} {2}\right\}\) or 0.5 has length = 0.
+<br/><br/>\( \therefore \) Favorable length = 0
+<br/><br/>
+\( \therefore \) \(\mathrm{P}(\mathrm{A})=0 {\text { but }} \mathrm{A} \neq \phi\)
+<br/><br/>Now \(\overline{\mathrm{A}}\) = \([0,1]\) - \(\left\{\frac{1} {2}\right\}\)
+<br/><br/>So, length of \(\overline{\mathrm{A}}\) = Length of entire wire - Length of point A = 1
+<br/><br/>
+\( \therefore \) \(\mathrm{P}(\overline{\mathrm{A}})=1 {\text { but }} \overline{\mathrm{A}} \neq \Omega\).<br/><br/>
+Then both statements are false.
+<br/><br/><b>Attention :</b> According to NTA option A is correct. Which is wrong. That is proven here using geometrical probability.
+<br/><br/><b>Note :</b>
+<br/><br/>Geometrical probability :
+<br/><br/>1. For 1-D object, \(P(A)=\frac{\text { Favourable Length }}{\text { Total Length }}\)
+<br/><br/>2. For 2-D object, \(P(A)=\frac{\text { Favourable Area }}{\text { Total Area }}\)
+<br/><br/>3. For 2-D object, \(P(A)=\frac{\text { Favourable volume }}{\text { Total volume }}\)</li><li><strong>Q16:</strong> Total number of outcomes \(=6 \times 6 \times 6=216\)
+
+<br/><br/>Number of outcomes getting different numbers on the three dice are \({ }^6 P_3=\frac{6 !}{3 !}=120\)
+<br/><br/>\(\therefore\) Required probability \(=\frac{120}{216}=\frac{5}{9}\)
+<br/><br/>\(\therefore p=5\) and \(q=9\)
+<br/><br/>\(\therefore q-p=9-5=4\)</li><li><strong>Q17:</strong> At least two digits are odd = exactly two digits are odd + exactly there 3 digits
+are odd <br/><br/>For exactly three digits are odd <br/><br/>
+<img alt="JEE Main 2022 (Online) 28th June Morning Shift Mathematics - Probability Question 104 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1lc8eefiq/e8de7882-e991-47ff-999d-2ea9ce2e3c3f/ccd33f20-8716-11ed-92bb-e57e64e1a06d/file-1lc8eefir.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1lc8eefiq/e8de7882-e991-47ff-999d-2ea9ce2e3c3f/ccd33f20-8716-11ed-92bb-e57e64e1a06d/file-1lc8eefir.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/><br/>
+For exactly two digits odd :<br/><br/>
+If 0 is used then \(: 2 \times 5 \times 5=50\)<br/><br/>
+If 0 is not used then : \({ }^3 \mathrm{C}_1 \times 4 \times 5 \times 5=300\)<br/><br/>
+Required Probability \(=\frac{475}{900}=\frac{19}{36}\)</li><li><strong>Q18:</strong> <p>The required probability</p>
+<p><img alt="JEE Main 2022 (Online) 27th June Evening Shift Mathematics - Probability Question 103 English Explanation" data-orsrc="https://app-content.cdn.examgoal.net/image/1l5p7g5yy/9381a58a-1f21-4b26-abca-dc94a3e72b11/6c8ce9a0-05bf-11ed-8617-d71e6444d1a0/file-1l5p7g5yz.png" loading="lazy" src="https://app-content.cdn.examgoal.net/fly/@width/image/1l5p7g5yy/9381a58a-1f21-4b26-abca-dc94a3e72b11/6c8ce9a0-05bf-11ed-8617-d71e6444d1a0/file-1l5p7g5yz.png?format=png" style="max-width: 100%; height: auto; display: block; margin: 0px auto; max-height: 40vh;"/></p>
+<p>\( = {\text{Area of  Region PQCAP} \over \text{Area of Region ABCA}}\)</p>
+<p>\( = {{{1 \over 2} \times 8 \times 6 - {1 \over 2} \times 2 \times 4} \over {{1 \over 2} \times 8 \times 6}}\)</p>
+<p>\( = {5 \over 6}\)</p></li><li><strong>Q19:</strong> <p>Here \(P({E_n}) = {n \over {36}}\) for n = 1, 2, 3, ......, 8</p>
+<p>Here \(P(A) = {{Any\,possible\,sum\,of\,(1,2,3,\,...,\,8)( = a\,say)} \over {36}}\)</p>
+<p>\(\because\) \({a \over {36}} \ge {4 \over 5}\)</p>
+<p>\(\therefore\) \(a \ge 29\)</p>
+<p>If one of the number from {1, 2, ......, 8} is left then total \(a \ge 29\) by 3 ways.</p>
+<p>Similarly by leaving terms more 2 or 3 we get 16 more combinations.</p>
+<p>\(\therefore\) Total number of different set A possible is 16 + 3 = 19</p></li><li><strong>Q20:</strong> For \(x^{2}+\alpha x+\beta&gt;0 \forall x \in R\) to hold, we should have \(\alpha^{2}-4 \beta&lt;0\)
+<br><br>
+If \(\alpha=1, \beta\) can be 1, 2, 3, 4, 5, 6 i.e., 6 choices
+<br><br>
+If \(\alpha=2, \beta\) can be 2, 3, 4, 5, 6 i.e., 5 choices
+<br><br>
+If \(\alpha=3, \beta\) can be \(3,4,5,6\) i.e., 4 choices
+<br><br>
+If \(\alpha=4, \beta\) can be 5 or 6 i.e., 2 choices
+<br><br>
+If \(\alpha=6\), No possible value for \(\beta\) i.e., 0 choices<br><br/>
+Hence total favourable outcomes
+<br/><br/>
+\(
+\begin{aligned}
+&amp;=6+5+4+2+0+0 \\\\
+&amp;=17
+\end{aligned}
+\)
+<br/><br/>
+Total possible choices for \(\alpha\) and \(\beta=6 \times 6=36\)
+<br/><br/>
+Required probability \(=\frac{17}{36}\)</br></br></br></br></br></br></br></br></br></br></br></li><li><strong>Q21:</strong> <p>Among the 5 digit numbers,</p>
+<p>First number divisible by 7 is 10003 and last is 99995.</p>
+<p>\(\Rightarrow\) Number of numbers divisible by 7.</p>
+<p>\( = {{99995 - 10003} \over 7} + 1\)</p>
+<p>\( = 12857\)</p>
+<p>First number divisible by 35 is 10010 and last is 99995.</p>
+<p>\(\Rightarrow\) Number of numbers divisible by 35</p>
+<p>\( = {{99995 - 10010} \over {35}} + 1\)</p>
+<p>\( = 2572\)</p>
+<p>Hence number of number divisible by 7 but not by 5</p>
+<p>\( = 12857 - 2572\)</p>
+<p>\( = 10285\)</p>
+<p>\(9P. = {{10285} \over {90000}} \times 9\)</p>
+<p>\( = 1.0285\)</p></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>
