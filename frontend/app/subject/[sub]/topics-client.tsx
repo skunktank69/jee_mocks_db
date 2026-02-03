@@ -20,6 +20,8 @@ export default function TopicsClient({ sub, subject, topics }: Props) {
   const router = useRouter();
   const [mode, setMode] = useState<"topicwise" | "mock">("topicwise");
   const [selected, setSelected] = useState<Set<string>>(new Set());
+  const [creating, setCreating] = useState(false);
+  const [err, setErr] = useState<string | null>(null);
 
   const sortedTopics = useMemo(
     () => [...topics].sort((a, b) => a.localeCompare(b)),
@@ -43,11 +45,41 @@ export default function TopicsClient({ sub, subject, topics }: Props) {
     setSelected(new Set());
   }
 
-  function createMock() {
+  async function createMock() {
     const list = [...selected];
-    if (!list.length) return;
-    const sublist = encodeURIComponent(list.join(","));
-    router.push(`/create-mock?subject=${sublist}`);
+    if (!list.length || creating) return;
+
+    setErr(null);
+    setCreating(true);
+
+    try {
+      // NOTE: your API expects `subject` but it is a comma-separated chapter list
+      const chapters = encodeURIComponent(list.join(","));
+      const res = await fetch(`/api/mock/create?subject=${chapters}`, {
+        method: "GET",
+        cache: "no-store",
+      });
+
+      if (!res.ok) {
+        const txt = await res.text().catch(() => "");
+        throw new Error(
+          `Mock create failed: HTTP ${res.status}${txt ? ` — ${txt}` : ""}`,
+        );
+      }
+
+      const data = (await res.json()) as { shareUrl?: string };
+
+      if (!data?.shareUrl) {
+        throw new Error("Mock create failed: missing shareUrl in response");
+      }
+
+      // Shareable link returned by the API
+      router.push(data.shareUrl);
+    } catch (e: any) {
+      setErr(e?.message ?? "Failed to create mock");
+    } finally {
+      setCreating(false);
+    }
   }
 
   return (
@@ -56,6 +88,7 @@ export default function TopicsClient({ sub, subject, topics }: Props) {
         <div>
           <h1 className="text-2xl font-semibold">{prettifyTopic(subject)}</h1>
           <p className="text-sm opacity-80">{sortedTopics.length} topics</p>
+          {err ? <p className="mt-2 text-sm text-red-500">{err}</p> : null}
         </div>
 
         <div className="flex gap-2">
@@ -95,7 +128,6 @@ export default function TopicsClient({ sub, subject, topics }: Props) {
                 <div className="font-medium truncate">{prettifyTopic(t)}</div>
               </div>
 
-              {/* ">" dropdown button */}
               <details className="relative">
                 <summary
                   className="list-none cursor-pointer select-none px-2 py-1 rounded-md border text-sm leading-none"
@@ -120,7 +152,7 @@ export default function TopicsClient({ sub, subject, topics }: Props) {
 
                   <button
                     type="button"
-                    className="w-full text-left px-3 py-2 text-sm 2hover:bg-sidebar-accent"
+                    className="w-full text-left px-3 py-2 text-sm hover:bg-sidebar-accent"
                     onClick={() =>
                       router.push(
                         `/subject/${encodeURIComponent(sub)}/${encodeURIComponent(
@@ -148,6 +180,7 @@ export default function TopicsClient({ sub, subject, topics }: Props) {
                 type="button"
                 className="px-3 py-2 rounded-md border text-sm"
                 onClick={selectAll}
+                disabled={creating}
               >
                 Select all
               </button>
@@ -155,20 +188,22 @@ export default function TopicsClient({ sub, subject, topics }: Props) {
                 type="button"
                 className="px-3 py-2 rounded-md border text-sm"
                 onClick={clearAll}
+                disabled={creating}
               >
                 Clear
               </button>
+
               <button
                 type="button"
                 className={`px-3 py-2 rounded-md border text-sm ${
-                  selected.size
+                  selected.size && !creating
                     ? "bg-foreground text-background"
-                    : "bg-foreground text-background cursor-not-allowed"
+                    : "bg-muted text-muted-foreground cursor-not-allowed"
                 }`}
                 onClick={createMock}
-                disabled={!selected.size}
+                disabled={!selected.size || creating}
               >
-                Create mock
+                {creating ? "Creating..." : "Create mock"}
               </button>
             </div>
           </div>
@@ -181,8 +216,11 @@ export default function TopicsClient({ sub, subject, topics }: Props) {
                   key={t}
                   type="button"
                   onClick={() => toggleTopic(t)}
+                  disabled={creating}
                   className={`text-left rounded-xl border p-3 transition ${
-                    checked ? "bg-background text-foreground" : "bg-bg-card"
+                    checked
+                      ? "bg-card text-foreground"
+                      : "bg-background text-foreground"
                   }`}
                 >
                   <div className="flex items-start justify-between gap-3">
@@ -198,9 +236,10 @@ export default function TopicsClient({ sub, subject, topics }: Props) {
                         {t}
                       </div>
                     </div>
+
                     <div
                       className={`w-4 h-4 rounded border flex items-center justify-center text-xs ${
-                        checked ? "bg-card text-foreground" : ""
+                        checked ? "bg-foreground text-background" : ""
                       }`}
                       aria-hidden="true"
                     >

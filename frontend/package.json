@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "cheerio": "^1.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.563.0",
@@ -17,7 +18,8 @@
     "radix-ui": "^1.4.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "tailwind-merge": "^3.4.0"
+    "tailwind-merge": "^3.4.0",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
