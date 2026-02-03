@@ -1,0 +1,932 @@
+{
+  "subjects": {
+    "Physics": {
+      "folderName": "Physics",
+      "topics": {
+        "alternating-current": {
+          "topic": "alternating-current",
+          "files": [
+            {
+              "name": "alternating-current.jsonl",
+              "relPath": "Physics/alternating-current.jsonl"
+            }
+          ]
+        },
+        "atoms-and-nuclei": {
+          "topic": "atoms-and-nuclei",
+          "files": [
+            {
+              "name": "atoms-and-nuclei.jsonl",
+              "relPath": "Physics/atoms-and-nuclei.jsonl"
+            }
+          ]
+        },
+        "capacitor": {
+          "topic": "capacitor",
+          "files": [
+            {
+              "name": "capacitor.jsonl",
+              "relPath": "Physics/capacitor.jsonl"
+            }
+          ]
+        },
+        "center-of-mass": {
+          "topic": "center-of-mass",
+          "files": [
+            {
+              "name": "center-of-mass.jsonl",
+              "relPath": "Physics/center-of-mass.jsonl"
+            }
+          ]
+        },
+        "circular-motion": {
+          "topic": "circular-motion",
+          "files": [
+            {
+              "name": "circular-motion.jsonl",
+              "relPath": "Physics/circular-motion.jsonl"
+            }
+          ]
+        },
+        "communication-systems": {
+          "topic": "communication-systems",
+          "files": [
+            {
+              "name": "communication-systems.jsonl",
+              "relPath": "Physics/communication-systems.jsonl"
+            }
+          ]
+        },
+        "current-electricity": {
+          "topic": "current-electricity",
+          "files": [
+            {
+              "name": "current-electricity.jsonl",
+              "relPath": "Physics/current-electricity.jsonl"
+            }
+          ]
+        },
+        "dual-nature-of-radiation": {
+          "topic": "dual-nature-of-radiation",
+          "files": [
+            {
+              "name": "dual-nature-of-radiation.jsonl",
+              "relPath": "Physics/dual-nature-of-radiation.jsonl"
+            }
+          ]
+        },
+        "electromagnetic-induction": {
+          "topic": "electromagnetic-induction",
+          "files": [
+            {
+              "name": "electromagnetic-induction.jsonl",
+              "relPath": "Physics/electromagnetic-induction.jsonl"
+            }
+          ]
+        },
+        "electromagnetic-waves": {
+          "topic": "electromagnetic-waves",
+          "files": [
+            {
+              "name": "electromagnetic-waves.jsonl",
+              "relPath": "Physics/electromagnetic-waves.jsonl"
+            }
+          ]
+        },
+        "electronic-devices": {
+          "topic": "electronic-devices",
+          "files": [
+            {
+              "name": "electronic-devices.jsonl",
+              "relPath": "Physics/electronic-devices.jsonl"
+            }
+          ]
+        },
+        "electrostatics": {
+          "topic": "electrostatics",
+          "files": [
+            {
+              "name": "electrostatics.jsonl",
+              "relPath": "Physics/electrostatics.jsonl"
+            }
+          ]
+        },
+        "geometrical-optics": {
+          "topic": "geometrical-optics",
+          "files": [
+            {
+              "name": "geometrical-optics.jsonl",
+              "relPath": "Physics/geometrical-optics.jsonl"
+            }
+          ]
+        },
+        "gravitation": {
+          "topic": "gravitation",
+          "files": [
+            {
+              "name": "gravitation.jsonl",
+              "relPath": "Physics/gravitation.jsonl"
+            }
+          ]
+        },
+        "heat-and-thermodynamics": {
+          "topic": "heat-and-thermodynamics",
+          "files": [
+            {
+              "name": "heat-and-thermodynamics.jsonl",
+              "relPath": "Physics/heat-and-thermodynamics.jsonl"
+            }
+          ]
+        },
+        "laws-of-motion": {
+          "topic": "laws-of-motion",
+          "files": [
+            {
+              "name": "laws-of-motion.jsonl",
+              "relPath": "Physics/laws-of-motion.jsonl"
+            }
+          ]
+        },
+        "magnetic-properties-of-matter": {
+          "topic": "magnetic-properties-of-matter",
+          "files": [
+            {
+              "name": "magnetic-properties-of-matter.jsonl",
+              "relPath": "Physics/magnetic-properties-of-matter.jsonl"
+            }
+          ]
+        },
+        "magnetics": {
+          "topic": "magnetics",
+          "files": [
+            {
+              "name": "magnetics.jsonl",
+              "relPath": "Physics/magnetics.jsonl"
+            }
+          ]
+        },
+        "motion-in-a-plane": {
+          "topic": "motion-in-a-plane",
+          "files": [
+            {
+              "name": "motion-in-a-plane.jsonl",
+              "relPath": "Physics/motion-in-a-plane.jsonl"
+            }
+          ]
+        },
+        "motion-in-a-straight-line": {
+          "topic": "motion-in-a-straight-line",
+          "files": [
+            {
+              "name": "motion-in-a-straight-line.jsonl",
+              "relPath": "Physics/motion-in-a-straight-line.jsonl"
+            }
+          ]
+        },
+        "properties-of-matter": {
+          "topic": "properties-of-matter",
+          "files": [
+            {
+              "name": "properties-of-matter.jsonl",
+              "relPath": "Physics/properties-of-matter.jsonl"
+            }
+          ]
+        },
+        "rotational-motion": {
+          "topic": "rotational-motion",
+          "files": [
+            {
+              "name": "rotational-motion.jsonl",
+              "relPath": "Physics/rotational-motion.jsonl"
+            }
+          ]
+        },
+        "simple-harmonic-motion": {
+          "topic": "simple-harmonic-motion",
+          "files": [
+            {
+              "name": "simple-harmonic-motion.jsonl",
+              "relPath": "Physics/simple-harmonic-motion.jsonl"
+            }
+          ]
+        },
+        "units-and-measurements": {
+          "topic": "units-and-measurements",
+          "files": [
+            {
+              "name": "units-and-measurements.jsonl",
+              "relPath": "Physics/units-and-measurements.jsonl"
+            }
+          ]
+        },
+        "vector-algebra": {
+          "topic": "vector-algebra",
+          "files": [
+            {
+              "name": "vector-algebra.jsonl",
+              "relPath": "Physics/vector-algebra.jsonl"
+            }
+          ]
+        },
+        "wave-optics": {
+          "topic": "wave-optics",
+          "files": [
+            {
+              "name": "wave-optics.jsonl",
+              "relPath": "Physics/wave-optics.jsonl"
+            }
+          ]
+        },
+        "waves": {
+          "topic": "waves",
+          "files": [
+            {
+              "name": "waves.jsonl",
+              "relPath": "Physics/waves.jsonl"
+            }
+          ]
+        },
+        "work-power-and-energy": {
+          "topic": "work-power-and-energy",
+          "files": [
+            {
+              "name": "work-power-and-energy.jsonl",
+              "relPath": "Physics/work-power-and-energy.jsonl"
+            }
+          ]
+        }
+      },
+      "topicList": [
+        "alternating-current",
+        "atoms-and-nuclei",
+        "capacitor",
+        "center-of-mass",
+        "circular-motion",
+        "communication-systems",
+        "current-electricity",
+        "dual-nature-of-radiation",
+        "electromagnetic-induction",
+        "electromagnetic-waves",
+        "electronic-devices",
+        "electrostatics",
+        "geometrical-optics",
+        "gravitation",
+        "heat-and-thermodynamics",
+        "laws-of-motion",
+        "magnetic-properties-of-matter",
+        "magnetics",
+        "motion-in-a-plane",
+        "motion-in-a-straight-line",
+        "properties-of-matter",
+        "rotational-motion",
+        "simple-harmonic-motion",
+        "units-and-measurements",
+        "vector-algebra",
+        "wave-optics",
+        "waves",
+        "work-power-and-energy"
+      ]
+    },
+    "Mathematics": {
+      "folderName": "Mathematics",
+      "topics": {
+        "3d-geometry": {
+          "topic": "3d-geometry",
+          "files": [
+            {
+              "name": "3d-geometry.jsonl",
+              "relPath": "Mathematics/3d-geometry.jsonl"
+            }
+          ]
+        },
+        "application-of-derivatives": {
+          "topic": "application-of-derivatives",
+          "files": [
+            {
+              "name": "application-of-derivatives.jsonl",
+              "relPath": "Mathematics/application-of-derivatives.jsonl"
+            }
+          ]
+        },
+        "area-under-the-curves": {
+          "topic": "area-under-the-curves",
+          "files": [
+            {
+              "name": "area-under-the-curves.jsonl",
+              "relPath": "Mathematics/area-under-the-curves.jsonl"
+            }
+          ]
+        },
+        "binomial-theorem": {
+          "topic": "binomial-theorem",
+          "files": [
+            {
+              "name": "binomial-theorem.jsonl",
+              "relPath": "Mathematics/binomial-theorem.jsonl"
+            }
+          ]
+        },
+        "circle": {
+          "topic": "circle",
+          "files": [
+            {
+              "name": "circle.jsonl",
+              "relPath": "Mathematics/circle.jsonl"
+            }
+          ]
+        },
+        "complex-numbers": {
+          "topic": "complex-numbers",
+          "files": [
+            {
+              "name": "complex-numbers.jsonl",
+              "relPath": "Mathematics/complex-numbers.jsonl"
+            }
+          ]
+        },
+        "definite-integration": {
+          "topic": "definite-integration",
+          "files": [
+            {
+              "name": "definite-integration.jsonl",
+              "relPath": "Mathematics/definite-integration.jsonl"
+            }
+          ]
+        },
+        "differential-equations": {
+          "topic": "differential-equations",
+          "files": [
+            {
+              "name": "differential-equations.jsonl",
+              "relPath": "Mathematics/differential-equations.jsonl"
+            }
+          ]
+        },
+        "differentiation": {
+          "topic": "differentiation",
+          "files": [
+            {
+              "name": "differentiation.jsonl",
+              "relPath": "Mathematics/differentiation.jsonl"
+            }
+          ]
+        },
+        "ellipse": {
+          "topic": "ellipse",
+          "files": [
+            {
+              "name": "ellipse.jsonl",
+              "relPath": "Mathematics/ellipse.jsonl"
+            }
+          ]
+        },
+        "functions": {
+          "topic": "functions",
+          "files": [
+            {
+              "name": "functions.jsonl",
+              "relPath": "Mathematics/functions.jsonl"
+            }
+          ]
+        },
+        "height-and-distance": {
+          "topic": "height-and-distance",
+          "files": [
+            {
+              "name": "height-and-distance.jsonl",
+              "relPath": "Mathematics/height-and-distance.jsonl"
+            }
+          ]
+        },
+        "hyperbola": {
+          "topic": "hyperbola",
+          "files": [
+            {
+              "name": "hyperbola.jsonl",
+              "relPath": "Mathematics/hyperbola.jsonl"
+            }
+          ]
+        },
+        "indefinite-integrals": {
+          "topic": "indefinite-integrals",
+          "files": [
+            {
+              "name": "indefinite-integrals.jsonl",
+              "relPath": "Mathematics/indefinite-integrals.jsonl"
+            }
+          ]
+        },
+        "inverse-trigonometric-functions": {
+          "topic": "inverse-trigonometric-functions",
+          "files": [
+            {
+              "name": "inverse-trigonometric-functions.jsonl",
+              "relPath": "Mathematics/inverse-trigonometric-functions.jsonl"
+            }
+          ]
+        },
+        "limits-continuity-and-differentiability": {
+          "topic": "limits-continuity-and-differentiability",
+          "files": [
+            {
+              "name": "limits-continuity-and-differentiability.jsonl",
+              "relPath": "Mathematics/limits-continuity-and-differentiability.jsonl"
+            }
+          ]
+        },
+        "logarithm": {
+          "topic": "logarithm",
+          "files": [
+            {
+              "name": "logarithm.jsonl",
+              "relPath": "Mathematics/logarithm.jsonl"
+            }
+          ]
+        },
+        "mathematical-reasoning": {
+          "topic": "mathematical-reasoning",
+          "files": [
+            {
+              "name": "mathematical-reasoning.jsonl",
+              "relPath": "Mathematics/mathematical-reasoning.jsonl"
+            }
+          ]
+        },
+        "matrices-and-determinants": {
+          "topic": "matrices-and-determinants",
+          "files": [
+            {
+              "name": "matrices-and-determinants.jsonl",
+              "relPath": "Mathematics/matrices-and-determinants.jsonl"
+            }
+          ]
+        },
+        "parabola": {
+          "topic": "parabola",
+          "files": [
+            {
+              "name": "parabola.jsonl",
+              "relPath": "Mathematics/parabola.jsonl"
+            }
+          ]
+        },
+        "permutations-and-combinations": {
+          "topic": "permutations-and-combinations",
+          "files": [
+            {
+              "name": "permutations-and-combinations.jsonl",
+              "relPath": "Mathematics/permutations-and-combinations.jsonl"
+            }
+          ]
+        },
+        "probability": {
+          "topic": "probability",
+          "files": [
+            {
+              "name": "probability.jsonl",
+              "relPath": "Mathematics/probability.jsonl"
+            }
+          ]
+        },
+        "properties-of-triangle": {
+          "topic": "properties-of-triangle",
+          "files": [
+            {
+              "name": "properties-of-triangle.jsonl",
+              "relPath": "Mathematics/properties-of-triangle.jsonl"
+            }
+          ]
+        },
+        "quadratic-equation-and-inequalities": {
+          "topic": "quadratic-equation-and-inequalities",
+          "files": [
+            {
+              "name": "quadratic-equation-and-inequalities.jsonl",
+              "relPath": "Mathematics/quadratic-equation-and-inequalities.jsonl"
+            }
+          ]
+        },
+        "sequences-and-series": {
+          "topic": "sequences-and-series",
+          "files": [
+            {
+              "name": "sequences-and-series.jsonl",
+              "relPath": "Mathematics/sequences-and-series.jsonl"
+            }
+          ]
+        },
+        "sets-and-relations": {
+          "topic": "sets-and-relations",
+          "files": [
+            {
+              "name": "sets-and-relations.jsonl",
+              "relPath": "Mathematics/sets-and-relations.jsonl"
+            }
+          ]
+        },
+        "statistics": {
+          "topic": "statistics",
+          "files": [
+            {
+              "name": "statistics.jsonl",
+              "relPath": "Mathematics/statistics.jsonl"
+            }
+          ]
+        },
+        "straight-lines-and-pair-of-straight-lines": {
+          "topic": "straight-lines-and-pair-of-straight-lines",
+          "files": [
+            {
+              "name": "straight-lines-and-pair-of-straight-lines.jsonl",
+              "relPath": "Mathematics/straight-lines-and-pair-of-straight-lines.jsonl"
+            }
+          ]
+        },
+        "trigonometric-functions-and-equations": {
+          "topic": "trigonometric-functions-and-equations",
+          "files": [
+            {
+              "name": "trigonometric-functions-and-equations.jsonl",
+              "relPath": "Mathematics/trigonometric-functions-and-equations.jsonl"
+            }
+          ]
+        },
+        "trigonometric-ratio-and-identites": {
+          "topic": "trigonometric-ratio-and-identites",
+          "files": [
+            {
+              "name": "trigonometric-ratio-and-identites.jsonl",
+              "relPath": "Mathematics/trigonometric-ratio-and-identites.jsonl"
+            }
+          ]
+        }
+      },
+      "topicList": [
+        "3d-geometry",
+        "application-of-derivatives",
+        "area-under-the-curves",
+        "binomial-theorem",
+        "circle",
+        "complex-numbers",
+        "definite-integration",
+        "differential-equations",
+        "differentiation",
+        "ellipse",
+        "functions",
+        "height-and-distance",
+        "hyperbola",
+        "indefinite-integrals",
+        "inverse-trigonometric-functions",
+        "limits-continuity-and-differentiability",
+        "logarithm",
+        "mathematical-reasoning",
+        "matrices-and-determinants",
+        "parabola",
+        "permutations-and-combinations",
+        "probability",
+        "properties-of-triangle",
+        "quadratic-equation-and-inequalities",
+        "sequences-and-series",
+        "sets-and-relations",
+        "statistics",
+        "straight-lines-and-pair-of-straight-lines",
+        "trigonometric-functions-and-equations",
+        "trigonometric-ratio-and-identites"
+      ]
+    },
+    "Chemistry": {
+      "folderName": "Chemistry",
+      "topics": {
+        "alcohols-phenols-and-ethers": {
+          "topic": "alcohols-phenols-and-ethers",
+          "files": [
+            {
+              "name": "alcohols-phenols-and-ethers.jsonl",
+              "relPath": "Chemistry/alcohols-phenols-and-ethers.jsonl"
+            }
+          ]
+        },
+        "aldehydes-ketones-and-carboxylic-acids": {
+          "topic": "aldehydes-ketones-and-carboxylic-acids",
+          "files": [
+            {
+              "name": "aldehydes-ketones-and-carboxylic-acids.jsonl",
+              "relPath": "Chemistry/aldehydes-ketones-and-carboxylic-acids.jsonl"
+            }
+          ]
+        },
+        "basics-of-organic-chemistry": {
+          "topic": "basics-of-organic-chemistry",
+          "files": [
+            {
+              "name": "basics-of-organic-chemistry.jsonl",
+              "relPath": "Chemistry/basics-of-organic-chemistry.jsonl"
+            }
+          ]
+        },
+        "biomolecules": {
+          "topic": "biomolecules",
+          "files": [
+            {
+              "name": "biomolecules.jsonl",
+              "relPath": "Chemistry/biomolecules.jsonl"
+            }
+          ]
+        },
+        "chemical-bonding-and-molecular-structure": {
+          "topic": "chemical-bonding-and-molecular-structure",
+          "files": [
+            {
+              "name": "chemical-bonding-and-molecular-structure.jsonl",
+              "relPath": "Chemistry/chemical-bonding-and-molecular-structure.jsonl"
+            }
+          ]
+        },
+        "chemical-equilibrium": {
+          "topic": "chemical-equilibrium",
+          "files": [
+            {
+              "name": "chemical-equilibrium.jsonl",
+              "relPath": "Chemistry/chemical-equilibrium.jsonl"
+            }
+          ]
+        },
+        "chemical-kinetics-and-nuclear-chemistry": {
+          "topic": "chemical-kinetics-and-nuclear-chemistry",
+          "files": [
+            {
+              "name": "chemical-kinetics-and-nuclear-chemistry.jsonl",
+              "relPath": "Chemistry/chemical-kinetics-and-nuclear-chemistry.jsonl"
+            }
+          ]
+        },
+        "chemistry-in-everyday-life": {
+          "topic": "chemistry-in-everyday-life",
+          "files": [
+            {
+              "name": "chemistry-in-everyday-life.jsonl",
+              "relPath": "Chemistry/chemistry-in-everyday-life.jsonl"
+            }
+          ]
+        },
+        "compounds-containing-nitrogen": {
+          "topic": "compounds-containing-nitrogen",
+          "files": [
+            {
+              "name": "compounds-containing-nitrogen.jsonl",
+              "relPath": "Chemistry/compounds-containing-nitrogen.jsonl"
+            }
+          ]
+        },
+        "coordination-compounds": {
+          "topic": "coordination-compounds",
+          "files": [
+            {
+              "name": "coordination-compounds.jsonl",
+              "relPath": "Chemistry/coordination-compounds.jsonl"
+            }
+          ]
+        },
+        "d-and-f-block-elements": {
+          "topic": "d-and-f-block-elements",
+          "files": [
+            {
+              "name": "d-and-f-block-elements.jsonl",
+              "relPath": "Chemistry/d-and-f-block-elements.jsonl"
+            }
+          ]
+        },
+        "electrochemistry": {
+          "topic": "electrochemistry",
+          "files": [
+            {
+              "name": "electrochemistry.jsonl",
+              "relPath": "Chemistry/electrochemistry.jsonl"
+            }
+          ]
+        },
+        "environmental-chemistry": {
+          "topic": "environmental-chemistry",
+          "files": [
+            {
+              "name": "environmental-chemistry.jsonl",
+              "relPath": "Chemistry/environmental-chemistry.jsonl"
+            }
+          ]
+        },
+        "gaseous-state": {
+          "topic": "gaseous-state",
+          "files": [
+            {
+              "name": "gaseous-state.jsonl",
+              "relPath": "Chemistry/gaseous-state.jsonl"
+            }
+          ]
+        },
+        "haloalkanes-and-haloarenes": {
+          "topic": "haloalkanes-and-haloarenes",
+          "files": [
+            {
+              "name": "haloalkanes-and-haloarenes.jsonl",
+              "relPath": "Chemistry/haloalkanes-and-haloarenes.jsonl"
+            }
+          ]
+        },
+        "hydrocarbons": {
+          "topic": "hydrocarbons",
+          "files": [
+            {
+              "name": "hydrocarbons.jsonl",
+              "relPath": "Chemistry/hydrocarbons.jsonl"
+            }
+          ]
+        },
+        "hydrogen": {
+          "topic": "hydrogen",
+          "files": [
+            {
+              "name": "hydrogen.jsonl",
+              "relPath": "Chemistry/hydrogen.jsonl"
+            }
+          ]
+        },
+        "ionic-equilibrium": {
+          "topic": "ionic-equilibrium",
+          "files": [
+            {
+              "name": "ionic-equilibrium.jsonl",
+              "relPath": "Chemistry/ionic-equilibrium.jsonl"
+            }
+          ]
+        },
+        "isolation-of-elements": {
+          "topic": "isolation-of-elements",
+          "files": [
+            {
+              "name": "isolation-of-elements.jsonl",
+              "relPath": "Chemistry/isolation-of-elements.jsonl"
+            }
+          ]
+        },
+        "p-block-elements": {
+          "topic": "p-block-elements",
+          "files": [
+            {
+              "name": "p-block-elements.jsonl",
+              "relPath": "Chemistry/p-block-elements.jsonl"
+            }
+          ]
+        },
+        "periodic-table-and-periodicity": {
+          "topic": "periodic-table-and-periodicity",
+          "files": [
+            {
+              "name": "periodic-table-and-periodicity.jsonl",
+              "relPath": "Chemistry/periodic-table-and-periodicity.jsonl"
+            }
+          ]
+        },
+        "polymers": {
+          "topic": "polymers",
+          "files": [
+            {
+              "name": "polymers.jsonl",
+              "relPath": "Chemistry/polymers.jsonl"
+            }
+          ]
+        },
+        "practical-organic-chemistry": {
+          "topic": "practical-organic-chemistry",
+          "files": [
+            {
+              "name": "practical-organic-chemistry.jsonl",
+              "relPath": "Chemistry/practical-organic-chemistry.jsonl"
+            }
+          ]
+        },
+        "redox-reactions": {
+          "topic": "redox-reactions",
+          "files": [
+            {
+              "name": "redox-reactions.jsonl",
+              "relPath": "Chemistry/redox-reactions.jsonl"
+            }
+          ]
+        },
+        "s-block-elements": {
+          "topic": "s-block-elements",
+          "files": [
+            {
+              "name": "s-block-elements.jsonl",
+              "relPath": "Chemistry/s-block-elements.jsonl"
+            }
+          ]
+        },
+        "salt-analysis": {
+          "topic": "salt-analysis",
+          "files": [
+            {
+              "name": "salt-analysis.jsonl",
+              "relPath": "Chemistry/salt-analysis.jsonl"
+            }
+          ]
+        },
+        "solid-state": {
+          "topic": "solid-state",
+          "files": [
+            {
+              "name": "solid-state.jsonl",
+              "relPath": "Chemistry/solid-state.jsonl"
+            }
+          ]
+        },
+        "solutions": {
+          "topic": "solutions",
+          "files": [
+            {
+              "name": "solutions.jsonl",
+              "relPath": "Chemistry/solutions.jsonl"
+            }
+          ]
+        },
+        "some-basic-concepts-of-chemistry": {
+          "topic": "some-basic-concepts-of-chemistry",
+          "files": [
+            {
+              "name": "some-basic-concepts-of-chemistry.jsonl",
+              "relPath": "Chemistry/some-basic-concepts-of-chemistry.jsonl"
+            }
+          ]
+        },
+        "structure-of-atom": {
+          "topic": "structure-of-atom",
+          "files": [
+            {
+              "name": "structure-of-atom.jsonl",
+              "relPath": "Chemistry/structure-of-atom.jsonl"
+            }
+          ]
+        },
+        "surface-chemistry": {
+          "topic": "surface-chemistry",
+          "files": [
+            {
+              "name": "surface-chemistry.jsonl",
+              "relPath": "Chemistry/surface-chemistry.jsonl"
+            }
+          ]
+        },
+        "thermodynamics": {
+          "topic": "thermodynamics",
+          "files": [
+            {
+              "name": "thermodynamics.jsonl",
+              "relPath": "Chemistry/thermodynamics.jsonl"
+            }
+          ]
+        }
+      },
+      "topicList": [
+        "alcohols-phenols-and-ethers",
+        "aldehydes-ketones-and-carboxylic-acids",
+        "basics-of-organic-chemistry",
+        "biomolecules",
+        "chemical-bonding-and-molecular-structure",
+        "chemical-equilibrium",
+        "chemical-kinetics-and-nuclear-chemistry",
+        "chemistry-in-everyday-life",
+        "compounds-containing-nitrogen",
+        "coordination-compounds",
+        "d-and-f-block-elements",
+        "electrochemistry",
+        "environmental-chemistry",
+        "gaseous-state",
+        "haloalkanes-and-haloarenes",
+        "hydrocarbons",
+        "hydrogen",
+        "ionic-equilibrium",
+        "isolation-of-elements",
+        "p-block-elements",
+        "periodic-table-and-periodicity",
+        "polymers",
+        "practical-organic-chemistry",
+        "redox-reactions",
+        "s-block-elements",
+        "salt-analysis",
+        "solid-state",
+        "solutions",
+        "some-basic-concepts-of-chemistry",
+        "structure-of-atom",
+        "surface-chemistry",
+        "thermodynamics"
+      ]
+    }
+  },
+  "subjectList": [
+    "Chemistry",
+    "Mathematics",
+    "Physics"
+  ],
+  "generatedAt": "2026-02-03T08:00:29.687Z",
+  "inputRoot": "/home/admin/Documents/lolol/mocks_jsonl"
+}
